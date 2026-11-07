@@ -1,6 +1,7 @@
 """Check native map appearance, bounded lifecycle and single wreck routing."""
 import json
 import zipfile
+import struct
 from functools import lru_cache
 from read_edat import Edat
 from verify_smoke_profile import Cndf, paths, reachable, MOD, DEV, ROOT, BACKUP
@@ -44,6 +45,14 @@ def fingerprint(c, mode=''):
                 if action=='BANK_VerticalSmoke_Finite_Simple':
                     alias(pairs.pop('parDuration'),'parDuration')
                     pairs['parLifetime']=pairs.pop('parSmokeLifetime')
+                # Compare against native values with only these user-requested
+                # multipliers. Explicit float32 rounding matches CNDF storage.
+                approved={NATIVE_BANK:{'Feu_Size_Mul':.5},NEW_BANK:{'Feu_Size_Mul':.5},
+                          'BANK_FuelFire':{'parSize':.5}}
+                for key,factor in approved.get(action,{}).items():
+                    const=c.objects[pairs[key]['ref']];assert const['class'] in ('TConstantFloat','TConstantInteger')
+                    n=const['properties'].get('Value',0)*(factor if mode=='map_old' else 1)
+                    pairs[key]={'approved_numeric':struct.unpack('<f',struct.pack('<f',n))[0]}
                 if pairs:p['NamedParams']={'map':sorted(pairs.items())}
         return cl,value(p)
     def value(v):
@@ -111,8 +120,7 @@ def verify_map_wreck(bank,fx):
         for name in ('Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/Skirmish.ndfbin'):
             assert (MOD/name).read_bytes()==z.read('installed/'+name),name
     oe=paths(old,'EXPR');ov,nv=fingerprint(old),fingerprint(bank)
-    assert set(be)-set(oe)=={'$/VFX_Bank/'+NEW_BANK}
-    assert not set(oe)-set(be)
+    assert set(be)==set(oe)
     for name in oe:assert ov({'ref':oe[name]})==nv({'ref':be[name]}),name
     fv=fingerprint(fx)
     for name in WRECK_EXPORTS:
@@ -127,7 +135,8 @@ def verify_map_wreck(bank,fx):
         params=expr['properties']['EffectiveParams'];assert len(params)==3
         assert [fx.objects[x['ref']]['properties']['Value'] for x in params[1:]]==[10,1200]
     depiction=verify_depiction()
-    result=dict(native_map_family=MAP_FX,native_appearance_graph_equal=True,finite_bank_particle_graph_equal=True,
+    result=dict(native_map_family=MAP_FX,native_appearance_equal_except_flame_size_and_source_duration=True,
+                fire_size_factor=.5,smoke_lifetime_factor=1,finite_bank_particle_graph_equal=True,
                 existing_bank_exports_unchanged=len(oe),depiction=depiction,vehicle_burn_seconds=[10,1200],
                 unit_and_ai_binary_unchanged=True,rendered_appearance='unverified')
     (DEV/'map-wreck-verification.json').write_text(json.dumps(result,indent=2)+'\n')

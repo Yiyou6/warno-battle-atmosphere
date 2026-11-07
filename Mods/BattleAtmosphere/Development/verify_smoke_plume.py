@@ -147,4 +147,4 @@ def verify_plume(bank, fx, exports, source):
                 size_growth='smooth elapsed-time growth, capped at 4x unchanged birth size; varied growth time',
                 compiled_curve_samples=samples,optical_density_floor=0.65,
                 vehicle_burn_seconds=[10,1200],compiled_vehicle_cadaver_objects=len(vehicles),
-                vehicle_wreck_fire='native Urban Frontlines fuel-fire family Big',rendered_appearance='unverified')
+                vehicle_wreck_fire='actual Urban Frontlines bridge Small; native smoke, half flame-size parameters',rendered_appearance='unverified')

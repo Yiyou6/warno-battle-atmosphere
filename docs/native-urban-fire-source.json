@@ -128,7 +128,7 @@
       "fx": "$/GFX/GameFx/fx_incendie_Fuel_Explosion_Big_diorama"
     }
   },
-  "selected": "Big",
-  "qualification": "Map places Small twice at unit scale; chosen Big is the larger native variant of the same fuel-fire family, not a literal Big bridge placement.",
+  "selected": "Small",
+  "qualification": "Reuse the actual Small effect placed twice by the broken bridge at unit scale. The previous same-family Big substitute added two vertical smoke layers absent from the bridge effect.",
   "runtime_map_coordinates_used": false
 }

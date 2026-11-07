@@ -26,7 +26,7 @@ export FX_Vehicule_Dest_Fire is SimultaneousActionDeclaration
             [
                 Template_ActionCall
                 (
-                    Action = ~/BA_UrbanWreckFire_Big
+                    Action = ~/BA_UrbanWreckFire
                     NamedParameters = MAP[( 'parDuration', Clamp[parDuration,10,1200] ),]
                 ),
                 WaitInSec(Duration = Clamp[parDuration,10,1200]),
@@ -51,7 +51,7 @@ export FX_Vehicule_Dest_Fire_Avion is SimultaneousActionDeclaration
             [
                 Template_ActionCall
                 (
-                    Action = ~/BA_UrbanWreckFire_Big
+                    Action = ~/BA_UrbanWreckFire
                     NamedParameters = MAP[( 'parDuration', Clamp[parDuration,10,1200] ),]
                 ),
                 WaitInSec(Duration = Clamp[parDuration,10,1200]),
@@ -64,7 +64,7 @@ export FX_Vehicule_Dest_Fire_Avion is SimultaneousActionDeclaration
 // Native map effect, lifecycle adapted for a vehicle wreck.
 // Ne pas éditer, ce fichier est généré
 
-export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
+export BA_UrbanWreckFire is SimultaneousActionDeclaration
 (
     Params = [ private parDuration is Template_Param_Float (), ]
     Actions = BA_UrbanActions is
@@ -82,15 +82,15 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BA_UrbanFireAndDarkSmoke_Simple
                     NamedParams = MAP[
                         ( 'BA_SourceDuration', parDuration ),
-                        ( 'Feu_Size_Mul', 3 ),
+                        ( 'Feu_Size_Mul', 0 ),
                         ( 'FireCountMul', 0 ),
                         ( 'FireDuration', 0 ),
-                        ( 'Ground_Size', 8 ),
+                        ( 'Ground_Size', 4 ),
                         ( 'SmokeCountMul', 1 ),
-                        ( 'SmokeDuration', 7 ),
-                        ( 'SmokeOpacity', 0.25 ),
-                        ( 'SmokeSpeed', 2 ),
-                        ( 'Smoke_Size_Mul', 8 ),
+                        ( 'SmokeDuration', 8 ),
+                        ( 'SmokeOpacity', 1 ),
+                        ( 'SmokeSpeed', 0.5 ),
+                        ( 'Smoke_Size_Mul', 1 ),
                         ( 'SparksCountMul', 0 ),
                         ( 'SparksDuration', 0 ),
                     ]
@@ -103,32 +103,14 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
                         ( 'Feu_Size_Mul', 0 ),
                         ( 'FireCountMul', 0 ),
                         ( 'FireDuration', 0 ),
-                        ( 'Ground_Size', 8 ),
+                        ( 'Ground_Size', 3 ),
                         ( 'SmokeCountMul', 1 ),
-                        ( 'SmokeDuration', 6 ),
-                        ( 'SmokeOpacity', 0.25 ),
-                        ( 'SmokeSpeed', 0.25 ),
-                        ( 'Smoke_Size_Mul', 10 ),
+                        ( 'SmokeDuration', 5 ),
+                        ( 'SmokeOpacity', 1 ),
+                        ( 'SmokeSpeed', 1 ),
+                        ( 'Smoke_Size_Mul', 1 ),
                         ( 'SparksCountMul', 0 ),
                         ( 'SparksDuration', 0 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BA_UrbanFireAndDarkSmoke_Simple
-                    NamedParams = MAP[
-                        ( 'BA_SourceDuration', parDuration ),
-                        ( 'Feu_Size_Mul', 3 ),
-                        ( 'FireCountMul', 4 ),
-                        ( 'FireDuration', 2 ),
-                        ( 'Ground_Size', 6 ),
-                        ( 'SmokeCountMul', 1 ),
-                        ( 'SmokeDuration', 25 ),
-                        ( 'SmokeOpacity', 0.5 ),
-                        ( 'SmokeSpeed', 3 ),
-                        ( 'Smoke_Size_Mul', 8 ),
-                        ( 'SparksCountMul', 6 ),
-                        ( 'SparksDuration', 15 ),
                     ]
                 ),
             ]
@@ -137,7 +119,35 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
         (
             Mobile = TMobileWithLocalRepereMatrixFactory
             (
-                Position = float3[0,0,-246]
+                Position = float3[46,-3,-250]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BA_UrbanFireAndDarkSmoke_Simple
+                    NamedParams = MAP[
+                        ( 'BA_SourceDuration', parDuration ),
+                        ( 'Feu_Size_Mul', 0.625 ),
+                        ( 'FireCountMul', 1 ),
+                        ( 'FireDuration', 2 ),
+                        ( 'Ground_Size', 1.5 ),
+                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeDuration', 10 ),
+                        ( 'SmokeOpacity', 1 ),
+                        ( 'SmokeSpeed', 2 ),
+                        ( 'Smoke_Size_Mul', 1.5 ),
+                        ( 'SparksCountMul', 0 ),
+                        ( 'SparksDuration', 4 ),
+                    ]
+                ),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[46,-3,-246]
                 EulerAngles = float3[1.570522,0,0]
             )
             Actions =
@@ -147,17 +157,17 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BA_UrbanFireAndDarkSmoke_Simple
                     NamedParams = MAP[
                         ( 'BA_SourceDuration', parDuration ),
-                        ( 'Feu_Size_Mul', 3 ),
-                        ( 'FireCountMul', 6 ),
+                        ( 'Feu_Size_Mul', 0.25 ),
+                        ( 'FireCountMul', 1 ),
                         ( 'FireDuration', 2 ),
-                        ( 'Ground_Size', 6 ),
+                        ( 'Ground_Size', 1 ),
                         ( 'SmokeCountMul', 2 ),
-                        ( 'SmokeDuration', 25 ),
-                        ( 'SmokeOpacity', 0.3 ),
-                        ( 'SmokeSpeed', 2 ),
-                        ( 'Smoke_Size_Mul', 4 ),
-                        ( 'SparksCountMul', 4 ),
-                        ( 'SparksDuration', 15 ),
+                        ( 'SmokeDuration', 10 ),
+                        ( 'SmokeOpacity', 1 ),
+                        ( 'SmokeSpeed', 1.25 ),
+                        ( 'Smoke_Size_Mul', 1 ),
+                        ( 'SparksCountMul', 0 ),
+                        ( 'SparksDuration', 1 ),
                     ]
                 ),
             ]
@@ -166,7 +176,7 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
         (
             Mobile = TMobileWithLocalRepereMatrixFactory
             (
-                Position = float3[-1547,-1979,0]
+                Position = float3[0,0,104]
             )
             Actions =
             [
@@ -174,97 +184,71 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/BANK_FuelFire
                     NamedParams = MAP[
-                        ( 'parColor', float3[0.4745098,0.4745098,0.4745098] ),
-                        ( 'parDensity', 1 ),
+                        ( 'parColor', float3[0.8156863,0.5176471,0.01568628] ),
+                        ( 'parDensity', 5 ),
                         ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
-                        ( 'parParticleLifetime', 1.25 ),
-                        ( 'parSize', 2000 ),
-                        ( 'parSpeedMul', 0 ),
+                        ( 'parFlameIntensity', 0.2 ),
+                        ( 'parParticleLifetime', 1.5 ),
+                        ( 'parSize', 500 ),
+                        ( 'parSpeedMul', 1.5 ),
+                    ]
+                ),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[0,0,-173]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_FuelFire
+                    NamedParams = MAP[
+                        ( 'parColor', float3[0.6980392,0.4352942,0] ),
+                        ( 'parDensity', 4 ),
+                        ( 'parDuration', parDuration ),
+                        ( 'parFlameIntensity', 0.1 ),
+                        ( 'parParticleLifetime', 1.5 ),
+                        ( 'parSize', 250 ),
+                        ( 'parSpeedMul', 1.5 ),
                     ]
                 ),
                 TActionCall
                 (
                     Action = $/VFX_Bank/BANK_FuelFire
                     NamedParams = MAP[
-                        ( 'parColor', float3[0.5254902,0.2509804,0.01176471] ),
-                        ( 'parDensity', 1 ),
+                        ( 'parColor', float3[0.9254903,0.427451,0] ),
+                        ( 'parDensity', 2 ),
                         ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
+                        ( 'parFlameIntensity', 0.5 ),
                         ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 2000 ),
+                        ( 'parSize', 100 ),
+                        ( 'parSpeedMul', 0.25 ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_FuelFire
+                    NamedParams = MAP[
+                        ( 'parColor', float3[0.8274511,0.2627451,0.2627451] ),
+                        ( 'parDensity', 6 ),
+                        ( 'parDuration', parDuration ),
+                        ( 'parFlameIntensity', 1 ),
+                        ( 'parParticleLifetime', 1.5 ),
+                        ( 'parSize', 200 ),
                         ( 'parSpeedMul', 0.5 ),
                     ]
                 ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.8274511,0.2627451,0.2627451] ),
-                        ( 'parDensity', 1 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
-                        ( 'parParticleLifetime', 1.5 ),
-                        ( 'parSize', 2500 ),
-                        ( 'parSpeedMul', 1 ),
-                    ]
-                ),
             ]
         ),
         TSimultaneousAction
         (
             Mobile = TMobileWithLocalRepereMatrixFactory
             (
-                Position = float3[1159,1395,0]
-            )
-            Actions =
-            [
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.8274511,0.2627451,0.2627451] ),
-                        ( 'parDensity', 1 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
-                        ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 2500 ),
-                        ( 'parSpeedMul', 3 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.5254902,0.2509804,0.01176471] ),
-                        ( 'parDensity', 1 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
-                        ( 'parParticleLifetime', 3 ),
-                        ( 'parSize', 2000 ),
-                        ( 'parSpeedMul', 2 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.4745098,0.4745098,0.4745098] ),
-                        ( 'parDensity', 0.5 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
-                        ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 2000 ),
-                        ( 'parSpeedMul', 1 ),
-                    ]
-                ),
-            ]
-        ),
-        TSimultaneousAction
-        (
-            Mobile = TMobileWithLocalRepereMatrixFactory
-            (
-                Position = float3[163,2853,0]
+                Position = float3[0,0,-90]
             )
             Actions =
             [
@@ -275,36 +259,10 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
                         ( 'parColor', float3[1,1,1] ),
                         ( 'parDensity', 1 ),
                         ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
+                        ( 'parFlameIntensity', 0.2 ),
                         ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 2000 ),
+                        ( 'parSize', 400 ),
                         ( 'parSpeedMul', 0 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.9254903,0.427451,0] ),
-                        ( 'parDensity', 1 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
-                        ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 800 ),
-                        ( 'parSpeedMul', 2 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.8274511,0.2627451,0.2627451] ),
-                        ( 'parDensity', 2 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.05 ),
-                        ( 'parParticleLifetime', 1.5 ),
-                        ( 'parSize', 2500 ),
-                        ( 'parSpeedMul', 3 ),
                     ]
                 ),
             ]
@@ -316,79 +274,14 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
             [
                 TActionCall
                 (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.5803922,0.5803922,0.5803922] ),
-                        ( 'parDensity', 0.5 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.1 ),
-                        ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 3000 ),
-                        ( 'parSpeedMul', 0.8 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.9254903,0.427451,0] ),
-                        ( 'parDensity', 2 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.1 ),
-                        ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 3000 ),
-                        ( 'parSpeedMul', 1 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.6980392,0.4235294,0.007843138] ),
-                        ( 'parDensity', 2 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.2 ),
-                        ( 'parParticleLifetime', 2 ),
-                        ( 'parSize', 3000 ),
-                        ( 'parSpeedMul', 3 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelFire
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.7450981,0.2313726,0.2313726] ),
-                        ( 'parDensity', 4 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parFlameIntensity', 0.2 ),
-                        ( 'parParticleLifetime', 2.5 ),
-                        ( 'parSize', 3000 ),
-                        ( 'parSpeedMul', 2 ),
-                    ]
-                ),
-                TActionCall
-                (
                     Action = $/VFX_Bank/BANK_FuelSmoke
                     NamedParams = MAP[
-                        ( 'parColor', float3[0.509804,0.509804,0.509804] ),
+                        ( 'parColor', float3[0.1686275,0.1686275,0.1686275] ),
                         ( 'parDensity', 1 ),
                         ( 'parDuration', parDuration ),
                         ( 'parOpacity', 1 ),
-                        ( 'parParticleLifetime', 5 ),
-                        ( 'parSize', 4000 ),
-                        ( 'parSpeedMul', 1.5 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelSmoke
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.5411765,0.3411765,0.2627451] ),
-                        ( 'parDensity', 0.5 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parOpacity', 1 ),
-                        ( 'parParticleLifetime', 4 ),
-                        ( 'parSize', 3000 ),
+                        ( 'parParticleLifetime', 6 ),
+                        ( 'parSize', 1500 ),
                         ( 'parSpeedMul', 1 ),
                     ]
                 ),
@@ -396,26 +289,26 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/BANK_FuelSmoke
                     NamedParams = MAP[
-                        ( 'parColor', float3[0.5843138,0.5254902,0.4] ),
-                        ( 'parDensity', 0.5 ),
+                        ( 'parColor', float3[0.5411765,0.5411765,0.5411765] ),
+                        ( 'parDensity', 0.8 ),
                         ( 'parDuration', parDuration ),
-                        ( 'parOpacity', 0.75 ),
-                        ( 'parParticleLifetime', 3 ),
-                        ( 'parSize', 4500 ),
-                        ( 'parSpeedMul', 1.5 ),
+                        ( 'parOpacity', 1 ),
+                        ( 'parParticleLifetime', 5 ),
+                        ( 'parSize', 600 ),
+                        ( 'parSpeedMul', 1 ),
                     ]
                 ),
                 TActionCall
                 (
                     Action = $/VFX_Bank/BANK_FuelSmoke
                     NamedParams = MAP[
-                        ( 'parColor', float3[0.3019608,0.3019608,0.3019608] ),
-                        ( 'parDensity', 0.5 ),
+                        ( 'parColor', float3[1,1,1] ),
+                        ( 'parDensity', 1 ),
                         ( 'parDuration', parDuration ),
                         ( 'parOpacity', 1 ),
-                        ( 'parParticleLifetime', 6 ),
-                        ( 'parSize', 4000 ),
-                        ( 'parSpeedMul', 0 ),
+                        ( 'parParticleLifetime', 3 ),
+                        ( 'parSize', 400 ),
+                        ( 'parSpeedMul', 0.5 ),
                     ]
                 ),
                 TActionCall
@@ -425,47 +318,13 @@ export BA_UrbanWreckFire_Big is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.4313726,0.1176471,0] ),
                         ( 'parHeight', 500 ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parSizeLBU', 279.0698 ),
+                        ( 'parSizeLBU', 93.02325 ),
                     ]
                 ),
                 TActionCall
                 (
                     Action = $/VFX_Bank/SFXAction_FireLoop
                     NamedParams = MAP[
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_VerticalSmoke_Finite_Simple
-                    NamedParams = MAP[
-                        ( 'parDuration', parDuration ),
-                        ( 'parColor', float3[0.1215686,0.1215686,0.1215686] ),
-                        ( 'parDensity', 2 ),
-                        ( 'parFluidFriction', 0.1 ),
-                        ( 'parSmokeLifetime', 15 ),
-                        ( 'parOpacity', 1 ),
-                        ( 'parSize', 1200 ),
-                        ( 'parSizeMultiplier', 12 ),
-                        ( 'parSpeed', 600 ),
-                        ( 'parVerticalAcceleration', 500 ),
-                        ( 'parWindFactor', 2.5 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_VerticalSmoke_Finite_Simple
-                    NamedParams = MAP[
-                        ( 'parDuration', parDuration ),
-                        ( 'parColor', float3[0.1490196,0.1490196,0.1490196] ),
-                        ( 'parDensity', 3 ),
-                        ( 'parFluidFriction', 0.25 ),
-                        ( 'parSmokeLifetime', 25 ),
-                        ( 'parOpacity', 0.6 ),
-                        ( 'parSize', 1400 ),
-                        ( 'parSizeMultiplier', 14 ),
-                        ( 'parSpeed', 800 ),
-                        ( 'parVerticalAcceleration', 650 ),
-                        ( 'parWindFactor', 2.5 ),
                     ]
                 ),
             ]

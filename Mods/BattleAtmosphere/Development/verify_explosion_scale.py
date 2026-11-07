@@ -18,8 +18,8 @@ from map_wreck_fire import WRECK_EXPORTS,NEW_FX
 def verify_explosions(current):
     with zipfile.ZipFile(DEV/BACKUP) as z:
         installed=json.loads(z.read('development/smoke-release.json'))
-        assert installed['version']=='smoke-preview.16'
-        assert installed['explosions']['visual_scale']==2
+        assert installed['version']=='smoke-preview.17'
+        assert installed['explosions']['visual_scale']==3
         assert hashlib.sha256(z.read('installed/Gen/NDF/GFX/GameFx.ndfbin')).hexdigest()==installed['outputs']['Gen/NDF/GFX/GameFx.ndfbin']
     assert VISUAL_SCALE==3 and SPATIAL_SCALE==3.3
     with zipfile.ZipFile(DEV/'archive/smoke-preview8-before.zip') as z:
@@ -134,8 +134,8 @@ def verify_explosions(current):
         assert names and all('$/GFX/GameFx/'+n in affected for n in names),item['path']
     assert len(spatial)>1000 and len(offsets)>100
     assert removed
-    result=dict(visual_scale=VISUAL_SCALE,relative_to='smoke-preview.16',relative_multiplier=1.5,
-                previous_visual_scale=2,spatial_scale=SPATIAL_SCALE,source_files=len(source['files']),
+    result=dict(visual_scale=VISUAL_SCALE,relative_to='smoke-preview.17',relative_multiplier=1,
+                previous_visual_scale=3,spatial_scale=SPATIAL_SCALE,source_files=len(source['files']),
                 source_dimensions=sum(len(f['changes']) for f in source['files']),
                 unique_compiled_dimensions=len(changed),affected_exports=len(affected),
                 compiled_spatial_parameters=len(spatial),compiled_local_offsets=len(offsets),event_anchors_unchanged=True,

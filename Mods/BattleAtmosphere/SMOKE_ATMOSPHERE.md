@@ -1,4 +1,14 @@
-# 燃烧烟柱与爆炸 · smoke-preview.17
+# 燃烧烟柱与爆炸 · smoke-preview.18
+
+## preview.18：复用断桥实际效果，火焰缩小、烟保留原参数
+
+用户先要求火焰缩小到 50%、烟雾消散时间乘 0.1，随后要求直接照抄都市前线断桥偏水平烟雾的配置，并最终取消烟寿命缩短。旧版复用了同系列 Big，而地图两处实际引用的是 `fx_incendie_fuel_explosion_Small_diorama`；Big 额外包含两层 VerticalSmoke，Small 没有。这是资源选择差异，不能用“同系列”冒充相同形态。
+
+此次把载具专用 `BA_UrbanWreckFire` 改为从实际 Small 源完整生成，保留原生全部动作层级、粒子位置、风向、上升/漂移、颜色、贴图和随机表达式；不另加垂直烟柱或自研风偏。火焰尺寸参数 Feu_Size_Mul、FuelFire/parSize 乘 0.5；两类烟的 SmokeDuration、FuelSmoke/parParticleLifetime 原值保持。火焰倍率以所选地图实际效果为基准，不把 Small 与旧 Big 的总外观差异说成恰好减半。残骸源持续 10–1200 秒，烟粒寿命、颜色、大小、密度和按年龄消散均使用原版参数。
+
+只修改载具专用调用，不修改共享 bank 和地图原效果。实际飘散仍受当前场景风与残骸位置影响，视觉一致性须新对局确认。爆炸面片 3 倍、散布 3.3 倍、单挂点、64 万预算、AI、伤害保持。NDF 相对 preview.17 仅 `FX_Destruction_Vehicule.ndf` 改变；Big 缩小草稿和短烟寿命草稿均构建后弃用，未安装。
+
+官方构建、完整编译图与安装哈希核验通过：编译图对照实际 Small，仅允许火焰尺寸和来源时长差异，烟粒参数完整保持；588 个既有 bank 导出均未改变，Unit/Skirmish/Depiction 与运行 DLL 均未改变。爆炸完整编译核验仍为 3 倍面片与 3.3 倍散布。实际渲染待新对局确认。备份：`Development/archive/smoke-preview18-before.zip`。
 
 ## preview.17：载具复用地图原生火烟，爆炸 3 倍、扩散 3.3 倍
 

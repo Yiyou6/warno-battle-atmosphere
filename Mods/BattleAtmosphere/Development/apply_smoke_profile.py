@@ -15,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.17'
+VERSION = 'smoke-preview.18'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview17-before.zip'
+BACKUP = 'archive/smoke-preview18-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -190,7 +190,7 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_match(protected_files(), protected)
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.16', appearance='native Urban Frontlines fuel-fire family Big for vehicle wrecks, single source; burn 10-1200s; explosion billboards 3x base and reviewed spread/speed/offsets 3.3x base',
+                  relative_to='smoke-preview.17', appearance='actual Urban Frontlines bridge Small FX replaces the Big substitute; flame size parameters 0.5x; smoke particle lifetime/wind/motion match the selected map original; burn 10-1200s; explosions remain 3x size and 3.3x spread',
                   vehicle_burn_seconds=[10,1200], map_wreck_fire=True,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,

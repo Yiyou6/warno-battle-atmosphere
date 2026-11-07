@@ -2,15 +2,17 @@
 import re
 from apply_profile import matching, object_span
 
-MAP_FX = 'fx_incendie_Fuel_Explosion_Big_diorama'
+MAP_FX = 'fx_incendie_fuel_explosion_Small_diorama'
 MAP_SOURCE = 'GameData/Fx/Generated/' + MAP_FX + '.ndf'
 MAP_BANK = 'GameData/Fx/Bank/Basics/BANK_FireAndDarkSmoke.ndf'
 WRECK_SET = 'GameData/Fx/Set/FX_Destruction_Vehicule.ndf'
 DEPICTION = 'GameData/Gameplay/Gfx/Units/DepictionActions.ndf'
-NEW_FX = 'BA_UrbanWreckFire_Big'
+NEW_FX = 'BA_UrbanWreckFire'
 NATIVE_BANK = 'AoA_FX_BANK_FireAndDarkSmoke_Simple'
 NEW_BANK = 'BA_UrbanFireAndDarkSmoke_Simple'
 WRECK_EXPORTS = {'$/GFX/GameFx/FX_Vehicule_Dest_Fire', '$/GFX/GameFx/FX_Vehicule_Dest_Fire_Avion'}
+FIRE_SIZE_FACTOR = 0.5
+SMOKE_LIFETIME_FACTOR = 1.0
 
 
 def once(s,a,b):
@@ -33,7 +35,7 @@ def finite_map_bank(original):
 def map_effect(original):
     copy=once(original,'export '+MAP_FX+' is Simultaneous','export '+NEW_FX+' is SimultaneousActionDeclaration')
     copy=once(copy,'    Actions = ActionList is', '    Params = [ private parDuration is Template_Param_Float (), ]\n    Actions = BA_UrbanActions is')
-    # Keep all native colors, particle lifetimes, sizes, offsets and densities.
+    # Keep native appearance except the explicitly requested size/life tuning.
     copy=copy.replace('$/VFX_Bank/'+NATIVE_BANK,'$/VFX_Bank/'+NEW_BANK)
     copy=re.sub(r"(\( 'parDuration', )\d+( \))",r'\1parDuration\2',copy)
     from explosion_scale import action_params
@@ -52,6 +54,18 @@ def map_effect(original):
             edits.append((at,at,"( 'parDuration', parDuration ),\n                        "))
     for a,b,value in sorted(edits,reverse=True):copy=copy[:a]+value+copy[b:]
     copy=copy.replace('$/VFX_Bank/BANK_VerticalSmoke_Simple','$/VFX_Bank/BANK_VerticalSmoke_Finite_Simple')
+    adjustments=[]
+    fields={NEW_BANK:{'Feu_Size_Mul':FIRE_SIZE_FACTOR,'SmokeDuration':SMOKE_LIFETIME_FACTOR},
+            'BANK_FuelFire':{'parSize':FIRE_SIZE_FACTOR},
+            'BANK_FuelSmoke':{'parParticleLifetime':SMOKE_LIFETIME_FACTOR},
+            'BANK_VerticalSmoke_Finite_Simple':{'parSmokeLifetime':SMOKE_LIFETIME_FACTOR}}
+    for bank,params in action_params(copy):
+        for key,a,b in params:
+            if key in fields.get(bank,{}):
+                value=float(copy[a:b].strip())
+                adjustments.append((a,b,format(value*fields[bank][key],'.8g')))
+    assert len(adjustments)==16,len(adjustments)
+    for a,b,value in sorted(adjustments,reverse=True):copy=copy[:a]+value+copy[b:]
     return copy
 
 
@@ -124,4 +138,5 @@ def extend_sources(z,before,after):
             if n:removed[name]=n
     assert sum(removed.values())>0
     return dict(native_family='FX_Fire_Fuel_Explosion_Small_RandomDuration',native_fx=MAP_FX,
-                removed_vehicle_fuel_calls=removed,source_count_per_wreck=1,burn_seconds=[10,1200])
+                removed_vehicle_fuel_calls=removed,source_count_per_wreck=1,burn_seconds=[10,1200],
+                fire_size_factor=FIRE_SIZE_FACTOR,smoke_lifetime_factor=SMOKE_LIFETIME_FACTOR)

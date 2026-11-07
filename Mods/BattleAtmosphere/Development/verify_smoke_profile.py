@@ -151,7 +151,7 @@ def main():
         previous = smoke_spawner(prior, prior_exports[name], name != NEW)
         assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == limits[1]
         verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'], factor=0.36)
-        scaling[name] = dict(relative_to='smoke-preview.16', emission_multiplier=1,
+        scaling[name] = dict(relative_to='smoke-preview.17', emission_multiplier=1,
                              lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
     from verify_smoke_plume import verify_plume
     plume = verify_plume(bank, fx, exports, source)
@@ -166,8 +166,8 @@ def main():
                   compiled_calls=calls, compiled_scaling=scaling, plume=plume, explosions=explosions, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: background smoke retained; vehicle wrecks use native map Big fire/smoke')
-    print('PASS: vehicle fire 10-1200s; native map appearance and single wreck source verified')
+    print('PASS: vehicle wrecks use the actual bridge Small FX; native wind/motion retained')
+    print('PASS: flame size 0.5x, smoke lifetime/motion match native bridge; burn still 10-1200s; single source')
 
 if __name__ == '__main__':
     main()

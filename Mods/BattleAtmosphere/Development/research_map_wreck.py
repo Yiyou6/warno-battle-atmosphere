@@ -28,7 +28,7 @@ def main():
         family[size]=dict(descriptor=name,fx=im[calls[0]['properties']['Action']['import_index']])
     result=dict(placement_pack=placement,placement_entry='Items.sav',placement_sha256=hashlib.sha256(raw).hexdigest(),
                 placements=near,scenery_pack=scenery,scenery_entry_sha256=hashlib.sha256(sr).hexdigest(),
-                family=family,selected='Big',qualification='Map places Small twice at unit scale; chosen Big is the larger native variant of the same fuel-fire family, not a literal Big bridge placement.',
+                family=family,selected='Small',qualification='Reuse the actual Small effect placed twice by the broken bridge at unit scale. The previous same-family Big substitute added two vertical smoke layers absent from the bridge effect.',
                 runtime_map_coordinates_used=False)
     (DEV/'map-wreck-research.json').write_text(json.dumps(result,indent=2)+'\n')
     print('PASS: two native fire placements by destroyed bridge; Small and Big references resolved')
