@@ -60,7 +60,7 @@ def verify_plume(bank, fx, exports, source):
     dark = '$/VFX_Bank/BANK_DarkFireCompo'
     old = dark_smoke(prior,paths(prior,'EXPR')[dark]); new = dark_smoke(bank,exports[dark])
     emission = {}
-    for bound,minimum,maximum in ((18,0.15,0.3),(22,0.45,0.75),(85,1.2,1.8)):
+    for bound,minimum,maximum in ((18,0.09,0.18),(22,0.27,0.45),(85,0.72,1.08)):
         samples = [evaluate_scalar(bank,new[bound]['Frequency'],dict(CustomFloat_2=v)) for v in (0,0.1,1,2,4,8,20)]
         assert math.isclose(min(samples),minimum,rel_tol=1e-6) and math.isclose(max(samples),maximum,rel_tol=1e-6)
         emission[str(bound)] = dict(range_per_second=[minimum,maximum],samples=samples)
@@ -86,7 +86,7 @@ def verify_plume(bank, fx, exports, source):
         colors = sorted([[bank.objects[o['properties']['Param'+str(i)]['ref']]['properties'].get('Value',0)
                           for i in range(3)] for o in color_nodes])
         assert len(colors)==2,colors
-        for actual,expected in zip(colors,(0.22,0.34)):
+        for actual,expected in zip(colors,(0.08,0.14)):
             assert all(math.isclose(v,expected,abs_tol=1e-6) for v in actual),colors
         # The final density factor has a visibility floor, tested independently
         # of the shader, source opacity and fade envelope.

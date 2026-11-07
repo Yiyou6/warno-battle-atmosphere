@@ -297,7 +297,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                     ),
                                     EvolverSpraySpawner
                                     (
-                                        Frequency = 0.15 * (Min[5,Max[3,2 * ParticleCustomFloat_2]])
+                                        Frequency = 0.09 * (Min[5,Max[3,2 * ParticleCustomFloat_2]])
                                         MaxSpawnedParticleLifetime = 22
                                         Spawner = private Fumees_Dark is ParticleSpawner
                                         (
@@ -339,7 +339,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                                     PhysicAccelerationField = 3 * (float3[0,0,35] * (0.6 + 0.4 * ParticleRemainingLifeRatio))
                                                     PhysicWindField = MapWind * float3[1,1,0] * (0.54 + 0.72 * sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,35]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,35])) * (0.8 + 0.4 * ParticleCustomFloat_5) * (1 + 0.18 * getX[ParticleCustomFloat3_4]) + cross[MapWind,float3[0,0,1]] * (0.18 * getX[ParticleCustomFloat3_4] * (1 - (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28]))) + 0.50 * getY[ParticleCustomFloat3_4] * (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28])) + 0.08 * sin[ParticleElapsedTime * 0.13 + getZ[ParticleCustomFloat3_4]] * (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28]))) + MapWind * float3[0,0,3] * (0.2 + 0.1 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (10 + 35 * MapToLinearSmoothStep[ParticleElapsedTime,10,45])
                                                     Size = (Min[2000,Max[1200,ParticleCustomFloat_1 * 0.8]] * (0.9 + 0.2 * ParticleCustomFloat_5)) * (1 + 3 * sqr[Min[1,Max[0,ParticleElapsedTime div (10 + 6 * ParticleCustomFloat_5)]]] * (3 - 2 * Min[1,Max[0,ParticleElapsedTime div (10 + 6 * ParticleCustomFloat_5)]]))
-                                                    ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.22,0.22,0.22], LinearColor[0.34,0.34,0.34]] * (0.85 + 0.3 * ParticleCustomFloat_5)
+                                                    ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.08,0.08,0.08], LinearColor[0.14,0.14,0.14]] * (0.85 + 0.3 * ParticleCustomFloat_5)
                                                     Opacity = Min[1,Max[0,ParticleElapsedTime div 0.35]] * sqr[Min[1,Max[0,(0.97 - ParticleLifeRatio) div 0.52]]] * (0.32 * ParticleCustomFloat_6) * Max[0.65,Min[1,2500000 div Max[2500000,sqr[ParticleSize]]]]
                                                     RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio
                                                     UseHardCodedRotation = True
@@ -406,7 +406,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                     ),
                                     EvolverSpraySpawner
                                     (
-                                        Frequency = 0.15 * (Min[12,Max[8,2 * ParticleCustomFloat_2]])
+                                        Frequency = 0.09 * (Min[12,Max[8,2 * ParticleCustomFloat_2]])
                                         MaxSpawnedParticleLifetime = 85
                                         Spawner = private Fumees_Dark is ParticleSpawner
                                         (
@@ -448,7 +448,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                                     PhysicAccelerationField = 3 * (float3[0,0,35] * (0.6 + 0.4 * ParticleRemainingLifeRatio))
                                                     PhysicWindField = MapWind * float3[1,1,0] * (0.54 + 0.72 * sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,35]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,35])) * (0.8 + 0.4 * ParticleCustomFloat_5) * (1 + 0.18 * getX[ParticleCustomFloat3_4]) + cross[MapWind,float3[0,0,1]] * (0.18 * getX[ParticleCustomFloat3_4] * (1 - (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28]))) + 0.50 * getY[ParticleCustomFloat3_4] * (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28])) + 0.08 * sin[ParticleElapsedTime * 0.13 + getZ[ParticleCustomFloat3_4]] * (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28]))) + MapWind * float3[0,0,3] * (0.2 + 0.1 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (10 + 35 * MapToLinearSmoothStep[ParticleElapsedTime,10,45])
                                                     Size = (Min[3400,Max[2200,ParticleCustomFloat_1 * 0.8]] * (0.9 + 0.2 * ParticleCustomFloat_5)) * (1 + 3 * sqr[Min[1,Max[0,ParticleElapsedTime div (30 + 12 * ParticleCustomFloat_5)]]] * (3 - 2 * Min[1,Max[0,ParticleElapsedTime div (30 + 12 * ParticleCustomFloat_5)]]))
-                                                    ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.22,0.22,0.22], LinearColor[0.34,0.34,0.34]] * (0.85 + 0.3 * ParticleCustomFloat_5)
+                                                    ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.08,0.08,0.08], LinearColor[0.14,0.14,0.14]] * (0.85 + 0.3 * ParticleCustomFloat_5)
                                                     Opacity = Min[1,Max[0,ParticleElapsedTime div 0.35]] * sqr[Min[1,Max[0,(0.97 - ParticleLifeRatio) div 0.52]]] * (0.60 * ParticleCustomFloat_6) * Max[0.65,Min[1,2500000 div Max[2500000,sqr[ParticleSize]]]]
                                                     RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio
                                                     Stretching = ParticleCustomFloat_3
@@ -505,7 +505,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                 ),
                                 EvolverSpraySpawner
                                 (
-                                    Frequency = 0.15 * (Min[2,Max[1,ParticleCustomFloat_2]])
+                                    Frequency = 0.09 * (Min[2,Max[1,ParticleCustomFloat_2]])
                                     MaxSpawnedParticleLifetime = 18
                                     Spawner = private Fumees_Dark is ParticleSpawner
                                     (
@@ -546,7 +546,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                                 PhysicAccelerationField = 3 * (float3[0,0,35] * (0.6 + 0.4 * ParticleRemainingLifeRatio))
                                                 PhysicWindField = MapWind * float3[1,1,0] * (0.54 + 0.72 * sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,35]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,35])) * (0.8 + 0.4 * ParticleCustomFloat_5) * (1 + 0.18 * getX[ParticleCustomFloat3_4]) + cross[MapWind,float3[0,0,1]] * (0.18 * getX[ParticleCustomFloat3_4] * (1 - (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28]))) + 0.50 * getY[ParticleCustomFloat3_4] * (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28])) + 0.08 * sin[ParticleElapsedTime * 0.13 + getZ[ParticleCustomFloat3_4]] * (sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,28]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,28]))) + MapWind * float3[0,0,3] * (0.2 + 0.1 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (10 + 35 * MapToLinearSmoothStep[ParticleElapsedTime,10,45])
                                                 Size = (Min[1600,Max[900,ParticleCustomFloat_1 * 0.8]] * (0.9 + 0.2 * ParticleCustomFloat_5)) * (1 + 3 * sqr[Min[1,Max[0,ParticleElapsedTime div (10 + 6 * ParticleCustomFloat_5)]]] * (3 - 2 * Min[1,Max[0,ParticleElapsedTime div (10 + 6 * ParticleCustomFloat_5)]]))
-                                                ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.22,0.22,0.22], LinearColor[0.34,0.34,0.34]] * (0.85 + 0.3 * ParticleCustomFloat_5)
+                                                ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.08,0.08,0.08], LinearColor[0.14,0.14,0.14]] * (0.85 + 0.3 * ParticleCustomFloat_5)
                                                                 Opacity = Min[1,Max[0,ParticleElapsedTime div 0.35]] * sqr[Min[1,Max[0,(0.97 - ParticleLifeRatio) div 0.52]]] * (0.16 * ParticleCustomFloat_6) * Max[0.65,Min[1,2500000 div Max[2500000,sqr[ParticleSize]]]]
                                                 RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio
                                                 UseHardCodedRotation = True

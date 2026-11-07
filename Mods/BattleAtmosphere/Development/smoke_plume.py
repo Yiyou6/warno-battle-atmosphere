@@ -1,4 +1,4 @@
-"""Preview.13: bounded fourfold growth and coherent varied smoke directions."""
+"""Preview.14: 60% emission and deep charcoal, preserving shape and motion."""
 import re
 from apply_profile import matching
 
@@ -16,7 +16,7 @@ LOOK = {
     'wisps': dict(life='RandomRange[10,18]', maximum=18, rate=0.6, cap=1600, spread=1000, growth=300, variation=200, alpha='0.07 * ParticleCustomFloat_6'),
 }
 
-def layered_smoke(block, kind, look=13):
+def layered_smoke(block, kind, look=14):
     """Apply to one spray only. Parent fire timing remains untouched."""
     cfg = dict(LOOK[kind])
     if look >= 6:
@@ -27,6 +27,8 @@ def layered_smoke(block, kind, look=13):
         cfg['rate'] *= 0.5
     if look >= 12:
         cfg['rate'] *= 0.6
+    if look >= 14:
+        cfg['rate'] *= 0.6
     block, n = re.subn(r'(?m)^(\s*Frequency = )10 \* ', r'\g<1>%s * ' % cfg['rate'], block); assert n == 1
     if look >= 7 and kind in ('vehicle','starter','wisps'):
         # Absolute emission floors bypass the two compounded distance/quality cuts.
@@ -34,7 +36,7 @@ def layered_smoke(block, kind, look=13):
                      'starter': 'Min[5,Max[3,2 * ParticleCustomFloat_2]]',
                      'wisps': 'Min[2,Max[1,ParticleCustomFloat_2]]'}[kind]
         if look >= 10:
-            frequency = ('0.15' if look >= 12 else '0.25' if look >= 11 else '0.5') + ' * (' + frequency + ')'
+            frequency = ('0.09' if look >= 14 else '0.15' if look >= 12 else '0.25' if look >= 11 else '0.5') + ' * (' + frequency + ')'
         block, n = re.subn(r'(?m)^(\s*Frequency = ).+$',r'\g<1>'+frequency,block); assert n == 1
     block, n = re.subn(r'MaxSpawnedParticleLifetime = \d+', 'MaxSpawnedParticleLifetime = %s' % cfg['maximum'], block); assert n == 1
     block, n = re.subn(r'(?m)^(\s*ParticleLifetime = ).+$', r'\g<1>' + cfg['life'], block); assert n == 1
@@ -149,6 +151,9 @@ def layered_smoke(block, kind, look=13):
     if look >= 11:
         color = color.replace('LinearColor[0.32,0.33,0.34], LinearColor[0.50,0.51,0.52]',
                               'LinearColor[0.22,0.22,0.22], LinearColor[0.34,0.34,0.34]')
+    if look >= 14:
+        color = color.replace('LinearColor[0.22,0.22,0.22], LinearColor[0.34,0.34,0.34]',
+                              'LinearColor[0.08,0.08,0.08], LinearColor[0.14,0.14,0.14]')
     # Replace the evolver color only; ground smoke previously had no evolver.
     block, n = re.subn(r'(?m)^(\s*)ColorModifier = (?:lerp\[ParticleLifeRatio|ParticleRemainingLifeRatio).+$', r'\g<1>' + color, block)
     if n == 0:
@@ -166,7 +171,7 @@ def section(text, marker, change):
     b = matching(text, text.index('(', a)) + 1
     return text[:a] + change(text[a:b]) + text[b:]
 
-def ground_plume(text, look=13):
+def ground_plume(text, look=14):
     def change(s):
         s = once(s,
             'Speed = ( GenFloat3[0.00, 0.00, RandomRange[0.5, 1.5] + 1.5 * SpawningParticleCustomFloat_3] + 0.2 * SpawningParticleCustomFloat3_2) * SpawningParticleCustomFloat_6 + float3[0,0,1000] + MapWind',
@@ -182,7 +187,7 @@ def ground_plume(text, look=13):
         return layered_smoke(s, 'ground', look) if look >= 4 else s
     return section(text, 'Smoke is EvolverSpraySpawner', change)
 
-def fuel_plume(text, look=13):
+def fuel_plume(text, look=14):
     def change(s):
         s = once(s, 'Speed = float3[0,0,1600] + 0.4 * SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )',
                  'Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind')
@@ -193,7 +198,7 @@ def fuel_plume(text, look=13):
         return section(s, 'EvolverSpraySpawner', lambda b: layered_smoke(b, 'fuel', look)) if look >= 4 else s
     return section(text, 'export BA_BurningFuelSmoke is', change)
 
-def dark_plume(text, look=13):
+def dark_plume(text, look=14):
     # Three smoke layers, scoped so neither of the two flame layers is edited.
     layers = [
         ('private fumees_Starter is ParticleBombSpawner', 80,

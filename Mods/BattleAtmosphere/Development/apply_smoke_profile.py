@@ -15,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.13'
+VERSION = 'smoke-preview.14'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview13-before.zip'
+BACKUP = 'archive/smoke-preview14-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -183,7 +183,7 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_match(protected_files(), protected)
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.12', appearance='smooth growth capped at 4x birth size; source-coherent initial and evolving wind variation; emission, vertical motion, gray, life, 640000 budget and explosion scale retained',
+                  relative_to='smoke-preview.13', appearance='emission 0.6x and deep nonzero charcoal; 4x growth, coherent varied wind, vertical motion, life, 640000 budget and explosion scale retained',
                   vehicle_burn_duration_multiplier=10,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,

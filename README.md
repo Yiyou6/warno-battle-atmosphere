@@ -2,7 +2,7 @@
 
 面向最高难度遭遇战的战场氛围与作战 AI 模组源码。目标是有氛围、有章法、双方付出巨大代价才决出胜者的战斗：大多数可用部队持续向前，在推进中展开宽战线，允许有用途的局部主攻集中，不允许大批部队长期闲置后方。
 
-当前快照：**combined-arms-preview.6 + smoke-preview.13**。烟团随升空渐大至出生尺寸的 4 倍，并加入同源共享的初始风偏、升空后的平滑转向和少量低频扰动，持续运动不每帧抽随机。烟量、垂直运动、中性灰、寿命、64 万预算与 AI 保持。官方构建、编译参数及安装核验通过，实际形态待新对局验证。详见 [烟柱方案](Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md) 和 [验证摘要](docs/validation-smoke-preview13.json)。
+当前快照：**combined-arms-preview.6 + smoke-preview.14**。烟色改为保留层次的深炭黑，五层发射量在 preview.13 基础上减少 40%。四倍尺寸上限、随机风偏、垂直运动、寿命、预算和 AI 保持。官方构建、编译参数和安装核验通过，实际黑度与疏密待新对局验证。详见 [烟柱方案](Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md) 和 [验证摘要](docs/validation-smoke-preview14.json)。
 
 支持范围是征服与歼灭遭遇战，算法从当前场景提取部署区和导航，不依赖黑森林专用坐标。运行组件目前严格绑定 WARNO **revision 201602**；其他游戏版本需要重新核验原生接口。
 
