@@ -339,7 +339,7 @@ export BA_BurningFuelSmoke is SimultaneousActionDeclaration
                                     [
                                         ParticleInitialiserList
                                         (
-                                            Speed = float3[0,0,1600] + 0.4 * SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )
+                                            Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind
                                         )
                                     ]
                                     ParticleDescriptor = ParticleDescriptor
@@ -351,10 +351,10 @@ export BA_BurningFuelSmoke is SimultaneousActionDeclaration
                                         )
                                         Evolvers = ParticleStandardEvolverListWithPhysic
                                         (
-                                            FluidFriction = 0.12
-                                            PhysicAccelerationField = float3[0.00, 0.00, 240.00]
-                                            PhysicWindField = 0.5 * ParticleCustomFloat3_3
-                                            Size = Min[16000, ( ParticleCustomFloat_1 + ( lerp[ParticleCustomFloat_5, 300, 100] * ParticleElapsedTime ) ) * ParticleCustomFloat_2]
+                                            FluidFriction = 0.18
+                                            PhysicAccelerationField = float3[0.00, 0.00, 35.00]
+                                            PhysicWindField = 0.35 * MapWind
+                                            Size = Min[30000, (Max[600, ParticleCustomFloat_1 * 0.5] + (220 + 120 * ParticleCustomFloat_5) * ParticleElapsedTime) * ParticleCustomFloat_2]
                                             ColorModifier = lerp[ParticleLifeRatio, LinearColor[0.05, 0.05, 0.05], LinearColor[0.17, 0.17, 0.17]]
                                             Opacity = AttackSustainDecay[ParticleLifeRatio, ParticleCustomFloat_4, 0.8] * ParticleCustomFloat_6 * ParticleCustomFloat_3
                                             RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio

@@ -168,8 +168,8 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                                                 CustomFloat_1 = SpawningParticleCustomFloat_4  * RandomRange[0.5,2]// Size
                                                                 CustomFloat_2 = SpawningParticleCustomFloat_8 * SpawningParticleRemainingLifeRatio// Opacity
                                                                 CustomFloat_3 = RandomRange[0, 0.5]
-                                                                CustomFloat_5 = SpawningParticleCustomFloat_9
-                                                                Speed = ( GenFloat3[0.00, 0.00, RandomRange[0.5, 1.5] + 1.5 * SpawningParticleCustomFloat_3] + 0.2 * SpawningParticleCustomFloat3_2) * SpawningParticleCustomFloat_6 + float3[0,0,1000] + MapWind
+                                                                CustomFloat_5 = RandomUnit
+                                                                Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind
                                                                 Rotation = RandomUnit
                                                                 EmissivePower = 1
                                                             ),
@@ -184,12 +184,12 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                                             )
                                                             Evolvers = ParticleStandardEvolverListWithPhysic
                                                             (
-                                                                FluidFriction = 0.075
-                                                                PhysicAccelerationField = float3[0.00, 0.00, 240.00] * (0.6 + 0.4 * ParticleRemainingLifeRatio)
-                                                                PhysicWindField = MapWind * lerp[ParticleCustomFloat_5, 2.0, 1.0]
+                                                                FluidFriction = 0.18
+                                                                PhysicAccelerationField = float3[0.00, 0.00, 35.00] * (0.6 + 0.4 * ParticleRemainingLifeRatio)
+                                                                PhysicWindField = MapWind * lerp[ParticleCustomFloat_5, 0.45, 0.25]
 
                                                                 Opacity = AttackSustainDecay[ParticleLifeRatio, 0.008, 0.65] * ParticleCustomFloat_2
-                                                                Size = Min[16000, ParticleCustomFloat_1 * (0.5 + 2.5 * ParticleLifeRatio)]
+                                                                Size = Min[30000, Max[600, ParticleCustomFloat_1 * 0.5] + (220 + 120 * ParticleCustomFloat_5) * ParticleElapsedTime]
                                                                 Animation = lerp[ParticleCustomFloat_3, 1, ParticleLifeRatio]
                                                             )
                                                         )

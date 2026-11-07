@@ -6,6 +6,7 @@ import json
 import re
 import zipfile
 from apply_profile import matching, object_span
+from smoke_plume import DARK, CADAVER, ground_plume, fuel_plume, dark_plume, cadaver_duration, vehicle_fuel_durations
 
 DEV = Path(__file__).resolve().parent
 MOD = DEV.parent
@@ -14,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.2'
+VERSION = 'smoke-preview.3'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview2-before.zip'
+BACKUP = 'archive/smoke-preview3-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -98,8 +99,9 @@ def expected_files():
     with zipfile.ZipFile(MOD / 'base.zip') as z:
         def read(name):
             return z.read(name).decode('utf-8-sig').replace('\r\n', '\n')
-        before = {BINDER: read(BINDER), FUEL: read(FUEL)}
-        after = {BINDER: ground(before[BINDER]), FUEL: fuel(before[FUEL])}
+        before = {n: read(n) for n in (BINDER, FUEL, DARK, CADAVER)}
+        after = {BINDER: ground_plume(ground(before[BINDER])), FUEL: fuel_plume(fuel(before[FUEL])),
+                 DARK: dark_plume(before[DARK]), CADAVER: cadaver_duration(before[CADAVER])}
         callers = []
         excluded = []
         for name in z.namelist():
@@ -112,6 +114,9 @@ def expected_files():
             if stem.startswith(('fx_destruction_', 'fx_impact_destruction_unite_')):
                 before[name] = text
                 after[name] = text.replace(OLD, NEW)
+                if stem.startswith('fx_impact_destruction_unite_'):
+                    after[name], duration_changes = vehicle_fuel_durations(after[name])
+                    assert duration_changes, 'Vehicle fuel duration calls not found: ' + name
                 callers.append({'path': name, 'calls': text.count(OLD)})
             else:
                 assert (MOD / name).read_text(encoding='utf-8-sig') == text, name
@@ -136,7 +141,7 @@ def main():
     before, after, callers, excluded = expected_files()
     for name, target in after.items():
         current = (MOD / name).read_text(encoding='utf-8-sig')
-        previous = ground(before[name], 1) if name == BINDER else fuel(before[name], 1) if name == FUEL else target
+        previous = ground(before[name]) if name == BINDER else fuel(before[name]) if name == FUEL else before[name].replace(OLD, NEW)
         assert current in (before[name], previous, target), 'Unreviewed edits: ' + name
         if not args.write:
             assert current == target, 'Source not yet applied: ' + name
@@ -161,7 +166,7 @@ def main():
     assert protected_files() == protected
     report = dict(version=VERSION, status='source-verified; visual-unverified',
                   relative_to='smoke-preview.1', lifetime_multiplier=MULTIPLIER,
-                  emission_multiplier=MULTIPLIER,
+                  emission_multiplier=MULTIPLIER, vehicle_burn_duration_multiplier=10,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,
                   backup=archive.relative_to(MOD).as_posix())

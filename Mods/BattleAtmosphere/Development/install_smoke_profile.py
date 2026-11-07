@@ -32,7 +32,8 @@ def main():
                   installed_at=datetime.now(timezone.utc).isoformat(), outputs=checked['outputs'],
                   config_sha256=sha(saved / 'Config.ini'), runtime_dll_sha256=sha(ROOT / 'version.dll'),
                   ai_unchanged=True, gameplay_smoke_and_fire_unchanged=True,
-                  compiled_calls=checked['compiled_calls'], compiled_scaling=checked['compiled_scaling'], backup=BACKUP)
+                  compiled_calls=checked['compiled_calls'], compiled_scaling=checked['compiled_scaling'],
+                  plume=checked['plume'], backup=BACKUP)
     (DEV / 'smoke-release.json').write_text(json.dumps(result, indent=2) + '\n')
     print('INSTALLED %s; current AI and runtime preserved' % VERSION)
 
