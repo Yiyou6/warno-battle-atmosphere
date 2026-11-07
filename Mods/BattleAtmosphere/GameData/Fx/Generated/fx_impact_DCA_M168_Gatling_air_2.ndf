@@ -27,8 +27,8 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (400) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (400) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[-785,1731,1411] + parPosition ),
                             ]
@@ -41,8 +41,8 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (450) ),
-                        ( 'parInitialSize', 2 * (20) ),
+                        ( 'parFinalSize', 3 * (450) ),
+                        ( 'parInitialSize', 3 * (20) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', float3[247,10,16] + parPosition ),
                     ]
@@ -57,8 +57,8 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (600) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (600) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[-1683,-1457,-1667] + parPosition ),
                             ]
@@ -75,8 +75,8 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (500) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (500) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[2060,500,486] + parPosition ),
                             ]
@@ -106,7 +106,7 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
                                 ( 'Position', float3[2061,508,567] + parPosition ),
                             ]
@@ -126,7 +126,7 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
                                 ( 'Position', float3[-1661,-1446,-1533] + parPosition ),
                             ]
@@ -142,7 +142,7 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
                         ( 'Position', float3[0,0,500] + parPosition ),
                     ]
@@ -160,7 +160,7 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
                                 ( 'Position', float3[-794,1631,1195] + parPosition ),
                             ]

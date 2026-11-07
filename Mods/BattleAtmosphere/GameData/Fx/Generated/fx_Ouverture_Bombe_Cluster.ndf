@@ -25,8 +25,8 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (50) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (50) ),
                         ( 'parIntensity', 300 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -54,8 +54,8 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.35 ),
-                        ( 'parFinalSize', 2 * (3500) ),
-                        ( 'parInitialSize', 2 * (15) ),
+                        ( 'parFinalSize', 3 * (3500) ),
+                        ( 'parInitialSize', 3 * (15) ),
                         ( 'parZBias', 500 ),
                     ]
                 ),
@@ -72,8 +72,8 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 4 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (6000) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (6000) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -104,7 +104,7 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 3 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (3500) ),
+                                ( 'parSize', 3 * (3500) ),
                                 ( 'parDeltaPositionAdditif', float3[0,0,-1580] + parPosition ),
                             ]
                         ),
@@ -126,7 +126,7 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 2 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (4000) ),
+                                ( 'parSize', 3 * (4000) ),
                                 ( 'parDeltaPositionAdditif', float3[-118,-21,-1580] + parPosition ),
                             ]
                         ),
@@ -144,7 +144,7 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 1 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (300) ),
+                        ( 'parSize', 3 * (300) ),
                         ( 'parDeltaPositionAdditif', float3[-22,-1,-632] + parPosition ),
                     ]
                 ),
@@ -162,7 +162,7 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                                 ( 'parDuration', 2 ),
                                 ( 'parLuminosite', 4 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', parPosition ),
                             ]
@@ -178,7 +178,7 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parDuration', 0.2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (5000) ),
+                        ( 'parSize', 3 * (5000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
                         ( 'Position', parPosition ),
                     ]
@@ -198,14 +198,14 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[150,150,400]) ),
+                        ( 'parCloudsize', 3 * (float3[150,150,400]) ),
                         ( 'parColor', float3[0.3686275,0.3686275,0.3686275] ),
                         ( 'parCount', 4 ),
                         ( 'parDecayLength', 0.1 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parParticleSize', 2 * (4000) ),
+                        ( 'parParticleSize', 3 * (4000) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 5 ),
                         ( 'parSpawnerDuration', 1 ),
@@ -229,10 +229,10 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 4 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.5) ),
+                        ( 'parDebritSizeMul', 3 * (0.5) ),
                         ( 'parDir', float3[0,0,1] ),
                         ( 'parDispersion', 1000 ),
-                        ( 'parFireParticleEndSize', 2 * (150) ),
+                        ( 'parFireParticleEndSize', 3 * (150) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 3000 ),
                         ( 'parLifetime', 10 ),
@@ -242,8 +242,8 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.9058824,0.9058824,0.9019608] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2100) ),
-                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2100) ),
+                        ( 'parSmokeParticleStartSize', 3 * (600) ),
                         ( 'parSpeed', float3[6000,1000,1000] ),
                     ]
                 ),
@@ -266,11 +266,11 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (0.25) ),
+                        ( 'parDebritSizeMul', 3 * (0.25) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 1000 ),
-                        ( 'parFireParticleEndSize', 2 * (300) ),
-                        ( 'parFireParticleStartSize', 2 * (150) ),
+                        ( 'parFireParticleEndSize', 3 * (300) ),
+                        ( 'parFireParticleStartSize', 3 * (150) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 3 ),
                         ( 'parMeshType', 4 ),
@@ -279,8 +279,8 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,1,1] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (800) ),
-                        ( 'parSmokeParticleStartSize', 2 * (300) ),
+                        ( 'parSmokeParticleEndSize', 3 * (800) ),
+                        ( 'parSmokeParticleStartSize', 3 * (300) ),
                         ( 'parSpeed', float3[15000,0,0] ),
                     ]
                 ),
@@ -306,7 +306,7 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parNarrowness', 0.2 ),
                         ( 'parPositionRadius', 500 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (6) ),
+                        ( 'parSize', 3 * (6) ),
                         ( 'parSpeedMax', 6000 ),
                         ( 'parSpeedMin', 2000 ),
                         ( 'parStretch', 2.5 ),
@@ -334,7 +334,7 @@ export fx_Ouverture_Bombe_Cluster is SimultaneousActionDeclaration
                         ( 'parNarrowness', 5 ),
                         ( 'parPositionRadius', 10 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (12) ),
+                        ( 'parSize', 3 * (12) ),
                         ( 'parSpeedMax', 10000 ),
                         ( 'parSpeedMin', 6000 ),
                         ( 'parStretch', 1 ),

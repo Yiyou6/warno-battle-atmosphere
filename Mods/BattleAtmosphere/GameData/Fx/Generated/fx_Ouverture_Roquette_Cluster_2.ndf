@@ -25,8 +25,8 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (50) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (50) ),
                         ( 'parIntensity', 300 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -54,8 +54,8 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.35 ),
-                        ( 'parFinalSize', 2 * (3500) ),
-                        ( 'parInitialSize', 2 * (15) ),
+                        ( 'parFinalSize', 3 * (3500) ),
+                        ( 'parInitialSize', 3 * (15) ),
                         ( 'parZBias', 500 ),
                     ]
                 ),
@@ -72,8 +72,8 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 4 ),
                         ( 'parDuration', 0.08 ),
-                        ( 'parFinalSize', 2 * (4000) ),
-                        ( 'parInitialSize', 2 * (250) ),
+                        ( 'parFinalSize', 3 * (4000) ),
+                        ( 'parInitialSize', 3 * (250) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -104,7 +104,7 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 2 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1250) ),
+                                ( 'parSize', 3 * (1250) ),
                                 ( 'parDeltaPositionAdditif', float3[0,0,-294] + parPosition ),
                             ]
                         ),
@@ -126,7 +126,7 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 4 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1500) ),
+                                ( 'parSize', 3 * (1500) ),
                                 ( 'parDeltaPositionAdditif', float3[-118,-21,-993] + parPosition ),
                             ]
                         ),
@@ -144,7 +144,7 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 4 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (3500) ),
+                        ( 'parSize', 3 * (3500) ),
                         ( 'parDeltaPositionAdditif', float3[-22,-1,-632] + parPosition ),
                     ]
                 ),
@@ -157,7 +157,7 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parDuration', 0.08 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (10000) ),
+                        ( 'parSize', 3 * (10000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
                         ( 'Position', parPosition ),
                     ]
@@ -175,7 +175,7 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (8000) ),
+                                ( 'parSize', 3 * (8000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
                                 ( 'Position', parPosition ),
                             ]
@@ -197,14 +197,14 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[150,150,400]) ),
+                        ( 'parCloudsize', 3 * (float3[150,150,400]) ),
                         ( 'parColor', float3[0.2117647,0.2117647,0.2117647] ),
                         ( 'parCount', 4 ),
                         ( 'parDecayLength', 0.1 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.65 ),
-                        ( 'parParticleSize', 2 * (3500) ),
+                        ( 'parParticleSize', 3 * (3500) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 4 ),
                         ( 'parSpawnerDuration', 1.25 ),
@@ -228,10 +228,10 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 3 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.5) ),
+                        ( 'parDebritSizeMul', 3 * (0.5) ),
                         ( 'parDir', float3[0,0,1] ),
                         ( 'parDispersion', 1000 ),
-                        ( 'parFireParticleEndSize', 2 * (150) ),
+                        ( 'parFireParticleEndSize', 3 * (150) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 3000 ),
                         ( 'parLifetime', 10 ),
@@ -241,8 +241,8 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.6941177,0.6941177,0.6941177] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2100) ),
-                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2100) ),
+                        ( 'parSmokeParticleStartSize', 3 * (600) ),
                         ( 'parSpeed', float3[6000,1000,1000] ),
                     ]
                 ),
@@ -265,11 +265,11 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 5 ),
-                        ( 'parDebritSizeMul', 2 * (0.25) ),
+                        ( 'parDebritSizeMul', 3 * (0.25) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 1000 ),
-                        ( 'parFireParticleEndSize', 2 * (300) ),
-                        ( 'parFireParticleStartSize', 2 * (150) ),
+                        ( 'parFireParticleEndSize', 3 * (300) ),
+                        ( 'parFireParticleStartSize', 3 * (150) ),
                         ( 'parGravity', 1500 ),
                         ( 'parLifetime', 4 ),
                         ( 'parMeshType', 4 ),
@@ -278,8 +278,8 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.8196079,0.8196079,0.8196079] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (800) ),
-                        ( 'parSmokeParticleStartSize', 2 * (400) ),
+                        ( 'parSmokeParticleEndSize', 3 * (800) ),
+                        ( 'parSmokeParticleStartSize', 3 * (400) ),
                         ( 'parSpeed', float3[15000,0,0] ),
                     ]
                 ),
@@ -305,7 +305,7 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parNarrowness', 0.4 ),
                         ( 'parPositionRadius', 500 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (8) ),
+                        ( 'parSize', 3 * (8) ),
                         ( 'parSpeedMax', 8000 ),
                         ( 'parSpeedMin', 4000 ),
                         ( 'parStretch', 2.5 ),
@@ -333,7 +333,7 @@ export fx_Ouverture_Roquette_Cluster_2 is SimultaneousActionDeclaration
                         ( 'parNarrowness', 8 ),
                         ( 'parPositionRadius', 15 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (10) ),
+                        ( 'parSize', 3 * (10) ),
                         ( 'parSpeedMax', 12000 ),
                         ( 'parSpeedMin', 4000 ),
                         ( 'parStretch', 1 ),

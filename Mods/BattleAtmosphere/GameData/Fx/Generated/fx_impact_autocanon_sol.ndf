@@ -27,7 +27,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.4999998 ),
                         ( 'parDustColor', float3[0.8705883,0.8705883,0.8705883] ),
-                        ( 'parDustSize', 2 * (400) ),
+                        ( 'parDustSize', 3 * (400) ),
                         ( 'parMudSize', 0 ),
                         ( 'parOpacity', 0.5 ),
                     ]
@@ -37,8 +37,8 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.25 ),
-                        ( 'parFinalSize', 2 * (2700) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2700) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parIntensity', 3200 ),
                         ( 'parPositionRelative', float3[0,1,0] ),
                     ]
@@ -50,7 +50,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
                         ( 'parCount', 10 ),
                         ( 'parDuration', 0.75 ),
-                        ( 'parSize', 2 * (450) ),
+                        ( 'parSize', 3 * (450) ),
                     ]
                 ),
                 TActionCall
@@ -61,7 +61,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 10 ),
-                        ( 'parSize', 2 * (500) ),
+                        ( 'parSize', 3 * (500) ),
                     ]
                 ),
                 TActionCall
@@ -71,7 +71,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 1 ),
-                        ( 'parDebritSizeMul', 2 * (0.001) ),
+                        ( 'parDebritSizeMul', 3 * (0.001) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 540 ),
                         ( 'parFireParticleEndSize', 0 ),
@@ -84,7 +84,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5058824,0.4705883,0.4470589] ),
                         ( 'parSmokeColorMultiplier', 0.4 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (500) ),
+                        ( 'parSmokeParticleEndSize', 3 * (500) ),
                         ( 'parSmokeParticleStartSize', 0 ),
                         ( 'parSpeed', float3[2000,2000,3000] ),
                     ]
@@ -95,8 +95,8 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.25 ),
-                        ( 'parFinalSize', 2 * (1500) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (1500) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -107,7 +107,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 18 ),
                         ( 'parEndColor', float3[0,0,0] ),
-                        ( 'parEndSize', 2 * (1500) ),
+                        ( 'parEndSize', 3 * (1500) ),
                         ( 'parFluidFriction', 3.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 1.2 ),
@@ -118,7 +118,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (300) ),
+                        ( 'parStartSize', 3 * (300) ),
                         ( 'parStartSpeed3D', float3[1000,1000,0] ),
                         ( 'parWindWeight', 1 ),
                     ]
@@ -140,8 +140,8 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (1500) ),
-                        ( 'parInitialSize', 2 * (500) ),
+                        ( 'parFinalSize', 3 * (1500) ),
+                        ( 'parInitialSize', 3 * (500) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', float3[0,1,200] + parPosition ),
                     ]
@@ -154,7 +154,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parDuration', 0.5 ),
                         ( 'parImpactPos', parDirection ),
                         ( 'parLuminosite', 6 ),
-                        ( 'parSize', 2 * (1200) ),
+                        ( 'parSize', 3 * (1200) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', float3[0,1,100] + parPosition ),
                     ]
@@ -177,7 +177,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 0.2800001 ),
                         ( 'parOpacity', 0.98 ),
-                        ( 'parSizeLBU', 2 * (44.65116) ),
+                        ( 'parSizeLBU', 3 * (44.65116) ),
                         ( 'Position', float3[-8,34,500] + parPosition ),
                     ]
                 ),
@@ -190,7 +190,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parDuration', 1.4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (1300) ),
+                        ( 'parSize', 3 * (1300) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[0,1,250] + parPosition ),
                     ]
@@ -214,7 +214,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parImpactPos', parDirection ),
                         ( 'parLuminosite', 6 ),
-                        ( 'parSize', 2 * (550) ),
+                        ( 'parSize', 3 * (550) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', float3[163,-54,-18] + parPosition ),
                     ]
@@ -235,7 +235,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parDuration', 0.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.75 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[14,-1,217] + parPosition ),
                     ]
@@ -253,7 +253,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parLifetime', 2 ),
                         ( 'parNarrowness', 1.2 ),
                         ( 'parPositionRadius', 310 ),
-                        ( 'parSize', 2 * (11) ),
+                        ( 'parSize', 3 * (11) ),
                         ( 'parSpeedMax', 1500 ),
                         ( 'parSpeedMin', 500 ),
                         ( 'parStretch', 0.5 ),
@@ -280,11 +280,11 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.35) ),
+                        ( 'parDebritSizeMul', 3 * (0.35) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 560 ),
-                        ( 'parFireParticleEndSize', 2 * (300) ),
-                        ( 'parFireParticleStartSize', 2 * (50) ),
+                        ( 'parFireParticleEndSize', 3 * (300) ),
+                        ( 'parFireParticleStartSize', 3 * (50) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 2 ),
                         ( 'parMeshType', 1 ),
@@ -293,7 +293,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (400) ),
+                        ( 'parSmokeParticleEndSize', 3 * (400) ),
                         ( 'parSmokeParticleStartSize', 0 ),
                         ( 'parSpeed', float3[2000,2000,3300] ),
                     ]
@@ -351,7 +351,7 @@ export fx_impact_autocanon_sol is SimultaneousActionDeclaration
                         ( 'parNarrowness', 1.32 ),
                         ( 'parOpacity', 1 ),
                         ( 'parRadius', 150 ),
-                        ( 'parSize', 2 * (550) ),
+                        ( 'parSize', 3 * (550) ),
                     ]
                 ),
             ]

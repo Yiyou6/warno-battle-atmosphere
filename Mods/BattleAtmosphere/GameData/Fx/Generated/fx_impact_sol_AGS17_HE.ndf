@@ -23,8 +23,8 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (1500) ),
-                        ( 'parInitialSize', 2 * (500) ),
+                        ( 'parFinalSize', 3 * (1500) ),
+                        ( 'parInitialSize', 3 * (500) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', parPosition ),
                     ]
@@ -53,7 +53,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.5 ),
                                 ( 'parLuminosite', 6 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', parPosition ),
                             ]
@@ -71,7 +71,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.7529413,0.7411765,0.7411765] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -81,7 +81,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.6313726,0.6117647,0.6117647] ),
                                 ( 'parStartRandomRadius', 2000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (100) ),
+                                ( 'parStartSize', 3 * (100) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -95,7 +95,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                        ( 'parEndSize', 2 * (1000) ),
+                        ( 'parEndSize', 3 * (1000) ),
                         ( 'parFluidFriction', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 3 ),
@@ -105,7 +105,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.1098039,0.1098039,0.1098039] ),
                         ( 'parStartRandomRadius', 200 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (300) ),
+                        ( 'parStartSize', 3 * (300) ),
                         ( 'parStartSpeed', 50 ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -127,7 +127,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 10 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 2 * (1500) ),
+                        ( 'parSize', 3 * (1500) ),
                     ]
                 ),
                 TActionCall
@@ -138,7 +138,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                         ( 'parCount', 20 ),
                         ( 'parDuration', 1.25 ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (2000) ),
+                        ( 'parSize', 3 * (2000) ),
                     ]
                 ),
                 TSequentialAction
@@ -164,8 +164,8 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 1 ),
                         ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                        ( 'parDustSize', 2 * (800) ),
-                        ( 'parMudSize', 2 * (400) ),
+                        ( 'parDustSize', 3 * (800) ),
+                        ( 'parMudSize', 3 * (400) ),
                         ( 'parOpacity', 0.25 ),
                         ( 'parRandomPosition', 100 ),
                     ]
@@ -193,7 +193,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -209,10 +209,10 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (0.4) ),
+                                ( 'parDebritSizeMul', 3 * (0.4) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 250 ),
-                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 6000 ),
                                 ( 'parLifetime', 5 ),
@@ -222,8 +222,8 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.8000001,0.6980392,0.5019608] ),
                                 ( 'parSmokeColorMultiplier', 0.1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (1000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (150) ),
+                                ( 'parSmokeParticleEndSize', 3 * (1000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (150) ),
                                 ( 'parSpeed', float3[3000,3000,6000] ),
                             ]
                         ),
@@ -250,7 +250,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.8156863,0.627451,0.4784314] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -260,7 +260,7 @@ export fx_impact_sol_AGS17_HE is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.6627451,0.5137255,0.3882353] ),
                                 ( 'parStartRandomRadius', 2500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 80 ),
                                 ( 'parWindWeight', 5 ),
                             ]

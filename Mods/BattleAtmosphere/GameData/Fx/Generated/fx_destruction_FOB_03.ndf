@@ -20,7 +20,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (350000) ),
+                        ( 'parFinalSize', 3 * (350000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1000 ),
                     ]
@@ -31,8 +31,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (60000) ),
-                        ( 'parInitialSize', 2 * (8000) ),
+                        ( 'parFinalSize', 3 * (60000) ),
+                        ( 'parInitialSize', 3 * (8000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -48,7 +48,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1294118,0.1019608,0.07843138] ),
                                 ( 'parCount', 25 ),
                                 ( 'parDuration', 5 ),
-                                ( 'parSize', 2 * (5500) ),
+                                ( 'parSize', 3 * (5500) ),
                             ]
                         ),
                     ]
@@ -60,7 +60,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.1529412,0.1058824,0.07058824] ),
                         ( 'parCount', 25 ),
                         ( 'parDuration', 5 ),
-                        ( 'parSize', 2 * (6500) ),
+                        ( 'parSize', 3 * (6500) ),
                     ]
                 ),
                 TActionCall
@@ -92,7 +92,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 2 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (10000) ),
+                                ( 'parSize', 3 * (10000) ),
                                 ( 'parDeltaPositionAdditif', float3[0,0,-2238] + parPosition ),
                             ]
                         ),
@@ -114,7 +114,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 3 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (10000) ),
+                                ( 'parSize', 3 * (10000) ),
                                 ( 'parDeltaPositionAdditif', float3[-11,-42,-2115] + parPosition ),
                             ]
                         ),
@@ -132,7 +132,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (10000) ),
+                        ( 'parSize', 3 * (10000) ),
                         ( 'parDeltaPositionAdditif', float3[-11,-42,-2115] ),
                     ]
                 ),
@@ -148,7 +148,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 1 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (10000) ),
+                        ( 'parSize', 3 * (10000) ),
                         ( 'parDeltaPositionAdditif', float3[-11,-42,-2238] + parPosition ),
                     ]
                 ),
@@ -168,7 +168,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (10000) ),
+                                ( 'parSize', 3 * (10000) ),
                                 ( 'parDeltaPositionAdditif', float3[-60,-67,-2238] + parPosition ),
                             ]
                         ),
@@ -260,7 +260,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 10 ),
-                        ( 'parSize', 2 * (13000) ),
+                        ( 'parSize', 3 * (13000) ),
                     ]
                 ),
                 TSequentialAction
@@ -280,7 +280,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (19) ),
+                                ( 'parSize', 3 * (19) ),
                                 ( 'parSpeedMax', 8677 ),
                                 ( 'parSpeedMin', 6771 ),
                                 ( 'parStretch', 0.7 ),
@@ -307,7 +307,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 4 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 10000 ),
                                 ( 'parSpeedMin', 7287 ),
                                 ( 'parStretch', 0.7 ),
@@ -334,7 +334,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 4 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 9103 ),
                                 ( 'parSpeedMin', 7422 ),
                                 ( 'parStretch', 0.7 ),
@@ -361,7 +361,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8744 ),
                                 ( 'parSpeedMin', 7556 ),
                                 ( 'parStretch', 0.7 ),
@@ -388,7 +388,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8363 ),
                                 ( 'parSpeedMin', 7130 ),
                                 ( 'parStretch', 0.7 ),
@@ -415,7 +415,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 4 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 9013 ),
                                 ( 'parSpeedMin', 8004 ),
                                 ( 'parStretch', 0.7 ),
@@ -442,7 +442,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 1.8 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (19) ),
+                                ( 'parSize', 3 * (19) ),
                                 ( 'parSpeedMax', 8027 ),
                                 ( 'parSpeedMin', 6704 ),
                                 ( 'parStretch', 0.7 ),
@@ -469,7 +469,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 10000 ),
                                 ( 'parSpeedMin', 7399 ),
                                 ( 'parStretch', 0.7 ),
@@ -496,7 +496,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8229 ),
                                 ( 'parSpeedMin', 6973 ),
                                 ( 'parStretch', 0.7 ),
@@ -518,7 +518,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parLifetime', 2.5 ),
                         ( 'parNarrowness', 0.1 ),
                         ( 'parPositionRadius', 200 ),
-                        ( 'parSize', 2 * (10) ),
+                        ( 'parSize', 3 * (10) ),
                         ( 'parSpeedMax', 8000 ),
                         ( 'parSpeedMin', 5000 ),
                         ( 'parStretch', 1 ),
@@ -544,7 +544,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8969 ),
                                 ( 'parSpeedMin', 6704 ),
                                 ( 'parStretch', 0.7 ),
@@ -571,7 +571,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 4 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8834 ),
                                 ( 'parSpeedMin', 7466 ),
                                 ( 'parStretch', 0.7 ),
@@ -598,7 +598,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8498 ),
                                 ( 'parSpeedMin', 6592 ),
                                 ( 'parStretch', 0.7 ),
@@ -620,7 +620,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 0 ),
                         ( 'parPositionRadius', 680 ),
-                        ( 'parSize', 2 * (10) ),
+                        ( 'parSize', 3 * (10) ),
                         ( 'parSpeedMax', 2800 ),
                         ( 'parSpeedMin', 300 ),
                         ( 'parStretch', 1 ),
@@ -640,7 +640,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.01568628,0.01568628,0.01568628] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -650,7 +650,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 5 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -672,8 +672,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (52000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (52000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 20000 ),
                         ( 'parPositionRelative', float3[-4,-9,0] ),
                     ]
@@ -703,7 +703,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parDispersion', 2500 ),
                                 ( 'parDuration', 3 ),
                                 ( 'parLuminosite', 3 ),
-                                ( 'parSize', 2 * (10000) ),
+                                ( 'parSize', 3 * (10000) ),
                             ]
                         ),
                     ]
@@ -729,7 +729,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parDispersion', 3000 ),
                         ( 'parDuration', 4 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (10000) ),
+                        ( 'parSize', 3 * (10000) ),
                     ]
                 ),
             ]
@@ -757,7 +757,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parDispersion', 5000 ),
                                 ( 'parDuration', 3 ),
                                 ( 'parLuminosite', 2 ),
-                                ( 'parSize', 2 * (10000) ),
+                                ( 'parSize', 3 * (10000) ),
                             ]
                         ),
                     ]
@@ -789,7 +789,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.8 ),
-                                ( 'parFinalSize', 2 * (800000) ),
+                                ( 'parFinalSize', 3 * (800000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 256 ),
                             ]
@@ -820,7 +820,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parDuration', 4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[0,0,-117] ),
                             ]
@@ -837,7 +837,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parDuration', 4 ),
                         ( 'parLuminosite', 10 ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', 0 ),
                         ( 'parStartPosition', float3[0,0,0] ),
                     ]
@@ -856,7 +856,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parDuration', 4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 0.6 ),
-                                ( 'parSize', 2 * (20000) ),
+                                ( 'parSize', 3 * (20000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[0,0,707] ),
                             ]
@@ -877,7 +877,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parDuration', 5 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parSize', 2 * (25000) ),
+                                ( 'parSize', 3 * (25000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[0,0,821] ),
                             ]
@@ -891,10 +891,10 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 10 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.5) ),
+                        ( 'parDebritSizeMul', 3 * (0.5) ),
                         ( 'parDispersion', 1200 ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (200) ),
+                        ( 'parFireParticleStartSize', 3 * (200) ),
                         ( 'parLifetime', 5 ),
                         ( 'parMeshType', 1 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -902,8 +902,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                         ( 'parSmokeColorMultiplier', 0.3 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (600) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSmokeParticleEndSize', 3 * (600) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
                         ( 'parSpeed', float3[4250,4360,9983] ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
@@ -919,11 +919,11 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 20 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (4) ),
+                                ( 'parDebritSizeMul', 3 * (4) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -932,8 +932,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,15000] ),
                             ]
                         ),
@@ -946,7 +946,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1843137,0.1843137,0.1843137] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -957,7 +957,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartHeight', 500 ),
                         ( 'parStartRotation', 0 ),
-                        ( 'parStartSize', 2 * (1500) ),
+                        ( 'parStartSize', 3 * (1500) ),
                         ( 'parStartSpeed3D', float3[0,0,0] ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -969,7 +969,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1921569,0.1921569,0.1921569] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -980,7 +980,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4705883,0.4627451,0.454902] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed3D', float3[3000,3000,2000] ),
                         ( 'parWindWeight', 6 ),
                     ]
@@ -992,7 +992,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.04705883,0.04705883,0.04705883] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -1003,7 +1003,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.5372549,0.5294118,0.5254902] ),
                         ( 'parStartHeight', 250 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed3D', float3[500,500,500] ),
                         ( 'parWindWeight', 2 ),
                     ]
@@ -1213,7 +1213,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (28500) ),
+                                ( 'parSize', 3 * (28500) ),
                             ]
                         ),
                     ]
@@ -1245,7 +1245,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1273,7 +1273,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1303,7 +1303,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1335,7 +1335,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1367,7 +1367,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1399,7 +1399,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1427,7 +1427,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1457,7 +1457,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1489,7 +1489,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1521,7 +1521,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1553,7 +1553,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1585,7 +1585,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1617,7 +1617,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1649,7 +1649,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1681,7 +1681,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1713,7 +1713,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1739,11 +1739,11 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 40 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (5) ),
+                                ( 'parDebritSizeMul', 3 * (5) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 1000 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 12 ),
                                 ( 'parMeshType', 1 ),
@@ -1752,8 +1752,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[4000,4000,15000] ),
                             ]
                         ),
@@ -1781,7 +1781,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 2 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 25 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 540 ),
                                 ( 'parFireParticleEndSize', 0 ),
@@ -1794,8 +1794,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.145098,0.1411765,0.1372549] ),
                                 ( 'parSmokeColorMultiplier', 0.4 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (4000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (4000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[12000,12000,8000] ),
                             ]
                         ),
@@ -1823,10 +1823,10 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 8 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 25 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 340 ),
-                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 1500 ),
                                 ( 'parLifetime', 4 ),
@@ -1836,8 +1836,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1568628,0.1568628,0.1490196] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[8000,8000,15000] ),
                             ]
                         ),
@@ -1871,7 +1871,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity1', 0.05 ),
                                 ( 'parOpacity2', 0.05 ),
                                 ( 'parParticleRotationSpeed', 1 ),
-                                ( 'parSize1', 2 * (60000) ),
+                                ( 'parSize1', 3 * (60000) ),
                                 ( 'parSize2', 0 ),
                                 ( 'parSpawnCount', 200 ),
                                 ( 'parSpawnDuration', 0.25 ),
@@ -1909,7 +1909,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity1', 0.05 ),
                                 ( 'parOpacity2', 0.05 ),
                                 ( 'parParticleRotationSpeed', 1 ),
-                                ( 'parSize1', 2 * (40000) ),
+                                ( 'parSize1', 3 * (40000) ),
                                 ( 'parSize2', 0 ),
                                 ( 'parSpawnCount', 200 ),
                                 ( 'parSpawnDuration', 0.2 ),
@@ -1947,7 +1947,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity1', 0.05 ),
                                 ( 'parOpacity2', 0.05 ),
                                 ( 'parParticleRotationSpeed', 1 ),
-                                ( 'parSize1', 2 * (40000) ),
+                                ( 'parSize1', 3 * (40000) ),
                                 ( 'parSize2', 0 ),
                                 ( 'parSpawnCount', 200 ),
                                 ( 'parSpawnDuration', 0.25 ),
@@ -1985,8 +1985,8 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parOpacity1', 0.02 ),
                                 ( 'parOpacity2', 0.02 ),
                                 ( 'parParticleRotationSpeed', 1 ),
-                                ( 'parSize1', 2 * (80000) ),
-                                ( 'parSize2', 2 * (10000) ),
+                                ( 'parSize1', 3 * (80000) ),
+                                ( 'parSize2', 3 * (10000) ),
                                 ( 'parSpawnCount', 3000 ),
                                 ( 'parSpawnDuration', 0.6 ),
                                 ( 'parSpawnRadius', 80000 ),
@@ -2016,7 +2016,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.7843138,0.6156863,0.4784314] ),
-                                ( 'parEndSize', 2 * (5750) ),
+                                ( 'parEndSize', 3 * (5750) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -2026,7 +2026,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4784314,0.372549,0.2901961] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2050,7 +2050,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.5137255,0.509804,0.509804] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -2060,7 +2060,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4705883,0.4666667,0.4666667] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.1 ),
-                        ( 'parStartSize', 2 * (500) ),
+                        ( 'parStartSize', 3 * (500) ),
                         ( 'parStartSpeed', 10 ),
                         ( 'parWindWeight', 8 ),
                     ]
@@ -2086,7 +2086,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.7450981,0.5843138,0.454902] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -2096,7 +2096,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4941177,0.3882353,0.2980392] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -2124,7 +2124,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 75 ),
                                 ( 'parEndColor', float3[0.09803922,0.09803922,0.09803922] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2134,7 +2134,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.06666667,0.06666667,0.06666667] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -2162,7 +2162,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 75 ),
                                 ( 'parEndColor', float3[0.1372549,0.1372549,0.1372549] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2172,7 +2172,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2200,7 +2200,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 75 ),
                                 ( 'parEndColor', float3[0.07450981,0.07450981,0.07450981] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2210,7 +2210,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1294118,0.1294118,0.1294118] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2238,7 +2238,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 75 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2248,7 +2248,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -2272,7 +2272,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 25 ),
                         ( 'parEndColor', float3[0.4862745,0.4745098,0.4745098] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -2282,7 +2282,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.04313726,0.03921569,0.03921569] ),
                         ( 'parStartRandomRadius', 1000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 6 ),
                     ]
@@ -2304,7 +2304,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.01568628,0.01568628,0.01568628] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -2314,7 +2314,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartRandomRadius', 1000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 4 ),
                     ]
@@ -2340,7 +2340,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.7764707,0.6117647,0.4745098] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2350,7 +2350,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4901961,0.3803922,0.2941177] ),
                                 ( 'parStartRandomRadius', 8000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (700) ),
+                                ( 'parStartSize', 3 * (700) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2374,7 +2374,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.2509804,0.2470588,0.2470588] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -2384,7 +2384,7 @@ export fx_destruction_FOB_03 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed', 50 ),
                         ( 'parWindWeight', 3 ),
                     ]

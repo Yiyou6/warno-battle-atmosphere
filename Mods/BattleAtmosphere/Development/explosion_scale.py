@@ -3,6 +3,8 @@ from pathlib import Path
 import re
 from apply_profile import matching
 
+VISUAL_SCALE = 3  # Preview.15: previous 2x appearance multiplied by 1.5.
+
 # Absolute visual dimensions only. Do not multiply both a base size and its
 # existing scale factor. Positions, counts, lifetimes and physical/suppress
 # radii retain their original values. Shared VFX banks are never rewritten.
@@ -51,7 +53,7 @@ def scale(text):
             if key not in SIZES:continue
             expression=text[a:b]
             if re.fullmatch(r'0(?:\.0*)?',expression):continue
-            edits.append((a,b,'2 * ('+expression+')'))
+            edits.append((a,b,'%g * (' % VISUAL_SCALE+expression+')'))
             report.append(dict(action=action,parameter=key,before=expression))
     for a,b,value in reversed(edits):text=text[:a]+value+text[b:]
     return text,report

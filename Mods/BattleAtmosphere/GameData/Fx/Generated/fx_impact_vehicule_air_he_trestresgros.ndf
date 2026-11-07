@@ -26,8 +26,8 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7000002 ),
-                        ( 'parFinalSize', 2 * (6300) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (6300) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 5000 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -39,7 +39,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.9921569,0.9921569,0.9882354] ),
                         ( 'parCount', 10 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 2 * (900) ),
+                        ( 'parSize', 3 * (900) ),
                     ]
                 ),
                 TActionCall
@@ -49,7 +49,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 10 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (1.05) ),
+                        ( 'parDebritSizeMul', 3 * (1.05) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 540 ),
                         ( 'parFireParticleEndSize', 0 ),
@@ -62,8 +62,8 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.8627452,0.8627452,0.8627452] ),
                         ( 'parSmokeColorMultiplier', 0.6999999 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (900) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (900) ),
                         ( 'parSpeed', float3[2030,2070,10000] ),
                     ]
                 ),
@@ -73,8 +73,8 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (19400) ),
-                        ( 'parInitialSize', 2 * (2200) ),
+                        ( 'parFinalSize', 3 * (19400) ),
+                        ( 'parInitialSize', 3 * (2200) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -95,7 +95,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (5300) ),
+                        ( 'parFinalSize', 3 * (5300) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 0 ),
@@ -109,7 +109,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parImpactPos', parDirection ),
                         ( 'parLuminosite', 6 ),
-                        ( 'parSize', 2 * (4650) ),
+                        ( 'parSize', 3 * (4650) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', float3[0,0,100] + parPosition ),
                     ]
@@ -139,7 +139,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parImpactPos', parDirection ),
                         ( 'parLuminosite', 6 ),
-                        ( 'parSize', 2 * (1100) ),
+                        ( 'parSize', 3 * (1100) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', float3[0,0,275] + parPosition ),
                     ]
@@ -158,7 +158,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parNarrowness', 0.1 ),
                         ( 'parPositionRadius', 200 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (15) ),
+                        ( 'parSize', 3 * (15) ),
                         ( 'parSpeedMax', 8000 ),
                         ( 'parSpeedMin', 8000 ),
                         ( 'parStretch', 2 ),
@@ -179,7 +179,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parNarrowness', 0 ),
                         ( 'parPositionRadius', 680 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (11) ),
+                        ( 'parSize', 3 * (11) ),
                         ( 'parSpeedMax', 2800 ),
                         ( 'parSpeedMin', 300 ),
                         ( 'parStretch', 0.5 ),
@@ -201,14 +201,14 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.4392157,0.4431373,0.4509804] ),
                         ( 'parCount', 7 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 2 * (6600) ),
+                        ( 'parParticleSize', 3 * (6600) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 5.299997 ),
                         ( 'parSpawnerDuration', 0.45 ),
@@ -227,7 +227,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parOpacity', 1 ),
                         ( 'parRepeatCount', 0 ),
                         ( 'parRepeatTime', 0 ),
-                        ( 'parSizeLBU', 2 * (46.51163) ),
+                        ( 'parSizeLBU', 3 * (46.51163) ),
                     ]
                 ),
                 TActionCall
@@ -237,10 +237,10 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 8 ),
                         ( 'parCountDebritsWithFire', 10 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (1.9) ),
+                        ( 'parDebritSizeMul', 3 * (1.9) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 340 ),
-                        ( 'parFireParticleEndSize', 2 * (200) ),
+                        ( 'parFireParticleEndSize', 3 * (200) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 1.6 ),
@@ -250,8 +250,8 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.9294118,0.9294118,0.9058824] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2100) ),
-                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2100) ),
+                        ( 'parSmokeParticleStartSize', 3 * (600) ),
                         ( 'parSpeed', float3[4280,4350,8000] ),
                     ]
                 ),
@@ -266,7 +266,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.9960785,0.9764706,0.9764706] ),
-                                ( 'parEndSize', 2 * (2252) ),
+                                ( 'parEndSize', 3 * (2252) ),
                                 ( 'parFluidFriction', 1.000001 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4.499999 ),
@@ -277,7 +277,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1647059,0.1058824,0.0627451] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (949) ),
+                                ( 'parStartSize', 3 * (949) ),
                                 ( 'parStartSpeed3D', float3[6000,6000,2000] ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -305,7 +305,7 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parDuration', 4 ),
                         ( 'parLuminosite', 2 ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parSize', 2 * (10000) ),
+                        ( 'parSize', 3 * (10000) ),
                         ( 'parSpeed', 0 ),
                         ( 'parStartPosition', float3[0,0,-800] + parPosition ),
                     ]
@@ -328,10 +328,10 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 20 ),
                         ( 'parCountDebritsWithSmoke', 6 ),
-                        ( 'parDebritSizeMul', 2 * (1.5) ),
+                        ( 'parDebritSizeMul', 3 * (1.5) ),
                         ( 'parDispersion', 1200 ),
-                        ( 'parFireParticleEndSize', 2 * (375) ),
-                        ( 'parFireParticleStartSize', 2 * (75) ),
+                        ( 'parFireParticleEndSize', 3 * (375) ),
+                        ( 'parFireParticleStartSize', 3 * (75) ),
                         ( 'parLifetime', 0.3 ),
                         ( 'parMeshType', 0 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -339,8 +339,8 @@ export fx_impact_vehicule_air_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,0.8235295,0.09803922] ),
                         ( 'parSmokeColorMultiplier', 0.3 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (600) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSmokeParticleEndSize', 3 * (600) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
                         ( 'parSpeed', float3[4250,4360,9983] ),
                         ( 'parSpeedDispersion', 0 ),
                     ]

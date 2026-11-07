@@ -1,19 +1,26 @@
 """Compare the entire compiled GameFx graph against preview.7.
 
-Only a 2x expression on reviewed visual dimensions may differ. All other
+Only a 3x expression on reviewed visual dimensions may differ. All other
 properties, including fire-source duration, counts, damage-related parameters,
 sounds, persistent smoke calls and camera shake must remain identical.
 """
 from functools import lru_cache
 import json
+import hashlib
 import math
 import zipfile
 from read_cndf import Cndf
 from verify_smoke_profile import paths
 from apply_smoke_profile import DEV,MOD,BACKUP
-from explosion_scale import SIZES,PERSISTENT
+from explosion_scale import SIZES,PERSISTENT,VISUAL_SCALE
 
 def verify_explosions(current):
+    with zipfile.ZipFile(DEV/BACKUP) as z:
+        installed=json.loads(z.read('development/smoke-release.json'))
+        assert installed['version']=='smoke-preview.14'
+        assert installed['explosions']['visual_scale']==2
+        assert hashlib.sha256(z.read('installed/Gen/NDF/GFX/GameFx.ndfbin')).hexdigest()==installed['outputs']['Gen/NDF/GFX/GameFx.ndfbin']
+    assert VISUAL_SCALE==3 and VISUAL_SCALE/installed['explosions']['visual_scale']==1.5
     with zipfile.ZipFile(DEV/'archive/smoke-preview8-before.zip') as z:
         previous=Cndf(z.read('installed/Gen/NDF/GFX/GameFx.ndfbin'))
         assert json.loads(z.read('development/smoke-release.json'))['version']=='smoke-preview.7'
@@ -33,17 +40,17 @@ def verify_explosions(current):
         return value
     oldvalue=fingerprint(previous,old_import);newvalue=fingerprint(current,new_import)
     changed=set();affected={}
-    def double(a,b):
+    def scaled(a,b):
         n=current.objects[b['ref']];p=n['properties']
         if n['class']=='TIntrinsicCall_2Param':
             return (newvalue(p['Intrinsic'])==('import','$/System/EvaluableIntrinsics/IntrinsicOperatorMul')
-                    and current.objects[p['Param0']['ref']]['properties'].get('Value')==2
+                    and current.objects[p['Param0']['ref']]['properties'].get('Value')==VISUAL_SCALE
                     and newvalue(p['Param1'])==oldvalue(a))
         o=previous.objects[a['ref']]
         if n['class']==o['class'] and n['class'] in ('TConstantInteger','TConstantFloat'):
-            return math.isclose(p.get('Value',0),2*o['properties'].get('Value',0),rel_tol=1e-6)
+            return math.isclose(p.get('Value',0),VISUAL_SCALE*o['properties'].get('Value',0),rel_tol=1e-6)
         if n['class']==o['class']=='TConstantFloat3':
-            return all(math.isclose(y,2*x,rel_tol=1e-6,abs_tol=1e-6) for x,y in
+            return all(math.isclose(y,VISUAL_SCALE*x,rel_tol=1e-6,abs_tol=1e-6) for x,y in
                        zip(o['properties'].get('Value',[0,0,0]),p.get('Value',[0,0,0])))
         return False
     @lru_cache(None)
@@ -60,10 +67,10 @@ def verify_explosions(current):
                     action=oldvalue(p['Action'])
                     bank=action[1].rsplit('/',1)[-1] if action[0]=='import' else ''
                     # Handmade local bank calls are verified by the unchanged
-                    # Action graph below; all modifications still require 2x.
+                    # Action graph below; all modifications still require 3x.
                     assert name in SIZES and bank not in PERSISTENT,(name,bank)
                     assert not bank.startswith(('SFX','Shake','Destroy','Dummy','Propulsion','FX_BANK_')),bank
-                    assert double(left[name],right[name]),('Not exactly 2x',name,bank)
+                    assert scaled(left[name],right[name]),('Not exactly 3x',name,bank)
                     changed.add((j,name));count+=1
             else:count+=compare(p[k],q[k])
         return count
@@ -88,7 +95,8 @@ def verify_explosions(current):
     for item in source['files']:
         names=re.findall(r'(?m)^export\s+(\w+)\s+is', (MOD/item['path']).read_text(encoding='utf-8'))
         assert names and all('$/GFX/GameFx/'+n in affected for n in names),item['path']
-    result=dict(visual_scale=2,source_files=len(source['files']),
+    result=dict(visual_scale=VISUAL_SCALE,relative_to='smoke-preview.14',relative_multiplier=1.5,
+                previous_visual_scale=2,source_files=len(source['files']),
                 source_dimensions=sum(len(f['changes']) for f in source['files']),
                 unique_compiled_dimensions=len(changed),affected_exports=len(affected),
                 checked_exports=len(old_exports),other_properties_unchanged=True,

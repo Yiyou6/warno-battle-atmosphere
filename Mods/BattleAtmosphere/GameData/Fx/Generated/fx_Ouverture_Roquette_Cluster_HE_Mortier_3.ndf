@@ -25,8 +25,8 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (50) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (50) ),
                         ( 'parIntensity', 300 ),
                         ( 'parPositionRelative', float3[23,-58,-4443] ),
                     ]
@@ -61,8 +61,8 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                     NamedParams = MAP[
                         ( 'parCount', 4 ),
                         ( 'parDuration', 0.05 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -93,7 +93,7 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 2.5 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (2250) ),
+                                ( 'parSize', 3 * (2250) ),
                                 ( 'parDeltaPositionAdditif', float3[23,-58,-4737] + parPosition ),
                             ]
                         ),
@@ -111,7 +111,7 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 4 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (2750) ),
+                        ( 'parSize', 3 * (2750) ),
                         ( 'parDeltaPositionAdditif', float3[0,-59,-5075] + parPosition ),
                     ]
                 ),
@@ -131,7 +131,7 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 3 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1500) ),
+                                ( 'parSize', 3 * (1500) ),
                                 ( 'parDeltaPositionAdditif', float3[-96,-79,-5436] + parPosition ),
                             ]
                         ),
@@ -146,7 +146,7 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
                         ( 'Position', float3[23,-58,-4443] + parPosition ),
                     ]
@@ -164,7 +164,7 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
                                 ( 'Position', float3[23,-58,-4443] + parPosition ),
                             ]
@@ -186,14 +186,14 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[150,150,400]) ),
+                        ( 'parCloudsize', 3 * (float3[150,150,400]) ),
                         ( 'parColor', float3[0.172549,0.172549,0.172549] ),
                         ( 'parCount', 4 ),
                         ( 'parDecayLength', 0.1 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parParticleSize', 2 * (4000) ),
+                        ( 'parParticleSize', 3 * (4000) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 7 ),
                         ( 'parSpawnerDuration', 1 ),
@@ -220,7 +220,7 @@ export fx_Ouverture_Roquette_Cluster_HE_Mortier_3 is SimultaneousActionDeclarati
                         ( 'parNarrowness', 0.05 ),
                         ( 'parPositionRadius', 500 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (5) ),
+                        ( 'parSize', 3 * (5) ),
                         ( 'parSpeedMax', 10000 ),
                         ( 'parSpeedMin', 8000 ),
                         ( 'parStretch', 2 ),

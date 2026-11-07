@@ -25,7 +25,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (230000) ),
+                        ( 'parFinalSize', 3 * (230000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 2000 ),
                     ]
@@ -41,7 +41,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.3686275,0.3647059,0.3647059] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -51,7 +51,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 5 ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -73,7 +73,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (240000) ),
+                        ( 'parFinalSize', 3 * (240000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1000 ),
                     ]
@@ -89,7 +89,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.3686275,0.3647059,0.3647059] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -99,7 +99,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 5 ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -121,7 +121,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (150000) ),
+                        ( 'parFinalSize', 3 * (150000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1500 ),
                     ]
@@ -137,7 +137,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.01568628,0.01568628,0.01568628] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -147,7 +147,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 5 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -169,7 +169,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (180000) ),
+                        ( 'parFinalSize', 3 * (180000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1000 ),
                     ]
@@ -185,7 +185,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.01568628,0.01568628,0.01568628] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -195,7 +195,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 5 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -217,8 +217,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (52000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (52000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 25000 ),
                         ( 'parPositionRelative', float3[-2571,-802,0] ),
                     ]
@@ -238,8 +238,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (52000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (52000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 40000 ),
                         ( 'parPositionRelative', float3[2409,-577,0] ),
                     ]
@@ -259,8 +259,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (52000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (52000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 5000 ),
                         ( 'parPositionRelative', float3[6377,-923,0] ),
                     ]
@@ -280,8 +280,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (52000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (52000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 20000 ),
                         ( 'parPositionRelative', float3[-6854,-672,0] ),
                     ]
@@ -299,8 +299,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (20000) ),
-                        ( 'parInitialSize', 2 * (8000) ),
+                        ( 'parFinalSize', 3 * (20000) ),
+                        ( 'parInitialSize', 3 * (8000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[-2567,-793,0] + parPosition ),
                     ]
@@ -311,8 +311,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (20000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (20000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[2413,-568,0] + parPosition ),
                     ]
@@ -323,8 +323,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (20000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (20000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[6381,-914,0] + parPosition ),
                     ]
@@ -335,8 +335,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (20000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (20000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[-6850,-663,0] + parPosition ),
                     ]
@@ -353,7 +353,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (10000) ),
+                        ( 'parSize', 3 * (10000) ),
                         ( 'parDeltaPositionAdditif', float3[-2567,-793,-2115] + parPosition ),
                     ]
                 ),
@@ -369,7 +369,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                         ( 'parDeltaPositionAdditif', float3[2413,-568,-2115] + parPosition ),
                     ]
                 ),
@@ -385,7 +385,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                         ( 'parDeltaPositionAdditif', float3[6381,-914,-2115] + parPosition ),
                     ]
                 ),
@@ -401,7 +401,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                         ( 'parDeltaPositionAdditif', float3[7180,295,-2115] + parPosition ),
                     ]
                 ),
@@ -417,7 +417,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                         ( 'parDeltaPositionAdditif', float3[-6850,-663,-2115] + parPosition ),
                     ]
                 ),
@@ -437,8 +437,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (1000) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (1000) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -451,7 +451,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 2 ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSizeLBU', 2 * (46.51163) ),
+                        ( 'parSizeLBU', 3 * (46.51163) ),
                         ( 'Position', float3[2409,-591,0] + parPosition ),
                     ]
                 ),
@@ -464,7 +464,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDuration', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[-6867,-793,0] + parPosition ),
                     ]
@@ -478,7 +478,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDuration', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (30000) ),
+                        ( 'parSize', 3 * (30000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[-2584,-923,0] + parPosition ),
                     ]
@@ -492,7 +492,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDuration', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (30000) ),
+                        ( 'parSize', 3 * (30000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[2409,-591,0] + parPosition ),
                     ]
@@ -506,7 +506,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDuration', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[6364,-1044,0] + parPosition ),
                     ]
@@ -534,7 +534,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1294118,0.1019608,0.07843138] ),
                                 ( 'parCount', 25 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                             ]
                         ),
                     ]
@@ -561,7 +561,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1529412,0.1058824,0.07058824] ),
                                 ( 'parCount', 25 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                             ]
                         ),
                     ]
@@ -588,7 +588,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1294118,0.1019608,0.07843138] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                             ]
                         ),
                     ]
@@ -615,7 +615,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1529412,0.1058824,0.07058824] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (3500) ),
+                                ( 'parSize', 3 * (3500) ),
                             ]
                         ),
                     ]
@@ -642,7 +642,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
                                 ( 'parCount', 10 ),
                                 ( 'parDuration', 1.5 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                             ]
                         ),
                     ]
@@ -669,7 +669,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1529412,0.1058824,0.07058824] ),
                                 ( 'parCount', 25 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                             ]
                         ),
                     ]
@@ -695,7 +695,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1294118,0.1019608,0.07843138] ),
                                 ( 'parCount', 25 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (3500) ),
+                                ( 'parSize', 3 * (3500) ),
                             ]
                         ),
                     ]
@@ -734,7 +734,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.25 ),
-                                ( 'parFinalSize', 2 * (180000) ),
+                                ( 'parFinalSize', 3 * (180000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 256 ),
                             ]
@@ -763,7 +763,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1529412,0.1058824,0.07058824] ),
                                 ( 'parCount', 25 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (4000) ),
+                                ( 'parSize', 3 * (4000) ),
                             ]
                         ),
                     ]
@@ -790,7 +790,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.1294118,0.1019608,0.07843138] ),
                                 ( 'parCount', 25 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parSize', 2 * (3500) ),
+                                ( 'parSize', 3 * (3500) ),
                             ]
                         ),
                     ]
@@ -839,7 +839,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.25 ),
-                                ( 'parFinalSize', 2 * (180000) ),
+                                ( 'parFinalSize', 3 * (180000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 256 ),
                             ]
@@ -890,7 +890,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.35 ),
-                                ( 'parFinalSize', 2 * (190000) ),
+                                ( 'parFinalSize', 3 * (190000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 256 ),
                             ]
@@ -937,7 +937,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.25 ),
-                        ( 'parFinalSize', 2 * (200000) ),
+                        ( 'parFinalSize', 3 * (200000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 256 ),
                     ]
@@ -1013,7 +1013,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 1500 ),
                         ( 'parDuration', 0.35 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parSize', 3 * (8000) ),
                     ]
                 ),
             ]
@@ -1037,7 +1037,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 1500 ),
                         ( 'parDuration', 0.45 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
             ]
@@ -1061,7 +1061,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 1000 ),
                         ( 'parDuration', 0.55 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
             ]
@@ -1085,7 +1085,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 2000 ),
                         ( 'parDuration', 0.35 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parSize', 3 * (8000) ),
                     ]
                 ),
                 TActionCall
@@ -1099,7 +1099,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 2000 ),
                         ( 'parDuration', 0.5 ),
                         ( 'parLuminosite', 2 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
                 TActionCall
@@ -1113,7 +1113,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 2000 ),
                         ( 'parDuration', 0.75 ),
                         ( 'parLuminosite', 2 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
                 TActionCall
@@ -1127,7 +1127,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 2000 ),
                         ( 'parDuration', 0.5 ),
                         ( 'parLuminosite', 2 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
                 TActionCall
@@ -1141,7 +1141,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 2000 ),
                         ( 'parDuration', 0.5 ),
                         ( 'parLuminosite', 2 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
             ]
@@ -1165,7 +1165,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 1500 ),
                         ( 'parDuration', 0.45 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
             ]
@@ -1189,7 +1189,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parDispersion', 1500 ),
                         ( 'parDuration', 0.45 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (6000) ),
+                        ( 'parSize', 3 * (6000) ),
                     ]
                 ),
             ]
@@ -1387,7 +1387,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (5450) ),
+                                ( 'parSize', 3 * (5450) ),
                             ]
                         ),
                     ]
@@ -1414,7 +1414,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (6000) ),
+                                ( 'parSize', 3 * (6000) ),
                             ]
                         ),
                     ]
@@ -1441,7 +1441,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (5750) ),
+                                ( 'parSize', 3 * (5750) ),
                             ]
                         ),
                     ]
@@ -1468,7 +1468,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (6250) ),
+                                ( 'parSize', 3 * (6250) ),
                             ]
                         ),
                     ]
@@ -1500,7 +1500,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1532,7 +1532,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1560,7 +1560,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1586,7 +1586,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parOpacity', 1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1616,7 +1616,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1648,7 +1648,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1680,7 +1680,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1708,7 +1708,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1738,7 +1738,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1770,7 +1770,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1802,7 +1802,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1834,7 +1834,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1866,7 +1866,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1894,7 +1894,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1920,7 +1920,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parOpacity', 1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1950,7 +1950,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1982,7 +1982,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -2014,7 +2014,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -2046,7 +2046,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -2078,7 +2078,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -2110,7 +2110,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -2142,7 +2142,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -2174,7 +2174,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -2206,7 +2206,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -2238,7 +2238,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -2266,7 +2266,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parOpacity', 1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -2296,7 +2296,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -2328,7 +2328,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -2360,7 +2360,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -2376,10 +2376,10 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (0.5) ),
+                                ( 'parDebritSizeMul', 3 * (0.5) ),
                                 ( 'parDispersion', 1200 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
                                 ( 'parMinSpeedRatio', 1 ),
@@ -2387,8 +2387,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                                 ( 'parSmokeColorMultiplier', 0.3 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (600) ),
-                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSmokeParticleEndSize', 3 * (600) ),
+                                ( 'parSmokeParticleStartSize', 3 * (100) ),
                                 ( 'parSpeed', float3[8000,8000,9983] ),
                                 ( 'parSpeedDispersion', 0 ),
                             ]
@@ -2406,11 +2406,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 600 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -2419,8 +2419,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[15000,3750,8000] ),
                             ]
                         ),
@@ -2433,7 +2433,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1843137,0.1843137,0.1843137] ),
-                        ( 'parEndSize', 2 * (4000) ),
+                        ( 'parEndSize', 3 * (4000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -2444,7 +2444,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartHeight', 500 ),
                         ( 'parStartRotation', 0 ),
-                        ( 'parStartSize', 2 * (1500) ),
+                        ( 'parStartSize', 3 * (1500) ),
                         ( 'parStartSpeed3D', float3[0,0,0] ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -2456,7 +2456,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1921569,0.1921569,0.1921569] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -2467,7 +2467,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.2980392,0.2980392,0.2980392] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed3D', float3[3000,3000,2000] ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -2479,7 +2479,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.04705883,0.04705883,0.04705883] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -2490,7 +2490,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4078432,0.4039216,0.4039216] ),
                         ( 'parStartHeight', 250 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed3D', float3[500,500,500] ),
                         ( 'parWindWeight', 4 ),
                     ]
@@ -2518,7 +2518,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -2548,7 +2548,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -2564,10 +2564,10 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (0.5) ),
+                                ( 'parDebritSizeMul', 3 * (0.5) ),
                                 ( 'parDispersion', 1200 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
                                 ( 'parMinSpeedRatio', 1 ),
@@ -2575,8 +2575,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                                 ( 'parSmokeColorMultiplier', 0.3 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (600) ),
-                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSmokeParticleEndSize', 3 * (600) ),
+                                ( 'parSmokeParticleStartSize', 3 * (100) ),
                                 ( 'parSpeed', float3[8000,8000,9983] ),
                                 ( 'parSpeedDispersion', 0 ),
                             ]
@@ -2594,11 +2594,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 600 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -2607,8 +2607,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[15000,3750,8000] ),
                             ]
                         ),
@@ -2621,7 +2621,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1921569,0.1921569,0.1921569] ),
-                        ( 'parEndSize', 2 * (4500) ),
+                        ( 'parEndSize', 3 * (4500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 8 ),
@@ -2632,7 +2632,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.2980392,0.2980392,0.2980392] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed3D', float3[3000,3000,2000] ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -2644,7 +2644,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1843137,0.1843137,0.1843137] ),
-                        ( 'parEndSize', 2 * (4000) ),
+                        ( 'parEndSize', 3 * (4000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -2655,7 +2655,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartHeight', 500 ),
                         ( 'parStartRotation', 0 ),
-                        ( 'parStartSize', 2 * (1500) ),
+                        ( 'parStartSize', 3 * (1500) ),
                         ( 'parStartSpeed3D', float3[0,0,0] ),
                         ( 'parWindWeight', 2 ),
                     ]
@@ -2667,7 +2667,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.04705883,0.04705883,0.04705883] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -2678,7 +2678,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4078432,0.4039216,0.4039216] ),
                         ( 'parStartHeight', 250 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed3D', float3[500,500,500] ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -2705,10 +2705,10 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (0.5) ),
+                                ( 'parDebritSizeMul', 3 * (0.5) ),
                                 ( 'parDispersion', 1200 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
                                 ( 'parMinSpeedRatio', 1 ),
@@ -2716,8 +2716,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                                 ( 'parSmokeColorMultiplier', 0.3 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (600) ),
-                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSmokeParticleEndSize', 3 * (600) ),
+                                ( 'parSmokeParticleStartSize', 3 * (100) ),
                                 ( 'parSpeed', float3[6000,6000,4000] ),
                                 ( 'parSpeedDispersion', 0 ),
                             ]
@@ -2735,11 +2735,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -2748,8 +2748,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[15000,3750,8000] ),
                             ]
                         ),
@@ -2762,7 +2762,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1843137,0.1843137,0.1843137] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -2773,7 +2773,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartHeight', 500 ),
                         ( 'parStartRotation', 0 ),
-                        ( 'parStartSize', 2 * (1500) ),
+                        ( 'parStartSize', 3 * (1500) ),
                         ( 'parStartSpeed3D', float3[0,0,0] ),
                         ( 'parWindWeight', 6 ),
                     ]
@@ -2785,7 +2785,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1921569,0.1921569,0.1921569] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -2796,7 +2796,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4705883,0.4627451,0.454902] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed3D', float3[3000,3000,2000] ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -2808,7 +2808,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.04705883,0.04705883,0.04705883] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -2819,7 +2819,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.5372549,0.5294118,0.5254902] ),
                         ( 'parStartHeight', 250 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed3D', float3[500,500,500] ),
                         ( 'parWindWeight', 2 ),
                     ]
@@ -2846,10 +2846,10 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (0.5) ),
+                                ( 'parDebritSizeMul', 3 * (0.5) ),
                                 ( 'parDispersion', 1200 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
                                 ( 'parMinSpeedRatio', 1 ),
@@ -2857,8 +2857,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                                 ( 'parSmokeColorMultiplier', 0.3 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (600) ),
-                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSmokeParticleEndSize', 3 * (600) ),
+                                ( 'parSmokeParticleStartSize', 3 * (100) ),
                                 ( 'parSpeed', float3[8000,8000,4000] ),
                                 ( 'parSpeedDispersion', 0 ),
                             ]
@@ -2876,11 +2876,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 800 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -2889,8 +2889,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[14000,3750,8500] ),
                             ]
                         ),
@@ -2903,7 +2903,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.06666667,0.06666667,0.06666667] ),
-                        ( 'parEndSize', 2 * (4000) ),
+                        ( 'parEndSize', 3 * (4000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -2914,7 +2914,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartHeight', 500 ),
                         ( 'parStartRotation', 0 ),
-                        ( 'parStartSize', 2 * (1500) ),
+                        ( 'parStartSize', 3 * (1500) ),
                         ( 'parStartSpeed3D', float3[0,0,0] ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -2926,7 +2926,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.09019608,0.09019608,0.09019608] ),
-                        ( 'parEndSize', 2 * (5000) ),
+                        ( 'parEndSize', 3 * (5000) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -2937,7 +2937,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4470589,0.4431373,0.4392157] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed3D', float3[3000,3000,2000] ),
                         ( 'parWindWeight', 4 ),
                     ]
@@ -2949,7 +2949,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.04705883,0.04705883,0.04705883] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -2960,7 +2960,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4470589,0.4431373,0.4392157] ),
                         ( 'parStartHeight', 250 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed3D', float3[500,500,500] ),
                         ( 'parWindWeight', 2 ),
                     ]
@@ -2987,11 +2987,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 800 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -3000,8 +3000,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[15000,3750,8000] ),
                             ]
                         ),
@@ -3029,11 +3029,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 1200 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -3042,8 +3042,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[15000,3750,8000] ),
                             ]
                         ),
@@ -3071,11 +3071,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -3084,8 +3084,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[14000,3750,8500] ),
                             ]
                         ),
@@ -3113,11 +3113,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (2) ),
+                                ( 'parDebritSizeMul', 3 * (2) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 800 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -3126,8 +3126,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[15000,3750,8000] ),
                             ]
                         ),
@@ -3155,10 +3155,10 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 8 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 15 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 250 ),
-                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 4 ),
@@ -3168,8 +3168,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.2941177,0.2862745,0.2862745] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[8000,8000,4000] ),
                             ]
                         ),
@@ -3197,11 +3197,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 4 ),
                                 ( 'parCountDebritsWithFire', 8 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1.5) ),
+                                ( 'parDebritSizeMul', 3 * (1.5) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 340 ),
-                                ( 'parFireParticleEndSize', 2 * (400) ),
-                                ( 'parFireParticleStartSize', 2 * (150) ),
+                                ( 'parFireParticleEndSize', 3 * (400) ),
+                                ( 'parFireParticleStartSize', 3 * (150) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
@@ -3210,8 +3210,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.2509804,0.2509804,0.2431373] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[3750,15000,8000] ),
                             ]
                         ),
@@ -3239,7 +3239,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 2 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1.5) ),
+                                ( 'parDebritSizeMul', 3 * (1.5) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 540 ),
                                 ( 'parFireParticleEndSize', 0 ),
@@ -3252,8 +3252,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1372549,0.1294118,0.1215686] ),
                                 ( 'parSmokeColorMultiplier', 0.4 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (4000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (4000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[3750,15000,8000] ),
                             ]
                         ),
@@ -3281,11 +3281,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 4 ),
                                 ( 'parCountDebritsWithFire', 8 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 340 ),
-                                ( 'parFireParticleEndSize', 2 * (450) ),
-                                ( 'parFireParticleStartSize', 2 * (150) ),
+                                ( 'parFireParticleEndSize', 3 * (450) ),
+                                ( 'parFireParticleStartSize', 3 * (150) ),
                                 ( 'parGravity', 1500 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -3294,8 +3294,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.254902,0.2470588,0.2470588] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[13000,13000,6000] ),
                             ]
                         ),
@@ -3323,7 +3323,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 2 ),
                                 ( 'parCountDebritsWithFire', 8 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 540 ),
                                 ( 'parFireParticleEndSize', 0 ),
@@ -3336,8 +3336,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.09803922,0.09411766,0.09019608] ),
                                 ( 'parSmokeColorMultiplier', 0.4 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (4000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (4000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[3750,15000,10000] ),
                             ]
                         ),
@@ -3365,10 +3365,10 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 8 ),
                                 ( 'parCountDebritsWithFire', 10 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 250 ),
-                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 4 ),
@@ -3378,8 +3378,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.4,0.4,0.4] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[3750,15000,8000] ),
                             ]
                         ),
@@ -3407,11 +3407,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 8 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1.5) ),
+                                ( 'parDebritSizeMul', 3 * (1.5) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 340 ),
-                                ( 'parFireParticleEndSize', 2 * (400) ),
-                                ( 'parFireParticleStartSize', 2 * (150) ),
+                                ( 'parFireParticleEndSize', 3 * (400) ),
+                                ( 'parFireParticleStartSize', 3 * (150) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -3420,8 +3420,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.2431373,0.2431373,0.2352941] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[8000,8000,6000] ),
                             ]
                         ),
@@ -3449,7 +3449,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 2 ),
                                 ( 'parCountDebritsWithFire', 8 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1.25) ),
+                                ( 'parDebritSizeMul', 3 * (1.25) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 540 ),
                                 ( 'parFireParticleEndSize', 0 ),
@@ -3462,8 +3462,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1568628,0.1490196,0.1411765] ),
                                 ( 'parSmokeColorMultiplier', 0.4 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (4000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (4000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[3750,14000,8500] ),
                             ]
                         ),
@@ -3491,11 +3491,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 8 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 15 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 250 ),
-                                ( 'parFireParticleEndSize', 2 * (300) ),
-                                ( 'parFireParticleStartSize', 2 * (100) ),
+                                ( 'parFireParticleEndSize', 3 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (100) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -3504,8 +3504,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.2313726,0.227451,0.227451] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[3750,14000,8500] ),
                             ]
                         ),
@@ -3533,7 +3533,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 2 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1.5) ),
+                                ( 'parDebritSizeMul', 3 * (1.5) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 540 ),
                                 ( 'parFireParticleEndSize', 0 ),
@@ -3546,8 +3546,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1372549,0.1294118,0.1215686] ),
                                 ( 'parSmokeColorMultiplier', 0.4 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (4000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (4000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[8000,8000,8000] ),
                             ]
                         ),
@@ -3575,11 +3575,11 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 4 ),
                                 ( 'parCountDebritsWithFire', 8 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1.5) ),
+                                ( 'parDebritSizeMul', 3 * (1.5) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 340 ),
-                                ( 'parFireParticleEndSize', 2 * (400) ),
-                                ( 'parFireParticleStartSize', 2 * (150) ),
+                                ( 'parFireParticleEndSize', 3 * (400) ),
+                                ( 'parFireParticleStartSize', 3 * (150) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parMeshType', 1 ),
@@ -3588,8 +3588,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.2509804,0.2509804,0.2431373] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[3750,15000,8000] ),
                             ]
                         ),
@@ -3617,10 +3617,10 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 8 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 15 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 250 ),
-                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 3 ),
@@ -3630,8 +3630,8 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.2941177,0.2862745,0.2862745] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
                                 ( 'parSpeed', float3[3750,15000,8000] ),
                             ]
                         ),
@@ -3658,7 +3658,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1568628,0.1568628,0.1568628] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -3668,7 +3668,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -3692,7 +3692,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.4862745,0.4745098,0.4745098] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -3702,7 +3702,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.04313726,0.03921569,0.03921569] ),
                         ( 'parStartRandomRadius', 1000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 6 ),
                     ]
@@ -3724,7 +3724,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.5137255,0.509804,0.509804] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -3734,7 +3734,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4705883,0.4666667,0.4666667] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.1 ),
-                        ( 'parStartSize', 2 * (500) ),
+                        ( 'parStartSize', 3 * (500) ),
                         ( 'parStartSpeed', 10 ),
                         ( 'parWindWeight', 8 ),
                     ]
@@ -3760,7 +3760,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1372549,0.1372549,0.1372549] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -3770,7 +3770,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -3794,7 +3794,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.2509804,0.2470588,0.2470588] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -3804,7 +3804,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed', 50 ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -3830,7 +3830,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -3840,7 +3840,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -3868,7 +3868,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.7764707,0.6117647,0.4745098] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -3878,7 +3878,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4901961,0.3803922,0.2941177] ),
                                 ( 'parStartRandomRadius', 8000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (700) ),
+                                ( 'parStartSize', 3 * (700) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -3906,7 +3906,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1372549,0.1372549,0.1372549] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -3916,7 +3916,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -3940,7 +3940,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1019608,0.1019608,0.1019608] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -3950,7 +3950,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.3176471,0.3137255,0.3137255] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.1 ),
-                        ( 'parStartSize', 2 * (500) ),
+                        ( 'parStartSize', 3 * (500) ),
                         ( 'parStartSpeed', 10 ),
                         ( 'parWindWeight', 6 ),
                     ]
@@ -3976,7 +3976,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6156863,0.4784314,0.3647059] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 3.85 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -3986,7 +3986,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4196079,0.3294118,0.2509804] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -4010,7 +4010,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.4,0.4,0.4] ),
-                        ( 'parEndSize', 2 * (4000) ),
+                        ( 'parEndSize', 3 * (4000) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -4020,7 +4020,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.1098039,0.1098039,0.1098039] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed', 50 ),
                         ( 'parWindWeight', 8 ),
                     ]
@@ -4046,7 +4046,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6156863,0.482353,0.3764706] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4056,7 +4056,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4313726,0.3411765,0.2666667] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -4080,7 +4080,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.4352942,0.4352942,0.4352942] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -4090,7 +4090,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartRandomRadius', 2000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 6 ),
                     ]
@@ -4116,7 +4116,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1372549,0.1372549,0.1372549] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4126,7 +4126,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -4150,7 +4150,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.3607843,0.3607843,0.3607843] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -4160,7 +4160,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.04313726,0.03921569,0.03921569] ),
                         ( 'parStartRandomRadius', 2500 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 4 ),
                     ]
@@ -4186,7 +4186,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4196,7 +4196,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -4224,7 +4224,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6470588,0.5137255,0.4078432] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4234,7 +4234,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4705883,0.3764706,0.3019608] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -4262,7 +4262,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.2196079,0.2196079,0.2156863] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4272,7 +4272,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4300,7 +4300,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6705883,0.5294118,0.4117647] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4310,7 +4310,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4470589,0.3529412,0.2745098] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -4338,7 +4338,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6627451,0.5215687,0.4039216] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4348,7 +4348,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4313726,0.345098,0.2705882] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -4376,7 +4376,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1568628,0.1568628,0.1568628] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4386,7 +4386,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -4414,7 +4414,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4424,7 +4424,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4452,7 +4452,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6078432,0.4784314,0.372549] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 3.85 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4462,7 +4462,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4156863,0.3333333,0.2666667] ),
                                 ( 'parStartRandomRadius', 7000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4486,7 +4486,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.3490196,0.3490196,0.3490196] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -4496,7 +4496,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartRandomRadius', 1500 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 4 ),
                     ]
@@ -4518,7 +4518,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.3490196,0.3411765,0.3411765] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -4528,7 +4528,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.04313726,0.03921569,0.03921569] ),
                         ( 'parStartRandomRadius', 1500 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -4550,7 +4550,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.4392157,0.4352942,0.4352942] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -4560,7 +4560,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.3137255,0.3098039,0.3098039] ),
                         ( 'parStartRandomRadius', 8000 ),
                         ( 'parStartRotation', 0.1 ),
-                        ( 'parStartSize', 2 * (500) ),
+                        ( 'parStartSize', 3 * (500) ),
                         ( 'parStartSpeed', 10 ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -4582,7 +4582,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.2509804,0.2470588,0.2470588] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -4592,7 +4592,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed', 50 ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -4618,7 +4618,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6627451,0.5215687,0.4039216] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4628,7 +4628,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4313726,0.345098,0.2705882] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -4656,7 +4656,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1372549,0.1372549,0.1372549] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4666,7 +4666,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4690,7 +4690,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.4392157,0.4352942,0.4352942] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -4700,7 +4700,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.3137255,0.3098039,0.3098039] ),
                         ( 'parStartRandomRadius', 8000 ),
                         ( 'parStartRotation', 0.1 ),
-                        ( 'parStartSize', 2 * (500) ),
+                        ( 'parStartSize', 3 * (500) ),
                         ( 'parStartSpeed', 10 ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -4726,7 +4726,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.5568628,0.5568628,0.5568628] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4736,7 +4736,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1294118,0.1294118,0.1294118] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -4764,7 +4764,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6078432,0.4784314,0.372549] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 3.85 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4774,7 +4774,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4156863,0.3333333,0.2666667] ),
                                 ( 'parStartRandomRadius', 7000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4802,7 +4802,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1372549,0.1372549,0.1372549] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4812,7 +4812,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4840,7 +4840,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.07450981,0.07450981,0.07450981] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4850,7 +4850,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1294118,0.1294118,0.1294118] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -4878,7 +4878,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -4888,7 +4888,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.07843138,0.07843138,0.07843138] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4912,7 +4912,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.3490196,0.3411765,0.3411765] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -4922,7 +4922,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.04313726,0.03921569,0.03921569] ),
                         ( 'parStartRandomRadius', 1500 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -4944,7 +4944,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.3490196,0.3490196,0.3490196] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -4954,7 +4954,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartRandomRadius', 1500 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 4 ),
                     ]
@@ -4980,7 +4980,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.6470588,0.6470588,0.6470588] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4990,7 +4990,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4470589,0.3529412,0.2745098] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -5014,7 +5014,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.2509804,0.2470588,0.2470588] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -5024,7 +5024,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                         ( 'parStartRandomRadius', 10000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed', 50 ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -5050,7 +5050,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.7843138,0.6156863,0.4784314] ),
-                                ( 'parEndSize', 2 * (4750) ),
+                                ( 'parEndSize', 3 * (4750) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -5060,7 +5060,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4784314,0.372549,0.2901961] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -5088,7 +5088,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.09803922,0.09803922,0.09803922] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -5098,7 +5098,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.06666667,0.06666667,0.06666667] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -5126,7 +5126,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.7450981,0.5843138,0.454902] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -5136,7 +5136,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4941177,0.3882353,0.2980392] ),
                                 ( 'parStartRandomRadius', 10000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -5164,7 +5164,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.07450981,0.07450981,0.07450981] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -5174,7 +5174,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1294118,0.1294118,0.1294118] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -5198,7 +5198,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.01568628,0.01568628,0.01568628] ),
-                        ( 'parEndSize', 2 * (3500) ),
+                        ( 'parEndSize', 3 * (3500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -5208,7 +5208,7 @@ export fx_Impact_sol_MRF_Minenraumfahrzeug_3 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.01568628,0.01568628,0.01568628] ),
                         ( 'parStartRandomRadius', 1000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 4 ),
                     ]

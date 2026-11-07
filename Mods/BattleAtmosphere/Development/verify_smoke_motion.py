@@ -1,4 +1,4 @@
-"""Check compiled coherent wind variation against installed preview.12."""
+"""Check compiled 2x vertical motion against installed preview.14."""
 import math,zipfile
 from verify_smoke_profile import Cndf,paths,reachable,MOD,DEV
 
@@ -80,10 +80,11 @@ def seed_initializers(c):
     return result
 
 def verify_motion(bank):
-    with zipfile.ZipFile(DEV/'archive/smoke-preview13-before.zip') as z:
+    with zipfile.ZipFile(DEV/'archive/smoke-preview15-before.zip') as z:
         previous=Cndf(z.read('installed/Gen/NDF/VFX_Bank.ndfbin'))
-        # Explosion size, unit fire timers and AI output must remain exact.
-        for name in ('Gen/NDF/GFX/GameFx.ndfbin','Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/Skirmish.ndfbin'):
+        # Explosion dimensions are validated separately by verify_explosions.
+        # Unit fire timers and AI output must remain exact.
+        for name in ('Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/Skirmish.ndfbin'):
             assert (MOD/name).read_bytes()==z.read('installed/'+name),name
     old=layers(previous);new=layers(bank);initializers=seed_initializers(bank);rows=[]
     weather=[900,300,0];w2=weather[0]**2+weather[1]**2
@@ -108,13 +109,15 @@ def verify_motion(bank):
                 assert max(abs(a-b) for a,b in zip(stored[:2],neighbor[:2]))<0.001,'Nearby fire emitters diverged'
                 fields['CustomFloat3_4']=stored
                 a=evaluate(previous,prior_speed,fields);b=evaluate(bank,speed,fields)
-                assert math.isclose(b[2],a[2],rel_tol=1e-6),(a,b)
+                assert math.isclose(b[2],2*a[2],rel_tol=1e-6),(a,b)
+                assert all(math.isclose(b[i],a[i],rel_tol=1e-6,abs_tol=1e-6) for i in (0,1)),(a,b)
                 birth=heading(b);births.append(birth);winds=[]
                 for age in (0,2,10,20,28,35,60):
                     fields['LifeRatio']=age/life
                     for prop in ('AccelerationField','WindField'):
                         a=evaluate(previous,prior[prop],fields);b=evaluate(bank,physics[prop],fields)
-                        assert math.isclose(b[2],a[2],rel_tol=2e-6,abs_tol=1e-6),(prop,a,b)
+                        assert math.isclose(b[2],2*a[2],rel_tol=2e-6,abs_tol=1e-6),(prop,a,b)
+                        assert all(math.isclose(b[i],a[i],rel_tol=1e-6,abs_tol=1e-6) for i in (0,1)),(prop,a,b)
                     winds.append(round(heading(b),4))
                 turns.append(abs(winds[-1]-winds[0]))
                 last=None
@@ -129,7 +132,7 @@ def verify_motion(bank):
                                  wind_heading_degrees_at_seconds_0_2_10_20_28_35_60=winds))
         assert max(births)-min(births)>15,'Initial headings too uniform'
         assert max(turns)>10,'No meaningful upper directional change'
-    return dict(relative_to='smoke-preview.12',vertical_initial_velocity_multiplier=1,vertical_acceleration_multiplier=1,
-                vertical_wind_multiplier=1,source_coherent_spatial_variation=True,per_frame_random_draws=False,
+    return dict(relative_to='smoke-preview.14',vertical_initial_velocity_multiplier=2,vertical_acceleration_multiplier=2,
+                vertical_wind_multiplier=2,horizontal_motion_unchanged=True,source_coherent_spatial_variation=True,per_frame_random_draws=False,
                 age_varying_direction=True,turn_transition_seconds=28,small_gust_period_seconds=round(2*math.pi/0.13,2),samples=rows,
-                explosion_unit_and_AI_binaries_unchanged=True,rendered_curvature='unverified')
+                unit_and_AI_binaries_unchanged=True,rendered_curvature='unverified')

@@ -30,7 +30,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                             Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                             NamedParams = MAP[
                                 ( 'parDuration', 0.4 ),
-                                ( 'parFinalSize', 2 * (25000) ),
+                                ( 'parFinalSize', 3 * (25000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parIntensity', 3000 ),
                                 ( 'parPositionRelative', float3[0,0,0] ),
@@ -43,8 +43,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.3 ),
-                        ( 'parFinalSize', 2 * (50000) ),
-                        ( 'parInitialSize', 2 * (1700) ),
+                        ( 'parFinalSize', 3 * (50000) ),
+                        ( 'parInitialSize', 3 * (1700) ),
                         ( 'parIntensity', 2000 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -67,7 +67,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parDispersion', 250 ),
                         ( 'parDuration', 0.2 ),
                         ( 'parLuminosite', 3 ),
-                        ( 'parSize', 2 * (3500) ),
+                        ( 'parSize', 3 * (3500) ),
                     ]
                 ),
                 TActionCall
@@ -78,7 +78,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 10 ),
-                        ( 'parSize', 2 * (4500) ),
+                        ( 'parSize', 3 * (4500) ),
                     ]
                 ),
                 TSequentialAction
@@ -96,7 +96,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 0 ),
                                 ( 'parRepeatTime', parWaitBetweenShot ),
-                                ( 'parSizeLBU', 2 * (34.41861) ),
+                                ( 'parSizeLBU', 3 * (34.41861) ),
                             ]
                         ),
                     ]
@@ -108,10 +108,10 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 1 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (1) ),
+                        ( 'parDebritSizeMul', 3 * (1) ),
                         ( 'parDir', float3[0,0,1] ),
                         ( 'parDispersion', 0 ),
-                        ( 'parFireParticleEndSize', 2 * (250) ),
+                        ( 'parFireParticleEndSize', 3 * (250) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 5000 ),
                         ( 'parLifetime', 10 ),
@@ -121,8 +121,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.427451,0.4196079,0.4156863] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (250) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (250) ),
                         ( 'parSpeed', float3[3000,3000,6000] ),
                     ]
                 ),
@@ -149,7 +149,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (50000) ),
+                        ( 'parFinalSize', 3 * (50000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 256 ),
                     ]
@@ -164,8 +164,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (8500) ),
-                                ( 'parInitialSize', 2 * (100) ),
+                                ( 'parFinalSize', 3 * (8500) ),
+                                ( 'parInitialSize', 3 * (100) ),
                                 ( 'parZBias', 1000 ),
                             ]
                         ),
@@ -182,7 +182,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.7529413,0.7450981,0.7411765] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -193,7 +193,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.427451,0.4235294,0.4196079] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -211,7 +211,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.5607843,0.5568628,0.5529412] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -222,7 +222,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -240,7 +240,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 5 ),
@@ -251,7 +251,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSize', 3 * (750) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -269,7 +269,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.7529413,0.7450981,0.7411765] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -280,7 +280,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.7411765,0.7372549,0.7372549] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -294,7 +294,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.2 ),
                         ( 'parCount', 85 ),
                         ( 'parEndColor', float3[0.6196079,0.6156863,0.6156863] ),
-                        ( 'parEndSize', 2 * (541) ),
+                        ( 'parEndSize', 3 * (541) ),
                         ( 'parFluidFriction', 1.45 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -317,7 +317,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.2 ),
                         ( 'parCount', 85 ),
                         ( 'parEndColor', float3[0.3647059,0.3647059,0.3647059] ),
-                        ( 'parEndSize', 2 * (541) ),
+                        ( 'parEndSize', 3 * (541) ),
                         ( 'parFluidFriction', 1.45 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4.1 ),
@@ -352,7 +352,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parFinalSize', 0 ),
-                                ( 'parInitialSize', 2 * (8000) ),
+                                ( 'parInitialSize', 3 * (8000) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[0,0,-132] + parPosition ),
                             ]
@@ -369,8 +369,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (8000) ),
-                                ( 'parInitialSize', 2 * (10) ),
+                                ( 'parFinalSize', 3 * (8000) ),
+                                ( 'parInitialSize', 3 * (10) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[0,0,-132] + parPosition ),
                             ]
@@ -384,7 +384,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parCount', 5 ),
                         ( 'parDuration', 0.1 ),
                         ( 'parFinalSize', 0 ),
-                        ( 'parInitialSize', 2 * (15000) ),
+                        ( 'parInitialSize', 3 * (15000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[-49,0,-132] + parPosition ),
                     ]
@@ -396,7 +396,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parCount', 5 ),
                         ( 'parDuration', 0.1 ),
                         ( 'parFinalSize', 0 ),
-                        ( 'parInitialSize', 2 * (15000) ),
+                        ( 'parInitialSize', 3 * (15000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[0,0,-132] + parPosition ),
                     ]
@@ -407,8 +407,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (6000) ),
-                        ( 'parInitialSize', 2 * (10) ),
+                        ( 'parFinalSize', 3 * (6000) ),
+                        ( 'parInitialSize', 3 * (10) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[49,0,-132] + parPosition ),
                     ]
@@ -424,7 +424,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parFinalSize', 0 ),
-                                ( 'parInitialSize', 2 * (6000) ),
+                                ( 'parInitialSize', 3 * (6000) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[49,0,-132] + parPosition ),
                             ]
@@ -437,8 +437,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (6000) ),
-                        ( 'parInitialSize', 2 * (10) ),
+                        ( 'parFinalSize', 3 * (6000) ),
+                        ( 'parInitialSize', 3 * (10) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[49,0,-132] + parPosition ),
                     ]
@@ -454,7 +454,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parFinalSize', 0 ),
-                                ( 'parInitialSize', 2 * (6000) ),
+                                ( 'parInitialSize', 3 * (6000) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[49,0,-132] + parPosition ),
                             ]
@@ -472,7 +472,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parFinalSize', 0 ),
-                                ( 'parInitialSize', 2 * (6000) ),
+                                ( 'parInitialSize', 3 * (6000) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[49,0,-132] + parPosition ),
                             ]
@@ -485,8 +485,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (6000) ),
-                        ( 'parInitialSize', 2 * (10) ),
+                        ( 'parFinalSize', 3 * (6000) ),
+                        ( 'parInitialSize', 3 * (10) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[49,0,-132] + parPosition ),
                     ]
@@ -514,7 +514,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (4000) ),
+                        ( 'parSize', 3 * (4000) ),
                     ]
                 ),
                 TSequentialAction
@@ -534,7 +534,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 3 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -553,7 +553,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parDuration', 3 ),
                                 ( 'parLuminosite', 1.5 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parSize', 2 * (3500) ),
+                                ( 'parSize', 3 * (3500) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[0,0,-250] + parPosition ),
                             ]
@@ -574,7 +574,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parDuration', 3 ),
                                 ( 'parLuminosite', 2 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parSize', 2 * (2500) ),
+                                ( 'parSize', 3 * (2500) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', parPosition ),
                             ]
@@ -591,7 +591,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parDuration', 2 ),
                         ( 'parLuminosite', 3 ),
                         ( 'parOpacity', 0.25 ),
-                        ( 'parSize', 2 * (2500) ),
+                        ( 'parSize', 3 * (2500) ),
                         ( 'parSpeed', 0 ),
                         ( 'parStartPosition', parPosition ),
                     ]
@@ -666,7 +666,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parDuration', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
                                 ( 'Position', float3[0,0,200] + parPosition ),
                             ]
@@ -686,7 +686,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parLifetime', 1.3 ),
                         ( 'parNarrowness', 0.1000005 ),
                         ( 'parPositionRadius', 520 ),
-                        ( 'parSize', 2 * (19) ),
+                        ( 'parSize', 3 * (19) ),
                         ( 'parSpeedMax', 5900 ),
                         ( 'parSpeedMin', 2600 ),
                         ( 'parStretch', 0.7 ),
@@ -711,7 +711,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 1.3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (19) ),
+                                ( 'parSize', 3 * (19) ),
                                 ( 'parSpeedMax', 6500 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -738,7 +738,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 1.75 ),
                                 ( 'parNarrowness', 1 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (19) ),
+                                ( 'parSize', 3 * (19) ),
                                 ( 'parSpeedMax', 6500 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -765,7 +765,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 2000 ),
                                 ( 'parStretch', 0.7 ),
@@ -792,7 +792,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 10000 ),
                                 ( 'parSpeedMin', 4000 ),
                                 ( 'parStretch', 0.7 ),
@@ -819,7 +819,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 4000 ),
                                 ( 'parStretch', 0.7 ),
@@ -846,7 +846,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 5900 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -873,7 +873,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 1.3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (19) ),
+                                ( 'parSize', 3 * (19) ),
                                 ( 'parSpeedMax', 5900 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -900,7 +900,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 5900 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -927,7 +927,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 4000 ),
                                 ( 'parStretch', 0.7 ),
@@ -954,7 +954,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 2000 ),
                                 ( 'parStretch', 0.7 ),
@@ -981,7 +981,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 5900 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -1008,7 +1008,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 1.3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (19) ),
+                                ( 'parSize', 3 * (19) ),
                                 ( 'parSpeedMax', 5900 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -1035,7 +1035,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 10000 ),
                                 ( 'parSpeedMin', 4000 ),
                                 ( 'parStretch', 0.7 ),
@@ -1062,7 +1062,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2 ),
                                 ( 'parNarrowness', 0.1000005 ),
                                 ( 'parPositionRadius', 520 ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 5900 ),
                                 ( 'parSpeedMin', 2600 ),
                                 ( 'parStretch', 0.7 ),
@@ -1087,14 +1087,14 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[1000,1000,1000]) ),
+                        ( 'parCloudsize', 3 * (float3[1000,1000,1000]) ),
                         ( 'parColor', float3[0.4588236,0.454902,0.454902] ),
                         ( 'parCount', 10 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parParticleSize', 2 * (4000) ),
+                        ( 'parParticleSize', 3 * (4000) ),
                         ( 'parRandomPosition', 500 ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 4 ),
@@ -1109,14 +1109,14 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[500,500,500]) ),
+                                ( 'parCloudsize', 3 * (float3[500,500,500]) ),
                                 ( 'parColor', float3[0.2666667,0.2666667,0.2666667] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.9 ),
-                                ( 'parParticleSize', 2 * (2500) ),
+                                ( 'parParticleSize', 3 * (2500) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 4 ),
@@ -1129,14 +1129,14 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[500,500,500]) ),
+                        ( 'parCloudsize', 3 * (float3[500,500,500]) ),
                         ( 'parColor', float3[0.5529412,0.5529412,0.5529412] ),
                         ( 'parCount', 40 ),
                         ( 'parDecayLength', 20 ),
                         ( 'parDecayStart', 5 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parParticleSize', 2 * (2000) ),
+                        ( 'parParticleSize', 3 * (2000) ),
                         ( 'parRandomPosition', 500 ),
                         ( 'parSmokeDuration', 8 ),
                         ( 'parSpawnerDuration', 0.25 ),
@@ -1228,7 +1228,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 0.5 ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSizeLBU', 2 * (46.51163) ),
+                        ( 'parSizeLBU', 3 * (46.51163) ),
                         ( 'Position', float3[-1184,97,0] + parPosition ),
                     ]
                 ),
@@ -1260,7 +1260,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1292,7 +1292,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1324,7 +1324,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1352,7 +1352,7 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1372,10 +1372,10 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 20 ),
                         ( 'parCountDebritsWithFire', 1 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (1.049999) ),
+                        ( 'parDebritSizeMul', 3 * (1.049999) ),
                         ( 'parDispersion', 200 ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (300) ),
+                        ( 'parFireParticleStartSize', 3 * (300) ),
                         ( 'parLifetime', 3 ),
                         ( 'parMeshType', 0 ),
                         ( 'parMinSpeedRatio', 0.1500003 ),
@@ -1383,8 +1383,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.1921569,0.1921569,0.1921569] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (1000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (150) ),
+                        ( 'parSmokeParticleEndSize', 3 * (1000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (150) ),
                         ( 'parSpeed', float3[8000,9000,8000] ),
                         ( 'parSpeedDispersion', 0.4000029 ),
                     ]
@@ -1407,11 +1407,11 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 40 ),
                         ( 'parCountDebritsWithFire', 2 ),
                         ( 'parCountDebritsWithSmoke', 4 ),
-                        ( 'parDebritSizeMul', 2 * (1.75) ),
+                        ( 'parDebritSizeMul', 3 * (1.75) ),
                         ( 'parDir', float3[0,0,1] ),
                         ( 'parDispersion', 0 ),
-                        ( 'parFireParticleEndSize', 2 * (10) ),
-                        ( 'parFireParticleStartSize', 2 * (45) ),
+                        ( 'parFireParticleEndSize', 3 * (10) ),
+                        ( 'parFireParticleStartSize', 3 * (45) ),
                         ( 'parGravity', 4000 ),
                         ( 'parLifetime', 60 ),
                         ( 'parMeshType', 0 ),
@@ -1420,8 +1420,8 @@ export fx_destruction_unite_MBT_11 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.427451,0.4196079,0.4156863] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (250) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (250) ),
                         ( 'parSpeed', float3[3000,3000,4000] ),
                     ]
                 ),

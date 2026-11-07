@@ -25,8 +25,8 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.3 ),
-                        ( 'parFinalSize', 2 * (3000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (3000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -61,8 +61,8 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (8000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (8000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -77,7 +77,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 18 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -88,7 +88,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[1,0.9529412,0.4313726] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (300) ),
+                                ( 'parStartSize', 3 * (300) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -108,8 +108,8 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (2500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', float3[0,0,200] + parPosition ),
                     ]
@@ -136,7 +136,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 0.8 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 2 * (1000) ),
+                        ( 'parSize', 3 * (1000) ),
                         ( 'parDeltaPositionAdditif', parPosition ),
                     ]
                 ),
@@ -150,7 +150,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 4 ),
                         ( 'parLuminosite', 6 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (4000) ),
+                        ( 'parSize', 3 * (4000) ),
                         ( 'parSpeed', 0 ),
                         ( 'parStartPosition', parPosition ),
                     ]
@@ -169,7 +169,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parDuration', 3 ),
                                 ( 'parLuminosite', 6 ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parSize', 2 * (2000) ),
+                                ( 'parSize', 3 * (2000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', parPosition ),
                             ]
@@ -193,7 +193,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.85 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 4000 ),
                                 ( 'parSpeedMin', 3000 ),
                                 ( 'parStretch', 2 ),
@@ -225,7 +225,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -253,7 +253,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (46.51163) ),
+                        ( 'parSizeLBU', 3 * (46.51163) ),
                     ]
                 ),
             ]
@@ -278,11 +278,11 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 4 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 230 ),
-                                ( 'parFireParticleEndSize', 2 * (400) ),
-                                ( 'parFireParticleStartSize', 2 * (75) ),
+                                ( 'parFireParticleEndSize', 3 * (400) ),
+                                ( 'parFireParticleStartSize', 3 * (75) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -291,8 +291,8 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.03137255,0.02352941,0.003921569] ),
                                 ( 'parSmokeColorMultiplier', 0.1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (2350) ),
-                                ( 'parSmokeParticleStartSize', 2 * (150) ),
+                                ( 'parSmokeParticleEndSize', 3 * (2350) ),
+                                ( 'parSmokeParticleStartSize', 3 * (150) ),
                                 ( 'parSpeed', float3[3000,3000,7000] ),
                             ]
                         ),
@@ -326,7 +326,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parNarrowness', 1 ),
                                 ( 'parOpacity', 0.25 ),
                                 ( 'parRadius', 100 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                             ]
                         ),
                     ]
@@ -352,7 +352,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 18 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (10000) ),
+                                ( 'parEndSize', 3 * (10000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -363,7 +363,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (300) ),
+                                ( 'parStartSize', 3 * (300) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -391,7 +391,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 15 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -401,7 +401,7 @@ export fx_impact_batiment_bomb_petit is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
                                 ( 'parStartRandomRadius', 500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (100) ),
+                                ( 'parStartSize', 3 * (100) ),
                                 ( 'parStartSpeed', 8 ),
                                 ( 'parWindWeight', 6 ),
                             ]

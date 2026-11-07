@@ -22,7 +22,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (60000) ),
+                        ( 'parFinalSize', 3 * (60000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1000 ),
                     ]
@@ -37,8 +37,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (10000) ),
-                                ( 'parInitialSize', 2 * (2500) ),
+                                ( 'parFinalSize', 3 * (10000) ),
+                                ( 'parInitialSize', 3 * (2500) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[8315,-363,0] + parPosition ),
                             ]
@@ -55,8 +55,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (7500) ),
-                                ( 'parInitialSize', 2 * (1500) ),
+                                ( 'parFinalSize', 3 * (7500) ),
+                                ( 'parInitialSize', 3 * (1500) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[11627,96,0] + parPosition ),
                             ]
@@ -73,8 +73,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (5000) ),
-                                ( 'parInitialSize', 2 * (1500) ),
+                                ( 'parFinalSize', 3 * (5000) ),
+                                ( 'parInitialSize', 3 * (1500) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[13516,-406,0] + parPosition ),
                             ]
@@ -87,7 +87,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (7000) ),
+                        ( 'parFinalSize', 3 * (7000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', float3[0,0,200] + parPosition ),
@@ -99,8 +99,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (15000) ),
-                        ( 'parInitialSize', 2 * (5000) ),
+                        ( 'parFinalSize', 3 * (15000) ),
+                        ( 'parInitialSize', 3 * (5000) ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', parPosition ),
                     ]
@@ -115,8 +115,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (12500) ),
-                                ( 'parInitialSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (12500) ),
+                                ( 'parInitialSize', 3 * (4000) ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[4531,68,0] + parPosition ),
                             ]
@@ -152,7 +152,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 6 ),
                                 ( 'parNarrowness', 1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (15) ),
+                                ( 'parSize', 3 * (15) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 6000 ),
                                 ( 'parStretch', 2 ),
@@ -178,8 +178,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7000002 ),
-                        ( 'parFinalSize', 2 * (6300) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (6300) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 5000 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -195,7 +195,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.9921569,0.7764707,0.6] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 5 ),
-                                ( 'parSize', 2 * (7500) ),
+                                ( 'parSize', 3 * (7500) ),
                             ]
                         ),
                     ]
@@ -211,7 +211,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.854902,0.6,0.3921569] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 4 ),
-                                ( 'parSize', 2 * (6000) ),
+                                ( 'parSize', 3 * (6000) ),
                             ]
                         ),
                     ]
@@ -234,7 +234,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parDispersion', 500 ),
                         ( 'parDuration', 0.75 ),
                         ( 'parLuminosite', 1 ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parSize', 3 * (8000) ),
                     ]
                 ),
                 TActionCall
@@ -265,7 +265,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (6500) ),
+                                ( 'parSize', 3 * (6500) ),
                             ]
                         ),
                     ]
@@ -278,7 +278,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 10 ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parSize', 3 * (8000) ),
                     ]
                 ),
                 TSequentialAction
@@ -309,7 +309,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.3176471,0.3176471,0.3176471] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -320,7 +320,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -338,7 +338,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.4,0.4,0.3960785] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -349,7 +349,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2196079,0.2196079,0.2156863] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -363,7 +363,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 20 ),
                         ( 'parEndColor', float3[0.8980393,0.7098039,0.5529412] ),
-                        ( 'parEndSize', 2 * (6000) ),
+                        ( 'parEndSize', 3 * (6000) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -374,7 +374,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.627451,0.4980392,0.3921569] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (750) ),
+                        ( 'parStartSize', 3 * (750) ),
                         ( 'parStartSpeed3D', float3[0,0,0] ),
                         ( 'parWindWeight', 6 ),
                     ]
@@ -397,7 +397,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
                         ( 'parCount', 5 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 2 * (900) ),
+                        ( 'parSize', 3 * (900) ),
                     ]
                 ),
                 TActionCall
@@ -407,11 +407,11 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 50 ),
                         ( 'parCountDebritsWithFire', 5 ),
                         ( 'parCountDebritsWithSmoke', 15 ),
-                        ( 'parDebritSizeMul', 2 * (1) ),
+                        ( 'parDebritSizeMul', 3 * (1) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 1500 ),
-                        ( 'parFireParticleEndSize', 2 * (800) ),
-                        ( 'parFireParticleStartSize', 2 * (100) ),
+                        ( 'parFireParticleEndSize', 3 * (800) ),
+                        ( 'parFireParticleStartSize', 3 * (100) ),
                         ( 'parGravity', 3000 ),
                         ( 'parLifetime', 30 ),
                         ( 'parMeshType', 4 ),
@@ -420,8 +420,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                         ( 'parSmokeColorMultiplier', 0.6999999 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (900) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (900) ),
                         ( 'parSpeed', float3[2030,2070,10000] ),
                     ]
                 ),
@@ -432,11 +432,11 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 20 ),
                         ( 'parCountDebritsWithFire', 5 ),
                         ( 'parCountDebritsWithSmoke', 5 ),
-                        ( 'parDebritSizeMul', 2 * (2) ),
+                        ( 'parDebritSizeMul', 3 * (2) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 540 ),
-                        ( 'parFireParticleEndSize', 2 * (25) ),
-                        ( 'parFireParticleStartSize', 2 * (200) ),
+                        ( 'parFireParticleEndSize', 3 * (25) ),
+                        ( 'parFireParticleStartSize', 3 * (200) ),
                         ( 'parGravity', 1100 ),
                         ( 'parLifetime', 6 ),
                         ( 'parMeshType', 1 ),
@@ -445,8 +445,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                         ( 'parSmokeColorMultiplier', 0.6999999 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (900) ),
+                        ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (900) ),
                         ( 'parSpeed', float3[2030,2070,10000] ),
                     ]
                 ),
@@ -470,14 +470,14 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,4000]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,4000]) ),
                                 ( 'parColor', float3[0.02352941,0.02352941,0.02352941] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (3000) ),
+                                ( 'parParticleSize', 3 * (3000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -494,14 +494,14 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,1000]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.9 ),
-                                ( 'parParticleSize', 2 * (2500) ),
+                                ( 'parParticleSize', 3 * (2500) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -514,14 +514,14 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.4392157,0.4431373,0.4509804] ),
                         ( 'parCount', 5 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 2 * (6600) ),
+                        ( 'parParticleSize', 3 * (6600) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 5.299997 ),
                         ( 'parSpawnerDuration', 0.45 ),
@@ -536,14 +536,14 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,2000]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,2000]) ),
                                 ( 'parColor', float3[0.1372549,0.1372549,0.1372549] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (1500) ),
+                                ( 'parParticleSize', 3 * (1500) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -568,7 +568,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -580,10 +580,10 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 5 ),
                         ( 'parCountDebritsWithFire', 10 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (1.5) ),
+                        ( 'parDebritSizeMul', 3 * (1.5) ),
                         ( 'parDispersion', 1000 ),
-                        ( 'parFireParticleEndSize', 2 * (375) ),
-                        ( 'parFireParticleStartSize', 2 * (75) ),
+                        ( 'parFireParticleEndSize', 3 * (375) ),
+                        ( 'parFireParticleStartSize', 3 * (75) ),
                         ( 'parLifetime', 8 ),
                         ( 'parMeshType', 1 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -591,8 +591,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                         ( 'parSmokeColorMultiplier', 0.3 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (600) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSmokeParticleEndSize', 3 * (600) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
                         ( 'parSpeed', float3[4250,4360,9983] ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
@@ -604,10 +604,10 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 5 ),
                         ( 'parCountDebritsWithFire', 5 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.5) ),
+                        ( 'parDebritSizeMul', 3 * (0.5) ),
                         ( 'parDispersion', 1200 ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (200) ),
+                        ( 'parFireParticleStartSize', 3 * (200) ),
                         ( 'parLifetime', 5 ),
                         ( 'parMeshType', 1 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -615,8 +615,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                         ( 'parSmokeColorMultiplier', 0.3 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (600) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSmokeParticleEndSize', 3 * (600) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
                         ( 'parSpeed', float3[4250,4360,9983] ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
@@ -628,11 +628,11 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 10 ),
                         ( 'parCountDebritsWithFire', 10 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (2) ),
+                        ( 'parDebritSizeMul', 3 * (2) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 500 ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (300) ),
+                        ( 'parFireParticleStartSize', 3 * (300) ),
                         ( 'parGravity', 1250 ),
                         ( 'parLifetime', 4 ),
                         ( 'parMeshType', 1 ),
@@ -641,8 +641,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (600) ),
                         ( 'parSpeed', float3[4280,4350,8000] ),
                     ]
                 ),
@@ -657,7 +657,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 8 ),
                                 ( 'parEndColor', float3[0.6784314,0.6666667,0.6666667] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 0.8 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -668,7 +668,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2666667,0.172549,0.1019608] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed3D', float3[6000,6000,2000] ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -1093,7 +1093,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 2 ),
                                 ( 'parOpacity', 0.7 ),
                                 ( 'parParticleLifetime', 6 ),
-                                ( 'parSize', 2 * (4000) ),
+                                ( 'parSize', 3 * (4000) ),
                                 ( 'parSpeedMul', 0.5 ),
                             ]
                         ),
@@ -1199,7 +1199,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 2 ),
                                 ( 'parOpacity', 0.7 ),
                                 ( 'parParticleLifetime', 6 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                                 ( 'parSpeedMul', 0.5 ),
                             ]
                         ),
@@ -1224,7 +1224,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parDuration', 3 ),
                         ( 'parOpacity', 0.8 ),
                         ( 'parParticleLifetime', 8 ),
-                        ( 'parSize', 2 * (5500) ),
+                        ( 'parSize', 3 * (5500) ),
                         ( 'parSpeedMul', 1 ),
                     ]
                 ),
@@ -1251,7 +1251,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 3 ),
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parParticleLifetime', 6 ),
-                                ( 'parSize', 2 * (6000) ),
+                                ( 'parSize', 3 * (6000) ),
                                 ( 'parSpeedMul', 1 ),
                             ]
                         ),
@@ -1280,7 +1280,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 4 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parParticleLifetime', 8 ),
-                                ( 'parSize', 2 * (7500) ),
+                                ( 'parSize', 3 * (7500) ),
                                 ( 'parSpeedMul', 1 ),
                             ]
                         ),
@@ -1313,7 +1313,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (116.2791) ),
+                                ( 'parSizeLBU', 3 * (116.2791) ),
                             ]
                         ),
                     ]
@@ -1345,7 +1345,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (93.02325) ),
+                                ( 'parSizeLBU', 3 * (93.02325) ),
                             ]
                         ),
                     ]
@@ -1377,7 +1377,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (93.02325) ),
+                                ( 'parSizeLBU', 3 * (93.02325) ),
                             ]
                         ),
                     ]
@@ -1409,7 +1409,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (116.2791) ),
+                                ( 'parSizeLBU', 3 * (116.2791) ),
                             ]
                         ),
                     ]
@@ -1441,7 +1441,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (162.7907) ),
+                                ( 'parSizeLBU', 3 * (162.7907) ),
                             ]
                         ),
                     ]
@@ -1473,7 +1473,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1501,7 +1501,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.8 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1531,7 +1531,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1563,7 +1563,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (162.7907) ),
+                                ( 'parSizeLBU', 3 * (162.7907) ),
                             ]
                         ),
                     ]
@@ -1586,10 +1586,10 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 5 ),
                         ( 'parCountDebritsWithFire', 5 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (1.25) ),
+                        ( 'parDebritSizeMul', 3 * (1.25) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 1200 ),
-                        ( 'parFireParticleEndSize', 2 * (200) ),
+                        ( 'parFireParticleEndSize', 3 * (200) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 3000 ),
                         ( 'parLifetime', 60 ),
@@ -1599,8 +1599,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2100) ),
-                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2100) ),
+                        ( 'parSmokeParticleStartSize', 3 * (600) ),
                         ( 'parSpeed', float3[200,200,4000] ),
                     ]
                 ),
@@ -1623,11 +1623,11 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 65 ),
                         ( 'parCountDebritsWithFire', 10 ),
                         ( 'parCountDebritsWithSmoke', 5 ),
-                        ( 'parDebritSizeMul', 2 * (1) ),
+                        ( 'parDebritSizeMul', 3 * (1) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 1500 ),
-                        ( 'parFireParticleEndSize', 2 * (600) ),
-                        ( 'parFireParticleStartSize', 2 * (250) ),
+                        ( 'parFireParticleEndSize', 3 * (600) ),
+                        ( 'parFireParticleStartSize', 3 * (250) ),
                         ( 'parGravity', 1250 ),
                         ( 'parLifetime', 10 ),
                         ( 'parMeshType', 4 ),
@@ -1636,8 +1636,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,1,1] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (500) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSmokeParticleEndSize', 3 * (500) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
                         ( 'parSpeed', float3[15000,4000,6000] ),
                     ]
                 ),
@@ -1664,11 +1664,11 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 80 ),
                                 ( 'parCountDebritsWithFire', 5 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (1.25) ),
+                                ( 'parDebritSizeMul', 3 * (1.25) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 1750 ),
-                                ( 'parFireParticleEndSize', 2 * (300) ),
-                                ( 'parFireParticleStartSize', 2 * (50) ),
+                                ( 'parFireParticleEndSize', 3 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (50) ),
                                 ( 'parGravity', 1250 ),
                                 ( 'parLifetime', 10 ),
                                 ( 'parMeshType', 1 ),
@@ -1677,8 +1677,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.4745098,0.4666667,0.4666667] ),
                                 ( 'parSmokeColorMultiplier', 1 ),
                                 ( 'parSmokeDensity', 50 ),
-                                ( 'parSmokeParticleEndSize', 2 * (500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSmokeParticleEndSize', 3 * (500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (100) ),
                                 ( 'parSpeed', float3[10000,4000,8000] ),
                             ]
                         ),
@@ -1706,11 +1706,11 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 40 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 20 ),
-                                ( 'parDebritSizeMul', 2 * (1.35) ),
+                                ( 'parDebritSizeMul', 3 * (1.35) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 2000 ),
-                                ( 'parFireParticleEndSize', 2 * (400) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (400) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 1500 ),
                                 ( 'parLifetime', 10 ),
                                 ( 'parMeshType', 4 ),
@@ -1719,8 +1719,8 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.5921569,0.5921569,0.5921569] ),
                                 ( 'parSmokeColorMultiplier', 1 ),
                                 ( 'parSmokeDensity', 50 ),
-                                ( 'parSmokeParticleEndSize', 2 * (500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSmokeParticleEndSize', 3 * (500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (100) ),
                                 ( 'parSpeed', float3[15000,4000,8000] ),
                             ]
                         ),
@@ -1751,7 +1751,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parNarrowness', 1.32 ),
                         ( 'parOpacity', 1 ),
                         ( 'parRadius', 200 ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parSize', 3 * (8000) ),
                     ]
                 ),
             ]
@@ -1772,7 +1772,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.2 ),
                         ( 'parCount', 20 ),
                         ( 'parEndColor', float3[0.5450981,0.5450981,0.5450981] ),
-                        ( 'parEndSize', 2 * (6000) ),
+                        ( 'parEndSize', 3 * (6000) ),
                         ( 'parFluidFriction', 1.45 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4.1 ),
@@ -1805,7 +1805,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 20 ),
                         ( 'parEndColor', float3[0.4078432,0.4039216,0.4039216] ),
-                        ( 'parEndSize', 2 * (5000) ),
+                        ( 'parEndSize', 3 * (5000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 8 ),
@@ -1816,7 +1816,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.6078432,0.5960785,0.5960785] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1500) ),
+                        ( 'parStartSize', 3 * (1500) ),
                         ( 'parStartSpeed3D', float3[2000,2000,0] ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -1832,7 +1832,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.172549,0.172549,0.172549] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -1843,7 +1843,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.6784314,0.5294118,0.4078432] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (2000) ),
+                                ( 'parStartSize', 3 * (2000) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -1871,7 +1871,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.2431373,0.2431373,0.2431373] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -1882,7 +1882,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2352941,0.2352941,0.2352941] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -1910,7 +1910,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.172549,0.172549,0.172549] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -1921,7 +1921,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2431373,0.2392157,0.2352941] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -1949,7 +1949,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 40 ),
                                 ( 'parEndColor', float3[0.2666667,0.2666667,0.2666667] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -1960,7 +1960,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2431373,0.2431373,0.2431373] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -1988,7 +1988,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.1294118,0.1294118,0.1294118] ),
-                                ( 'parEndSize', 2 * (1000) ),
+                                ( 'parEndSize', 3 * (1000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -1999,7 +1999,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4941177,0.4862745,0.4862745] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSize', 3 * (50) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -2027,7 +2027,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 15 ),
                                 ( 'parEndColor', float3[0.4,0.3960785,0.3960785] ),
-                                ( 'parEndSize', 2 * (1000) ),
+                                ( 'parEndSize', 3 * (1000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 5 ),
@@ -2038,7 +2038,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2666667,0.2627451,0.2627451] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSize', 3 * (50) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -2066,7 +2066,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (1000) ),
+                                ( 'parEndSize', 3 * (1000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -2077,7 +2077,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.3176471,0.3137255,0.3137255] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (25) ),
+                                ( 'parStartSize', 3 * (25) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -2105,7 +2105,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (8000) ),
+                                ( 'parEndSize', 3 * (8000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2116,7 +2116,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.6392157,0.5019608,0.3882353] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (2000) ),
+                                ( 'parStartSize', 3 * (2000) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2134,7 +2134,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.1843137,0.1843137,0.1843137] ),
-                                ( 'parEndSize', 2 * (5000) ),
+                                ( 'parEndSize', 3 * (5000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2145,7 +2145,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.5843138,0.572549,0.572549] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1500) ),
+                                ( 'parStartSize', 3 * (1500) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -2173,7 +2173,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.2196079,0.2156863,0.2156863] ),
-                                ( 'parEndSize', 2 * (5000) ),
+                                ( 'parEndSize', 3 * (5000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2184,7 +2184,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4,0.3921569,0.3921569] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1500) ),
+                                ( 'parStartSize', 3 * (1500) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -2202,7 +2202,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.2745098,0.2156863,0.1686275] ),
-                                ( 'parEndSize', 2 * (8000) ),
+                                ( 'parEndSize', 3 * (8000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2213,7 +2213,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4627451,0.3607843,0.282353] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (2000) ),
+                                ( 'parStartSize', 3 * (2000) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2241,7 +2241,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (8000) ),
+                                ( 'parEndSize', 3 * (8000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2252,7 +2252,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4196079,0.3333333,0.2588235] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (2000) ),
+                                ( 'parStartSize', 3 * (2000) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2270,7 +2270,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.2235294,0.2235294,0.2235294] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -2281,7 +2281,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4,0.3921569,0.3921569] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1500) ),
+                                ( 'parStartSize', 3 * (1500) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -2309,7 +2309,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.1529412,0.1529412,0.1529412] ),
-                                ( 'parEndSize', 2 * (10000) ),
+                                ( 'parEndSize', 3 * (10000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -2320,7 +2320,7 @@ export fx_impact_sol_avion_gros_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2,0.1960784,0.1960784] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 3 ),
                             ]

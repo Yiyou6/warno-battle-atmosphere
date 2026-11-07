@@ -25,8 +25,8 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (25) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (25) ),
                         ( 'parIntensity', 300 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -35,14 +35,14 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[500,500,500]) ),
+                        ( 'parCloudsize', 3 * (float3[500,500,500]) ),
                         ( 'parColor', float3[0.07843138,0.07843138,0.07843138] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.55 ),
-                        ( 'parParticleSize', 2 * (1500) ),
+                        ( 'parParticleSize', 3 * (1500) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 5 ),
                         ( 'parSpawnerDuration', 0.4 ),
@@ -73,8 +73,8 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (2500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -101,7 +101,7 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 0.6 ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parSize', 2 * (2000) ),
+                        ( 'parSize', 3 * (2000) ),
                         ( 'parDeltaPositionAdditif', float3[0,0,-693] + parPosition ),
                     ]
                 ),
@@ -113,7 +113,7 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 0.25 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSizeLBU', 2 * (32.55814) ),
+                        ( 'parSizeLBU', 3 * (32.55814) ),
                         ( 'Position', float3[0,0,550] + parPosition ),
                     ]
                 ),
@@ -126,7 +126,7 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 0.2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.1 ),
-                        ( 'parSize', 2 * (1500) ),
+                        ( 'parSize', 3 * (1500) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[0,0,200] + parPosition ),
                     ]
@@ -140,7 +140,7 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 0.6 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
                         ( 'Position', float3[0,0,500] + parPosition ),
                     ]
@@ -159,7 +159,7 @@ export fx_impact_DCA_air_moyen is SimultaneousActionDeclaration
                         ( 'parNarrowness', 0.25 ),
                         ( 'parPositionRadius', 15 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (5) ),
+                        ( 'parSize', 3 * (5) ),
                         ( 'parSpeedMax', 2500 ),
                         ( 'parSpeedMin', 1800 ),
                         ( 'parStretch', 2 ),

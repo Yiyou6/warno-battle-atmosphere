@@ -46,8 +46,8 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (1700) ),
-                        ( 'parInitialSize', 2 * (80) ),
+                        ( 'parFinalSize', 3 * (1700) ),
+                        ( 'parInitialSize', 3 * (80) ),
                         ( 'parIntensity', 250 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -59,7 +59,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.7137255,0.7607844,0.9921569] ),
                         ( 'parCount', 8 ),
                         ( 'parDuration', 0.65 ),
-                        ( 'parSize', 2 * (700) ),
+                        ( 'parSize', 3 * (700) ),
                     ]
                 ),
                 TActionCall
@@ -68,8 +68,8 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 1 ),
-                        ( 'parFinalSize', 2 * (1100) ),
-                        ( 'parInitialSize', 2 * (80) ),
+                        ( 'parFinalSize', 3 * (1100) ),
+                        ( 'parInitialSize', 3 * (80) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -87,7 +87,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parNarrowness', 0.7 ),
                         ( 'parOpacity', 1 ),
                         ( 'parRadius', 0 ),
-                        ( 'parSize', 2 * (1000) ),
+                        ( 'parSize', 3 * (1000) ),
                     ]
                 ),
                 TActionCall
@@ -97,7 +97,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 12 ),
                         ( 'parEndColor', float3[0.9843138,0.9843138,0.9843138] ),
-                        ( 'parEndSize', 2 * (1500) ),
+                        ( 'parEndSize', 3 * (1500) ),
                         ( 'parFluidFriction', 2.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 0.7 ),
@@ -108,7 +108,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.6588235,0.7058824,0.9921569] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (150) ),
+                        ( 'parStartSize', 3 * (150) ),
                         ( 'parStartSpeed3D', float3[2000,2000,0] ),
                         ( 'parWindWeight', 1 ),
                     ]
@@ -126,8 +126,8 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (2500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', float3[0,0,200] + parPosition ),
                     ]
@@ -151,7 +151,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 1.2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (1000) ),
+                        ( 'parSize', 3 * (1000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[0,0,120] + parPosition ),
                     ]
@@ -166,7 +166,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parGravity', 3000 ),
                         ( 'parGrowFactor', 10 ),
                         ( 'parLifetime', 2 ),
-                        ( 'parSize', 2 * (50) ),
+                        ( 'parSize', 3 * (50) ),
                         ( 'parSpeed', 800 ),
                     ]
                 ),
@@ -183,7 +183,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parLifetime', 0.32 ),
                         ( 'parNarrowness', 0.85 ),
                         ( 'parPositionRadius', 60 ),
-                        ( 'parSize', 2 * (3) ),
+                        ( 'parSize', 3 * (3) ),
                         ( 'parSpeedMax', 2100 ),
                         ( 'parSpeedMin', 2100 ),
                         ( 'parStretch', 1.5 ),
@@ -198,7 +198,7 @@ export fx_impact_eau_AP_petit is SimultaneousActionDeclaration
                         ( 'parCount', 10 ),
                         ( 'parFragDuration', 0.6 ),
                         ( 'parRadius', 500 ),
-                        ( 'parSize', 2 * (100) ),
+                        ( 'parSize', 3 * (100) ),
                         ( 'parStartTime', 0.5 ),
                         ( 'parStopTime', 1.4 ),
                     ]

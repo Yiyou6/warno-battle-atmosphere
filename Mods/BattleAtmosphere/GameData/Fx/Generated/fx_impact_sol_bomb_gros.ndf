@@ -26,8 +26,8 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 3 ),
                         ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                        ( 'parDustSize', 2 * (2000) ),
-                        ( 'parMudSize', 2 * (1060) ),
+                        ( 'parDustSize', 3 * (2000) ),
+                        ( 'parMudSize', 3 * (1060) ),
                         ( 'parOpacity', 0.35 ),
                     ]
                 ),
@@ -46,8 +46,8 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.3 ),
-                        ( 'parFinalSize', 2 * (3000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (3000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[-71,-49,0] ),
                     ]
@@ -59,7 +59,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 20 ),
                         ( 'parDuration', 3 ),
-                        ( 'parSize', 2 * (3900) ),
+                        ( 'parSize', 3 * (3900) ),
                     ]
                 ),
                 TActionCall
@@ -68,8 +68,8 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (12000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (12000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -84,7 +84,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 18 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -95,7 +95,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (300) ),
+                                ( 'parStartSize', 3 * (300) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -115,8 +115,8 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (2500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', float3[-71,-49,200] + parPosition ),
                     ]
@@ -143,7 +143,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 0.8 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 2 * (4000) ),
+                        ( 'parSize', 3 * (4000) ),
                         ( 'parDeltaPositionAdditif', float3[-71,-49,-953] + parPosition ),
                     ]
                 ),
@@ -157,7 +157,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                         ( 'parDuration', 8 ),
                         ( 'parLuminosite', 6 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (10000) ),
+                        ( 'parSize', 3 * (10000) ),
                         ( 'parSpeed', 0 ),
                         ( 'parStartPosition', parPosition ),
                     ]
@@ -176,7 +176,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parDuration', 6 ),
                                 ( 'parLuminosite', 6 ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parSize', 2 * (5000) ),
+                                ( 'parSize', 3 * (5000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', parPosition ),
                             ]
@@ -200,7 +200,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parLifetime', 4 ),
                                 ( 'parNarrowness', 1 ),
                                 ( 'parPositionRadius', 100 ),
-                                ( 'parSize', 2 * (15) ),
+                                ( 'parSize', 3 * (15) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 6000 ),
                                 ( 'parStretch', 1 ),
@@ -266,7 +266,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (2500) ),
+                                ( 'parSize', 3 * (2500) ),
                             ]
                         ),
                     ]
@@ -294,7 +294,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (69.76744) ),
+                        ( 'parSizeLBU', 3 * (69.76744) ),
                     ]
                 ),
             ]
@@ -319,11 +319,11 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 5 ),
                                 ( 'parCountDebritsWithSmoke', 5 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 230 ),
-                                ( 'parFireParticleEndSize', 2 * (750) ),
-                                ( 'parFireParticleStartSize', 2 * (100) ),
+                                ( 'parFireParticleEndSize', 3 * (750) ),
+                                ( 'parFireParticleStartSize', 3 * (100) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 8 ),
                                 ( 'parMeshType', 1 ),
@@ -332,8 +332,8 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.1764706,0.1568628,0.09411766] ),
                                 ( 'parSmokeColorMultiplier', 0.38 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (2350) ),
-                                ( 'parSmokeParticleStartSize', 2 * (150) ),
+                                ( 'parSmokeParticleEndSize', 3 * (2350) ),
+                                ( 'parSmokeParticleStartSize', 3 * (150) ),
                                 ( 'parSpeed', float3[3000,3000,5603] ),
                             ]
                         ),
@@ -367,7 +367,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parNarrowness', 1 ),
                                 ( 'parOpacity', 0.35 ),
                                 ( 'parRadius', 240 ),
-                                ( 'parSize', 2 * (6000) ),
+                                ( 'parSize', 3 * (6000) ),
                             ]
                         ),
                     ]
@@ -393,7 +393,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 18 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (15000) ),
+                                ( 'parEndSize', 3 * (15000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -404,7 +404,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (300) ),
+                                ( 'parStartSize', 3 * (300) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -432,7 +432,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 40 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -442,7 +442,7 @@ export fx_impact_sol_bomb_gros is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
                                 ( 'parStartRandomRadius', 1000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (200) ),
+                                ( 'parStartSize', 3 * (200) ),
                                 ( 'parStartSpeed', 20 ),
                                 ( 'parWindWeight', 6 ),
                             ]

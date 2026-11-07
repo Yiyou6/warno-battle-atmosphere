@@ -27,8 +27,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[2046,1061,38] + parPosition ),
                             ]
@@ -45,8 +45,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 245 ),
                                 ( 'parPositionRelative', float3[1025,229,38] + parPosition ),
                             ]
@@ -63,8 +63,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 265 ),
                                 ( 'parPositionRelative', float3[536,905,38] + parPosition ),
                             ]
@@ -81,8 +81,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 225 ),
                                 ( 'parPositionRelative', float3[-386,926,38] + parPosition ),
                             ]
@@ -95,8 +95,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (750) ),
-                        ( 'parInitialSize', 2 * (250) ),
+                        ( 'parFinalSize', 3 * (750) ),
+                        ( 'parInitialSize', 3 * (250) ),
                         ( 'parZBias', 250 ),
                         ( 'parPositionRelative', float3[-2538,567,38] + parPosition ),
                     ]
@@ -111,8 +111,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[-1364,629,38] + parPosition ),
                             ]
@@ -152,7 +152,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (225) ),
+                                ( 'parSize', 3 * (225) ),
                             ]
                         ),
                     ]
@@ -180,7 +180,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (275) ),
+                                ( 'parSize', 3 * (275) ),
                             ]
                         ),
                     ]
@@ -208,7 +208,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (240) ),
+                                ( 'parSize', 3 * (240) ),
                             ]
                         ),
                     ]
@@ -236,7 +236,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (200) ),
+                                ( 'parSize', 3 * (200) ),
                             ]
                         ),
                     ]
@@ -264,7 +264,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (225) ),
+                                ( 'parSize', 3 * (225) ),
                             ]
                         ),
                     ]
@@ -287,11 +287,11 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 25 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.35) ),
+                        ( 'parDebritSizeMul', 3 * (0.35) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 250 ),
-                        ( 'parFireParticleEndSize', 2 * (600) ),
-                        ( 'parFireParticleStartSize', 2 * (250) ),
+                        ( 'parFireParticleEndSize', 3 * (600) ),
+                        ( 'parFireParticleStartSize', 3 * (250) ),
                         ( 'parGravity', 1250 ),
                         ( 'parLifetime', 6 ),
                         ( 'parMeshType', 1 ),
@@ -300,8 +300,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,1,1] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (500) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSmokeParticleEndSize', 3 * (500) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
                         ( 'parSpeed', float3[4000,2000,2000] ),
                     ]
                 ),
@@ -343,8 +343,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
                         ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                        ( 'parDustSize', 2 * (400) ),
-                        ( 'parMudSize', 2 * (200) ),
+                        ( 'parDustSize', 3 * (400) ),
+                        ( 'parMudSize', 3 * (200) ),
                         ( 'parOpacity', 0.6 ),
                         ( 'parRandomPosition', 200 ),
                     ]
@@ -369,8 +369,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.7 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.4 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -397,8 +397,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (500) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (500) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -425,8 +425,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.6 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -453,8 +453,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.4 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -481,8 +481,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.6 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -509,8 +509,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.8 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (400) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (400) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.4 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -537,8 +537,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.6 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -561,8 +561,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
                         ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                        ( 'parDustSize', 2 * (500) ),
-                        ( 'parMudSize', 2 * (200) ),
+                        ( 'parDustSize', 3 * (500) ),
+                        ( 'parMudSize', 3 * (200) ),
                         ( 'parOpacity', 0.4 ),
                         ( 'parRandomPosition', 200 ),
                     ]
@@ -587,8 +587,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -615,8 +615,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.5 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.4 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -643,8 +643,8 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (400) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (400) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.6 ),
                                 ( 'parRandomPosition', 200 ),
                             ]
@@ -672,7 +672,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -682,7 +682,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
                                 ( 'parStartRandomRadius', 1250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSize', 3 * (50) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -710,7 +710,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 35 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (1250) ),
+                                ( 'parEndSize', 3 * (1250) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 9 ),
@@ -720,7 +720,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
                                 ( 'parStartRandomRadius', 800 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSize', 3 * (50) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -744,7 +744,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 30 ),
                         ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parEndSize', 2 * (1000) ),
+                        ( 'parEndSize', 3 * (1000) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 7 ),
@@ -754,7 +754,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
                         ( 'parStartRandomRadius', 1000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (50) ),
+                        ( 'parStartSize', 3 * (50) ),
                         ( 'parStartSpeed', 10 ),
                         ( 'parWindWeight', 5 ),
                     ]
@@ -780,7 +780,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -790,7 +790,7 @@ export Fx_impact_M61A1_Vulcan_2 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
                                 ( 'parStartRandomRadius', 1250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSize', 3 * (50) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 4 ),
                             ]

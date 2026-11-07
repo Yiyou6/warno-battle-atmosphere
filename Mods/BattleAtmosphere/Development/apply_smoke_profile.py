@@ -15,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.14'
+VERSION = 'smoke-preview.15'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview14-before.zip'
+BACKUP = 'archive/smoke-preview15-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -120,11 +120,15 @@ def expected_files():
                 callers.append({'path': name, 'calls': text.count(OLD)})
             else:
                 excluded.append(name)
-        from explosion_scale import extend_sources
+        from explosion_scale import extend_sources, VISUAL_SCALE
         explosions = extend_sources(z, before, after)
         for name in excluded:
-            assert (MOD/name).read_text(encoding='utf-8-sig') in (read(name), after.get(name,read(name))), name
-    (DEV/'explosion-source.json').write_text(json.dumps(dict(version=VERSION,visual_scale=2,files=explosions),indent=2)+'\n')
+            # Explosion-selected files can still carry the previously installed
+            # scale during migration. main() validates those against the exact
+            # archived/source/target versions; untouched files must stay stock.
+            if name not in after:
+                assert (MOD/name).read_text(encoding='utf-8-sig') == read(name), name
+    (DEV/'explosion-source.json').write_text(json.dumps(dict(version=VERSION,visual_scale=VISUAL_SCALE,files=explosions),indent=2)+'\n')
     assert len(callers) == 22, len(callers)
     return before, after, callers, excluded
 
@@ -183,7 +187,7 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_match(protected_files(), protected)
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.13', appearance='emission 0.6x and deep nonzero charcoal; 4x growth, coherent varied wind, vertical motion, life, 640000 budget and explosion scale retained',
+                  relative_to='smoke-preview.14', appearance='vertical initial speed, acceleration and wind 2x; explosion dimensions another 1.5x (3x base); charcoal, emission, 4x smoke growth, varied horizontal wind, life and 640000 budget retained',
                   vehicle_burn_duration_multiplier=10,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,

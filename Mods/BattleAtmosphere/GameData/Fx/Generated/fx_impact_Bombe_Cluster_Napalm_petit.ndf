@@ -25,8 +25,8 @@ export fx_impact_Bombe_Cluster_Napalm_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 1.25 ),
-                        ( 'parFinalSize', 2 * (3000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (3000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -68,7 +68,7 @@ export fx_impact_Bombe_Cluster_Napalm_petit is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 1 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 2 * (500) ),
+                        ( 'parSize', 3 * (500) ),
                     ]
                 ),
                 TActionCall
@@ -83,7 +83,7 @@ export fx_impact_Bombe_Cluster_Napalm_petit is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 2 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 2 * (500) ),
+                        ( 'parSize', 3 * (500) ),
                         ( 'parDeltaPositionAdditif', float3[22,22,-118] + parPosition ),
                     ]
                 ),
@@ -97,7 +97,7 @@ export fx_impact_Bombe_Cluster_Napalm_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 5 ),
                         ( 'parLuminosite', 10 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (750) ),
+                        ( 'parSize', 3 * (750) ),
                         ( 'parSpeed', 0 ),
                         ( 'parStartPosition', parPosition ),
                     ]
@@ -115,7 +115,7 @@ export fx_impact_Bombe_Cluster_Napalm_petit is SimultaneousActionDeclaration
                         ( 'parNarrowness', 0.85 ),
                         ( 'parPositionRadius', 100 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (4) ),
+                        ( 'parSize', 3 * (4) ),
                         ( 'parSpeedMax', 3500 ),
                         ( 'parSpeedMin', 1000 ),
                         ( 'parStretch', 1 ),
@@ -140,7 +140,7 @@ export fx_impact_Bombe_Cluster_Napalm_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.03921569,0.02352941,0.01176471] ),
-                        ( 'parEndSize', 2 * (1500) ),
+                        ( 'parEndSize', 3 * (1500) ),
                         ( 'parFluidFriction', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -150,7 +150,7 @@ export fx_impact_Bombe_Cluster_Napalm_petit is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.02745098,0.01568628,0.003921569] ),
                         ( 'parStartRandomRadius', 500 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (200) ),
+                        ( 'parStartSize', 3 * (200) ),
                         ( 'parStartSpeed', 20 ),
                         ( 'parWindWeight', 2 ),
                     ]

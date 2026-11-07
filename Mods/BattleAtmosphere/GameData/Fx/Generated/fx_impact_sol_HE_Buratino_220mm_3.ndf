@@ -38,8 +38,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                     NamedParams = MAP[
                                         ( 'parDuration', 2 ),
                                         ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                        ( 'parDustSize', 2 * (3000) ),
-                                        ( 'parMudSize', 2 * (1500) ),
+                                        ( 'parDustSize', 3 * (3000) ),
+                                        ( 'parMudSize', 3 * (1500) ),
                                         ( 'parOpacity', 0.15 ),
                                     ]
                                 ),
@@ -50,8 +50,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                             Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                             NamedParams = MAP[
                                 ( 'parDuration', 0.25 ),
-                                ( 'parFinalSize', 2 * (300000) ),
-                                ( 'parInitialSize', 2 * (500) ),
+                                ( 'parFinalSize', 3 * (300000) ),
+                                ( 'parInitialSize', 3 * (500) ),
                                 ( 'parIntensity', 8000 ),
                                 ( 'parPositionRelative', float3[-32,-112,0] ),
                             ]
@@ -74,7 +74,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parDispersion', 3000 ),
                                 ( 'parDuration', 2 ),
                                 ( 'parLuminosite', 2 ),
-                                ( 'parSize', 2 * (10000) ),
+                                ( 'parSize', 3 * (10000) ),
                             ]
                         ),
                         TSequentialAction
@@ -89,7 +89,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parDeltaPosition', 0 ),
                                         ( 'parFadeInTime', 0.25 ),
                                         ( 'parLifetime', 10 ),
-                                        ( 'parSize', 2 * (7000) ),
+                                        ( 'parSize', 3 * (7000) ),
                                     ]
                                 ),
                             ]
@@ -117,7 +117,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (300000) ),
+                                ( 'parFinalSize', 3 * (300000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 128 ),
                             ]
@@ -137,7 +137,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                             Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                             NamedParams = MAP[
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (300000) ),
+                                ( 'parFinalSize', 3 * (300000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parIntensity', 9000 ),
                             ]
@@ -161,8 +161,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                                     NamedParams = MAP[
                                         ( 'parDuration', 0.2 ),
-                                        ( 'parFinalSize', 2 * (1200000) ),
-                                        ( 'parInitialSize', 2 * (10000) ),
+                                        ( 'parFinalSize', 3 * (1200000) ),
+                                        ( 'parInitialSize', 3 * (10000) ),
                                         ( 'parIntensity', 8000 ),
                                     ]
                                 ),
@@ -177,8 +177,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                                     NamedParams = MAP[
                                         ( 'parDuration', 0.15 ),
-                                        ( 'parFinalSize', 2 * (80000) ),
-                                        ( 'parInitialSize', 2 * (10000) ),
+                                        ( 'parFinalSize', 3 * (80000) ),
+                                        ( 'parInitialSize', 3 * (10000) ),
                                         ( 'parIntensity', 10000 ),
                                     ]
                                 ),
@@ -197,8 +197,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (20000) ),
-                                ( 'parInitialSize', 2 * (10) ),
+                                ( 'parFinalSize', 3 * (20000) ),
+                                ( 'parInitialSize', 3 * (10) ),
                                 ( 'parPositionRelative', parPosition ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -209,7 +209,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.4 ),
-                                ( 'parFinalSize', 2 * (5000) ),
+                                ( 'parFinalSize', 3 * (5000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', parPosition ),
@@ -229,12 +229,12 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parColor', float3[0.3294118,0.3294118,0.3294118] ),
                                         ( 'parColormultiplierMul', 0 ),
                                         ( 'parCount', 20 ),
-                                        ( 'parEndSize', 2 * (9000) ),
+                                        ( 'parEndSize', 3 * (9000) ),
                                         ( 'parFluidFriction', 6 ),
                                         ( 'parLifetimeMul', 35 ),
                                         ( 'parRotationMul', 6 ),
                                         ( 'parSpeed', 35000 ),
-                                        ( 'parStartSize', 2 * (1000) ),
+                                        ( 'parStartSize', 3 * (1000) ),
                                         ( 'parTopGrowFactor', 7 ),
                                     ]
                                 ),
@@ -254,12 +254,12 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parColor', float3[0.6117647,0.6078432,0.6078432] ),
                                         ( 'parColormultiplierMul', 0 ),
                                         ( 'parCount', 10 ),
-                                        ( 'parEndSize', 2 * (7000) ),
+                                        ( 'parEndSize', 3 * (7000) ),
                                         ( 'parFluidFriction', 6 ),
                                         ( 'parLifetimeMul', 50 ),
                                         ( 'parRotationMul', 8 ),
                                         ( 'parSpeed', 6000 ),
-                                        ( 'parStartSize', 2 * (800) ),
+                                        ( 'parStartSize', 3 * (800) ),
                                         ( 'parTopGrowFactor', 8.5 ),
                                     ]
                                 ),
@@ -281,8 +281,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parLuminosite2', 3 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parParticleRotationSpeed', 0 ),
-                                ( 'parSize1', 2 * (8000) ),
-                                ( 'parSize2', 2 * (8000) ),
+                                ( 'parSize1', 3 * (8000) ),
+                                ( 'parSize2', 3 * (8000) ),
                                 ( 'parSpawnCount', 20 ),
                                 ( 'parSpawnDuration', 0.1 ),
                                 ( 'parSpawnRadius', 2000 ),
@@ -309,8 +309,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parLuminosite2', 0.15 ),
                                         ( 'parOpacity', 1 ),
                                         ( 'parParticleRotationSpeed', 1 ),
-                                        ( 'parSize1', 2 * (1000) ),
-                                        ( 'parSize2', 2 * (8000) ),
+                                        ( 'parSize1', 3 * (1000) ),
+                                        ( 'parSize2', 3 * (8000) ),
                                         ( 'parSpawnCount', 35 ),
                                         ( 'parSpawnDuration', 0.5 ),
                                         ( 'parSpawnRadius', 1000 ),
@@ -335,8 +335,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parLuminosite2', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parParticleRotationSpeed', 0 ),
-                                ( 'parSize1', 2 * (1000) ),
-                                ( 'parSize2', 2 * (8000) ),
+                                ( 'parSize1', 3 * (1000) ),
+                                ( 'parSize2', 3 * (8000) ),
                                 ( 'parSpawnCount', 35 ),
                                 ( 'parSpawnDuration', 0.5 ),
                                 ( 'parSpawnRadius', 1000 ),
@@ -363,8 +363,8 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parLuminosite2', 0.05 ),
                                         ( 'parOpacity', 1 ),
                                         ( 'parParticleRotationSpeed', 2 ),
-                                        ( 'parSize1', 2 * (1000) ),
-                                        ( 'parSize2', 2 * (8000) ),
+                                        ( 'parSize1', 3 * (1000) ),
+                                        ( 'parSize2', 3 * (8000) ),
                                         ( 'parSpawnCount', 35 ),
                                         ( 'parSpawnDuration', 0.5 ),
                                         ( 'parSpawnRadius', 1000 ),
@@ -391,7 +391,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parNarrowness', 1 ),
                                         ( 'parPositionRadius', 500 ),
                                         ( 'parPositionRelative', parPosition ),
-                                        ( 'parSize', 2 * (11) ),
+                                        ( 'parSize', 3 * (11) ),
                                         ( 'parSpeedMax', 10000 ),
                                         ( 'parSpeedMin', 8000 ),
                                         ( 'parStretch', 2.5 ),
@@ -412,7 +412,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -435,7 +435,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parNarrowness', 0.5 ),
                                 ( 'parPositionRadius', 100 ),
                                 ( 'parPositionRelative', parPosition ),
-                                ( 'parSize', 2 * (12) ),
+                                ( 'parSize', 3 * (12) ),
                                 ( 'parSpeedMax', 10000 ),
                                 ( 'parSpeedMin', 8000 ),
                                 ( 'parStretch', 1.75 ),
@@ -454,7 +454,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -470,7 +470,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 75 ),
                                 ( 'parEndColor', float3[0.1490196,0.1490196,0.1490196] ),
-                                ( 'parEndSize', 2 * (5000) ),
+                                ( 'parEndSize', 3 * (5000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -480,7 +480,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 5 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -500,14 +500,14 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.6 ),
-                                ( 'parParticleSize', 2 * (3000) ),
+                                ( 'parParticleSize', 3 * (3000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -518,14 +518,14 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
                                 ( 'parColor', float3[0.3372549,0.3372549,0.3372549] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parParticleSize', 2 * (1500) ),
+                                ( 'parParticleSize', 3 * (1500) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -536,14 +536,14 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1200]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1200]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.6 ),
-                                ( 'parParticleSize', 2 * (2500) ),
+                                ( 'parParticleSize', 3 * (2500) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -562,7 +562,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                         TActionCall
@@ -572,7 +572,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1843137,0.1843137,0.1843137] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 1.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -583,7 +583,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartHeight', 500 ),
                                 ( 'parStartRotation', 0 ),
-                                ( 'parStartSize', 2 * (1500) ),
+                                ( 'parStartSize', 3 * (1500) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -595,7 +595,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.3294118,0.3254902,0.3254902] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -606,7 +606,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed3D', float3[3000,3000,2000] ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -618,7 +618,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.1490196,0.1490196,0.1490196] ),
-                                ( 'parEndSize', 2 * (5000) ),
+                                ( 'parEndSize', 3 * (5000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -629,7 +629,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartHeight', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed3D', float3[500,500,500] ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -681,7 +681,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.1 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 2 * (186.0465) ),
+                                        ( 'parSizeLBU', 3 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -713,7 +713,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.1 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 2 * (186.0465) ),
+                                        ( 'parSizeLBU', 3 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -745,7 +745,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.1 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 2 * (186.0465) ),
+                                        ( 'parSizeLBU', 3 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -777,7 +777,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.1 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 2 * (186.0465) ),
+                                        ( 'parSizeLBU', 3 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -799,7 +799,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.2039216,0.2039216,0.2] ),
-                                ( 'parEndSize', 2 * (4500) ),
+                                ( 'parEndSize', 3 * (4500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -809,7 +809,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.427451,0.4235294,0.4196079] ),
                                 ( 'parStartRandomRadius', 6000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -831,7 +831,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 75 ),
                                 ( 'parEndColor', float3[0.1490196,0.1490196,0.1490196] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -841,7 +841,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartRandomRadius', 6000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -863,7 +863,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.2901961,0.2862745,0.2862745] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -873,7 +873,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartRandomRadius', 8000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -895,7 +895,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.1490196,0.1490196,0.1490196] ),
-                                ( 'parEndSize', 2 * (5000) ),
+                                ( 'parEndSize', 3 * (5000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -905,7 +905,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed', 75 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -927,7 +927,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.2235294,0.2196079,0.2196079] ),
-                                ( 'parEndSize', 2 * (6000) ),
+                                ( 'parEndSize', 3 * (6000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -937,7 +937,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.1490196,0.1490196,0.1490196] ),
                                 ( 'parStartRandomRadius', 6000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -959,7 +959,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.172549,0.172549,0.172549] ),
-                                ( 'parEndSize', 2 * (5000) ),
+                                ( 'parEndSize', 3 * (5000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -969,7 +969,7 @@ export fx_impact_sol_HE_Buratino_220mm_3 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                                 ( 'parStartRandomRadius', 6000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 40 ),
                                 ( 'parWindWeight', 2 ),
                             ]

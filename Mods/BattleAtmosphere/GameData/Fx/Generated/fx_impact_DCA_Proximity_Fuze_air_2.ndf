@@ -25,8 +25,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (2600) ),
-                        ( 'parInitialSize', 2 * (25) ),
+                        ( 'parFinalSize', 3 * (2600) ),
+                        ( 'parInitialSize', 3 * (25) ),
                         ( 'parIntensity', 120 ),
                         ( 'parPositionRelative', float3[-2668,5215,1373] ),
                     ]
@@ -40,8 +40,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                             Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                             NamedParams = MAP[
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (2600) ),
-                                ( 'parInitialSize', 2 * (25) ),
+                                ( 'parFinalSize', 3 * (2600) ),
+                                ( 'parInitialSize', 3 * (25) ),
                                 ( 'parIntensity', 120 ),
                                 ( 'parPositionRelative', float3[-3613,4551,-2139] ),
                             ]
@@ -93,8 +93,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (1600) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1600) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[-144,-48,-122] + parPosition ),
                             ]
@@ -107,8 +107,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.08 ),
-                        ( 'parFinalSize', 2 * (1300) ),
-                        ( 'parInitialSize', 2 * (20) ),
+                        ( 'parFinalSize', 3 * (1300) ),
+                        ( 'parInitialSize', 3 * (20) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', float3[-2723,5208,1480] + parPosition ),
                     ]
@@ -123,8 +123,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (1200) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1200) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[-3668,4544,-2032] + parPosition ),
                             ]
@@ -141,8 +141,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.08 ),
-                                ( 'parFinalSize', 2 * (1250) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1250) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[1946,-3619,-2495] + parPosition ),
                             ]
@@ -159,8 +159,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (1600) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1600) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[-5460,-5536,519] + parPosition ),
                             ]
@@ -177,8 +177,8 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.09 ),
-                                ( 'parFinalSize', 2 * (1400) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1400) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', float3[4090,8673,-4287] + parPosition ),
                             ]
@@ -214,7 +214,7 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (8000) ),
+                                ( 'parSize', 3 * (8000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
                                 ( 'Position', float3[4089,8663,-3787] + parPosition ),
                             ]
@@ -234,7 +234,7 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.15 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (8000) ),
+                                ( 'parSize', 3 * (8000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
                                 ( 'Position', float3[-5747,-5549,1013] + parPosition ),
                             ]
@@ -254,7 +254,7 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.08 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (7000) ),
+                                ( 'parSize', 3 * (7000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
                                 ( 'Position', float3[-3613,4551,-1639] + parPosition ),
                             ]
@@ -274,7 +274,7 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.15 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (9000) ),
+                                ( 'parSize', 3 * (9000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
                                 ( 'Position', float3[1969,-3624,-2261] + parPosition ),
                             ]
@@ -290,7 +290,7 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parSize', 3 * (8000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[-2668,5215,1873] + parPosition ),
                     ]
@@ -308,7 +308,7 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.12 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (9000) ),
+                                ( 'parSize', 3 * (9000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
                                 ( 'Position', float3[-121,-53,60] + parPosition ),
                             ]
@@ -334,14 +334,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.2 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 2 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -368,14 +368,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.2 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.45 ),
-                                ( 'parParticleSize', 2 * (600) ),
+                                ( 'parParticleSize', 3 * (600) ),
                                 ( 'parRandomPosition', 400 ),
                                 ( 'parSmokeDuration', 2.5 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -402,14 +402,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 4 ),
                                 ( 'parDecayLength', 2 ),
                                 ( 'parDecayStart', 1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parParticleSize', 2 * (1800) ),
+                                ( 'parParticleSize', 3 * (1800) ),
                                 ( 'parRandomPosition', 4000 ),
                                 ( 'parSmokeDuration', 5 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -426,14 +426,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 4 ),
                                 ( 'parDecayLength', 4 ),
                                 ( 'parDecayStart', 1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.4 ),
-                                ( 'parParticleSize', 2 * (1250) ),
+                                ( 'parParticleSize', 3 * (1250) ),
                                 ( 'parRandomPosition', 9000 ),
                                 ( 'parSmokeDuration', 4 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -450,14 +450,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 4 ),
                                 ( 'parDecayLength', 3 ),
                                 ( 'parDecayStart', 1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.6 ),
-                                ( 'parParticleSize', 2 * (1750) ),
+                                ( 'parParticleSize', 3 * (1750) ),
                                 ( 'parRandomPosition', 6000 ),
                                 ( 'parSmokeDuration', 3 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -480,14 +480,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                        ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                         ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 0.2 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.75 ),
-                        ( 'parParticleSize', 2 * (750) ),
+                        ( 'parParticleSize', 3 * (750) ),
                         ( 'parRandomPosition', 500 ),
                         ( 'parSmokeDuration', 3 ),
                         ( 'parSpawnerDuration', 0.2 ),
@@ -512,14 +512,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.2 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.65 ),
-                                ( 'parParticleSize', 2 * (800) ),
+                                ( 'parParticleSize', 3 * (800) ),
                                 ( 'parRandomPosition', 600 ),
                                 ( 'parSmokeDuration', 2 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -546,14 +546,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.4 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (750) ),
+                                ( 'parParticleSize', 3 * (750) ),
                                 ( 'parRandomPosition', 350 ),
                                 ( 'parSmokeDuration', 2 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -580,14 +580,14 @@ export fx_impact_DCA_Proximity_Fuze_air_2 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.6 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parParticleSize', 2 * (650) ),
+                                ( 'parParticleSize', 3 * (650) ),
                                 ( 'parRandomPosition', 400 ),
                                 ( 'parSmokeDuration', 1.75 ),
                                 ( 'parSpawnerDuration', 0.2 ),

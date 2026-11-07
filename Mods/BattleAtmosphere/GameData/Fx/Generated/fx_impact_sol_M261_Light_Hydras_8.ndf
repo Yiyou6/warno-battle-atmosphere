@@ -26,8 +26,8 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.9000001 ),
                         ( 'parDustColor', float3[0.3372549,0.254902,0.172549] ),
-                        ( 'parDustSize', 2 * (800) ),
-                        ( 'parMudSize', 2 * (1060) ),
+                        ( 'parDustSize', 3 * (800) ),
+                        ( 'parMudSize', 3 * (1060) ),
                         ( 'parOpacity', 0.5 ),
                     ]
                 ),
@@ -46,8 +46,8 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.3 ),
-                        ( 'parFinalSize', 2 * (12000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (12000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parIntensity', 1300 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -63,7 +63,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 4 ),
                                 ( 'parDuration', 2 ),
-                                ( 'parSize', 2 * (2500) ),
+                                ( 'parSize', 3 * (2500) ),
                             ]
                         ),
                     ]
@@ -98,8 +98,8 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (12000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (12000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -114,7 +114,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -125,7 +125,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.5686275,0.4156863,0.2862745] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (300) ),
+                                ( 'parStartSize', 3 * (300) ),
                                 ( 'parStartSpeed3D', float3[2000,2000,0] ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -145,8 +145,8 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (4500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (4500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', float3[0,0,200] + parPosition ),
                     ]
@@ -173,7 +173,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 0.8 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 2 * (1000) ),
+                        ( 'parSize', 3 * (1000) ),
                         ( 'parDeltaPositionAdditif', parPosition ),
                     ]
                 ),
@@ -194,7 +194,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parLifetime', 1.5 ),
                                 ( 'parNarrowness', 0.85 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 4000 ),
                                 ( 'parSpeedMin', 3000 ),
                                 ( 'parStretch', 2 ),
@@ -226,7 +226,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (1250) ),
+                                ( 'parSize', 3 * (1250) ),
                             ]
                         ),
                     ]
@@ -254,7 +254,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (116.2791) ),
+                        ( 'parSizeLBU', 3 * (116.2791) ),
                     ]
                 ),
             ]
@@ -279,11 +279,11 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 6 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 2 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 230 ),
-                                ( 'parFireParticleEndSize', 2 * (400) ),
-                                ( 'parFireParticleStartSize', 2 * (75) ),
+                                ( 'parFireParticleEndSize', 3 * (400) ),
+                                ( 'parFireParticleStartSize', 3 * (75) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parMeshType', 1 ),
@@ -292,8 +292,8 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.6784314,0.6745098,0.654902] ),
                                 ( 'parSmokeColorMultiplier', 0.1 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (2350) ),
-                                ( 'parSmokeParticleStartSize', 2 * (150) ),
+                                ( 'parSmokeParticleEndSize', 3 * (2350) ),
+                                ( 'parSmokeParticleStartSize', 3 * (150) ),
                                 ( 'parSpeed', float3[3000,3000,5603] ),
                             ]
                         ),
@@ -321,11 +321,11 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 4 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 50 ),
-                                ( 'parFireParticleEndSize', 2 * (250) ),
-                                ( 'parFireParticleStartSize', 2 * (150) ),
+                                ( 'parFireParticleEndSize', 3 * (250) ),
+                                ( 'parFireParticleStartSize', 3 * (150) ),
                                 ( 'parGravity', 1500 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -334,8 +334,8 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.6784314,0.6745098,0.654902] ),
                                 ( 'parSmokeColorMultiplier', 0.1 ),
                                 ( 'parSmokeDensity', 200 ),
-                                ( 'parSmokeParticleEndSize', 2 * (2350) ),
-                                ( 'parSmokeParticleStartSize', 2 * (150) ),
+                                ( 'parSmokeParticleEndSize', 3 * (2350) ),
+                                ( 'parSmokeParticleStartSize', 3 * (150) ),
                                 ( 'parSpeed', float3[3000,3000,8000] ),
                             ]
                         ),
@@ -369,7 +369,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parNarrowness', 1 ),
                                 ( 'parOpacity', 0.25 ),
                                 ( 'parRadius', 100 ),
-                                ( 'parSize', 2 * (3000) ),
+                                ( 'parSize', 3 * (3000) ),
                             ]
                         ),
                     ]
@@ -395,7 +395,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 2 * (8000) ),
+                                ( 'parEndSize', 3 * (8000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -406,7 +406,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.5686275,0.4156863,0.2862745] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (300) ),
+                                ( 'parStartSize', 3 * (300) ),
                                 ( 'parStartSpeed3D', float3[1500,2500,0] ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -434,7 +434,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.7333333,0.5686275,0.4352942] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -444,7 +444,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.5529412,0.4352942,0.3411765] ),
                                 ( 'parStartRandomRadius', 1500 ),
                                 ( 'parStartRotation', 0.2 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 0.5 ),
                             ]
@@ -472,7 +472,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.5686275,0.5607843,0.5568628] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -482,7 +482,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4941177,0.482353,0.482353] ),
                                 ( 'parStartRandomRadius', 3500 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -510,7 +510,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.5686275,0.5607843,0.5568628] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 5 ),
@@ -520,7 +520,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.427451,0.4235294,0.4196079] ),
                                 ( 'parStartRandomRadius', 3500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -548,7 +548,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.4392157,0.4352942,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -558,7 +558,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                                 ( 'parStartRandomRadius', 3500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -586,7 +586,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6705883,0.509804,0.3764706] ),
-                                ( 'parEndSize', 2 * (4000) ),
+                                ( 'parEndSize', 3 * (4000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -596,7 +596,7 @@ export fx_impact_sol_M261_Light_Hydras_8 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.5686275,0.4156863,0.2862745] ),
                                 ( 'parStartRandomRadius', 500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (100) ),
+                                ( 'parStartSize', 3 * (100) ),
                                 ( 'parStartSpeed', 8 ),
                                 ( 'parWindWeight', 1 ),
                             ]

@@ -30,8 +30,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2000) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2000) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -47,8 +47,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2750) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2750) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -64,8 +64,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (3000) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (3000) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -81,8 +81,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.75 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2000) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2000) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -98,8 +98,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2500) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2500) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -115,8 +115,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2000) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2000) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -132,8 +132,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2750) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2750) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -149,8 +149,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.366667 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2750) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2750) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -166,8 +166,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (2750) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (2750) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -184,7 +184,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -200,7 +200,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -375,7 +375,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', parPosition ),
@@ -393,7 +393,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[4645,3082,0] + parPosition ),
@@ -411,7 +411,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.25 ),
-                                ( 'parFinalSize', 2 * (4500) ),
+                                ( 'parFinalSize', 3 * (4500) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[15161,-1660,0] + parPosition ),
@@ -429,7 +429,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.25 ),
-                                ( 'parFinalSize', 2 * (4500) ),
+                                ( 'parFinalSize', 3 * (4500) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[19145,905,0] + parPosition ),
@@ -447,7 +447,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[2898,-1275,0] + parPosition ),
@@ -465,7 +465,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[6830,798,0] + parPosition ),
@@ -483,7 +483,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[9161,-369,0] + parPosition ),
@@ -501,7 +501,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.25 ),
-                                ( 'parFinalSize', 2 * (4500) ),
+                                ( 'parFinalSize', 3 * (4500) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[11442,1105,0] + parPosition ),
@@ -519,7 +519,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                                 ( 'parPositionRelative', float3[7874,-2496,0] + parPosition ),
@@ -553,7 +553,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -580,7 +580,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -607,7 +607,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -634,7 +634,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -661,7 +661,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -688,7 +688,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -715,7 +715,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -742,7 +742,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -769,7 +769,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
                                 ( 'parPositionRadius', 200 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 8000 ),
                                 ( 'parSpeedMin', 5000 ),
                                 ( 'parStretch', 1 ),
@@ -796,7 +796,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -823,7 +823,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -850,7 +850,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -877,7 +877,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -904,7 +904,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -931,7 +931,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -958,7 +958,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -985,7 +985,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -1012,7 +1012,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0 ),
                                 ( 'parPositionRadius', 680 ),
-                                ( 'parSize', 2 * (10) ),
+                                ( 'parSize', 3 * (10) ),
                                 ( 'parSpeedMax', 2800 ),
                                 ( 'parSpeedMin', 300 ),
                                 ( 'parStretch', 1 ),
@@ -1034,7 +1034,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -1044,7 +1044,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -1072,7 +1072,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1088,7 +1088,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1114,7 +1114,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1130,7 +1130,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1156,7 +1156,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1172,7 +1172,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1198,7 +1198,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1214,7 +1214,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1240,7 +1240,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1256,7 +1256,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1282,7 +1282,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1298,7 +1298,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1324,7 +1324,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1340,7 +1340,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1366,7 +1366,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1382,7 +1382,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1406,14 +1406,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -1430,14 +1430,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -1454,14 +1454,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -1486,7 +1486,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.45 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -1502,11 +1502,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -1515,8 +1515,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -1541,14 +1541,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -1565,14 +1565,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -1589,14 +1589,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -1621,7 +1621,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.55 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -1637,11 +1637,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -1650,8 +1650,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -1676,14 +1676,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -1700,14 +1700,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -1724,14 +1724,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -1756,7 +1756,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -1772,11 +1772,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -1785,8 +1785,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -1811,14 +1811,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -1846,14 +1846,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 600 ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -1877,14 +1877,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                        ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                         ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                         ( 'parCount', 40 ),
                         ( 'parDecayLength', 20 ),
                         ( 'parDecayStart', 10 ),
                         ( 'parEmissive', 1 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parParticleSize', 2 * (500) ),
+                        ( 'parParticleSize', 3 * (500) ),
                         ( 'parRandomPosition', 500 ),
                         ( 'parSmokeDuration', 6 ),
                         ( 'parSpawnerDuration', 0.25 ),
@@ -1910,14 +1910,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -1945,14 +1945,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 750 ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -1976,14 +1976,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                        ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                         ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                         ( 'parCount', 40 ),
                         ( 'parDecayLength', 20 ),
                         ( 'parDecayStart', 5 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parParticleSize', 2 * (1000) ),
+                        ( 'parParticleSize', 3 * (1000) ),
                         ( 'parRandomPosition', 400 ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 0.2 ),
@@ -2009,14 +2009,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 400 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -2044,14 +2044,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 400 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -2079,14 +2079,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1800) ),
+                                ( 'parParticleSize', 3 * (1800) ),
                                 ( 'parRandomPosition', 750 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2103,14 +2103,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -2127,14 +2127,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -2159,7 +2159,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2175,11 +2175,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2188,8 +2188,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -2214,14 +2214,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2238,14 +2238,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -2262,14 +2262,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -2294,7 +2294,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2310,11 +2310,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2323,8 +2323,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -2349,14 +2349,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2384,14 +2384,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 400 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -2419,14 +2419,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -2443,14 +2443,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -2467,14 +2467,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2499,7 +2499,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2515,11 +2515,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2528,8 +2528,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -2554,14 +2554,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 400 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -2589,14 +2589,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 650 ),
                                 ( 'parSmokeDuration', 7 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2624,14 +2624,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.35 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -2659,14 +2659,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 600 ),
                                 ( 'parSmokeDuration', 5 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2694,14 +2694,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -2718,14 +2718,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -2742,14 +2742,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2774,7 +2774,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2790,11 +2790,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2803,8 +2803,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -2829,14 +2829,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2853,14 +2853,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -2877,14 +2877,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -2909,7 +2909,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2925,11 +2925,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2938,8 +2938,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -2964,14 +2964,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 600 ),
                                 ( 'parSmokeDuration', 5 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -2999,14 +2999,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.35 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -3034,14 +3034,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -3058,14 +3058,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.5 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
@@ -3082,14 +3082,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.75 ),
-                                ( 'parParticleSize', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
                                 ( 'parRandomPosition', 2000 ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
@@ -3114,7 +3114,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -3130,11 +3130,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 340 ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -3143,8 +3143,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
                                 ( 'parSpeed', float3[4280,4350,8000] ),
                             ]
                         ),
@@ -3169,14 +3169,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.9215687,0.9215687,0.9568628] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 10 ),
                                 ( 'parEmissive', 1 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (500) ),
                                 ( 'parRandomPosition', 600 ),
                                 ( 'parSmokeDuration', 5 ),
                                 ( 'parSpawnerDuration', 0.25 ),
@@ -3204,14 +3204,14 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[50,50,50]) ),
+                                ( 'parCloudsize', 3 * (float3[50,50,50]) ),
                                 ( 'parColor', float3[0.04705883,0.04705883,0.0509804] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.35 ),
-                                ( 'parParticleSize', 2 * (1000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
                                 ( 'parRandomPosition', 500 ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.2 ),
@@ -3448,7 +3448,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1800) ),
+                                ( 'parSize', 3 * (1800) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[15161,-1660,1435] + parPosition ),
                             ]
@@ -3469,7 +3469,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1800) ),
+                                ( 'parSize', 3 * (1800) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[19145,905,1944] + parPosition ),
                             ]
@@ -3490,7 +3490,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.3 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1600) ),
+                                ( 'parSize', 3 * (1600) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[2898,-1275,2315] + parPosition ),
                             ]
@@ -3511,7 +3511,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.3 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1600) ),
+                                ( 'parSize', 3 * (1600) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[6830,798,2315] + parPosition ),
                             ]
@@ -3532,7 +3532,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.3 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1600) ),
+                                ( 'parSize', 3 * (1600) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[9161,-369,2315] + parPosition ),
                             ]
@@ -3553,7 +3553,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (2000) ),
+                                ( 'parSize', 3 * (2000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[11442,1105,1932] + parPosition ),
                             ]
@@ -3574,7 +3574,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (2000) ),
+                                ( 'parSize', 3 * (2000) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[0,0,1932] + parPosition ),
                             ]
@@ -3595,7 +3595,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (1800) ),
+                                ( 'parSize', 3 * (1800) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[4645,3082,2315] + parPosition ),
                             ]
@@ -3616,7 +3616,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.45 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (2500) ),
+                                ( 'parSize', 3 * (2500) ),
                                 ( 'parSpeed', 0 ),
                                 ( 'parStartPosition', float3[7874,-2496,2232] + parPosition ),
                             ]
@@ -3645,7 +3645,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (650) ),
+                                ( 'parSize', 3 * (650) ),
                             ]
                         ),
                     ]
@@ -3672,7 +3672,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (700) ),
+                                ( 'parSize', 3 * (700) ),
                             ]
                         ),
                     ]
@@ -3699,7 +3699,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (550) ),
+                                ( 'parSize', 3 * (550) ),
                             ]
                         ),
                     ]
@@ -3726,7 +3726,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (600) ),
+                                ( 'parSize', 3 * (600) ),
                             ]
                         ),
                     ]
@@ -3753,7 +3753,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (700) ),
+                                ( 'parSize', 3 * (700) ),
                             ]
                         ),
                     ]
@@ -3780,7 +3780,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (650) ),
+                                ( 'parSize', 3 * (650) ),
                             ]
                         ),
                     ]
@@ -3807,7 +3807,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (700) ),
+                                ( 'parSize', 3 * (700) ),
                             ]
                         ),
                     ]
@@ -3834,7 +3834,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (750) ),
+                                ( 'parSize', 3 * (750) ),
                             ]
                         ),
                     ]
@@ -3861,7 +3861,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (700) ),
+                                ( 'parSize', 3 * (700) ),
                             ]
                         ),
                     ]
@@ -3888,11 +3888,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -3901,8 +3901,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -3930,11 +3930,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -3943,8 +3943,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -3972,11 +3972,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -3985,8 +3985,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -4014,11 +4014,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -4027,8 +4027,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -4056,11 +4056,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -4069,8 +4069,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -4098,11 +4098,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -4111,8 +4111,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -4140,11 +4140,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -4153,8 +4153,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -4182,11 +4182,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -4195,8 +4195,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -4224,11 +4224,11 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
                                 ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -4237,8 +4237,8 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
                                 ( 'parSpeed', float3[2030,2070,10000] ),
                             ]
                         ),
@@ -4265,7 +4265,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4275,7 +4275,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
                                 ( 'parStartRandomRadius', 4500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4303,7 +4303,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4313,7 +4313,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
                                 ( 'parStartRandomRadius', 4500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4341,7 +4341,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4351,7 +4351,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4379,7 +4379,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4389,7 +4389,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4417,7 +4417,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4427,7 +4427,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4455,7 +4455,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -4465,7 +4465,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
                                 ( 'parStartRandomRadius', 4000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4493,7 +4493,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -4503,7 +4503,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
                                 ( 'parStartRandomRadius', 4000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4531,7 +4531,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4541,7 +4541,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -4569,7 +4569,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -4579,7 +4579,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
                                 ( 'parStartRandomRadius', 5000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -4607,7 +4607,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -4617,7 +4617,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
                                 ( 'parStartRandomRadius', 4000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
+                                ( 'parStartSize', 3 * (400) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -4645,7 +4645,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4655,7 +4655,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
                                 ( 'parStartRandomRadius', 4000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -4683,7 +4683,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -4693,7 +4693,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
                                 ( 'parStartRandomRadius', 4500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
+                                ( 'parStartSize', 3 * (400) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -4721,7 +4721,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4731,7 +4731,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
                                 ( 'parStartRandomRadius', 3500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
+                                ( 'parStartSize', 3 * (400) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 7 ),
                             ]
@@ -4759,7 +4759,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -4769,7 +4769,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
                                 ( 'parStartRandomRadius', 4000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
+                                ( 'parStartSize', 3 * (400) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -4797,7 +4797,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4807,7 +4807,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
                                 ( 'parStartRandomRadius', 2000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -4835,7 +4835,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -4845,7 +4845,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 350 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -4873,7 +4873,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4883,7 +4883,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -4911,7 +4911,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4921,7 +4921,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -4949,7 +4949,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4959,7 +4959,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
                                 ( 'parStartRandomRadius', 2000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -4987,7 +4987,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -4997,7 +4997,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
                                 ( 'parStartRandomRadius', 4000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -5025,7 +5025,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5035,7 +5035,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
                                 ( 'parStartRandomRadius', 2500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5063,7 +5063,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5073,7 +5073,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5101,7 +5101,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5111,7 +5111,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
+                                ( 'parStartSize', 3 * (400) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 7 ),
                             ]
@@ -5139,7 +5139,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5149,7 +5149,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
                                 ( 'parStartRandomRadius', 3000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
+                                ( 'parStartSize', 3 * (400) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 7 ),
                             ]
@@ -5177,7 +5177,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5187,7 +5187,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5215,7 +5215,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5225,7 +5225,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
                                 ( 'parStartRandomRadius', 2500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5253,7 +5253,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5263,7 +5263,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
                                 ( 'parStartRandomRadius', 4000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -5291,7 +5291,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5301,7 +5301,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5329,7 +5329,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5339,7 +5339,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5367,7 +5367,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5377,7 +5377,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
                                 ( 'parStartRandomRadius', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5405,7 +5405,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -5415,7 +5415,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
                                 ( 'parStartRandomRadius', 4500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 100 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -5443,7 +5443,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5453,7 +5453,7 @@ export fx_impact_sol_Cluster_MK20_Rockeye_II_Salve is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
                                 ( 'parStartRandomRadius', 2000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 2 ),
                             ]

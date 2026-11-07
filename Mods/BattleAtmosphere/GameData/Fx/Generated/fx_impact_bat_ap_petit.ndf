@@ -27,7 +27,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.4999998 ),
                         ( 'parDustColor', float3[0.8705883,0.8705883,0.8705883] ),
-                        ( 'parDustSize', 2 * (300) ),
+                        ( 'parDustSize', 3 * (300) ),
                         ( 'parMudSize', 0 ),
                         ( 'parOpacity', 1 ),
                     ]
@@ -37,8 +37,8 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7000002 ),
-                        ( 'parFinalSize', 2 * (1900) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (1900) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parIntensity', 3200 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -50,7 +50,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
                         ( 'parCount', 10 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 2 * (450) ),
+                        ( 'parSize', 3 * (450) ),
                     ]
                 ),
                 TActionCall
@@ -61,7 +61,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 10 ),
-                        ( 'parSize', 2 * (700) ),
+                        ( 'parSize', 3 * (700) ),
                     ]
                 ),
                 TActionCall
@@ -71,7 +71,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 15 ),
-                        ( 'parDebritSizeMul', 2 * (0.6500001) ),
+                        ( 'parDebritSizeMul', 3 * (0.6500001) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 540 ),
                         ( 'parFireParticleEndSize', 0 ),
@@ -84,7 +84,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5058824,0.4705883,0.4470589] ),
                         ( 'parSmokeColorMultiplier', 0.4 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (800) ),
+                        ( 'parSmokeParticleEndSize', 3 * (800) ),
                         ( 'parSmokeParticleStartSize', 0 ),
                         ( 'parSpeed', float3[3000,3000,3000] ),
                     ]
@@ -95,8 +95,8 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (3500) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (3500) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -107,7 +107,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 18 ),
                         ( 'parEndColor', float3[0,0,0] ),
-                        ( 'parEndSize', 2 * (1500) ),
+                        ( 'parEndSize', 3 * (1500) ),
                         ( 'parFluidFriction', 3.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 1.2 ),
@@ -118,7 +118,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (300) ),
+                        ( 'parStartSize', 3 * (300) ),
                         ( 'parStartSpeed3D', float3[2000,2000,0] ),
                         ( 'parWindWeight', 1 ),
                     ]
@@ -140,8 +140,8 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (3500) ),
-                        ( 'parInitialSize', 2 * (1000) ),
+                        ( 'parFinalSize', 3 * (3500) ),
+                        ( 'parInitialSize', 3 * (1000) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -164,7 +164,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 0.2800001 ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSizeLBU', 2 * (37.2093) ),
+                        ( 'parSizeLBU', 3 * (37.2093) ),
                         ( 'Position', parPosition ),
                     ]
                 ),
@@ -177,7 +177,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 1.4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (1300) ),
+                        ( 'parSize', 3 * (1300) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', parPosition ),
                     ]
@@ -200,11 +200,11 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 20 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 5 ),
-                        ( 'parDebritSizeMul', 2 * (0.6) ),
+                        ( 'parDebritSizeMul', 3 * (0.6) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 500 ),
-                        ( 'parFireParticleEndSize', 2 * (750) ),
-                        ( 'parFireParticleStartSize', 2 * (150) ),
+                        ( 'parFireParticleEndSize', 3 * (750) ),
+                        ( 'parFireParticleStartSize', 3 * (150) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 60 ),
                         ( 'parMeshType', 1 ),
@@ -213,8 +213,8 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5058824,0.4705883,0.4470589] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (1000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (150) ),
+                        ( 'parSmokeParticleEndSize', 3 * (1000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (150) ),
                         ( 'parSpeed', float3[8000,2000,6000] ),
                     ]
                 ),
@@ -254,10 +254,10 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 8 ),
                         ( 'parCountDebritsWithFire', 4 ),
                         ( 'parCountDebritsWithSmoke', 12 ),
-                        ( 'parDebritSizeMul', 2 * (0.7500001) ),
+                        ( 'parDebritSizeMul', 3 * (0.7500001) ),
                         ( 'parDir', parDirection ),
                         ( 'parDispersion', 340 ),
-                        ( 'parFireParticleEndSize', 2 * (200) ),
+                        ( 'parFireParticleEndSize', 3 * (200) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 2.4 ),
@@ -267,7 +267,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (400) ),
+                        ( 'parSmokeParticleEndSize', 3 * (400) ),
                         ( 'parSmokeParticleStartSize', 0 ),
                         ( 'parSpeed', float3[2000,2000,2000] ),
                     ]
@@ -294,7 +294,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parNarrowness', 2.449999 ),
                         ( 'parPositionRadius', 310 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (11) ),
+                        ( 'parSize', 3 * (11) ),
                         ( 'parSpeedMax', 1000 ),
                         ( 'parSpeedMin', 300 ),
                         ( 'parStretch', 0.5 ),
@@ -321,7 +321,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 1.2 ),
                         ( 'parPositionRadius', 310 ),
-                        ( 'parSize', 2 * (6) ),
+                        ( 'parSize', 3 * (6) ),
                         ( 'parSpeedMax', 1500 ),
                         ( 'parSpeedMin', 500 ),
                         ( 'parStretch', 1 ),
@@ -340,7 +340,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.3176471,0.3137255,0.3137255] ),
-                                ( 'parEndSize', 2 * (1250) ),
+                                ( 'parEndSize', 3 * (1250) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -350,7 +350,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.427451,0.4235294,0.4196079] ),
                                 ( 'parStartRandomRadius', 2500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 25 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -374,7 +374,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 18 ),
                         ( 'parEndColor', float3[0,0,0] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 3.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -385,7 +385,7 @@ export fx_impact_bat_ap_petit is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (300) ),
+                        ( 'parStartSize', 3 * (300) ),
                         ( 'parStartSpeed3D', float3[2000,2000,0] ),
                         ( 'parWindWeight', 1 ),
                     ]

@@ -1,6 +1,6 @@
 # BattleAtmosphere · combined-arms-preview.6
 
-**视觉层 smoke-preview.14，已安装：** 烟色改为保留层次的深炭黑，五层发射量在 preview.13 基础上再减少 40%；四倍尺寸和随机风偏保持。构建与安装核验通过，实际黑度与疏密待新对局验证。见 [烟柱方案](SMOKE_ATMOSPHERE.md)。
+**视觉层 smoke-preview.15，已安装：** 烟雾垂直上升提高至上一版 2 倍；爆炸视觉尺寸在上一版基础上乘 1.5，即原始基准 3 倍。烟量、深炭黑、四倍烟团尺寸和随机风偏保持。编译及安装检查通过，实际画面待验。见 [烟柱与爆炸方案](SMOKE_ATMOSPHERE.md)。
 
 **状态：已实装 preview.6。修复进攻方向识别反转和运输绕路误卸载；保留宽战线、持续进攻及 preview.5 采购配置。57 项离线与原生回归、正式目录启动核验通过，普通新局待用户确认。** 见 [修复记录](DIRECTION_FIX.md)、[实装回执](Development/direction-release.json)。
 

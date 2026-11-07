@@ -22,7 +22,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (160000) ),
+                        ( 'parFinalSize', 3 * (160000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1000 ),
                     ]
@@ -33,7 +33,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (5000) ),
+                        ( 'parFinalSize', 3 * (5000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 0 ),
                         ( 'parPositionRelative', parPosition ),
@@ -48,7 +48,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parDuration', 2 ),
                         ( 'parOpacity', 1 ),
                         ( 'parParticleLifetime', 8 ),
-                        ( 'parSize', 2 * (6500) ),
+                        ( 'parSize', 3 * (6500) ),
                         ( 'parSpeedMul', 0.5 ),
                     ]
                 ),
@@ -64,7 +64,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parLifetime', 2.5 ),
                         ( 'parNarrowness', 0.1 ),
                         ( 'parPositionRadius', 200 ),
-                        ( 'parSize', 2 * (10) ),
+                        ( 'parSize', 3 * (10) ),
                         ( 'parSpeedMax', 8000 ),
                         ( 'parSpeedMin', 5000 ),
                         ( 'parStretch', 1 ),
@@ -85,7 +85,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 0 ),
                         ( 'parPositionRadius', 680 ),
-                        ( 'parSize', 2 * (10) ),
+                        ( 'parSize', 3 * (10) ),
                         ( 'parSpeedMax', 2800 ),
                         ( 'parSpeedMin', 300 ),
                         ( 'parStretch', 1 ),
@@ -105,7 +105,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.5647059,0.4392157,0.3372549] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -115,7 +115,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4941177,0.3882353,0.3019608] ),
                                 ( 'parStartRandomRadius', 2500 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
+                                ( 'parStartSize', 3 * (800) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -137,8 +137,8 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (52000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (52000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 20000 ),
                         ( 'parPositionRelative', float3[-4,-9,0] ),
                     ]
@@ -160,7 +160,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 20 ),
                         ( 'parDuration', 3 ),
-                        ( 'parSize', 2 * (2500) ),
+                        ( 'parSize', 3 * (2500) ),
                     ]
                 ),
                 TActionCall
@@ -170,7 +170,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 5 ),
                         ( 'parDuration', 3 ),
-                        ( 'parSize', 2 * (3000) ),
+                        ( 'parSize', 3 * (3000) ),
                     ]
                 ),
                 TActionCall
@@ -192,7 +192,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (5750) ),
+                                ( 'parSize', 3 * (5750) ),
                             ]
                         ),
                     ]
@@ -220,7 +220,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.25 ),
-                        ( 'parFinalSize', 2 * (250000) ),
+                        ( 'parFinalSize', 3 * (250000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 256 ),
                     ]
@@ -240,14 +240,14 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                        ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                         ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 20 ),
                         ( 'parDecayStart', 5 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 2 * (3000) ),
+                        ( 'parParticleSize', 3 * (3000) ),
                         ( 'parRandomPosition', 1000 ),
                         ( 'parSmokeDuration', 8 ),
                         ( 'parSpawnerDuration', 0.25 ),
@@ -258,14 +258,14 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                         ( 'parCount', 7 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parParticleSize', 2 * (3500) ),
+                        ( 'parParticleSize', 3 * (3500) ),
                         ( 'parRandomPosition', 1000 ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 1 ),
@@ -276,14 +276,14 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1200]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1200]) ),
                         ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 2 * (2500) ),
+                        ( 'parParticleSize', 3 * (2500) ),
                         ( 'parRandomPosition', 1500 ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 0.45 ),
@@ -306,7 +306,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -327,7 +327,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -339,10 +339,10 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 10 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.5) ),
+                        ( 'parDebritSizeMul', 3 * (0.5) ),
                         ( 'parDispersion', 2000 ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (200) ),
+                        ( 'parFireParticleStartSize', 3 * (200) ),
                         ( 'parLifetime', 5 ),
                         ( 'parMeshType', 1 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -350,8 +350,8 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                         ( 'parSmokeColorMultiplier', 0.3 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (600) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSmokeParticleEndSize', 3 * (600) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
                         ( 'parSpeed', float3[4250,4360,9983] ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
@@ -363,11 +363,11 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 10 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (1.5) ),
+                        ( 'parDebritSizeMul', 3 * (1.5) ),
                         ( 'parDir', float3[0,0,1] ),
                         ( 'parDispersion', 340 ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (300) ),
+                        ( 'parFireParticleStartSize', 3 * (300) ),
                         ( 'parGravity', 1250 ),
                         ( 'parLifetime', 2 ),
                         ( 'parMeshType', 1 ),
@@ -376,8 +376,8 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (600) ),
                         ( 'parSpeed', float3[4280,4350,8000] ),
                     ]
                 ),
@@ -388,7 +388,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.1843137,0.1843137,0.1843137] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -399,7 +399,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.627451,0.4862745,0.372549] ),
                         ( 'parStartHeight', 500 ),
                         ( 'parStartRotation', 0 ),
-                        ( 'parStartSize', 2 * (1500) ),
+                        ( 'parStartSize', 3 * (1500) ),
                         ( 'parStartSpeed3D', float3[0,0,0] ),
                         ( 'parWindWeight', 2 ),
                     ]
@@ -411,7 +411,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.3294118,0.3254902,0.3254902] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -422,7 +422,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4705883,0.4627451,0.4588236] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed3D', float3[3000,3000,2000] ),
                         ( 'parWindWeight', 3 ),
                     ]
@@ -434,7 +434,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.4470589,0.4431373,0.427451] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -445,7 +445,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.4862745,0.4784314,0.4784314] ),
                         ( 'parStartHeight', 250 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed3D', float3[500,500,500] ),
                         ( 'parWindWeight', 1 ),
                     ]
@@ -525,7 +525,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 0.2 ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSizeLBU', 2 * (46.51163) ),
+                        ( 'parSizeLBU', 3 * (46.51163) ),
                         ( 'Position', float3[183,149,0] + parPosition ),
                     ]
                 ),
@@ -538,7 +538,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parDuration', 0.2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (30000) ),
+                        ( 'parSize', 3 * (30000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', float3[183,149,0] + parPosition ),
                     ]
@@ -571,7 +571,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -603,7 +603,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -635,7 +635,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -667,7 +667,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -699,7 +699,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -722,11 +722,11 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 15 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (1) ),
+                        ( 'parDebritSizeMul', 3 * (1) ),
                         ( 'parDir', float3[0,0,1] ),
                         ( 'parDispersion', 540 ),
-                        ( 'parFireParticleEndSize', 2 * (25) ),
-                        ( 'parFireParticleStartSize', 2 * (200) ),
+                        ( 'parFireParticleEndSize', 3 * (25) ),
+                        ( 'parFireParticleStartSize', 3 * (200) ),
                         ( 'parGravity', 3000 ),
                         ( 'parLifetime', 4 ),
                         ( 'parMeshType', 1 ),
@@ -735,8 +735,8 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                         ( 'parSmokeColorMultiplier', 0.6999999 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (900) ),
+                        ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (900) ),
                         ( 'parSpeed', float3[2030,2070,10000] ),
                     ]
                 ),
@@ -762,7 +762,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.4705883,0.4666667,0.4666667] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -772,7 +772,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.427451,0.4235294,0.4196079] ),
                                 ( 'parStartRandomRadius', 8000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 3 ),
                             ]
@@ -800,7 +800,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.4705883,0.454902,0.454902] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -810,7 +810,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.4,0.3960785,0.3960785] ),
                                 ( 'parStartRandomRadius', 8000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 10 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -838,7 +838,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.4705883,0.4666667,0.4666667] ),
-                                ( 'parEndSize', 2 * (1000) ),
+                                ( 'parEndSize', 3 * (1000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -848,7 +848,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.3686275,0.3686275,0.3647059] ),
                                 ( 'parStartRandomRadius', 8000 ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
+                                ( 'parStartSize', 3 * (250) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -872,7 +872,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 25 ),
                         ( 'parEndColor', float3[0.6588235,0.5176471,0.4039216] ),
-                        ( 'parEndSize', 2 * (1500) ),
+                        ( 'parEndSize', 3 * (1500) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -882,7 +882,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.5882353,0.4627451,0.3607843] ),
                         ( 'parStartRandomRadius', 3000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSize', 3 * (1000) ),
                         ( 'parStartSpeed', 100 ),
                         ( 'parWindWeight', 8 ),
                     ]
@@ -908,7 +908,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 50 ),
                                 ( 'parEndColor', float3[0.627451,0.4941177,0.3843138] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -918,7 +918,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                                 ( 'parStartColor', float3[0.5647059,0.4392157,0.3372549] ),
                                 ( 'parStartRandomRadius', 7000 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 50 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -942,7 +942,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.345098,0.3411765,0.3411765] ),
-                        ( 'parEndSize', 2 * (1500) ),
+                        ( 'parEndSize', 3 * (1500) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 8 ),
@@ -952,7 +952,7 @@ export fx_impact_sol_HE_M201_203mm_5 is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
                         ( 'parStartRandomRadius', 7000 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
+                        ( 'parStartSize', 3 * (800) ),
                         ( 'parStartSpeed', 40 ),
                         ( 'parWindWeight', 2 ),
                     ]

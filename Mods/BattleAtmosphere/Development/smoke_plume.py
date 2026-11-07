@@ -1,4 +1,4 @@
-"""Preview.14: 60% emission and deep charcoal, preserving shape and motion."""
+"""Preview.15: double vertical motion, preserving charcoal and varied wind."""
 import re
 from apply_profile import matching
 
@@ -16,7 +16,7 @@ LOOK = {
     'wisps': dict(life='RandomRange[10,18]', maximum=18, rate=0.6, cap=1600, spread=1000, growth=300, variation=200, alpha='0.07 * ParticleCustomFloat_6'),
 }
 
-def layered_smoke(block, kind, look=14):
+def layered_smoke(block, kind, look=15):
     """Apply to one spray only. Parent fire timing remains untouched."""
     cfg = dict(LOOK[kind])
     if look >= 6:
@@ -122,6 +122,13 @@ def layered_smoke(block, kind, look=14):
         across = '(0.18 * getX[ParticleCustomFloat3_4] * (1 - ' + turn + ') + 0.50 * getY[ParticleCustomFloat3_4] * ' + turn + ' + 0.08 * sin[ParticleElapsedTime * 0.13 + getZ[ParticleCustomFloat3_4]] * ' + turn + ')'
         block,n = re.subn(r'(?m)^(\s*PhysicWindField = ).+$',
             r'\g<1>MapWind * float3[1,1,0] * ' + along + ' + cross[MapWind,float3[0,0,1]] * ' + across + ' + MapWind * float3[0,0,3] * (0.2 + 0.1 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (10 + 35 * MapToLinearSmoothStep[ParticleElapsedTime,10,45])',block);assert n==1
+    if look >= 15:
+        # Scale every vertical driver together; leave drag and horizontal
+        # wind untouched so this is a rise-speed change only.
+        block = once(block, 'RandomRange[360,660]', 'RandomRange[720,1320]')
+        block = once(block, 'MapWind * float3[0,0,0.45]', 'MapWind * float3[0,0,0.90]')
+        block,n = re.subn(r'(?m)^(\s*PhysicAccelerationField = )3 \* ',r'\g<1>6 * ',block);assert n==1
+        block = once(block, 'MapWind * float3[0,0,3]', 'MapWind * float3[0,0,6]')
     block, n = re.subn(r'(?m)^(\s*Size = )Min\[30000,.+$', r'\g<1>' + size, block); assert n == 1
     # Preview.4 combined low base alpha, early fade and inverse-area dilution.
     # Restore visible density without changing particle count or growth.
@@ -171,7 +178,7 @@ def section(text, marker, change):
     b = matching(text, text.index('(', a)) + 1
     return text[:a] + change(text[a:b]) + text[b:]
 
-def ground_plume(text, look=14):
+def ground_plume(text, look=15):
     def change(s):
         s = once(s,
             'Speed = ( GenFloat3[0.00, 0.00, RandomRange[0.5, 1.5] + 1.5 * SpawningParticleCustomFloat_3] + 0.2 * SpawningParticleCustomFloat3_2) * SpawningParticleCustomFloat_6 + float3[0,0,1000] + MapWind',
@@ -187,7 +194,7 @@ def ground_plume(text, look=14):
         return layered_smoke(s, 'ground', look) if look >= 4 else s
     return section(text, 'Smoke is EvolverSpraySpawner', change)
 
-def fuel_plume(text, look=14):
+def fuel_plume(text, look=15):
     def change(s):
         s = once(s, 'Speed = float3[0,0,1600] + 0.4 * SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )',
                  'Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind')
@@ -198,7 +205,7 @@ def fuel_plume(text, look=14):
         return section(s, 'EvolverSpraySpawner', lambda b: layered_smoke(b, 'fuel', look)) if look >= 4 else s
     return section(text, 'export BA_BurningFuelSmoke is', change)
 
-def dark_plume(text, look=14):
+def dark_plume(text, look=15):
     # Three smoke layers, scoped so neither of the two flame layers is edited.
     layers = [
         ('private fumees_Starter is ParticleBombSpawner', 80,
