@@ -1,5 +1,5 @@
 {
-  "version": "combined-arms-preview.6 + smoke-preview.3",
+  "version": "combined-arms-preview.6 + smoke-preview.4",
   "files": [
     {
       "path": "Mods/BAScriptProbe/AutoRuntimeRoot/CommonData/Python/Eugen/ba_fixture.py",
@@ -23,8 +23,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/apply_smoke_profile.py",
-      "original_sha256": "c4f42e66c50a3f2bb5ce189baa8cbf35a4a67f9c72893ae9ad8a0050519e3198",
-      "sha256": "c4f42e66c50a3f2bb5ce189baa8cbf35a4a67f9c72893ae9ad8a0050519e3198"
+      "original_sha256": "a1348e2ad6ef9b772260117d01d234682a6335397badec8702c9899bdad771cc",
+      "sha256": "a1348e2ad6ef9b772260117d01d234682a6335397badec8702c9899bdad771cc"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/audit_native_fields.py",
@@ -288,8 +288,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/smoke_plume.py",
-      "original_sha256": "7838553ed3c1feb2a75abe3930ee9e2ca5583d6446bc9d12f5595b88bdc8b5c9",
-      "sha256": "7838553ed3c1feb2a75abe3930ee9e2ca5583d6446bc9d12f5595b88bdc8b5c9"
+      "original_sha256": "28b445bb7a85979373da2218e75f7076eb06213dca4f5598f71aaefb39673b47",
+      "sha256": "28b445bb7a85979373da2218e75f7076eb06213dca4f5598f71aaefb39673b47"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/snapshot_runtime_log.py",
@@ -328,28 +328,28 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/verify_smoke_plume.py",
-      "original_sha256": "59198bbd0d1c469e04b93241948952fcb9b2805650eeb3fa1df4e3ba0bc61581",
-      "sha256": "59198bbd0d1c469e04b93241948952fcb9b2805650eeb3fa1df4e3ba0bc61581"
+      "original_sha256": "69e3cb27e37a10a50b2814dc5e86a13449163c896b18f74cdc4ce62161770a9e",
+      "sha256": "69e3cb27e37a10a50b2814dc5e86a13449163c896b18f74cdc4ce62161770a9e"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/verify_smoke_profile.py",
-      "original_sha256": "50cc4ed608274a620a2dc5b62ba4bbbe8777f48ec602061edc5204e826edbb08",
-      "sha256": "50cc4ed608274a620a2dc5b62ba4bbbe8777f48ec602061edc5204e826edbb08"
+      "original_sha256": "1d4d39695159a169131ba8cba2421db952729e57e70e0d618b10afa6d925c9fa",
+      "sha256": "1d4d39695159a169131ba8cba2421db952729e57e70e0d618b10afa6d925c9fa"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf",
-      "original_sha256": "934d014d759158ad96d31a09d97b6e9c68b1e4460e7acb2d47d55ff6269abe08",
-      "sha256": "934d014d759158ad96d31a09d97b6e9c68b1e4460e7acb2d47d55ff6269abe08"
+      "original_sha256": "271737898bdbad77a57f3dfb8c2e636e3de7c5fa32c34aa1f20706fe24bf45a8",
+      "sha256": "271737898bdbad77a57f3dfb8c2e636e3de7c5fa32c34aa1f20706fe24bf45a8"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Bank/Basics/BANK_FuelFire.ndf",
-      "original_sha256": "893098adabd00f0cc8de89bab1f21c11645f7c9414c47da4c1369c7a85b0999a",
-      "sha256": "893098adabd00f0cc8de89bab1f21c11645f7c9414c47da4c1369c7a85b0999a"
+      "original_sha256": "f7192c60266510a017706045c5796baaa153752866e1d5d4595eaf670675f14a",
+      "sha256": "f7192c60266510a017706045c5796baaa153752866e1d5d4595eaf670675f14a"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Bank/composite/BANK_DarkFire.ndf",
-      "original_sha256": "92049ed1c0344b578b5c97a6deab01a0eb1edd369c3f7acd439680b679098c5d",
-      "sha256": "92049ed1c0344b578b5c97a6deab01a0eb1edd369c3f7acd439680b679098c5d"
+      "original_sha256": "d824309eb00e55bedd4ad0fbb157f8eb02cb0d9e527772eb1c0260b100217c24",
+      "sha256": "d824309eb00e55bedd4ad0fbb157f8eb02cb0d9e527772eb1c0260b100217c24"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Generated/fx_destruction_FOB_02.ndf",

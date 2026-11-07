@@ -155,11 +155,11 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                             [
                                                 Smoke is EvolverSpraySpawner
                                                 (
-                                                    Frequency = 10 * (ParticleCustomFloat_7 * ParticleRemainingLifeRatio)
-                                                    MaxSpawnedParticleLifetime = 360
+                                                    Frequency = 2 * (ParticleCustomFloat_7 * ParticleRemainingLifeRatio)
+                                                    MaxSpawnedParticleLifetime = 80
                                                     Spawner = ParticleSpawner
                                                     (
-                                                        ParticleLifetime = 10 * Min[36, Max[18, SpawningParticleCustomFloat_5 * RandomRange[0.5,2] * SpawningParticleCustomFloat_3]]
+                                                        ParticleLifetime = RandomRange[45,80]
                                                         Initialisers =
                                                         [
                                                             ParticleInitialiserList
@@ -169,6 +169,7 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                                                 CustomFloat_2 = SpawningParticleCustomFloat_8 * SpawningParticleRemainingLifeRatio// Opacity
                                                                 CustomFloat_3 = RandomRange[0, 0.5]
                                                                 CustomFloat_5 = RandomUnit
+                                                                CustomFloat3_2 = MinusOneToOneRandomDisc
                                                                 Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind
                                                                 Rotation = RandomUnit
                                                                 EmissivePower = 1
@@ -186,10 +187,11 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                                             (
                                                                 FluidFriction = 0.18
                                                                 PhysicAccelerationField = float3[0.00, 0.00, 35.00] * (0.6 + 0.4 * ParticleRemainingLifeRatio)
-                                                                PhysicWindField = MapWind * lerp[ParticleCustomFloat_5, 0.45, 0.25]
+                                                                PhysicWindField = MapWind * (0.35 + 0.25 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (30 + 70 * MapToLinearSmoothStep[ParticleElapsedTime, 6,45])
 
-                                                                Opacity = AttackSustainDecay[ParticleLifeRatio, 0.008, 0.65] * ParticleCustomFloat_2
-                                                                Size = Min[30000, Max[600, ParticleCustomFloat_1 * 0.5] + (220 + 120 * ParticleCustomFloat_5) * ParticleElapsedTime]
+                                                                ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.14,0.15,0.16], LinearColor[0.34,0.35,0.36]] * (0.85 + 0.3 * ParticleCustomFloat_5)
+                                                                Opacity = AttackSustainDecay[ParticleLifeRatio,0.035,0.32] * (0.45 * ParticleCustomFloat_2) * Min[1,900000 div Max[900000,sqr[ParticleSize]]]
+                                                                Size = Min[5000 + 3000 * ParticleCustomFloat_5, Min[1400,Max[350,ParticleCustomFloat_1 * 0.4]] + (850 + 350 * ParticleCustomFloat_5) * (sqrt[1 + ParticleElapsedTime div 12] - 1)]
                                                                 Animation = lerp[ParticleCustomFloat_3, 1, ParticleLifeRatio]
                                                             )
                                                         )

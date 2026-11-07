@@ -15,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.3'
+VERSION = 'smoke-preview.4'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview3-before.zip'
+BACKUP = 'archive/smoke-preview4-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -141,7 +141,9 @@ def main():
     before, after, callers, excluded = expected_files()
     for name, target in after.items():
         current = (MOD / name).read_text(encoding='utf-8-sig')
-        previous = ground(before[name]) if name == BINDER else fuel(before[name]) if name == FUEL else before[name].replace(OLD, NEW)
+        previous = (ground_plume(ground(before[name]), 3) if name == BINDER else
+                    fuel_plume(fuel(before[name]), 3) if name == FUEL else
+                    dark_plume(before[name], 3) if name == DARK else target)
         assert current in (before[name], previous, target), 'Unreviewed edits: ' + name
         if not args.write:
             assert current == target, 'Source not yet applied: ' + name
@@ -165,8 +167,8 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_files() == protected
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.1', lifetime_multiplier=MULTIPLIER,
-                  emission_multiplier=MULTIPLIER, vehicle_burn_duration_multiplier=10,
+                  relative_to='smoke-preview.3', appearance='lower emission, slower growth, optical dilution, independent drift',
+                  vehicle_burn_duration_multiplier=10,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,
                   backup=archive.relative_to(MOD).as_posix())

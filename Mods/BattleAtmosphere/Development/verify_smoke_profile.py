@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import hashlib
+import math
 import struct
 import subprocess
 import sys
@@ -81,14 +82,14 @@ def smoke_spawner(c, root, is_ground):
     assert len(found) == 1
     return found[0]['properties']
 
-def verify_multiplier(c, value, prior, original):
+def verify_multiplier(c, value, prior, original, factor=10):
     node = c.objects[value['ref']]
     assert node['class'] == 'TIntrinsicCall_2Param'
     props = node['properties']
     assert canonical(c, props['Intrinsic']) == ('import', '$/System/EvaluableIntrinsics/IntrinsicOperatorMul')
     scale = c.objects[props['Param0']['ref']]
     assert scale['class'] in ('TConstantInteger', 'TConstantFloat')
-    assert scale['properties']['Value'] == MULTIPLIER
+    assert math.isclose(scale['properties']['Value'], factor, rel_tol=1e-6)
     assert canonical(c, props['Param1']) == canonical(prior, original), 'Scaled base expression changed'
 
 def main():
@@ -143,29 +144,21 @@ def main():
     prior_exports = paths(prior, 'EXPR')
     assert canonical(bank, {'ref': old_id}) == canonical(prior, {'ref': prior_exports[OLD]}), 'Shared fuel smoke changed'
     scaling = {}
-    for name, minimum in ((NEW, 24), ('$/VFX_Bank/FX_BANK_Binder_Fire', 18)):
-        graph = reachable(bank, exports[name])
-        constants = [o['properties'].get('Value') for o in graph
-                     if o['class'] in ('TConstantFloat', 'TConstantInteger')]
-        assert minimum in constants and 36 in constants and 30000 in constants, name
+    for name, limits in ((NEW, [50,90]), ('$/VFX_Bank/FX_BANK_Binder_Fire', [45,80])):
         current = smoke_spawner(bank, exports[name], name != NEW)
         previous = smoke_spawner(prior, prior_exports[name], name != NEW)
-        assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == 36 * MULTIPLIER
-        verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'])
-        current_life = bank.objects[current['Spawner']['ref']]['properties']['ParticleLifetime']
-        previous_life = prior.objects[previous['Spawner']['ref']]['properties']['ParticleLifetime']
-        verify_multiplier(bank, current_life, prior, previous_life)
-        scaling[name] = dict(relative_to='smoke-preview.1', emission_multiplier=MULTIPLIER,
-                             lifetime_multiplier=MULTIPLIER, lifetime_seconds=[minimum * MULTIPLIER, 36 * MULTIPLIER],
-                             max_spawned_particle_lifetime=36 * MULTIPLIER)
+        assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == limits[1]
+        verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'], factor=2)
+        scaling[name] = dict(relative_to='smoke-preview.3', emission_multiplier=0.2,
+                             lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
     from verify_smoke_plume import verify_plume
     plume = verify_plume(bank, fx, exports, source)
     result = dict(version=VERSION, status='source-and-compiled-references-passed; visual-unverified',
                   compiled_calls=calls, compiled_scaling=scaling, plume=plume, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: both smoke lifetimes/emission expressions are exactly 10x preview.1; 360s bounds compiled; 64 burning/193 unchanged shared placements')
-    print('PASS: five slower, expanding smoke layers; %s vehicle cadaver descriptors at 10-1200s; %s vehicle fuel calls at 10x source duration' %
+    print('PASS: reduced emission, bounded smoke life and decelerating growth; 64 burning/193 unchanged shared placements')
+    print('PASS: five layered smoke banks; %s vehicle cadaver descriptors at 10-1200s; %s vehicle fuel calls retain 10x source duration' %
           (plume['compiled_vehicle_cadaver_objects'], plume['compiled_unique_vehicle_fuel_calls']))
 
 if __name__ == '__main__':
