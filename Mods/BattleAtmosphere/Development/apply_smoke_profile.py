@@ -16,9 +16,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.19'
+VERSION = 'smoke-preview.20'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview19-before.zip'
+BACKUP = 'archive/smoke-preview20-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -58,6 +58,12 @@ def expected_files():
         map_report = map_sources(z,before,after)
         map_report['additional_burning_sources'] = extend_buildings(z,before,after)
         (DEV/'map-wreck-source.json').write_text(json.dumps(map_report,indent=2)+'\n')
+        from impact_visuals import extend_sources as impact_sources
+        from read_cndf import Cndf
+        with zipfile.ZipFile(DEV/BACKUP) as saved:
+            reference=Cndf(saved.read('installed/Gen/NDF/GFX/GameFx.ndfbin'))
+        impact_report=impact_sources(z,before,after,reference)
+        (DEV/'impact-visual-source.json').write_text(json.dumps(impact_report,indent=2)+'\n')
         for name in excluded:
             # Explosion-selected files can still carry the previously installed
             # scale during migration. main() validates those against the exact
@@ -123,7 +129,7 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_match(protected_files(), protected)
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.18', appearance='Separate native Small White Smoke Wind prop copied verbatim; replaces old wreck, building, ground and dark-fire smoke; existing flames retained; wreck burn 10-1200s; explosions remain 3x size and 3.3x spread',
+                  relative_to='smoke-preview.19', appearance='Smoke-trailed warhead impact routes use the existing five 122 mm HE variants; destruction, bullet hits, tactical smoke, projectile flight and all existing FX graphs unchanged',
                   vehicle_burn_seconds=[10,1200], map_wreck_fire=True,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,

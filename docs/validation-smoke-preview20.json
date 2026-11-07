@@ -1,0 +1,164 @@
+{
+  "version": "smoke-preview.20",
+  "status": "installed; rendered-appearance-and-frame-rate-unverified",
+  "installed_at": "2026-11-07T21:45:16.057537+00:00",
+  "outputs": {
+    "Gen/Version.ndf": "0eb6e4508aed361b6170abc445ce2daa0a0d38397fe7bbbcb50413859c312304",
+    "Gen/NDF/VFX_Bank.ndfbin": "b5a62e90089da72827a1958bf8c480f7d770e7ebfdfd895c48fae44f4f67c483",
+    "Gen/ResourceFile/Catalog.cat": "ae1e3e6e695770f5eef12540ff6d6515e21689dd147d979fd78ba57d71974b11",
+    "Gen/NDF/GFX/Depiction.ndfbin": "d84ae23c8714cfc396a3c4a3ed8f0cab22a17d8275c0474c2e32f102969ba649",
+    "Gen/NDF/GFX/GameFx.ndfbin": "c4a3fc7114782f2af7969eb9fefb00805cf0de2a1d2009d9bbb23e8d961d5531",
+    "Gen/NDF/GFX/Skirmish.ndfbin": "ebcd62d82642744f1459de2e27f5e36a17cd4b5c264bccd3982cebbe3a2243d3",
+    "Gen/NDF/GFX/Unit.ndfbin": "cf4fb8900c959b975460a0d036b6443d87ff3d1574262dd46d7486f2692717f7",
+    "Gen/NDF/Localisation/BattleAtmosphere.ndfbin": "411c898aa3c81586c3ce31ccedbbfc87f4ee1152d7d635e4dde2b7ea2da7d2a8",
+    "Gen/NDF/ResourcePacks/BattleAtmosphere.ndfbin": "2afbc531497ad18f23458cffcd1d738dc783eb8ce3ee8b46f058db207a6b8101",
+    "Gen/TextureProxy/BattleAtmosphere/Mesh_All.ndfbin": "29669a5505c165095de444060d3ccb20539f968b470f4584cf75912485baea0e"
+  },
+  "config_sha256": "bfe41d693e696ea75ca31946aa3350aa1e094cc2f8c24218447429e4794aff02",
+  "runtime_dll_sha256": "735a2c011ee0f7a8f8a934dda710c34c87f81af7501e3830bd71427c530bd7e3",
+  "ai_unchanged": true,
+  "gameplay_smoke_and_fire_unchanged": true,
+  "compiled_calls": {
+    "$/VFX_Bank/BA_BurningFuelSmoke": 60,
+    "$/VFX_Bank/BANK_FuelSmoke": 193
+  },
+  "compiled_scaling": {
+    "native_bridge_smoke": {
+      "particle_lifetime_seconds": [
+        8,
+        20
+      ],
+      "exact_native_parameters": true
+    }
+  },
+  "plume": {
+    "bridge": {
+      "native_smoke_fx": "fx_Small_White_Smoke_Wind_diorama",
+      "compiled_copy_matches_native": true,
+      "layers": [
+        {
+          "Feu_Size_Mul": 0,
+          "FireCountMul": 0,
+          "FireDuration": 0,
+          "Ground_Size": 1,
+          "SmokeColor": [
+            0.529411792755127,
+            0.529411792755127,
+            0.529411792755127
+          ],
+          "SmokeCountMul": 3,
+          "SmokeDuration": 20,
+          "SmokeOpacity": 0.25,
+          "SmokeSpeed": 0,
+          "SmokeWindFactor": 10,
+          "Smoke_Size_Mul": 1,
+          "SparksCountMul": 0,
+          "SparksDuration": 0
+        },
+        {
+          "Feu_Size_Mul": 0,
+          "FireCountMul": 0,
+          "FireDuration": 0,
+          "Ground_Size": 1,
+          "SmokeColor": [
+            0.4705882966518402,
+            0.4705882966518402,
+            0.4705882966518402
+          ],
+          "SmokeCountMul": 2,
+          "SmokeDuration": 8,
+          "SmokeOpacity": 0.5,
+          "SmokeSpeed": 0,
+          "SmokeWindFactor": 10,
+          "Smoke_Size_Mul": 2,
+          "SparksCountMul": 0,
+          "SparksDuration": 0
+        }
+      ],
+      "old_custom_emitter_layers_removed": 5,
+      "all_other_existing_bank_behavior_unchanged": true,
+      "checked_existing_bank_exports": 588,
+      "native_smoke_source_clock_preserved": true,
+      "additional_burning_fx": 21,
+      "replaced_mixed_burning_smoke_calls": 139,
+      "rendered_appearance": "unverified"
+    },
+    "map_wreck": {
+      "native_map_family": "fx_incendie_fuel_explosion_Small_diorama",
+      "native_fire_equal_except_flame_size_source_duration_and_replaced_smoke": true,
+      "fire_size_factor": 0.5,
+      "smoke_lifetime_factor": 1,
+      "finite_bank_particle_graph_equal": true,
+      "removed_old_fuel_smoke_calls": 3,
+      "muted_old_mixed_smoke_calls": 4,
+      "independent_native_wind_smoke_calls": 1,
+      "depiction": {
+        "checked_exports": 3819,
+        "checked_depiction_descriptors": 19445,
+        "replaced_ground_air_composites": 2,
+        "source_count_per_wreck": 1,
+        "other_depiction_properties_unchanged": true
+      },
+      "vehicle_burn_seconds": [
+        10,
+        1200
+      ],
+      "unit_and_ai_binary_unchanged": true,
+      "rendered_appearance": "unverified"
+    },
+    "impact_routes": {
+      "status": "compiled-routing-and-frozen-FX-passed; visual-unverified",
+      "replacement": "existing 122 mm HE impact; five native random variants; installed 3x dimensions/3.3x spread",
+      "changed_routes": 447,
+      "warhead_families": 109,
+      "ammunition_descriptors": 869,
+      "surfaces": {
+        "Water": 65,
+        "Ground": 54,
+        "Air": 61,
+        "Wall": 85,
+        "Vehicle": 91,
+        "FlyingVehicle": 91
+      },
+      "unchanged_routes": 801,
+      "protected_destruction_routes": 80,
+      "sound_happenings_unchanged": true,
+      "other_mimetic_registrations_unchanged": true,
+      "frozen_outputs": {
+        "Gen/NDF/GFX/GameFx.ndfbin": "c4a3fc7114782f2af7969eb9fefb00805cf0de2a1d2009d9bbb23e8d961d5531",
+        "Gen/NDF/VFX_Bank.ndfbin": "b5a62e90089da72827a1958bf8c480f7d770e7ebfdfd895c48fae44f4f67c483",
+        "Gen/NDF/GFX/Unit.ndfbin": "cf4fb8900c959b975460a0d036b6443d87ff3d1574262dd46d7486f2692717f7",
+        "Gen/NDF/GFX/Skirmish.ndfbin": "ebcd62d82642744f1459de2e27f5e36a17cd4b5c264bccd3982cebbe3a2243d3"
+      },
+      "gameplay_and_projectile_flight_unchanged": true,
+      "rendered_appearance": "unverified"
+    }
+  },
+  "explosions": {
+    "visual_scale": 3,
+    "relative_to": "smoke-preview.19",
+    "relative_multiplier": 1,
+    "previous_visual_scale": 3,
+    "spatial_scale": 3.3,
+    "source_files": 677,
+    "source_dimensions": 64535,
+    "unique_compiled_dimensions": 29851,
+    "affected_exports": 902,
+    "compiled_spatial_parameters": 11726,
+    "compiled_local_offsets": 1584,
+    "event_anchors_unchanged": true,
+    "checked_exports": 1656,
+    "other_properties_unchanged": true,
+    "removed_unique_old_vehicle_fuel_calls": 12,
+    "wreck_effect_verified_separately": true,
+    "rendered_appearance": "unverified"
+  },
+  "particle_budget": {
+    "status": "native-budget-and-AI-start-move-stop-passed; rendered-effect-unverified",
+    "dll_sha256": "735a2c011ee0f7a8f8a934dda710c34c87f81af7501e3830bd71427c530bd7e3",
+    "max_particles": 200000,
+    "effective_limit": 160000
+  },
+  "backup": "archive/smoke-preview20-before.zip",
+  "runtime_note": "Runtime DLL unchanged from vfx-budget.3; same-hash budget receipt reused, no new AI or rendering run."
+}

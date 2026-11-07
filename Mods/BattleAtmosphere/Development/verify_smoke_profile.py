@@ -154,12 +154,16 @@ def main():
     from verify_map_wreck import verify_map_wreck
     map_wreck = verify_map_wreck(bank,fx)
     plume['map_wreck'] = map_wreck
+    from verify_impact_visuals import verify_impacts
+    plume['impact_routes'] = verify_impacts()
     result = dict(version=VERSION, status='source-and-compiled-references-passed; visual-unverified',
                   compiled_calls=calls, compiled_scaling=scaling, plume=plume, explosions=explosions, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
     print('PASS: native independent bridge wind-smoke copied exactly; old five custom smoke layers removed')
     print('PASS: wreck/building/ground burning routes verified; retained flames, explosions, AI and budget checked')
+    print('PASS: %d warhead impact routes use 122 mm HE; %d destruction routes preserved' %
+          (plume['impact_routes']['changed_routes'],plume['impact_routes']['protected_destruction_routes']))
 
 if __name__ == '__main__':
     main()

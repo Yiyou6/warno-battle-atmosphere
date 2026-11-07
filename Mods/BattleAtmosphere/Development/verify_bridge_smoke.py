@@ -44,7 +44,8 @@ def verify_bridge(bank,fx):
     assert a['class']=='TActionCall' and a['properties']['Action']['ref']==be['$/VFX_Bank/'+SMOKE_BANK]
     assert b['class']=='TWaitInSec'
     assert bank.objects[b['properties']['Duration']['ref']]['properties']['_ShortDatabaseName']=='parDuration'
-    with zipfile.ZipFile(DEV/BACKUP) as z:
+    # Fixed preview.18 baseline for the historical preview.19 smoke replacement.
+    with zipfile.ZipFile(DEV/'archive/smoke-preview19-before.zip') as z:
         previous=Cndf(z.read('installed/Gen/NDF/VFX_Bank.ndfbin'))
     pe=paths(previous,'EXPR')
     assert set(be)-set(pe)=={'$/VFX_Bank/'+SMOKE_BANK,'$/VFX_Bank/'+FINITE_SMOKE}
