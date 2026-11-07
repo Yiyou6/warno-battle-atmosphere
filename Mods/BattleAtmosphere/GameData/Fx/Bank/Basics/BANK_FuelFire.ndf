@@ -356,7 +356,7 @@ export BA_BurningFuelSmoke is SimultaneousActionDeclaration
                                             PhysicWindField = MapWind * (0.35 + 0.25 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (30 + 70 * MapToLinearSmoothStep[ParticleElapsedTime, 6,45])
                                             Size = Min[4000 + 2000 * ParticleCustomFloat_5, Min[1400,Max[350,ParticleCustomFloat_1 * 0.4]] + (650 + 350 * ParticleCustomFloat_5) * (sqrt[1 + ParticleElapsedTime div 12] - 1)]
                                             ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.14,0.15,0.16], LinearColor[0.34,0.35,0.36]] * (0.85 + 0.3 * ParticleCustomFloat_5)
-                                            Opacity = AttackSustainDecay[ParticleLifeRatio,0.035,0.32] * (0.22 * ParticleCustomFloat_6 * ParticleCustomFloat_3) * Min[1,900000 div Max[900000,sqr[ParticleSize]]]
+                                            Opacity = AttackSustainDecay[ParticleLifeRatio,0.015,0.65] * (0.60 * ParticleCustomFloat_6 * ParticleCustomFloat_3) * Max[0.65,Min[1,2500000 div Max[2500000,sqr[ParticleSize]]]]
                                             RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio
                                             UseHardCodedRotation = True
                                             AdditionnalEvolvers =

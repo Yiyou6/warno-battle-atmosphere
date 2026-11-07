@@ -134,7 +134,7 @@ def main():
             assert count_calls(root, imports[other], {}, set()) == 0, path
             total += actual
         calls[name] = total
-    # Keep the historical preview.1 baseline for the user's retained 10x request.
+    # Keep the historical preview.1 baseline to verify unchanged shared smoke.
     with zipfile.ZipFile(DEV / 'archive/smoke-preview2-before.zip') as z:
         prior_receipt = json.loads(z.read('development/smoke-release.json'))
         assert prior_receipt['version'] == 'smoke-preview.1'
@@ -157,7 +157,7 @@ def main():
                   compiled_calls=calls, compiled_scaling=scaling, plume=plume, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: reduced emission, bounded smoke life and decelerating growth; 64 burning/193 unchanged shared placements')
+    print('PASS: restored density floor, bounded smoke life and decelerating growth; 64 burning/193 unchanged shared placements')
     print('PASS: five layered smoke banks; %s vehicle cadaver descriptors at 10-1200s; %s vehicle fuel calls retain 10x source duration' %
           (plume['compiled_vehicle_cadaver_objects'], plume['compiled_unique_vehicle_fuel_calls']))
 

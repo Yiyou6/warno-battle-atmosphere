@@ -1,4 +1,4 @@
-"""Inspect compiled preview.4 shape curves and preserve long-burning sources."""
+"""Inspect compiled preview.5 shape curves and preserve long-burning sources."""
 from collections import defaultdict
 import hashlib
 import json
@@ -36,7 +36,7 @@ def evaluate_scalar(c, value, fields):
 
 
 def verify_plume(bank, fx, exports, source):
-    with zipfile.ZipFile(DEV / BACKUP) as z:
+    with zipfile.ZipFile(DEV / 'archive/smoke-preview4-before.zip') as z:
         receipt = json.loads(z.read('development/smoke-release.json'))
         assert receipt['version'] == 'smoke-preview.3'
         data = z.read('installed/Gen/NDF/VFX_Bank.ndfbin')
@@ -78,7 +78,7 @@ def verify_plume(bank, fx, exports, source):
         evolvers = {imports[o['properties']['Field']['import_index']]:o['properties']['EvolveFunction']
                     for o in graph if o['class']=='TVersatileParticleEvolver'}
         assert {'Size','Opacity','ColorModifier'} <= evolvers.keys()
-        # The final opacity factor is inverse projected area, tested independently
+        # The final density factor has a visibility floor, tested independently
         # of the shader, source opacity and fade envelope.
         opacity = bank.objects[evolvers['Opacity']['ref']]['properties']['Param1']
         rows = []
@@ -91,7 +91,7 @@ def verify_plume(bank, fx, exports, source):
                 size=evaluate_scalar(bank,evolvers['Size'],fields)
                 assert 0 < size <= 8000
                 fields['Size']=size; dilution=evaluate_scalar(bank,opacity,fields)
-                assert 0 <= dilution <= 1 and dilution*size*size <= 900001
+                assert 0.649999 <= dilution <= 1
                 sizes.append(round(size,4))
             assert sizes[0] <= 1400 and sizes[-1] < 3700
             assert 0 <= sizes[2]-sizes[1] <= sizes[1]-sizes[0] <= 500
@@ -103,7 +103,7 @@ def verify_plume(bank, fx, exports, source):
     assert vehicles and all(p['CadaverFireDurationMin']==10 and p['CadaverFireDurationMax']==1200 for p in vehicles)
     return dict(smoke_layers_verified=5,emission_relative_to_preview3=[0.06,0.06,0.15,0.2,0.2],
                 size_growth='decelerating square-root of elapsed seconds, varied bounds',
-                compiled_curve_samples=samples,optical_area_limit=900000,
+                compiled_curve_samples=samples,optical_density_floor=0.65,
                 vehicle_burn_seconds=[10,1200],compiled_vehicle_cadaver_objects=len(vehicles),
                 compiled_unique_vehicle_fuel_calls=receipt['plume']['compiled_unique_vehicle_fuel_calls'],
                 vehicle_fuel_source_duration_multiplier=10,rendered_appearance='unverified')
