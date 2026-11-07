@@ -155,7 +155,7 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                             [
                                                 Smoke is EvolverSpraySpawner
                                                 (
-                                                    Frequency = 4 * (ParticleCustomFloat_7 * ParticleRemainingLifeRatio)
+                                                    Frequency = 2.0 * (ParticleCustomFloat_7 * ParticleRemainingLifeRatio)
                                                     MaxSpawnedParticleLifetime = 80
                                                     Spawner = ParticleSpawner
                                                     (

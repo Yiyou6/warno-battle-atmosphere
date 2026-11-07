@@ -297,7 +297,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                     ),
                                     EvolverSpraySpawner
                                     (
-                                        Frequency = Min[5,Max[3,2 * ParticleCustomFloat_2]]
+                                        Frequency = 0.5 * (Min[5,Max[3,2 * ParticleCustomFloat_2]])
                                         MaxSpawnedParticleLifetime = 22
                                         Spawner = private Fumees_Dark is ParticleSpawner
                                         (
@@ -405,7 +405,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                     ),
                                     EvolverSpraySpawner
                                     (
-                                        Frequency = Min[12,Max[8,2 * ParticleCustomFloat_2]]
+                                        Frequency = 0.5 * (Min[12,Max[8,2 * ParticleCustomFloat_2]])
                                         MaxSpawnedParticleLifetime = 85
                                         Spawner = private Fumees_Dark is ParticleSpawner
                                         (
@@ -503,7 +503,7 @@ public BANK_DarkFire_AD is SimultaneousActionDeclaration
                                 ),
                                 EvolverSpraySpawner
                                 (
-                                    Frequency = Min[2,Max[1,ParticleCustomFloat_2]]
+                                    Frequency = 0.5 * (Min[2,Max[1,ParticleCustomFloat_2]])
                                     MaxSpawnedParticleLifetime = 18
                                     Spawner = private Fumees_Dark is ParticleSpawner
                                     (

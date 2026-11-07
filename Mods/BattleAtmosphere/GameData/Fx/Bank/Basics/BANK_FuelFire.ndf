@@ -307,7 +307,7 @@ export BA_BurningFuelSmoke is SimultaneousActionDeclaration
                         [
                             EvolverSpraySpawner
                             (
-                                Frequency = 4 * Min[4, Max[1.5, ParticleCustomFloat_2]]
+                                Frequency = 2.0 * Min[4, Max[1.5, ParticleCustomFloat_2]]
                                 MaxSpawnedParticleLifetime = 90
                                 Spawner = private Fumees_Dark is ParticleSpawner
                                 (

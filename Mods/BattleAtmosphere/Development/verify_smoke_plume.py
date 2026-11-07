@@ -60,7 +60,7 @@ def verify_plume(bank, fx, exports, source):
     dark = '$/VFX_Bank/BANK_DarkFireCompo'
     old = dark_smoke(prior,paths(prior,'EXPR')[dark]); new = dark_smoke(bank,exports[dark])
     emission = {}
-    for bound,minimum,maximum in ((18,1,2),(22,3,5),(85,8,12)):
+    for bound,minimum,maximum in ((18,0.5,1),(22,1.5,2.5),(85,4,6)):
         samples = [evaluate_scalar(bank,new[bound]['Frequency'],dict(CustomFloat_2=v)) for v in (0,0.1,1,2,4,8,20)]
         assert min(samples) == minimum and max(samples) == maximum
         emission[str(bound)] = dict(range_per_second=[minimum,maximum],samples=samples)

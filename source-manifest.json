@@ -1,5 +1,5 @@
 {
-  "version": "combined-arms-preview.6 + smoke-preview.9",
+  "version": "combined-arms-preview.6 + smoke-preview.10",
   "files": [
     {
       "path": "Mods/BAScriptProbe/AutoRuntimeRoot/CommonData/Python/Eugen/ba_fixture.py",
@@ -24,7 +24,7 @@
     {
       "path": "Mods/BattleAtmosphere/Development/apply_smoke_profile.py",
       "original_sha256": "522c8b809f0ae93928e8bacad13fc711c00de682ad0bd26fd801cc03dd686cc9",
-      "sha256": "cc22d32b11d42ba6d17ce1edeb56ce6fa3d27e2905e30395ac1d0e6e57a06b2f"
+      "sha256": "79d8c753122eaa7cd5244b22b5334dda9246c181d70607c7fa14fbbc05d05383"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/audit_native_fields.py",
@@ -309,7 +309,7 @@
     {
       "path": "Mods/BattleAtmosphere/Development/smoke_plume.py",
       "original_sha256": "7a120329bab2d2c5d64e7f3cba67713cf6b7aebd011062e348680da71643090a",
-      "sha256": "137cdae42369637174a02aa1678611001bf3c736368f17628d3db798168796cb"
+      "sha256": "6823517cdc082c292955c92249b0bbd2b03e3913ce6c794465f3dfe4beef0a4d"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/snapshot_runtime_log.py",
@@ -359,27 +359,27 @@
     {
       "path": "Mods/BattleAtmosphere/Development/verify_smoke_plume.py",
       "original_sha256": "0270d05b7f6bc2c62b1161219fe694a4bbde218509fc38b5cb86fce969805bd5",
-      "sha256": "4b1d7e6486362e7799d5e49cb5d4b9ec5493b24b8857179fdf4609c40e6feda9"
+      "sha256": "603b2e9bd64fe4f93d430a3269b54d0fcb55ba2415285c36c86952e1e37a574b"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/verify_smoke_profile.py",
       "original_sha256": "38714400d68be67b0338fd4b4b64ec800d392eb75c48d533630c52b5835262d4",
-      "sha256": "083d5c32fffe5256c236995e3d17f53eba2766ba7e0e7008e4569411f7b43ac9"
+      "sha256": "42dba0309bc49e2c762bd61b79f137a2e7cd1d570152ec9cb0b4caa442568490"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf",
       "original_sha256": "1fdf36299443f5cdacb8c2df0c3af8682bf133ee13b3f0957892c0101afb6686",
-      "sha256": "6e0b095d5f8bd19858982c21eb29fe45e67a88b9a221d0482f7d2b7a8c568b2c"
+      "sha256": "58ac8b9d1c13ff4ccd599f941e63e85f730f6a20ad9273c0a5eafd86c873b063"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Bank/Basics/BANK_FuelFire.ndf",
       "original_sha256": "7d98a7e8177712d0d5380d49f0d0f102d1fdf68b0f632935484f428711de835b",
-      "sha256": "262af9114ce7cad6588e058d742b4ccd4c1cca65d9e295f7bab5e48cbc92ced3"
+      "sha256": "b353923c2a396fece511212ce909230c5383c5ff3031404915ed08d885b595e8"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Bank/composite/BANK_DarkFire.ndf",
       "original_sha256": "21b4c417c0f3e1fc7531d9a218874fa85925b4126695f403a9e896daa07ba269",
-      "sha256": "b327a621e86c60c58cfbe6dcf240d23a4615c45b672e2e9e2b1e8737de06c9db"
+      "sha256": "1bd7967f5c6d3fa6792e0ca8437172d3b43b06394ca9fc3c15802e1ff7bab02c"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Generated/Fx_impact_2A38_Autocanon.ndf",
@@ -3854,7 +3854,7 @@
     {
       "path": "Mods/BattleAtmosphere/README.md",
       "original_sha256": "218f521ebb2e2c55eab473fdb18744c5379c3ae66da005dc4a7e830f3ba8cd3a",
-      "sha256": "8b24129890c896c2ba8fe0a7544d3ed0a6e0b7ffc2d2b19f1ed09a8a5a65f847"
+      "sha256": "fa83623a3c8918d6c41be077285e01c7a7d8c2f49be2461d1f57d9fc29393688"
     },
     {
       "path": "Mods/BattleAtmosphere/Runtime/Python/ba_allocator.py",
@@ -3899,7 +3899,7 @@
     {
       "path": "Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md",
       "original_sha256": "e9f2f8ca6280bf30d5188b996a9e4c6e94a674d1bc1a525c8bd8a15739d46a60",
-      "sha256": "7209536088b2e723c4acd73c65a7257e63c03014be4a13b75a2e15387423d39d"
+      "sha256": "0493d7f0cd55f6c480be4ca7353f85d3205af80c8c38b263aecd6074b6a64f4c"
     },
     {
       "path": "Mods/BattleAtmosphere/VFX_BUDGET.md",
