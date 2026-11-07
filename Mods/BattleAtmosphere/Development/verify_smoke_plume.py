@@ -60,7 +60,7 @@ def verify_plume(bank, fx, exports, source):
     dark = '$/VFX_Bank/BANK_DarkFireCompo'
     old = dark_smoke(prior,paths(prior,'EXPR')[dark]); new = dark_smoke(bank,exports[dark])
     emission = {}
-    for bound,minimum,maximum in ((18,0.5,1),(22,1.5,2.5),(85,4,6)):
+    for bound,minimum,maximum in ((18,0.25,0.5),(22,0.75,1.25),(85,2,3)):
         samples = [evaluate_scalar(bank,new[bound]['Frequency'],dict(CustomFloat_2=v)) for v in (0,0.1,1,2,4,8,20)]
         assert min(samples) == minimum and max(samples) == maximum
         emission[str(bound)] = dict(range_per_second=[minimum,maximum],samples=samples)
@@ -80,6 +80,14 @@ def verify_plume(bank, fx, exports, source):
         evolvers = {imports[o['properties']['Field']['import_index']]:o['properties']['EvolveFunction']
                     for o in graph if o['class']=='TVersatileParticleEvolver'}
         assert {'Size','Opacity','ColorModifier'} <= evolvers.keys()
+        color_nodes = [o for o in reachable(bank,evolvers['ColorModifier']['ref'])
+                       if o['class']=='TIntrinsicCall_3Param' and
+                       imports.get(o['properties']['Intrinsic'].get('import_index'))=='LinearColor']
+        colors = sorted([[bank.objects[o['properties']['Param'+str(i)]['ref']]['properties'].get('Value',0)
+                          for i in range(3)] for o in color_nodes])
+        assert len(colors)==2,colors
+        for actual,expected in zip(colors,(0.22,0.34)):
+            assert all(math.isclose(v,expected,abs_tol=1e-6) for v in actual),colors
         # The final density factor has a visibility floor, tested independently
         # of the shader, source opacity and fade envelope.
         opacity = bank.objects[evolvers['Opacity']['ref']]['properties']['Param1']
@@ -119,7 +127,8 @@ def verify_plume(bank, fx, exports, source):
             fields['LifeRatio'] = 0.35/limits[1]
             assert evaluate_scalar(bank,evolvers['Opacity'],fields) > 0.1
             typical.append(dict(stock_initial_size=initial,visible_birth_size=birth_size))
-        samples.append(dict(lifetime_seconds=limits,curves=rows,typical_birth_sizes=typical))
+        samples.append(dict(lifetime_seconds=limits,curves=rows,typical_birth_sizes=typical,
+                            neutral_gray_color_endpoints=colors))
     unit=Cndf((MOD/'Gen/NDF/GFX/Unit.ndfbin').read_bytes())
     vehicles=[o['properties'] for o in unit.objects if o['class']=='TCadaverModuleDescriptor' and o['properties'].get('CadaverDuration')==3000]
     assert vehicles and all(p['CadaverFireDurationMin']==10 and p['CadaverFireDurationMax']==1200 for p in vehicles)

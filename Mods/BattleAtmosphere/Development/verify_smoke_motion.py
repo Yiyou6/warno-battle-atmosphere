@@ -1,4 +1,4 @@
-"""Sample actual compiled vector fields against the accepted preview.8 bank."""
+"""Check compiled birth lean, increasing wind and preserved vertical motion."""
 import math,zipfile
 from verify_smoke_profile import Cndf,paths,reachable,MOD,DEV
 
@@ -71,6 +71,12 @@ def verify_motion(bank):
                         CreationDate=0,DeathDate=life,LifeRatio=0)
             a=evaluate(previous,prior_speed,fields);b=evaluate(bank,speed,fields)
             assert math.isclose(b[2],2*a[2],rel_tol=1e-6),(a,b)
+            # Same random spread as preview.8, but horizontal weather weight
+            # is now 0.30 instead of 0.15; the rise remains exactly doubled.
+            for axis in (0,1):
+                assert math.isclose(b[axis]-a[axis],0.15*fields['weather'][axis],rel_tol=1e-6),(a,b)
+            initial_angle=math.degrees(math.atan2(math.hypot(*b[:2]),b[2]))
+            assert 25 < initial_angle < 50,initial_angle
             winds=[]
             for age in (0,2,10,20,35,60):
                 fields['LifeRatio']=age/life
@@ -78,8 +84,14 @@ def verify_motion(bank):
                     a=evaluate(previous,prior[prop],fields);b=evaluate(bank,physics[prop],fields)
                     assert math.isclose(b[2],2*a[2],rel_tol=2e-6,abs_tol=1e-6),(prop,a,b)
                 winds.append(round(b[0]/900,6))
-            assert all(a<=b for a,b in zip(winds,winds[1:])) and winds[-1]>winds[0]*8
-            rows.append(dict(lifetime=life,seed=seed,horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60=winds))
+            for age,actual in zip((0,2,10,20,35,60),winds):
+                t=min(1,age/35)
+                expected=(0.30+0.40*t*t*(3-2*t))*(0.8+0.4*seed)
+                assert math.isclose(actual,expected,abs_tol=1e-6),(age,actual,expected)
+            assert all(a<=b for a,b in zip(winds,winds[1:])) and winds[-1]>winds[0]*2
+            rows.append(dict(lifetime=life,seed=seed,initial_angle_degrees_at_test_wind=round(initial_angle,3),
+                             horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60=winds))
     return dict(vertical_initial_velocity_multiplier=2,vertical_acceleration_multiplier=2,
-                vertical_wind_multiplier=2,progressive_horizontal_wind=True,samples=rows,
+                vertical_wind_multiplier=2,progressive_horizontal_wind=True,birth_horizontal_wind_coefficient=0.30,
+                lower_upper_horizontal_wind_coefficients=[0.30,0.70],samples=rows,
                 explosion_unit_and_AI_binaries_unchanged=True,rendered_curvature='unverified')
