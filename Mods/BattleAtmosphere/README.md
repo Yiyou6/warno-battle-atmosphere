@@ -1,5 +1,7 @@
 # BattleAtmosphere · combined-arms-preview.6
 
+**当前粒子预算 vfx-budget.3：最大 200000，已安装并完成原生读取核验；原生画质缩放保留。** 火烟与爆炸配置仍为下述 smoke-preview.18。
+
 **视觉层 smoke-preview.18，已安装：** 改为直接复制都市前线断桥实际 Small 火烟，去掉上版 Big 额外的两层垂直烟柱。烟的寿命、风向、运动、颜色、大小、密度保留地图原参数，火焰尺寸参数乘 0.5；燃烧 10–1200 秒。爆炸仍为原版 3 倍面片、3.3 倍散布。官方构建、编译图与安装核验通过，实际画面待新对局确认。见 [烟柱与爆炸方案](SMOKE_ATMOSPHERE.md)。
 
 **状态：已实装 preview.6。修复进攻方向识别反转和运输绕路误卸载；保留宽战线、持续进攻及 preview.5 采购配置。57 项离线与原生回归、正式目录启动核验通过，普通新局待用户确认。** 见 [修复记录](DIRECTION_FIX.md)、[实装回执](Development/direction-release.json)。

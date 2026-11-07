@@ -39,7 +39,7 @@ def main():
                   compiled_calls=checked['compiled_calls'], compiled_scaling=checked['compiled_scaling'],
                   plume=checked['plume'], explosions=checked['explosions'], particle_budget=budget, backup=BACKUP)
     (DEV / 'smoke-release.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('INSTALLED %s; AI unchanged, VFX budget 8x, explosion dimensions %gx base' % (VERSION,checked['explosions']['visual_scale']))
+    print('INSTALLED %s; AI unchanged, VFX max_particles=%d, explosion dimensions %gx base' % (VERSION,budget['max_particles'],checked['explosions']['visual_scale']))
 
 if __name__ == '__main__':
     main()

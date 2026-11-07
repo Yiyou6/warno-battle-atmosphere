@@ -29,14 +29,14 @@ static void fx_budget_initialize(void *watchdog) {
         log_line("FX_BUDGET_REFUSE unexpected watchdog type or original limit");
         return;
     }
-    *(unsigned *)(w + 0x18) = 640000;
+    *(unsigned *)(w + 0x18) = 200000;
     timer = *(unsigned char **)(w + 0x40);
     if (readable(timer, 0x70) && *(void **)(timer + 0x58) == w &&
         *(void **)(timer + 0x60) == game + 0xc1fba0) {
         *(void **)(timer + 0x60) = fx_budget_tick;
-        log_line("FX_BUDGET_APPLIED original=80000 max_particles=640000 quality_scaled=1 telemetry=1");
+        log_line("FX_BUDGET_APPLIED original=80000 max_particles=200000 quality_scaled=1 telemetry=1");
     } else {
-        log_line("FX_BUDGET_APPLIED original=80000 max_particles=640000 quality_scaled=1 telemetry=0");
+        log_line("FX_BUDGET_APPLIED original=80000 max_particles=200000 quality_scaled=1 telemetry=0");
     }
 }
 static int fx_budget_install(void) {
@@ -46,7 +46,7 @@ static int fx_budget_install(void) {
     if (!VirtualProtect(slot, 8, PAGE_READWRITE, &old)) return 0;
     *slot = fx_budget_initialize;
     VirtualProtect(slot, 8, old, &ignored);
-    log_line("FX_BUDGET_HOOK_READY multiplier=8");
+    log_line("FX_BUDGET_HOOK_READY multiplier=2.5");
     return 1;
 }
 #endif

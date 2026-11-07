@@ -31,17 +31,17 @@ def verify_fx_budget(installed=False):
     assert r['autoload_sha256']==manifest['dll_sha256']
     assert r['activation_gate'] and r['bridge'] is None
     assert r['auxiliary_sha256'][str((BASE/'fx_budget.h').relative_to(ROOT))]==sha(BASE/'fx_budget.h')
-    for marker in ('FX_BUDGET_APPLIED original=80000 max_particles=640000 quality_scaled=1 telemetry=1',
+    for marker in ('FX_BUDGET_APPLIED original=80000 max_particles=200000 quality_scaled=1 telemetry=1',
                    'AUTO_PYTHON_STARTED','AUTOMATIC_SKIRMISH_STOP','SPACE_ORDER','SPACE_REVISION combined-front-preview.6'):
         assert marker in out,marker
     assert not re.search('ERROR|Traceback|REFUSE|REJECT',out)
-    status=re.findall(r'FX_BUDGET_STATUS particles=(\d+) effective_limit=(\d+) max_particles=640000',out)
-    assert status and all(320000<=int(limit)<=640000 for count,limit in status)
+    status=re.findall(r'FX_BUDGET_STATUS particles=(\d+) effective_limit=(\d+) max_particles=200000',out)
+    assert status and all(100000<=int(limit)<=200000 for count,limit in status)
     if installed:assert sha(ROOT/'version.dll')==manifest['dll_sha256']
     return dict(status='native-budget-and-AI-start-move-stop-passed; rendered-effect-unverified',
                 dll_sha256=manifest['dll_sha256'],exe_sha256=manifest['exe_sha256'],
                 native_receipt_sha256=sha(DEV/'runtime-vfx-budget.json'),ai_source_unchanged=True,
-                particle_budget_multiplier=8,max_particles=640000,effective_limit=int(status[-1][1]),
+                particle_budget_multiplier=2.5,max_particles=200000,effective_limit=int(status[-1][1]),
                 particle_counts_observed=[int(n) for n,_ in status],historical_full_AI_suite_rerun=False)
 
 if __name__=='__main__':print(json.dumps(verify_fx_budget(),indent=2))

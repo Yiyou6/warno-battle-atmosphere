@@ -1,0 +1,25 @@
+{
+  "version": "vfx-budget.3",
+  "status": "installed; native maximum verified; rendered performance unverified",
+  "validation": {
+    "status": "native-budget-and-AI-start-move-stop-passed; rendered-effect-unverified",
+    "dll_sha256": "735a2c011ee0f7a8f8a934dda710c34c87f81af7501e3830bd71427c530bd7e3",
+    "exe_sha256": "70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8",
+    "native_receipt_sha256": "5a939a9336b53186d14e461b7817ece5b4a64c0f40c765bb8f0d4dce3cbbea5f",
+    "ai_source_unchanged": true,
+    "particle_budget_multiplier": 2.5,
+    "max_particles": 200000,
+    "effective_limit": 160000,
+    "particle_counts_observed": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "historical_full_AI_suite_rerun": false
+  },
+  "visual_profile": "smoke-preview.18",
+  "visual_packages_unchanged": true,
+  "backup": "archive/vfx-budget3-before.zip"
+}

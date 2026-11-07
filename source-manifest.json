@@ -1,5 +1,5 @@
 {
-  "version": "combined-arms-preview.6 + smoke-preview.18",
+  "version": "combined-arms-preview.6 + smoke-preview.18 + vfx-budget.3",
   "files": [
     {
       "path": "Mods/BAScriptProbe/AutoRuntimeRoot/CommonData/Python/Eugen/ba_fixture.py",
@@ -154,7 +154,7 @@
     {
       "path": "Mods/BattleAtmosphere/Development/install_smoke_profile.py",
       "original_sha256": "880bf86c282dd7cbdeaaa20704380cbf0df0f8ff222a407bb18469fe945a6d6a",
-      "sha256": "6f358f3b64df072acd0c4751b7d0efe43522bdb0a75ad4298ebfb05fa28f8582"
+      "sha256": "706b9fee234189e506376baff515a101c11fd615e505db31829ba879781323c4"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/map_wreck_fire.py",
@@ -164,7 +164,7 @@
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/build_runtime.py",
       "original_sha256": "8db0de3aa4835588d7cf1c4fd06c6e9a29002f96906884b95e65ba87237310cc",
-      "sha256": "c1b88ec06d0f77d14cdc715ebf3e4a4ab68541ccbb48f0ed3b17753104bbee95"
+      "sha256": "1aa594555d9e85020af268c5e5893437064488c07998136f8d6e5f921cb539a4"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/cold_start_probe.c",
@@ -184,7 +184,7 @@
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/fx_budget.h",
       "original_sha256": "6738a98ba1b0c48445cf78caffedee10683a0bede27d4ec291d4d8ea21a76453",
-      "sha256": "0a4796107a3d7b54f87fdb5012b0fbc7841389281471d7059daccb3197788c97"
+      "sha256": "cfc80c1d1749454a7ff69c049c0c16b226e95f0917a2666e7b3857cda95c769e"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/install_runtime.py",
@@ -234,12 +234,12 @@
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/verify_fx_budget.py",
       "original_sha256": "404bb2f36240d07d4ca94412bc2f236d11f9cd818504a26d069cddd084348564",
-      "sha256": "1c623587827d52e1c80b82f30b131de7200f291298382c45b779f63e9a6f6f4a"
+      "sha256": "6f023d8368229639b00138a9bbbabb0282fa80cdbbe8cbb118559214fd0a4888"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/verify_runtime.py",
       "original_sha256": "df3c8b9927379e03e42d30c09c162ae4e598ae9f7ab6d31683843cfe7a7d4b8d",
-      "sha256": "ef2d605b03df68e4f1dd9d823a52f2dee1fe5784607bc27f3ec76a015f18a45f"
+      "sha256": "0f45a26b3f50949ef61a9da82b0b102d9775a39c7d170a225bac5b8fc87509ce"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/version.def",
@@ -3884,7 +3884,7 @@
     {
       "path": "Mods/BattleAtmosphere/README.md",
       "original_sha256": "218f521ebb2e2c55eab473fdb18744c5379c3ae66da005dc4a7e830f3ba8cd3a",
-      "sha256": "89e46b3eb854617f17745f407028139f70df31d64b17dc5e7242df9e21da3777"
+      "sha256": "178c70f6aee2a45565d1ddb0f1f96cf0e06ac8996279e734d03cc535df950914"
     },
     {
       "path": "Mods/BattleAtmosphere/Runtime/Python/ba_allocator.py",
@@ -3919,7 +3919,7 @@
     {
       "path": "Mods/BattleAtmosphere/Runtime/README.md",
       "original_sha256": "e9ff719fc22151546c423757a2d64a6363d88fa5aa0b8a246698c34887991cda",
-      "sha256": "019045da1b4428b818e2ae138296beaec922f708f1ff2e4c4121165a4a4c880c"
+      "sha256": "a975330bf962108cea9bee25510637dc4f2c47e8543b010f1d5e27aefab12d01"
     },
     {
       "path": "Mods/BattleAtmosphere/Runtime/runtime.ini",
@@ -3929,12 +3929,12 @@
     {
       "path": "Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md",
       "original_sha256": "e9f2f8ca6280bf30d5188b996a9e4c6e94a674d1bc1a525c8bd8a15739d46a60",
-      "sha256": "d634b9e4b7831302b7a5644e47879a8e2659813ee5db94f0f8e6aec9f53a7af4"
+      "sha256": "a3bf04a0ed19102db3605a451936b776969146cd37e655a9eb8673ee08bc94d4"
     },
     {
       "path": "Mods/BattleAtmosphere/VFX_BUDGET.md",
       "original_sha256": "b84ca85abd00d44b085faa7caf152f18c16209fea7552d4c47acc82e57d73ed7",
-      "sha256": "b627c8da8288974364fb011ffed7a2543b7bfc48ef5e974fe6479967f65040ed"
+      "sha256": "34d7ad2fec4385d7ad98916ee265eff7300f7e5731f609f67106458ac0aadc1c"
     }
   ]
 }
