@@ -307,7 +307,7 @@ export BA_BurningFuelSmoke is SimultaneousActionDeclaration
                         [
                             EvolverSpraySpawner
                             (
-                                Frequency = 1.0 * Min[4, Max[1.5, ParticleCustomFloat_2]]
+                                Frequency = 0.6 * Min[4, Max[1.5, ParticleCustomFloat_2]]
                                 MaxSpawnedParticleLifetime = 90
                                 Spawner = private Fumees_Dark is ParticleSpawner
                                 (
@@ -339,7 +339,7 @@ export BA_BurningFuelSmoke is SimultaneousActionDeclaration
                                     [
                                         ParticleInitialiserList
                                         (
-                                            Speed = GenFloat3[RandomRange[-20,20], RandomRange[-20,20], RandomRange[240,440]] + MapWind * float3[0.30,0.30,0.30]
+                                            Speed = GenFloat3[RandomRange[-20,20], RandomRange[-20,20], RandomRange[360,660]] + MapWind * float3[0.54,0.54,0.45]
                                         )
                                     ]
                                     ParticleDescriptor = ParticleDescriptor
@@ -352,9 +352,9 @@ export BA_BurningFuelSmoke is SimultaneousActionDeclaration
                                         Evolvers = ParticleStandardEvolverListWithPhysic
                                         (
                                             FluidFriction = 0.18
-                                            PhysicAccelerationField = 2 * (float3[0.00, 0.00, 35.00])
-                                            PhysicWindField = MapWind * float3[1,1,0] * (0.30 + 0.40 * sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,35]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,35])) * (0.8 + 0.4 * ParticleCustomFloat_5) + MapWind * float3[0,0,2] * (0.2 + 0.1 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (10 + 35 * MapToLinearSmoothStep[ParticleElapsedTime,10,45])
-                                            Size = Min[6500 + 2500 * ParticleCustomFloat_5, Min[3400,Max[2200,ParticleCustomFloat_1 * 0.8]] * (0.9 + 0.2 * ParticleCustomFloat_5) + (650 + 350 * ParticleCustomFloat_5) * (sqrt[1 + ParticleElapsedTime div 12] - 1)]
+                                            PhysicAccelerationField = 3 * (float3[0.00, 0.00, 35.00])
+                                            PhysicWindField = MapWind * float3[1,1,0] * (0.54 + 0.72 * sqr[MapToLinearSmoothStep[ParticleElapsedTime,0,35]] * (3 - 2 * MapToLinearSmoothStep[ParticleElapsedTime,0,35])) * (0.8 + 0.4 * ParticleCustomFloat_5) + MapWind * float3[0,0,3] * (0.2 + 0.1 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (10 + 35 * MapToLinearSmoothStep[ParticleElapsedTime,10,45])
+                                            Size = (Min[3400,Max[2200,ParticleCustomFloat_1 * 0.8]] * (0.9 + 0.2 * ParticleCustomFloat_5)) * (1 + sqr[Min[1,Max[0,ParticleElapsedTime div (30 + 12 * ParticleCustomFloat_5)]]] * (3 - 2 * Min[1,Max[0,ParticleElapsedTime div (30 + 12 * ParticleCustomFloat_5)]]))
                                             ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.22,0.22,0.22], LinearColor[0.34,0.34,0.34]] * (0.85 + 0.3 * ParticleCustomFloat_5)
                                             Opacity = Min[1,Max[0,ParticleElapsedTime div 0.35]] * sqr[Min[1,Max[0,(0.97 - ParticleLifeRatio) div 0.52]]] * (0.60 * ParticleCustomFloat_6 * ParticleCustomFloat_3) * Max[0.65,Min[1,2500000 div Max[2500000,sqr[ParticleSize]]]]
                                             RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio

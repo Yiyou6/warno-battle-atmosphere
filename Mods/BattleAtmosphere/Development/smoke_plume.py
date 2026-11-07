@@ -1,4 +1,4 @@
-"""Preview.11: halve emission again, darker gray, immediate downwind lean."""
+"""Preview.12: 60% emission, bounded twofold growth, faster and more tilted rise."""
 import re
 from apply_profile import matching
 
@@ -16,7 +16,7 @@ LOOK = {
     'wisps': dict(life='RandomRange[10,18]', maximum=18, rate=0.6, cap=1600, spread=1000, growth=300, variation=200, alpha='0.07 * ParticleCustomFloat_6'),
 }
 
-def layered_smoke(block, kind, look=11):
+def layered_smoke(block, kind, look=12):
     """Apply to one spray only. Parent fire timing remains untouched."""
     cfg = dict(LOOK[kind])
     if look >= 6:
@@ -25,6 +25,8 @@ def layered_smoke(block, kind, look=11):
         cfg['rate'] *= 0.5
     if look >= 11:
         cfg['rate'] *= 0.5
+    if look >= 12:
+        cfg['rate'] *= 0.6
     block, n = re.subn(r'(?m)^(\s*Frequency = )10 \* ', r'\g<1>%s * ' % cfg['rate'], block); assert n == 1
     if look >= 7 and kind in ('vehicle','starter','wisps'):
         # Absolute emission floors bypass the two compounded distance/quality cuts.
@@ -32,7 +34,7 @@ def layered_smoke(block, kind, look=11):
                      'starter': 'Min[5,Max[3,2 * ParticleCustomFloat_2]]',
                      'wisps': 'Min[2,Max[1,ParticleCustomFloat_2]]'}[kind]
         if look >= 10:
-            frequency = ('0.25' if look >= 11 else '0.5') + ' * (' + frequency + ')'
+            frequency = ('0.15' if look >= 12 else '0.25' if look >= 11 else '0.5') + ' * (' + frequency + ')'
         block, n = re.subn(r'(?m)^(\s*Frequency = ).+$',r'\g<1>'+frequency,block); assert n == 1
     block, n = re.subn(r'MaxSpawnedParticleLifetime = \d+', 'MaxSpawnedParticleLifetime = %s' % cfg['maximum'], block); assert n == 1
     block, n = re.subn(r'(?m)^(\s*ParticleLifetime = ).+$', r'\g<1>' + cfg['life'], block); assert n == 1
@@ -83,6 +85,22 @@ def layered_smoke(block, kind, look=11):
         block = once(block, '(0.08 + 0.62 * sqr[', '(0.30 + 0.40 * sqr[')
         block = block.replace('MapToLinearSmoothStep[ParticleElapsedTime,2,35]',
                               'MapToLinearSmoothStep[ParticleElapsedTime,0,35]')
+    if look >= 12:
+        # Keep birth size; ease into a hard 2x limit. Age follows ascent without
+        # using world height, so mountain maps do not start with enlarged smoke.
+        birth_size = ('Min[%s,Max[%s,ParticleCustomFloat_1 * 0.8]] * '
+                      '(0.9 + 0.2 * ParticleCustomFloat_5)' % (birth[1],birth[0]))
+        growth_time = '30 + 12 * ParticleCustomFloat_5' if kind in ('ground','fuel','vehicle') else '10 + 6 * ParticleCustomFloat_5'
+        progress = 'Min[1,Max[0,ParticleElapsedTime div (' + growth_time + ')]]'
+        size = '(' + birth_size + ') * (1 + sqr[' + progress + '] * (3 - 2 * ' + progress + '))'
+        # Horizontal wind grows faster than vertical drivers, preserving the
+        # requested stronger lean despite the 1.5x increase in ascent speed.
+        block = once(block, 'RandomRange[240,440]', 'RandomRange[360,660]')
+        block = once(block, 'MapWind * float3[0.30,0.30,0.30]',
+                     'MapWind * float3[0.54,0.54,0.45]')
+        block,n = re.subn(r'(?m)^(\s*PhysicAccelerationField = )2 \* ',r'\g<1>3 * ',block);assert n==1
+        block = once(block, '(0.30 + 0.40 * sqr[', '(0.54 + 0.72 * sqr[')
+        block = once(block, 'MapWind * float3[0,0,2]', 'MapWind * float3[0,0,3]')
     block, n = re.subn(r'(?m)^(\s*Size = )Min\[30000,.+$', r'\g<1>' + size, block); assert n == 1
     # Preview.4 combined low base alpha, early fade and inverse-area dilution.
     # Restore visible density without changing particle count or growth.
@@ -129,7 +147,7 @@ def section(text, marker, change):
     b = matching(text, text.index('(', a)) + 1
     return text[:a] + change(text[a:b]) + text[b:]
 
-def ground_plume(text, look=11):
+def ground_plume(text, look=12):
     def change(s):
         s = once(s,
             'Speed = ( GenFloat3[0.00, 0.00, RandomRange[0.5, 1.5] + 1.5 * SpawningParticleCustomFloat_3] + 0.2 * SpawningParticleCustomFloat3_2) * SpawningParticleCustomFloat_6 + float3[0,0,1000] + MapWind',
@@ -145,7 +163,7 @@ def ground_plume(text, look=11):
         return layered_smoke(s, 'ground', look) if look >= 4 else s
     return section(text, 'Smoke is EvolverSpraySpawner', change)
 
-def fuel_plume(text, look=11):
+def fuel_plume(text, look=12):
     def change(s):
         s = once(s, 'Speed = float3[0,0,1600] + 0.4 * SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )',
                  'Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind')
@@ -156,7 +174,7 @@ def fuel_plume(text, look=11):
         return section(s, 'EvolverSpraySpawner', lambda b: layered_smoke(b, 'fuel', look)) if look >= 4 else s
     return section(text, 'export BA_BurningFuelSmoke is', change)
 
-def dark_plume(text, look=11):
+def dark_plume(text, look=12):
     # Three smoke layers, scoped so neither of the two flame layers is edited.
     layers = [
         ('private fumees_Starter is ParticleBombSpawner', 80,
