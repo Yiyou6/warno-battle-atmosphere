@@ -1,0 +1,258 @@
+//FX_Binder_Fire.ndf
+export Test_BANK_Fire is Simultaneous
+(
+    Mobile = MobileUnCentroid()
+    Actions =
+    [
+        private Stickonground is Template_StickMobileOnGround
+        (
+            MobileUpMatchWithGroundNormal = True
+            ResetOrientation = True
+        ),
+        Competition
+        (
+            Actions=
+            [
+            Template_ActionCall
+            (
+                Action = ~/FX_BANK_Binder_Fire
+                NamedParameters = MAP[
+                ('parRadius', 5000),
+                ('parHeight', 100),
+                ('parDensity', 2),
+                ('parSpreadingTime', 5),
+                ]
+            ),
+            TWaitInSec
+            (
+                Duration = 50
+            )
+            ]
+        )
+    ]
+)
+
+export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private parDensity            is Template_Param_Float(DefaultValue = 0.5),
+        private parRadius             is Template_Param_Float(DefaultValue = 1000),
+        private parHeight             is Template_Param_Float(DefaultValue = 10),
+        private parSpreadingTime      is Template_Param_Float(DefaultValue = 10),
+        private parSmokeDensity       is Template_Param_Float(DefaultValue = 0.5),
+        private parSmokeSize          is Template_Param_Float(DefaultValue = 5000),
+        private parSmokeColor         is Template_Param_Float3(DefaultValue = LinearColor255[127,127,127]),
+        private parSmokeDuration      is Template_Param_Float(DefaultValue = 6),
+        private parSmokeSpeed         is Template_Param_Float3(DefaultValue = 2000),
+        private parSmokeOpacity       is Template_Param_Float3(DefaultValue = 0.3),
+    ]
+    Actions =
+    [
+        Template_ActionCall
+        (
+            Action = BANK_Dynamic_Flash_Only_Two
+            NamedParameters = MAP[
+                ( 'parPosition', float3[0,0,100] ),
+                ( 'parSizeLBU', (parRadius div GameUnitsPerLBU) + 18.6046511628 ),
+                ( 'parColorStart',    LinearColor255[207,130,19] ),
+                ( 'parColorEnd',    LinearColor255[207,130,19] ),
+                ( 'parDuration', 60 ),
+                ( 'parAlpha',    0.65),
+            ]
+        ),
+        FireVerticalSpawningParticle is ParticleBombSpawner
+        (
+            ParticleMaxDurationForSpawnSkip = 0
+            Count = 1 // cette particule peut être tué violement par la mort du mobile.
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = 666
+                Initialisers =
+                [
+                    // Pour se lier au lifetime du mobile
+                    Initialiser_SetMobileWrapper(),
+                    ParticleInitialiserList
+                    (
+                        Size = 300
+                        ColorModifier = float3[1, 1, 1]
+                        Alpha = 1.0
+
+                        CustomFloat_1 = parRadius
+                        CustomFloat_2 = parRadius - ParticleCustomFloat_3
+                        CustomFloat_3 = Min[ parRadius*0.6, 400 * lerp[parDensity, 0.5, 1] ] // la taille des particules 400
+                        CustomFloat_4 = parSmokeSize
+                        CustomFloat_5 = parSmokeDuration
+                        CustomFloat_6 = parSmokeSpeed
+                        CustomFloat_7 = parSmokeDensity
+                        CustomFloat_8 = parSmokeOpacity
+                        CustomFloat_9 = RandomUnit
+                        CustomFloat3_1 = parSmokeColor
+                    )
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    ParticleRenderer = $/VFX_Bank/NullRenderer
+                    RenderInfo = $/VFX_Bank/NullRenderInfo
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        CustomFloat3_2 = 5 * MinusOneToOneFakeNoise_Float3_Interpolate[Triangle[ParticleCustomFloat_9 + ParticleLifeRatio * 0.75]]
+                        Position = ParticleMobileWrapperPosition
+                        AdditionnalEvolvers =
+                        [
+                            FlamesVerticales is EvolverSpraySpawner
+                            (
+                                Frequency =  Min[40 , 10 * ParticleCustomFloat_2*ParticleCustomFloat_2 div 9500000]
+                                MaxSpawnedParticleLifetime = 4.9
+                                Spawner = ParticleSpawner
+                                (
+                                    ParticleLifetime = 10 * RandomRange[0.25,1.5]  //  4 * RandomRange[0.7,1.3]
+                                    Initialisers =
+                                    [
+                                        ParticleInitialiserList
+                                        (
+                                            Size = 300
+                                            Alpha = 1.0
+
+                                            // On favorise le centre du disc
+                                            Position =  SpawningParticleCustomFloat_1 * MinusOneToOneRandomDisc * 0.75
+                                            EmissivePower = 0.5 //0.5, 1.2
+                                            ColorModifier = LinearColor[1,1,1] // 1,1,1
+                                            CustomFloat_1 = RandomRange[2.5, 4.5] * SpawningParticleCustomFloat_3   //0,3
+                                            CustomFloat_3 = Max[0.1, 1 + 3 * MinusOneToOneFakeNoise_Interpolate[Triangle[SpawningParticleCustomFloat_9 + SpawningParticleLifeRatio * 0.75]]]
+                                            CustomFloat_4 = SpawningParticleCustomFloat_4
+                                            CustomFloat_5 = SpawningParticleCustomFloat_5
+                                            CustomFloat_6 = SpawningParticleCustomFloat_6
+                                            CustomFloat_7 = SpawningParticleCustomFloat_7
+                                            CustomFloat_8 = SpawningParticleCustomFloat_8
+                                            CustomFloat_9 = SpawningParticleCustomFloat_9 * RandomRange[0.8, 1.25]
+                                            CustomFloat3_1 = sat[SpawningParticleCustomFloat3_1 + 0.1 * RandomRange[-1,1]]
+                                            CustomFloat3_2 = SpawningParticleCustomFloat3_2
+                                            Stretching = RandomRange[0.4, 1.4] //1.6
+                                        ),
+                                        Initialiser_TextureSmallIndex (InitFunction = Fire_Texture_Table[RandomUnit] ),
+                                    ]
+
+                                    ParticleDescriptor = ParticleDescriptor
+                                    (
+                                        ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                                        RenderInfo = ParticleRenderInfo
+                                        (
+                                            TextureName = 'GameData:/Assets/2D/Fx/anim_flame_01_000.png'
+                                            SortTriangles = true
+                                            Calque = 'Particles'
+                                            EmissiveParticle = True
+                                            ZTest = true
+                                        )
+                                        Evolvers = ParticleStandardEvolverList
+                                        (
+                                            EmissivePower = MapToLinearSmoothRect[ ParticleLifeRatio, 0, 0.1, 0.5, 1 ] * 0.08  //0.1
+                                            Size =  ( 1 + MapToLinearSmoothStep[ ParticleLifeRatio, 0, 0.3 ] ) * ParticleCustomFloat_1
+                                            Direction = float3[0,0,1] + 0.5* CameraDirection
+                                            OffsetAlongDirection = ParticleSize * ParticleStretching * 0.5
+                                            Animation = Sawtooth[ParticleElapsedTime * 0.15]
+                                            AdditionnalEvolvers =
+                                            [
+                                                Smoke is EvolverSpraySpawner
+                                                (
+                                                    Frequency = ParticleCustomFloat_7 * ParticleRemainingLifeRatio
+                                                    MaxSpawnedParticleLifetime = 36
+                                                    Spawner = ParticleSpawner
+                                                    (
+                                                        ParticleLifetime = Min[36, Max[18, SpawningParticleCustomFloat_5 * RandomRange[0.5,2] * SpawningParticleCustomFloat_3]]
+                                                        Initialisers =
+                                                        [
+                                                            ParticleInitialiserList
+                                                            (
+                                                                ColorModifier = sat[SpawningParticleCustomFloat3_1 + RandomRange[-0.1, 0.1]]
+                                                                CustomFloat_1 = SpawningParticleCustomFloat_4  * RandomRange[0.5,2]// Size
+                                                                CustomFloat_2 = SpawningParticleCustomFloat_8 * SpawningParticleRemainingLifeRatio// Opacity
+                                                                CustomFloat_3 = RandomRange[0, 0.5]
+                                                                CustomFloat_5 = SpawningParticleCustomFloat_9
+                                                                Speed = ( GenFloat3[0.00, 0.00, RandomRange[0.5, 1.5] + 1.5 * SpawningParticleCustomFloat_3] + 0.2 * SpawningParticleCustomFloat3_2) * SpawningParticleCustomFloat_6 + float3[0,0,1000] + MapWind
+                                                                Rotation = RandomUnit
+                                                                EmissivePower = 1
+                                                            ),
+                                                        ]
+
+                                                        ParticleDescriptor = ParticleDescriptor
+                                                        (
+                                                            ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                                                            RenderInfo = DeferredParticleRenderInfo
+                                                            (
+                                                                TextureName = 'GameData:/Assets/2D/Fx/anim_smoke_02_000.png'
+                                                            )
+                                                            Evolvers = ParticleStandardEvolverListWithPhysic
+                                                            (
+                                                                FluidFriction = 0.075
+                                                                PhysicAccelerationField = float3[0.00, 0.00, 240.00] * (0.6 + 0.4 * ParticleRemainingLifeRatio)
+                                                                PhysicWindField = MapWind * lerp[ParticleCustomFloat_5, 2.0, 1.0]
+
+                                                                Opacity = AttackSustainDecay[ParticleLifeRatio, 0.08, 0.65] * ParticleCustomFloat_2
+                                                                Size = Min[16000, ParticleCustomFloat_1 * (0.5 + 2.5 * ParticleLifeRatio)]
+                                                                Animation = lerp[ParticleCustomFloat_3, 1, ParticleLifeRatio]
+                                                            )
+                                                        )
+                                                    )
+                                                ),
+                                            ]
+                                        )
+                                    )
+                                )
+                            ),
+                        ]
+                    )
+                )
+            )
+        ),
+        // + Smoke et 2 Stickers (normal + braise) dans le pattern
+        DestGround is Template_ActionDescriptorDestroySceneryRandom
+        (
+            Radius = parRadius
+        ),
+        Template_WaitForEver()
+    ]
+)
+
+
+
+Fire_Texture_Table is Template_EvaluableTable
+(
+    Values =
+    [
+        TConstantTexture (TextureName = 'GameData:/Assets/2D/Fx/anim_flame_01_000.png' ),
+        TConstantTexture (TextureName = 'GameData:/Assets/2D/Fx/anim_flame_02_001.png' ),
+        TConstantTexture (TextureName = 'GameData:/Assets/2D/Fx/anim_flame_03_000.png' ),
+    ]
+)
+
+export FX_BANK_Binder_Fire_Simple is ActionCallWithParameters
+(
+    Action = FX_BANK_Binder_Fire
+    Params =
+    [
+        private parDensity                  is Template_Param_Float ( DefaultValue = 0.5 ),
+        private parRadius                   is Template_Param_Float ( DefaultValue = 1000 ),
+        private parHeight                   is Template_Param_Float ( DefaultValue = 10 ),
+        private parSpreadingTime            is Template_Param_Float ( DefaultValue = 10 ),
+        private parSmokeDensity             is Template_Param_Float(DefaultValue = 1),
+        private parSmokeSize                is Template_Param_Float(DefaultValue = 5000),
+        private parSmokeColor               is Template_Param_Float3(DefaultValue = LinearColor255[127,127,127]),
+        private parSmokeDuration            is Template_Param_Float(DefaultValue = 3),
+        private parSmokeSpeed               is Template_Param_Float3(DefaultValue = 5000),
+        private parSmokeOpacity             is Template_Param_Float3(DefaultValue = 0.5),
+    ]
+    NamedParameters = MAP
+    [
+        ( 'parDensity'                      , parDensity ),
+        ( 'parRadius'                       , parRadius ),
+        ( 'parHeight'                       , parHeight ),
+        ( 'parSpreadingTime'                , parSpreadingTime ),
+        ( 'parSmokeDensity'                 , parSmokeDensity ),
+        ( 'parSmokeSize'                    , parSmokeSize ),
+        ( 'parSmokeColor'                   , parSmokeColor ),
+        ( 'parSmokeDuration'                , parSmokeDuration ),
+        ( 'parSmokeSpeed'                   , parSmokeSpeed ),
+        ( 'parSmokeOpacity'                 , parSmokeOpacity ),
+    ]
+)

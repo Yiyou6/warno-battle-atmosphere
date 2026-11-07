@@ -1,5 +1,7 @@
 # BattleAtmosphere · combined-arms-preview.6
 
+**视觉层新增 smoke-preview.1，已安装：** 增强地面/建筑燃烧及燃烧残骸的高烟柱，延长烟粒存留、提高浮升并保留风偏。AI 维持 preview.6；普通炮弹烟、战术烟幕与火焰伤害未改。官方编译和编译对象引用检查通过，实际烟柱高度、远景观感及帧率待实测。仍只启用 BattleAtmosphere，重启并开始新对局。见 [烟雾方案与验证边界](SMOKE_ATMOSPHERE.md)。
+
 **状态：已实装 preview.6。修复进攻方向识别反转和运输绕路误卸载；保留宽战线、持续进攻及 preview.5 采购配置。57 项离线与原生回归、正式目录启动核验通过，普通新局待用户确认。** 见 [修复记录](DIRECTION_FIX.md)、[实装回执](Development/direction-release.json)。
 
 本机新增的运行组件、自动启动条件、日志、停用和已知边界见 [Runtime/README.md](Runtime/README.md)。保持 BattleAtmosphere 启用，重启游戏并开始新的最高难度遭遇战即可加载；无需逐地图操作。下述 test3 ZIP **不包含新运行组件**，不能拿旧 ZIP 冒充此次交付。

@@ -1,0 +1,379 @@
+export BANK_FuelFire_test is Simultaneous
+(
+    Mobile = MobileUnCentroid()
+    Actions =
+    [
+        Template_ActionCall
+        (
+            Action = BANK_FuelFire
+        ),
+        Template_ActionCall
+        (
+            Action = BANK_FuelSmoke
+        ),
+    ]
+)
+
+export BANK_FuelFire is SimultaneousActionDeclaration
+(
+    Params = [
+        parDuration         is Template_Param_Float (  DefaultValue = 50 ),
+        parParticleLifetime is Template_Param_Float (  DefaultValue = 3 ),
+        parSize             is Template_Param_Float ( DefaultValue = 200 ),
+        parDensity          is Template_Param_Float ( DefaultValue = 10 ),
+        parColor            is Template_Param_Float3 ( DefaultValue = LinearColor[1,1, 1] ),
+        parFlameIntensity   is Template_Param_Float ( DefaultValue = 0.05 ),
+        parSpeedMul         is Template_Param_Float ( DefaultValue = 10 ),
+    ]
+    Actions =
+    [
+        ParticleBombSpawner
+        (
+            ParticleMaxDurationForSpawnSkip = parDuration
+            Count = 1
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        ColorModifier = float3[1, 1, 1]
+                        ColorMultiplier = 1.0
+
+                        Size = parSize
+                        ColorRGB = parColor
+                        Alpha = 1
+                        EmissivePower = 1
+                        CustomFloat_1 = RandomUnit
+                        CustomFloat_2 = parDensity
+                        CustomFloat_3 = 0
+                        CustomFloat_4 = parFlameIntensity
+                        CustomFloat_5 = parSpeedMul
+                        CustomFloat_6 = parParticleLifetime
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    ParticleRenderer = $/VFX_Bank/NullRenderer
+                    RenderInfo = $/VFX_Bank/NullRenderInfo
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        CustomFloat_3 = MinusOneToOneFakeNoise_Interpolate[Triangle[ParticleLifeRatio + ParticleCustomFloat_1]]
+                        CustomFloat3_1 = MinusOneToOneFakeNoise_Float3_Interpolate[Triangle[ParticleLifeRatio + ParticleCustomFloat_1]]
+                        AdditionnalEvolvers =
+                        [
+                            EvolverSpraySpawner
+                            (
+                                Frequency = (1.4 + ParticleCustomFloat_3) * ParticleCustomFloat_2
+                                MaxSpawnedParticleLifetime = 3
+                                Spawner = ParticleSpawner
+                                (
+                                    ParticleLifetime = SpawningParticleCustomFloat_6 * (1.4 + SpawningParticleCustomFloat_3)
+                                    Initialisers =
+                                    [
+                                        ParticleInitialiserList
+                                        (
+                                            Alpha = 1.0
+
+                                            Position = $/VFX_Bank/MinusOneToOneRandomDisc * SpawningParticleRemainingLifeRatio * 500 + float3[0.00, 0.00, 200.00]
+                                            Size = SpawningParticleSize
+                                            ColorModifier = SpawningParticleColorRGB
+                                            RotationSpeed = RandomRange[-0.01, 0.01]
+                                            EmissivePower = 0
+                                            Rotation = RandomRange[-0.1, 0.1]
+                                            CustomFloat_1 = ParticleSize
+                                            CustomFloat_2 = 1 + ( SpawningParticleSize * 0.0001 )
+                                            CustomFloat_3 = SpawningParticleCustomFloat_4
+                                            CustomFloat_4 = RandomRange[0.005, 0.01] * 0.5
+                                            CustomFloat_5 = $/VFX_Bank/RandomUnit
+                                            CustomFloat_6 = 1 - MapToLinearSmoothStep[SpawningParticleElapsedTime, SpawningParticleDuration - ParticleDuration * 2, SpawningParticleDuration]
+                                            CustomFloat3_1 = ParticleRotationSpeed
+                                            CustomFloat3_2 = SpawningParticleCustomFloat3_1
+                                            CustomFloat3_3 = ($/VFX_Bank/MapWind * lerp[ParticleCustomFloat_5, 3, 1.25] * 0.5+ ParticleCustomFloat3_2 * 500) * SpawningParticleCustomFloat_5
+                                        ),
+                                    ]
+                                    PostTransformInitialisers =
+                                    [
+                                        ParticleInitialiserList
+                                        (
+                                            Speed = ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )
+                                        )
+                                    ]
+                                    ParticleDescriptor = ParticleDescriptor
+                                    (
+                                        ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                                        RenderInfo = ParticleRenderInfo
+                                        (
+                                            TextureName = 'GameData:/Assets/2D/Fx/anim_fireball_002.png'
+                                            EmissiveParticle = true
+                                            SortTriangles = true
+                                        )
+                                        Evolvers = ParticleStandardEvolverListWithPhysic
+                                        (
+                                            FluidFriction = 0.75
+                                            PhysicAccelerationField = float3[0.00, 0.00, 200.00]
+                                            PhysicWindField = ParticleCustomFloat3_3
+                                            Size = ( ParticleCustomFloat_1 + ( lerp[ParticleCustomFloat_5, 300, 100] *  3 * ParticleElapsedTime ) ) * ParticleCustomFloat_2
+                                            Opacity = 0
+                                            EmissivePower = AttackDecay[ParticleLifeRatio, 0.3] * ParticleCustomFloat_3
+                                            RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio
+                                            UseHardCodedRotation = True
+                                            Animation = ParticleLifeRatio
+                                        )
+                                    )
+                                )
+                            ),
+                        ]
+                    )
+                )
+            )
+        )
+    ]
+)
+
+
+export BANK_FuelSmoke is SimultaneousActionDeclaration
+(
+    Params = [
+        parDuration             is Template_Param_Float (  DefaultValue = 50 ),
+        parSize                 is Template_Param_Float ( DefaultValue = 2000 ),
+        parDensity              is Template_Param_Float ( DefaultValue = 10 ),
+        parOpacity              is Template_Param_Float ( DefaultValue = 0.7 ),
+        parColor                is Template_Param_Float3 ( DefaultValue = LinearColor[1,1, 1] ),
+        parParticleLifetime     is Template_Param_Float (  DefaultValue = 10 ),
+        parSpeedMul             is Template_Param_Float ( DefaultValue = 2 ),
+    ]
+    Actions =
+    [
+        ParticleBombSpawner
+        (
+            ParticleMaxDurationForSpawnSkip = parDuration
+            Count = 1
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        ColorModifier = float3[1, 1, 1]
+                        ColorMultiplier = 1.0
+
+                        Size = parSize
+                        ColorRGB = parColor
+                        Alpha = 1
+                        EmissivePower = 1
+                        CustomFloat_1 = RandomUnit
+                        CustomFloat_2 = parDensity
+                        CustomFloat_3 = 0
+                        CustomFloat_5 = parSpeedMul
+                        CustomFloat_6 = parParticleLifetime
+                        CustomFloat_7 = parOpacity
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    ParticleRenderer = $/VFX_Bank/NullRenderer
+                    RenderInfo = $/VFX_Bank/NullRenderInfo
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        CustomFloat_3 = MinusOneToOneFakeNoise_Interpolate[Triangle[ParticleLifeRatio + ParticleCustomFloat_1]]
+                        CustomFloat3_1 = MinusOneToOneFakeNoise_Float3_Interpolate[Triangle[ParticleLifeRatio + ParticleCustomFloat_1]]
+                        AdditionnalEvolvers =
+                        [
+                            EvolverSpraySpawner
+                            (
+                                Frequency = 5
+                                MaxSpawnedParticleLifetime = 20
+                                Spawner = private Fumees_Dark is ParticleSpawner
+                                (
+                                    ParticleLifetime = SpawningParticleCustomFloat_6 * (1.4 + SpawningParticleCustomFloat_3)
+                                    Initialisers =
+                                    [
+                                        private particules_fumees is ParticleInitialiserList
+                                        (
+                                            Alpha = 1.0
+
+                                            Position = $/VFX_Bank/MinusOneToOneRandomDisc * SpawningParticleRemainingLifeRatio * 500 + float3[0.00, 0.00, -200.00]
+                                            Size = SpawningParticleSize
+                                            ColorModifier = float3[1, 1, 1]
+                                            RotationSpeed = RandomRange[-0.01, 0.01]
+                                            EmissivePower = 1
+                                            Rotation = RandomRange[-0.1, 0.1]
+                                            CustomFloat_1 = SpawningParticleSize
+                                            CustomFloat_2 = 1 + ( SpawningParticleSize * 0.0001 )
+                                            CustomFloat_3 = SpawningParticleCustomFloat_7
+                                            CustomFloat_4 = RandomRange[0.005, 0.01] * 0.5
+                                            CustomFloat_5 = $/VFX_Bank/RandomUnit
+                                            CustomFloat_6 = Attack[sat[SpawningParticleElapsedTime]-0.001, 0.2]
+                                            CustomFloat3_1 = ParticleRotationSpeed
+                                            CustomFloat3_2 = SpawningParticleCustomFloat3_1
+                                            CustomFloat3_3 = ($/VFX_Bank/MapWind * lerp[ParticleCustomFloat_5, 3, 1.25] * 0.5 + ParticleCustomFloat3_2 * 500 ) * SpawningParticleCustomFloat_5
+                                        ),
+                                    ]
+                                    PostTransformInitialisers =
+                                    [
+                                        ParticleInitialiserList
+                                        (
+                                            Speed = SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )
+                                        )
+                                    ]
+                                    ParticleDescriptor = ParticleDescriptor
+                                    (
+                                        ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                                        RenderInfo = DeferredParticleRenderInfo
+                                        (
+                                            TextureName = 'GameData:/Assets/2D/Fx/anim_smoke_02_000.png'
+                                        )
+                                        Evolvers = ParticleStandardEvolverListWithPhysic
+                                        (
+                                            FluidFriction = 0.75
+                                            PhysicAccelerationField = float3[0.00, 0.00, 200.00]
+                                            PhysicWindField = ParticleCustomFloat3_3
+                                            Size = ( ParticleCustomFloat_1 + ( lerp[ParticleCustomFloat_5, 300, 100] * ParticleElapsedTime ) ) * ParticleCustomFloat_2
+                                            ColorModifier = lerp[ParticleLifeRatio, LinearColor[0.05, 0.05, 0.05], LinearColor[0.17, 0.17, 0.17]]
+                                            Opacity = AttackSustainDecay[ParticleLifeRatio, ParticleCustomFloat_4, 0.8] * ParticleCustomFloat_6 * ParticleCustomFloat_3
+                                            RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio
+                                            UseHardCodedRotation = True
+                                            AdditionnalEvolvers =
+                                            [
+                                                Template_TextureAnimation
+                                                (
+                                                    EvolveFunction = ParticleLifeRatio
+                                                ),
+                                            ]
+                                        )
+                                    )
+                                )
+                            )
+                        ]
+                    )
+                )
+            )
+        )
+    ]
+)
+
+// BattleAtmosphere: burning wrecks only; weapons retain BANK_FuelSmoke.
+export BA_BurningFuelSmoke is SimultaneousActionDeclaration
+(
+    Params = [
+        parDuration             is Template_Param_Float (  DefaultValue = 50 ),
+        parSize                 is Template_Param_Float ( DefaultValue = 2000 ),
+        parDensity              is Template_Param_Float ( DefaultValue = 10 ),
+        parOpacity              is Template_Param_Float ( DefaultValue = 0.7 ),
+        parColor                is Template_Param_Float3 ( DefaultValue = LinearColor[1,1, 1] ),
+        parParticleLifetime     is Template_Param_Float (  DefaultValue = 10 ),
+        parSpeedMul             is Template_Param_Float ( DefaultValue = 2 ),
+    ]
+    Actions =
+    [
+        ParticleBombSpawner
+        (
+            ParticleMaxDurationForSpawnSkip = parDuration
+            Count = 1
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        ColorModifier = float3[1, 1, 1]
+                        ColorMultiplier = 1.0
+
+                        Size = parSize
+                        ColorRGB = parColor
+                        Alpha = 1
+                        EmissivePower = 1
+                        CustomFloat_1 = RandomUnit
+                        CustomFloat_2 = parDensity
+                        CustomFloat_3 = 0
+                        CustomFloat_5 = parSpeedMul
+                        CustomFloat_6 = parParticleLifetime
+                        CustomFloat_7 = parOpacity
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    ParticleRenderer = $/VFX_Bank/NullRenderer
+                    RenderInfo = $/VFX_Bank/NullRenderInfo
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        CustomFloat_3 = MinusOneToOneFakeNoise_Interpolate[Triangle[ParticleLifeRatio + ParticleCustomFloat_1]]
+                        CustomFloat3_1 = MinusOneToOneFakeNoise_Float3_Interpolate[Triangle[ParticleLifeRatio + ParticleCustomFloat_1]]
+                        AdditionnalEvolvers =
+                        [
+                            EvolverSpraySpawner
+                            (
+                                Frequency = Min[4, Max[1.5, ParticleCustomFloat_2]]
+                                MaxSpawnedParticleLifetime = 36
+                                Spawner = private Fumees_Dark is ParticleSpawner
+                                (
+                                    ParticleLifetime = Min[36, Max[24, SpawningParticleCustomFloat_6 * (1.4 + SpawningParticleCustomFloat_3)]]
+                                    Initialisers =
+                                    [
+                                        private particules_fumees is ParticleInitialiserList
+                                        (
+                                            Alpha = 1.0
+
+                                            Position = $/VFX_Bank/MinusOneToOneRandomDisc * SpawningParticleRemainingLifeRatio * 500 + float3[0.00, 0.00, -200.00]
+                                            Size = SpawningParticleSize
+                                            ColorModifier = float3[1, 1, 1]
+                                            RotationSpeed = RandomRange[-0.01, 0.01]
+                                            EmissivePower = 1
+                                            Rotation = RandomRange[-0.1, 0.1]
+                                            CustomFloat_1 = SpawningParticleSize
+                                            CustomFloat_2 = 1 + ( SpawningParticleSize * 0.0001 )
+                                            CustomFloat_3 = SpawningParticleCustomFloat_7
+                                            CustomFloat_4 = RandomRange[0.005, 0.01] * 0.5
+                                            CustomFloat_5 = $/VFX_Bank/RandomUnit
+                                            CustomFloat_6 = Attack[sat[SpawningParticleElapsedTime]-0.001, 0.2]
+                                            CustomFloat3_1 = ParticleRotationSpeed
+                                            CustomFloat3_2 = SpawningParticleCustomFloat3_1
+                                            CustomFloat3_3 = ($/VFX_Bank/MapWind * lerp[ParticleCustomFloat_5, 3, 1.25] * 0.5 + ParticleCustomFloat3_2 * 500 ) * SpawningParticleCustomFloat_5
+                                        ),
+                                    ]
+                                    PostTransformInitialisers =
+                                    [
+                                        ParticleInitialiserList
+                                        (
+                                            Speed = float3[0,0,1600] + 0.4 * SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )
+                                        )
+                                    ]
+                                    ParticleDescriptor = ParticleDescriptor
+                                    (
+                                        ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                                        RenderInfo = DeferredParticleRenderInfo
+                                        (
+                                            TextureName = 'GameData:/Assets/2D/Fx/anim_smoke_02_000.png'
+                                        )
+                                        Evolvers = ParticleStandardEvolverListWithPhysic
+                                        (
+                                            FluidFriction = 0.12
+                                            PhysicAccelerationField = float3[0.00, 0.00, 240.00]
+                                            PhysicWindField = 0.5 * ParticleCustomFloat3_3
+                                            Size = Min[16000, ( ParticleCustomFloat_1 + ( lerp[ParticleCustomFloat_5, 300, 100] * ParticleElapsedTime ) ) * ParticleCustomFloat_2]
+                                            ColorModifier = lerp[ParticleLifeRatio, LinearColor[0.05, 0.05, 0.05], LinearColor[0.17, 0.17, 0.17]]
+                                            Opacity = AttackSustainDecay[ParticleLifeRatio, ParticleCustomFloat_4, 0.8] * ParticleCustomFloat_6 * ParticleCustomFloat_3
+                                            RotationSpeed = ParticleCustomFloat3_1 * ParticleRemainingLifeRatio
+                                            UseHardCodedRotation = True
+                                            AdditionnalEvolvers =
+                                            [
+                                                Template_TextureAnimation
+                                                (
+                                                    EvolveFunction = ParticleLifeRatio
+                                                ),
+                                            ]
+                                        )
+                                    )
+                                )
+                            )
+                        ]
+                    )
+                )
+            )
+        )
+    ]
+)
