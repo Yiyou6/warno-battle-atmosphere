@@ -25,8 +25,8 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.08 ),
-                        ( 'parFinalSize', 3 * (3000) ),
-                        ( 'parInitialSize', 3 * (500) ),
+                        ( 'parFinalSize', 2 * (3000) ),
+                        ( 'parInitialSize', 2 * (500) ),
                         ( 'parZBias', 255 ),
                         ( 'parPositionRelative', parPosition ),
                     ]
@@ -41,8 +41,8 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.08 ),
-                                ( 'parFinalSize', 3 * (2500) ),
-                                ( 'parInitialSize', 3 * (500) ),
+                                ( 'parFinalSize', 2 * (2500) ),
+                                ( 'parInitialSize', 2 * (500) ),
                                 ( 'parZBias', 255 ),
                                 ( 'parPositionRelative', parPosition ),
                             ]
@@ -71,10 +71,10 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parGravity', -1000 ),
                         ( 'parLifetime', 0.3 ),
                         ( 'parNarrowness', 0.65 ),
-                        ( 'parPositionRadius', 100 ),
-                        ( 'parSize', 3 * (15) ),
-                        ( 'parSpeedMax', 3500 ),
-                        ( 'parSpeedMin', 6000 ),
+                        ( 'parPositionRadius', 2 * (100) ),
+                        ( 'parSize', 2 * (15) ),
+                        ( 'parSpeedMax', 2 * (3500) ),
+                        ( 'parSpeedMin', 2 * (6000) ),
                         ( 'parStretch', 0.2 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parPositionRelative', parPosition ),
@@ -87,7 +87,7 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.7529413,0.7411765,0.7411765] ),
-                        ( 'parEndSize', 3 * (500) ),
+                        ( 'parEndSize', 2 * (500) ),
                         ( 'parFluidFriction', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -95,10 +95,10 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.6313726,0.6117647,0.6117647] ),
-                        ( 'parStartRandomRadius', 800 ),
+                        ( 'parStartRandomRadius', 2 * (800) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (100) ),
-                        ( 'parStartSpeed', 100 ),
+                        ( 'parStartSize', 2 * (100) ),
+                        ( 'parStartSpeed', 2 * (100) ),
                         ( 'parWindWeight', 4 ),
                     ]
                 ),
@@ -109,7 +109,7 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                        ( 'parEndSize', 3 * (750) ),
+                        ( 'parEndSize', 2 * (750) ),
                         ( 'parFluidFriction', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 3 ),
@@ -117,10 +117,10 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.1098039,0.1098039,0.1098039] ),
-                        ( 'parStartRandomRadius', 200 ),
+                        ( 'parStartRandomRadius', 2 * (200) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (300) ),
-                        ( 'parStartSpeed', 50 ),
+                        ( 'parStartSize', 2 * (300) ),
+                        ( 'parStartSpeed', 2 * (50) ),
                         ( 'parWindWeight', 3 ),
                     ]
                 ),
@@ -141,7 +141,7 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 10 ),
                         ( 'parDuration', 1 ),
-                        ( 'parSize', 3 * (1500) ),
+                        ( 'parSize', 2 * (1500) ),
                     ]
                 ),
                 TActionCall
@@ -152,7 +152,7 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parCount', 20 ),
                         ( 'parDuration', 1.4 ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 3 * (1750) ),
+                        ( 'parSize', 2 * (1750) ),
                     ]
                 ),
                 TSequentialAction
@@ -178,10 +178,10 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.8 ),
                         ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                        ( 'parDustSize', 3 * (600) ),
-                        ( 'parMudSize', 3 * (500) ),
+                        ( 'parDustSize', 2 * (600) ),
+                        ( 'parMudSize', 2 * (500) ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parRandomPosition', 100 ),
+                        ( 'parRandomPosition', 2 * (100) ),
                     ]
                 ),
             ]
@@ -207,7 +207,7 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 3 * (650) ),
+                                ( 'parSize', 2 * (650) ),
                             ]
                         ),
                     ]
@@ -223,10 +223,10 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 6 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 1 ),
-                                ( 'parDebritSizeMul', 3 * (0.6) ),
+                                ( 'parDebritSizeMul', 2 * (0.6) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 250 ),
-                                ( 'parFireParticleEndSize', 3 * (200) ),
+                                ( 'parDispersion', 2 * (250) ),
+                                ( 'parFireParticleEndSize', 2 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 3500 ),
                                 ( 'parLifetime', 5 ),
@@ -236,9 +236,9 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.8156863,0.8000001,0.764706] ),
                                 ( 'parSmokeColorMultiplier', 0.1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (500) ),
-                                ( 'parSmokeParticleStartSize', 3 * (150) ),
-                                ( 'parSpeed', float3[3000,3000,6000] ),
+                                ( 'parSmokeParticleEndSize', 2 * (500) ),
+                                ( 'parSmokeParticleStartSize', 2 * (150) ),
+                                ( 'parSpeed', 2 * (float3[3000,3000,6000]) ),
                             ]
                         ),
                     ]
@@ -265,7 +265,7 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.25 ),
                         ( 'parRepeatCount', parShotCount ),
                         ( 'parRepeatTime', parWaitBetweenShot ),
-                        ( 'parSizeLBU', 3 * (74.4186) ),
+                        ( 'parSizeLBU', 2 * (74.4186) ),
                     ]
                 ),
             ]
@@ -285,7 +285,7 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 50 ),
                         ( 'parEndColor', float3[0.8156863,0.627451,0.4784314] ),
-                        ( 'parEndSize', 3 * (1250) ),
+                        ( 'parEndSize', 2 * (1250) ),
                         ( 'parFluidFriction', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 8 ),
@@ -293,10 +293,10 @@ export fx_impact_sol_Autocanon_HE_8 is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.6627451,0.5137255,0.3882353] ),
-                        ( 'parStartRandomRadius', 2000 ),
+                        ( 'parStartRandomRadius', 2 * (2000) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (250) ),
-                        ( 'parStartSpeed', 60 ),
+                        ( 'parStartSize', 2 * (250) ),
+                        ( 'parStartSpeed', 2 * (60) ),
                         ( 'parWindWeight', 3 ),
                     ]
                 ),

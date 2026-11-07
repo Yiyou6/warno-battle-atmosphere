@@ -48,7 +48,7 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = BANK_Ground_Sticker_Nuke
             NamedParameters = MAP[
                 ( 'BANK_position', parPosition ),
-                ( 'BANK_size', 3 * (0.75 * parRadiusPhysical)),
+                ( 'BANK_size', 2 * (0.75 * parRadiusPhysical)),
                 ( 'BANK_lifetime', 100 ),
                 ( 'BANK_color', float3[1,1,1] ),
                 ( 'Bank_FadeInTime', 0 ),
@@ -58,8 +58,8 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
         (
             Action = BANK_Bomb_ShockWave
             NamedParameters = MAP[
-                ( 'parInitialSize', 3 * (3300  * SizeFactor)),
-                ( 'parFinalSize', 3 * (200000 * SizeFactor)),
+                ( 'parInitialSize', 2 * (3300  * SizeFactor)),
+                ( 'parFinalSize', 2 * (200000 * SizeFactor)),
                 ( 'parDuration', 1),
                 ( 'parPosition', parPosition + float3[0,0,500] ),
                 ( 'parZBias', 1000 )
@@ -71,9 +71,9 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             NamedParameters = MAP[
                 ( 'parCount', 200 ),
                 ( 'parPosition', parPosition ),
-                ( 'parSize', 3 * (5) ),
+                ( 'parSize', 2 * (5) ),
                 ( 'parLifetime', 0.75 ),
-                ( 'parSpeed', 8000 * SizeFactor),
+                ( 'parSpeed', 2 * (8000 * SizeFactor)),
                 ( 'parColor', float3[1, 0.25, 0] ),
                 ( 'parGravity', 0 ),
                 ( 'parFluidFriction', 1 ),
@@ -89,7 +89,7 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
         (
             Action = ~/NukeMushroomTop
             NamedParameters = MAP[
-                ( 'parSize', 3 * (2500 * SizeFactor * RandomRange[0.5, 1.5])),
+                ( 'parSize', 2 * (2500 * SizeFactor * RandomRange[0.5, 1.5])),
                 ( 'parCount', 750 ),
                 ( 'parDuration', 20 ),
                 ( 'parOpacity', 0.1 ),
@@ -107,7 +107,7 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
         (
             Action = ~/NukeMushroomTube
             NamedParameters = MAP[
-                ( 'parSize', 3 * (1000 * RandomRange[0.75, 1.25]  * SizeFactor)),
+                ( 'parSize', 2 * (1000 * RandomRange[0.75, 1.25]  * SizeFactor)),
                 ( 'parCount', 75 * SizeFactor),
                 ( 'parDuration', 20 ),
                 ( 'parOpacity', 0.5 ),
@@ -185,7 +185,7 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = BANK_Light_Follow_Mobile_Random_Flash
             NamedParameters = MAP[
                 ( 'parPosition', parPosition + float3[0.00, 0.00, 50.00] ),
-                ( 'parSizeLBU', 3 * (23.2558139535 * SizeFactor)),
+                ( 'parSizeLBU', 2 * (23.2558139535 * SizeFactor)),
                 ( 'parColor', float3[0.7, 0.4, 0.2] ),
                 ( 'parDuration', 8 ),
                 ( 'parAlpha', 1 ),
@@ -197,8 +197,8 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = BANK_Bomb_Distort_Plane
             NamedParameters = MAP[
                 ( 'parPosition', parPosition + float3[0,0,100] * SizeFactor),
-                ( 'parInitialSize', 3 * (200 * SizeFactor)),
-                ( 'parFinalSize', 3 * (200000 * SizeFactor) ),
+                ( 'parInitialSize', 2 * (200 * SizeFactor)),
+                ( 'parFinalSize', 2 * (200000 * SizeFactor) ),
                 ( 'parDistanceIntensity', 30000),
                 ( 'parZBias', 0 ),
                 ( 'parDuration', 1),
@@ -210,7 +210,7 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = BANK_Dynamic_Flash
             NamedParameters = MAP[
                 ( 'parPosition', parPosition + float3[0.00, 0.00, 1500.00] * SizeFactor),
-                ( 'parSizeLBU', 3 * (93.023255814 * SizeFactor)),
+                ( 'parSizeLBU', 2 * (93.023255814 * SizeFactor)),
                 ( 'parColorStart', float3[0.99, 0.99, 0.99] ),
                 ( 'parColorEnd', float3[0.0, 0.0, 0.0] ),
                 ( 'parDuration', 8 ),
@@ -221,7 +221,7 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
         (
             Action = ~/Nuke_Bottom_Sparks
             NamedParameters = MAP[
-                ( 'parSize', 3 * (12.5 * RandomRange[0.25,2] * SizeFactor) ),
+                ( 'parSize', 2 * (12.5 * RandomRange[0.25,2] * SizeFactor) ),
                 ( 'parInitRadius', 17000 * SizeFactor ),
                 ( 'parCount', 0 * SizeFactor ),
                 ( 'parDuration', 4 ),
@@ -236,8 +236,8 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = Bomb_Flash
             NamedParameters = MAP[
                 ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1000] * SizeFactor),
-                ( 'parInitialSize'  , 3 * (25000) ),
-                ( 'parFinalSize'    , 3 * (65000) ),
+                ( 'parInitialSize'  , 2 * (25000) ),
+                ( 'parFinalSize'    , 2 * (65000) ),
                 ( 'parDuration'     , 8 ),
                 ( 'parZBias'        , 255 ),
                 ( 'parCount'        , 1 ),
@@ -248,8 +248,8 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = Bomb_Flash
             NamedParameters = MAP[
                 ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1250] * SizeFactor),
-                ( 'parInitialSize'  , 3 * (50000) ),
-                ( 'parFinalSize'    , 3 * (30000) ),
+                ( 'parInitialSize'  , 2 * (50000) ),
+                ( 'parFinalSize'    , 2 * (30000) ),
                 ( 'parDuration'     , 8 ),
                 ( 'parZBias'        , 255 ),
                 ( 'parCount'        , 4 ),
@@ -260,8 +260,8 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = Bomb_Flash
             NamedParameters = MAP[
                 ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1500] * SizeFactor ),
-                ( 'parInitialSize'  , 3 * (40000) ),
-                ( 'parFinalSize'    , 3 * (20000) ),
+                ( 'parInitialSize'  , 2 * (40000) ),
+                ( 'parFinalSize'    , 2 * (20000) ),
                 ( 'parDuration'     , 8 ),
                 ( 'parZBias'        , 255 ),
                 ( 'parCount'        , 4 ),
@@ -272,8 +272,8 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
             Action = Bomb_Flash
             NamedParameters = MAP[
                 ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1750] * SizeFactor),
-                ( 'parInitialSize'  , 3 * (30000) ),
-                ( 'parFinalSize'    , 3 * (10000) ),
+                ( 'parInitialSize'  , 2 * (30000) ),
+                ( 'parFinalSize'    , 2 * (10000) ),
                 ( 'parDuration'     , 8 ),
                 ( 'parZBias'        , 255 ),
                 ( 'parCount'        , 4 ),
@@ -283,7 +283,7 @@ export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
         (
             Action = Smoky_Dust_Projections
             NamedParameters = MAP[
-                ( 'parSize', 3 * (10000 * RandomRange[0.5, 1.0] * SizeFactor)),
+                ( 'parSize', 2 * (10000 * RandomRange[0.5, 1.0] * SizeFactor)),
                 ( 'parCount', 100 ),
                 ( 'parDuration', 20 * RandomRange[0.5, 1.0] ),
                 ( 'parOpacity', 1 ),

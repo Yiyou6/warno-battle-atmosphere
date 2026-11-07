@@ -24,7 +24,7 @@ export fx_impact_bombe_cluster_air_flamme is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parImpactPos', parDirection ),
                         ( 'parLuminosite', 1 ),
-                        ( 'parSize', 3 * (3000) ),
+                        ( 'parSize', 2 * (3000) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', parPosition ),
                     ]

@@ -26,8 +26,8 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 3 * (16000) ),
-                        ( 'parInitialSize', 3 * (500) ),
+                        ( 'parFinalSize', 2 * (16000) ),
+                        ( 'parInitialSize', 2 * (500) ),
                         ( 'parIntensity', 100 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -36,18 +36,18 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[3500,3500,1800]) ),
+                        ( 'parCloudsize', 2 * (float3[3500,3500,1800]) ),
                         ( 'parColor', float3[0.4352942,0.3137255,0.2117647] ),
                         ( 'parCount', 50 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.7 ),
-                        ( 'parParticleSize', 3 * (2000) ),
+                        ( 'parParticleSize', 2 * (2000) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 4 ),
                         ( 'parSpawnerDuration', 0.7 ),
-                        ( 'parSpawnerSpeed', 2000 ),
+                        ( 'parSpawnerSpeed', 2 * (2000) ),
                     ]
                 ),
                 TSequentialAction
@@ -61,11 +61,11 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 5 ),
                                 ( 'parCountDebritsWithSmoke', 5 ),
-                                ( 'parDebritSizeMul', 3 * (1) ),
+                                ( 'parDebritSizeMul', 2 * (1) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 1170 ),
-                                ( 'parFireParticleEndSize', 3 * (625) ),
-                                ( 'parFireParticleStartSize', 3 * (75) ),
+                                ( 'parDispersion', 2 * (1170) ),
+                                ( 'parFireParticleEndSize', 2 * (625) ),
+                                ( 'parFireParticleStartSize', 2 * (75) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 0.7499999 ),
                                 ( 'parMeshType', 1 ),
@@ -74,9 +74,9 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.8000001,0.6980392,0.5019608] ),
                                 ( 'parSmokeColorMultiplier', 0.1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (750) ),
-                                ( 'parSmokeParticleStartSize', 3 * (150) ),
-                                ( 'parSpeed', float3[7500,7500,7500] ),
+                                ( 'parSmokeParticleEndSize', 2 * (750) ),
+                                ( 'parSmokeParticleStartSize', 2 * (150) ),
+                                ( 'parSpeed', 2 * (float3[7500,7500,7500]) ),
                             ]
                         ),
                     ]
@@ -87,8 +87,8 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 3 * (16000) ),
-                        ( 'parInitialSize', 3 * (200) ),
+                        ( 'parFinalSize', 2 * (16000) ),
+                        ( 'parInitialSize', 2 * (200) ),
                         ( 'parZBias', 255 ),
                     ]
                 ),
@@ -99,7 +99,7 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 55 ),
                         ( 'parEndColor', float3[0.7764707,0.7764707,0.7764707] ),
-                        ( 'parEndSize', 3 * (2000) ),
+                        ( 'parEndSize', 2 * (2000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -110,8 +110,8 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.7764707,0.7764707,0.7764707] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (1000) ),
-                        ( 'parStartSpeed3D', float3[4500,4500,0] ),
+                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSpeed3D', 2 * (float3[4500,4500,0]) ),
                         ( 'parWindWeight', 0.5 ),
                     ]
                 ),
@@ -142,12 +142,12 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                         ( 'parColor', float3[1,0.9019608,0.5019608] ),
                         ( 'parCount', 40 ),
                         ( 'parDeltaPositionMobileDirection', 0 ),
-                        ( 'parDispersion', 2500 ),
+                        ( 'parDispersion', 2 * (2500) ),
                         ( 'parDuration', 0.9 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 1 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 3 * (2500) ),
+                        ( 'parSize', 2 * (2500) ),
                         ( 'parDeltaPositionAdditif', parPosition ),
                     ]
                 ),
@@ -160,9 +160,9 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 3 * (10000) ),
+                        ( 'parSize', 2 * (10000) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,200] + parPosition ),
+                        ( 'Position', float3[0,0,400] + parPosition ),
                     ]
                 ),
                 TWaitInSec( Duration = 0.1),
@@ -185,7 +185,7 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 10 ),
-                        ( 'parSize', 3 * (parRadiusPhysical) ),
+                        ( 'parSize', 2 * (parRadiusPhysical) ),
                     ]
                 ),
             ]
@@ -204,9 +204,9 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parSize', 3 * (5000) ),
+                        ( 'parSize', 2 * (5000) ),
                         ( 'parSpeed', float3[0,0,700] ),
-                        ( 'Position', float3[0,0,500] + parPosition ),
+                        ( 'Position', float3[0,0,1000] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -221,10 +221,10 @@ export fx_impact_sol_ultra is SimultaneousActionDeclaration
                         ( 'parGravity', -500 ),
                         ( 'parLifetime', 0.7 ),
                         ( 'parNarrowness', 0.3 ),
-                        ( 'parPositionRadius', 1000 ),
-                        ( 'parSize', 3 * (10) ),
-                        ( 'parSpeedMax', 7000 ),
-                        ( 'parSpeedMin', 5000 ),
+                        ( 'parPositionRadius', 2 * (1000) ),
+                        ( 'parSize', 2 * (10) ),
+                        ( 'parSpeedMax', 2 * (7000) ),
+                        ( 'parSpeedMin', 2 * (5000) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parPositionRelative', parPosition ),

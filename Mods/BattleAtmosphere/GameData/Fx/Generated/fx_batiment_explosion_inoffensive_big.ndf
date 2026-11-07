@@ -25,8 +25,8 @@ export fx_batiment_explosion_inoffensive_big is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 3 * (15000) ),
-                        ( 'parInitialSize', 3 * (200) ),
+                        ( 'parFinalSize', 2 * (15000) ),
+                        ( 'parInitialSize', 2 * (200) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -48,8 +48,8 @@ export fx_batiment_explosion_inoffensive_big is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 3 * (15000) ),
-                        ( 'parInitialSize', 3 * (200) ),
+                        ( 'parFinalSize', 2 * (15000) ),
+                        ( 'parInitialSize', 2 * (200) ),
                         ( 'parZBias', 0 ),
                     ]
                 ),
@@ -60,7 +60,7 @@ export fx_batiment_explosion_inoffensive_big is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 100 ),
                         ( 'parEndColor', float3[0.5019608,0.5019608,0.5019608] ),
-                        ( 'parEndSize', 3 * (2000) ),
+                        ( 'parEndSize', 2 * (2000) ),
                         ( 'parFluidFriction', 1.7 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -71,8 +71,8 @@ export fx_batiment_explosion_inoffensive_big is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.5019608,0.5019608,0.5019608] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (1000) ),
-                        ( 'parStartSpeed3D', float3[8000,8000,2000] ),
+                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSpeed3D', 2 * (float3[8000,8000,2000]) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),
@@ -89,8 +89,8 @@ export fx_batiment_explosion_inoffensive_big is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 3 * (10000) ),
-                        ( 'parInitialSize', 3 * (200) ),
+                        ( 'parFinalSize', 2 * (10000) ),
+                        ( 'parInitialSize', 2 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -114,9 +114,9 @@ export fx_batiment_explosion_inoffensive_big is SimultaneousActionDeclaration
                         ( 'parDuration', 0.6 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.4 ),
-                        ( 'parSize', 3 * (11000) ),
+                        ( 'parSize', 2 * (11000) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,1500] + parPosition ),
+                        ( 'Position', float3[0,0,3000] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -131,11 +131,11 @@ export fx_batiment_explosion_inoffensive_big is SimultaneousActionDeclaration
                         ( 'parGravity', -500 ),
                         ( 'parLifetime', 0.6 ),
                         ( 'parNarrowness', 0.1 ),
-                        ( 'parPositionRadius', 200 ),
+                        ( 'parPositionRadius', 2 * (200) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 3 * (15) ),
-                        ( 'parSpeedMax', 8000 ),
-                        ( 'parSpeedMin', 8000 ),
+                        ( 'parSize', 2 * (15) ),
+                        ( 'parSpeedMax', 2 * (8000) ),
+                        ( 'parSpeedMin', 2 * (8000) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                     ]

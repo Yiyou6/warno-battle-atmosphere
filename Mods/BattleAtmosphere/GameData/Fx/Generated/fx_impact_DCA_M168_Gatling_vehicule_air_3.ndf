@@ -25,8 +25,8 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
-                        ( 'parFinalSize', 3 * (2600) ),
-                        ( 'parInitialSize', 3 * (25) ),
+                        ( 'parFinalSize', 2 * (2600) ),
+                        ( 'parInitialSize', 2 * (25) ),
                         ( 'parIntensity', 120 ),
                         ( 'parPositionRelative', float3[256,-477,0] ),
                     ]
@@ -38,10 +38,10 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 1 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 3 * (0.5) ),
+                        ( 'parDebritSizeMul', 2 * (0.5) ),
                         ( 'parDispersion', 0 ),
-                        ( 'parFireParticleEndSize', 3 * (500) ),
-                        ( 'parFireParticleStartSize', 3 * (100) ),
+                        ( 'parFireParticleEndSize', 2 * (500) ),
+                        ( 'parFireParticleStartSize', 2 * (100) ),
                         ( 'parLifetime', 3 ),
                         ( 'parMeshType', 4 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -49,9 +49,9 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parSmokeColor', float3[1,0.9921569,0.9490197] ),
                         ( 'parSmokeColorMultiplier', 0.1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (750) ),
-                        ( 'parSmokeParticleStartSize', 3 * (300) ),
-                        ( 'parSpeed', float3[3000,3000,3000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (750) ),
+                        ( 'parSmokeParticleStartSize', 2 * (300) ),
+                        ( 'parSpeed', 2 * (float3[3000,3000,3000]) ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
                 ),
@@ -71,8 +71,8 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 3 * (2600) ),
-                        ( 'parInitialSize', 3 * (25) ),
+                        ( 'parFinalSize', 2 * (2600) ),
+                        ( 'parInitialSize', 2 * (25) ),
                         ( 'parIntensity', 120 ),
                         ( 'parPositionRelative', float3[132,-507,-25] ),
                     ]
@@ -101,10 +101,10 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 3 * (2500) ),
-                        ( 'parInitialSize', 3 * (20) ),
+                        ( 'parFinalSize', 2 * (2500) ),
+                        ( 'parInitialSize', 2 * (20) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[498,978,1148] + parPosition ),
+                        ( 'parPositionRelative', float3[996,1956,2296] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -117,10 +117,10 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (1500) ),
-                                ( 'parInitialSize', 3 * (20) ),
+                                ( 'parFinalSize', 2 * (1500) ),
+                                ( 'parInitialSize', 2 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[805,795,-509] + parPosition ),
+                                ( 'parPositionRelative', float3[1610,1590,-1018] + parPosition ),
                             ]
                         ),
                     ]
@@ -135,10 +135,10 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (1500) ),
-                                ( 'parInitialSize', 3 * (20) ),
+                                ( 'parFinalSize', 2 * (1500) ),
+                                ( 'parInitialSize', 2 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-215,-1448,-1218] + parPosition ),
+                                ( 'parPositionRelative', float3[-430,-2896,-2436] + parPosition ),
                             ]
                         ),
                     ]
@@ -153,10 +153,10 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (1500) ),
-                                ( 'parInitialSize', 3 * (20) ),
+                                ( 'parFinalSize', 2 * (1500) ),
+                                ( 'parInitialSize', 2 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[1485,-404,-1135] + parPosition ),
+                                ( 'parPositionRelative', float3[2970,-808,-2270] + parPosition ),
                             ]
                         ),
                     ]
@@ -184,9 +184,9 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                                 ( 'parDuration', 0.15 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 3 * (15000) ),
+                                ( 'parSize', 2 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[846,807,874] + parPosition ),
+                                ( 'Position', float3[1692,1614,1748] + parPosition ),
                             ]
                         ),
                     ]
@@ -204,9 +204,9 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                                 ( 'parDuration', 0.15 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 3 * (15000) ),
+                                ( 'parSize', 2 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[-208,-1457,-725] + parPosition ),
+                                ( 'Position', float3[-416,-2914,-1450] + parPosition ),
                             ]
                         ),
                     ]
@@ -224,9 +224,9 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                                 ( 'parDuration', 0.15 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 3 * (15000) ),
+                                ( 'parSize', 2 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[1479,-400,-588] + parPosition ),
+                                ( 'Position', float3[2958,-800,-1176] + parPosition ),
                             ]
                         ),
                     ]
@@ -240,9 +240,9 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parDuration', 0.25 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.1 ),
-                        ( 'parSize', 3 * (3000) ),
+                        ( 'parSize', 2 * (3000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
-                        ( 'Position', float3[498,978,948] + parPosition ),
+                        ( 'Position', float3[996,1956,1896] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -254,9 +254,9 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parDuration', 0.15 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 3 * (15000) ),
+                        ( 'parSize', 2 * (15000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
-                        ( 'Position', float3[132,-507,475] + parPosition ),
+                        ( 'Position', float3[264,-1014,950] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -271,13 +271,13 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 1.5 ),
                         ( 'parNarrowness', 0.25 ),
-                        ( 'parPositionRadius', 100 ),
-                        ( 'parSize', 3 * (5) ),
-                        ( 'parSpeedMax', 5500 ),
-                        ( 'parSpeedMin', 3800 ),
+                        ( 'parPositionRadius', 2 * (100) ),
+                        ( 'parSize', 2 * (5) ),
+                        ( 'parSpeedMax', 2 * (5500) ),
+                        ( 'parSpeedMin', 2 * (3800) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
-                        ( 'parPositionRelative', float3[256,-477,0] + parPosition ),
+                        ( 'parPositionRelative', float3[512,-954,0] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -292,11 +292,11 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parGravity', 1000 ),
                         ( 'parLifetime', 1 ),
                         ( 'parNarrowness', 2 ),
-                        ( 'parPositionRadius', 500 ),
+                        ( 'parPositionRadius', 2 * (500) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 3 * (10) ),
-                        ( 'parSpeedMax', 10000 ),
-                        ( 'parSpeedMin', 9000 ),
+                        ( 'parSize', 2 * (10) ),
+                        ( 'parSpeedMax', 2 * (10000) ),
+                        ( 'parSpeedMin', 2 * (9000) ),
                         ( 'parStretch', 1 ),
                         ( 'parWindFactor', 1 ),
                     ]
@@ -316,18 +316,18 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[120,120,200]) ),
+                        ( 'parCloudsize', 2 * (float3[120,120,200]) ),
                         ( 'parColor', float3[0.8156863,0.8156863,0.8156863] ),
                         ( 'parCount', 6 ),
                         ( 'parDecayLength', 0.1 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 3 * (450) ),
-                        ( 'parRandomPosition', 300 ),
+                        ( 'parParticleSize', 2 * (450) ),
+                        ( 'parRandomPosition', 2 * (300) ),
                         ( 'parSmokeDuration', 1.2 ),
                         ( 'parSpawnerDuration', 0.3 ),
-                        ( 'parSpawnerSpeed', 1000 ),
+                        ( 'parSpawnerSpeed', 2 * (1000) ),
                     ]
                 ),
             ]
@@ -348,18 +348,18 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.2 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parParticleSize', 3 * (600) ),
-                                ( 'parRandomPosition', 300 ),
+                                ( 'parParticleSize', 2 * (600) ),
+                                ( 'parRandomPosition', 2 * (300) ),
                                 ( 'parSmokeDuration', 1.5 ),
                                 ( 'parSpawnerDuration', 0.2 ),
-                                ( 'parSpawnerSpeed', 800 ),
+                                ( 'parSpawnerSpeed', 2 * (800) ),
                             ]
                         ),
                     ]
@@ -382,18 +382,18 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 15 ),
                                 ( 'parDecayLength', 0.6 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parParticleSize', 3 * (600) ),
-                                ( 'parRandomPosition', 250 ),
+                                ( 'parParticleSize', 2 * (600) ),
+                                ( 'parRandomPosition', 2 * (250) ),
                                 ( 'parSmokeDuration', 3 ),
                                 ( 'parSpawnerDuration', 0.2 ),
-                                ( 'parSpawnerSpeed', 600 ),
+                                ( 'parSpawnerSpeed', 2 * (600) ),
                             ]
                         ),
                     ]
@@ -416,18 +416,18 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.4 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parParticleSize', 3 * (600) ),
-                                ( 'parRandomPosition', 300 ),
+                                ( 'parParticleSize', 2 * (600) ),
+                                ( 'parRandomPosition', 2 * (300) ),
                                 ( 'parSmokeDuration', 2 ),
                                 ( 'parSpawnerDuration', 0.2 ),
-                                ( 'parSpawnerSpeed', 800 ),
+                                ( 'parSpawnerSpeed', 2 * (800) ),
                             ]
                         ),
                     ]
@@ -446,18 +446,18 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                        ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                         ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 0.2 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.55 ),
-                        ( 'parParticleSize', 3 * (600) ),
-                        ( 'parRandomPosition', 300 ),
+                        ( 'parParticleSize', 2 * (600) ),
+                        ( 'parRandomPosition', 2 * (300) ),
                         ( 'parSmokeDuration', 1.5 ),
                         ( 'parSpawnerDuration', 0.2 ),
-                        ( 'parSpawnerSpeed', 800 ),
+                        ( 'parSpawnerSpeed', 2 * (800) ),
                     ]
                 ),
             ]
@@ -474,18 +474,18 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[400,400,400]) ),
+                        ( 'parCloudsize', 2 * (float3[400,400,400]) ),
                         ( 'parColor', float3[0.4745098,0.4745098,0.4745098] ),
                         ( 'parCount', 15 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.65 ),
-                        ( 'parParticleSize', 3 * (1500) ),
-                        ( 'parRandomPosition', 600 ),
+                        ( 'parParticleSize', 2 * (1500) ),
+                        ( 'parRandomPosition', 2 * (600) ),
                         ( 'parSmokeDuration', 5 ),
                         ( 'parSpawnerDuration', 0.4 ),
-                        ( 'parSpawnerSpeed', 2000 ),
+                        ( 'parSpawnerSpeed', 2 * (2000) ),
                     ]
                 ),
             ]
@@ -506,11 +506,11 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parCountDebrits', 1 ),
                         ( 'parCountDebritsWithFire', 1 ),
                         ( 'parCountDebritsWithSmoke', 1 ),
-                        ( 'parDebritSizeMul', 3 * (0.25) ),
+                        ( 'parDebritSizeMul', 2 * (0.25) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 520 ),
-                        ( 'parFireParticleEndSize', 3 * (600) ),
-                        ( 'parFireParticleStartSize', 3 * (150) ),
+                        ( 'parDispersion', 2 * (520) ),
+                        ( 'parFireParticleEndSize', 2 * (600) ),
+                        ( 'parFireParticleStartSize', 2 * (150) ),
                         ( 'parGravity', 2100 ),
                         ( 'parLifetime', 8 ),
                         ( 'parMeshType', 4 ),
@@ -519,9 +519,9 @@ export fx_impact_DCA_M168_Gatling_vehicule_air_3 is SimultaneousActionDeclaratio
                         ( 'parSmokeColor', float3[1,1,1] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (750) ),
-                        ( 'parSmokeParticleStartSize', 3 * (300) ),
-                        ( 'parSpeed', float3[5000,3000,3000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (750) ),
+                        ( 'parSmokeParticleStartSize', 2 * (300) ),
+                        ( 'parSpeed', 2 * (float3[5000,3000,3000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 8),

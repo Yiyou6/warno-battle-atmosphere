@@ -149,7 +149,7 @@ def main():
         previous = smoke_spawner(prior, prior_exports[name], name != NEW)
         assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == limits[1]
         verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'], factor=0.36)
-        scaling[name] = dict(relative_to='smoke-preview.14', emission_multiplier=1,
+        scaling[name] = dict(relative_to='smoke-preview.15', emission_multiplier=1,
                              lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
     from verify_smoke_plume import verify_plume
     plume = verify_plume(bank, fx, exports, source)

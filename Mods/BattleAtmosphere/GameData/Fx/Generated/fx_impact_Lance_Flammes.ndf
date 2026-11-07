@@ -25,8 +25,8 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.3 ),
-                        ( 'parFinalSize', 3 * (4000) ),
-                        ( 'parInitialSize', 3 * (100) ),
+                        ( 'parFinalSize', 2 * (4000) ),
+                        ( 'parInitialSize', 2 * (100) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -53,18 +53,18 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.08627451,0.08627451,0.08627451] ),
                         ( 'parCount', 5 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 3 * (4000) ),
-                        ( 'parRandomPosition', 500 ),
+                        ( 'parParticleSize', 2 * (4000) ),
+                        ( 'parRandomPosition', 2 * (500) ),
                         ( 'parSmokeDuration', 5.299997 ),
                         ( 'parSpawnerDuration', 0.45 ),
-                        ( 'parSpawnerSpeed', 1000 ),
+                        ( 'parSpawnerSpeed', 2 * (1000) ),
                     ]
                 ),
                 TSequentialAction
@@ -75,18 +75,18 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[2000,2000,2000]) ),
+                                ( 'parCloudsize', 2 * (float3[2000,2000,2000]) ),
                                 ( 'parColor', float3[0.02745098,0.01568628,0.003921569] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 3 * (1500) ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parParticleSize', 2 * (1500) ),
+                                ( 'parRandomPosition', 2 * (500) ),
                                 ( 'parSmokeDuration', 5 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 1000 ),
+                                ( 'parSpawnerSpeed', 2 * (1000) ),
                             ]
                         ),
                     ]
@@ -122,9 +122,9 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                                 ( 'parDuration', 6 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 3 * (7500) ),
+                                ( 'parSize', 2 * (7500) ),
                                 ( 'parSpeed', 0 ),
-                                ( 'parStartPosition', parPosition ),
+                                ( 'parStartPosition', 2 * (parPosition) ),
                             ]
                         ),
                     ]
@@ -139,13 +139,13 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parColor', float3[1,0.8000001,0.6980392] ),
                                 ( 'parCount', 2 ),
-                                ( 'parDeltaPosition', float3[0,0,-500] ),
+                                ( 'parDeltaPosition', float3[0,0,-1000] ),
                                 ( 'parDuration', 3 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 3 * (5500) ),
+                                ( 'parSize', 2 * (5500) ),
                                 ( 'parSpeed', 0 ),
-                                ( 'parStartPosition', parPosition ),
+                                ( 'parStartPosition', 2 * (parPosition) ),
                             ]
                         ),
                     ]
@@ -160,9 +160,9 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                         ( 'parDuration', 3 ),
                         ( 'parLuminosite', 10 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 3 * (4500) ),
+                        ( 'parSize', 2 * (4500) ),
                         ( 'parSpeed', 0 ),
-                        ( 'parStartPosition', parPosition ),
+                        ( 'parStartPosition', 2 * (parPosition) ),
                     ]
                 ),
                 TActionCall
@@ -171,13 +171,13 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parColor', float3[1,0.8000001,0.6980392] ),
                         ( 'parCount', 4 ),
-                        ( 'parDeltaPosition', float3[0,0,-500] ),
+                        ( 'parDeltaPosition', float3[0,0,-1000] ),
                         ( 'parDuration', 3 ),
                         ( 'parLuminosite', 10 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 3 * (3500) ),
+                        ( 'parSize', 2 * (3500) ),
                         ( 'parSpeed', 0 ),
-                        ( 'parStartPosition', parPosition ),
+                        ( 'parStartPosition', 2 * (parPosition) ),
                     ]
                 ),
                 TSequentialAction
@@ -194,9 +194,9 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                                 ( 'parDuration', 4 ),
                                 ( 'parLuminosite', 10 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 3 * (4500) ),
+                                ( 'parSize', 2 * (4500) ),
                                 ( 'parSpeed', 0 ),
-                                ( 'parStartPosition', parPosition ),
+                                ( 'parStartPosition', 2 * (parPosition) ),
                             ]
                         ),
                     ]
@@ -207,13 +207,13 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parColor', float3[1,0.8000001,0.6980392] ),
                         ( 'parCount', 4 ),
-                        ( 'parDeltaPosition', float3[0,0,-500] ),
+                        ( 'parDeltaPosition', float3[0,0,-1000] ),
                         ( 'parDuration', 4 ),
                         ( 'parLuminosite', 10 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 3 * (7000) ),
+                        ( 'parSize', 2 * (7000) ),
                         ( 'parSpeed', 0 ),
-                        ( 'parStartPosition', parPosition ),
+                        ( 'parStartPosition', 2 * (parPosition) ),
                     ]
                 ),
             ]
@@ -243,7 +243,7 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                                 ( 'parOpacity', 1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 3 * (186.0465) ),
+                                ( 'parSizeLBU', 2 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -269,7 +269,7 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 40 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 3 * (3000) ),
+                                ( 'parEndSize', 2 * (3000) ),
                                 ( 'parFluidFriction', 1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -277,10 +277,10 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.02745098,0.01568628,0.003921569] ),
-                                ( 'parStartRandomRadius', 1000 ),
+                                ( 'parStartRandomRadius', 2 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (200) ),
-                                ( 'parStartSpeed', 20 ),
+                                ( 'parStartSize', 2 * (200) ),
+                                ( 'parStartSpeed', 2 * (20) ),
                                 ( 'parWindWeight', 1.5 ),
                             ]
                         ),
@@ -303,7 +303,7 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 40 ),
                         ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                        ( 'parEndSize', 3 * (2000) ),
+                        ( 'parEndSize', 2 * (2000) ),
                         ( 'parFluidFriction', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -311,10 +311,10 @@ export fx_impact_Lance_Flammes is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.02745098,0.01568628,0.003921569] ),
-                        ( 'parStartRandomRadius', 1000 ),
+                        ( 'parStartRandomRadius', 2 * (1000) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (750) ),
-                        ( 'parStartSpeed', 20 ),
+                        ( 'parStartSize', 2 * (750) ),
+                        ( 'parStartSpeed', 2 * (20) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),

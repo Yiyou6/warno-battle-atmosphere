@@ -25,8 +25,8 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
-                        ( 'parFinalSize', 3 * (2600) ),
-                        ( 'parInitialSize', 3 * (25) ),
+                        ( 'parFinalSize', 2 * (2600) ),
+                        ( 'parInitialSize', 2 * (25) ),
                         ( 'parIntensity', 120 ),
                         ( 'parPositionRelative', float3[256,-477,0] ),
                     ]
@@ -38,10 +38,10 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 1 ),
                         ( 'parCountDebritsWithSmoke', 1 ),
-                        ( 'parDebritSizeMul', 3 * (1) ),
+                        ( 'parDebritSizeMul', 2 * (1) ),
                         ( 'parDispersion', 0 ),
-                        ( 'parFireParticleEndSize', 3 * (350) ),
-                        ( 'parFireParticleStartSize', 3 * (75) ),
+                        ( 'parFireParticleEndSize', 2 * (350) ),
+                        ( 'parFireParticleStartSize', 2 * (75) ),
                         ( 'parLifetime', 4 ),
                         ( 'parMeshType', 4 ),
                         ( 'parMinSpeedRatio', 0.75 ),
@@ -49,9 +49,9 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,0.9921569,0.9490197] ),
                         ( 'parSmokeColorMultiplier', 0.1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (500) ),
-                        ( 'parSmokeParticleStartSize', 3 * (150) ),
-                        ( 'parSpeed', float3[3000,3000,3000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (500) ),
+                        ( 'parSmokeParticleStartSize', 2 * (150) ),
+                        ( 'parSpeed', 2 * (float3[3000,3000,3000]) ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
                 ),
@@ -61,8 +61,8 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 3 * (2000) ),
-                        ( 'parInitialSize', 3 * (10) ),
+                        ( 'parFinalSize', 2 * (2000) ),
+                        ( 'parInitialSize', 2 * (10) ),
                         ( 'parZBias', 500 ),
                     ]
                 ),
@@ -73,7 +73,7 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 30 ),
                         ( 'parEndColor', float3[0.4862745,0.482353,0.482353] ),
-                        ( 'parEndSize', 3 * (2000) ),
+                        ( 'parEndSize', 2 * (2000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -84,8 +84,8 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.1843137,0.1803922,0.1803922] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (1000) ),
-                        ( 'parStartSpeed3D', float3[2000,2000,0] ),
+                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),
@@ -103,10 +103,10 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 3 * (2500) ),
-                        ( 'parInitialSize', 3 * (20) ),
+                        ( 'parFinalSize', 2 * (2500) ),
+                        ( 'parInitialSize', 2 * (20) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[256,-477,200] + parPosition ),
+                        ( 'parPositionRelative', float3[512,-954,400] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -125,14 +125,14 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parColor', float3[1,0.9019608,0.5019608] ),
                         ( 'parCount', 5 ),
-                        ( 'parDeltaPositionMobileDirection', 150 ),
-                        ( 'parDispersion', 150 ),
+                        ( 'parDeltaPositionMobileDirection', 2 * (150) ),
+                        ( 'parDispersion', 2 * (150) ),
                         ( 'parDuration', 0.45 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 1 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 3 * (450) ),
-                        ( 'parDeltaPositionAdditif', float3[256,-477,-118] + parPosition ),
+                        ( 'parSize', 2 * (450) ),
+                        ( 'parDeltaPositionAdditif', float3[512,-954,-236] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -144,9 +144,9 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 0.25 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.1 ),
-                        ( 'parSize', 3 * (3000) ),
+                        ( 'parSize', 2 * (3000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
-                        ( 'Position', float3[256,-477,0] + parPosition ),
+                        ( 'Position', float3[512,-954,0] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -161,13 +161,13 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                         ( 'parGravity', -1000 ),
                         ( 'parLifetime', 0.2 ),
                         ( 'parNarrowness', 0.25 ),
-                        ( 'parPositionRadius', 100 ),
-                        ( 'parSize', 3 * (5) ),
-                        ( 'parSpeedMax', 2500 ),
-                        ( 'parSpeedMin', 1800 ),
+                        ( 'parPositionRadius', 2 * (100) ),
+                        ( 'parSize', 2 * (5) ),
+                        ( 'parSpeedMax', 2 * (2500) ),
+                        ( 'parSpeedMin', 2 * (1800) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
-                        ( 'parPositionRelative', float3[256,-477,0] + parPosition ),
+                        ( 'parPositionRelative', float3[512,-954,0] + parPosition ),
                     ]
                 ),
                 TWaitInSec( Duration = 0.25),
@@ -185,18 +185,18 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[120,120,200]) ),
+                        ( 'parCloudsize', 2 * (float3[120,120,200]) ),
                         ( 'parColor', float3[0.1019608,0.1019608,0.1019608] ),
                         ( 'parCount', 6 ),
                         ( 'parDecayLength', 0.1 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 3 * (450) ),
+                        ( 'parParticleSize', 2 * (450) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 1.2 ),
                         ( 'parSpawnerDuration', 0.3 ),
-                        ( 'parSpawnerSpeed', 1000 ),
+                        ( 'parSpawnerSpeed', 2 * (1000) ),
                     ]
                 ),
             ]
@@ -213,18 +213,18 @@ export fx_impact_he_vehicule_air_petit is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[400,400,400]) ),
+                        ( 'parCloudsize', 2 * (float3[400,400,400]) ),
                         ( 'parColor', float3[0.1019608,0.1019608,0.1019608] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parParticleSize', 3 * (600) ),
+                        ( 'parParticleSize', 2 * (600) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 1.5 ),
                         ( 'parSpawnerDuration', 0.4 ),
-                        ( 'parSpawnerSpeed', 800 ),
+                        ( 'parSpawnerSpeed', 2 * (800) ),
                     ]
                 ),
             ]

@@ -1,4 +1,4 @@
-"""Check compiled 2x vertical motion against installed preview.14."""
+"""Check compiled wind diversity/continuity against installed preview.15."""
 import math,zipfile
 from verify_smoke_profile import Cndf,paths,reachable,MOD,DEV
 
@@ -80,13 +80,13 @@ def seed_initializers(c):
     return result
 
 def verify_motion(bank):
-    with zipfile.ZipFile(DEV/'archive/smoke-preview15-before.zip') as z:
+    with zipfile.ZipFile(DEV/'archive/smoke-preview16-before.zip') as z:
         previous=Cndf(z.read('installed/Gen/NDF/VFX_Bank.ndfbin'))
         # Explosion dimensions are validated separately by verify_explosions.
         # Unit fire timers and AI output must remain exact.
         for name in ('Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/Skirmish.ndfbin'):
             assert (MOD/name).read_bytes()==z.read('installed/'+name),name
-    old=layers(previous);new=layers(bank);initializers=seed_initializers(bank);rows=[]
+    old=layers(previous);new=layers(bank);initializers=seed_initializers(bank);old_initializers=seed_initializers(previous);rows=[]
     weather=[900,300,0];w2=weather[0]**2+weather[1]**2
     def heading(v):
         along=(v[0]*weather[0]+v[1]*weather[1])/w2
@@ -96,43 +96,52 @@ def verify_motion(bank):
     for life,(physics,speed) in new.items():
         prior,prior_speed=old[life]
         assert not any(o['class']=='TAparametricFunction' for o in reachable(bank,physics['WindField']['ref'])), 'Per-frame random draw'
-        births=[];turns=[]
+        births=[];turns=[];old_births=[]
         for position in ([0,0,0],[120000,300000,0],[350000,150000,0],[600000,500000,0]):
             for seed in (0,.5,1):
                 fields=dict(random=seed,weather=weather,spawner_position=position,CustomFloat_5=seed,CustomFloat3_2=[0,0,0],
                             CreationDate=0,DeathDate=life,LifeRatio=0)
                 stored=evaluate(bank,initializers[life],fields)
-                assert all(-1.000001<=v<=1.000001 for v in stored[:2]) and 0<=stored[2]<=6.283186
+                assert all(-1.000001<=v<=1.000001 for v in stored[:2]) and -0.176<=stored[2]<=6.459
                 assert stored==evaluate(bank,initializers[life],fields)
                 near=dict(fields,spawner_position=[position[0]+5,position[1]+5,position[2]])
                 neighbor=evaluate(bank,initializers[life],near)
                 assert max(abs(a-b) for a,b in zip(stored[:2],neighbor[:2]))<0.001,'Nearby fire emitters diverged'
                 fields['CustomFloat3_4']=stored
-                a=evaluate(previous,prior_speed,fields);b=evaluate(bank,speed,fields)
-                assert math.isclose(b[2],2*a[2],rel_tol=1e-6),(a,b)
-                assert all(math.isclose(b[i],a[i],rel_tol=1e-6,abs_tol=1e-6) for i in (0,1)),(a,b)
+                old_fields=dict(fields,CustomFloat3_4=evaluate(previous,old_initializers[life],fields))
+                a=evaluate(previous,prior_speed,old_fields);b=evaluate(bank,speed,fields)
+                old_births.append(heading(a))
+                assert math.isclose(b[2],a[2],rel_tol=1e-6),(a,b)
                 birth=heading(b);births.append(birth);winds=[]
                 for age in (0,2,10,20,28,35,60):
                     fields['LifeRatio']=age/life
                     for prop in ('AccelerationField','WindField'):
                         a=evaluate(previous,prior[prop],fields);b=evaluate(bank,physics[prop],fields)
-                        assert math.isclose(b[2],2*a[2],rel_tol=2e-6,abs_tol=1e-6),(prop,a,b)
-                        assert all(math.isclose(b[i],a[i],rel_tol=1e-6,abs_tol=1e-6) for i in (0,1)),(prop,a,b)
+                        assert math.isclose(b[2],a[2],rel_tol=2e-6,abs_tol=1e-6),(prop,a,b)
                     winds.append(round(heading(b),4))
                 turns.append(abs(winds[-1]-winds[0]))
                 last=None
                 for step in range(241):
                     fields['LifeRatio']=(step/4)/life
                     angle=heading(evaluate(bank,physics['WindField'],fields))
-                    assert abs(angle)<45,angle
-                    if last is not None:assert abs(angle-last)<2,'Wind changed abruptly'
+                    assert abs(angle)<75,angle
+                    if last is not None:assert abs(angle-last)<3,'Wind changed abruptly'
                     last=angle
                 rows.append(dict(lifetime=life,seed=seed,source_position=position,
                                  initial_heading_degrees_from_map_wind=round(birth,4),
                                  wind_heading_degrees_at_seconds_0_2_10_20_28_35_60=winds))
-        assert max(births)-min(births)>15,'Initial headings too uniform'
-        assert max(turns)>10,'No meaningful upper directional change'
-    return dict(relative_to='smoke-preview.14',vertical_initial_velocity_multiplier=2,vertical_acceleration_multiplier=2,
-                vertical_wind_multiplier=2,horizontal_motion_unchanged=True,source_coherent_spatial_variation=True,per_frame_random_draws=False,
-                age_varying_direction=True,turn_transition_seconds=28,small_gust_period_seconds=round(2*math.pi/0.13,2),samples=rows,
+        assert max(births)-min(births)>50,'Initial headings too uniform'
+        assert max(births)-min(births)>1.8*(max(old_births)-min(old_births)),'No clear diversity gain'
+        assert max(turns)>25,'No meaningful upper directional change'
+        temporal=[]
+        for born in (0,20,40,60,80):
+            f=dict(fields,CreationDate=born,DeathDate=born+life,LifeRatio=0,random=.5,spawner_position=[0,0,0])
+            temporal.append(heading(evaluate(bank,speed,f)))
+            f2=dict(f,CreationDate=born+1,DeathDate=born+1+life)
+            assert abs(heading(evaluate(bank,speed,f2))-temporal[-1])<4,'Successive puffs break apart'
+        assert max(temporal)-min(temporal)>30,'Single fire never changes its bias'
+    return dict(relative_to='smoke-preview.15',vertical_initial_velocity_multiplier=1,vertical_acceleration_multiplier=1,
+                vertical_wind_multiplier=1,horizontal_motion_unchanged=False,source_coherent_spatial_variation=True,
+                birth_time_coherent_gusts=True,per_frame_random_draws=False,age_varying_direction=True,
+                first_turn_seconds=[16,22],second_turn_seconds=[22,48],samples=rows,
                 unit_and_AI_binaries_unchanged=True,rendered_curvature='unverified')

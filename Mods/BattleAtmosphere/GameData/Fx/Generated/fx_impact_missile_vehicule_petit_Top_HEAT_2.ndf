@@ -26,8 +26,8 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                     NamedParams = MAP[
                         ( 'parDuration', 1 ),
                         ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                        ( 'parDustSize', 3 * (1600) ),
-                        ( 'parMudSize', 3 * (1000) ),
+                        ( 'parDustSize', 2 * (1600) ),
+                        ( 'parMudSize', 2 * (1000) ),
                         ( 'parOpacity', 0.15 ),
                     ]
                 ),
@@ -57,8 +57,8 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                             NamedParams = MAP[
                                 ( 'parDuration', 0.4 ),
-                                ( 'parFinalSize', 3 * (2500) ),
-                                ( 'parInitialSize', 3 * (80) ),
+                                ( 'parFinalSize', 2 * (2500) ),
+                                ( 'parInitialSize', 2 * (80) ),
                                 ( 'parIntensity', 250 ),
                                 ( 'parPositionRelative', float3[0,0,0] ),
                             ]
@@ -77,10 +77,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCount', 40 ),
                                 ( 'parDeltaMax', 0 ),
                                 ( 'parDeltaMin', 0 ),
-                                ( 'parDispersion', 150 ),
+                                ( 'parDispersion', 2 * (150) ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parLuminosite', 3 ),
-                                ( 'parSize', 3 * (5000) ),
+                                ( 'parSize', 2 * (5000) ),
                             ]
                         ),
                     ]
@@ -96,11 +96,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 3 * (1.75) ),
+                                ( 'parDebritSizeMul', 2 * (1.75) ),
                                 ( 'parDir', parDirection ),
                                 ( 'parDispersion', 0 ),
-                                ( 'parFireParticleEndSize', 3 * (10) ),
-                                ( 'parFireParticleStartSize', 3 * (45) ),
+                                ( 'parFireParticleEndSize', 2 * (10) ),
+                                ( 'parFireParticleStartSize', 2 * (45) ),
                                 ( 'parGravity', 3000 ),
                                 ( 'parLifetime', 10 ),
                                 ( 'parMeshType', 0 ),
@@ -109,9 +109,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.427451,0.4196079,0.4156863] ),
                                 ( 'parSmokeColorMultiplier', 1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (2000) ),
-                                ( 'parSmokeParticleStartSize', 3 * (250) ),
-                                ( 'parSpeed', float3[4050,4100,5400] ),
+                                ( 'parSmokeParticleEndSize', 2 * (2000) ),
+                                ( 'parSmokeParticleStartSize', 2 * (250) ),
+                                ( 'parSpeed', 2 * (float3[4050,4100,5400]) ),
                             ]
                         ),
                     ]
@@ -127,11 +127,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 5 ),
                                 ( 'parCountDebritsWithSmoke', 2 ),
-                                ( 'parDebritSizeMul', 3 * (1.2) ),
+                                ( 'parDebritSizeMul', 2 * (1.2) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 1000 ),
-                                ( 'parFireParticleEndSize', 3 * (700) ),
-                                ( 'parFireParticleStartSize', 3 * (100) ),
+                                ( 'parDispersion', 2 * (1000) ),
+                                ( 'parFireParticleEndSize', 2 * (700) ),
+                                ( 'parFireParticleStartSize', 2 * (100) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 10 ),
                                 ( 'parMeshType', 0 ),
@@ -140,9 +140,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.3647059,0.3647059,0.3647059] ),
                                 ( 'parSmokeColorMultiplier', 1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (500) ),
-                                ( 'parSmokeParticleStartSize', 3 * (100) ),
-                                ( 'parSpeed', float3[3750,3750,5750] ),
+                                ( 'parSmokeParticleEndSize', 2 * (500) ),
+                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSpeed', 2 * (float3[3750,3750,5750]) ),
                             ]
                         ),
                     ]
@@ -158,11 +158,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 0 ),
                                 ( 'parCountDebritsWithFire', 5 ),
                                 ( 'parCountDebritsWithSmoke', 5 ),
-                                ( 'parDebritSizeMul', 3 * (1.2) ),
+                                ( 'parDebritSizeMul', 2 * (1.2) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 50 ),
-                                ( 'parFireParticleEndSize', 3 * (250) ),
-                                ( 'parFireParticleStartSize', 3 * (150) ),
+                                ( 'parDispersion', 2 * (50) ),
+                                ( 'parFireParticleEndSize', 2 * (250) ),
+                                ( 'parFireParticleStartSize', 2 * (150) ),
                                 ( 'parGravity', 1500 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 0 ),
@@ -171,9 +171,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.3333333,0.3294118,0.3294118] ),
                                 ( 'parSmokeColorMultiplier', 1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (500) ),
-                                ( 'parSmokeParticleStartSize', 3 * (100) ),
-                                ( 'parSpeed', float3[6000,6000,8000] ),
+                                ( 'parSmokeParticleEndSize', 2 * (500) ),
+                                ( 'parSmokeParticleStartSize', 2 * (100) ),
+                                ( 'parSpeed', 2 * (float3[6000,6000,8000]) ),
                             ]
                         ),
                     ]
@@ -203,11 +203,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parDuration', 1 ),
                                 ( 'parFlatness', 0.1 ),
                                 ( 'parGravity', 1 ),
-                                ( 'parInitSpeed', 10 ),
+                                ( 'parInitSpeed', 2 * (10) ),
                                 ( 'parNarrowness', 2 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parRadius', 0 ),
-                                ( 'parSize', 3 * (4000) ),
+                                ( 'parSize', 2 * (4000) ),
                             ]
                         ),
                     ]
@@ -225,10 +225,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.12 ),
-                        ( 'parFinalSize', 3 * (6000) ),
+                        ( 'parFinalSize', 2 * (6000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 0 ),
-                        ( 'parPositionRelative', float3[454,213,0] + parPosition ),
+                        ( 'parPositionRelative', float3[908,426,0] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -237,10 +237,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parFinalSize', 2 * (5000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 0 ),
-                        ( 'parPositionRelative', float3[463,188,4539] + parPosition ),
+                        ( 'parPositionRelative', float3[926,376,9078] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -253,10 +253,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (4500) ),
-                                ( 'parInitialSize', 3 * (200) ),
+                                ( 'parFinalSize', 2 * (4500) ),
+                                ( 'parInitialSize', 2 * (200) ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[0,0,200] + parPosition ),
+                                ( 'parPositionRelative', float3[0,0,400] + parPosition ),
                             ]
                         ),
                     ]
@@ -281,14 +281,14 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parColor', float3[1,0.9019608,0.5019608] ),
                                 ( 'parCount', 5 ),
-                                ( 'parDeltaPositionMobileDirection', -4000 ),
-                                ( 'parDispersion', 200 ),
+                                ( 'parDeltaPositionMobileDirection', 2 * (-4000) ),
+                                ( 'parDispersion', 2 * (200) ),
                                 ( 'parDuration', 0.25 ),
                                 ( 'parInitialDelay', 0 ),
                                 ( 'parLuminosite', 6 ),
                                 ( 'parOpacity', 0.39 ),
-                                ( 'parSize', 3 * (600) ),
-                                ( 'parDeltaPositionAdditif', float3[430,212,4423] + parPosition ),
+                                ( 'parSize', 2 * (600) ),
+                                ( 'parDeltaPositionAdditif', float3[860,424,8846] + parPosition ),
                             ]
                         ),
                     ]
@@ -300,13 +300,13 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parColor', float3[1,0.9019608,0.5019608] ),
                         ( 'parCount', 5 ),
                         ( 'parDeltaPositionMobileDirection', 0 ),
-                        ( 'parDispersion', 100 ),
+                        ( 'parDispersion', 2 * (100) ),
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', 0 ),
                         ( 'parLuminosite', 5 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 3 * (3000) ),
-                        ( 'parDeltaPositionAdditif', float3[506,243,3919] + parPosition ),
+                        ( 'parSize', 2 * (3000) ),
+                        ( 'parDeltaPositionAdditif', float3[1012,486,7838] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -319,14 +319,14 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parColor', float3[1,0.9019608,0.5019608] ),
                                 ( 'parCount', 10 ),
-                                ( 'parDeltaPositionMobileDirection', 150 ),
-                                ( 'parDispersion', 50 ),
+                                ( 'parDeltaPositionMobileDirection', 2 * (150) ),
+                                ( 'parDispersion', 2 * (50) ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 3 ),
                                 ( 'parOpacity', 0 ),
-                                ( 'parSize', 3 * (3500) ),
-                                ( 'parDeltaPositionAdditif', float3[-25,-2,-178] + parPosition ),
+                                ( 'parSize', 2 * (3500) ),
+                                ( 'parDeltaPositionAdditif', float3[-50,-4,-356] + parPosition ),
                             ]
                         ),
                     ]
@@ -341,14 +341,14 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parColor', float3[1,0.9019608,0.5019608] ),
                                 ( 'parCount', 5 ),
-                                ( 'parDeltaPositionMobileDirection', -3500 ),
-                                ( 'parDispersion', 100 ),
+                                ( 'parDeltaPositionMobileDirection', 2 * (-3500) ),
+                                ( 'parDispersion', 2 * (100) ),
                                 ( 'parDuration', 0.25 ),
                                 ( 'parInitialDelay', 0 ),
                                 ( 'parLuminosite', 4 ),
                                 ( 'parOpacity', 0.47 ),
-                                ( 'parSize', 3 * (1200) ),
-                                ( 'parDeltaPositionAdditif', float3[405,210,4697] + parPosition ),
+                                ( 'parSize', 2 * (1200) ),
+                                ( 'parDeltaPositionAdditif', float3[810,420,9394] + parPosition ),
                             ]
                         ),
                     ]
@@ -363,14 +363,14 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parColor', float3[1,0.9019608,0.5019608] ),
                                 ( 'parCount', 10 ),
-                                ( 'parDeltaPositionMobileDirection', 150 ),
-                                ( 'parDispersion', 50 ),
+                                ( 'parDeltaPositionMobileDirection', 2 * (150) ),
+                                ( 'parDispersion', 2 * (50) ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 3 ),
                                 ( 'parOpacity', 0 ),
-                                ( 'parSize', 3 * (4000) ),
-                                ( 'parDeltaPositionAdditif', float3[0,0,-718] + parPosition ),
+                                ( 'parSize', 2 * (4000) ),
+                                ( 'parDeltaPositionAdditif', float3[0,0,-1436] + parPosition ),
                             ]
                         ),
                     ]
@@ -391,13 +391,13 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parGravity', 3000 ),
                                 ( 'parLifetime', 1.5 ),
                                 ( 'parNarrowness', 1 ),
-                                ( 'parPositionRadius', 50 ),
-                                ( 'parSize', 3 * (12) ),
-                                ( 'parSpeedMax', 13000 ),
-                                ( 'parSpeedMin', 8000 ),
+                                ( 'parPositionRadius', 2 * (50) ),
+                                ( 'parSize', 2 * (12) ),
+                                ( 'parSpeedMax', 2 * (13000) ),
+                                ( 'parSpeedMin', 2 * (8000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
-                                ( 'parPositionRelative', float3[-12,-2,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-24,-4,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -418,10 +418,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parGravity', 1500 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parNarrowness', 0.01 ),
-                                ( 'parPositionRadius', 50 ),
-                                ( 'parSize', 3 * (12) ),
-                                ( 'parSpeedMax', 12000 ),
-                                ( 'parSpeedMin', 8000 ),
+                                ( 'parPositionRadius', 2 * (50) ),
+                                ( 'parSize', 2 * (12) ),
+                                ( 'parSpeedMax', 2 * (12000) ),
+                                ( 'parSpeedMin', 2 * (8000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parPositionRelative', parPosition ),
@@ -440,14 +440,14 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 2.5 ),
                         ( 'parNarrowness', 0.1 ),
-                        ( 'parPositionRadius', 200 ),
-                        ( 'parSize', 3 * (10) ),
-                        ( 'parSpeedMax', 8000 ),
-                        ( 'parSpeedMin', 5000 ),
+                        ( 'parPositionRadius', 2 * (200) ),
+                        ( 'parSize', 2 * (10) ),
+                        ( 'parSpeedMax', 2 * (8000) ),
+                        ( 'parSpeedMin', 2 * (5000) ),
                         ( 'parStretch', 1 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parPositionRelative', float3[454,213,0] + parPosition ),
+                        ( 'parPositionRelative', float3[908,426,0] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -461,14 +461,14 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 0.5 ),
-                        ( 'parPositionRadius', 680 ),
-                        ( 'parSize', 3 * (10) ),
-                        ( 'parSpeedMax', 2800 ),
-                        ( 'parSpeedMin', 300 ),
+                        ( 'parPositionRadius', 2 * (680) ),
+                        ( 'parSize', 2 * (10) ),
+                        ( 'parSpeedMax', 2 * (2800) ),
+                        ( 'parSpeedMin', 2 * (300) ),
                         ( 'parStretch', 1 ),
                         ( 'parWindFactor', 0 ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parPositionRelative', float3[454,213,0] + parPosition ),
+                        ( 'parPositionRelative', float3[908,426,0] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -482,7 +482,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.2901961,0.2901961,0.2901961] ),
-                                ( 'parEndSize', 3 * (750) ),
+                                ( 'parEndSize', 2 * (750) ),
                                 ( 'parFluidFriction', 3.85 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -490,10 +490,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.254902,0.254902,0.254902] ),
-                                ( 'parStartRandomRadius', 4500 ),
+                                ( 'parStartRandomRadius', 2 * (4500) ),
                                 ( 'parStartRotation', 0 ),
-                                ( 'parStartSize', 3 * (150) ),
-                                ( 'parStartSpeed', 10 ),
+                                ( 'parStartSize', 2 * (150) ),
+                                ( 'parStartSpeed', 2 * (10) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -510,7 +510,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.3294118,0.3294118,0.3254902] ),
-                                ( 'parEndSize', 3 * (600) ),
+                                ( 'parEndSize', 2 * (600) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -518,10 +518,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.2705882,0.2705882,0.2705882] ),
-                                ( 'parStartRandomRadius', 8500 ),
+                                ( 'parStartRandomRadius', 2 * (8500) ),
                                 ( 'parStartRotation', 0 ),
-                                ( 'parStartSize', 3 * (200) ),
-                                ( 'parStartSpeed', 12 ),
+                                ( 'parStartSize', 2 * (200) ),
+                                ( 'parStartSpeed', 2 * (12) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -538,7 +538,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 15 ),
                                 ( 'parEndColor', float3[0.4784314,0.4784314,0.4784314] ),
-                                ( 'parEndSize', 3 * (1000) ),
+                                ( 'parEndSize', 2 * (1000) ),
                                 ( 'parFluidFriction', 3.85 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -546,10 +546,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.2705882,0.2705882,0.2705882] ),
-                                ( 'parStartRandomRadius', 6000 ),
+                                ( 'parStartRandomRadius', 2 * (6000) ),
                                 ( 'parStartRotation', 0 ),
-                                ( 'parStartSize', 3 * (100) ),
-                                ( 'parStartSpeed', 10 ),
+                                ( 'parStartSize', 2 * (100) ),
+                                ( 'parStartSpeed', 2 * (10) ),
                                 ( 'parWindWeight', 3 ),
                             ]
                         ),
@@ -566,7 +566,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.3686275,0.3686275,0.3647059] ),
-                                ( 'parEndSize', 3 * (1200) ),
+                                ( 'parEndSize', 2 * (1200) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -574,10 +574,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.2705882,0.2705882,0.2705882] ),
-                                ( 'parStartRandomRadius', 7000 ),
+                                ( 'parStartRandomRadius', 2 * (7000) ),
                                 ( 'parStartRotation', 0 ),
-                                ( 'parStartSize', 3 * (100) ),
-                                ( 'parStartSpeed', 12 ),
+                                ( 'parStartSize', 2 * (100) ),
+                                ( 'parStartSpeed', 2 * (12) ),
                                 ( 'parWindWeight', 2 ),
                             ]
                         ),
@@ -594,7 +594,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.2901961,0.2901961,0.2901961] ),
-                                ( 'parEndSize', 3 * (1300) ),
+                                ( 'parEndSize', 2 * (1300) ),
                                 ( 'parFluidFriction', 3.85 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -602,10 +602,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.2705882,0.2705882,0.2705882] ),
-                                ( 'parStartRandomRadius', 8000 ),
+                                ( 'parStartRandomRadius', 2 * (8000) ),
                                 ( 'parStartRotation', 0 ),
-                                ( 'parStartSize', 3 * (100) ),
-                                ( 'parStartSpeed', 10 ),
+                                ( 'parStartSize', 2 * (100) ),
+                                ( 'parStartSpeed', 2 * (10) ),
                                 ( 'parWindWeight', 1 ),
                             ]
                         ),
@@ -628,7 +628,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 20 ),
                         ( 'parDuration', 1 ),
-                        ( 'parSize', 3 * (1000) ),
+                        ( 'parSize', 2 * (1000) ),
                     ]
                 ),
                 TActionCall
@@ -638,7 +638,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 5 ),
                         ( 'parDuration', 1 ),
-                        ( 'parSize', 3 * (1000) ),
+                        ( 'parSize', 2 * (1000) ),
                     ]
                 ),
             ]
@@ -656,33 +656,33 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
+                        ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
                         ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                         ( 'parCount', 5 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.25 ),
-                        ( 'parParticleSize', 3 * (2000) ),
-                        ( 'parRandomPosition', 2000 ),
+                        ( 'parParticleSize', 2 * (2000) ),
+                        ( 'parRandomPosition', 2 * (2000) ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 1 ),
-                        ( 'parSpawnerSpeed', 2400 ),
+                        ( 'parSpawnerSpeed', 2 * (2400) ),
                     ]
                 ),
                 TActionCall
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
+                        ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
                         ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                         ( 'parCount', 10 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.25 ),
-                        ( 'parParticleSize', 3 * (2000) ),
-                        ( 'parRandomPosition', 2000 ),
+                        ( 'parParticleSize', 2 * (2000) ),
+                        ( 'parRandomPosition', 2 * (2000) ),
                         ( 'parSmokeDuration', 8 ),
                         ( 'parSpawnerDuration', 0.25 ),
                         ( 'parSpawnerSpeed', 0 ),
@@ -692,18 +692,18 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[600,600,600]) ),
+                        ( 'parCloudsize', 2 * (float3[600,600,600]) ),
                         ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                         ( 'parCount', 10 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.25 ),
-                        ( 'parParticleSize', 3 * (1000) ),
-                        ( 'parRandomPosition', 2000 ),
+                        ( 'parParticleSize', 2 * (1000) ),
+                        ( 'parRandomPosition', 2 * (2000) ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 0.45 ),
-                        ( 'parSpawnerSpeed', 3000 ),
+                        ( 'parSpawnerSpeed', 2 * (3000) ),
                     ]
                 ),
                 TActionCall
@@ -713,11 +713,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parCountDebrits', 5 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 3 * (1) ),
+                        ( 'parDebritSizeMul', 2 * (1) ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parDispersion', 340 ),
+                        ( 'parDispersion', 2 * (340) ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 3 * (300) ),
+                        ( 'parFireParticleStartSize', 2 * (300) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 3 ),
                         ( 'parMeshType', 1 ),
@@ -726,9 +726,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (3000) ),
-                        ( 'parSmokeParticleStartSize', 3 * (600) ),
-                        ( 'parSpeed', float3[4280,4350,10000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (3000) ),
+                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSpeed', 2 * (float3[4280,4350,10000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 3),
@@ -747,18 +747,18 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[50,50,50]) ),
+                        ( 'parCloudsize', 2 * (float3[50,50,50]) ),
                         ( 'parColor', float3[0.1764706,0.1764706,0.1764706] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.35 ),
-                        ( 'parParticleSize', 3 * (4000) ),
-                        ( 'parRandomPosition', 600 ),
+                        ( 'parParticleSize', 2 * (4000) ),
+                        ( 'parRandomPosition', 2 * (600) ),
                         ( 'parSmokeDuration', 12 ),
                         ( 'parSpawnerDuration', 0.2 ),
-                        ( 'parSpawnerSpeed', 10000 ),
+                        ( 'parSpawnerSpeed', 2 * (10000) ),
                     ]
                 ),
             ]
@@ -776,18 +776,18 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[50,50,50]) ),
+                        ( 'parCloudsize', 2 * (float3[50,50,50]) ),
                         ( 'parColor', float3[0.3921569,0.3921569,0.3921569] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parParticleSize', 3 * (4000) ),
-                        ( 'parRandomPosition', 800 ),
+                        ( 'parParticleSize', 2 * (4000) ),
+                        ( 'parRandomPosition', 2 * (800) ),
                         ( 'parSmokeDuration', 8 ),
                         ( 'parSpawnerDuration', 0.25 ),
-                        ( 'parSpawnerSpeed', 100 ),
+                        ( 'parSpawnerSpeed', 2 * (100) ),
                     ]
                 ),
                 TActionCall
@@ -802,7 +802,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parOpacity', 0.3 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0 ),
-                        ( 'parSizeLBU', 3 * (186.0465) ),
+                        ( 'parSizeLBU', 2 * (186.0465) ),
                     ]
                 ),
             ]
@@ -844,10 +844,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCount', 50 ),
                                 ( 'parDeltaMax', 0 ),
                                 ( 'parDeltaMin', 0 ),
-                                ( 'parDispersion', 150 ),
+                                ( 'parDispersion', 2 * (150) ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parLuminosite', 3 ),
-                                ( 'parSize', 3 * (4000) ),
+                                ( 'parSize', 2 * (4000) ),
                             ]
                         ),
                     ]
@@ -865,13 +865,13 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                     NamedParams = MAP[
                         ( 'parColor', float3[1,0.8000001,0.6980392] ),
                         ( 'parCount', 6 ),
-                        ( 'parDeltaPosition', float3[0,0,-8000] ),
+                        ( 'parDeltaPosition', float3[0,0,-16000] ),
                         ( 'parDuration', 0.35 ),
                         ( 'parLuminosite', 10 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 3 * (1500) ),
+                        ( 'parSize', 2 * (1500) ),
                         ( 'parSpeed', 0 ),
-                        ( 'parStartPosition', float3[454,213,4480] + parPosition ),
+                        ( 'parStartPosition', 2 * (float3[454,213,4480] + parPosition) ),
                     ]
                 ),
             ]
@@ -896,8 +896,8 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                                 ( 'parDuration', 2 ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSizeLBU', 3 * (46.51163) ),
-                                ( 'Position', float3[1,-9,0] + parPosition ),
+                                ( 'parSizeLBU', 2 * (46.51163) ),
+                                ( 'Position', float3[2,-18,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -915,9 +915,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parDuration', 0.25 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSize', 3 * (10000) ),
+                                ( 'parSize', 2 * (10000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
-                                ( 'Position', float3[1,-9,0] + parPosition ),
+                                ( 'Position', float3[2,-18,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -949,7 +949,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 3 * (162.7907) ),
+                                ( 'parSizeLBU', 2 * (162.7907) ),
                             ]
                         ),
                     ]
@@ -981,7 +981,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 3 * (139.5349) ),
+                                ( 'parSizeLBU', 2 * (139.5349) ),
                             ]
                         ),
                     ]
@@ -1013,7 +1013,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 3 * (139.5349) ),
+                                ( 'parSizeLBU', 2 * (139.5349) ),
                             ]
                         ),
                     ]
@@ -1039,9 +1039,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 0 ),
                                 ( 'parCountDebritsWithFire', 2 ),
                                 ( 'parCountDebritsWithSmoke', 6 ),
-                                ( 'parDebritSizeMul', 3 * (0.2) ),
-                                ( 'parDispersion', 10 ),
-                                ( 'parFireParticleEndSize', 3 * (800) ),
+                                ( 'parDebritSizeMul', 2 * (0.2) ),
+                                ( 'parDispersion', 2 * (10) ),
+                                ( 'parFireParticleEndSize', 2 * (800) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parMeshType', 0 ),
@@ -1050,9 +1050,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.427451,0.4196079,0.4156863] ),
                                 ( 'parSmokeColorMultiplier', 0.1 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (1000) ),
-                                ( 'parSmokeParticleStartSize', 3 * (250) ),
-                                ( 'parSpeed', float3[4000,4000,9000] ),
+                                ( 'parSmokeParticleEndSize', 2 * (1000) ),
+                                ( 'parSmokeParticleStartSize', 2 * (250) ),
+                                ( 'parSpeed', 2 * (float3[4000,4000,9000]) ),
                                 ( 'parSpeedDispersion', 1 ),
                             ]
                         ),
@@ -1080,10 +1080,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 2 ),
                                 ( 'parCountDebritsWithFire', 3 ),
                                 ( 'parCountDebritsWithSmoke', 6 ),
-                                ( 'parDebritSizeMul', 3 * (1.25) ),
+                                ( 'parDebritSizeMul', 2 * (1.25) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 340 ),
-                                ( 'parFireParticleEndSize', 3 * (200) ),
+                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parFireParticleEndSize', 2 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
@@ -1093,9 +1093,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.4,0.4,0.3960785] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (800) ),
-                                ( 'parSmokeParticleStartSize', 3 * (400) ),
-                                ( 'parSpeed', float3[4000,4000,12000] ),
+                                ( 'parSmokeParticleEndSize', 2 * (800) ),
+                                ( 'parSmokeParticleStartSize', 2 * (400) ),
+                                ( 'parSpeed', 2 * (float3[4000,4000,12000]) ),
                             ]
                         ),
                     ]
@@ -1122,11 +1122,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parCountDebrits', 2 ),
                                 ( 'parCountDebritsWithFire', 3 ),
                                 ( 'parCountDebritsWithSmoke', 4 ),
-                                ( 'parDebritSizeMul', 3 * (1.25) ),
+                                ( 'parDebritSizeMul', 2 * (1.25) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 540 ),
-                                ( 'parFireParticleEndSize', 3 * (200) ),
-                                ( 'parFireParticleStartSize', 3 * (100) ),
+                                ( 'parDispersion', 2 * (540) ),
+                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parFireParticleStartSize', 2 * (100) ),
                                 ( 'parGravity', 1500 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parMeshType', 0 ),
@@ -1135,9 +1135,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parSmokeColor', float3[0.1764706,0.1686275,0.1607843] ),
                                 ( 'parSmokeColorMultiplier', 0.4 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 3 * (800) ),
-                                ( 'parSmokeParticleStartSize', 3 * (300) ),
-                                ( 'parSpeed', float3[6000,6000,6000] ),
+                                ( 'parSmokeParticleEndSize', 2 * (800) ),
+                                ( 'parSmokeParticleStartSize', 2 * (300) ),
+                                ( 'parSpeed', 2 * (float3[6000,6000,6000]) ),
                             ]
                         ),
                     ]
@@ -1160,11 +1160,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parCountDebrits', 5 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 3 * (1) ),
+                        ( 'parDebritSizeMul', 2 * (1) ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parDispersion', 540 ),
-                        ( 'parFireParticleEndSize', 3 * (25) ),
-                        ( 'parFireParticleStartSize', 3 * (200) ),
+                        ( 'parDispersion', 2 * (540) ),
+                        ( 'parFireParticleEndSize', 2 * (25) ),
+                        ( 'parFireParticleStartSize', 2 * (200) ),
                         ( 'parGravity', 2200 ),
                         ( 'parLifetime', 5 ),
                         ( 'parMeshType', 1 ),
@@ -1173,9 +1173,9 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                         ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                         ( 'parSmokeColorMultiplier', 0.6999999 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (3000) ),
-                        ( 'parSmokeParticleStartSize', 3 * (900) ),
-                        ( 'parSpeed', float3[2030,2070,12000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (3000) ),
+                        ( 'parSmokeParticleStartSize', 2 * (900) ),
+                        ( 'parSpeed', 2 * (float3[2030,2070,12000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 5),
@@ -1199,10 +1199,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.145098,0.145098,0.145098] ),
-                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parDustSize', 2 * (450) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1227,10 +1227,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 0.8 ),
                                 ( 'parDustColor', float3[0.08235294,0.08235294,0.08235294] ),
-                                ( 'parDustSize', 3 * (650) ),
+                                ( 'parDustSize', 2 * (650) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1255,10 +1255,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.1 ),
                                 ( 'parDustColor', float3[0.05490196,0.05490196,0.05490196] ),
-                                ( 'parDustSize', 3 * (500) ),
+                                ( 'parDustSize', 2 * (500) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1283,10 +1283,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.1294118,0.1294118,0.1294118] ),
-                                ( 'parDustSize', 3 * (600) ),
+                                ( 'parDustSize', 2 * (600) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1311,10 +1311,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.1137255,0.1137255,0.1137255] ),
-                                ( 'parDustSize', 3 * (650) ),
+                                ( 'parDustSize', 2 * (650) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1339,10 +1339,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.0509804,0.0509804,0.0509804] ),
-                                ( 'parDustSize', 3 * (500) ),
+                                ( 'parDustSize', 2 * (500) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1367,10 +1367,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.3 ),
                                 ( 'parDustColor', float3[0.1294118,0.1294118,0.1294118] ),
-                                ( 'parDustSize', 3 * (550) ),
+                                ( 'parDustSize', 2 * (550) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1395,10 +1395,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.05 ),
                                 ( 'parDustColor', float3[0.02352941,0.02352941,0.02352941] ),
-                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parDustSize', 2 * (450) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1423,10 +1423,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.09803922,0.09803922,0.09803922] ),
-                                ( 'parDustSize', 3 * (600) ),
+                                ( 'parDustSize', 2 * (600) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1451,10 +1451,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.2 ),
                                 ( 'parDustColor', float3[0.1568628,0.1568628,0.1568628] ),
-                                ( 'parDustSize', 3 * (600) ),
+                                ( 'parDustSize', 2 * (600) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1479,10 +1479,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 0.8 ),
                                 ( 'parDustColor', float3[0.04313726,0.04313726,0.04313726] ),
-                                ( 'parDustSize', 3 * (600) ),
+                                ( 'parDustSize', 2 * (600) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1507,10 +1507,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1.2 ),
                                 ( 'parDustColor', float3[0.145098,0.145098,0.145098] ),
-                                ( 'parDustSize', 3 * (600) ),
+                                ( 'parDustSize', 2 * (600) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1535,10 +1535,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.05490196,0.05490196,0.05490196] ),
-                                ( 'parDustSize', 3 * (700) ),
+                                ( 'parDustSize', 2 * (700) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1563,10 +1563,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                             NamedParams = MAP[
                                 ( 'parDuration', 0.85 ),
                                 ( 'parDustColor', float3[0.06666667,0.06666667,0.06666667] ),
-                                ( 'parDustSize', 3 * (500) ),
+                                ( 'parDustSize', 2 * (500) ),
                                 ( 'parMudSize', 0 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parRandomPosition', 500 ),
+                                ( 'parRandomPosition', 2 * (500) ),
                             ]
                         ),
                     ]
@@ -1600,12 +1600,12 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parOpacity1', 0.2 ),
                                 ( 'parOpacity2', 0.1 ),
                                 ( 'parParticleRotationSpeed', 0 ),
-                                ( 'parSize1', 3 * (3000) ),
-                                ( 'parSize2', 3 * (5000) ),
+                                ( 'parSize1', 2 * (3000) ),
+                                ( 'parSize2', 2 * (5000) ),
                                 ( 'parSpawnCount', 28 ),
                                 ( 'parSpawnDuration', 0.35 ),
-                                ( 'parSpawnRadius', 50 ),
-                                ( 'parSpeed', 5000 ),
+                                ( 'parSpawnRadius', 2 * (50) ),
+                                ( 'parSpeed', 2 * (5000) ),
                             ]
                         ),
                     ]
@@ -1639,12 +1639,12 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parOpacity1', 1 ),
                                 ( 'parOpacity2', 0 ),
                                 ( 'parParticleRotationSpeed', 0 ),
-                                ( 'parSize1', 3 * (3000) ),
-                                ( 'parSize2', 3 * (3000) ),
+                                ( 'parSize1', 2 * (3000) ),
+                                ( 'parSize2', 2 * (3000) ),
                                 ( 'parSpawnCount', 28 ),
                                 ( 'parSpawnDuration', 0.35 ),
-                                ( 'parSpawnRadius', 200 ),
-                                ( 'parSpeed', 3000 ),
+                                ( 'parSpawnRadius', 2 * (200) ),
+                                ( 'parSpeed', 2 * (3000) ),
                             ]
                         ),
                     ]
@@ -1673,11 +1673,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parDuration', 1 ),
                                 ( 'parFlatness', 0.1 ),
                                 ( 'parGravity', 1 ),
-                                ( 'parInitSpeed', 10 ),
+                                ( 'parInitSpeed', 2 * (10) ),
                                 ( 'parNarrowness', 2 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parRadius', 0 ),
-                                ( 'parSize', 3 * (3000) ),
+                                ( 'parSize', 2 * (3000) ),
                             ]
                         ),
                     ]
@@ -1706,11 +1706,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parDuration', 1 ),
                                 ( 'parFlatness', 0.1 ),
                                 ( 'parGravity', 1 ),
-                                ( 'parInitSpeed', 10 ),
+                                ( 'parInitSpeed', 2 * (10) ),
                                 ( 'parNarrowness', 2 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parRadius', 0 ),
-                                ( 'parSize', 3 * (2500) ),
+                                ( 'parSize', 2 * (2500) ),
                             ]
                         ),
                     ]
@@ -1739,11 +1739,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parDuration', 1 ),
                                 ( 'parFlatness', 0.1 ),
                                 ( 'parGravity', 1 ),
-                                ( 'parInitSpeed', 10 ),
+                                ( 'parInitSpeed', 2 * (10) ),
                                 ( 'parNarrowness', 2 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parRadius', 0 ),
-                                ( 'parSize', 3 * (1500) ),
+                                ( 'parSize', 2 * (1500) ),
                             ]
                         ),
                     ]
@@ -1772,11 +1772,11 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parDuration', 1 ),
                                 ( 'parFlatness', 0.1 ),
                                 ( 'parGravity', 1 ),
-                                ( 'parInitSpeed', 10 ),
+                                ( 'parInitSpeed', 2 * (10) ),
                                 ( 'parNarrowness', 2 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parRadius', 0 ),
-                                ( 'parSize', 3 * (2000) ),
+                                ( 'parSize', 2 * (2000) ),
                             ]
                         ),
                     ]
@@ -1802,19 +1802,19 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 15 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 3 * (15000) ),
+                                ( 'parEndSize', 2 * (15000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
                                 ( 'parOpacity', 0.4 ),
-                                ( 'parRandomInitPosRadius', 2000 ),
+                                ( 'parRandomInitPosRadius', 2 * (2000) ),
                                 ( 'parRotationFactor', 0.5 ),
                                 ( 'parScaleSizeFactor', 1 ),
                                 ( 'parStartColor', float3[0.4392157,0.3294118,0.2431373] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (2000) ),
-                                ( 'parStartSpeed3D', float3[2000,2000,0] ),
+                                ( 'parStartSize', 2 * (2000) ),
+                                ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
                                 ( 'parWindWeight', 3 ),
                             ]
                         ),
@@ -1841,19 +1841,19 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 15 ),
                                 ( 'parEndColor', float3[0,0,0] ),
-                                ( 'parEndSize', 3 * (15000) ),
+                                ( 'parEndSize', 2 * (15000) ),
                                 ( 'parFluidFriction', 3.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
                                 ( 'parOpacity', 0.4 ),
-                                ( 'parRandomInitPosRadius', 1200 ),
+                                ( 'parRandomInitPosRadius', 2 * (1200) ),
                                 ( 'parRotationFactor', 1.2 ),
                                 ( 'parScaleSizeFactor', 1 ),
                                 ( 'parStartColor', float3[0.4941177,0.3372549,0.2117647] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (2000) ),
-                                ( 'parStartSpeed3D', float3[2000,2000,0] ),
+                                ( 'parStartSize', 2 * (2000) ),
+                                ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -1880,7 +1880,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 10 ),
                                 ( 'parEndColor', float3[0.3490196,0.345098,0.345098] ),
-                                ( 'parEndSize', 3 * (5000) ),
+                                ( 'parEndSize', 2 * (5000) ),
                                 ( 'parFluidFriction', 1.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -1891,8 +1891,8 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parStartColor', float3[0.2745098,0.2745098,0.2745098] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (1000) ),
-                                ( 'parStartSpeed3D', float3[2000,2000,0] ),
+                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
                                 ( 'parWindWeight', 2 ),
                             ]
                         ),
@@ -1919,7 +1919,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.8078432,0.627451,0.482353] ),
-                                ( 'parEndSize', 3 * (400) ),
+                                ( 'parEndSize', 2 * (400) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 5 ),
@@ -1927,10 +1927,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 0.1 ),
                                 ( 'parStartColor', float3[0.5686275,0.4470589,0.3490196] ),
-                                ( 'parStartRandomRadius', 500 ),
+                                ( 'parStartRandomRadius', 2 * (500) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (200) ),
-                                ( 'parStartSpeed', 50 ),
+                                ( 'parStartSize', 2 * (200) ),
+                                ( 'parStartSpeed', 2 * (50) ),
                                 ( 'parWindWeight', 3 ),
                             ]
                         ),
@@ -1957,7 +1957,7 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7098039,0.5490196,0.4196079] ),
-                                ( 'parEndSize', 3 * (500) ),
+                                ( 'parEndSize', 2 * (500) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -1965,10 +1965,10 @@ export fx_impact_missile_vehicule_petit_Top_HEAT_2 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.4392157,0.3294118,0.2431373] ),
-                                ( 'parStartRandomRadius', 500 ),
+                                ( 'parStartRandomRadius', 2 * (500) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (200) ),
-                                ( 'parStartSpeed', 80 ),
+                                ( 'parStartSize', 2 * (200) ),
+                                ( 'parStartSpeed', 2 * (80) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),

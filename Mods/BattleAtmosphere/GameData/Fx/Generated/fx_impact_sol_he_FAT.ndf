@@ -26,8 +26,8 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7000002 ),
-                        ( 'parFinalSize', 3 * (6300) ),
-                        ( 'parInitialSize', 3 * (10000) ),
+                        ( 'parFinalSize', 2 * (6300) ),
+                        ( 'parInitialSize', 2 * (10000) ),
                         ( 'parIntensity', 5000 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -44,7 +44,7 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 0 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 3 * (parRadiusPhysical) ),
+                                ( 'parSize', 2 * (parRadiusPhysical) ),
                             ]
                         ),
                     ]
@@ -65,10 +65,10 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 3 * (8000) ),
-                        ( 'parInitialSize', 3 * (4000) ),
+                        ( 'parFinalSize', 2 * (8000) ),
+                        ( 'parInitialSize', 2 * (4000) ),
                         ( 'parZBias', 0 ),
-                        ( 'parPositionRelative', float3[1,40,133] + parPosition ),
+                        ( 'parPositionRelative', float3[2,80,266] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -82,10 +82,10 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parGravity', -500 ),
                         ( 'parLifetime', 0.6 ),
                         ( 'parNarrowness', 0.1 ),
-                        ( 'parPositionRadius', 200 ),
-                        ( 'parSize', 3 * (30) ),
-                        ( 'parSpeedMax', 8000 ),
-                        ( 'parSpeedMin', 8000 ),
+                        ( 'parPositionRadius', 2 * (200) ),
+                        ( 'parSize', 2 * (30) ),
+                        ( 'parSpeedMax', 2 * (8000) ),
+                        ( 'parSpeedMin', 2 * (8000) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parDir', float3[0,0,1] ),
@@ -103,10 +103,10 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parGravity', -1000 ),
                         ( 'parLifetime', 1.45 ),
                         ( 'parNarrowness', 0 ),
-                        ( 'parPositionRadius', 680 ),
-                        ( 'parSize', 3 * (50) ),
-                        ( 'parSpeedMax', 2800 ),
-                        ( 'parSpeedMin', 300 ),
+                        ( 'parPositionRadius', 2 * (680) ),
+                        ( 'parSize', 2 * (50) ),
+                        ( 'parSpeedMax', 2 * (2800) ),
+                        ( 'parSpeedMin', 2 * (300) ),
                         ( 'parStretch', 0.5 ),
                         ( 'parWindFactor', 0 ),
                         ( 'parDir', float3[0,0,1] ),
@@ -132,7 +132,7 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parImpactPos', float3[0,0,1] ),
                         ( 'parLuminosite', 6 ),
-                        ( 'parSize', 3 * (4650) ),
+                        ( 'parSize', 2 * (4650) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', float3[-50,-98,68] + parPosition ),
                     ]
@@ -156,9 +156,9 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parDuration', 1.4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 3 * (1300) ),
+                        ( 'parSize', 2 * (1300) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,167] + parPosition ),
+                        ( 'Position', float3[0,0,334] + parPosition ),
                     ]
                 ),
                 TWaitInSec( Duration = 1.4),
@@ -181,7 +181,7 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
                         ( 'parCount', 5 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 3 * (900) ),
+                        ( 'parSize', 2 * (900) ),
                     ]
                 ),
             ]
@@ -200,18 +200,18 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.4392157,0.4431373,0.4509804] ),
                         ( 'parCount', 5 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 3 * (6600) ),
+                        ( 'parParticleSize', 2 * (6600) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 5.299997 ),
                         ( 'parSpawnerDuration', 0.45 ),
-                        ( 'parSpawnerSpeed', 2400 ),
+                        ( 'parSpawnerSpeed', 2 * (2400) ),
                     ]
                 ),
             ]
@@ -235,9 +235,9 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parDuration', 4 ),
                         ( 'parLuminosite', 2 ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parSize', 3 * (10000) ),
+                        ( 'parSize', 2 * (10000) ),
                         ( 'parSpeed', 0 ),
-                        ( 'parStartPosition', float3[0,0,-533] + parPosition ),
+                        ( 'parStartPosition', 2 * (float3[0,0,-533] + parPosition) ),
                     ]
                 ),
             ]
@@ -261,9 +261,9 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parDuration', 5 ),
                         ( 'parLuminosite', 2 ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parSize', 3 * (10000) ),
+                        ( 'parSize', 2 * (10000) ),
                         ( 'parSpeed', 0 ),
-                        ( 'parStartPosition', float3[1,40,598] + parPosition ),
+                        ( 'parStartPosition', 2 * (float3[1,40,598] + parPosition) ),
                     ]
                 ),
             ]
@@ -289,7 +289,7 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parOpacity', 1 ),
                         ( 'parRepeatCount', 0 ),
                         ( 'parRepeatTime', 0 ),
-                        ( 'parSizeLBU', 3 * (46.51163) ),
+                        ( 'parSizeLBU', 2 * (46.51163) ),
                     ]
                 ),
                 TActionCall
@@ -299,10 +299,10 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 10 ),
                         ( 'parCountDebritsWithSmoke', 6 ),
-                        ( 'parDebritSizeMul', 3 * (1.5) ),
-                        ( 'parDispersion', 1200 ),
-                        ( 'parFireParticleEndSize', 3 * (325) ),
-                        ( 'parFireParticleStartSize', 3 * (75) ),
+                        ( 'parDebritSizeMul', 2 * (1.5) ),
+                        ( 'parDispersion', 2 * (1200) ),
+                        ( 'parFireParticleEndSize', 2 * (325) ),
+                        ( 'parFireParticleStartSize', 2 * (75) ),
                         ( 'parLifetime', 0.3 ),
                         ( 'parMeshType', 0 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -310,9 +310,9 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,0.8235295,0.09803922] ),
                         ( 'parSmokeColorMultiplier', 0.3 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (600) ),
-                        ( 'parSmokeParticleStartSize', 3 * (100) ),
-                        ( 'parSpeed', float3[6000,6000,9983] ),
+                        ( 'parSmokeParticleEndSize', 2 * (600) ),
+                        ( 'parSmokeParticleStartSize', 2 * (100) ),
+                        ( 'parSpeed', 2 * (float3[6000,6000,9983]) ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
                 ),
@@ -323,10 +323,10 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 5 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 3 * (0.001) ),
+                        ( 'parDebritSizeMul', 2 * (0.001) ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parDispersion', 200 ),
-                        ( 'parFireParticleEndSize', 3 * (200) ),
+                        ( 'parDispersion', 2 * (200) ),
+                        ( 'parFireParticleEndSize', 2 * (200) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 1.6 ),
@@ -336,9 +336,9 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (2100) ),
-                        ( 'parSmokeParticleStartSize', 3 * (600) ),
-                        ( 'parSpeed', float3[4280,4350,8000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (2100) ),
+                        ( 'parSmokeParticleStartSize', 2 * (600) ),
+                        ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 1.6),
@@ -361,11 +361,11 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 10 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 3 * (0.001) ),
+                        ( 'parDebritSizeMul', 2 * (0.001) ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parDispersion', 1000 ),
-                        ( 'parFireParticleEndSize', 3 * (10) ),
-                        ( 'parFireParticleStartSize', 3 * (10) ),
+                        ( 'parDispersion', 2 * (1000) ),
+                        ( 'parFireParticleEndSize', 2 * (10) ),
+                        ( 'parFireParticleStartSize', 2 * (10) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 2.900002 ),
                         ( 'parMeshType', 1 ),
@@ -374,9 +374,9 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                         ( 'parSmokeColorMultiplier', 0.6999999 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (2000) ),
-                        ( 'parSmokeParticleStartSize', 3 * (900) ),
-                        ( 'parSpeed', float3[5000,5000,10000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (2000) ),
+                        ( 'parSmokeParticleStartSize', 2 * (900) ),
+                        ( 'parSpeed', 2 * (float3[5000,5000,10000]) ),
                     ]
                 ),
                 TActionCall
@@ -385,8 +385,8 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 1 ),
-                        ( 'parFinalSize', 3 * (20000) ),
-                        ( 'parInitialSize', 3 * (2200) ),
+                        ( 'parFinalSize', 2 * (20000) ),
+                        ( 'parInitialSize', 2 * (2200) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -409,8 +409,8 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 3 * (20000) ),
-                        ( 'parInitialSize', 3 * (2200) ),
+                        ( 'parFinalSize', 2 * (20000) ),
+                        ( 'parInitialSize', 2 * (2200) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -436,11 +436,11 @@ export fx_impact_sol_he_FAT is SimultaneousActionDeclaration
                         ( 'parDuration', 0.75 ),
                         ( 'parFlatness', 0.95 ),
                         ( 'parGravity', -3.4 ),
-                        ( 'parInitSpeed', 3 ),
+                        ( 'parInitSpeed', 2 * (3) ),
                         ( 'parNarrowness', 1.32 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parRadius', 400 ),
-                        ( 'parSize', 3 * (10000) ),
+                        ( 'parRadius', 2 * (400) ),
+                        ( 'parSize', 2 * (10000) ),
                     ]
                 ),
             ]

@@ -34,7 +34,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 3 ),
                                 ( 'parFinalSize', 0 ),
-                                ( 'parInitialSize', 3 * (8000) ),
+                                ( 'parInitialSize', 2 * (8000) ),
                                 ( 'parIntensity', 1000 ),
                                 ( 'parPositionRelative', float3[0,0,0] ),
                             ]
@@ -49,7 +49,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                     NamedParams = MAP[
                                         ( 'parDuration', 2 ),
                                         ( 'parFinalSize', 0 ),
-                                        ( 'parInitialSize', 3 * (6000) ),
+                                        ( 'parInitialSize', 2 * (6000) ),
                                         ( 'parIntensity', 800 ),
                                         ( 'parPositionRelative', float3[0,0,0] ),
                                     ]
@@ -71,10 +71,10 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parCount', 40 ),
                                 ( 'parDeltaMax', 0 ),
                                 ( 'parDeltaMin', 0 ),
-                                ( 'parDispersion', 250 ),
+                                ( 'parDispersion', 2 * (250) ),
                                 ( 'parDuration', 0.5 ),
                                 ( 'parLuminosite', 2 ),
-                                ( 'parSize', 3 * (4000) ),
+                                ( 'parSize', 2 * (4000) ),
                             ]
                         ),
                     ]
@@ -92,18 +92,18 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
+                                ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
                                 ( 'parColor', float3[0.08627451,0.08627451,0.08627451] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.9 ),
-                                ( 'parParticleSize', 3 * (4500) ),
-                                ( 'parRandomPosition', 750 ),
+                                ( 'parParticleSize', 2 * (4500) ),
+                                ( 'parRandomPosition', 2 * (750) ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 1000 ),
+                                ( 'parSpawnerSpeed', 2 * (1000) ),
                             ]
                         ),
                         TSequentialAction
@@ -114,18 +114,18 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 (
                                     Action = $/VFX_Bank/DarkSmoke_Simple
                                     NamedParams = MAP[
-                                        ( 'parCloudsize', 3 * (float3[2000,2000,2000]) ),
+                                        ( 'parCloudsize', 2 * (float3[2000,2000,2000]) ),
                                         ( 'parColor', float3[0.02745098,0.01568628,0.003921569] ),
                                         ( 'parCount', 7 ),
                                         ( 'parDecayLength', 5.299999 ),
                                         ( 'parDecayStart', 0.1 ),
                                         ( 'parEmissive', 0.7 ),
                                         ( 'parOpacity', 1 ),
-                                        ( 'parParticleSize', 3 * (1400) ),
-                                        ( 'parRandomPosition', 800 ),
+                                        ( 'parParticleSize', 2 * (1400) ),
+                                        ( 'parRandomPosition', 2 * (800) ),
                                         ( 'parSmokeDuration', 8 ),
                                         ( 'parSpawnerDuration', 1 ),
-                                        ( 'parSpawnerSpeed', 1000 ),
+                                        ( 'parSpawnerSpeed', 2 * (1000) ),
                                     ]
                                 ),
                             ]
@@ -167,12 +167,12 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parLuminosite2', 0.15 ),
                                         ( 'parOpacity', 1 ),
                                         ( 'parParticleRotationSpeed', 1 ),
-                                        ( 'parSize1', 3 * (1000) ),
-                                        ( 'parSize2', 3 * (4000) ),
+                                        ( 'parSize1', 2 * (1000) ),
+                                        ( 'parSize2', 2 * (4000) ),
                                         ( 'parSpawnCount', 35 ),
                                         ( 'parSpawnDuration', 0.5 ),
-                                        ( 'parSpawnRadius', 150 ),
-                                        ( 'parSpeed', 1000 ),
+                                        ( 'parSpawnRadius', 2 * (150) ),
+                                        ( 'parSpeed', 2 * (1000) ),
                                     ]
                                 ),
                             ]
@@ -197,12 +197,12 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parLuminosite2', 0.05 ),
                                         ( 'parOpacity', 1 ),
                                         ( 'parParticleRotationSpeed', 2 ),
-                                        ( 'parSize1', 3 * (1000) ),
-                                        ( 'parSize2', 3 * (4000) ),
+                                        ( 'parSize1', 2 * (1000) ),
+                                        ( 'parSize2', 2 * (4000) ),
                                         ( 'parSpawnCount', 35 ),
                                         ( 'parSpawnDuration', 0.5 ),
-                                        ( 'parSpawnRadius', 150 ),
-                                        ( 'parSpeed', 1000 ),
+                                        ( 'parSpawnRadius', 2 * (150) ),
+                                        ( 'parSpeed', 2 * (1000) ),
                                     ]
                                 ),
                             ]
@@ -223,12 +223,12 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parLuminosite2', 0.5 ),
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parParticleRotationSpeed', 0 ),
-                                ( 'parSize1', 3 * (1000) ),
-                                ( 'parSize2', 3 * (4000) ),
+                                ( 'parSize1', 2 * (1000) ),
+                                ( 'parSize2', 2 * (4000) ),
                                 ( 'parSpawnCount', 35 ),
                                 ( 'parSpawnDuration', 0.5 ),
-                                ( 'parSpawnRadius', 200 ),
-                                ( 'parSpeed', 1000 ),
+                                ( 'parSpawnRadius', 2 * (200) ),
+                                ( 'parSpeed', 2 * (1000) ),
                             ]
                         ),
                         TActionCall
@@ -247,12 +247,12 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parLuminosite2', 3 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parParticleRotationSpeed', 0 ),
-                                ( 'parSize1', 3 * (2000) ),
-                                ( 'parSize2', 3 * (3000) ),
+                                ( 'parSize1', 2 * (2000) ),
+                                ( 'parSize2', 2 * (3000) ),
                                 ( 'parSpawnCount', 20 ),
                                 ( 'parSpawnDuration', 0.1 ),
-                                ( 'parSpawnRadius', 250 ),
-                                ( 'parSpeed', 1000 ),
+                                ( 'parSpawnRadius', 2 * (250) ),
+                                ( 'parSpeed', 2 * (1000) ),
                             ]
                         ),
                         TActionCall
@@ -271,12 +271,12 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parLuminosite2', 3 ),
                                 ( 'parOpacity', 1 ),
                                 ( 'parParticleRotationSpeed', 0 ),
-                                ( 'parSize1', 3 * (2000) ),
-                                ( 'parSize2', 3 * (3000) ),
+                                ( 'parSize1', 2 * (2000) ),
+                                ( 'parSize2', 2 * (3000) ),
                                 ( 'parSpawnCount', 20 ),
                                 ( 'parSpawnDuration', 0.1 ),
-                                ( 'parSpawnRadius', 250 ),
-                                ( 'parSpeed', 1000 ),
+                                ( 'parSpawnRadius', 2 * (250) ),
+                                ( 'parSpeed', 2 * (1000) ),
                             ]
                         ),
                     ]
@@ -471,8 +471,8 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                                 ( 'parDuration', 2 ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSizeLBU', 3 * (46.51163) ),
-                                ( 'Position', float3[139,97,0] + parPosition ),
+                                ( 'parSizeLBU', 2 * (46.51163) ),
+                                ( 'Position', float3[278,194,0] + parPosition ),
                             ]
                         ),
                         TWaitInSec( Duration = 2),
@@ -503,7 +503,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.2 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 3 * (186.0465) ),
+                                        ( 'parSizeLBU', 2 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -535,7 +535,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.3 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 3 * (139.5349) ),
+                                        ( 'parSizeLBU', 2 * (139.5349) ),
                                     ]
                                 ),
                             ]
@@ -567,7 +567,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.2 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 3 * (186.0465) ),
+                                        ( 'parSizeLBU', 2 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -595,7 +595,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 3 * (186.0465) ),
+                                ( 'parSizeLBU', 2 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -625,7 +625,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.2 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 3 * (186.0465) ),
+                                        ( 'parSizeLBU', 2 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -657,7 +657,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 0.3 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0.75 ),
-                                        ( 'parSizeLBU', 3 * (93.02325) ),
+                                        ( 'parSizeLBU', 2 * (93.02325) ),
                                     ]
                                 ),
                             ]
@@ -689,7 +689,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parOpacity', 1 ),
                                         ( 'parRepeatCount', 1 ),
                                         ( 'parRepeatTime', 0 ),
-                                        ( 'parSizeLBU', 3 * (186.0465) ),
+                                        ( 'parSizeLBU', 2 * (186.0465) ),
                                     ]
                                 ),
                             ]
@@ -715,7 +715,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parAlphaStartDecayValue', 0.01 ),
                                         ( 'parCount', 40 ),
                                         ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                        ( 'parEndSize', 3 * (3000) ),
+                                        ( 'parEndSize', 2 * (3000) ),
                                         ( 'parFluidFriction', 1 ),
                                         ( 'parInitialDelay', parInitialShotDelay ),
                                         ( 'parLifetime', 10 ),
@@ -723,10 +723,10 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                         ( 'parRotationFactor', 1 ),
                                         ( 'parScaleSizeFactor', 2 ),
                                         ( 'parStartColor', float3[0.02745098,0.01568628,0.003921569] ),
-                                        ( 'parStartRandomRadius', 1000 ),
+                                        ( 'parStartRandomRadius', 2 * (1000) ),
                                         ( 'parStartRotation', 0.25 ),
-                                        ( 'parStartSize', 3 * (200) ),
-                                        ( 'parStartSpeed', 20 ),
+                                        ( 'parStartSize', 2 * (200) ),
+                                        ( 'parStartSpeed', 2 * (20) ),
                                         ( 'parWindWeight', 4 ),
                                     ]
                                 ),
@@ -749,7 +749,7 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 40 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 3 * (2000) ),
+                                ( 'parEndSize', 2 * (2000) ),
                                 ( 'parFluidFriction', 1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -757,10 +757,10 @@ export fx_impact_Lance_Flammes_9 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.02745098,0.01568628,0.003921569] ),
-                                ( 'parStartRandomRadius', 1000 ),
+                                ( 'parStartRandomRadius', 2 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (750) ),
-                                ( 'parStartSpeed', 20 ),
+                                ( 'parStartSize', 2 * (750) ),
+                                ( 'parStartSpeed', 2 * (20) ),
                                 ( 'parWindWeight', 5 ),
                             ]
                         ),

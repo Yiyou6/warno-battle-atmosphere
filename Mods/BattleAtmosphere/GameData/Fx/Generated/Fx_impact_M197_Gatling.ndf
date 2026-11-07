@@ -27,10 +27,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (500) ),
-                                ( 'parInitialSize', 3 * (250) ),
+                                ( 'parFinalSize', 2 * (500) ),
+                                ( 'parInitialSize', 2 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[1429,471,38] + parPosition ),
+                                ( 'parPositionRelative', float3[2858,942,76] + parPosition ),
                             ]
                         ),
                     ]
@@ -45,10 +45,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (500) ),
-                                ( 'parInitialSize', 3 * (250) ),
+                                ( 'parFinalSize', 2 * (500) ),
+                                ( 'parInitialSize', 2 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[824,-181,38] + parPosition ),
+                                ( 'parPositionRelative', float3[1648,-362,76] + parPosition ),
                             ]
                         ),
                     ]
@@ -63,10 +63,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (500) ),
-                                ( 'parInitialSize', 3 * (250) ),
+                                ( 'parFinalSize', 2 * (500) ),
+                                ( 'parInitialSize', 2 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[559,420,38] + parPosition ),
+                                ( 'parPositionRelative', float3[1118,840,76] + parPosition ),
                             ]
                         ),
                     ]
@@ -81,10 +81,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (500) ),
-                                ( 'parInitialSize', 3 * (250) ),
+                                ( 'parFinalSize', 2 * (500) ),
+                                ( 'parInitialSize', 2 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[112,446,38] + parPosition ),
+                                ( 'parPositionRelative', float3[224,892,76] + parPosition ),
                             ]
                         ),
                     ]
@@ -95,10 +95,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 3 * (500) ),
-                        ( 'parInitialSize', 3 * (250) ),
+                        ( 'parFinalSize', 2 * (500) ),
+                        ( 'parInitialSize', 2 * (250) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[-925,482,38] + parPosition ),
+                        ( 'parPositionRelative', float3[-1850,964,76] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -111,10 +111,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (500) ),
-                                ( 'parInitialSize', 3 * (250) ),
+                                ( 'parFinalSize', 2 * (500) ),
+                                ( 'parInitialSize', 2 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-473,58,38] + parPosition ),
+                                ( 'parPositionRelative', float3[-946,116,76] + parPosition ),
                             ]
                         ),
                     ]
@@ -152,7 +152,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 3 * (250) ),
+                                ( 'parSize', 2 * (250) ),
                             ]
                         ),
                     ]
@@ -180,7 +180,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 3 * (250) ),
+                                ( 'parSize', 2 * (250) ),
                             ]
                         ),
                     ]
@@ -208,7 +208,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 3 * (250) ),
+                                ( 'parSize', 2 * (250) ),
                             ]
                         ),
                     ]
@@ -236,7 +236,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 3 * (250) ),
+                                ( 'parSize', 2 * (250) ),
                             ]
                         ),
                     ]
@@ -264,7 +264,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 3 * (250) ),
+                                ( 'parSize', 2 * (250) ),
                             ]
                         ),
                     ]
@@ -285,10 +285,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
                         ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                        ( 'parDustSize', 3 * (350) ),
-                        ( 'parMudSize', 3 * (200) ),
+                        ( 'parDustSize', 2 * (350) ),
+                        ( 'parMudSize', 2 * (200) ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parRandomPosition', 200 ),
+                        ( 'parRandomPosition', 2 * (200) ),
                     ]
                 ),
             ]
@@ -311,10 +311,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.7 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -339,10 +339,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -367,10 +367,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -395,10 +395,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -423,10 +423,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -451,10 +451,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.8 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -479,10 +479,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -503,10 +503,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
                         ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                        ( 'parDustSize', 3 * (350) ),
-                        ( 'parMudSize', 3 * (200) ),
+                        ( 'parDustSize', 2 * (350) ),
+                        ( 'parMudSize', 2 * (200) ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parRandomPosition', 200 ),
+                        ( 'parRandomPosition', 2 * (200) ),
                     ]
                 ),
             ]
@@ -529,10 +529,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -557,10 +557,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.5 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -585,10 +585,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 3 * (350) ),
-                                ( 'parMudSize', 3 * (200) ),
+                                ( 'parDustSize', 2 * (350) ),
+                                ( 'parMudSize', 2 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 200 ),
+                                ( 'parRandomPosition', 2 * (200) ),
                             ]
                         ),
                     ]
@@ -614,7 +614,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 3 * (2000) ),
+                                ( 'parEndSize', 2 * (2000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -622,10 +622,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parStartRandomRadius', 1250 ),
+                                ( 'parStartRandomRadius', 2 * (1250) ),
                                 ( 'parStartRotation', 0.2 ),
-                                ( 'parStartSize', 3 * (50) ),
-                                ( 'parStartSpeed', 10 ),
+                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSpeed', 2 * (10) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -652,7 +652,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 15 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 3 * (1250) ),
+                                ( 'parEndSize', 2 * (1250) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -660,10 +660,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parStartRandomRadius', 800 ),
+                                ( 'parStartRandomRadius', 2 * (800) ),
                                 ( 'parStartRotation', 0.15 ),
-                                ( 'parStartSize', 3 * (50) ),
-                                ( 'parStartSpeed', 10 ),
+                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSpeed', 2 * (10) ),
                                 ( 'parWindWeight', 5 ),
                             ]
                         ),
@@ -686,7 +686,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 15 ),
                         ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parEndSize', 3 * (1000) ),
+                        ( 'parEndSize', 2 * (1000) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -694,10 +694,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parStartRandomRadius', 1000 ),
+                        ( 'parStartRandomRadius', 2 * (1000) ),
                         ( 'parStartRotation', 0.3 ),
-                        ( 'parStartSize', 3 * (50) ),
-                        ( 'parStartSpeed', 10 ),
+                        ( 'parStartSize', 2 * (50) ),
+                        ( 'parStartSpeed', 2 * (10) ),
                         ( 'parWindWeight', 6 ),
                     ]
                 ),
@@ -722,7 +722,7 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 3 * (1500) ),
+                                ( 'parEndSize', 2 * (1500) ),
                                 ( 'parFluidFriction', 1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 3 ),
@@ -730,10 +730,10 @@ export Fx_impact_M197_Gatling is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parStartRandomRadius', 1250 ),
+                                ( 'parStartRandomRadius', 2 * (1250) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 3 * (50) ),
-                                ( 'parStartSpeed', 10 ),
+                                ( 'parStartSize', 2 * (50) ),
+                                ( 'parStartSpeed', 2 * (10) ),
                                 ( 'parWindWeight', 8 ),
                             ]
                         ),

@@ -26,8 +26,8 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7000002 ),
-                        ( 'parFinalSize', 3 * (6300) ),
-                        ( 'parInitialSize', 3 * (10000) ),
+                        ( 'parFinalSize', 2 * (6300) ),
+                        ( 'parInitialSize', 2 * (10000) ),
                         ( 'parIntensity', 5000 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -39,7 +39,7 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
                         ( 'parCount', 8 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 3 * (900) ),
+                        ( 'parSize', 2 * (900) ),
                     ]
                 ),
                 TActionCall
@@ -48,8 +48,8 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 3 * (19400) ),
-                        ( 'parInitialSize', 3 * (2200) ),
+                        ( 'parFinalSize', 2 * (19400) ),
+                        ( 'parInitialSize', 2 * (2200) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -69,7 +69,7 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 3 * (5300) ),
+                        ( 'parFinalSize', 2 * (5300) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 0 ),
@@ -109,12 +109,12 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                                 ( 'parColor', float3[0.9843138,0.9843138,0.9843138] ),
                                 ( 'parColormultiplierMul', 1 ),
                                 ( 'parCount', 40 ),
-                                ( 'parEndSize', 3 * (800) ),
+                                ( 'parEndSize', 2 * (800) ),
                                 ( 'parFluidFriction', 6 ),
                                 ( 'parLifetimeMul', 3 ),
                                 ( 'parRotationMul', 6 ),
-                                ( 'parSpeed', 30000 ),
-                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parSpeed', 2 * (30000) ),
+                                ( 'parStartSize', 2 * (500) ),
                                 ( 'parTopGrowFactor', 6 ),
                             ]
                         ),
@@ -135,18 +135,18 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.9176471,0.9254903,0.9411765] ),
                         ( 'parCount', 7 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 3 * (6600) ),
+                        ( 'parParticleSize', 2 * (6600) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 5.299997 ),
                         ( 'parSpawnerDuration', 0.45 ),
-                        ( 'parSpawnerSpeed', 2400 ),
+                        ( 'parSpawnerSpeed', 2 * (2400) ),
                     ]
                 ),
                 TActionCall
@@ -161,7 +161,7 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parOpacity', 1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 3 * (186.0465) ),
+                        ( 'parSizeLBU', 2 * (186.0465) ),
                     ]
                 ),
                 TSequentialAction
@@ -175,19 +175,19 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.9960785,0.9764706,0.9764706] ),
-                                ( 'parEndSize', 3 * (2252) ),
+                                ( 'parEndSize', 2 * (2252) ),
                                 ( 'parFluidFriction', 1.000001 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4.499999 ),
                                 ( 'parOpacity', 0.85 ),
-                                ( 'parRandomInitPosRadius', 16 ),
+                                ( 'parRandomInitPosRadius', 2 * (16) ),
                                 ( 'parRotationFactor', 3 ),
                                 ( 'parScaleSizeFactor', 2.5 ),
                                 ( 'parStartColor', float3[0.1647059,0.1058824,0.0627451] ),
                                 ( 'parStartHeight', 0 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 3 * (949) ),
-                                ( 'parStartSpeed3D', float3[6000,6000,2000] ),
+                                ( 'parStartSize', 2 * (949) ),
+                                ( 'parStartSpeed3D', 2 * (float3[6000,6000,2000]) ),
                                 ( 'parWindWeight', 1 ),
                             ]
                         ),
@@ -213,9 +213,9 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parDuration', 4 ),
                         ( 'parLuminosite', 2 ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parSize', 3 * (10000) ),
+                        ( 'parSize', 2 * (10000) ),
                         ( 'parSpeed', 0 ),
-                        ( 'parStartPosition', float3[0,0,-800] + parPosition ),
+                        ( 'parStartPosition', 2 * (float3[0,0,-800] + parPosition) ),
                     ]
                 ),
             ]
@@ -242,7 +242,7 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                                 ( 'parGravity', 750 ),
                                 ( 'parGrowFactor', 10 ),
                                 ( 'parLifetime', 2.75 ),
-                                ( 'parSize', 3 * (100) ),
+                                ( 'parSize', 2 * (100) ),
                                 ( 'parSpeed', 1000 ),
                             ]
                         ),
@@ -272,7 +272,7 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                                 ( 'parGravity', 750 ),
                                 ( 'parGrowFactor', 10 ),
                                 ( 'parLifetime', 2.75 ),
-                                ( 'parSize', 3 * (100) ),
+                                ( 'parSize', 2 * (100) ),
                                 ( 'parSpeed', 600 ),
                             ]
                         ),
@@ -297,11 +297,11 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parGravity', -500 ),
                         ( 'parLifetime', 0.6 ),
                         ( 'parNarrowness', 0.1 ),
-                        ( 'parPositionRadius', 200 ),
+                        ( 'parPositionRadius', 2 * (200) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 3 * (15) ),
-                        ( 'parSpeedMax', 8000 ),
-                        ( 'parSpeedMin', 8000 ),
+                        ( 'parSize', 2 * (15) ),
+                        ( 'parSpeedMax', 2 * (8000) ),
+                        ( 'parSpeedMin', 2 * (8000) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                     ]
@@ -318,11 +318,11 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                         ( 'parGravity', -1000 ),
                         ( 'parLifetime', 1.45 ),
                         ( 'parNarrowness', 0 ),
-                        ( 'parPositionRadius', 680 ),
+                        ( 'parPositionRadius', 2 * (680) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 3 * (11) ),
-                        ( 'parSpeedMax', 2800 ),
-                        ( 'parSpeedMin', 300 ),
+                        ( 'parSize', 2 * (11) ),
+                        ( 'parSpeedMax', 2 * (2800) ),
+                        ( 'parSpeedMin', 2 * (300) ),
                         ( 'parStretch', 0.5 ),
                         ( 'parWindFactor', 0 ),
                     ]
@@ -348,7 +348,7 @@ export fx_impact_eau_he_trestresgros is SimultaneousActionDeclaration
                                 ( 'parCount', 80 ),
                                 ( 'parFragDuration', 2 ),
                                 ( 'parRadius', 1000 ),
-                                ( 'parSize', 3 * (150) ),
+                                ( 'parSize', 2 * (150) ),
                                 ( 'parStartTime', 0.5 ),
                                 ( 'parStopTime', 1 ),
                             ]

@@ -25,8 +25,8 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 3 * (8000) ),
-                        ( 'parInitialSize', 3 * (100) ),
+                        ( 'parFinalSize', 2 * (8000) ),
+                        ( 'parInitialSize', 2 * (100) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -39,7 +39,7 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parCount', 12 ),
                         ( 'parDuration', 1.1 ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parSize', 3 * (1800) ),
+                        ( 'parSize', 2 * (1800) ),
                     ]
                 ),
                 TActionCall
@@ -50,7 +50,7 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 300 ),
                         ( 'parFadeInTime', 2 ),
                         ( 'parLifetime', 30 ),
-                        ( 'parSize', 3 * (parRadiusPhysical) ),
+                        ( 'parSize', 2 * (parRadiusPhysical) ),
                     ]
                 ),
                 TActionCall
@@ -60,10 +60,10 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 3 ),
                         ( 'parCountDebritsWithFire', 2 ),
                         ( 'parCountDebritsWithSmoke', 2 ),
-                        ( 'parDebritSizeMul', 3 * (0.35) ),
+                        ( 'parDebritSizeMul', 2 * (0.35) ),
                         ( 'parDispersion', 0 ),
-                        ( 'parFireParticleEndSize', 3 * (350) ),
-                        ( 'parFireParticleStartSize', 3 * (75) ),
+                        ( 'parFireParticleEndSize', 2 * (350) ),
+                        ( 'parFireParticleStartSize', 2 * (75) ),
                         ( 'parLifetime', 2 ),
                         ( 'parMeshType', 1 ),
                         ( 'parMinSpeedRatio', 0.75 ),
@@ -71,9 +71,9 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.8000001,0.6980392,0.5019608] ),
                         ( 'parSmokeColorMultiplier', 0.1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 3 * (500) ),
-                        ( 'parSmokeParticleStartSize', 3 * (150) ),
-                        ( 'parSpeed', float3[4000,4000,2000] ),
+                        ( 'parSmokeParticleEndSize', 2 * (500) ),
+                        ( 'parSmokeParticleStartSize', 2 * (150) ),
+                        ( 'parSpeed', 2 * (float3[4000,4000,2000]) ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
                 ),
@@ -83,8 +83,8 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 3 * (8000) ),
-                        ( 'parInitialSize', 3 * (100) ),
+                        ( 'parFinalSize', 2 * (8000) ),
+                        ( 'parInitialSize', 2 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -98,11 +98,11 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parFlatness', 0.8 ),
                         ( 'parGravity', 1 ),
-                        ( 'parInitSpeed', 0.75 ),
+                        ( 'parInitSpeed', 2 * (0.75) ),
                         ( 'parNarrowness', 0.3 ),
                         ( 'parOpacity', 0.9 ),
                         ( 'parRadius', 0 ),
-                        ( 'parSize', 3 * (1500) ),
+                        ( 'parSize', 2 * (1500) ),
                     ]
                 ),
                 TActionCall
@@ -112,7 +112,7 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 30 ),
                         ( 'parEndColor', float3[0,0,0] ),
-                        ( 'parEndSize', 3 * (2000) ),
+                        ( 'parEndSize', 2 * (2000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -123,8 +123,8 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 3 * (1000) ),
-                        ( 'parStartSpeed3D', float3[2000,2000,0] ),
+                        ( 'parStartSize', 2 * (1000) ),
+                        ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),
@@ -142,8 +142,8 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 3 * (5000) ),
-                        ( 'parInitialSize', 3 * (200) ),
+                        ( 'parFinalSize', 2 * (5000) ),
+                        ( 'parInitialSize', 2 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -164,13 +164,13 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parColor', float3[1,0.9019608,0.5019608] ),
                         ( 'parCount', 10 ),
-                        ( 'parDeltaPositionMobileDirection', 500 ),
-                        ( 'parDispersion', 700 ),
+                        ( 'parDeltaPositionMobileDirection', 2 * (500) ),
+                        ( 'parDispersion', 2 * (700) ),
                         ( 'parDuration', 1.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 1 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 3 * (1300) ),
+                        ( 'parSize', 2 * (1300) ),
                         ( 'parDeltaPositionAdditif', parPosition ),
                     ]
                 ),
@@ -183,9 +183,9 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 3 * (3000) ),
+                        ( 'parSize', 2 * (3000) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,100] + parPosition ),
+                        ( 'Position', float3[0,0,200] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -197,9 +197,9 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parSize', 3 * (3000) ),
+                        ( 'parSize', 2 * (3000) ),
                         ( 'parSpeed', float3[0,0,700] ),
-                        ( 'Position', float3[0,0,400] + parPosition ),
+                        ( 'Position', float3[0,0,800] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -214,11 +214,11 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                         ( 'parGravity', -500 ),
                         ( 'parLifetime', 0.7 ),
                         ( 'parNarrowness', 0.3 ),
-                        ( 'parPositionRadius', 100 ),
+                        ( 'parPositionRadius', 2 * (100) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 3 * (10) ),
-                        ( 'parSpeedMax', 3000 ),
-                        ( 'parSpeedMin', 1300 ),
+                        ( 'parSize', 2 * (10) ),
+                        ( 'parSpeedMax', 2 * (3000) ),
+                        ( 'parSpeedMin', 2 * (1300) ),
                         ( 'parStretch', 4 ),
                         ( 'parWindFactor', 1 ),
                     ]
@@ -238,18 +238,18 @@ export fx_impact_bombe_vehicule is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[800,800,1000]) ),
+                        ( 'parCloudsize', 2 * (float3[800,800,1000]) ),
                         ( 'parColor', float3[0.4352942,0.3137255,0.2117647] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parParticleSize', 3 * (1000) ),
+                        ( 'parParticleSize', 2 * (1000) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 3 ),
                         ( 'parSpawnerDuration', 0.7 ),
-                        ( 'parSpawnerSpeed', 2400 ),
+                        ( 'parSpawnerSpeed', 2 * (2400) ),
                     ]
                 ),
             ]

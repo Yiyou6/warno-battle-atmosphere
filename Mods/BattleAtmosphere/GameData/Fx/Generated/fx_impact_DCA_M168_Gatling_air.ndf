@@ -25,8 +25,8 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 3 * (2600) ),
-                        ( 'parInitialSize', 3 * (25) ),
+                        ( 'parFinalSize', 2 * (2600) ),
+                        ( 'parInitialSize', 2 * (25) ),
                         ( 'parIntensity', 120 ),
                         ( 'parPositionRelative', float3[-3,-1,0] ),
                     ]
@@ -59,10 +59,10 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (1500) ),
-                                ( 'parInitialSize', 3 * (20) ),
+                                ( 'parFinalSize', 2 * (1500) ),
+                                ( 'parInitialSize', 2 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[838,427,1054] + parPosition ),
+                                ( 'parPositionRelative', float3[1676,854,2108] + parPosition ),
                             ]
                         ),
                     ]
@@ -73,10 +73,10 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 3 * (1500) ),
-                        ( 'parInitialSize', 3 * (20) ),
+                        ( 'parFinalSize', 2 * (1500) ),
+                        ( 'parInitialSize', 2 * (20) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[247,1169,593] + parPosition ),
+                        ( 'parPositionRelative', float3[494,2338,1186] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -89,10 +89,10 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (1500) ),
-                                ( 'parInitialSize', 3 * (20) ),
+                                ( 'parFinalSize', 2 * (1500) ),
+                                ( 'parInitialSize', 2 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-1265,-360,-133] + parPosition ),
+                                ( 'parPositionRelative', float3[-2530,-720,-266] + parPosition ),
                             ]
                         ),
                     ]
@@ -107,10 +107,10 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 3 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 3 * (1500) ),
-                                ( 'parInitialSize', 3 * (20) ),
+                                ( 'parFinalSize', 2 * (1500) ),
+                                ( 'parInitialSize', 2 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-338,-1205,1093] + parPosition ),
+                                ( 'parPositionRelative', float3[-676,-2410,2186] + parPosition ),
                             ]
                         ),
                     ]
@@ -138,9 +138,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 3 * (15000) ),
+                                ( 'parSize', 2 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[-337,-1196,1175] + parPosition ),
+                                ( 'Position', float3[-674,-2392,2350] + parPosition ),
                             ]
                         ),
                     ]
@@ -158,9 +158,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 3 * (15000) ),
+                                ( 'parSize', 2 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[-1243,-350,1] + parPosition ),
+                                ( 'Position', float3[-2486,-700,2] + parPosition ),
                             ]
                         ),
                     ]
@@ -174,9 +174,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                         ( 'parDuration', 0.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 3 * (15000) ),
+                        ( 'parSize', 2 * (15000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
-                        ( 'Position', float3[0,0,500] + parPosition ),
+                        ( 'Position', float3[0,0,1000] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -192,9 +192,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 3 * (15000) ),
+                                ( 'parSize', 2 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[829,327,838] + parPosition ),
+                                ( 'Position', float3[1658,654,1676] + parPosition ),
                             ]
                         ),
                     ]
@@ -213,9 +213,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                         ( 'parNarrowness', 5 ),
                         ( 'parPositionRadius', 0 ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 3 * (20) ),
-                        ( 'parSpeedMax', 10000 ),
-                        ( 'parSpeedMin', 9000 ),
+                        ( 'parSize', 2 * (20) ),
+                        ( 'parSpeedMax', 2 * (10000) ),
+                        ( 'parSpeedMin', 2 * (9000) ),
                         ( 'parStretch', 1 ),
                         ( 'parWindFactor', 1 ),
                     ]
@@ -238,9 +238,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                                 ( 'parNarrowness', 5 ),
                                 ( 'parPositionRadius', 0 ),
                                 ( 'parPositionRelative', parPosition ),
-                                ( 'parSize', 3 * (15) ),
-                                ( 'parSpeedMax', 10000 ),
-                                ( 'parSpeedMin', 9000 ),
+                                ( 'parSize', 2 * (15) ),
+                                ( 'parSpeedMax', 2 * (10000) ),
+                                ( 'parSpeedMin', 2 * (9000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                             ]
@@ -265,9 +265,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                                 ( 'parNarrowness', 5 ),
                                 ( 'parPositionRadius', 0 ),
                                 ( 'parPositionRelative', parPosition ),
-                                ( 'parSize', 3 * (25) ),
-                                ( 'parSpeedMax', 10000 ),
-                                ( 'parSpeedMin', 9000 ),
+                                ( 'parSize', 2 * (25) ),
+                                ( 'parSpeedMax', 2 * (10000) ),
+                                ( 'parSpeedMin', 2 * (9000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                             ]
@@ -292,9 +292,9 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                                 ( 'parNarrowness', 5 ),
                                 ( 'parPositionRadius', 0 ),
                                 ( 'parPositionRelative', parPosition ),
-                                ( 'parSize', 3 * (20) ),
-                                ( 'parSpeedMax', 10000 ),
-                                ( 'parSpeedMin', 9000 ),
+                                ( 'parSize', 2 * (20) ),
+                                ( 'parSpeedMax', 2 * (10000) ),
+                                ( 'parSpeedMin', 2 * (9000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                             ]
@@ -316,18 +316,18 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                        ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                         ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 0.2 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.55 ),
-                        ( 'parParticleSize', 3 * (600) ),
-                        ( 'parRandomPosition', 400 ),
+                        ( 'parParticleSize', 2 * (600) ),
+                        ( 'parRandomPosition', 2 * (400) ),
                         ( 'parSmokeDuration', 1.5 ),
                         ( 'parSpawnerDuration', 0.2 ),
-                        ( 'parSpawnerSpeed', 800 ),
+                        ( 'parSpawnerSpeed', 2 * (800) ),
                     ]
                 ),
             ]
@@ -348,18 +348,18 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.2 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parParticleSize', 3 * (600) ),
-                                ( 'parRandomPosition', 400 ),
+                                ( 'parParticleSize', 2 * (600) ),
+                                ( 'parRandomPosition', 2 * (400) ),
                                 ( 'parSmokeDuration', 1.5 ),
                                 ( 'parSpawnerDuration', 0.2 ),
-                                ( 'parSpawnerSpeed', 800 ),
+                                ( 'parSpawnerSpeed', 2 * (800) ),
                             ]
                         ),
                     ]
@@ -382,18 +382,18 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.4 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parParticleSize', 3 * (600) ),
-                                ( 'parRandomPosition', 400 ),
+                                ( 'parParticleSize', 2 * (600) ),
+                                ( 'parRandomPosition', 2 * (400) ),
                                 ( 'parSmokeDuration', 1.5 ),
                                 ( 'parSpawnerDuration', 0.2 ),
-                                ( 'parSpawnerSpeed', 800 ),
+                                ( 'parSpawnerSpeed', 2 * (800) ),
                             ]
                         ),
                     ]
@@ -416,18 +416,18 @@ export fx_impact_DCA_M168_Gatling_air is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                                ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                                 ( 'parColor', float3[0.09411766,0.09019608,0.09019608] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 0.6 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.55 ),
-                                ( 'parParticleSize', 3 * (600) ),
-                                ( 'parRandomPosition', 400 ),
+                                ( 'parParticleSize', 2 * (600) ),
+                                ( 'parRandomPosition', 2 * (400) ),
                                 ( 'parSmokeDuration', 1.5 ),
                                 ( 'parSpawnerDuration', 0.2 ),
-                                ( 'parSpawnerSpeed', 800 ),
+                                ( 'parSpawnerSpeed', 2 * (800) ),
                             ]
                         ),
                     ]

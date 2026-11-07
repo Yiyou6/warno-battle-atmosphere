@@ -24,8 +24,8 @@ export fx_impact_DCA_air_tres_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 3 * (2600) ),
-                        ( 'parInitialSize', 3 * (25) ),
+                        ( 'parFinalSize', 2 * (2600) ),
+                        ( 'parInitialSize', 2 * (25) ),
                         ( 'parIntensity', 120 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -34,18 +34,18 @@ export fx_impact_DCA_air_tres_petit is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 3 * (float3[200,200,200]) ),
+                        ( 'parCloudsize', 2 * (float3[200,200,200]) ),
                         ( 'parColor', float3[0.07843138,0.07843138,0.07843138] ),
                         ( 'parCount', 10 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parParticleSize', 3 * (300) ),
+                        ( 'parParticleSize', 2 * (300) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 0.5 ),
                         ( 'parSpawnerDuration', 0.4 ),
-                        ( 'parSpawnerSpeed', 800 ),
+                        ( 'parSpawnerSpeed', 2 * (800) ),
                     ]
                 ),
             ]
@@ -61,7 +61,7 @@ export fx_impact_DCA_air_tres_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.06 ),
-                        ( 'parFinalSize', 3 * (500) ),
+                        ( 'parFinalSize', 2 * (500) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
@@ -89,11 +89,11 @@ export fx_impact_DCA_air_tres_petit is SimultaneousActionDeclaration
                         ( 'parGravity', -1000 ),
                         ( 'parLifetime', 0.25 ),
                         ( 'parNarrowness', 0.25 ),
-                        ( 'parPositionRadius', 15 ),
+                        ( 'parPositionRadius', 2 * (15) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 3 * (5) ),
-                        ( 'parSpeedMax', 4500 ),
-                        ( 'parSpeedMin', 2000 ),
+                        ( 'parSize', 2 * (5) ),
+                        ( 'parSpeedMax', 2 * (4500) ),
+                        ( 'parSpeedMin', 2 * (2000) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                     ]
