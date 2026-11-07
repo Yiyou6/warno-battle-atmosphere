@@ -1,0 +1,751 @@
+{
+  "version": "smoke-preview.9",
+  "status": "installed; rendered-appearance-and-frame-rate-unverified",
+  "installed_at": "2026-11-07T05:00:12.980845+00:00",
+  "outputs": {
+    "Gen/Version.ndf": "0eb6e4508aed361b6170abc445ce2daa0a0d38397fe7bbbcb50413859c312304",
+    "Gen/NDF/VFX_Bank.ndfbin": "ba5c8042cd74ff3db950ab69e4ac9c858bac14c4fc5dc39f18342c5a229e7596",
+    "Gen/ResourceFile/Catalog.cat": "ae1e3e6e695770f5eef12540ff6d6515e21689dd147d979fd78ba57d71974b11",
+    "Gen/NDF/GFX/GameFx.ndfbin": "23b9810771eecb74e7ed3c018628574f58b7fa5bf6c2058b9f7daf967bb7f995",
+    "Gen/NDF/GFX/Skirmish.ndfbin": "ebcd62d82642744f1459de2e27f5e36a17cd4b5c264bccd3982cebbe3a2243d3",
+    "Gen/NDF/GFX/Unit.ndfbin": "cf4fb8900c959b975460a0d036b6443d87ff3d1574262dd46d7486f2692717f7",
+    "Gen/NDF/Localisation/BattleAtmosphere.ndfbin": "411c898aa3c81586c3ce31ccedbbfc87f4ee1152d7d635e4dde2b7ea2da7d2a8",
+    "Gen/NDF/ResourcePacks/BattleAtmosphere.ndfbin": "2afbc531497ad18f23458cffcd1d738dc783eb8ce3ee8b46f058db207a6b8101",
+    "Gen/TextureProxy/BattleAtmosphere/Mesh_All.ndfbin": "29669a5505c165095de444060d3ccb20539f968b470f4584cf75912485baea0e"
+  },
+  "config_sha256": "35035ea1eb201e5ab8ce071531661fee7bc60fcfa0bb459aa64f18d639e7bd3a",
+  "runtime_dll_sha256": "b6c8b85e2b2c5f8540220aaac655cd0d3125310476d24757ef2465d05efad2f8",
+  "ai_unchanged": true,
+  "gameplay_smoke_and_fire_unchanged": true,
+  "compiled_calls": {
+    "$/VFX_Bank/BA_BurningFuelSmoke": 64,
+    "$/VFX_Bank/BANK_FuelSmoke": 193
+  },
+  "compiled_scaling": {
+    "$/VFX_Bank/BA_BurningFuelSmoke": {
+      "relative_to": "smoke-preview.3",
+      "emission_multiplier": 0.4,
+      "lifetime_seconds": [
+        50,
+        90
+      ],
+      "max_spawned_particle_lifetime": 90
+    },
+    "$/VFX_Bank/FX_BANK_Binder_Fire": {
+      "relative_to": "smoke-preview.3",
+      "emission_multiplier": 0.4,
+      "lifetime_seconds": [
+        45,
+        80
+      ],
+      "max_spawned_particle_lifetime": 80
+    }
+  },
+  "plume": {
+    "smoke_layers_verified": 5,
+    "vehicle_layer_emission": {
+      "18": {
+        "range_per_second": [
+          1,
+          2
+        ],
+        "samples": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "22": {
+        "range_per_second": [
+          3,
+          5
+        ],
+        "samples": [
+          3,
+          3,
+          3,
+          4,
+          5,
+          5,
+          5
+        ]
+      },
+      "85": {
+        "range_per_second": [
+          8,
+          12
+        ],
+        "samples": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          12
+        ]
+      }
+    },
+    "size_growth": "decelerating square-root of elapsed seconds, varied bounds",
+    "compiled_curve_samples": [
+      {
+        "lifetime_seconds": [
+          10,
+          18
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1440.0,
+              1546.2019,
+              1629.8979,
+              1701.2486,
+              1874.8469,
+              2014.6427
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.1599999964237213,
+              0.1599999964237213,
+              0.06059172990162706,
+              0.008399644988511694,
+              0.00022908132112605065,
+              4.671061484756898e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1600.0,
+              1741.6025,
+              1853.1972,
+              1948.3314,
+              2179.7959,
+              2366.1903
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.15480868970092326,
+              0.13557257942656809,
+              0.048783523353506504,
+              0.006550409593603998,
+              0.00017806992425015752,
+              3.6286384502476805e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1760.0,
+              1937.0032,
+              2076.4965,
+              2195.4143,
+              2484.7448,
+              2717.7379
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.1277799108402369,
+              0.10997880231698907,
+              0.039384622991438176,
+              0.005538464258761453,
+              0.00015384659620816632,
+              3.1482509417247833e-16,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 899.9999798834324
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 899.9999798834324
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 899.9999798834324
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          12,
+          22
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1800.0,
+              1923.9022,
+              2021.5476,
+              2104.79,
+              2307.3214,
+              2470.4165
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.24475203352277253,
+              0.21637692625972477,
+              0.07876924598287635,
+              0.011076928517522906,
+              0.00030769319241633265,
+              6.296501883449567e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2000.0,
+              2159.3028,
+              2284.8469,
+              2391.8729,
+              2652.2703,
+              2861.9641
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.20799998772144335,
+              0.20799998772144335,
+              0.07876924598287635,
+              0.011076928517522906,
+              0.00030769319241633265,
+              6.296501883449567e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2200.0,
+              2394.7035,
+              2548.1462,
+              2678.9557,
+              2997.2193,
+              3253.5117
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.20799998772144335,
+              0.20799998772144335,
+              0.07876924598287635,
+              0.011076928517522906,
+              0.00030769319241633265,
+              6.296501883449567e-16,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 1199.9999731779099
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 1199.9999731779099
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 1199.9999731779099
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          45,
+          85
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3059.9999,
+              3290.1041,
+              3471.4455,
+              3626.0386,
+              4002.1683,
+              4305.0593
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3399.9999,
+              3692.0552,
+              3922.2193,
+              4118.4336,
+              4595.829,
+              4980.2676
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3739.9999,
+              4094.0063,
+              4372.9931,
+              4610.8286,
+              5189.4897,
+              5655.4759
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 2199.999950826168
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 2199.999950826168
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 2199.999950826168
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          50,
+          90
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3059.9999,
+              3290.1041,
+              3471.4455,
+              3626.0386,
+              4002.1683,
+              4305.0593
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3399.9999,
+              3692.0552,
+              3922.2193,
+              4118.4336,
+              4595.829,
+              4980.2676
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3739.9999,
+              4094.0063,
+              4372.9931,
+              4610.8286,
+              5189.4897,
+              5655.4759
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 2199.999950826168
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 2199.999950826168
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 2199.999950826168
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          45,
+          80
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3059.9999,
+              3360.9054,
+              3598.0441,
+              3800.2043,
+              4292.0662,
+              4688.1545
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999952316278,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3399.9999,
+              3762.8565,
+              4048.8179,
+              4292.5993,
+              4885.7269,
+              5363.3628
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999952316278,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3739.9999,
+              4164.8076,
+              4499.5917,
+              4784.9944,
+              5479.3876,
+              6038.5711
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999952316278,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 2199.999950826168
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 2199.999950826168
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 2199.999950826168
+          }
+        ]
+      }
+    ],
+    "optical_density_floor": 0.65,
+    "vehicle_burn_seconds": [
+      10,
+      1200
+    ],
+    "compiled_vehicle_cadaver_objects": 10,
+    "compiled_unique_vehicle_fuel_calls": 12,
+    "vehicle_fuel_source_duration_multiplier": 10,
+    "rendered_appearance": "unverified",
+    "motion": {
+      "vertical_initial_velocity_multiplier": 2,
+      "vertical_acceleration_multiplier": 2,
+      "vertical_wind_multiplier": 2,
+      "progressive_horizontal_wind": true,
+      "samples": [
+        {
+          "lifetime": 90,
+          "seed": 0,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.064,
+            0.064,
+            0.137316,
+            0.345725,
+            0.56,
+            0.56
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0.5,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.08,
+            0.08,
+            0.171645,
+            0.432156,
+            0.7,
+            0.7
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 1,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.096,
+            0.096,
+            0.205974,
+            0.518588,
+            0.84,
+            0.84
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.064,
+            0.064,
+            0.137316,
+            0.345725,
+            0.56,
+            0.56
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0.5,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.08,
+            0.08,
+            0.171645,
+            0.432156,
+            0.7,
+            0.7
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 1,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.096,
+            0.096,
+            0.205974,
+            0.518588,
+            0.84,
+            0.84
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.064,
+            0.064,
+            0.137316,
+            0.345725,
+            0.56,
+            0.56
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0.5,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.08,
+            0.08,
+            0.171645,
+            0.432156,
+            0.7,
+            0.7
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 1,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.096,
+            0.096,
+            0.205974,
+            0.518588,
+            0.84,
+            0.84
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.064,
+            0.064,
+            0.137316,
+            0.345725,
+            0.56,
+            0.56
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0.5,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.08,
+            0.08,
+            0.171645,
+            0.432156,
+            0.7,
+            0.7
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 1,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.096,
+            0.096,
+            0.205974,
+            0.518588,
+            0.84,
+            0.84
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.064,
+            0.064,
+            0.137316,
+            0.345725,
+            0.56,
+            0.56
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0.5,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.08,
+            0.08,
+            0.171645,
+            0.432156,
+            0.7,
+            0.7
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 1,
+          "horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60": [
+            0.096,
+            0.096,
+            0.205974,
+            0.518588,
+            0.84,
+            0.84
+          ]
+        }
+      ],
+      "explosion_unit_and_AI_binaries_unchanged": true,
+      "rendered_curvature": "unverified"
+    }
+  },
+  "explosions": {
+    "visual_scale": 2,
+    "source_files": 677,
+    "source_dimensions": 37459,
+    "unique_compiled_dimensions": 16541,
+    "affected_exports": 902,
+    "checked_exports": 1656,
+    "other_properties_unchanged": true,
+    "fire_source_durations_unchanged": true,
+    "rendered_appearance": "unverified"
+  },
+  "particle_budget": {
+    "status": "native-budget-and-AI-start-move-stop-passed; rendered-effect-unverified",
+    "dll_sha256": "b6c8b85e2b2c5f8540220aaac655cd0d3125310476d24757ef2465d05efad2f8",
+    "exe_sha256": "70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8",
+    "native_receipt_sha256": "b660cead0cd9e08aee273397d96aeec9c084fab655cd2bc0dc082d9332b24f83",
+    "ai_source_unchanged": true,
+    "particle_budget_multiplier": 8,
+    "max_particles": 640000,
+    "effective_limit": 512000,
+    "particle_counts_observed": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "historical_full_AI_suite_rerun": false
+  },
+  "backup": "archive/smoke-preview9-before.zip"
+}

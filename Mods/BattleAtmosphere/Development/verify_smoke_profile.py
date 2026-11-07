@@ -153,6 +153,8 @@ def main():
                              lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
     from verify_smoke_plume import verify_plume
     plume = verify_plume(bank, fx, exports, source)
+    from verify_smoke_motion import verify_motion
+    plume['motion'] = verify_motion(bank)
     from verify_explosion_scale import verify_explosions
     explosions = verify_explosions(fx)
     result = dict(version=VERSION, status='source-and-compiled-references-passed; visual-unverified',

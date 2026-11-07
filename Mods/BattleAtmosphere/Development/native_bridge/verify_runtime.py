@@ -63,7 +63,7 @@ def check_local_mod_identity(mod_root=None):
 
 def verify(include_installed=False):
     manifest = json.loads((RUNTIME / 'build-manifest.json').read_text())
-    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.1':
+    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.2':
         from verify_fx_budget import verify_fx_budget
         return verify_fx_budget(include_installed)
     assert sha(ROOT / 'WARNO.exe') == manifest['exe_sha256'], 'Game executable changed'

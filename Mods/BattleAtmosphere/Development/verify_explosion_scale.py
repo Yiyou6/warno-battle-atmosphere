@@ -14,7 +14,7 @@ from apply_smoke_profile import DEV,MOD,BACKUP
 from explosion_scale import SIZES,PERSISTENT
 
 def verify_explosions(current):
-    with zipfile.ZipFile(DEV/BACKUP) as z:
+    with zipfile.ZipFile(DEV/'archive/smoke-preview8-before.zip') as z:
         previous=Cndf(z.read('installed/Gen/NDF/GFX/GameFx.ndfbin'))
         assert json.loads(z.read('development/smoke-release.json'))['version']=='smoke-preview.7'
     old_import={i:p for p,i in paths(previous,'IMPR').items()}
