@@ -1,0 +1,1792 @@
+{
+  "version": "smoke-preview.13",
+  "status": "installed; rendered-appearance-and-frame-rate-unverified",
+  "installed_at": "2026-11-07T05:41:33.431228+00:00",
+  "outputs": {
+    "Gen/Version.ndf": "0eb6e4508aed361b6170abc445ce2daa0a0d38397fe7bbbcb50413859c312304",
+    "Gen/NDF/VFX_Bank.ndfbin": "b98233c2f1300fdd6e636e6e7dd796986fcb616e39a56c4158ec8efcc8b50d9a",
+    "Gen/ResourceFile/Catalog.cat": "ae1e3e6e695770f5eef12540ff6d6515e21689dd147d979fd78ba57d71974b11",
+    "Gen/NDF/GFX/GameFx.ndfbin": "23b9810771eecb74e7ed3c018628574f58b7fa5bf6c2058b9f7daf967bb7f995",
+    "Gen/NDF/GFX/Skirmish.ndfbin": "ebcd62d82642744f1459de2e27f5e36a17cd4b5c264bccd3982cebbe3a2243d3",
+    "Gen/NDF/GFX/Unit.ndfbin": "cf4fb8900c959b975460a0d036b6443d87ff3d1574262dd46d7486f2692717f7",
+    "Gen/NDF/Localisation/BattleAtmosphere.ndfbin": "411c898aa3c81586c3ce31ccedbbfc87f4ee1152d7d635e4dde2b7ea2da7d2a8",
+    "Gen/NDF/ResourcePacks/BattleAtmosphere.ndfbin": "2afbc531497ad18f23458cffcd1d738dc783eb8ce3ee8b46f058db207a6b8101",
+    "Gen/TextureProxy/BattleAtmosphere/Mesh_All.ndfbin": "29669a5505c165095de444060d3ccb20539f968b470f4584cf75912485baea0e"
+  },
+  "config_sha256": "35035ea1eb201e5ab8ce071531661fee7bc60fcfa0bb459aa64f18d639e7bd3a",
+  "runtime_dll_sha256": "b6c8b85e2b2c5f8540220aaac655cd0d3125310476d24757ef2465d05efad2f8",
+  "ai_unchanged": true,
+  "gameplay_smoke_and_fire_unchanged": true,
+  "compiled_calls": {
+    "$/VFX_Bank/BA_BurningFuelSmoke": 64,
+    "$/VFX_Bank/BANK_FuelSmoke": 193
+  },
+  "compiled_scaling": {
+    "$/VFX_Bank/BA_BurningFuelSmoke": {
+      "relative_to": "smoke-preview.12",
+      "emission_multiplier": 1,
+      "lifetime_seconds": [
+        50,
+        90
+      ],
+      "max_spawned_particle_lifetime": 90
+    },
+    "$/VFX_Bank/FX_BANK_Binder_Fire": {
+      "relative_to": "smoke-preview.12",
+      "emission_multiplier": 1,
+      "lifetime_seconds": [
+        45,
+        80
+      ],
+      "max_spawned_particle_lifetime": 80
+    }
+  },
+  "plume": {
+    "smoke_layers_verified": 5,
+    "vehicle_layer_emission": {
+      "18": {
+        "range_per_second": [
+          0.15,
+          0.3
+        ],
+        "samples": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ]
+      },
+      "22": {
+        "range_per_second": [
+          0.45,
+          0.75
+        ],
+        "samples": [
+          0.45000001788139343,
+          0.45000001788139343,
+          0.45000001788139343,
+          0.6000000238418579,
+          0.7500000298023224,
+          0.7500000298023224,
+          0.7500000298023224
+        ]
+      },
+      "85": {
+        "range_per_second": [
+          1.2,
+          1.8
+        ],
+        "samples": [
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.8000000715255737,
+          1.8000000715255737
+        ]
+      }
+    },
+    "size_growth": "smooth elapsed-time growth, capped at 4x unchanged birth size; varied growth time",
+    "compiled_curve_samples": [
+      {
+        "lifetime_seconds": [
+          10,
+          18
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1440.0,
+              5759.9998,
+              5759.9998,
+              5759.9998,
+              5759.9998,
+              5759.9998
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.1599999964237213,
+              0.10399999386072167,
+              0.039384622991438176,
+              0.005538464258761453,
+              0.00015384659620816632,
+              3.1482509417247833e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1600.0,
+              5751.115,
+              6399.9999,
+              6399.9999,
+              6399.9999,
+              6399.9999
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.15300907050914214,
+              0.10399999386072167,
+              0.039384622991438176,
+              0.005538464258761453,
+              0.00015384659620816632,
+              3.1482509417247833e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1760.0,
+              5369.3749,
+              7039.9999,
+              7039.9999,
+              7039.9999,
+              7039.9999
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.12734681667241696,
+              0.10399999386072167,
+              0.039384622991438176,
+              0.005538464258761453,
+              0.00015384659620816632,
+              3.1482509417247833e-16,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 899.9999798834324,
+            "maximum_size": 3599.9999195337296
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 899.9999798834324,
+            "maximum_size": 3599.9999195337296
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 899.9999798834324,
+            "maximum_size": 3599.9999195337296
+          }
+        ],
+        "neutral_gray_color_endpoints": [
+          [
+            0.2199999988079071,
+            0.2199999988079071,
+            0.2199999988079071
+          ],
+          [
+            0.3400000035762787,
+            0.3400000035762787,
+            0.3400000035762787
+          ]
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          12,
+          22
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1800.0,
+              7199.9998,
+              7199.9998,
+              7199.9998,
+              7199.9998,
+              7199.9998
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.23445436796126365,
+              0.20799998772144335,
+              0.07876924598287635,
+              0.011076928517522906,
+              0.00030769319241633265,
+              6.296501883449567e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2000.0,
+              7188.8938,
+              7999.9998,
+              7999.9998,
+              7999.9998,
+              7999.9998
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.20799998772144335,
+              0.20799998772144335,
+              0.07876924598287635,
+              0.011076928517522906,
+              0.00030769319241633265,
+              6.296501883449567e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2200.0,
+              6711.7186,
+              8799.9998,
+              8799.9998,
+              8799.9998,
+              8799.9998
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.20799998772144335,
+              0.20799998772144335,
+              0.07876924598287635,
+              0.011076928517522906,
+              0.00030769319241633265,
+              6.296501883449567e-16,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 1199.9999731779099,
+            "maximum_size": 4799.999892711639
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 1199.9999731779099,
+            "maximum_size": 4799.999892711639
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 1199.9999731779099,
+            "maximum_size": 4799.999892711639
+          }
+        ],
+        "neutral_gray_color_endpoints": [
+          [
+            0.2199999988079071,
+            0.2199999988079071,
+            0.2199999988079071
+          ],
+          [
+            0.3400000035762787,
+            0.3400000035762787,
+            0.3400000035762787
+          ]
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          45,
+          85
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3059.9999,
+              5439.9999,
+              9859.9997,
+              12239.9997,
+              12239.9997,
+              12239.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3399.9999,
+              5323.8682,
+              9346.5018,
+              12844.4442,
+              13599.9997,
+              13599.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3739.9999,
+              5345.2801,
+              8949.5884,
+              12735.6266,
+              14959.9997,
+              14959.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          }
+        ],
+        "neutral_gray_color_endpoints": [
+          [
+            0.2199999988079071,
+            0.2199999988079071,
+            0.2199999988079071
+          ],
+          [
+            0.3400000035762787,
+            0.3400000035762787,
+            0.3400000035762787
+          ]
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          50,
+          90
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3059.9999,
+              5439.9999,
+              9859.9997,
+              12239.9997,
+              12239.9997,
+              12239.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3399.9999,
+              5323.8682,
+              9346.5018,
+              12844.4442,
+              13599.9997,
+              13599.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3739.9999,
+              5345.2801,
+              8949.5884,
+              12735.6266,
+              14959.9997,
+              14959.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3900000011920923,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          }
+        ],
+        "neutral_gray_color_endpoints": [
+          [
+            0.2199999988079071,
+            0.2199999988079071,
+            0.2199999988079071
+          ],
+          [
+            0.3400000035762787,
+            0.3400000035762787,
+            0.3400000035762787
+          ]
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          45,
+          80
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3059.9999,
+              5439.9999,
+              9859.9997,
+              12239.9997,
+              12239.9997,
+              12239.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999952316278,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3399.9999,
+              5323.8682,
+              9346.5018,
+              12844.4442,
+              13599.9997,
+              13599.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999952316278,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              3739.9999,
+              5345.2801,
+              8949.5884,
+              12735.6266,
+              14959.9997,
+              14959.9997
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999952316278,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          }
+        ],
+        "typical_birth_sizes": [
+          {
+            "stock_initial_size": 150,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          },
+          {
+            "stock_initial_size": 225,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          },
+          {
+            "stock_initial_size": 300,
+            "visible_birth_size": 2199.999950826168,
+            "maximum_size": 8799.999803304672
+          }
+        ],
+        "neutral_gray_color_endpoints": [
+          [
+            0.2199999988079071,
+            0.2199999988079071,
+            0.2199999988079071
+          ],
+          [
+            0.3400000035762787,
+            0.3400000035762787,
+            0.3400000035762787
+          ]
+        ]
+      }
+    ],
+    "optical_density_floor": 0.65,
+    "vehicle_burn_seconds": [
+      10,
+      1200
+    ],
+    "compiled_vehicle_cadaver_objects": 10,
+    "compiled_unique_vehicle_fuel_calls": 12,
+    "vehicle_fuel_source_duration_multiplier": 10,
+    "rendered_appearance": "unverified",
+    "motion": {
+      "relative_to": "smoke-preview.12",
+      "vertical_initial_velocity_multiplier": 1,
+      "vertical_acceleration_multiplier": 1,
+      "vertical_wind_multiplier": 1,
+      "source_coherent_spatial_variation": true,
+      "per_frame_random_draws": false,
+      "age_varying_direction": true,
+      "turn_transition_seconds": 28,
+      "small_gust_period_seconds": 48.33,
+      "samples": [
+        {
+          "lifetime": 90,
+          "seed": 0,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 1.4879,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -0.0,
+            0.9859,
+            17.0042,
+            28.8606,
+            25.7639,
+            22.4688,
+            29.7327
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0.5,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 0.0,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.7259,
+            10.1382,
+            20.4653,
+            24.2587,
+            24.5213,
+            18.269
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 1,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -1.3479,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.6573,
+            11.5232,
+            20.1745,
+            17.8361,
+            15.4145,
+            20.8451
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -0.7888,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.7392,
+            -3.2063,
+            -8.3902,
+            -15.3655,
+            -19.9318,
+            -20.9214,
+            -12.4874
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0.5,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -2.192,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.192,
+            -2.63,
+            -10.4916,
+            -16.1167,
+            -12.6383,
+            -10.089,
+            -17.045
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 1,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -3.4583,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -1.8269,
+            -2.1388,
+            -5.6157,
+            -10.3814,
+            -13.5905,
+            -14.298,
+            -8.3986
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -13.4322,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -17.5815,
+            -16.8124,
+            -2.5008,
+            10.2496,
+            7.1954,
+            4.1658,
+            14.1427
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0.5,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.2244,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -14.2244,
+            -13.6565,
+            -6.2651,
+            3.8718,
+            9.8912,
+            11.3504,
+            3.2865
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 1,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.9276,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -11.928,
+            -11.389,
+            -1.6678,
+            6.8738,
+            4.811,
+            2.7799,
+            9.5357
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 17.5687,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            19.4456,
+            19.6808,
+            24.1808,
+            26.1248,
+            21.4676,
+            18.555,
+            25.1361
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 0.5,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 15.7718,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            15.7718,
+            15.9186,
+            16.8788,
+            18.5188,
+            20.2692,
+            20.5426,
+            14.9974
+          ]
+        },
+        {
+          "lifetime": 90,
+          "seed": 1,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 14.0907,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            13.2445,
+            13.4117,
+            16.6647,
+            18.1054,
+            14.6907,
+            12.6136,
+            17.3697
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 1.4879,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -0.0,
+            0.9859,
+            17.0042,
+            28.8606,
+            25.7639,
+            22.4688,
+            29.7327
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0.5,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 0.0,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.7259,
+            10.1382,
+            20.4653,
+            24.2587,
+            24.5213,
+            18.269
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 1,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -1.3479,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.6573,
+            11.5232,
+            20.1745,
+            17.8361,
+            15.4145,
+            20.8451
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -0.7888,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.7392,
+            -3.2063,
+            -8.3902,
+            -15.3655,
+            -19.9318,
+            -20.9214,
+            -12.4874
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0.5,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -2.192,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.192,
+            -2.63,
+            -10.4916,
+            -16.1167,
+            -12.6383,
+            -10.089,
+            -17.045
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 1,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -3.4583,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -1.8269,
+            -2.1388,
+            -5.6157,
+            -10.3814,
+            -13.5905,
+            -14.298,
+            -8.3986
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -13.4322,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -17.5815,
+            -16.8124,
+            -2.5008,
+            10.2496,
+            7.1954,
+            4.1658,
+            14.1427
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0.5,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.2244,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -14.2244,
+            -13.6565,
+            -6.2651,
+            3.8718,
+            9.8912,
+            11.3504,
+            3.2865
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 1,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.9276,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -11.928,
+            -11.389,
+            -1.6678,
+            6.8738,
+            4.811,
+            2.7799,
+            9.5357
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 17.5687,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            19.4456,
+            19.6808,
+            24.1808,
+            26.1248,
+            21.4676,
+            18.555,
+            25.1361
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 0.5,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 15.7718,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            15.7718,
+            15.9186,
+            16.8788,
+            18.5188,
+            20.2692,
+            20.5426,
+            14.9974
+          ]
+        },
+        {
+          "lifetime": 80,
+          "seed": 1,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 14.0907,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            13.2445,
+            13.4117,
+            16.6647,
+            18.1054,
+            14.6907,
+            12.6136,
+            17.3697
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 1.4879,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -0.0,
+            0.9859,
+            17.0042,
+            28.8606,
+            25.7639,
+            22.4688,
+            29.7327
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0.5,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 0.0,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.7259,
+            10.1382,
+            20.4653,
+            24.2587,
+            24.5213,
+            18.269
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 1,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -1.3479,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.6573,
+            11.5232,
+            20.1745,
+            17.8361,
+            15.4145,
+            20.8451
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -0.7888,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.7392,
+            -3.2063,
+            -8.3902,
+            -15.3655,
+            -19.9318,
+            -20.9214,
+            -12.4874
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0.5,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -2.192,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.192,
+            -2.63,
+            -10.4916,
+            -16.1167,
+            -12.6383,
+            -10.089,
+            -17.045
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 1,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -3.4583,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -1.8269,
+            -2.1388,
+            -5.6157,
+            -10.3814,
+            -13.5905,
+            -14.298,
+            -8.3986
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -13.4322,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -17.5815,
+            -16.8124,
+            -2.5008,
+            10.2496,
+            7.1954,
+            4.1658,
+            14.1427
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0.5,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.2244,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -14.2244,
+            -13.6565,
+            -6.2651,
+            3.8718,
+            9.8912,
+            11.3504,
+            3.2865
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 1,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.9276,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -11.928,
+            -11.389,
+            -1.6678,
+            6.8738,
+            4.811,
+            2.7799,
+            9.5357
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 17.5687,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            19.4456,
+            19.6808,
+            24.1808,
+            26.1248,
+            21.4676,
+            18.555,
+            25.1361
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 0.5,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 15.7718,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            15.7718,
+            15.9186,
+            16.8788,
+            18.5188,
+            20.2692,
+            20.5426,
+            14.9974
+          ]
+        },
+        {
+          "lifetime": 22,
+          "seed": 1,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 14.0907,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            13.2445,
+            13.4117,
+            16.6647,
+            18.1054,
+            14.6907,
+            12.6136,
+            17.3697
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 1.4879,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -0.0,
+            0.9859,
+            17.0042,
+            28.8606,
+            25.7639,
+            22.4688,
+            29.7327
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0.5,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 0.0,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.7259,
+            10.1382,
+            20.4653,
+            24.2587,
+            24.5213,
+            18.269
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 1,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -1.3479,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.6573,
+            11.5232,
+            20.1745,
+            17.8361,
+            15.4145,
+            20.8451
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -0.7888,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.7392,
+            -3.2063,
+            -8.3902,
+            -15.3655,
+            -19.9318,
+            -20.9214,
+            -12.4874
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0.5,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -2.192,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.192,
+            -2.63,
+            -10.4916,
+            -16.1167,
+            -12.6383,
+            -10.089,
+            -17.045
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 1,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -3.4583,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -1.8269,
+            -2.1388,
+            -5.6157,
+            -10.3814,
+            -13.5905,
+            -14.298,
+            -8.3986
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -13.4322,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -17.5815,
+            -16.8124,
+            -2.5008,
+            10.2496,
+            7.1954,
+            4.1658,
+            14.1427
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0.5,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.2244,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -14.2244,
+            -13.6565,
+            -6.2651,
+            3.8718,
+            9.8912,
+            11.3504,
+            3.2865
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 1,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.9276,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -11.928,
+            -11.389,
+            -1.6678,
+            6.8738,
+            4.811,
+            2.7799,
+            9.5357
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 17.5687,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            19.4456,
+            19.6808,
+            24.1808,
+            26.1248,
+            21.4676,
+            18.555,
+            25.1361
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 0.5,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 15.7718,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            15.7718,
+            15.9186,
+            16.8788,
+            18.5188,
+            20.2692,
+            20.5426,
+            14.9974
+          ]
+        },
+        {
+          "lifetime": 85,
+          "seed": 1,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 14.0907,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            13.2445,
+            13.4117,
+            16.6647,
+            18.1054,
+            14.6907,
+            12.6136,
+            17.3697
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 1.4879,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -0.0,
+            0.9859,
+            17.0042,
+            28.8606,
+            25.7639,
+            22.4688,
+            29.7327
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0.5,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 0.0,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.7259,
+            10.1382,
+            20.4653,
+            24.2587,
+            24.5213,
+            18.269
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 1,
+          "source_position": [
+            0,
+            0,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -1.3479,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            0.0,
+            0.6573,
+            11.5232,
+            20.1745,
+            17.8361,
+            15.4145,
+            20.8451
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -0.7888,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.7392,
+            -3.2063,
+            -8.3902,
+            -15.3655,
+            -19.9318,
+            -20.9214,
+            -12.4874
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0.5,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -2.192,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -2.192,
+            -2.63,
+            -10.4916,
+            -16.1167,
+            -12.6383,
+            -10.089,
+            -17.045
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 1,
+          "source_position": [
+            120000,
+            300000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -3.4583,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -1.8269,
+            -2.1388,
+            -5.6157,
+            -10.3814,
+            -13.5905,
+            -14.298,
+            -8.3986
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -13.4322,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -17.5815,
+            -16.8124,
+            -2.5008,
+            10.2496,
+            7.1954,
+            4.1658,
+            14.1427
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0.5,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.2244,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -14.2244,
+            -13.6565,
+            -6.2651,
+            3.8718,
+            9.8912,
+            11.3504,
+            3.2865
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 1,
+          "source_position": [
+            350000,
+            150000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": -14.9276,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            -11.928,
+            -11.389,
+            -1.6678,
+            6.8738,
+            4.811,
+            2.7799,
+            9.5357
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 17.5687,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            19.4456,
+            19.6808,
+            24.1808,
+            26.1248,
+            21.4676,
+            18.555,
+            25.1361
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 0.5,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 15.7718,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            15.7718,
+            15.9186,
+            16.8788,
+            18.5188,
+            20.2692,
+            20.5426,
+            14.9974
+          ]
+        },
+        {
+          "lifetime": 18,
+          "seed": 1,
+          "source_position": [
+            600000,
+            500000,
+            0
+          ],
+          "initial_heading_degrees_from_map_wind": 14.0907,
+          "wind_heading_degrees_at_seconds_0_2_10_20_28_35_60": [
+            13.2445,
+            13.4117,
+            16.6647,
+            18.1054,
+            14.6907,
+            12.6136,
+            17.3697
+          ]
+        }
+      ],
+      "explosion_unit_and_AI_binaries_unchanged": true,
+      "rendered_curvature": "unverified"
+    }
+  },
+  "explosions": {
+    "visual_scale": 2,
+    "source_files": 677,
+    "source_dimensions": 37459,
+    "unique_compiled_dimensions": 16541,
+    "affected_exports": 902,
+    "checked_exports": 1656,
+    "other_properties_unchanged": true,
+    "fire_source_durations_unchanged": true,
+    "rendered_appearance": "unverified"
+  },
+  "particle_budget": {
+    "status": "native-budget-and-AI-start-move-stop-passed; rendered-effect-unverified",
+    "dll_sha256": "b6c8b85e2b2c5f8540220aaac655cd0d3125310476d24757ef2465d05efad2f8",
+    "exe_sha256": "70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8",
+    "native_receipt_sha256": "b660cead0cd9e08aee273397d96aeec9c084fab655cd2bc0dc082d9332b24f83",
+    "ai_source_unchanged": true,
+    "particle_budget_multiplier": 8,
+    "max_particles": 640000,
+    "effective_limit": 512000,
+    "particle_counts_observed": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "historical_full_AI_suite_rerun": false,
+    "evidence_origin": "unchanged DLL; native receipt from smoke-preview.9 reused; not rerun in preview.13"
+  },
+  "backup": "archive/smoke-preview13-before.zip"
+}

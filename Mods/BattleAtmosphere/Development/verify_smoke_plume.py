@@ -1,4 +1,4 @@
-"""Inspect compiled bounded twofold smoke growth and preserve fire sources."""
+"""Inspect compiled bounded fourfold smoke growth and preserve fire sources."""
 from collections import defaultdict
 import hashlib
 import json
@@ -99,22 +99,22 @@ def verify_plume(bank, fx, exports, source):
             for age in (0,10,20,30,60,90):
                 fields['LifeRatio']=age/limits[1]
                 size=evaluate_scalar(bank,evolvers['Size'],fields)
-                assert 0 < size <= 9000
+                assert 0 < size <= 14961
                 fields['Size']=size; dilution=evaluate_scalar(bank,opacity,fields)
                 assert 0.649999 <= dilution <= 1
                 sizes.append(round(size,4))
             assert 810 <= sizes[0] <= 3741
             assert all(a <= b + 1e-4 for a,b in zip(sizes,sizes[1:])),sizes
-            assert math.isclose(sizes[-1],2*sizes[0],abs_tol=1e-3),sizes
-            assert all(s <= 2*sizes[0]+1e-3 for s in sizes),sizes
+            assert math.isclose(sizes[-1],4*sizes[0],abs_tol=1e-3),sizes
+            assert all(s <= 4*sizes[0]+1e-3 for s in sizes),sizes
             # Dense sampling checks no overshoot or early abrupt inflation;
             # the cap must still hold beyond the longest supported lifetime.
             previous_size=sizes[0]
             for age in range(121):
                 fields['LifeRatio']=age/limits[1]
                 s=evaluate_scalar(bank,evolvers['Size'],fields)
-                assert previous_size-1e-4 <= s <= 2*sizes[0]+1e-3,(age,s)
-                if age==1:assert s/sizes[0] < 1.03,(age,s)
+                assert previous_size-1e-4 <= s <= 4*sizes[0]+1e-3,(age,s)
+                if age==1:assert s/sizes[0] < 1.09,(age,s)
                 previous_size=s
             alphas = []
             for ratio in (0,0.025,0.45,0.65,0.85,0.95,0.97,1):
@@ -138,7 +138,7 @@ def verify_plume(bank, fx, exports, source):
             assert evaluate_scalar(bank,evolvers['Opacity'],fields) > 0.1
             fields['LifeRatio']=90/limits[1]
             maximum_size=evaluate_scalar(bank,evolvers['Size'],fields)
-            assert math.isclose(maximum_size,2*birth_size,rel_tol=1e-6)
+            assert math.isclose(maximum_size,4*birth_size,rel_tol=1e-6)
             typical.append(dict(stock_initial_size=initial,visible_birth_size=birth_size,maximum_size=maximum_size))
         samples.append(dict(lifetime_seconds=limits,curves=rows,typical_birth_sizes=typical,
                             neutral_gray_color_endpoints=colors))
@@ -146,7 +146,7 @@ def verify_plume(bank, fx, exports, source):
     vehicles=[o['properties'] for o in unit.objects if o['class']=='TCadaverModuleDescriptor' and o['properties'].get('CadaverDuration')==3000]
     assert vehicles and all(p['CadaverFireDurationMin']==10 and p['CadaverFireDurationMax']==1200 for p in vehicles)
     return dict(smoke_layers_verified=5,vehicle_layer_emission=emission,
-                size_growth='smooth elapsed-time growth, capped at 2x unchanged birth size; varied growth time',
+                size_growth='smooth elapsed-time growth, capped at 4x unchanged birth size; varied growth time',
                 compiled_curve_samples=samples,optical_density_floor=0.65,
                 vehicle_burn_seconds=[10,1200],compiled_vehicle_cadaver_objects=len(vehicles),
                 compiled_unique_vehicle_fuel_calls=receipt['plume']['compiled_unique_vehicle_fuel_calls'],

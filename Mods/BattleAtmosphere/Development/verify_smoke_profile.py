@@ -149,7 +149,7 @@ def main():
         previous = smoke_spawner(prior, prior_exports[name], name != NEW)
         assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == limits[1]
         verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'], factor=0.6)
-        scaling[name] = dict(relative_to='smoke-preview.11', emission_multiplier=0.6,
+        scaling[name] = dict(relative_to='smoke-preview.12', emission_multiplier=1,
                              lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
     from verify_smoke_plume import verify_plume
     plume = verify_plume(bank, fx, exports, source)
@@ -161,7 +161,7 @@ def main():
                   compiled_calls=calls, compiled_scaling=scaling, plume=plume, explosions=explosions, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: 60% smoke emission, bounded 2x growth and gray; 64 burning/193 unchanged shared placements')
+    print('PASS: unchanged smoke emission, bounded 4x growth and gray; 64 burning/193 unchanged shared placements')
     print('PASS: five layered smoke banks; %s vehicle cadaver descriptors at 10-1200s; %s vehicle fuel calls retain 10x source duration' %
           (plume['compiled_vehicle_cadaver_objects'], plume['compiled_unique_vehicle_fuel_calls']))
 

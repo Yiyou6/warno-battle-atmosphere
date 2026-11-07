@@ -1,4 +1,4 @@
-"""Compare compiled preview.12 motion directly with installed preview.11."""
+"""Check compiled coherent wind variation against installed preview.12."""
 import math,zipfile
 from verify_smoke_profile import Cndf,paths,reachable,MOD,DEV
 
@@ -12,6 +12,11 @@ def evaluate(c,root,fields):
         return fn(a,b)
     def intrinsic(name,v):
         if name=='GenFloat3':return list(v)
+        if name in ('getX','getY','getZ'):return v[0][{'getX':0,'getY':1,'getZ':2}[name]]
+        if name=='sin':return math.sin(v[0])
+        if name=='cross':
+            a,b=v
+            return [a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]
         if name=='RandomUnit':return fields['random']
         f={'IntrinsicOperatorAdd':lambda a,b:a+b,'IntrinsicOperatorSub':lambda a,b:a-b,
            'IntrinsicOperatorMul':lambda a,b:a*b,'IntrinsicOperatorDiv':lambda a,b:a/b,
@@ -29,6 +34,8 @@ def evaluate(c,root,fields):
         if cl=='TVariable':
             assert p['PropertyName']=='ActiveWindMovementForFx';return fields['weather']
         if cl=='TParticleAccessor':return fields[imports[p['Field']['import_index']]]
+        if cl=='TSpawnerAccessor':
+            assert p['Field']=='Position';return fields['spawner_position']
         if cl=='TAparametricFunction':
             assert p['Function']=='UnitRand';return fields['random']
         if cl.startswith('TIntrinsicCall_'):
@@ -57,47 +64,72 @@ def layers(c):
     assert len(result)==5
     return result
 
+def seed_initializers(c):
+    exports=paths(c,'EXPR');imports={v:k for k,v in paths(c,'IMPR').items()};result={}
+    for name in ('BA_BurningFuelSmoke','FX_BANK_Binder_Fire','BANK_DarkFireCompo'):
+        for o in reachable(c,exports['$/VFX_Bank/'+name]):
+            if o['class']!='TParticleEvolver_SpraySpawner':continue
+            p=o['properties'];maximum=c.objects[p['MaxSpawnedParticleLifetime']['ref']]['properties'].get('Value')
+            if maximum not in (18,22,80,85,90):continue
+            initializers=[x['properties']['InitFunction'] for x in reachable(c,p['Spawner']['ref'])
+                          if x['class']=='TParticleInitialiserWithEvaluable' and
+                          imports.get(x['properties']['Field'].get('import_index'))=='$/Particle/CustomFloat3_4']
+            assert len(initializers)==1,maximum
+            result[maximum]=initializers[0]
+    assert len(result)==5
+    return result
+
 def verify_motion(bank):
-    with zipfile.ZipFile(DEV/'archive/smoke-preview12-before.zip') as z:
+    with zipfile.ZipFile(DEV/'archive/smoke-preview13-before.zip') as z:
         previous=Cndf(z.read('installed/Gen/NDF/VFX_Bank.ndfbin'))
         # Explosion size, unit fire timers and AI output must remain exact.
         for name in ('Gen/NDF/GFX/GameFx.ndfbin','Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/Skirmish.ndfbin'):
             assert (MOD/name).read_bytes()==z.read('installed/'+name),name
-    old=layers(previous);new=layers(bank);rows=[]
+    old=layers(previous);new=layers(bank);initializers=seed_initializers(bank);rows=[]
+    weather=[900,300,0];w2=weather[0]**2+weather[1]**2
+    def heading(v):
+        along=(v[0]*weather[0]+v[1]*weather[1])/w2
+        across=(v[0]*weather[1]-v[1]*weather[0])/w2
+        assert along>0,'Smoke reversed into the wind'
+        return math.degrees(math.atan2(across,along))
     for life,(physics,speed) in new.items():
         prior,prior_speed=old[life]
-        for seed in (0,.5,1):
-            fields=dict(random=seed,weather=[900,300,0],CustomFloat_5=seed,CustomFloat3_2=[0,0,0],
-                        CreationDate=0,DeathDate=life,LifeRatio=0)
-            a=evaluate(previous,prior_speed,fields);b=evaluate(bank,speed,fields)
-            assert math.isclose(b[2],1.5*a[2],rel_tol=1e-6),(a,b)
-            # Preserve random spread, increase the horizontal weather weight
-            # from 0.30 to 0.54 while vertical motion increases by only 1.5x.
-            for axis in (0,1):
-                assert math.isclose(b[axis]-a[axis],0.24*fields['weather'][axis],rel_tol=1e-6),(a,b)
-            previous_angle=math.degrees(math.atan2(math.hypot(*a[:2]),a[2]))
-            initial_angle=math.degrees(math.atan2(math.hypot(*b[:2]),b[2]))
-            assert previous_angle+2 < initial_angle < previous_angle+10,(previous_angle,initial_angle)
-            winds=[]
-            for age in (0,2,10,20,35,60):
-                fields['LifeRatio']=age/life
-                for prop in ('AccelerationField','WindField'):
-                    a=evaluate(previous,prior[prop],fields);b=evaluate(bank,physics[prop],fields)
-                    assert math.isclose(b[2],1.5*a[2],rel_tol=2e-6,abs_tol=1e-6),(prop,a,b)
-                    if prop=='WindField':
-                        for axis in (0,1):
-                            assert math.isclose(b[axis],1.8*a[axis],rel_tol=2e-6),(prop,a,b)
-                winds.append(round(b[0]/900,6))
-            for age,actual in zip((0,2,10,20,35,60),winds):
-                t=min(1,age/35)
-                expected=(0.54+0.72*t*t*(3-2*t))*(0.8+0.4*seed)
-                assert math.isclose(actual,expected,abs_tol=1e-6),(age,actual,expected)
-            assert all(a<=b for a,b in zip(winds,winds[1:])) and winds[-1]>winds[0]*2
-            rows.append(dict(lifetime=life,seed=seed,initial_angle_degrees_at_test_wind=round(initial_angle,3),
-                             previous_initial_angle_degrees_at_test_wind=round(previous_angle,3),
-                             horizontal_wind_coefficients_at_seconds_0_2_10_20_35_60=winds))
-    return dict(relative_to='smoke-preview.11',vertical_initial_velocity_multiplier=1.5,vertical_acceleration_multiplier=1.5,
-                vertical_wind_multiplier=1.5,horizontal_wind_multiplier=1.8,
-                progressive_horizontal_wind=True,birth_horizontal_wind_coefficient=0.54,
-                lower_upper_horizontal_wind_coefficients=[0.54,1.26],samples=rows,
+        assert not any(o['class']=='TAparametricFunction' for o in reachable(bank,physics['WindField']['ref'])), 'Per-frame random draw'
+        births=[];turns=[]
+        for position in ([0,0,0],[120000,300000,0],[350000,150000,0],[600000,500000,0]):
+            for seed in (0,.5,1):
+                fields=dict(random=seed,weather=weather,spawner_position=position,CustomFloat_5=seed,CustomFloat3_2=[0,0,0],
+                            CreationDate=0,DeathDate=life,LifeRatio=0)
+                stored=evaluate(bank,initializers[life],fields)
+                assert all(-1.000001<=v<=1.000001 for v in stored[:2]) and 0<=stored[2]<=6.283186
+                assert stored==evaluate(bank,initializers[life],fields)
+                near=dict(fields,spawner_position=[position[0]+5,position[1]+5,position[2]])
+                neighbor=evaluate(bank,initializers[life],near)
+                assert max(abs(a-b) for a,b in zip(stored[:2],neighbor[:2]))<0.001,'Nearby fire emitters diverged'
+                fields['CustomFloat3_4']=stored
+                a=evaluate(previous,prior_speed,fields);b=evaluate(bank,speed,fields)
+                assert math.isclose(b[2],a[2],rel_tol=1e-6),(a,b)
+                birth=heading(b);births.append(birth);winds=[]
+                for age in (0,2,10,20,28,35,60):
+                    fields['LifeRatio']=age/life
+                    for prop in ('AccelerationField','WindField'):
+                        a=evaluate(previous,prior[prop],fields);b=evaluate(bank,physics[prop],fields)
+                        assert math.isclose(b[2],a[2],rel_tol=2e-6,abs_tol=1e-6),(prop,a,b)
+                    winds.append(round(heading(b),4))
+                turns.append(abs(winds[-1]-winds[0]))
+                last=None
+                for step in range(241):
+                    fields['LifeRatio']=(step/4)/life
+                    angle=heading(evaluate(bank,physics['WindField'],fields))
+                    assert abs(angle)<45,angle
+                    if last is not None:assert abs(angle-last)<2,'Wind changed abruptly'
+                    last=angle
+                rows.append(dict(lifetime=life,seed=seed,source_position=position,
+                                 initial_heading_degrees_from_map_wind=round(birth,4),
+                                 wind_heading_degrees_at_seconds_0_2_10_20_28_35_60=winds))
+        assert max(births)-min(births)>15,'Initial headings too uniform'
+        assert max(turns)>10,'No meaningful upper directional change'
+    return dict(relative_to='smoke-preview.12',vertical_initial_velocity_multiplier=1,vertical_acceleration_multiplier=1,
+                vertical_wind_multiplier=1,source_coherent_spatial_variation=True,per_frame_random_draws=False,
+                age_varying_direction=True,turn_transition_seconds=28,small_gust_period_seconds=round(2*math.pi/0.13,2),samples=rows,
                 explosion_unit_and_AI_binaries_unchanged=True,rendered_curvature='unverified')

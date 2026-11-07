@@ -1,6 +1,6 @@
 # BattleAtmosphere · combined-arms-preview.6
 
-**视觉层 smoke-preview.12，已安装：** 发射量在 preview.11 基础上减少 40%；烟团保持出生大小，随上升平滑扩大至最多 2 倍。垂直运动提高 1.5 倍，水平风提高 1.8 倍，使初段和高处都更倾斜。编译与安装检查通过；宽度、倾角和连续性待实测。见 [烟柱方案](SMOKE_ATMOSPHERE.md)。
+**视觉层 smoke-preview.13，已安装：** 烟团随升空渐大至出生尺寸的 4 倍；加入同源共享的初始风偏、升空后的平滑转向和小幅扰动。烟量与垂直上升速度保持。官方构建、编译参数与安装核验通过；实际形态差异和连贯性待实测。见 [烟柱方案](SMOKE_ATMOSPHERE.md)。
 
 **状态：已实装 preview.6。修复进攻方向识别反转和运输绕路误卸载；保留宽战线、持续进攻及 preview.5 采购配置。57 项离线与原生回归、正式目录启动核验通过，普通新局待用户确认。** 见 [修复记录](DIRECTION_FIX.md)、[实装回执](Development/direction-release.json)。
 
