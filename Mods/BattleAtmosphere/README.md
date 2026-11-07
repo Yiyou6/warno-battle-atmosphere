@@ -1,6 +1,6 @@
 # BattleAtmosphere · combined-arms-preview.6
 
-**视觉层新增 smoke-preview.1，已安装：** 增强地面/建筑燃烧及燃烧残骸的高烟柱，延长烟粒存留、提高浮升并保留风偏。AI 维持 preview.6；普通炮弹烟、战术烟幕与火焰伤害未改。官方编译和编译对象引用检查通过，实际烟柱高度、远景观感及帧率待实测。仍只启用 BattleAtmosphere，重启并开始新对局。见 [烟雾方案与验证边界](SMOKE_ATMOSPHERE.md)。
+**视觉层 smoke-preview.2，已安装：** 相对 smoke-preview.1，燃烧烟雾单粒寿命与发射量各乘 10；地面烟粒 180–360 秒、残骸烟粒 240–360 秒，残骸烟发射频率 15–40 个/秒。最大子粒子寿命提示同步为 360 秒。AI 维持 preview.6；普通炮弹烟、战术烟幕与火焰伤害未改。官方编译和编译对象引用检查通过，实际烟柱高度、远景观感及帧率待实测。仍只启用 BattleAtmosphere，重启并开始新对局。见 [烟雾方案与验证边界](SMOKE_ATMOSPHERE.md)。
 
 **状态：已实装 preview.6。修复进攻方向识别反转和运输绕路误卸载；保留宽战线、持续进攻及 preview.5 采购配置。57 项离线与原生回归、正式目录启动核验通过，普通新局待用户确认。** 见 [修复记录](DIRECTION_FIX.md)、[实装回执](Development/direction-release.json)。
 

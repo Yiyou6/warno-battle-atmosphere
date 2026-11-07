@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import json
 import subprocess
 import sys
-from apply_smoke_profile import DEV, MOD, ROOT, sha, protected_files
+from apply_smoke_profile import DEV, MOD, ROOT, VERSION, BACKUP, sha, protected_files
 
 def main():
     running = subprocess.run(['powershell', '-NoProfile', '-Command',
@@ -28,13 +28,13 @@ def main():
     assert sha(saved / 'Gen/NDF/GFX/Skirmish.ndfbin') == sha(MOD / 'Gen/NDF/GFX/Skirmish.ndfbin')
     assert before == protected_files() and activation.read_bytes() == active_before
     assert identity == check_local_mod_identity()
-    result = dict(version='smoke-preview.1', status='installed; rendered-appearance-and-frame-rate-unverified',
+    result = dict(version=VERSION, status='installed; rendered-appearance-and-frame-rate-unverified',
                   installed_at=datetime.now(timezone.utc).isoformat(), outputs=checked['outputs'],
                   config_sha256=sha(saved / 'Config.ini'), runtime_dll_sha256=sha(ROOT / 'version.dll'),
                   ai_unchanged=True, gameplay_smoke_and_fire_unchanged=True,
-                  compiled_calls=checked['compiled_calls'], backup='archive/smoke-preview1-before.zip')
+                  compiled_calls=checked['compiled_calls'], compiled_scaling=checked['compiled_scaling'], backup=BACKUP)
     (DEV / 'smoke-release.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('INSTALLED smoke-preview.1; current AI and runtime preserved')
+    print('INSTALLED %s; current AI and runtime preserved' % VERSION)
 
 if __name__ == '__main__':
     main()

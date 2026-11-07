@@ -1,11 +1,13 @@
 """Check source scope and compiled CNDF references, not rendered smoke quality."""
 from pathlib import Path
 import json
+import hashlib
 import struct
 import subprocess
 import sys
+import zipfile
 from read_cndf import Cndf
-from apply_smoke_profile import DEV, MOD, ROOT, OLD, NEW, sha, protected_files
+from apply_smoke_profile import DEV, MOD, ROOT, OLD, NEW, VERSION, MULTIPLIER, BACKUP, sha, protected_files
 
 def paths(c, section):
     data = c.tables[section]
@@ -47,6 +49,47 @@ def reachable(c, root):
         seen.add(i)
         pending.extend(local_refs(c.objects[i]['properties']))
     return [c.objects[i] for i in sorted(seen)]
+
+def canonical(c, value):
+    """Compare compiled expressions by structure, independent of object IDs."""
+    imports = {v: k for k, v in paths(c, 'IMPR').items()}
+    memo, active = {}, set()
+    def resolve(v):
+        if isinstance(v, dict):
+            if 'ref' in v:
+                i = v['ref']
+                if i in memo:
+                    return memo[i]
+                assert i not in active, 'Unexpected expression cycle'
+                active.add(i)
+                obj = c.objects[i]
+                result = (obj['class'], resolve(obj['properties']))
+                active.remove(i)
+                memo[i] = result
+                return result
+            if 'import_index' in v:
+                return ('import', imports[v['import_index']])
+            return tuple((k, resolve(x)) for k, x in sorted(v.items()))
+        if isinstance(v, list):
+            return tuple(resolve(x) for x in v)
+        return v
+    return resolve(value)
+
+def smoke_spawner(c, root, is_ground):
+    found = [o for o in reachable(c, root) if o['class'] == 'TParticleEvolver_SpraySpawner'
+             and (not is_ground or o['properties'].get('_ShortDatabaseName') == 'Smoke')]
+    assert len(found) == 1
+    return found[0]['properties']
+
+def verify_multiplier(c, value, prior, original):
+    node = c.objects[value['ref']]
+    assert node['class'] == 'TIntrinsicCall_2Param'
+    props = node['properties']
+    assert canonical(c, props['Intrinsic']) == ('import', '$/System/EvaluableIntrinsics/IntrinsicOperatorMul')
+    scale = c.objects[props['Param0']['ref']]
+    assert scale['class'] in ('TConstantInteger', 'TConstantFloat')
+    assert scale['properties']['Value'] == MULTIPLIER
+    assert canonical(c, props['Param1']) == canonical(prior, original), 'Scaled base expression changed'
 
 def main():
     subprocess.run([sys.executable, str(DEV / 'apply_smoke_profile.py')], check=True)
@@ -90,20 +133,35 @@ def main():
             assert count_calls(root, imports[other], {}, set()) == 0, path
             total += actual
         calls[name] = total
+    with zipfile.ZipFile(DEV / BACKUP) as z:
+        prior_receipt = json.loads(z.read('development/smoke-release.json'))
+        assert prior_receipt['version'] == 'smoke-preview.1'
+        prior_bytes = z.read('installed/Gen/NDF/VFX_Bank.ndfbin')
+        assert hashlib.sha256(prior_bytes).hexdigest() == prior_receipt['outputs']['Gen/NDF/VFX_Bank.ndfbin']
+        prior = Cndf(prior_bytes)
+    prior_exports = paths(prior, 'EXPR')
+    assert canonical(bank, {'ref': old_id}) == canonical(prior, {'ref': prior_exports[OLD]}), 'Shared fuel smoke changed'
+    scaling = {}
     for name, minimum in ((NEW, 24), ('$/VFX_Bank/FX_BANK_Binder_Fire', 18)):
         graph = reachable(bank, exports[name])
         constants = [o['properties'].get('Value') for o in graph
                      if o['class'] in ('TConstantFloat', 'TConstantInteger')]
         assert minimum in constants and 36 in constants and 16000 in constants, name
-        spawners = [o for o in graph if o['class'] == 'TParticleEvolver_SpraySpawner']
-        maxima = [bank.objects[o['properties']['MaxSpawnedParticleLifetime']['ref']]['properties'].get('Value')
-                  for o in spawners if 'ref' in o['properties'].get('MaxSpawnedParticleLifetime', {})]
-        assert 36 in maxima, name
-    result = dict(version='smoke-preview.1', status='source-and-compiled-references-passed; visual-unverified',
-                  compiled_calls=calls, protected=build['protected'], sources=build['sources'],
+        current = smoke_spawner(bank, exports[name], name != NEW)
+        previous = smoke_spawner(prior, prior_exports[name], name != NEW)
+        assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == 36 * MULTIPLIER
+        verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'])
+        current_life = bank.objects[current['Spawner']['ref']]['properties']['ParticleLifetime']
+        previous_life = prior.objects[previous['Spawner']['ref']]['properties']['ParticleLifetime']
+        verify_multiplier(bank, current_life, prior, previous_life)
+        scaling[name] = dict(relative_to='smoke-preview.1', emission_multiplier=MULTIPLIER,
+                             lifetime_multiplier=MULTIPLIER, lifetime_seconds=[minimum * MULTIPLIER, 36 * MULTIPLIER],
+                             max_spawned_particle_lifetime=36 * MULTIPLIER)
+    result = dict(version=VERSION, status='source-and-compiled-references-passed; visual-unverified',
+                  compiled_calls=calls, compiled_scaling=scaling, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: 64 burning placements use dedicated bank; 193 other placements retain stock bank; lifetime/size bounds compiled')
+    print('PASS: both smoke lifetimes/emission expressions are exactly 10x preview.1; 360s bounds compiled; 64 burning/193 unchanged shared placements')
 
 if __name__ == '__main__':
     main()

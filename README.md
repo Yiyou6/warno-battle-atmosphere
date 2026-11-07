@@ -2,7 +2,7 @@
 
 面向最高难度遭遇战的战场氛围与作战 AI 模组源码。目标是有氛围、有章法、双方付出巨大代价才决出胜者的战斗：大多数可用部队持续向前，在推进中展开宽战线，允许有用途的局部主攻集中，不允许大批部队长期闲置后方。
 
-当前快照：**combined-arms-preview.6 + smoke-preview.1**。AI 暂停迭代，本轮增强地面/建筑燃烧和燃烧残骸的上升烟柱，保留普通炮弹烟雾与战术烟幕。官方编译、编译引用和独立无界面兼容检查通过；烟柱观感及帧率待实际对局验证。详见 [烟雾设计](Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md) 和 [安装验证摘要](docs/validation-smoke-preview1.json)。
+当前快照：**combined-arms-preview.6 + smoke-preview.2**。AI 暂停迭代，本轮将燃烧烟粒寿命和发射频率分别增至 smoke-preview.1 的 10 倍，地面烟粒 180–360 秒、残骸烟粒 240–360 秒，保留普通炮弹烟雾与战术烟幕。官方编译、编译引用和独立无界面兼容检查通过；烟柱观感及帧率待实际对局验证。详见 [烟雾设计](Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md) 和 [安装验证摘要](docs/validation-smoke-preview2.json)。
 
 支持范围是征服与歼灭遭遇战，算法从当前场景提取部署区和导航，不依赖黑森林专用坐标。运行组件目前严格绑定 WARNO **revision 201602**；其他游戏版本需要重新核验原生接口。
 
@@ -50,7 +50,7 @@ python -m unittest discover -s Mods/BattleAtmosphere/Development/dispersion -p '
 
 当前原生目标 EXE SHA-256：`70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8`。
 
-燃烧特效的复现入口为 `Development/apply_smoke_profile.py`、`build_smoke_profile.py`、`verify_smoke_profile.py` 和 `install_smoke_profile.py`。在完整的同版本游戏模组工作目录中依次执行；它们依赖官方生成的 `base.zip` 和开发环境中的 `zstandard`。安装前核验 AI、玩法描述和 DLL 哈希未变，保留当前模组选中状态。单独克隆源码仓库只能运行上面的离线算法测试，不能替代游戏资源及原生验证环境。
+燃烧特效的复现入口为 `Development/apply_smoke_profile.py`、`build_smoke_profile.py`、`verify_smoke_profile.py` 和 `install_smoke_profile.py`。在完整的同版本游戏模组工作目录中依次执行；它们依赖官方生成的 `base.zip` 、开发环境中的 `zstandard`，以及 `archive/smoke-preview2-before.zip` 中真实的 preview.1 安装包与回执（用于逐表达式核验倍率，未随仓库分发）。安装前核验 AI、玩法描述和 DLL 哈希未变，保留当前模组选中状态。单独克隆源码仓库只能运行上面的离线算法测试，不能替代游戏资源及原生验证环境。
 
 ## 验证状态与边界
 

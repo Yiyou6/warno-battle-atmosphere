@@ -14,6 +14,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
+VERSION = 'smoke-preview.2'
+MULTIPLIER = 10
+BACKUP = 'archive/smoke-preview2-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -22,7 +25,7 @@ def once(text, old, new):
     assert text.count(old) == 1, (old, text.count(old))
     return text.replace(old, new, 1)
 
-def ground(text):
+def ground(text, multiplier=MULTIPLIER):
     start = text.index('Smoke is EvolverSpraySpawner')
     end = matching(text, text.index('(', start)) + 1
     block = text[start:end]
@@ -43,11 +46,24 @@ def ground(text):
         ('Size = ParticleCustomFloat_1 * (0.5 + 2.5 * ParticleLifeRatio)',
          'Size = Min[16000, ParticleCustomFloat_1 * (0.5 + 2.5 * ParticleLifeRatio)]'),
     ]
+    if multiplier != 1:
+        # Scale the entire bounded expression, so no caller/random sample loses
+        # the requested increase to the preview.1 clamps.
+        changes += [
+            ('Frequency = ParticleCustomFloat_7 * ParticleRemainingLifeRatio',
+             'Frequency = %s * (ParticleCustomFloat_7 * ParticleRemainingLifeRatio)' % multiplier),
+            ('MaxSpawnedParticleLifetime = 36', 'MaxSpawnedParticleLifetime = %s' % (36 * multiplier)),
+            ('ParticleLifetime = Min[36, Max[18, SpawningParticleCustomFloat_5 * RandomRange[0.5,2] * SpawningParticleCustomFloat_3]]',
+             'ParticleLifetime = %s * Min[36, Max[18, SpawningParticleCustomFloat_5 * RandomRange[0.5,2] * SpawningParticleCustomFloat_3]]' % multiplier),
+            # Keep the same absolute fade-in time despite the longer life.
+            ('AttackSustainDecay[ParticleLifeRatio, 0.08, 0.65]',
+             'AttackSustainDecay[ParticleLifeRatio, %s, 0.65]' % (0.08 / multiplier)),
+        ]
     for old, new in changes:
         block = once(block, old, new)
     return text[:start] + block + text[end:]
 
-def fuel(text):
+def fuel(text, multiplier=MULTIPLIER):
     a, b = object_span(text, 'BANK_FuelSmoke')
     block = text[a:b]
     changes = [
@@ -65,6 +81,14 @@ def fuel(text):
         ('Size = ( ParticleCustomFloat_1 + ( lerp[ParticleCustomFloat_5, 300, 100] * ParticleElapsedTime ) ) * ParticleCustomFloat_2',
          'Size = Min[16000, ( ParticleCustomFloat_1 + ( lerp[ParticleCustomFloat_5, 300, 100] * ParticleElapsedTime ) ) * ParticleCustomFloat_2]'),
     ]
+    if multiplier != 1:
+        changes += [
+            ('Frequency = Min[4, Max[1.5, ParticleCustomFloat_2]]',
+             'Frequency = %s * Min[4, Max[1.5, ParticleCustomFloat_2]]' % multiplier),
+            ('MaxSpawnedParticleLifetime = 36', 'MaxSpawnedParticleLifetime = %s' % (36 * multiplier)),
+            ('ParticleLifetime = Min[36, Max[24, SpawningParticleCustomFloat_6 * (1.4 + SpawningParticleCustomFloat_3)]]',
+             'ParticleLifetime = %s * Min[36, Max[24, SpawningParticleCustomFloat_6 * (1.4 + SpawningParticleCustomFloat_3)]]' % multiplier),
+        ]
     for old, new in changes:
         block = once(block, old, new)
     # Keep the original public bank byte-for-byte (after newline decoding).
@@ -112,26 +136,32 @@ def main():
     before, after, callers, excluded = expected_files()
     for name, target in after.items():
         current = (MOD / name).read_text(encoding='utf-8-sig')
-        assert current in (before[name], target), 'Unreviewed edits: ' + name
+        previous = ground(before[name], 1) if name == BINDER else fuel(before[name], 1) if name == FUEL else target
+        assert current in (before[name], previous, target), 'Unreviewed edits: ' + name
         if not args.write:
             assert current == target, 'Source not yet applied: ' + name
     protected = protected_files()
-    archive = DEV / 'archive/smoke-preview1-before.zip'
+    archive = DEV / BACKUP
     if args.write and not archive.exists():
         archive.parent.mkdir(exist_ok=True)
         saved = Path.home() / 'Saved Games/EugenSystems/WARNO/mod/BattleAtmosphere'
         with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
-            for name, original in before.items():
-                z.writestr('source/' + name, original)
+            for name in before:
+                z.write(MOD / name, 'source/' + name)
             for p in saved.rglob('*'):
                 if p.is_file():
                     z.write(p, 'installed/' + p.relative_to(saved).as_posix())
+            for pattern in ('*smoke*.py', 'smoke-*.json'):
+                for p in DEV.glob(pattern):
+                    z.write(p, 'development/' + p.name)
             z.writestr('protected.json', json.dumps(protected, indent=2))
     if args.write:
         for name, target in after.items():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_files() == protected
-    report = dict(version='smoke-preview.1', status='source-verified; visual-unverified',
+    report = dict(version=VERSION, status='source-verified; visual-unverified',
+                  relative_to='smoke-preview.1', lifetime_multiplier=MULTIPLIER,
+                  emission_multiplier=MULTIPLIER,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,
                   backup=archive.relative_to(MOD).as_posix())

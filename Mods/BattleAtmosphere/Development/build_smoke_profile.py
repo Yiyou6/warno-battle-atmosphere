@@ -5,7 +5,7 @@ import hashlib
 import json
 import subprocess
 import sys
-from apply_smoke_profile import protected_files
+from apply_smoke_profile import protected_files, VERSION
 
 DEV = Path(__file__).resolve().parent
 MOD = DEV.parent
@@ -48,7 +48,7 @@ def main():
         assert sha(MOD / path) == digest
     outputs = {p.relative_to(MOD).as_posix(): sha(p) for p in (MOD / 'Gen').rglob('*')
                if p.is_file() and p.suffix != '.tag'}
-    result = dict(version='smoke-preview.1', status='official-build-passed; not-installed; visual-unverified',
+    result = dict(version=VERSION, status='official-build-passed; not-installed; visual-unverified',
                   built_at=datetime.now(timezone.utc).isoformat(), commands=results, sources=source['sources'],
                   protected=before, ai_ndf_sha256=prior_ai, outputs=outputs)
     (DEV / 'smoke-build.json').write_text(json.dumps(result, indent=2) + '\n')

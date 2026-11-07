@@ -155,11 +155,11 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                             [
                                                 Smoke is EvolverSpraySpawner
                                                 (
-                                                    Frequency = ParticleCustomFloat_7 * ParticleRemainingLifeRatio
-                                                    MaxSpawnedParticleLifetime = 36
+                                                    Frequency = 10 * (ParticleCustomFloat_7 * ParticleRemainingLifeRatio)
+                                                    MaxSpawnedParticleLifetime = 360
                                                     Spawner = ParticleSpawner
                                                     (
-                                                        ParticleLifetime = Min[36, Max[18, SpawningParticleCustomFloat_5 * RandomRange[0.5,2] * SpawningParticleCustomFloat_3]]
+                                                        ParticleLifetime = 10 * Min[36, Max[18, SpawningParticleCustomFloat_5 * RandomRange[0.5,2] * SpawningParticleCustomFloat_3]]
                                                         Initialisers =
                                                         [
                                                             ParticleInitialiserList
@@ -188,7 +188,7 @@ export FX_BANK_Binder_Fire is SimultaneousActionDeclaration
                                                                 PhysicAccelerationField = float3[0.00, 0.00, 240.00] * (0.6 + 0.4 * ParticleRemainingLifeRatio)
                                                                 PhysicWindField = MapWind * lerp[ParticleCustomFloat_5, 2.0, 1.0]
 
-                                                                Opacity = AttackSustainDecay[ParticleLifeRatio, 0.08, 0.65] * ParticleCustomFloat_2
+                                                                Opacity = AttackSustainDecay[ParticleLifeRatio, 0.008, 0.65] * ParticleCustomFloat_2
                                                                 Size = Min[16000, ParticleCustomFloat_1 * (0.5 + 2.5 * ParticleLifeRatio)]
                                                                 Animation = lerp[ParticleCustomFloat_3, 1, ParticleLifeRatio]
                                                             )
