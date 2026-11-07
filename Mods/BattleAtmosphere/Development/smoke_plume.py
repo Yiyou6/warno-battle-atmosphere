@@ -1,4 +1,4 @@
-"""Preview.6 fuller initial smoke and continuous fade before particle death."""
+"""Preview.7 continuous smoke core with layered billows; earlier looks retained for migration."""
 import re
 from apply_profile import matching
 
@@ -16,12 +16,18 @@ LOOK = {
     'wisps': dict(life='RandomRange[10,18]', maximum=18, rate=0.6, cap=1600, spread=1000, growth=300, variation=200, alpha='0.07 * ParticleCustomFloat_6'),
 }
 
-def layered_smoke(block, kind, look=6):
+def layered_smoke(block, kind, look=7):
     """Apply to one spray only. Parent fire timing remains untouched."""
     cfg = dict(LOOK[kind])
     if look >= 6:
         cfg['rate'] *= 2
     block, n = re.subn(r'(?m)^(\s*Frequency = )10 \* ', r'\g<1>%s * ' % cfg['rate'], block); assert n == 1
+    if look >= 7 and kind in ('vehicle','starter','wisps'):
+        # Absolute emission floors bypass the two compounded distance/quality cuts.
+        frequency = {'vehicle': 'Min[12,Max[8,2 * ParticleCustomFloat_2]]',
+                     'starter': 'Min[5,Max[3,2 * ParticleCustomFloat_2]]',
+                     'wisps': 'Min[2,Max[1,ParticleCustomFloat_2]]'}[kind]
+        block, n = re.subn(r'(?m)^(\s*Frequency = ).+$',r'\g<1>'+frequency,block); assert n == 1
     block, n = re.subn(r'MaxSpawnedParticleLifetime = \d+', 'MaxSpawnedParticleLifetime = %s' % cfg['maximum'], block); assert n == 1
     block, n = re.subn(r'(?m)^(\s*ParticleLifetime = ).+$', r'\g<1>' + cfg['life'], block); assert n == 1
     # Freeze drift direction and variation at birth; no random draws per frame.
@@ -38,6 +44,20 @@ def layered_smoke(block, kind, look=6):
     if look >= 6:
         size = size.replace('Min[1400,Max[350,ParticleCustomFloat_1 * 0.4]]',
                             'Min[2400,Max[700,ParticleCustomFloat_1 * 0.8]]')
+    if look >= 7:
+        # Stock vehicle CustomFloat_1 is only 150-300: raising the previous
+        # 2400 ceiling never made a normal vehicle puff larger than its 700 floor.
+        birth = {'ground': (2200,3400), 'fuel': (2200,3400),
+                 'vehicle': (2200,3400), 'starter': (1200,2000), 'wisps': (900,1600)}[kind]
+        cap, spread = (6500,2500) if kind in ('ground','fuel','vehicle') else (3600,1000)
+        size = ('Min[%s + %s * ParticleCustomFloat_5, '
+                'Min[%s,Max[%s,ParticleCustomFloat_1 * 0.8]] * (0.9 + 0.2 * ParticleCustomFloat_5) + '
+                '(%s + %s * ParticleCustomFloat_5) * (sqrt[1 + ParticleElapsedTime div 12] - 1)]' %
+                (cap,spread,birth[1],birth[0],cfg['growth'],cfg['variation']))
+        block = block.replace('MapWind * (0.35 + 0.25 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (30 + 70 * MapToLinearSmoothStep[ParticleElapsedTime, 6,45])',
+                              'MapWind * (0.2 + 0.1 * ParticleCustomFloat_5) + ParticleCustomFloat3_2 * (10 + 35 * MapToLinearSmoothStep[ParticleElapsedTime, 10,45])')
+        block = block.replace('GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]]',
+                              'GenFloat3[RandomRange[-20,20], RandomRange[-20,20], RandomRange[120,220]]')
     block, n = re.subn(r'(?m)^(\s*Size = )Min\[30000,.+$', r'\g<1>' + size, block); assert n == 1
     # Preview.4 combined low base alpha, early fade and inverse-area dilution.
     # Restore visible density without changing particle count or growth.
@@ -56,8 +76,14 @@ def layered_smoke(block, kind, look=6):
         # Explicit bounded arithmetic avoids relying on an opaque fade intrinsic.
         opacity = opacity.replace('AttackSustainDecay[ParticleLifeRatio,0.015,0.65]',
             'Min[1,Max[0,ParticleLifeRatio div 0.025]] * sqr[Min[1,Max[0,(0.97 - ParticleLifeRatio) div 0.52]]]')
+    if look >= 7:
+        opacity = opacity.replace('ParticleLifeRatio div 0.025','ParticleElapsedTime div 0.35')
+        opacity = opacity.replace('0.18 * ParticleCustomFloat_6','0.32 * ParticleCustomFloat_6')
     block, n = re.subn(r'(?m)^(\s*Opacity = )AttackSustainDecay\[.+$', r'\g<1>' + opacity, block); assert n == 1
     color = 'ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.14,0.15,0.16], LinearColor[0.34,0.35,0.36]] * (0.85 + 0.3 * ParticleCustomFloat_5)'
+    if look >= 7:
+        color = color.replace('LinearColor[0.14,0.15,0.16], LinearColor[0.34,0.35,0.36]',
+                              'LinearColor[0.32,0.33,0.34], LinearColor[0.50,0.51,0.52]')
     # Replace the evolver color only; ground smoke previously had no evolver.
     block, n = re.subn(r'(?m)^(\s*)ColorModifier = (?:lerp\[ParticleLifeRatio|ParticleRemainingLifeRatio).+$', r'\g<1>' + color, block)
     if n == 0:
@@ -75,7 +101,7 @@ def section(text, marker, change):
     b = matching(text, text.index('(', a)) + 1
     return text[:a] + change(text[a:b]) + text[b:]
 
-def ground_plume(text, look=6):
+def ground_plume(text, look=7):
     def change(s):
         s = once(s,
             'Speed = ( GenFloat3[0.00, 0.00, RandomRange[0.5, 1.5] + 1.5 * SpawningParticleCustomFloat_3] + 0.2 * SpawningParticleCustomFloat3_2) * SpawningParticleCustomFloat_6 + float3[0,0,1000] + MapWind',
@@ -91,7 +117,7 @@ def ground_plume(text, look=6):
         return layered_smoke(s, 'ground', look) if look >= 4 else s
     return section(text, 'Smoke is EvolverSpraySpawner', change)
 
-def fuel_plume(text, look=6):
+def fuel_plume(text, look=7):
     def change(s):
         s = once(s, 'Speed = float3[0,0,1600] + 0.4 * SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )',
                  'Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind')
@@ -102,7 +128,7 @@ def fuel_plume(text, look=6):
         return section(s, 'EvolverSpraySpawner', lambda b: layered_smoke(b, 'fuel', look)) if look >= 4 else s
     return section(text, 'export BA_BurningFuelSmoke is', change)
 
-def dark_plume(text, look=6):
+def dark_plume(text, look=7):
     # Three smoke layers, scoped so neither of the two flame layers is edited.
     layers = [
         ('private fumees_Starter is ParticleBombSpawner', 80,

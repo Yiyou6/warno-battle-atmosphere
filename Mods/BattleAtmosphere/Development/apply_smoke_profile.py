@@ -15,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.6'
+VERSION = 'smoke-preview.7'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview6-before.zip'
+BACKUP = 'archive/smoke-preview7-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -141,9 +141,9 @@ def main():
     before, after, callers, excluded = expected_files()
     for name, target in after.items():
         current = (MOD / name).read_text(encoding='utf-8-sig')
-        previous = (ground_plume(ground(before[name]), 5) if name == BINDER else
-                    fuel_plume(fuel(before[name]), 5) if name == FUEL else
-                    dark_plume(before[name], 5) if name == DARK else target)
+        previous = (ground_plume(ground(before[name]), 6) if name == BINDER else
+                    fuel_plume(fuel(before[name]), 6) if name == FUEL else
+                    dark_plume(before[name], 6) if name == DARK else target)
         assert current in (before[name], previous, target), 'Unreviewed edits: ' + name
         if not args.write:
             assert current == target, 'Source not yet applied: ' + name
@@ -167,7 +167,7 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_files() == protected
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.5', appearance='2x emission, larger initial smoke, gradual squared fade to zero before death',
+                  relative_to='smoke-preview.6', appearance='continuous vehicle core with bounded absolute emission, broad birth puffs, quick fade-in and restrained lateral drift',
                   vehicle_burn_duration_multiplier=10,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,

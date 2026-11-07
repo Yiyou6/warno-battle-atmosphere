@@ -1,6 +1,6 @@
 # BattleAtmosphere · combined-arms-preview.6
 
-**视觉层 smoke-preview.6，已安装：** 发射率为 preview.5 的两倍，加大初始烟团；保留慢膨胀，用连续平方淡出让烟粒在到期前变透明。官方构建、编译曲线与安装核验通过；画面仍待实测。见 [烟雾方案](SMOKE_ATMOSPHERE.md)。
+**视觉层 smoke-preview.7，已安装：** 按用户浓厚连续烟体参考，修正普通载具烟实际出生尺寸被下限卡住的问题；主烟连续发射 8–12/秒、底部层 3–5/秒，0.35 秒淡入，收紧横向漂移，保留慢膨胀与末段渐隐。画面待实测。见 [烟雾方案](SMOKE_ATMOSPHERE.md)。
 
 **状态：已实装 preview.6。修复进攻方向识别反转和运输绕路误卸载；保留宽战线、持续进攻及 preview.5 采购配置。57 项离线与原生回归、正式目录启动核验通过，普通新局待用户确认。** 见 [修复记录](DIRECTION_FIX.md)、[实装回执](Development/direction-release.json)。
 

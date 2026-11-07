@@ -1,4 +1,4 @@
-"""Inspect compiled preview.6 shape curves and preserve long-burning sources."""
+"""Inspect compiled preview.7 shape curves and preserve long-burning sources."""
 from collections import defaultdict
 import hashlib
 import json
@@ -59,10 +59,11 @@ def verify_plume(bank, fx, exports, source):
         return found
     dark = '$/VFX_Bank/BANK_DarkFireCompo'
     old = dark_smoke(prior,paths(prior,'EXPR')[dark]); new = dark_smoke(bank,exports[dark])
-    for before,after,factor in ((60,18,1.2),(80,22,1.2),(1250,85,3)):
-        # Both versions wrap the same stock expression: strip preview.3's 10x.
-        base = prior.objects[old[before]['Frequency']['ref']]['properties']['Param1']
-        verify_multiplier(bank,new[after]['Frequency'],prior,base,factor=factor)
+    emission = {}
+    for bound,minimum,maximum in ((18,1,2),(22,3,5),(85,8,12)):
+        samples = [evaluate_scalar(bank,new[bound]['Frequency'],dict(CustomFloat_2=v)) for v in (0,0.1,1,2,4,8,20)]
+        assert min(samples) == minimum and max(samples) == maximum
+        emission[str(bound)] = dict(range_per_second=[minimum,maximum],samples=samples)
     layers = [(new[18],[10,18]),(new[22],[12,22]),(new[85],[45,85]),
               (smoke_spawner(bank,exports[NEW],False),[50,90]),
               (smoke_spawner(bank,exports['$/VFX_Bank/FX_BANK_Binder_Fire'],True),[45,80])]
@@ -90,11 +91,11 @@ def verify_plume(bank, fx, exports, source):
             for age in (0,10,20,30,60,90):
                 fields['LifeRatio']=age/limits[1]
                 size=evaluate_scalar(bank,evolvers['Size'],fields)
-                assert 0 < size <= 8000
+                assert 0 < size <= 9000
                 fields['Size']=size; dilution=evaluate_scalar(bank,opacity,fields)
                 assert 0.649999 <= dilution <= 1
                 sizes.append(round(size,4))
-            assert 700 <= sizes[0] <= 2400 and sizes[-1] < 4800
+            assert 810 <= sizes[0] <= 3741 and sizes[-1] < 6100
             assert 0 <= sizes[2]-sizes[1] <= sizes[1]-sizes[0] <= 500
             assert 0 <= sizes[3]-sizes[2] <= sizes[2]-sizes[1]
             alphas = []
@@ -107,11 +108,22 @@ def verify_plume(bank, fx, exports, source):
             assert alphas[5] < 0.003 and alphas[6] < 1e-12 and alphas[7] == 0
             rows.append(dict(variation=seed,sizes_at_0_10_20_30_60_90_seconds=sizes,
                              opacity_at_life_0_025_45_65_85_95_97_100=alphas))
-        samples.append(dict(lifetime_seconds=limits,curves=rows))
+        # Sample real stock vehicle birth sizes, not only oversized worst cases.
+        typical = []
+        for initial in (150,225,300):
+            fields = dict(CustomFloat_1=initial,CustomFloat_2=1,CustomFloat_3=1,CustomFloat_5=0.5,
+                          CustomFloat_6=1,CreationDate=0,DeathDate=limits[1],LifeRatio=0,Size=0)
+            birth_size = evaluate_scalar(bank,evolvers['Size'],fields)
+            assert birth_size >= (2199.99 if limits[1] >= 80 else 899.99)
+            fields['Size'] = birth_size
+            fields['LifeRatio'] = 0.35/limits[1]
+            assert evaluate_scalar(bank,evolvers['Opacity'],fields) > 0.1
+            typical.append(dict(stock_initial_size=initial,visible_birth_size=birth_size))
+        samples.append(dict(lifetime_seconds=limits,curves=rows,typical_birth_sizes=typical))
     unit=Cndf((MOD/'Gen/NDF/GFX/Unit.ndfbin').read_bytes())
     vehicles=[o['properties'] for o in unit.objects if o['class']=='TCadaverModuleDescriptor' and o['properties'].get('CadaverDuration')==3000]
     assert vehicles and all(p['CadaverFireDurationMin']==10 and p['CadaverFireDurationMax']==1200 for p in vehicles)
-    return dict(smoke_layers_verified=5,emission_relative_to_preview3=[0.12,0.12,0.3,0.4,0.4],
+    return dict(smoke_layers_verified=5,vehicle_layer_emission=emission,
                 size_growth='decelerating square-root of elapsed seconds, varied bounds',
                 compiled_curve_samples=samples,optical_density_floor=0.65,
                 vehicle_burn_seconds=[10,1200],compiled_vehicle_cadaver_objects=len(vehicles),
