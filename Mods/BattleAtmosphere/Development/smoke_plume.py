@@ -1,4 +1,4 @@
-"""Preview.5 visibility correction; preserves the preview.4 shape and emission."""
+"""Preview.6 fuller initial smoke and continuous fade before particle death."""
 import re
 from apply_profile import matching
 
@@ -16,9 +16,11 @@ LOOK = {
     'wisps': dict(life='RandomRange[10,18]', maximum=18, rate=0.6, cap=1600, spread=1000, growth=300, variation=200, alpha='0.07 * ParticleCustomFloat_6'),
 }
 
-def layered_smoke(block, kind, look=5):
+def layered_smoke(block, kind, look=6):
     """Apply to one spray only. Parent fire timing remains untouched."""
-    cfg = LOOK[kind]
+    cfg = dict(LOOK[kind])
+    if look >= 6:
+        cfg['rate'] *= 2
     block, n = re.subn(r'(?m)^(\s*Frequency = )10 \* ', r'\g<1>%s * ' % cfg['rate'], block); assert n == 1
     block, n = re.subn(r'MaxSpawnedParticleLifetime = \d+', 'MaxSpawnedParticleLifetime = %s' % cfg['maximum'], block); assert n == 1
     block, n = re.subn(r'(?m)^(\s*ParticleLifetime = ).+$', r'\g<1>' + cfg['life'], block); assert n == 1
@@ -33,12 +35,15 @@ def layered_smoke(block, kind, look=5):
     size = ('Min[%s + %s * ParticleCustomFloat_5, Min[1400,Max[350,ParticleCustomFloat_1 * 0.4]] + '
             '(%s + %s * ParticleCustomFloat_5) * (sqrt[1 + ParticleElapsedTime div 12] - 1)]' %
             (cfg['cap'], cfg['spread'], cfg['growth'], cfg['variation']))
+    if look >= 6:
+        size = size.replace('Min[1400,Max[350,ParticleCustomFloat_1 * 0.4]]',
+                            'Min[2400,Max[700,ParticleCustomFloat_1 * 0.8]]')
     block, n = re.subn(r'(?m)^(\s*Size = )Min\[30000,.+$', r'\g<1>' + size, block); assert n == 1
     # Preview.4 combined low base alpha, early fade and inverse-area dilution.
     # Restore visible density without changing particle count or growth.
     opacity = ('AttackSustainDecay[ParticleLifeRatio,0.035,0.32] * (%s) * '
                'Min[1,900000 div Max[900000,sqr[ParticleSize]]]' % cfg['alpha'])
-    if look == 5:
+    if look >= 5:
         alpha = {'ground': '0.85 * ParticleCustomFloat_2',
                  'fuel': '0.60 * ParticleCustomFloat_6 * ParticleCustomFloat_3',
                  'vehicle': '0.60 * ParticleCustomFloat_6',
@@ -46,6 +51,11 @@ def layered_smoke(block, kind, look=5):
                  'wisps': '0.16 * ParticleCustomFloat_6'}[kind]
         opacity = ('AttackSustainDecay[ParticleLifeRatio,0.015,0.65] * (%s) * '
                    'Max[0.65,Min[1,2500000 div Max[2500000,sqr[ParticleSize]]]]' % alpha)
+    if look >= 6:
+        # Fade from 45% life, reaching zero at 97% before engine expiry.
+        # Explicit bounded arithmetic avoids relying on an opaque fade intrinsic.
+        opacity = opacity.replace('AttackSustainDecay[ParticleLifeRatio,0.015,0.65]',
+            'Min[1,Max[0,ParticleLifeRatio div 0.025]] * sqr[Min[1,Max[0,(0.97 - ParticleLifeRatio) div 0.52]]]')
     block, n = re.subn(r'(?m)^(\s*Opacity = )AttackSustainDecay\[.+$', r'\g<1>' + opacity, block); assert n == 1
     color = 'ColorModifier = lerp[MapToLinearSmoothStep[ParticleElapsedTime,6,50], LinearColor[0.14,0.15,0.16], LinearColor[0.34,0.35,0.36]] * (0.85 + 0.3 * ParticleCustomFloat_5)'
     # Replace the evolver color only; ground smoke previously had no evolver.
@@ -65,7 +75,7 @@ def section(text, marker, change):
     b = matching(text, text.index('(', a)) + 1
     return text[:a] + change(text[a:b]) + text[b:]
 
-def ground_plume(text, look=5):
+def ground_plume(text, look=6):
     def change(s):
         s = once(s,
             'Speed = ( GenFloat3[0.00, 0.00, RandomRange[0.5, 1.5] + 1.5 * SpawningParticleCustomFloat_3] + 0.2 * SpawningParticleCustomFloat3_2) * SpawningParticleCustomFloat_6 + float3[0,0,1000] + MapWind',
@@ -81,7 +91,7 @@ def ground_plume(text, look=5):
         return layered_smoke(s, 'ground', look) if look >= 4 else s
     return section(text, 'Smoke is EvolverSpraySpawner', change)
 
-def fuel_plume(text, look=5):
+def fuel_plume(text, look=6):
     def change(s):
         s = once(s, 'Speed = float3[0,0,1600] + 0.4 * SpawningParticleRemainingLifeRatio * ( ParticleCustomFloat3_3 * RandomRange[0.5, 1.5] + $/VFX_Bank/MinusOneToOneRandomHemisphereVolume * 500 )',
                  'Speed = GenFloat3[RandomRange[-60,60], RandomRange[-60,60], RandomRange[120,220]] + 0.15 * MapWind')
@@ -92,7 +102,7 @@ def fuel_plume(text, look=5):
         return section(s, 'EvolverSpraySpawner', lambda b: layered_smoke(b, 'fuel', look)) if look >= 4 else s
     return section(text, 'export BA_BurningFuelSmoke is', change)
 
-def dark_plume(text, look=5):
+def dark_plume(text, look=6):
     # Three smoke layers, scoped so neither of the two flame layers is edited.
     layers = [
         ('private fumees_Starter is ParticleBombSpawner', 80,

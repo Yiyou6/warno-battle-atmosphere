@@ -1,0 +1,453 @@
+{
+  "version": "smoke-preview.6",
+  "status": "installed; rendered-appearance-and-frame-rate-unverified",
+  "installed_at": "2026-11-07T04:08:34.053529+00:00",
+  "outputs": {
+    "Gen/DeclaredFiles.txt": "93c692e1ab39cf254bd5226b95dd9299c244da0b7567cada59c18379930e7a8e",
+    "Gen/DecorSetAssets.ndf": "d6c09b21cdcad8c82451b49c424c13f2515ad479108983829823577472fd066c",
+    "Gen/GenerationReport.txt": "5fa499b4e13e8b332ad613d52831ad18358fb1491e3d990747f2de76c6fee3d0",
+    "Gen/UsedFiles.txt": "026721e128052d5aa864fc5e3b75c120700391676f213d806e083d795203edf6",
+    "Gen/Version.ndf": "0eb6e4508aed361b6170abc445ce2daa0a0d38397fe7bbbcb50413859c312304",
+    "Gen/NDF/VFX_Bank.ndfbin": "101fd68b0a3bc504c4eb63f41bc9c25b6ffabbe1ce3777557a603615e4c90422",
+    "Gen/ResourceFile/Catalog.cat": "ae1e3e6e695770f5eef12540ff6d6515e21689dd147d979fd78ba57d71974b11",
+    "Gen/Intermediate/FileID/00.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/01.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/02.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/03.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/04.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/05.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/06.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/07.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/08.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/09.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/10.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/11.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/12.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/13.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/14.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Intermediate/FileID/15.FileID": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Gen/Localisation/Intermediate/EarlyLocalisation_gen.inl": "7ac288a4d4a7f6f2f9093bd7e55100dd09b004df5335b1c2d7811879226b0519",
+    "Gen/Localisation/Intermediate/HarvestedStrings.csv": "d10d2f4d52b7f2cf0991574d5b7e05fe9063db64c0dbc5e4102bae2689ce3973",
+    "Gen/Localisation/Localisation/BattleAtmosphere/COMPANIES-DEV.dic": "5e1aa14242cd747dcde3e55ea87b8a3ffebac4949a0213729a4b1eb93cc13be6",
+    "Gen/Localisation/Localisation/BattleAtmosphere/INTERFACE_INGAME-DEV.dic": "5e1aa14242cd747dcde3e55ea87b8a3ffebac4949a0213729a4b1eb93cc13be6",
+    "Gen/Localisation/Localisation/BattleAtmosphere/INTERFACE_OUTGAME-DEV.dic": "5e1aa14242cd747dcde3e55ea87b8a3ffebac4949a0213729a4b1eb93cc13be6",
+    "Gen/Localisation/Localisation/BattleAtmosphere/PLATOONS-DEV.dic": "5e1aa14242cd747dcde3e55ea87b8a3ffebac4949a0213729a4b1eb93cc13be6",
+    "Gen/Localisation/Localisation/BattleAtmosphere/UNITS-DEV.dic": "5e1aa14242cd747dcde3e55ea87b8a3ffebac4949a0213729a4b1eb93cc13be6",
+    "Gen/MeshPack/BattleAtmosphere/Mesh_All.spk": "9225c5c878ea17f6417f7c68bb5ebde9411aa92a160dff6b457b4c136ecc8a1f",
+    "Gen/NDF/GFX/GameFx.ndfbin": "c5a0e0f134497a3ee423cf6bf7f3daa35889c59093d56afa98ce026ea5bd5151",
+    "Gen/NDF/GFX/Skirmish.ndfbin": "ebcd62d82642744f1459de2e27f5e36a17cd4b5c264bccd3982cebbe3a2243d3",
+    "Gen/NDF/GFX/Unit.ndfbin": "cf4fb8900c959b975460a0d036b6443d87ff3d1574262dd46d7486f2692717f7",
+    "Gen/NDF/Localisation/BattleAtmosphere.ndfbin": "411c898aa3c81586c3ce31ccedbbfc87f4ee1152d7d635e4dde2b7ea2da7d2a8",
+    "Gen/NDF/ResourcePacks/BattleAtmosphere.ndfbin": "2afbc531497ad18f23458cffcd1d738dc783eb8ce3ee8b46f058db207a6b8101",
+    "Gen/TextureProxy/BattleAtmosphere/Mesh_All.ndfbin": "29669a5505c165095de444060d3ccb20539f968b470f4584cf75912485baea0e"
+  },
+  "config_sha256": "35035ea1eb201e5ab8ce071531661fee7bc60fcfa0bb459aa64f18d639e7bd3a",
+  "runtime_dll_sha256": "45fe77306abaae3f521ea2f5e9ae045bebad17796828dbd5e918de30760fba3d",
+  "ai_unchanged": true,
+  "gameplay_smoke_and_fire_unchanged": true,
+  "compiled_calls": {
+    "$/VFX_Bank/BA_BurningFuelSmoke": 64,
+    "$/VFX_Bank/BANK_FuelSmoke": 193
+  },
+  "compiled_scaling": {
+    "$/VFX_Bank/BA_BurningFuelSmoke": {
+      "relative_to": "smoke-preview.3",
+      "emission_multiplier": 0.4,
+      "lifetime_seconds": [
+        50,
+        90
+      ],
+      "max_spawned_particle_lifetime": 90
+    },
+    "$/VFX_Bank/FX_BANK_Binder_Fire": {
+      "relative_to": "smoke-preview.3",
+      "emission_multiplier": 0.4,
+      "lifetime_seconds": [
+        45,
+        80
+      ],
+      "max_spawned_particle_lifetime": 80
+    }
+  },
+  "plume": {
+    "smoke_layers_verified": 5,
+    "emission_relative_to_preview3": [
+      0.12,
+      0.12,
+      0.3,
+      0.4,
+      0.4
+    ],
+    "size_growth": "decelerating square-root of elapsed seconds, varied bounds",
+    "compiled_curve_samples": [
+      {
+        "lifetime_seconds": [
+          10,
+          18
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1600,
+              1600,
+              1600,
+              1600,
+              1600,
+              1600
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.156249994179234,
+              0.15624999650754035,
+              0.05917161123205768,
+              0.008321010309361656,
+              0.00023113972633898144,
+              4.729944496998112e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2100.0,
+              2100.0,
+              2100.0,
+              2100.0,
+              2100.0,
+              2100.0
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.10399999231100102,
+              0.10399999386072167,
+              0.039384622991438176,
+              0.005538464258761453,
+              0.00015384659620816632,
+              3.1482509417247833e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2577.0032,
+              2600,
+              2600,
+              2600,
+              2600
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.10399999231100102,
+              0.10399999386072167,
+              0.039384622991438176,
+              0.005538464258761453,
+              0.00015384659620816632,
+              3.1482509417247833e-16,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          12,
+          22
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              1800,
+              1800,
+              1800,
+              1800,
+              1800,
+              1800
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.1388888923382317,
+              0.13888889440783747,
+              0.052596991027479924,
+              0.007396454067553763,
+              0.000205457547280022,
+              4.2043953694859773e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2400.0,
+              2400.0,
+              2400.0,
+              2400.0,
+              2400.0
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.11699999861419186,
+              0.1170000003576277,
+              0.04430770361635215,
+              0.006230772677963902,
+              0.00017307743148024796,
+              3.5417825293431737e-16,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2594.7035,
+              2748.1462,
+              2878.9558,
+              3000,
+              3000
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.11699999861419186,
+              0.1170000003576277,
+              0.04430770361635215,
+              0.006230772677963902,
+              0.00017307743148024796,
+              3.5417825293431737e-16,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          45,
+          85
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2630.1042,
+              2811.4456,
+              2966.0387,
+              3342.1683,
+              3645.0594
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3899999953806395,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2692.0553,
+              2922.2194,
+              3118.4337,
+              3595.829,
+              3980.2677
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3899999953806395,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2754.0064,
+              3032.9932,
+              3270.8287,
+              3849.4897,
+              4315.4759
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3899999953806395,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          50,
+          90
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2630.1042,
+              2811.4456,
+              2966.0387,
+              3342.1683,
+              3645.0594
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3899999953806395,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2692.0553,
+              2922.2194,
+              3118.4337,
+              3595.829,
+              3980.2677
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3899999953806395,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2754.0064,
+              3032.9932,
+              3270.8287,
+              3849.4897,
+              4315.4759
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.3899999953806395,
+              0.3900000011920923,
+              0.14769234538784048,
+              0.020769242259879674,
+              0.0005769247716008266,
+              1.1805941764477246e-15,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "lifetime_seconds": [
+          45,
+          80
+        ],
+        "curves": [
+          {
+            "variation": 0,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2700.9054,
+              2938.0442,
+              3140.2044,
+              3632.0663,
+              4028.1546
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999869987365,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 0.5,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2762.8566,
+              3048.818,
+              3292.5994,
+              3885.727,
+              4363.3628
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999869987365,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          },
+          {
+            "variation": 1,
+            "sizes_at_0_10_20_30_60_90_seconds": [
+              2400.0,
+              2824.8077,
+              3159.5918,
+              3444.9944,
+              4139.3877,
+              4698.5711
+            ],
+            "opacity_at_life_0_025_45_65_85_95_97_100": [
+              0.0,
+              0.5524999869987365,
+              0.5524999952316278,
+              0.20923082018745473,
+              0.029423092857623078,
+              0.0008173100835491169,
+              1.6725083970873616e-15,
+              0.0
+            ]
+          }
+        ]
+      }
+    ],
+    "optical_density_floor": 0.65,
+    "vehicle_burn_seconds": [
+      10,
+      1200
+    ],
+    "compiled_vehicle_cadaver_objects": 10,
+    "compiled_unique_vehicle_fuel_calls": 12,
+    "vehicle_fuel_source_duration_multiplier": 10,
+    "rendered_appearance": "unverified"
+  },
+  "backup": "archive/smoke-preview6-before.zip",
+  "native_compatibility": {
+    "status": "not-repeated-for-emission-size-fade-iteration"
+  }
+}
