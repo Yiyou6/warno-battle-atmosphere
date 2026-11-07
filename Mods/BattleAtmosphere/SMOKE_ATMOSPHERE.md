@@ -1,4 +1,19 @@
-# 燃烧烟柱与爆炸 · smoke-preview.18
+# 燃烧烟柱与爆炸 · smoke-preview.19
+
+## preview.19：复制断桥独立顺风烟，清除旧燃烧烟
+
+用户确认 preview.18 的火焰相符，但烟雾不符，并要求把旧烟方案全部替换，包含建筑燃烧。此前只追踪燃料火焰自身，漏掉地图独立摆放的烟雾层；preview.18 的烟雾视觉验收记为失败。
+
+实际 Items.sav 中，火焰 10062 旁约 396 游戏单位有烟雾摆件 10064，描述为 `FX_fumee_blanche_petite_RandomDuration`。当前 Fulda Scenery 的真实导入指向 `fx_Small_White_Smoke_Wind_diorama`，不是按中文名称猜测相似文件。其他邻近 Very Small 和地面雾资源也已记录，选择距火源最近的 Small 顺风烟；研究坐标不用于游戏运行。
+
+完整复制这份 FX 的两层参数与原生风力 bank，编译图逐项相等。两层 SmokeSpeed 均为 0、SmokeWindFactor 均为 10，名义烟粒寿命 20/8 秒，原生随机系数使实际为 16–20/6.4–8 秒。颜色、发射率、大小增长、贴图、透明度、初速和风力表达式均不另调。仍有原生微小初始上升，横向由当前地图 MapWind 驱动；同一配置不保证每张图同一倾角。
+
+实现为两个共用烟动作：原样无限来源供已有火源生命周期控制；有限包装仅以 Competition/Wait 结束来源，不缩短烟粒寿命，不改变原生父粒子时钟。五层旧自定义烟从活动 NDF 删除：地面 Binder 一层、燃料烟适配器一层、DarkFire 三层。保留既有火焰/光照/声音和火源期限；工业建筑等已有 60 处燃料烟调用通过适配器接入，另有 21 个建筑/起火/标准燃烧 FX 的 139 处混合烟层被静音并接入原生顺风烟。载具单挂点移除三处燃料烟、静音四处火焰内烟层，只接入一份双层顺风烟，避免叠加。
+
+验证完成：官方编译和打包、复制烟粒图与原图一致、588 个既有 bank 导出的非烟行为保持、所有替换入口存在、火焰参数保持、1656 个 GameFx 导出的爆炸 3/3.3 倍与保护项核验、19445 个外观描述/3819 个导出、安装输出哈希一致。Unit/Skirmish 与运行 DLL 保持；预算仍 200000，沿用同哈希 vfx-budget.3 原生读取回执，未重新执行 AI 或预算探针。渲染观感和帧率待新对局验收。
+
+备份：`Development/archive/smoke-preview19-before.zip`。研究：`map-wreck-research.json`；核验：`bridge-smoke-verification.json`、`map-wreck-verification.json`、`smoke-release.json`。
+
 
 **后续预算更新 vfx-budget.3：** 最大粒子数现为 200000，原生读取与安装核验通过。火烟 NDF 包未改；下面 preview.18 的 64 万为该次安装时的历史值。
 

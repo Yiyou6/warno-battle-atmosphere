@@ -128,7 +128,305 @@
       "fx": "$/GFX/GameFx/fx_incendie_Fuel_Explosion_Big_diorama"
     }
   },
-  "selected": "Small",
-  "qualification": "Reuse the actual Small effect placed twice by the broken bridge at unit scale. The previous same-family Big substitute added two vertical smoke layers absent from the bridge effect.",
+  "selected": "Small fire + separate Small White Smoke Wind",
+  "smoke_placements": [
+    {
+      "placement": {
+        "id": 10042,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1058717.0,
+            630220.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_fumee_blanche_tres_petite_RandomDuration"
+        }
+      },
+      "native_fx": "$/GFX/GameFx/fx_Very_Small_White_Smoke_Wind_diorama",
+      "nearest_fire_id": 10062,
+      "relative_offset": [
+        -3521.0,
+        -13739.0,
+        0.0
+      ],
+      "distance": 14183.002573503256
+    },
+    {
+      "placement": {
+        "id": 10052,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1060476.0,
+            648562.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_fumee_blanche_tres_petite_RandomDuration"
+        }
+      },
+      "native_fx": "$/GFX/GameFx/fx_Very_Small_White_Smoke_Wind_diorama",
+      "nearest_fire_id": 10062,
+      "relative_offset": [
+        -1762.0,
+        4603.0,
+        0.0
+      ],
+      "distance": 4928.717175898816
+    },
+    {
+      "placement": {
+        "id": 10064,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1062295.0,
+            643567.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_fumee_blanche_petite_RandomDuration"
+        }
+      },
+      "native_fx": "$/GFX/GameFx/fx_Small_White_Smoke_Wind_diorama",
+      "nearest_fire_id": 10062,
+      "relative_offset": [
+        57.0,
+        -392.0,
+        0.0
+      ],
+      "distance": 396.1224558138556
+    },
+    {
+      "placement": {
+        "id": 10121,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1070109.0,
+            648754.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_fumee_blanche_petite_RandomDuration"
+        }
+      },
+      "native_fx": "$/GFX/GameFx/fx_Small_White_Smoke_Wind_diorama",
+      "nearest_fire_id": 10062,
+      "relative_offset": [
+        7871.0,
+        4795.0,
+        0.0
+      ],
+      "distance": 9216.543061256752
+    },
+    {
+      "placement": {
+        "id": 10145,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1073271.0,
+            632619.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_fumee_blanche_tres_petite_RandomDuration"
+        }
+      },
+      "native_fx": "$/GFX/GameFx/fx_Very_Small_White_Smoke_Wind_diorama",
+      "nearest_fire_id": 10141,
+      "relative_offset": [
+        491.0,
+        -3288.0,
+        0.0
+      ],
+      "distance": 3324.4586025396675
+    },
+    {
+      "placement": {
+        "id": 10155,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1075000.0,
+            636400.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_fumee_blanche_brume_sol_RandomDuration"
+        }
+      },
+      "native_fx": "$/GFX/GameFx/fx_fumee_blanche_brume_sol_diorama",
+      "nearest_fire_id": 10141,
+      "relative_offset": [
+        2220.0,
+        493.0,
+        0.0
+      ],
+      "distance": 2274.082012593213
+    },
+    {
+      "placement": {
+        "id": 10235,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1092520.0,
+            631329.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_fumee_blanche_tres_petite_RandomDuration"
+        }
+      },
+      "native_fx": "$/GFX/GameFx/fx_Very_Small_White_Smoke_Wind_diorama",
+      "nearest_fire_id": 10141,
+      "relative_offset": [
+        19740.0,
+        -4578.0,
+        0.0
+      ],
+      "distance": 20263.90100646961
+    }
+  ],
+  "selected_smoke": {
+    "placement": {
+      "id": 10064,
+      "class": "TSaveDescriptorItemPoint",
+      "properties": {
+        "AxeX": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "AxeY": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "AxeZ": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "AxeT": [
+          1062295.0,
+          643567.0,
+          0.0
+        ],
+        "SceneryDescriptor": "FX_fumee_blanche_petite_RandomDuration"
+      }
+    },
+    "native_fx": "$/GFX/GameFx/fx_Small_White_Smoke_Wind_diorama",
+    "nearest_fire_id": 10062,
+    "relative_offset": [
+      57.0,
+      -392.0,
+      0.0
+    ],
+    "distance": 396.1224558138556
+  },
+  "qualification": "The earlier investigation omitted separate scenery smoke props. The nearest independent smoke prop is about 396 game units from fire 10062; resolve its Scenery import, not a similarly named generated FX file. Copy the two native wind-smoke layers, preserving all particle parameters.",
   "runtime_map_coordinates_used": false
 }

@@ -69,6 +69,8 @@ export BA_UrbanWreckFire is SimultaneousActionDeclaration
     Params = [ private parDuration is Template_Param_Float (), ]
     Actions = BA_UrbanActions is
     [
+        Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke_Finite NamedParameters = MAP[('parDuration', parDuration),]),
+
         TSimultaneousAction
         (
             Mobile = TMobileWithLocalRepereMatrixFactory
@@ -86,7 +88,7 @@ export BA_UrbanWreckFire is SimultaneousActionDeclaration
                         ( 'FireCountMul', 0 ),
                         ( 'FireDuration', 0 ),
                         ( 'Ground_Size', 4 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 8 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 0.5 ),
@@ -104,7 +106,7 @@ export BA_UrbanWreckFire is SimultaneousActionDeclaration
                         ( 'FireCountMul', 0 ),
                         ( 'FireDuration', 0 ),
                         ( 'Ground_Size', 3 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 5 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 1 ),
@@ -132,7 +134,7 @@ export BA_UrbanWreckFire is SimultaneousActionDeclaration
                         ( 'FireCountMul', 1 ),
                         ( 'FireDuration', 2 ),
                         ( 'Ground_Size', 1.5 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 10 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 2 ),
@@ -161,7 +163,7 @@ export BA_UrbanWreckFire is SimultaneousActionDeclaration
                         ( 'FireCountMul', 1 ),
                         ( 'FireDuration', 2 ),
                         ( 'Ground_Size', 1 ),
-                        ( 'SmokeCountMul', 2 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 10 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 1.25 ),
@@ -272,45 +274,9 @@ export BA_UrbanWreckFire is SimultaneousActionDeclaration
             Mobile = nil
             Actions =
             [
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelSmoke
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.1686275,0.1686275,0.1686275] ),
-                        ( 'parDensity', 1 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parOpacity', 1 ),
-                        ( 'parParticleLifetime', 6 ),
-                        ( 'parSize', 1500 ),
-                        ( 'parSpeedMul', 1 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelSmoke
-                    NamedParams = MAP[
-                        ( 'parColor', float3[0.5411765,0.5411765,0.5411765] ),
-                        ( 'parDensity', 0.8 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parOpacity', 1 ),
-                        ( 'parParticleLifetime', 5 ),
-                        ( 'parSize', 600 ),
-                        ( 'parSpeedMul', 1 ),
-                    ]
-                ),
-                TActionCall
-                (
-                    Action = $/VFX_Bank/BANK_FuelSmoke
-                    NamedParams = MAP[
-                        ( 'parColor', float3[1,1,1] ),
-                        ( 'parDensity', 1 ),
-                        ( 'parDuration', parDuration ),
-                        ( 'parOpacity', 1 ),
-                        ( 'parParticleLifetime', 3 ),
-                        ( 'parSize', 400 ),
-                        ( 'parSpeedMul', 0.5 ),
-                    ]
-                ),
+
+
+
                 TActionCall
                 (
                     Action = $/VFX_Bank/BANK_Light_Follow_Mobile_Random_Flash_Infinite_Simple

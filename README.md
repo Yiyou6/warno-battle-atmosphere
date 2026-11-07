@@ -1,10 +1,10 @@
 # WARNO BattleAtmosphere
 
-**运行预算已更新至 vfx-budget.3：最大粒子数 200000，保留原生画质缩放。** 新 DLL 原生预算读取、AI 启动/下令/退出和安装核验通过，火烟与爆炸仍用 smoke-preview.18。见 [预算验证](docs/validation-vfx-budget3.json)。
+**运行预算已更新至 vfx-budget.3：最大粒子数 200000，保留原生画质缩放。** 新 DLL 原生预算读取、AI 启动/下令/退出和安装核验通过，火烟已更新为 smoke-preview.19，预算 DLL 保持。见 [预算验证](docs/validation-vfx-budget3.json)。
 
 面向最高难度遭遇战的战场氛围与作战 AI 模组源码。目标是有氛围、有章法、双方付出巨大代价才决出胜者的战斗：大多数可用部队持续向前，在推进中展开宽战线，允许有用途的局部主攻集中，不允许大批部队长期闲置后方。
 
-当前快照：**combined-arms-preview.6 + smoke-preview.18**。直接复制都市前线断桥实际 Small 火烟，修正上一版同系列 Big 多出两层垂直烟柱的差异。火焰尺寸参数乘 0.5，烟的寿命、风向、运动、颜色、大小、密度均保留地图原配置；取消烟寿命乘 0.1。残骸燃烧 10–1200 秒，爆炸仍为原版 3 倍面片与 3.3 倍散布。构建、编译图和安装通过，实际画面待验。详见 [火烟方案](Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md)、[资源查证](docs/native-urban-fire-source.json) 和 [验证摘要](docs/validation-smoke-preview18.json)。
+当前快照：**combined-arms-preview.6 + smoke-preview.19 + vfx-budget.3**。复制都市前线断桥火焰旁独立摆放的 `fx_Small_White_Smoke_Wind_diorama` 两层顺风烟，保留原生运动、尺寸、颜色、发射和寿命。旧五层自定义烟已从活动配置删除，载具、建筑和地面燃烧统一接入；另替换 21 个燃烧 FX 的 139 处旧烟层。火焰沿用上一版，残骸 10–1200 秒，爆炸 3 倍/散布 3.3 倍，预算 200000。构建、完整编译图和安装通过，实际画面待验。详见 [火烟方案](Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md)、[资源查证](docs/native-urban-fire-source.json) 和 [验证摘要](docs/validation-smoke-preview19.json)。
 
 支持范围是征服与歼灭遭遇战，算法从当前场景提取部署区和导航，不依赖黑森林专用坐标。运行组件目前严格绑定 WARNO **revision 201602**；其他游戏版本需要重新核验原生接口。
 

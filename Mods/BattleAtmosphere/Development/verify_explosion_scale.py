@@ -14,11 +14,12 @@ from verify_smoke_profile import paths
 from apply_smoke_profile import DEV,MOD,BACKUP
 from explosion_scale import SIZES,PERSISTENT,VISUAL_SCALE,SPATIAL_SCALE,SPATIAL,OFFSETS
 from map_wreck_fire import WRECK_EXPORTS,NEW_FX
+from bridge_smoke import SMOKE_BANK
 
 def verify_explosions(current):
     with zipfile.ZipFile(DEV/BACKUP) as z:
         installed=json.loads(z.read('development/smoke-release.json'))
-        assert installed['version']=='smoke-preview.17'
+        assert installed['version']=='smoke-preview.18'
         assert installed['explosions']['visual_scale']==3
         assert hashlib.sha256(z.read('installed/Gen/NDF/GFX/GameFx.ndfbin')).hexdigest()==installed['outputs']['Gen/NDF/GFX/GameFx.ndfbin']
     assert VISUAL_SCALE==3 and SPATIAL_SCALE==3.3
@@ -81,6 +82,10 @@ def verify_explosions(current):
                     if oldvalue(left[name])==newvalue(right[name]):continue
                     action=oldvalue(p['Action'])
                     bank=action[1].rsplit('/',1)[-1] if action[0]=='import' else ''
+                    if bank=='AoA_FX_BANK_FireAndDarkSmoke_Simple' and name=='SmokeCountMul':
+                        n=current.objects[right[name]['ref']]
+                        assert n['class'] in ('TConstantFloat','TConstantInteger') and n['properties'].get('Value',0)==0
+                        continue # only former burning smoke is replaced; fire params remain exact
                     assert bank not in PERSISTENT,(name,bank)
                     assert not bank.startswith(('SFX','Shake','Destroy','Dummy','Propulsion','FX_BANK_')),bank
                     if name in SIZES:
@@ -104,6 +109,7 @@ def verify_explosions(current):
         if isinstance(a,dict):
             assert a.keys()==b.keys();return sum(compare(a[k],b[k]) for k in a)
         if isinstance(a,list):
+            b=[v for v in b if not (isinstance(v,dict) and 'ref' in v and current.objects[v['ref']]['class']=='TActionCall' and newvalue(current.objects[v['ref']]['properties']['Action'])==('import','$/VFX_Bank/'+SMOKE_BANK))]
             if len(a)!=len(b):
                 kept=[]
                 for v in a:
@@ -134,7 +140,7 @@ def verify_explosions(current):
         assert names and all('$/GFX/GameFx/'+n in affected for n in names),item['path']
     assert len(spatial)>1000 and len(offsets)>100
     assert removed
-    result=dict(visual_scale=VISUAL_SCALE,relative_to='smoke-preview.17',relative_multiplier=1,
+    result=dict(visual_scale=VISUAL_SCALE,relative_to='smoke-preview.18',relative_multiplier=1,
                 previous_visual_scale=3,spatial_scale=SPATIAL_SCALE,source_files=len(source['files']),
                 source_dimensions=sum(len(f['changes']) for f in source['files']),
                 unique_compiled_dimensions=len(changed),affected_exports=len(affected),

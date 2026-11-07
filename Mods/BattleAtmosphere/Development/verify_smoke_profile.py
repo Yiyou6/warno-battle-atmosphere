@@ -145,18 +145,10 @@ def main():
         prior = Cndf(prior_bytes)
     prior_exports = paths(prior, 'EXPR')
     assert canonical(bank, {'ref': old_id}) == canonical(prior, {'ref': prior_exports[OLD]}), 'Shared fuel smoke changed'
-    scaling = {}
-    for name, limits in ((NEW, [50,90]), ('$/VFX_Bank/FX_BANK_Binder_Fire', [45,80])):
-        current = smoke_spawner(bank, exports[name], name != NEW)
-        previous = smoke_spawner(prior, prior_exports[name], name != NEW)
-        assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == limits[1]
-        verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'], factor=0.36)
-        scaling[name] = dict(relative_to='smoke-preview.17', emission_multiplier=1,
-                             lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
-    from verify_smoke_plume import verify_plume
-    plume = verify_plume(bank, fx, exports, source)
-    from verify_smoke_motion import verify_motion
-    plume['motion'] = verify_motion(bank)
+    from verify_bridge_smoke import verify_bridge
+    bridge=verify_bridge(bank,fx)
+    scaling={'native_bridge_smoke':{'particle_lifetime_seconds':[8,20], 'exact_native_parameters':True}}
+    plume={'bridge':bridge}
     from verify_explosion_scale import verify_explosions
     explosions = verify_explosions(fx)
     from verify_map_wreck import verify_map_wreck
@@ -166,8 +158,8 @@ def main():
                   compiled_calls=calls, compiled_scaling=scaling, plume=plume, explosions=explosions, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: vehicle wrecks use the actual bridge Small FX; native wind/motion retained')
-    print('PASS: flame size 0.5x, smoke lifetime/motion match native bridge; burn still 10-1200s; single source')
+    print('PASS: native independent bridge wind-smoke copied exactly; old five custom smoke layers removed')
+    print('PASS: wreck/building/ground burning routes verified; retained flames, explosions, AI and budget checked')
 
 if __name__ == '__main__':
     main()

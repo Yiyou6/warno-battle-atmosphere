@@ -1,0 +1,33 @@
+// Ne pas éditer, ce fichier est généré
+
+export fx_FireAndSmoke_Standard is Simultaneous
+(
+    Actions = ActionList is
+    [
+        TSimultaneousAction
+        (
+            Mobile = nil
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/AoA_FX_BANK_FireAndDarkSmoke_Simple
+                    NamedParams = MAP[
+                        ( 'Feu_Size_Mul', 0.7 ),
+                        ( 'FireCountMul', 0.5 ),
+                        ( 'FireDuration', 5 ),
+                        ( 'Ground_Size', 1 ),
+                        ( 'SmokeCountMul', 0 ),
+                        ( 'SmokeDuration', 7 ),
+                        ( 'SmokeOpacity', 1 ),
+                        ( 'SmokeSpeed', 1 ),
+                        ( 'Smoke_Size_Mul', 1 ),
+                        ( 'SparksCountMul', 0 ),
+                        ( 'SparksDuration', 1 ),
+                    ]
+                ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
+            ]
+        ),
+    ]
+)

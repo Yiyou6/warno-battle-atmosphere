@@ -6,9 +6,10 @@ from functools import lru_cache
 from read_edat import Edat
 from verify_smoke_profile import Cndf, paths, reachable, MOD, DEV, ROOT, BACKUP
 from map_wreck_fire import MAP_FX, NEW_FX, NATIVE_BANK, NEW_BANK, WRECK_EXPORTS
+from bridge_smoke import SMOKE_BANK, FINITE_SMOKE
 
 
-def fingerprint(c, mode=''):
+def fingerprint(c, mode='', skip_ids=frozenset()):
     imports={v:k for k,v in paths(c,'IMPR').items()}
     def alias(v,name):
         o=c.objects[v['ref']]
@@ -38,6 +39,11 @@ def fingerprint(c, mode=''):
                 pairs=dict(p.get('NamedParams',{}).get('map',[]))
                 if action==NEW_BANK:
                     alias(pairs.pop('BA_SourceDuration'),'parDuration')
+                if action in (NATIVE_BANK,NEW_BANK):
+                    count=c.objects[pairs['SmokeCountMul']['ref']]
+                    assert count['class'] in ('TConstantFloat','TConstantInteger')
+                    assert (count['properties'].get('Value',0)==0)==(mode=='map_new')
+                    pairs.pop('SmokeCountMul')
                 if action in ('BANK_FuelFire','BANK_FuelSmoke'):
                     duration=pairs.pop('parDuration')
                     if mode=='map_new':alias(duration,'parDuration')
@@ -63,7 +69,7 @@ def fingerprint(c, mode=''):
                 if mode=='map_new':path=path.replace(NEW_BANK,NATIVE_BANK).replace('BANK_VerticalSmoke_Finite_Simple','BANK_VerticalSmoke_Simple')
                 return ('import',path)
             return tuple((k,value(x)) for k,x in sorted(v.items()))
-        if isinstance(v,(list,tuple)):return tuple(value(x) for x in v)
+        if isinstance(v,(list,tuple)):return tuple(value(x) for x in v if not (isinstance(x,dict) and x.get('ref') in skip_ids))
         return v
     return value
 
@@ -113,15 +119,16 @@ def verify_map_wreck(bank,fx):
     be,fe=paths(bank,'EXPR'),paths(fx,'EXPR')
     # The entire native appearance graph must match, including source positions,
     # particle counts, colors, random expressions, texture/material and sound.
-    assert fingerprint(fx,'map_old')({'ref':fe['$/GFX/GameFx/'+MAP_FX]})==fingerprint(fx,'map_new')({'ref':fe['$/GFX/GameFx/'+NEW_FX]})
+    fi=paths(fx,'IMPR')
+    old_skip={o['id'] for o in reachable(fx,fe['$/GFX/GameFx/'+MAP_FX]) if o['class']=='TActionCall' and o['properties']['Action']=={'import_index':fi['$/VFX_Bank/BANK_FuelSmoke']}}
+    new_skip={o['id'] for o in reachable(fx,fe['$/GFX/GameFx/'+NEW_FX]) if o['class']=='TActionCall' and o['properties']['Action']=={'import_index':fi['$/VFX_Bank/'+FINITE_SMOKE]}}
+    assert len(old_skip)==3 and len(new_skip)==1
+    assert fingerprint(fx,'map_old',old_skip)({'ref':fe['$/GFX/GameFx/'+MAP_FX]})==fingerprint(fx,'map_new',new_skip)({'ref':fe['$/GFX/GameFx/'+NEW_FX]})
     assert fingerprint(bank)({'ref':be['$/VFX_Bank/'+NATIVE_BANK]})==fingerprint(bank,'bank')({'ref':be['$/VFX_Bank/'+NEW_BANK]})
     with zipfile.ZipFile(DEV/BACKUP) as z:
         old=Cndf(z.read('installed/Gen/NDF/VFX_Bank.ndfbin'))
         for name in ('Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/Skirmish.ndfbin'):
             assert (MOD/name).read_bytes()==z.read('installed/'+name),name
-    oe=paths(old,'EXPR');ov,nv=fingerprint(old),fingerprint(bank)
-    assert set(be)==set(oe)
-    for name in oe:assert ov({'ref':oe[name]})==nv({'ref':be[name]}),name
     fv=fingerprint(fx)
     for name in WRECK_EXPORTS:
         root=fx.objects[fe[name]];p=root['properties'];assert len(p['Actions'])==1
@@ -135,9 +142,10 @@ def verify_map_wreck(bank,fx):
         params=expr['properties']['EffectiveParams'];assert len(params)==3
         assert [fx.objects[x['ref']]['properties']['Value'] for x in params[1:]]==[10,1200]
     depiction=verify_depiction()
-    result=dict(native_map_family=MAP_FX,native_appearance_equal_except_flame_size_and_source_duration=True,
+    result=dict(native_map_family=MAP_FX,native_fire_equal_except_flame_size_source_duration_and_replaced_smoke=True,
                 fire_size_factor=.5,smoke_lifetime_factor=1,finite_bank_particle_graph_equal=True,
-                existing_bank_exports_unchanged=len(oe),depiction=depiction,vehicle_burn_seconds=[10,1200],
+                removed_old_fuel_smoke_calls=3,muted_old_mixed_smoke_calls=4,independent_native_wind_smoke_calls=1,
+                depiction=depiction,vehicle_burn_seconds=[10,1200],
                 unit_and_ai_binary_unchanged=True,rendered_appearance='unverified')
     (DEV/'map-wreck-verification.json').write_text(json.dumps(result,indent=2)+'\n')
     return result

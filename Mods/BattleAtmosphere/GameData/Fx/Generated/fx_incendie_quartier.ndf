@@ -1,0 +1,65 @@
+// Ne pas éditer, ce fichier est généré
+
+export fx_incendie_quartier is Simultaneous
+(
+    Actions = ActionList is
+    [
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[46,-3,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/AoA_FX_BANK_FireAndDarkSmoke_Simple
+                    NamedParams = MAP[
+                        ( 'Feu_Size_Mul', 0.5 ),
+                        ( 'FireCountMul', 4 ),
+                        ( 'FireDuration', 2 ),
+                        ( 'Ground_Size', 1.5 ),
+                        ( 'SmokeCountMul', 0 ),
+                        ( 'SmokeDuration', 10 ),
+                        ( 'SmokeOpacity', 1 ),
+                        ( 'SmokeSpeed', 1 ),
+                        ( 'Smoke_Size_Mul', 2 ),
+                        ( 'SparksCountMul', 0 ),
+                        ( 'SparksDuration', 3 ),
+                    ]
+                ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[46,-3,370]
+                EulerAngles = float3[1.570522,0,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/AoA_FX_BANK_FireAndDarkSmoke_Simple
+                    NamedParams = MAP[
+                        ( 'Feu_Size_Mul', 0.5 ),
+                        ( 'FireCountMul', 2 ),
+                        ( 'FireDuration', 2 ),
+                        ( 'Ground_Size', 1 ),
+                        ( 'SmokeCountMul', 0 ),
+                        ( 'SmokeDuration', 10 ),
+                        ( 'SmokeOpacity', 1 ),
+                        ( 'SmokeSpeed', 1 ),
+                        ( 'Smoke_Size_Mul', 2 ),
+                        ( 'SparksCountMul', 0 ),
+                        ( 'SparksDuration', 3 ),
+                    ]
+                ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
+            ]
+        ),
+    ]
+)

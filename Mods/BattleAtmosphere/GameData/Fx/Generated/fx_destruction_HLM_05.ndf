@@ -162,7 +162,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'FireCountMul', 0 ),
                         ( 'FireDuration', 0 ),
                         ( 'Ground_Size', 4 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 8 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 0.5 ),
@@ -171,6 +171,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'SparksDuration', 0 ),
                     ]
                 ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
                 TActionCall
                 (
                     Action = $/VFX_Bank/AoA_FX_BANK_FireAndDarkSmoke_Simple
@@ -179,7 +180,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'FireCountMul', 0 ),
                         ( 'FireDuration', 0 ),
                         ( 'Ground_Size', 3 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 5 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 1 ),
@@ -188,6 +189,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'SparksDuration', 0 ),
                     ]
                 ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
             ]
         ),
         TSimultaneousAction
@@ -206,7 +208,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'FireCountMul', 1 ),
                         ( 'FireDuration', 2 ),
                         ( 'Ground_Size', 0.75 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 4 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 2 ),
@@ -215,6 +217,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'SparksDuration', 1 ),
                     ]
                 ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
             ]
         ),
         TSimultaneousAction
@@ -233,7 +236,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'FireCountMul', 1 ),
                         ( 'FireDuration', 2 ),
                         ( 'Ground_Size', 0.75 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 4 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 2 ),
@@ -242,6 +245,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'SparksDuration', 1 ),
                     ]
                 ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
             ]
         ),
         TSimultaneousAction
@@ -260,7 +264,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'FireCountMul', 5 ),
                         ( 'FireDuration', 2 ),
                         ( 'Ground_Size', 8 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 2 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 2 ),
@@ -269,6 +273,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'SparksDuration', 1 ),
                     ]
                 ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
             ]
         ),
         TSimultaneousAction
@@ -287,7 +292,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'FireCountMul', 1 ),
                         ( 'FireDuration', 2 ),
                         ( 'Ground_Size', 0.75 ),
-                        ( 'SmokeCountMul', 1 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 10 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 2 ),
@@ -296,6 +301,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'SparksDuration', 4 ),
                     ]
                 ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
             ]
         ),
         TSimultaneousAction
@@ -315,7 +321,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'FireCountMul', 1 ),
                         ( 'FireDuration', 2 ),
                         ( 'Ground_Size', 0.5 ),
-                        ( 'SmokeCountMul', 2 ),
+                        ( 'SmokeCountMul', 0 ),
                         ( 'SmokeDuration', 10 ),
                         ( 'SmokeOpacity', 1 ),
                         ( 'SmokeSpeed', 1.25 ),
@@ -324,6 +330,7 @@ export fx_destruction_HLM_05 is SimultaneousActionDeclaration
                         ( 'SparksDuration', 1 ),
                     ]
                 ),
+                Template_ActionCall(Action = $/VFX_Bank/BA_BridgeWindSmoke),
             ]
         ),
         TSimultaneousAction
