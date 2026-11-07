@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import json
 import subprocess
 import sys
-from apply_smoke_profile import DEV, MOD, ROOT, VERSION, BACKUP, sha, protected_files
+from apply_smoke_profile import DEV, MOD, ROOT, VERSION, BACKUP, sha, protected_files, protected_match
 
 def main():
     running = subprocess.run(['powershell', '-NoProfile', '-Command',
@@ -28,14 +28,18 @@ def main():
     assert sha(saved / 'Gen/NDF/GFX/Skirmish.ndfbin') == sha(MOD / 'Gen/NDF/GFX/Skirmish.ndfbin')
     assert before == protected_files() and activation.read_bytes() == active_before
     assert identity == check_local_mod_identity()
+    subprocess.run([sys.executable,str(DEV/'native_bridge/install_runtime.py')],check=True,stdout=subprocess.DEVNULL)
+    from verify_fx_budget import verify_fx_budget
+    budget=verify_fx_budget(installed=True)
+    assert protected_match(before, protected_files())
     result = dict(version=VERSION, status='installed; rendered-appearance-and-frame-rate-unverified',
                   installed_at=datetime.now(timezone.utc).isoformat(), outputs=checked['outputs'],
                   config_sha256=sha(saved / 'Config.ini'), runtime_dll_sha256=sha(ROOT / 'version.dll'),
                   ai_unchanged=True, gameplay_smoke_and_fire_unchanged=True,
                   compiled_calls=checked['compiled_calls'], compiled_scaling=checked['compiled_scaling'],
-                  plume=checked['plume'], backup=BACKUP)
+                  plume=checked['plume'], explosions=checked['explosions'], particle_budget=budget, backup=BACKUP)
     (DEV / 'smoke-release.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('INSTALLED %s; current AI and runtime preserved' % VERSION)
+    print('INSTALLED %s; AI unchanged, VFX budget 4x, explosion dimensions 2x' % VERSION)
 
 if __name__ == '__main__':
     main()

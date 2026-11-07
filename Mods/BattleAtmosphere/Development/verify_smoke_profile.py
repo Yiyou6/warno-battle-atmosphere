@@ -8,7 +8,7 @@ import subprocess
 import sys
 import zipfile
 from read_cndf import Cndf
-from apply_smoke_profile import DEV, MOD, ROOT, OLD, NEW, VERSION, MULTIPLIER, BACKUP, sha, protected_files
+from apply_smoke_profile import DEV, MOD, ROOT, OLD, NEW, VERSION, MULTIPLIER, BACKUP, sha, protected_files, protected_match
 
 def paths(c, section):
     data = c.tables[section]
@@ -97,7 +97,7 @@ def main():
     source = json.loads((DEV / 'smoke-source.json').read_text())
     build = json.loads((DEV / 'smoke-build.json').read_text())
     assert build['sources'] == source['sources']
-    assert build['protected'] == protected_files()
+    assert protected_match(build['protected'], protected_files())
     for path, digest in build['outputs'].items():
         assert sha(MOD / path) == digest
     bank = Cndf((MOD / 'Gen/NDF/VFX_Bank.ndfbin').read_bytes())
@@ -153,8 +153,10 @@ def main():
                              lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
     from verify_smoke_plume import verify_plume
     plume = verify_plume(bank, fx, exports, source)
+    from verify_explosion_scale import verify_explosions
+    explosions = verify_explosions(fx)
     result = dict(version=VERSION, status='source-and-compiled-references-passed; visual-unverified',
-                  compiled_calls=calls, compiled_scaling=scaling, plume=plume, protected=build['protected'], sources=build['sources'],
+                  compiled_calls=calls, compiled_scaling=scaling, plume=plume, explosions=explosions, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
     print('PASS: restored density floor, bounded smoke life and decelerating growth; 64 burning/193 unchanged shared placements')

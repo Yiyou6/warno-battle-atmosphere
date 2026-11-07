@@ -1,0 +1,856 @@
+// Actions can use the different parameters to adapt to the situation
+
+export fx_impact_sol_Tactical_Nuke is SimultaneousActionDeclaration
+(
+    parDuration is 8
+    parSize is 59400 div 4
+    parAlpha is 0.2
+    SizeFactor is 6.0
+    Params =
+    [
+        private parPosition         is Template_Param_Float3(),
+        private parDirection        is Template_Param_Float3(),
+        private parRadiusPhysical   is Template_Param_Float(),
+        private parRadiusSuppress   is Template_Param_Float(),
+    ]
+    Mobile = Template_MobileWithLocalRepereMatrixFactory
+    (
+        DoNotInheritCentroid = true
+        IntroduceCentroid = true
+        CentroidRelative = false
+    )
+    Actions =
+    [
+        TSequentialAction
+        (
+            Mobile = Template_MobileSoundSlotFactory()
+            Actions = [
+                TWaitInSec ( Duration = length[(CameraPosition - MobilePosition) div GameUnitsPerLBU div 340.0 ]),
+                TActionDescriptorAudio
+                (
+                    SoundSet = $/GFX/Sound/Sound_ImpactArtillerie_NukelSol
+                ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = fx_impact_Tactical_Nuke
+            NamedParameters = MAP[
+                ( 'parDirection', parDirection),
+                ( 'parInitialShotDelay', 0),
+                ( 'parPosition', parPosition),
+                ( 'parRadiusPhysical', parRadiusPhysical),
+                ( 'parRadiusSuppress', parRadiusSuppress),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = BANK_Ground_Sticker_Nuke
+            NamedParameters = MAP[
+                ( 'BANK_position', parPosition ),
+                ( 'BANK_size', 2 * (0.75 * parRadiusPhysical)),
+                ( 'BANK_lifetime', 100 ),
+                ( 'BANK_color', float3[1,1,1] ),
+                ( 'Bank_FadeInTime', 0 ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = BANK_Bomb_ShockWave
+            NamedParameters = MAP[
+                ( 'parInitialSize', 2 * (3300  * SizeFactor)),
+                ( 'parFinalSize', 2 * (200000 * SizeFactor)),
+                ( 'parDuration', 1),
+                ( 'parPosition', parPosition + float3[0,0,500] ),
+                ( 'parZBias', 1000 )
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = BANK_Bomb_NewSparks
+            NamedParameters = MAP[
+                ( 'parCount', 200 ),
+                ( 'parPosition', parPosition ),
+                ( 'parSize', 2 * (5) ),
+                ( 'parLifetime', 0.75 ),
+                ( 'parSpeed', 8000 * SizeFactor),
+                ( 'parColor', float3[1, 0.25, 0] ),
+                ( 'parGravity', 0 ),
+                ( 'parFluidFriction', 1 ),
+                ( 'parStretch', 20),
+                ( 'parColorMultiplier', 5),
+                ( 'parNarrowness', 0.2),
+                ( 'parWindFactor', 0.0),
+            ]
+        ),
+
+        //Nuke
+        Template_ActionCall
+        (
+            Action = ~/NukeMushroomTop
+            NamedParameters = MAP[
+                ( 'parSize', 2 * (2500 * SizeFactor * RandomRange[0.5, 1.5])),
+                ( 'parCount', 750 ),
+                ( 'parDuration', 20 ),
+                ( 'parOpacity', 0.1 ),
+                ( 'parInitColor', float3[0.05, 0.05, 0.05] ),
+                ( 'parEndColor', float3[0.1,0.1,0.1] ),
+                ( 'parSpawnZ',      1000 * SizeFactor),
+                ( 'parZDiff',       12500 * SizeFactor),
+                ( 'parInitRadius',  1500 * SizeFactor),
+                ( 'parEndRadius',   6000 * SizeFactor),
+                ( 'parHeight',      3000 * SizeFactor),
+                ( 'parPos', parPosition + MobilePosition ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = ~/NukeMushroomTube
+            NamedParameters = MAP[
+                ( 'parSize', 2 * (1000 * RandomRange[0.75, 1.25]  * SizeFactor)),
+                ( 'parCount', 75 * SizeFactor),
+                ( 'parDuration', 20 ),
+                ( 'parOpacity', 0.5 ),
+                ( 'parColor', float3[0.1,0.1,0.1] ),
+                ( 'parSpawnPosition', float3[500,500,1000] * SizeFactor ),
+                ( 'parPos', parPosition + MobilePosition ),
+                ( 'parVitesseAscentionnelle', 6500 * SizeFactor)
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = ~/Nuke_WasteGroundDust
+            NamedParameters = MAP[
+                ( 'BANK_OffsetPos', float3[0.00, 0.00, 0.00] ),
+                ( 'BANK_ParticleCount', 1000 * $/VFX_Bank/FxLodLevel_from_05to1 ),
+                ( 'BANK_ParticleLifetime', RandomRange[0.5, 2] *30 ),
+                ( 'BANK_InitRGBcolor', LinearColor255[30, 30, 30] ),
+                ( 'BANK_InitPosition', parPosition + MinusOneToOneRandomCircle * float3[250.00, 250.00, 500.00] * SizeFactor ),
+                ( 'BANK_InitRotation', 0.25 ),
+                ( 'BANK_InitSpeed', MinusOneToOneRandomCircle * float3[10000,10000,200] * RandomRange[0.85, 1.5] * SizeFactor),
+                ( 'BANK_AlphaMul', RandomRange[6, 7] ),
+                ( 'BANK_AlphaStartDecayValue', 0.01 ),
+                ( 'BANK_FluidFriction', 3 ),
+                ( 'BANK_AccelerationField', $/VFX_Bank/MapWind * 1 + float3[0.00, 0.00, 0.00] ),
+                ( 'BANK_ParticleRotationFactor', RandomRange[0.5, 1.5]  ),
+                ( 'BANK_ParticuleStartSize', 600 * SizeFactor),
+                ( 'BANK_ParticuleEndSize', 800 * SizeFactor),
+                ( 'BANK_ParticuleScaleSizeFactor', RandomRange[1, 6] ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = ~/Nuke_WasteGroundDust
+            NamedParameters = MAP[
+                ( 'BANK_OffsetPos', float3[0.00, 0.00, 0.00] ),
+                ( 'BANK_ParticleCount', 800 * $/VFX_Bank/FxLodLevel_from_05to1 ),
+                ( 'BANK_ParticleLifetime', RandomRange[0.5, 2] *25 ),
+                ( 'BANK_InitRGBcolor', LinearColor255[50, 50, 50] ),
+                ( 'BANK_InitPosition', parPosition + MinusOneToOneRandomCircle * float3[3000.00, 3000.00, 0.00] * SizeFactor + float3[0,0,0] ),
+                ( 'BANK_InitRotation', 0.25 ),
+                ( 'BANK_InitSpeed', MinusOneToOneRandomCircle * float3[5000,5000,200] * RandomRange[0.0, 1.5] * SizeFactor),
+                ( 'BANK_AlphaMul', RandomRange[6, 7] ),
+                ( 'BANK_AlphaStartDecayValue', 0.01 ),
+                ( 'BANK_FluidFriction', 2.5 ),
+                ( 'BANK_AccelerationField', $/VFX_Bank/MapWind * 1.5 + float3[0.00, 0.00, 0.00] ),
+                ( 'BANK_ParticleRotationFactor', RandomRange[0.5, 1.5]  ),
+                ( 'BANK_ParticuleStartSize', 500 * SizeFactor),
+                ( 'BANK_ParticuleEndSize', 700 * SizeFactor),
+                ( 'BANK_ParticuleScaleSizeFactor', RandomRange[1, 5] ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = ~/Nuke_WasteGroundDust
+            NamedParameters = MAP[
+                ( 'BANK_OffsetPos', float3[0.00, 0.00, 0.00] ),
+                ( 'BANK_ParticleCount', 800 * $/VFX_Bank/FxLodLevel_from_05to1 ),
+                ( 'BANK_ParticleLifetime', RandomRange[0.5, 2] *20 ),
+                ( 'BANK_InitRGBcolor', LinearColor255[70, 70, 70] ),
+                ( 'BANK_InitPosition', parPosition + MinusOneToOneRandomCircle * float3[3000.00, 3000.00, 0.00] * SizeFactor + float3[0,0,0] ),
+                ( 'BANK_InitRotation', 0.25 ),
+                ( 'BANK_InitSpeed', MinusOneToOneRandomCircle * float3[5000,5000,0] * RandomRange[0.0, 1.5] * SizeFactor),
+                ( 'BANK_AlphaMul', RandomRange[6, 7] ),
+                ( 'BANK_AlphaStartDecayValue', 0.01 ),
+                ( 'BANK_FluidFriction', 2.5 ),
+                ( 'BANK_AccelerationField', $/VFX_Bank/MapWind * 2 + float3[0.00, 0.00, 0.00] ),
+                ( 'BANK_ParticleRotationFactor', RandomRange[0.5, 1.5]  ),
+                ( 'BANK_ParticuleStartSize', 400 * SizeFactor),
+                ( 'BANK_ParticuleEndSize', 600 * SizeFactor),
+                ( 'BANK_ParticuleScaleSizeFactor', RandomRange[1, 4] ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = BANK_Light_Follow_Mobile_Random_Flash
+            NamedParameters = MAP[
+                ( 'parPosition', parPosition + float3[0.00, 0.00, 50.00] ),
+                ( 'parSizeLBU', 2 * (23.2558139535 * SizeFactor)),
+                ( 'parColor', float3[0.7, 0.4, 0.2] ),
+                ( 'parDuration', 8 ),
+                ( 'parAlpha', 1 ),
+            ]
+        ),
+         //Distort
+        Template_ActionCall
+        (
+            Action = BANK_Bomb_Distort_Plane
+            NamedParameters = MAP[
+                ( 'parPosition', parPosition + float3[0,0,100] * SizeFactor),
+                ( 'parInitialSize', 2 * (200 * SizeFactor)),
+                ( 'parFinalSize', 2 * (200000 * SizeFactor) ),
+                ( 'parDistanceIntensity', 30000),
+                ( 'parZBias', 0 ),
+                ( 'parDuration', 1),
+            ]
+        ),
+        //Flashs
+        Template_ActionCall
+        (
+            Action = BANK_Dynamic_Flash
+            NamedParameters = MAP[
+                ( 'parPosition', parPosition + float3[0.00, 0.00, 1500.00] * SizeFactor),
+                ( 'parSizeLBU', 2 * (93.023255814 * SizeFactor)),
+                ( 'parColorStart', float3[0.99, 0.99, 0.99] ),
+                ( 'parColorEnd', float3[0.0, 0.0, 0.0] ),
+                ( 'parDuration', 8 ),
+                ( 'parAlpha', parAlpha ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = ~/Nuke_Bottom_Sparks
+            NamedParameters = MAP[
+                ( 'parSize', 2 * (12.5 * RandomRange[0.25,2] * SizeFactor) ),
+                ( 'parInitRadius', 17000 * SizeFactor ),
+                ( 'parCount', 0 * SizeFactor ),
+                ( 'parDuration', 4 ),
+                ( 'parOpacity', 1 ),
+                ( 'parInitColor', float3[1,0.5,0.2] ),
+                ( 'parEndColor', float3[0.6,0.7,0.8] ),
+                ( 'parPos', parPosition + MobilePosition),
+            ]
+        ),
+        private Flash1 is Template_ActionCall
+        (
+            Action = Bomb_Flash
+            NamedParameters = MAP[
+                ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1000] * SizeFactor),
+                ( 'parInitialSize'  , 2 * (25000) ),
+                ( 'parFinalSize'    , 2 * (65000) ),
+                ( 'parDuration'     , 8 ),
+                ( 'parZBias'        , 255 ),
+                ( 'parCount'        , 1 ),
+            ]
+        ),
+        private Flash1etdemi is Template_ActionCall
+        (
+            Action = Bomb_Flash
+            NamedParameters = MAP[
+                ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1250] * SizeFactor),
+                ( 'parInitialSize'  , 2 * (50000) ),
+                ( 'parFinalSize'    , 2 * (30000) ),
+                ( 'parDuration'     , 8 ),
+                ( 'parZBias'        , 255 ),
+                ( 'parCount'        , 4 ),
+            ]
+        ),
+        private Flash2 is Template_ActionCall
+        (
+            Action = Bomb_Flash
+            NamedParameters = MAP[
+                ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1500] * SizeFactor ),
+                ( 'parInitialSize'  , 2 * (40000) ),
+                ( 'parFinalSize'    , 2 * (20000) ),
+                ( 'parDuration'     , 8 ),
+                ( 'parZBias'        , 255 ),
+                ( 'parCount'        , 4 ),
+            ]
+        ),
+        private Flash3 is Template_ActionCall
+        (
+            Action = Bomb_Flash
+            NamedParameters = MAP[
+                ( 'parPositionRelative'     , parPosition + MobilePosition + float3[0,0,1750] * SizeFactor),
+                ( 'parInitialSize'  , 2 * (30000) ),
+                ( 'parFinalSize'    , 2 * (10000) ),
+                ( 'parDuration'     , 8 ),
+                ( 'parZBias'        , 255 ),
+                ( 'parCount'        , 4 ),
+            ]
+        ),
+        Template_ActionCall
+        (
+            Action = Smoky_Dust_Projections
+            NamedParameters = MAP[
+                ( 'parSize', 2 * (10000 * RandomRange[0.5, 1.0] * SizeFactor)),
+                ( 'parCount', 100 ),
+                ( 'parDuration', 20 * RandomRange[0.5, 1.0] ),
+                ( 'parOpacity', 1 ),
+                ( 'parColor', float3[0.5,0.5,0.5] ),
+            ]
+        ),
+        Simultaneous
+        (
+            Mobile = Template_MobileWithLocalRepereMatrixFactory
+            (
+                DoNotInheritCentroid = true
+                Position = parPosition
+            )
+            Actions =
+            [
+                Template_ActionCall
+                (
+                    Action = ShakeCamera
+                    NamedParameters = MAP[
+                        ( 'parPower',       0.1 * SizeFactor ),
+                        ( 'parRadius',      300000 ),
+                        ( 'parDuration',    10 ),
+                        ( 'parFrequency',   4 ),
+                        ( 'parPeriod',      0.05 ),
+                    ]
+                ),
+            ]
+        ),
+        Template_ActionDescriptorDestroySceneryRandom
+        (
+            Radius = parRadiusPhysical
+        ),
+    ]
+)
+
+Bomb_Flash is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private parPositionRelative is Template_Param_Float3( DefaultValue = float3[0,0,0] ),
+        private parInitialSize      is Template_Param_Float ( DefaultValue = 10 ),
+        private parFinalSize        is Template_Param_Float ( DefaultValue = 10000 ),
+        private parDuration         is Template_Param_Float ( DefaultValue = 0.1 ),
+        private parZBias            is Template_Param_Float ( DefaultValue = 0 ),
+        private parCount            is Template_Param_Int   ( DefaultValue = 1 ),
+    ]
+    Actions =
+    [
+        private Bomb_Flashy is ParticleBombSpawner
+        (
+            Count = parCount
+            Spawner =  ParticleSpawner
+            (
+                PositionIndependentFromEmitter = true
+                ParticleLifetime = parDuration
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        Position = parPositionRelative
+                        ColorRGB = LinearColor[1, 1, 1]
+                        ColorMultiplier = 1
+                        Rotation= 0 //RandomUnit
+                        EmissivePower = 100
+                        ColorModifier = 1
+                        Alpha= 1
+                        CustomFloat_1= parInitialSize * HomogeneousUnit
+                        CustomFloat_2= parFinalSize * HomogeneousUnit
+                        ZBias = parZBias
+                    )
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    RenderInfo = ParticleRenderInfo
+                    (
+                        ZTest = True
+                        ZWrite = False
+                        SortTriangles = True
+                        TextureName = 'GameData:/Assets/2D/Fx/flare_jaune_00.png'
+                        Calque = 'Particles'
+                        EmissiveParticle = true
+                    )
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        EmissivePower = ParticleRemainingLifeRatio
+                        Size = lerp[ParticleLifeRatio, ParticleCustomFloat_1, ParticleCustomFloat_2]
+                    )
+                    ParticleRenderer = LitParticleRendererNoCentroidPositioning
+                )
+            )
+        ),
+    ]
+)
+
+
+Nuke_WasteGroundDust is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private BANK_OffsetPos                  is Template_Param_Float3(),
+        private BANK_ParticleCount              is Template_Param_Float(),
+        private BANK_ParticleLifetime           is Template_Param_Float(),
+        private BANK_InitRGBcolor               is Template_Param_Float3(),
+        private BANK_InitPosition               is Template_Param_Float3(),
+        private BANK_InitRotation               is Template_Param_Float(),
+        private BANK_InitSpeed                  is Template_Param_Float3(),
+        private BANK_AlphaMul                   is Template_Param_Float(),
+        private BANK_AlphaStartDecayValue       is Template_Param_Float(),
+        private BANK_FluidFriction              is Template_Param_Float(),
+        private BANK_AccelerationField          is Template_Param_Float3(),
+        private BANK_ParticleRotationFactor     is Template_Param_Float(),
+        private BANK_ParticuleStartSize         is Template_Param_Int(),
+        private BANK_ParticuleEndSize           is Template_Param_Int(),
+        private BANK_ParticuleScaleSizeFactor   is Template_Param_Float(),
+    ]
+    Actions =
+    [
+        private WasteSolFront is ParticleBombSpawner
+        (
+            ParticleMaxDurationForSpawnSkip = BANK_ParticleLifetime * 1.35
+            Count = BANK_ParticleCount
+            Position = BANK_OffsetPos
+            Spawner = private SP is ParticleSpawner
+            (
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        Alpha = 1.0
+
+                        Position = BANK_InitPosition
+                        Speed = BANK_InitSpeed
+                        Size = 1
+                        ColorModifier = BANK_InitRGBcolor
+                        Rotation = BANK_InitRotation
+                        CustomFloat_1 = BANK_ParticleRotationFactor
+                        CustomFloat_2 = BANK_AlphaStartDecayValue
+                        CustomFloat_3 = BANK_AlphaMul * 0.1
+                        CustomFloat_4 = BANK_FluidFriction
+                        CustomFloat_5 = RandomUnit * 0.25
+                        CustomFloat3_2 = BANK_AccelerationField
+                        CustomFloat3_3 = GenFloat3[BANK_ParticuleStartSize, BANK_ParticuleEndSize, BANK_ParticuleScaleSizeFactor]
+                        EmissivePower = 5
+                    ),
+                ]
+                PostTransformInitialisers =
+                [
+                    Initialiser_CustomFloat3_1
+                    (
+                        InitFunction = normalized[ParticleSpeed]
+                    ),
+                ]
+                ParticleLifetime = BANK_ParticleLifetime
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                    RenderInfo = DeferredParticleRenderInfo
+                    (
+                        TextureName = 'GameData:/Assets/2D/Fx/anim_smoke_01_001.png'
+                    )
+                    Evolvers = ParticleStandardEvolverListWithPhysic
+                    (
+                        FluidFriction = ParticleCustomFloat_4
+                        PhysicAccelerationField = ParticleCustomFloat3_2
+                        Size = lerp[ParticleLifeRatio, getX[ParticleCustomFloat3_3], getY[ParticleCustomFloat3_3]] * getZ[ParticleCustomFloat3_3]
+                        Opacity = AttackDecay[ParticleLifeRatio, ParticleCustomFloat_2] * ParticleCustomFloat_3
+                        RotationSpeed = Cross[ParticleCustomFloat3_1, float3[1.00, 0.00, 0.00]] * ParticleRemainingLifeRatio * ParticleCustomFloat_1
+                        CustomFloat3_1 = normalized[ParticleCustomFloat3_1]
+                        Animation = ParticleLifeRatio
+                        EmissivePower = 3 * (1-ParticleLifeRatio) + 1
+                    )
+                )
+            )
+        )
+    ]
+)
+
+NukeMushroomTube is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private parSize is Template_Param_Float (),
+        private parCount is Template_Param_Float (),
+        private parDuration is Template_Param_Float (),
+        private parOpacity is Template_Param_Float (),
+        private parVitesseAscentionnelle is Template_Param_Float (),
+        private parColor is Template_Param_Float3 (),
+        private parSpawnPosition is Template_Param_Float3(),
+        private parPos is Template_Param_Float3 (DefaultValue = float3[50000,0,0]),
+    ]
+    LocalVariables = []
+    Actions =
+    [
+        ParticleBombSpawner
+        (
+            Count = parCount
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration * 1.1
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        Alpha = 1.0
+
+                        SpawnPosition is parPos + MinusOneToOneRandomCylinderVolume * parSpawnPosition
+                        Size = parSize * 1.5
+                        Opacity = parOpacity
+                        Direction = float3[0,0,1]
+                        CustomFloat_1 = ParticleOpacity
+                        CustomFloat_2 = ParticleSize * 0.5
+                        CustomFloat_3 = parVitesseAscentionnelle * RandomUnit
+                        CustomFloat3_1 = SpawnPosition
+                        CustomFloat3_2 = parPos
+                        CustomFloat3_3 = parColor
+                        CustomFloat3_4 = GenFloat3[RandomRange[0.8,1],RandomRange[0.4,0.7],0.3]
+                        Stretching = 1
+                        EmissivePower = 2
+                        ColorModifier = parColor
+                        Rotation = 0
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    RenderInfo = DeferredParticleRenderInfo
+                    (
+                        TextureName = 'GameData:/Assets/2D/Fx/anim_smoke_01_001.png'
+                    )
+                    ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        Stretching = 1.5 + MapToLinearSmoothStep[ParticleLifeRatio, 0, 0.85] * 1
+                        Position = ParticleCustomFloat3_1 + ParticleDirection * (ParticleSize * ParticleStretching * 0.3 + ParticleLifeRatio * ParticleCustomFloat_3)
+                        Opacity = ParticleCustomFloat_1 * Decay[ParticleLifeRatio, 0.85]
+                        Size = ParticleCustomFloat_2
+                        Animation = ParticleLifeRatio
+                        ColorModifier = lerp[MapToLinearSmoothStep[ParticleLifeRatio,0.0,0.8], ParticleCustomFloat3_4, ParticleCustomFloat3_3]
+                    )
+                )
+            )
+        ),
+        ParticleBombSpawner
+        (
+            Count = parCount * 2
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        Alpha = 1.0
+
+                        SpawnPosition is parPos + MinusOneToOneRandomHemisphereSurface * float3[1200,1200,300]
+                        Size = parSize * 3
+                        Opacity = parOpacity
+                        CustomFloat_1 = ParticleOpacity
+                        CustomFloat_2 = ParticleSize * 0.5
+                        CustomFloat3_1 = SpawnPosition
+                        CustomFloat3_2 = parPos
+                        CustomFloat3_3 = parColor * 0.5
+                        CustomFloat3_4 = float3[1.,1.,0.0] * MinusOneToOneRandomCircle * RandomUnit + float3[0,0,0.1]
+                        Stretching = 1
+                        EmissivePower = 2
+                        ColorModifier = parColor
+                        Rotation = RandomUnit
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    RenderInfo = DeferredParticleRenderInfo
+                    (
+                        TextureName = 'GameData:/Assets/2D/Fx/anim_smoke_02_000.png'
+                    )
+                    ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        Position = ParticleCustomFloat3_1 + ParticleCustomFloat3_4 * (ParticleSize * ParticleStretching * 0.3 + ParticleElapsedTime * 500)
+                        Opacity = ParticleCustomFloat_1 * MapToLinearSmoothRect[ParticleLifeRatio, 0, 0.2,0.85,1]
+                        Size = ParticleCustomFloat_2
+                        CustomFloat3_4 = ParticleCustomFloat3_4 + EvolverDt * log[ParticleElapsedTime div 0.5] * float3[0, 0, 0.3] * ParticleRemainingLifeRatio div ParticleDuration
+                        Animation = ParticleLifeRatio
+                        EmissivePower = 0 * (1-ParticleLifeRatio) + 1
+                        ColorModifier = lerp[MapToLinearSmoothStep[ParticleLifeRatio,0.2,0.8],float3[0.8,0.4,0.1], ParticleCustomFloat3_3]
+                    )
+                )
+            )
+        ),
+        WaitInSec
+        (
+            Duration = parDuration
+        )
+    ]
+)
+
+Nuke_Bottom_Sparks is SimultaneousActionDeclaration
+(
+    SpawnZ is 500
+    InitRadius is 15000
+    EndRadius is 0
+    Params =
+    [
+        private parSize is Template_Param_Float (),
+        private parInitRadius is Template_Param_Float(),
+        private parCount is Template_Param_Float (),
+        private parDuration is Template_Param_Float (),
+        private parOpacity is Template_Param_Float (),
+        private parInitColor is Template_Param_Float3 (),
+        private parEndColor is Template_Param_Float3 (),
+        private parPos is Template_Param_Float3 (DefaultValue = float3[50000,0,0]),
+    ]
+
+    Actions =
+    [
+        ParticleBombSpawner
+        (
+            Count = parCount
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        ColorModifier = float3[1, 1, 1]
+                        Alpha = 1.0
+
+                        Size = parSize
+                        Opacity = 0
+                        Direction = float3[0,0,0.0]
+                        CustomFloat_1 = ParticleOpacity
+                        CustomFloat_2 = ParticleSize * 0.5
+                        CustomFloat_3 = 1
+                        CustomFloat_4 = 1
+                        CustomFloat_5 = 0
+                        CustomFloat_7 = parInitRadius * RandomRange[0.1,1]
+                        CustomFloat_8 = EndRadius * RandomRange[0.1,1]
+                        CustomFloat3_1 = parPos + GenFloat3[0,0,SpawnZ]
+                        CustomFloat3_2 = MinusOneToOneRandomDisc * float3[1,1,0]
+                        CustomFloat3_3 = parEndColor
+                        CustomFloat3_5 = parInitColor
+                        CustomFloat3_4 = ParticleCustomFloat3_1
+                        Stretching = 1
+                        EmissivePower = 2
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    RenderInfo = ParticleRenderInfo
+                    (
+                        ZTest = True
+                        SortTriangles = True
+                        ZWrite = false
+                        TextureName = 'GameData:/Assets/2D/Fx/fx_etincelle_00.png'
+                        EmissiveParticle = True
+                    )
+                    ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        CustomFloat_5 = ParticleLifeRatio
+                        Stretching = lerp[ParticleLifeRatio,10.0, 1.0]
+                        CustomFloat_3 = MapToSquareAccelerated[ParticleLifeRatio]*0.7 + length[ParticleCustomFloat3_2]
+                        Position = ParticleCustomFloat3_1 + ParticleCustomFloat3_2 * GenFloat3[lerp[ParticleCustomFloat_3,ParticleCustomFloat_7,ParticleCustomFloat_8],lerp[ParticleCustomFloat_3,ParticleCustomFloat_7,ParticleCustomFloat_8], 0 ]
+
+                        Size = ParticleCustomFloat_2 //* (0.5 + sqrt[2 * ParticleElapsedTime])
+                        Direction = ParticleCustomFloat3_4 - ParticlePosition
+                        ColorModifier = lerp[ParticleLifeRatio,ParticleCustomFloat3_5, ParticleCustomFloat3_3]
+                        EmissivePower = AttackSustainDecay[ParticleLifeRatio,0.1,0.9]*10 //* (1-ParticleLifeRatio) + 1
+                    )
+                )
+            )
+        ),
+    ]
+)
+
+NukeMushroomTop is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private parSize is Template_Param_Float (),
+        private parCount is Template_Param_Float (),
+        private parDuration is Template_Param_Float (),
+        private parOpacity is Template_Param_Float (),
+        private parInitColor is Template_Param_Float3 (),
+        private parEndColor is Template_Param_Float3 (),
+        private parPos is Template_Param_Float3 (DefaultValue = float3[50000,0,0]),
+
+        private parSpawnZ       is Template_Param_Float (),
+        private parZDiff        is Template_Param_Float (),
+        private parInitRadius   is Template_Param_Float (),
+        private parEndRadius    is Template_Param_Float (),
+        private parHeight       is Template_Param_Float (),
+    ]
+    Actions =
+    [
+        Flash is ParticleBombSpawner
+        (
+            ParticleMaxDurationForSpawnSkip = 0.2
+            Disabled = true
+            Count = 1
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = 8
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        Size = 300
+                        ColorModifier = float3[1, 1, 1]
+                        Alpha = 1.0
+
+                        Position = ParticleCustomFloat3_1 - SpawnerPosition
+                        CustomFloat3_1 = parPos + float3[0, 0, 0.8] * parSpawnZ
+                        CustomFloat_1 = parEndRadius * 0.75
+                        CustomFloat_2 = parZDiff * 8 div parDuration div 2
+                        Stretching = 20
+                        Opacity = 0
+                        EmissivePower = 1
+                    )
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                    RenderInfo = ParticleRenderInfo
+                    (
+                        TextureName = 'GameData:/Assets/2D/Fx/flare_bleu_00.png'
+                        ZTest = false
+                        Calque = 'First'
+                        EmissiveParticle = True
+                    )
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        Size = AttackDecay[ParticleLifeRatio, 1] * ParticleCustomFloat_1
+                        Position = ParticleCustomFloat3_1 + ParticleCustomFloat_2 * ParticleLifeRatio * float3[0,0,1]
+                        EmissivePower = 12 * ParticleRemainingLifeRatio
+                        Opacity = 0
+                        Stretching = 10 + 10 * ParticleRemainingLifeRatio
+                    )
+                )
+            )
+        ),
+        ParticleSpraySpawnerWithEvaluable
+        (
+            Frequency = parCount div parDuration
+            DurationInSec = parDuration
+            StabilisationTime = 0
+            WaitAtLeastBetweenFrame = 0.0
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration * RandomRange[0.95, 1.05]
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        ColorModifier = float3[1, 1, 1]
+                        Alpha = 1.0
+
+                        Size = parSize * 0.3
+                        Opacity = 0
+                        CustomFloat_1 = parZDiff
+                        CustomFloat_2 = parHeight
+                        CustomFloat_3 = 1
+                        CustomFloat_4 = 1
+                        CustomFloat_5 = 0 //action life ratio calculé à la main
+                        CustomFloat_6 = $/VFX_Bank/ActionElapsedTime
+                        CustomFloat_7 = parInitRadius * RandomRange[0.5,1]
+                        CustomFloat_8 = parEndRadius * RandomRange[0.5,1]
+                        CustomFloat_9 = parDuration div 2
+                        CustomFloat3_1 = parPos + GenFloat3[0,0,parSpawnZ]
+                        CustomFloat3_2 = MinusOneToOneRandomCircle + float3[0,0,1]
+                        CustomFloat3_3 = parEndColor
+                        CustomFloat3_5 = parInitColor
+                        CustomFloat3_4 = parPos + GenFloat3[0,0,parSpawnZ]
+                        Stretching = 1
+                        EmissivePower = 2
+                        Rotation = RandomRange[0, 1]
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    RenderInfo = ParticleRenderInfo
+                    (
+                        ZTest = True
+                        SortTriangles = True
+                        ZWrite = false
+                        TextureName = 'GameData:/Assets/2D/Fx/anim_fireball_000.png'
+                        EmissiveParticle = True
+                        Use3DRotation = True
+                    )
+                    ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        CustomFloat_5 = (ParticleCustomFloat_6 + ParticleElapsedTime) div (ParticleCustomFloat_9 + ParticleDuration)
+                        CustomFloat_3 = MapToParabolicArch[ParticleLifeRatio]
+                        CustomFloat_4 =  2 * (ParticleLifeRatio < 0.62 ? (sqr[ParticleLifeRatio]) : (1 - sqr[(ParticleLifeRatio - 0.79)*sqrt[2]]))
+                        Position = ParticleCustomFloat3_1 + ParticleCustomFloat3_2 * GenFloat3[ParticleCustomFloat_3* lerp[MapToLinearSmoothStep[ParticleCustomFloat_5,0.0,1],ParticleCustomFloat_7,ParticleCustomFloat_8],ParticleCustomFloat_3* lerp[MapToLinearSmoothStep[ParticleCustomFloat_5,0.0,1],ParticleCustomFloat_7,ParticleCustomFloat_8], -ParticleCustomFloat_4*ParticleCustomFloat_2 ]
+                        Size = ParticleCustomFloat_2 * 0.5
+                        Animation = Mod[ParticleLifeRatio * 1.5, 1]
+                        CustomFloat3_1 = ParticleCustomFloat3_4 + GenFloat3[0,0,MapToLinearSmoothStep[ParticleCustomFloat_5,0.0,1] * ParticleCustomFloat_1]
+                        ColorModifier = lerp[ParticleCustomFloat_5,ParticleCustomFloat3_5, ParticleCustomFloat3_3 ]
+                        EmissivePower = Decay[ParticleLifeRatio, 0.85]*(MapToLinearSmoothRect[ParticleCustomFloat_5,0.0,0.2,0.3,0.45] * 10)
+                        Opacity = 0
+                    )
+                )
+            )
+        ),
+        ParticleSpraySpawnerWithEvaluable
+        (
+            Frequency = parCount div parDuration
+            DurationInSec = parDuration
+            StabilisationTime = 0
+            WaitAtLeastBetweenFrame = 0.0
+            Spawner = ParticleSpawner
+            (
+                ParticleLifetime = parDuration
+                Initialisers =
+                [
+                    ParticleInitialiserList
+                    (
+                        Alpha = 1.0
+
+                        Size = parSize
+                        Opacity = parOpacity
+                        CustomFloat_1 = parZDiff
+                        CustomFloat_2 = parHeight
+                        CustomFloat_3 = 1
+                        CustomFloat_4 = 1
+                        CustomFloat_5 = 0 //action life ratio calculé à la main
+                        CustomFloat_6 = $/VFX_Bank/ActionElapsedTime
+                        CustomFloat_7 = parInitRadius * RandomRange[0.5,1]
+                        CustomFloat_8 = parEndRadius * RandomRange[0.5,1]
+                        CustomFloat_9 = parDuration div 2
+                        CustomFloat3_1 = parPos + GenFloat3[0,0,parSpawnZ]
+                        CustomFloat3_2 = MinusOneToOneRandomCircle + float3[0,0,1]
+                        CustomFloat3_3 = parEndColor
+                        CustomFloat3_5 = parInitColor
+                        CustomFloat3_4 = parPos + GenFloat3[0,0,parSpawnZ]
+                        Stretching = 1
+                        EmissivePower = 1
+                        ColorModifier = parEndColor
+                        Rotation = RandomRange[0, 1]
+                    ),
+                ]
+                ParticleDescriptor = ParticleDescriptor
+                (
+                    RenderInfo = DeferredParticleRenderInfo
+                    (
+                        TextureName = 'GameData:/Assets/2D/Fx/anim_smoke_02_001.png'
+                    )
+                    ParticleRenderer = $/VFX_Bank/LitParticleRenderer
+                    Evolvers = ParticleStandardEvolverList
+                    (
+                        CustomFloat_5 = (ParticleCustomFloat_6 + ParticleElapsedTime) div (ParticleCustomFloat_9 + ParticleDuration)
+                        CustomFloat_3 = MapToParabolicArch[ParticleLifeRatio]
+                        CustomFloat_4 = 2 * (ParticleLifeRatio < 0.62 ? (sqr[ParticleLifeRatio]) : (1-sqr[(ParticleLifeRatio-0.79)*sqrt[2]]))
+                        Position = ParticleCustomFloat3_1 + ParticleCustomFloat3_2 * GenFloat3[ParticleCustomFloat_3* lerp[MapToLinearSmoothStep[ParticleCustomFloat_5,0.0,1],ParticleCustomFloat_7,ParticleCustomFloat_8],ParticleCustomFloat_3* lerp[MapToLinearSmoothStep[ParticleCustomFloat_5,0.0,1],ParticleCustomFloat_7,ParticleCustomFloat_8], -ParticleCustomFloat_4*ParticleCustomFloat_2 ]
+                        Opacity =  MapToLinearSmoothRect[ParticleCustomFloat_5,0.0,0.2,0.7, 1] * Decay[ParticleLifeRatio, 0.8]
+                        Animation = ParticleLifeRatio
+                        CustomFloat3_1 = ParticleCustomFloat3_4 + GenFloat3[0,0,MapToLinearSmoothStep[ParticleCustomFloat_5,0.0,1] * ParticleCustomFloat_1]
+                        ColorModifier = lerp[ParticleCustomFloat_5,ParticleCustomFloat3_5, ParticleCustomFloat3_3]
+                    )
+                )
+            )
+        ),
+        WaitInSec
+        (
+            Duration = parDuration
+        )
+    ]
+)

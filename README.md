@@ -2,7 +2,7 @@
 
 面向最高难度遭遇战的战场氛围与作战 AI 模组源码。目标是有氛围、有章法、双方付出巨大代价才决出胜者的战斗：大多数可用部队持续向前，在推进中展开宽战线，允许有用途的局部主攻集中，不允许大批部队长期闲置后方。
 
-当前快照：**combined-arms-preview.6 + smoke-preview.7**。用户给出浓厚连续烟体参考，否定 preview.6 的断开小烟团。本轮按真实出生参数扩大主烟，设置载具主烟和底部层的连续发射范围、缩短淡入并收紧横向漂移。官方构建、编译发射范围、真实出生尺寸/渐隐曲线和安装核验通过；画面待实测，不宣称等同于参考图的体积模拟。详见 [烟雾设计](Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md) 和 [安装验证摘要](docs/validation-smoke-preview7.json)。
+当前快照：**combined-arms-preview.6 + smoke-preview.8**。新增原生粒子看门狗预算 4 倍（最高画质 32 万），爆炸视觉尺寸 2 倍；燃烧烟外形与寿命沿用 preview.7。官方构建、1656 个导出的完整编译图对照、精确候选 DLL 的预算读取及 AI 启动/下令/退出检查、安装核验通过。普通对局突兀消失改善和帧率待实测，不把无渲染测试当作视觉验收。详见 [预算与爆炸方案](Mods/BattleAtmosphere/VFX_BUDGET.md) 和 [验证摘要](docs/validation-smoke-preview8.json)。
 
 支持范围是征服与歼灭遭遇战，算法从当前场景提取部署区和导航，不依赖黑森林专用坐标。运行组件目前严格绑定 WARNO **revision 201602**；其他游戏版本需要重新核验原生接口。
 
@@ -23,7 +23,7 @@
 | `Mods/BattleAtmosphere/Runtime/Python/` | 实际嵌入游戏的调度、战线、运输及战术代码，兼容游戏内 Python 2.5 |
 | `Mods/BattleAtmosphere/Development/native_bridge/` | C 原生桥接、自动加载器、构建与核验工具 |
 | `Mods/BattleAtmosphere/Development/dispersion/` | Python 3 离线模型与 57 项回归测试 |
-| `Mods/BattleAtmosphere/GameData/` | 8 个 AI 配置、25 个燃烧特效源文件、残骸燃烧时长配置及模组资源/本地化描述 |
+| `Mods/BattleAtmosphere/GameData/` | AI 配置、677 个爆炸特效源文件、燃烧烟与残骸时长配置及模组资源/本地化描述 |
 | `Mods/BAScriptProbe/.../ba_fixture.py` | 显式启用的受控测试夹具，普通对局不启用 |
 | `Mods/BattleAtmosphere/*.md` | 设计取舍、耦合分析和历次验收记录 |
 | `docs/validation-preview6.json` | 本次源码导出前的原生回归摘要，非下载后重新执行的结果 |

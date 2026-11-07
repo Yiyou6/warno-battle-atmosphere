@@ -1,0 +1,318 @@
+// Ne pas éditer, ce fichier est généré
+
+export fx_crash_Helico_04 is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private parBombTrajectory is TActionAlias( ExpectedType = 'bool' DefaultValue = false ),
+        private parFlyDuration is TActionAlias( ExpectedType = 'float' DefaultValue = 6 ),
+        private parInitialShotDelay is TActionAlias( ExpectedType = 'float' DefaultValue = 0 ),
+        private parPosition is TActionAlias( ExpectedType = 'float3' DefaultValue = float3[0,0,0] ),
+    ]
+    Actions = ActionList is
+    [
+        TSimultaneousAction
+        (
+            Mobile = nil
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Dynamic_Flash_Only_Two_Simple
+                    NamedParams = MAP[
+                        ( 'parColorEnd', float3[0.9294118,0.2156863,0.007843138] ),
+                        ( 'parColorStart', float3[0.9294118,0.5882353,0.07843138] ),
+                        ( 'parDuration', 0.75 ),
+                        ( 'parInitialDelay', parInitialShotDelay ),
+                        ( 'parOpacity', 1 ),
+                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSpeed', float3[0,0,0] ),
+                        ( 'Position', float3[45,25,200] + parPosition ),
+                    ]
+                ),
+                TSequentialAction
+                (Actions =
+                    [
+                        TWaitInSec( Duration = 1 ),
+                        TActionCall
+                        (
+                            Action = $/VFX_Bank/BANK_Dynamic_Flash_Only_Two_Simple
+                            NamedParams = MAP[
+                                ( 'parColorEnd', float3[0.9294118,0.2156863,0.007843138] ),
+                                ( 'parColorStart', float3[0.9294118,0.5882353,0.07843138] ),
+                                ( 'parDuration', 0.75 ),
+                                ( 'parInitialDelay', parInitialShotDelay ),
+                                ( 'parOpacity', 1 ),
+                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSpeed', float3[0,0,0] ),
+                                ( 'Position', float3[45,25,200] + parPosition ),
+                            ]
+                        ),
+                    ]
+                ),
+                TSequentialAction
+                (Actions =
+                    [
+                        TWaitInSec( Duration = 2 ),
+                        TActionCall
+                        (
+                            Action = $/VFX_Bank/BANK_Dynamic_Flash_Only_Two_Simple
+                            NamedParams = MAP[
+                                ( 'parColorEnd', float3[0.9294118,0.2156863,0.007843138] ),
+                                ( 'parColorStart', float3[0.9294118,0.5882353,0.07843138] ),
+                                ( 'parDuration', 0.75 ),
+                                ( 'parInitialDelay', parInitialShotDelay ),
+                                ( 'parOpacity', 1 ),
+                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSpeed', float3[0,0,0] ),
+                                ( 'Position', float3[45,25,200] + parPosition ),
+                            ]
+                        ),
+                    ]
+                ),
+                TWaitInSec( Duration = 0.75),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[67,17,60] + parPosition
+                EulerAngles = float3[3.141593,0,0]
+            )
+            Actions =
+            [
+                TSequentialAction
+                (Actions =
+                    [
+                        TWaitInSec( Duration = 1 ),
+                        TActionCall
+                        (
+                            Action = $/VFX_Bank/BANK_Rubble2_Oriented_Simple
+                            NamedParams = MAP[
+                                ( 'parCountDebrits', 5 ),
+                                ( 'parCountDebritsWithFire', 2 ),
+                                ( 'parCountDebritsWithSmoke', 0 ),
+                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDir', float3[0,0,1] ),
+                                ( 'parDispersion', 2000 ),
+                                ( 'parFireParticleEndSize', 2 * (800) ),
+                                ( 'parFireParticleStartSize', 2 * (100) ),
+                                ( 'parGravity', 3000 ),
+                                ( 'parLifetime', 60 ),
+                                ( 'parMeshType', 4 ),
+                                ( 'parNarrowness', 0.25 ),
+                                ( 'parParticleOpacity', 0.1399998 ),
+                                ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
+                                ( 'parSmokeColorMultiplier', 0.6999999 ),
+                                ( 'parSmokeDensity', 100 ),
+                                ( 'parSmokeParticleEndSize', 2 * (2000) ),
+                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSpeed', float3[10000,0,0] ),
+                            ]
+                        ),
+                    ]
+                ),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[95,66,60] + parPosition
+                EulerAngles = float3[3.141593,0,0]
+            )
+            Actions =
+            [
+                TSequentialAction
+                (Actions =
+                    [
+                        TWaitInSec( Duration = 2 ),
+                        TActionCall
+                        (
+                            Action = $/VFX_Bank/BANK_Rubble2_Oriented_Simple
+                            NamedParams = MAP[
+                                ( 'parCountDebrits', 6 ),
+                                ( 'parCountDebritsWithFire', 2 ),
+                                ( 'parCountDebritsWithSmoke', 0 ),
+                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDir', float3[0,0,1] ),
+                                ( 'parDispersion', 2000 ),
+                                ( 'parFireParticleEndSize', 2 * (800) ),
+                                ( 'parFireParticleStartSize', 2 * (100) ),
+                                ( 'parGravity', 3000 ),
+                                ( 'parLifetime', 60 ),
+                                ( 'parMeshType', 4 ),
+                                ( 'parNarrowness', 0.25 ),
+                                ( 'parParticleOpacity', 0.1399998 ),
+                                ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
+                                ( 'parSmokeColorMultiplier', 0.6999999 ),
+                                ( 'parSmokeDensity', 100 ),
+                                ( 'parSmokeParticleEndSize', 2 * (2000) ),
+                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSpeed', float3[10000,0,0] ),
+                            ]
+                        ),
+                    ]
+                ),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[123,130,60] + parPosition
+                EulerAngles = float3[3.141593,0,0]
+            )
+            Actions =
+            [
+                TSequentialAction
+                (Actions =
+                    [
+                        TWaitInSec( Duration = 5 ),
+                        TActionCall
+                        (
+                            Action = $/VFX_Bank/BANK_Rubble2_Oriented_Simple
+                            NamedParams = MAP[
+                                ( 'parCountDebrits', 7 ),
+                                ( 'parCountDebritsWithFire', 2 ),
+                                ( 'parCountDebritsWithSmoke', 0 ),
+                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDir', float3[0,0,1] ),
+                                ( 'parDispersion', 2000 ),
+                                ( 'parFireParticleEndSize', 2 * (800) ),
+                                ( 'parFireParticleStartSize', 2 * (100) ),
+                                ( 'parGravity', 3000 ),
+                                ( 'parLifetime', 60 ),
+                                ( 'parMeshType', 4 ),
+                                ( 'parNarrowness', 0.25 ),
+                                ( 'parParticleOpacity', 0.1399998 ),
+                                ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
+                                ( 'parSmokeColorMultiplier', 0.6999999 ),
+                                ( 'parSmokeDensity', 100 ),
+                                ( 'parSmokeParticleEndSize', 2 * (2000) ),
+                                ( 'parSmokeParticleStartSize', 2 * (900) ),
+                                ( 'parSpeed', float3[10000,0,0] ),
+                            ]
+                        ),
+                    ]
+                ),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[3,-28,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Smoke_Trail_Simple
+                    NamedParams = MAP[
+                        ( 'parColor1', float3[0.8313726,0.8156863,0.8156863] ),
+                        ( 'parColor2', float3[0.7411765,0.7215686,0.7215686] ),
+                        ( 'parColor3', float3[0.6666667,0.6313726,0.6313726] ),
+                        ( 'parColorKey1', 1 ),
+                        ( 'parColorKey2', 1 ),
+                        ( 'parDispersion', 50 ),
+                        ( 'parDistance', 100 ),
+                        ( 'parLifeDuration', 0.75 ),
+                        ( 'parOpacity', 1 ),
+                        ( 'parSize1', 2 * (500) ),
+                        ( 'parSize2', 2 * (1500) ),
+                        ( 'parStopSpawnerRatio', 1 ),
+                    ]
+                ),
+                TWaitInSec( Duration = 7.564738),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[-24,-65,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Smoke_Trail_Simple
+                    NamedParams = MAP[
+                        ( 'parColor1', float3[0.6039216,0.6039216,0.6039216] ),
+                        ( 'parColor2', float3[0.4705883,0.4627451,0.4627451] ),
+                        ( 'parColor3', float3[0.1568628,0.1568628,0.1568628] ),
+                        ( 'parColorKey1', 1 ),
+                        ( 'parColorKey2', 1 ),
+                        ( 'parDispersion', 500 ),
+                        ( 'parDistance', 200 ),
+                        ( 'parLifeDuration', 4 ),
+                        ( 'parOpacity', 0.5 ),
+                        ( 'parSize1', 2 * (800) ),
+                        ( 'parSize2', 2 * (5000) ),
+                        ( 'parStopSpawnerRatio', 1 ),
+                    ]
+                ),
+                TWaitInSec( Duration = 7.564738),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[-37,-60,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Smoke_Trail_Simple
+                    NamedParams = MAP[
+                        ( 'parColor1', float3[0.9019608,0.8980393,0.8980393] ),
+                        ( 'parColor2', float3[0.6784314,0.6470588,0.6470588] ),
+                        ( 'parColor3', float3[0.3647059,0.3647059,0.3647059] ),
+                        ( 'parColorKey1', 1 ),
+                        ( 'parColorKey2', 1 ),
+                        ( 'parDispersion', 750 ),
+                        ( 'parDistance', 400 ),
+                        ( 'parLifeDuration', 15 ),
+                        ( 'parOpacity', 0.1 ),
+                        ( 'parSize1', 2 * (2500) ),
+                        ( 'parSize2', 2 * (5000) ),
+                        ( 'parStopSpawnerRatio', 1 ),
+                    ]
+                ),
+                TWaitInSec( Duration = 7.564738),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[134,87,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Dummy_Traine
+                    NamedParams = MAP[
+                        ( 'parDummyBombTrajectory', parBombTrajectory ),
+                        ( 'parDummyDestination', float3[12214,0,0] ),
+                        ( 'parDummyFlyDuration', parFlyDuration ),
+                        ( 'parDummyImpactOnGround', false ),
+                        ( 'parDummyInitialSpeed', float3[4000,0,0] ),
+                        ( 'parDummyPower', 0.2 ),
+                        ( 'parDummyShotCount', 3 ),
+                        ( 'parDummyShotOnGround', false ),
+                        ( 'parDummyTirPhysic', true ),
+                        ( 'parDummyTirTendu', false ),
+                        ( 'parDummyTraineInitialShotDelay', 0 ),
+                        ( 'parDummyWaitBetweenShot', 0.5 ),
+                    ]
+                ),
+            ]
+        ),
+    ]
+)

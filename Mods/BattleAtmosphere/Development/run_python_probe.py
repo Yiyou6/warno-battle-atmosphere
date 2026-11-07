@@ -35,6 +35,7 @@ def main():
         source = root / 'Mods/BattleAtmosphere/Runtime/Python/ba_autorun.py'
     source_bytes = source.read_bytes()
     auxiliary_paths = [development / 'native_bridge/probe_bridge.c',
+                       development / 'native_bridge/fx_budget.h',
                        development / 'native_bridge/cold_start_probe.c',
                        runtime / 'CommonData/Python/Eugen/ba_allocator.py',
                        runtime / 'CommonData/Python/Eugen/ba_fixture.py',

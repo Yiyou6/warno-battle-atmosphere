@@ -1058,6 +1058,8 @@ static void automatic_stop(void *launcher) {
     }
 }
 
+#include "fx_budget.h"
+
 static int install(void) {
     unsigned char *site, *relay = NULL;
     unsigned char expected[] = {0xe8, 0x51, 0x17, 0x08, 0x01};
@@ -1084,6 +1086,9 @@ static int install(void) {
         if (!readable(pe,sizeof(*pe)) || pe->Signature!=IMAGE_NT_SIGNATURE ||
             pe->FileHeader.TimeDateStamp!=0x6a8405c0 || pe->OptionalHeader.SizeOfImage!=0x3e1e000) return 0;
     }
+#ifdef BA_PROXY
+    if (!fx_budget_install()) log_line("FX_BUDGET_HOOK_REFUSED");
+#endif
     if (
 #ifdef BA_PROXY
         1

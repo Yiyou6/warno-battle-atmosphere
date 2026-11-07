@@ -1,5 +1,7 @@
 # 通用遭遇战运行组件 · spatial-runtime-preview.6
 
+**smoke-preview.8 视觉组件更新：** AI 算法仍为 preview.6；DLL 增加实际粒子预算 4 倍的独立挂钩。当前 DLL SHA-256：`8504c18e283cff97f36daac552417f0d32ab39a4de4ea78fd5bdbd6d798f78e8`。精确候选通过原生预算读取及 AI 启动/下令/退出；下面的完整 AI 测试表来自旧 preview.6 DLL，不当作新 DLL 全套重测。见 [预算与爆炸方案](../VFX_BUDGET.md)。
+
 2026-11-06。本机已安装运行组件与更新后的采购 NDF。最高难度征服、歼灭遭遇战共用自动入口，依据当前地图部署区与导航生成路线。preview.4 获用户认可的宽战线、两翼前推、据点短时聚集后疏散保留为基准；preview.5 的反向推进已在 preview.6 修复，普通新局仍待用户确认。
 
 ## 使用
@@ -36,7 +38,7 @@
 | 阵营换边 | UrbanFrontlines 征服、Hesse 歼灭均向实际敌方推进；黑森林换边运输正常送达。独立出生安排核算位移，不仅依赖控制器自身坐标。 |
 | 采购静态审计 | 70 默认卡组；170 普通坦克中 32 个超过原 200 点上限，最高 345；两套默认卡组无普通坦克卡 |
 
-安装及正式目录启动见 [preview.6 回执](../Development/direction-release.json)、[validation.json](validation.json)、[installation.json](installation.json)。采购沿用 [preview.5 生成记录](../Development/combined-release.json)。当前 DLL SHA-256：`45fe77306abaae3f521ea2f5e9ae045bebad17796828dbd5e918de30760fba3d`。
+安装及正式目录启动见 [preview.6 回执](../Development/direction-release.json)、[validation.json](validation.json)、[installation.json](installation.json)。采购沿用 [preview.5 生成记录](../Development/combined-release.json)。原 AI preview.6 DLL SHA-256：`45fe77306abaae3f521ea2f5e9ae045bebad17796828dbd5e918de30760fba3d`。
 
 独立即时卸载的首次诊断被重复回调保护拒绝，未测到该命令；修正测试夹具后重测通过。失败回执与修正后证据均保留。
 

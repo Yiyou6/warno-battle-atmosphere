@@ -15,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.7'
+VERSION = 'smoke-preview.8'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview7-before.zip'
+BACKUP = 'archive/smoke-preview8-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -119,8 +119,12 @@ def expected_files():
                     assert duration_changes, 'Vehicle fuel duration calls not found: ' + name
                 callers.append({'path': name, 'calls': text.count(OLD)})
             else:
-                assert (MOD / name).read_text(encoding='utf-8-sig') == text, name
                 excluded.append(name)
+        from explosion_scale import extend_sources
+        explosions = extend_sources(z, before, after)
+        for name in excluded:
+            assert (MOD/name).read_text(encoding='utf-8-sig') in (read(name), after.get(name,read(name))), name
+    (DEV/'explosion-source.json').write_text(json.dumps(dict(version=VERSION,visual_scale=2,files=explosions),indent=2)+'\n')
     assert len(callers) == 22, len(callers)
     return before, after, callers, excluded
 
@@ -134,16 +138,28 @@ def protected_files():
               MOD / 'CommonData/Gameplay/Unit/TemplateDescriptorFireAndSmoke.ndf']
     return {p.relative_to(ROOT).as_posix(): sha(p) for p in files}
 
+def protected_match(a,b):
+    if a==b:return True
+    # The only allowed protected-file transition is the separately validated
+    # VFX-budget loader. All AI Python/NDF, gameplay and original EXE stay exact.
+    from native_bridge.verify_fx_budget import verify_fx_budget
+    validated=verify_fx_budget()
+    with zipfile.ZipFile(DEV/BACKUP) as z:old=json.loads(z.read('protected.json'))['version.dll']
+    allowed={old,validated['dll_sha256']}
+    return (a.get('version.dll') in allowed and b.get('version.dll') in allowed and
+            {k:v for k,v in a.items() if k!='version.dll'}=={k:v for k,v in b.items() if k!='version.dll'})
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true')
     args = parser.parse_args()
     before, after, callers, excluded = expected_files()
+    with zipfile.ZipFile(DEV/BACKUP) as z:
+        archived = {name:z.read('source/'+name).decode('utf-8-sig').replace('\r\n','\n')
+                    for name in after if 'source/'+name in z.namelist()}
     for name, target in after.items():
         current = (MOD / name).read_text(encoding='utf-8-sig')
-        previous = (ground_plume(ground(before[name]), 6) if name == BINDER else
-                    fuel_plume(fuel(before[name]), 6) if name == FUEL else
-                    dark_plume(before[name], 6) if name == DARK else target)
+        previous = archived.get(name,target)
         assert current in (before[name], previous, target), 'Unreviewed edits: ' + name
         if not args.write:
             assert current == target, 'Source not yet applied: ' + name
@@ -165,18 +181,18 @@ def main():
     if args.write:
         for name, target in after.items():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
-    assert protected_files() == protected
+    assert protected_match(protected_files(), protected)
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.6', appearance='continuous vehicle core with bounded absolute emission, broad birth puffs, quick fade-in and restrained lateral drift',
+                  relative_to='smoke-preview.7', appearance='preview.7 smoke retained; explosion visual dimensions 2x; runtime particle watchdog budget 4x',
                   vehicle_burn_duration_multiplier=10,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,
                   backup=archive.relative_to(MOD).as_posix())
     if archive.exists():
         with zipfile.ZipFile(archive) as z:
-            assert json.loads(z.read('protected.json')) == protected, 'Protected inputs changed since smoke work began'
+            assert protected_match(json.loads(z.read('protected.json')), protected), 'Protected inputs changed since smoke work began'
     (DEV / 'smoke-source.json').write_text(json.dumps(report, indent=2) + '\n')
-    print('PASS: %d source files, %d burning callers, %d shared-smoke callers unchanged; AI/gameplay/DLL unchanged' % (len(after), len(callers), len(excluded)))
+    print('PASS: %d source files, %d burning callers, %d shared-smoke bank references preserved; AI/gameplay unchanged' % (len(after), len(callers), len(excluded)))
 
 if __name__ == '__main__':
     main()

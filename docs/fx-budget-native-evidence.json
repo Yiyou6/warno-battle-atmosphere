@@ -1,0 +1,49 @@
+{
+  "exe_sha256": "70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8",
+  "source_archive": "Data/PC/201602/Glad.dat",
+  "entry": "NDF/Misc/FxSystem.ndfbin",
+  "watchdog": {
+    "id": 0,
+    "class": "TFxWatchdog",
+    "properties": {
+      "MessageDrawer": {
+        "ref": 1,
+        "class": "TMessageOnScreenDrawer"
+      },
+      "MaxParticles": 80000,
+      "ParticleCountSelector": {
+        "import_index": 0
+      },
+      "WarningMemoryCountInMo": 50,
+      "ErrorMemoryCountInMo": 100
+    }
+  },
+  "quality_factor": "0.5 + 0.5 * q",
+  "native_functions": {
+    "0xc1fa90": {
+      "end": "0xc1fb69",
+      "sha256": "7036db117ba8b70cf31539c58060a0419a98fc375da74e310a71387d719a2d93"
+    },
+    "0xc1fba0": {
+      "end": "0xc1fc77",
+      "sha256": "5394a3b12ae47aace49897fd5b4c404cf6d2eca7c7d38b878386f1b6bf999027"
+    },
+    "0xc1ff70": {
+      "end": "0xc20058",
+      "sha256": "9a8aaf3e89fad8a2522161f75bdef7d6a99fd7656c8a20572536d10b383deeb7"
+    },
+    "0xf692b0": {
+      "end": "0xf69315",
+      "sha256": "5b7cb96ef1c477eefc7c5cc4b6fdedd066ddbbce0843928c0a80372117849158"
+    },
+    "0xf67f00": {
+      "end": "0xf68275",
+      "sha256": "101f9965336eee435087b62cde89bea9458975f1952ad22523063986518ab2ff"
+    }
+  },
+  "active_particle_counter_rva": "0x33a2494",
+  "max_particles_offset": "0x18",
+  "initialize_vtable_slot_rva": "0x235cdf8",
+  "reduction": "floor(n/2) retained for eligible particle groups; no life fade is checked in this path",
+  "observed_user_session_trigger": false
+}

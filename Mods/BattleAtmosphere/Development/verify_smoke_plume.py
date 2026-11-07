@@ -44,7 +44,7 @@ def verify_plume(bank, fx, exports, source):
         assert hashlib.sha256(data).hexdigest() == receipt['outputs']['Gen/NDF/VFX_Bank.ndfbin']
         prior = Cndf(data)
         # Source fire timers and unit burning state are preserved byte for byte.
-        for name in ('Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/GameFx.ndfbin'):
+        for name in ('Gen/NDF/GFX/Unit.ndfbin',):
             assert hashlib.sha256((MOD/name).read_bytes()).hexdigest() == receipt['outputs'][name], name
     def dark_smoke(c, root):
         found = {}

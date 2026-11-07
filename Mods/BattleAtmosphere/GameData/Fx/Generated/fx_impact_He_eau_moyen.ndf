@@ -1,0 +1,315 @@
+// Ne pas éditer, ce fichier est généré
+
+export fx_impact_He_eau_moyen is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private parDirection is TActionAlias( ExpectedType = 'float3' DefaultValue = float3[0,0,0] ),
+        private parInitialShotDelay is TActionAlias( ExpectedType = 'float' DefaultValue = 0 ),
+        private parRadiusPhysical is TActionAlias( ExpectedType = 'float' DefaultValue = 0 ),
+        private parRadiusSuppress is TActionAlias( ExpectedType = 'float' DefaultValue = 0 ),
+        private parPosition is TActionAlias( ExpectedType = 'float3' DefaultValue = float3[0,0,0] ),
+    ]
+    Actions = ActionList is
+    [
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[-146,48,0] + parPosition
+                EulerAngles = float3[4.711748,0,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Big_ground_Impact_Simple
+                    NamedParams = MAP[
+                        ( 'parDuration', 0.4999998 ),
+                        ( 'parDustColor', float3[0.8705883,0.8705883,0.8705883] ),
+                        ( 'parDustSize', 2 * (600) ),
+                        ( 'parMudSize', 0 ),
+                        ( 'parOpacity', 1 ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
+                    NamedParams = MAP[
+                        ( 'parDuration', 0.7000002 ),
+                        ( 'parFinalSize', 2 * (6300) ),
+                        ( 'parInitialSize', 2 * (1300) ),
+                        ( 'parIntensity', 3200 ),
+                        ( 'parPositionRelative', float3[-146,48,0] ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Conic_Ground_Projection_Simple
+                    NamedParams = MAP[
+                        ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
+                        ( 'parCount', 10 ),
+                        ( 'parDuration', 1.5 ),
+                        ( 'parSize', 2 * (900) ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Rubble2_Oriented_Simple
+                    NamedParams = MAP[
+                        ( 'parCountDebrits', 2 ),
+                        ( 'parCountDebritsWithFire', 0 ),
+                        ( 'parCountDebritsWithSmoke', 26 ),
+                        ( 'parDebritSizeMul', 2 * (0.001) ),
+                        ( 'parDir', parDirection ),
+                        ( 'parDispersion', 540 ),
+                        ( 'parFireParticleEndSize', 0 ),
+                        ( 'parFireParticleStartSize', 0 ),
+                        ( 'parGravity', 2000 ),
+                        ( 'parLifetime', 0.3 ),
+                        ( 'parMeshType', 1 ),
+                        ( 'parNarrowness', 0.0599 ),
+                        ( 'parParticleOpacity', 0.1899999 ),
+                        ( 'parSmokeColor', float3[0.5058824,0.4705883,0.4470589] ),
+                        ( 'parSmokeColorMultiplier', 0.4 ),
+                        ( 'parSmokeDensity', 100 ),
+                        ( 'parSmokeParticleEndSize', 2 * (1250) ),
+                        ( 'parSmokeParticleStartSize', 0 ),
+                        ( 'parSpeed', float3[4253,4270,6078] ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Bomb_ShockWave
+                    NamedParams = MAP[
+                        ( 'parCount', 1 ),
+                        ( 'parDuration', 1.7 ),
+                        ( 'parFinalSize', 2 * (5200) ),
+                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parZBias', 1000 ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_WasteGroundDust_Simple
+                    NamedParams = MAP[
+                        ( 'parAlphaStartDecayValue', 0.01 ),
+                        ( 'parCount', 18 ),
+                        ( 'parEndColor', float3[0,0,0] ),
+                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parFluidFriction', 3.5 ),
+                        ( 'parInitialDelay', parInitialShotDelay ),
+                        ( 'parLifetime', 1.2 ),
+                        ( 'parOpacity', 0.67 ),
+                        ( 'parRandomInitPosRadius', 150 ),
+                        ( 'parRotationFactor', 1.2 ),
+                        ( 'parScaleSizeFactor', 1 ),
+                        ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
+                        ( 'parStartHeight', 0 ),
+                        ( 'parStartRotation', 0.25 ),
+                        ( 'parStartSize', 2 * (300) ),
+                        ( 'parStartSpeed3D', float3[2000,2000,0] ),
+                        ( 'parWindWeight', 1 ),
+                    ]
+                ),
+                TWaitInSec( Duration = 0.3),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                EulerAngles = float3[4.711748,0,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Bomb_Flash
+                    NamedParams = MAP[
+                        ( 'parCount', 3 ),
+                        ( 'parDuration', 0.1 ),
+                        ( 'parFinalSize', 2 * (3500) ),
+                        ( 'parInitialSize', 2 * (1000) ),
+                        ( 'parZBias', 255 ),
+                        ( 'parPositionRelative', float3[-146,48,200] + parPosition ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/GFX/GameFx/dummy_impact_for_exporter_hack
+                    NamedParams = MAP[
+                        ( 'Dir', parDirection ),
+                        ( 'Pos', parPosition ),
+                        ( 'RadPhy', parRadiusPhysical ),
+                        ( 'RadSupr', parRadiusSuppress ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Dynamic_Flash_Only_Two_Simple
+                    NamedParams = MAP[
+                        ( 'parColorEnd', float3[0.9294118,0.2156863,0.007843138] ),
+                        ( 'parColorStart', float3[0.007843138,0.003921569,0] ),
+                        ( 'parDuration', 1.4 ),
+                        ( 'parInitialDelay', parInitialShotDelay ),
+                        ( 'parOpacity', 1 ),
+                        ( 'parSize', 2 * (1300) ),
+                        ( 'parSpeed', float3[0,0,0] ),
+                        ( 'Position', float3[-146,48,250] + parPosition ),
+                    ]
+                ),
+                TWaitInSec( Duration = 1.4),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[-146,48,0] + parPosition
+                EulerAngles = float3[3.140952,0,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Rubble2_Oriented_Simple
+                    NamedParams = MAP[
+                        ( 'parCountDebrits', 4 ),
+                        ( 'parCountDebritsWithFire', 0 ),
+                        ( 'parCountDebritsWithSmoke', 9 ),
+                        ( 'parDebritSizeMul', 2 * (0.001) ),
+                        ( 'parDir', parDirection ),
+                        ( 'parDispersion', 560 ),
+                        ( 'parFireParticleEndSize', 0 ),
+                        ( 'parFireParticleStartSize', 0 ),
+                        ( 'parGravity', 2000 ),
+                        ( 'parLifetime', 0.5 ),
+                        ( 'parMeshType', 1 ),
+                        ( 'parNarrowness', 0.8084 ),
+                        ( 'parParticleOpacity', 0.17 ),
+                        ( 'parSmokeColor', float3[0.9764706,0.9764706,0.9764706] ),
+                        ( 'parSmokeColorMultiplier', 1 ),
+                        ( 'parSmokeDensity', 100 ),
+                        ( 'parSmokeParticleEndSize', 2 * (600) ),
+                        ( 'parSmokeParticleStartSize', 0 ),
+                        ( 'parSpeed', float3[4590,4660,6679] ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Smoky_Dust_Projections_Simple
+                    NamedParams = MAP[
+                        ( 'parColor', float3[1,1,1] ),
+                        ( 'parCount', 31 ),
+                        ( 'parDir', parDirection ),
+                        ( 'parDuration', 0.9999996 ),
+                        ( 'parFlatness', 0.4800006 ),
+                        ( 'parGravity', -0.2 ),
+                        ( 'parInitSpeed', 0.75 ),
+                        ( 'parNarrowness', 0.6200004 ),
+                        ( 'parOpacity', 0.7600002 ),
+                        ( 'parRadius', 0 ),
+                        ( 'parSize', 2 * (3200) ),
+                    ]
+                ),
+                TWaitInSec( Duration = 0.5),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[146,-48,0]
+                EulerAngles = float3[1.570155,0,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_SmallWater_Projection_Simple
+                    NamedParams = MAP[
+                        ( 'parColor', float3[1,1,1] ),
+                        ( 'parCount', 10 ),
+                        ( 'parFluidFriction', 0 ),
+                        ( 'parGravity', 3000 ),
+                        ( 'parGrowFactor', 10 ),
+                        ( 'parLifetime', 2 ),
+                        ( 'parSize', 2 * (73) ),
+                        ( 'parSpeed', 800 ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_SmallWater_Projection_Simple
+                    NamedParams = MAP[
+                        ( 'parColor', float3[1,1,1] ),
+                        ( 'parCount', 20 ),
+                        ( 'parFluidFriction', 0 ),
+                        ( 'parGravity', 3000 ),
+                        ( 'parGrowFactor', 10 ),
+                        ( 'parLifetime', 2 ),
+                        ( 'parSize', 2 * (60) ),
+                        ( 'parSpeed', 1720 ),
+                    ]
+                ),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = TMobileWithLocalRepereMatrixFactory
+            (
+                Position = float3[-146,48,330] + parPosition
+                EulerAngles = float3[4.711748,0,0]
+            )
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/Smoky_Dust_Projections_Simple
+                    NamedParams = MAP[
+                        ( 'parColor', float3[0.4117647,0.3607843,0.3254902] ),
+                        ( 'parCount', 40 ),
+                        ( 'parDir', parDirection ),
+                        ( 'parDuration', 0.75 ),
+                        ( 'parFlatness', 0.95 ),
+                        ( 'parGravity', -3.4 ),
+                        ( 'parInitSpeed', 1.85 ),
+                        ( 'parNarrowness', 1.32 ),
+                        ( 'parOpacity', 1 ),
+                        ( 'parRadius', 150 ),
+                        ( 'parSize', 2 * (1100) ),
+                    ]
+                ),
+            ]
+        ),
+        TSimultaneousAction
+        (
+            Mobile = nil
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/BANK_Bomb_NewSparks_Omni_Simple
+                    NamedParams = MAP[
+                        ( 'parColor', float3[1,0.2509804,0] ),
+                        ( 'parColorMultiplier', 6.400001 ),
+                        ( 'parCount', 83 ),
+                        ( 'parDir', parDirection ),
+                        ( 'parFluidFriction', 0 ),
+                        ( 'parGravity', -1000 ),
+                        ( 'parLifetime', 0.8499999 ),
+                        ( 'parNarrowness', 2.449999 ),
+                        ( 'parPositionRadius', 310 ),
+                        ( 'parSize', 2 * (11) ),
+                        ( 'parSpeedMax', 2900 ),
+                        ( 'parSpeedMin', 500 ),
+                        ( 'parStretch', 0.5 ),
+                        ( 'parWindFactor', 0 ),
+                        ( 'parPositionRelative', float3[-146,48,0] + parPosition ),
+                    ]
+                ),
+            ]
+        ),
+    ]
+)

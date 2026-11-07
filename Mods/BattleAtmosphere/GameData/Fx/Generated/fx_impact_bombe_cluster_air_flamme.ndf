@@ -1,0 +1,45 @@
+// Ne pas éditer, ce fichier est généré
+
+export fx_impact_bombe_cluster_air_flamme is SimultaneousActionDeclaration
+(
+    Params =
+    [
+        private parDirection is TActionAlias( ExpectedType = 'float3' DefaultValue = float3[0,0,0] ),
+        private parRadiusPhysical is TActionAlias( ExpectedType = 'float' DefaultValue = 0 ),
+        private parRadiusSuppress is TActionAlias( ExpectedType = 'float' DefaultValue = 0 ),
+        private parPosition is TActionAlias( ExpectedType = 'float3' DefaultValue = float3[0,0,0] ),
+    ]
+    Actions = ActionList is
+    [
+        TSimultaneousAction
+        (
+            Mobile = nil
+            Actions =
+            [
+                TActionCall
+                (
+                    Action = $/VFX_Bank/ClusterMunitionAnim_Simple
+                    NamedParams = MAP[
+                        ( 'parColor', float3[1,0.9019608,0.9019608] ),
+                        ( 'parDuration', 1 ),
+                        ( 'parImpactPos', parDirection ),
+                        ( 'parLuminosite', 1 ),
+                        ( 'parSize', 2 * (3000) ),
+                        ( 'parSpawnRadius', 0 ),
+                        ( 'parPositionInit', parPosition ),
+                    ]
+                ),
+                TActionCall
+                (
+                    Action = $/GFX/GameFx/dummy_impact_for_exporter_hack
+                    NamedParams = MAP[
+                        ( 'Dir', parDirection ),
+                        ( 'Pos', parPosition ),
+                        ( 'RadPhy', parRadiusPhysical ),
+                        ( 'RadSupr', parRadiusSuppress ),
+                    ]
+                ),
+            ]
+        ),
+    ]
+)
