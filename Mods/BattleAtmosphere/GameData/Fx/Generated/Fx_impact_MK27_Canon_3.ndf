@@ -27,10 +27,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[14550,72,76] + parPosition ),
+                                ( 'parPositionRelative', float3[24007.5,118.8,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -45,10 +45,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[11748,-850,76] + parPosition ),
+                                ( 'parPositionRelative', float3[19384.2,-1402.5,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -63,10 +63,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[8588,-592,76] + parPosition ),
+                                ( 'parPositionRelative', float3[14170.2,-976.8,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -81,10 +81,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[4204,612,76] + parPosition ),
+                                ( 'parPositionRelative', float3[6936.6,1009.8,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -95,10 +95,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (750) ),
-                        ( 'parInitialSize', 2 * (250) ),
+                        ( 'parFinalSize', 3 * (750) ),
+                        ( 'parInitialSize', 3 * (250) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[-5414,-614,76] + parPosition ),
+                        ( 'parPositionRelative', float3[-8933.1,-1013.1,125.4] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -111,10 +111,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[22,1072,76] + parPosition ),
+                                ( 'parPositionRelative', float3[36.3,1768.8,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -152,7 +152,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (250) ),
+                                ( 'parSize', 3 * (250) ),
                             ]
                         ),
                     ]
@@ -180,7 +180,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (250) ),
+                                ( 'parSize', 3 * (250) ),
                             ]
                         ),
                     ]
@@ -208,7 +208,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (250) ),
+                                ( 'parSize', 3 * (250) ),
                             ]
                         ),
                     ]
@@ -236,7 +236,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (250) ),
+                                ( 'parSize', 3 * (250) ),
                             ]
                         ),
                     ]
@@ -264,7 +264,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (250) ),
+                                ( 'parSize', 3 * (250) ),
                             ]
                         ),
                     ]
@@ -287,11 +287,11 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 20 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.5) ),
+                        ( 'parDebritSizeMul', 3 * (0.5) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (250) ),
-                        ( 'parFireParticleEndSize', 2 * (600) ),
-                        ( 'parFireParticleStartSize', 2 * (250) ),
+                        ( 'parDispersion', 3.3 * (250) ),
+                        ( 'parFireParticleEndSize', 3 * (600) ),
+                        ( 'parFireParticleStartSize', 3 * (250) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 8 ),
                         ( 'parMeshType', 1 ),
@@ -300,9 +300,9 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,1,1] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (500) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
-                        ( 'parSpeed', 2 * (float3[8000,2000,2000]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (500) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
+                        ( 'parSpeed', 3.3 * (float3[8000,2000,2000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 8),
@@ -343,10 +343,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
                         ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                        ( 'parDustSize', 2 * (400) ),
-                        ( 'parMudSize', 2 * (200) ),
+                        ( 'parDustSize', 3 * (400) ),
+                        ( 'parMudSize', 3 * (200) ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parRandomPosition', 2 * (200) ),
+                        ( 'parRandomPosition', 3.3 * (200) ),
                     ]
                 ),
             ]
@@ -369,10 +369,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.7 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -397,10 +397,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (500) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (500) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -425,10 +425,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -453,10 +453,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -481,10 +481,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.8 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (400) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (400) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -509,10 +509,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -537,10 +537,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -565,10 +565,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.5 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -593,10 +593,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.9882354,1,0.9882354] ),
-                                ( 'parDustSize', 2 * (400) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (400) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.8 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -622,7 +622,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 35 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -630,10 +630,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parStartRandomRadius', 2 * (1250) ),
+                                ( 'parStartRandomRadius', 3.3 * (1250) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (50) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 5 ),
                             ]
                         ),
@@ -660,7 +660,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 35 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (1300) ),
+                                ( 'parEndSize', 3 * (1300) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 9 ),
@@ -668,10 +668,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parStartRandomRadius', 2 * (1500) ),
+                                ( 'parStartRandomRadius', 3.3 * (1500) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (50) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -694,7 +694,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 25 ),
                         ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parEndSize', 2 * (1000) ),
+                        ( 'parEndSize', 3 * (1000) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -702,10 +702,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parStartRandomRadius', 2 * (1500) ),
+                        ( 'parStartRandomRadius', 3.3 * (1500) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (50) ),
-                        ( 'parStartSpeed', 2 * (10) ),
+                        ( 'parStartSize', 3 * (50) ),
+                        ( 'parStartSpeed', 3.3 * (10) ),
                         ( 'parWindWeight', 8 ),
                     ]
                 ),
@@ -730,7 +730,7 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 20 ),
                                 ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parEndSize', 2 * (1600) ),
+                                ( 'parEndSize', 3 * (1600) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -738,10 +738,10 @@ export Fx_impact_MK27_Canon_3 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                                ( 'parStartRandomRadius', 2 * (1250) ),
+                                ( 'parStartRandomRadius', 3.3 * (1250) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (50) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 3 ),
                             ]
                         ),

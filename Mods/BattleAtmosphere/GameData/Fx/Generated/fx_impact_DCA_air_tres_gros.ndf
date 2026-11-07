@@ -25,8 +25,8 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (25) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (25) ),
                         ( 'parIntensity', 300 ),
                         ( 'parPositionRelative', float3[-25,-21,0] ),
                     ]
@@ -35,36 +35,36 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[500,500,500]) ),
+                        ( 'parCloudsize', 3 * (float3[500,500,500]) ),
                         ( 'parColor', float3[0.07843138,0.07843138,0.07843138] ),
                         ( 'parCount', 10 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.55 ),
-                        ( 'parParticleSize', 2 * (8500) ),
-                        ( 'parRandomPosition', 2 * (5000) ),
+                        ( 'parParticleSize', 3 * (8500) ),
+                        ( 'parRandomPosition', 3.3 * (5000) ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 0.6 ),
-                        ( 'parSpawnerSpeed', 2 * (800) ),
+                        ( 'parSpawnerSpeed', 3.3 * (800) ),
                     ]
                 ),
                 TActionCall
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[500,500,500]) ),
+                        ( 'parCloudsize', 3 * (float3[500,500,500]) ),
                         ( 'parColor', float3[0.07843138,0.07843138,0.07843138] ),
                         ( 'parCount', 10 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0.8 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.55 ),
-                        ( 'parParticleSize', 2 * (8000) ),
-                        ( 'parRandomPosition', 2 * (5000) ),
+                        ( 'parParticleSize', 3 * (8000) ),
+                        ( 'parRandomPosition', 3.3 * (5000) ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 0.4 ),
-                        ( 'parSpawnerSpeed', 2 * (800) ),
+                        ( 'parSpawnerSpeed', 3.3 * (800) ),
                     ]
                 ),
                 TActionCall
@@ -91,8 +91,8 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (3500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (3500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -118,13 +118,13 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                                 ( 'parColor', float3[1,0.9019608,0.5019608] ),
                                 ( 'parCount', 1 ),
                                 ( 'parDeltaPositionMobileDirection', 0 ),
-                                ( 'parDispersion', 2 * (3000) ),
+                                ( 'parDispersion', 3.3 * (3000) ),
                                 ( 'parDuration', 0.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 4 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (10000) ),
-                                ( 'parDeltaPositionAdditif', float3[-50,-42,-2456] + parPosition ),
+                                ( 'parSize', 3 * (10000) ),
+                                ( 'parDeltaPositionAdditif', float3[-82.5,-69.3,-4052.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -137,8 +137,8 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 0.1 ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parSizeLBU', 2 * (32.55814) ),
-                        ( 'Position', float3[-50,-42,1100] + parPosition ),
+                        ( 'parSizeLBU', 3 * (32.55814) ),
+                        ( 'Position', float3[-82.5,-69.3,1815] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -154,9 +154,9 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.1 ),
-                                ( 'parSize', 2 * (12000) ),
+                                ( 'parSize', 3 * (12000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
-                                ( 'Position', float3[-50,-42,400] + parPosition ),
+                                ( 'Position', float3[-82.5,-69.3,660] + parPosition ),
                             ]
                         ),
                     ]
@@ -174,9 +174,9 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[-50,-42,1000] + parPosition ),
+                                ( 'Position', float3[-82.5,-69.3,1650] + parPosition ),
                             ]
                         ),
                     ]
@@ -193,11 +193,11 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                         ( 'parGravity', 1500 ),
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 0 ),
-                        ( 'parPositionRadius', 2 * (1000) ),
+                        ( 'parPositionRadius', 3.3 * (1000) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (8) ),
-                        ( 'parSpeedMax', 2 * (5000) ),
-                        ( 'parSpeedMin', 2 * (3000) ),
+                        ( 'parSize', 3 * (8) ),
+                        ( 'parSpeedMax', 3.3 * (5000) ),
+                        ( 'parSpeedMin', 3.3 * (3000) ),
                         ( 'parStretch', 1.5 ),
                         ( 'parWindFactor', 0.25 ),
                     ]
@@ -214,11 +214,11 @@ export fx_impact_DCA_air_tres_gros is SimultaneousActionDeclaration
                         ( 'parGravity', 1000 ),
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 0 ),
-                        ( 'parPositionRadius', 2 * (500) ),
+                        ( 'parPositionRadius', 3.3 * (500) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (8) ),
-                        ( 'parSpeedMax', 2 * (6000) ),
-                        ( 'parSpeedMin', 2 * (2000) ),
+                        ( 'parSize', 3 * (8) ),
+                        ( 'parSpeedMax', 3.3 * (6000) ),
+                        ( 'parSpeedMin', 3.3 * (2000) ),
                         ( 'parStretch', 3 ),
                         ( 'parWindFactor', 0.25 ),
                     ]

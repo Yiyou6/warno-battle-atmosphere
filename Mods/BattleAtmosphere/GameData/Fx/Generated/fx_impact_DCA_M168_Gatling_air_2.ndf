@@ -27,10 +27,10 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (400) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (400) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-1570,3462,2822] + parPosition ),
+                                ( 'parPositionRelative', float3[-2590.5,5712.3,4656.3] + parPosition ),
                             ]
                         ),
                     ]
@@ -41,10 +41,10 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (450) ),
-                        ( 'parInitialSize', 2 * (20) ),
+                        ( 'parFinalSize', 3 * (450) ),
+                        ( 'parInitialSize', 3 * (20) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[494,20,32] + parPosition ),
+                        ( 'parPositionRelative', float3[815.1,33,52.8] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -57,10 +57,10 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (600) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (600) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-3366,-2914,-3334] + parPosition ),
+                                ( 'parPositionRelative', float3[-5553.9,-4808.1,-5501.1] + parPosition ),
                             ]
                         ),
                     ]
@@ -75,10 +75,10 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (500) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (500) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[4120,1000,972] + parPosition ),
+                                ( 'parPositionRelative', float3[6798,1650,1603.8] + parPosition ),
                             ]
                         ),
                     ]
@@ -106,9 +106,9 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[4122,1016,1134] + parPosition ),
+                                ( 'Position', float3[6801.3,1676.4,1871.1] + parPosition ),
                             ]
                         ),
                     ]
@@ -126,9 +126,9 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[-3322,-2892,-3066] + parPosition ),
+                                ( 'Position', float3[-5481.3,-4771.8,-5058.9] + parPosition ),
                             ]
                         ),
                     ]
@@ -142,9 +142,9 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
-                        ( 'Position', float3[0,0,1000] + parPosition ),
+                        ( 'Position', float3[0,0,1650] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -160,9 +160,9 @@ export fx_impact_DCA_M168_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (15000) ),
+                                ( 'parSize', 3 * (15000) ),
                                 ( 'parSpeed', float3[0,0,1100] ),
-                                ( 'Position', float3[-1588,3262,2390] + parPosition ),
+                                ( 'Position', float3[-2620.2,5382.3,3943.5] + parPosition ),
                             ]
                         ),
                     ]

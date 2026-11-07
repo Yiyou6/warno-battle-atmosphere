@@ -25,8 +25,8 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (2600) ),
-                        ( 'parInitialSize', 2 * (25) ),
+                        ( 'parFinalSize', 3 * (2600) ),
+                        ( 'parInitialSize', 3 * (25) ),
                         ( 'parIntensity', 120 ),
                         ( 'parPositionRelative', float3[-2668,2356,1373] ),
                     ]
@@ -40,8 +40,8 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                             Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                             NamedParams = MAP[
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (2600) ),
-                                ( 'parInitialSize', 2 * (25) ),
+                                ( 'parFinalSize', 3 * (2600) ),
+                                ( 'parInitialSize', 3 * (25) ),
                                 ( 'parIntensity', 120 ),
                                 ( 'parPositionRelative', float3[-2761,2361,-2139] ),
                             ]
@@ -93,10 +93,10 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (1250) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1250) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-288,-96,-244] + parPosition ),
+                                ( 'parPositionRelative', float3[-475.2,-158.4,-402.6] + parPosition ),
                             ]
                         ),
                     ]
@@ -107,10 +107,10 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.08 ),
-                        ( 'parFinalSize', 2 * (1000) ),
-                        ( 'parInitialSize', 2 * (20) ),
+                        ( 'parFinalSize', 3 * (1000) ),
+                        ( 'parInitialSize', 3 * (20) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[-5446,4698,2960] + parPosition ),
+                        ( 'parPositionRelative', float3[-8985.9,7751.7,4884] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -123,10 +123,10 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (750) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (750) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-5632,4708,-4064] + parPosition ),
+                                ( 'parPositionRelative', float3[-9292.8,7768.2,-6705.6] + parPosition ),
                             ]
                         ),
                     ]
@@ -141,10 +141,10 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.08 ),
-                                ( 'parFinalSize', 2 * (1000) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1000) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[3892,-4146,-4990] + parPosition ),
+                                ( 'parPositionRelative', float3[6421.8,-6840.9,-8233.5] + parPosition ),
                             ]
                         ),
                     ]
@@ -159,10 +159,10 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (1100) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (1100) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-10920,-6192,1038] + parPosition ),
+                                ( 'parPositionRelative', float3[-18018,-10216.8,1712.7] + parPosition ),
                             ]
                         ),
                     ]
@@ -177,10 +177,10 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.09 ),
-                                ( 'parFinalSize', 2 * (800) ),
-                                ( 'parInitialSize', 2 * (20) ),
+                                ( 'parFinalSize', 3 * (800) ),
+                                ( 'parInitialSize', 3 * (20) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-102,7868,-7974] + parPosition ),
+                                ( 'parPositionRelative', float3[-168.3,12982.2,-13157.1] + parPosition ),
                             ]
                         ),
                     ]
@@ -214,9 +214,9 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.1 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (8000) ),
+                                ( 'parSize', 3 * (8000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
-                                ( 'Position', float3[-104,7848,-6974] + parPosition ),
+                                ( 'Position', float3[-171.6,12949.2,-11507.1] + parPosition ),
                             ]
                         ),
                     ]
@@ -234,9 +234,9 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.15 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (8000) ),
+                                ( 'parSize', 3 * (8000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
-                                ( 'Position', float3[-11494,-6218,2026] + parPosition ),
+                                ( 'Position', float3[-18965.1,-10259.7,3342.9] + parPosition ),
                             ]
                         ),
                     ]
@@ -254,9 +254,9 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.08 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (7000) ),
+                                ( 'parSize', 3 * (7000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
-                                ( 'Position', float3[-5522,4722,-3278] + parPosition ),
+                                ( 'Position', float3[-9111.3,7791.3,-5408.7] + parPosition ),
                             ]
                         ),
                     ]
@@ -274,9 +274,9 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.15 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (9000) ),
+                                ( 'parSize', 3 * (9000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
-                                ( 'Position', float3[3938,-4156,-4522] + parPosition ),
+                                ( 'Position', float3[6497.7,-6857.4,-7461.3] + parPosition ),
                             ]
                         ),
                     ]
@@ -290,9 +290,9 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                         ( 'parDuration', 0.1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parSize', 3 * (8000) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[-5336,4712,3746] + parPosition ),
+                        ( 'Position', float3[-8804.4,7774.8,6180.9] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -308,9 +308,9 @@ export fx_impact_DCA_M197_Gatling_air_2 is SimultaneousActionDeclaration
                                 ( 'parDuration', 0.12 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parOpacity', 0.2 ),
-                                ( 'parSize', 2 * (9000) ),
+                                ( 'parSize', 3 * (9000) ),
                                 ( 'parSpeed', float3[0,0,0] ),
-                                ( 'Position', float3[-242,-106,120] + parPosition ),
+                                ( 'Position', float3[-399.3,-174.9,198] + parPosition ),
                             ]
                         ),
                     ]

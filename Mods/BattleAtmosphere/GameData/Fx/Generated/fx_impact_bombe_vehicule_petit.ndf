@@ -25,8 +25,8 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7 ),
-                        ( 'parFinalSize', 2 * (10000) ),
-                        ( 'parInitialSize', 2 * (120) ),
+                        ( 'parFinalSize', 3 * (10000) ),
+                        ( 'parInitialSize', 3 * (120) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -39,7 +39,7 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parCount', 15 ),
                         ( 'parDuration', 0.85 ),
                         ( 'parOpacity', 0.7 ),
-                        ( 'parSize', 2 * (4300) ),
+                        ( 'parSize', 3 * (4300) ),
                     ]
                 ),
                 TActionCall
@@ -50,7 +50,7 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 400 ),
                         ( 'parFadeInTime', 2 ),
                         ( 'parLifetime', 30 ),
-                        ( 'parSize', 2 * (parRadiusPhysical) ),
+                        ( 'parSize', 3 * (parRadiusPhysical) ),
                     ]
                 ),
                 TActionCall
@@ -60,10 +60,10 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 3 ),
                         ( 'parCountDebritsWithFire', 1 ),
                         ( 'parCountDebritsWithSmoke', 2 ),
-                        ( 'parDebritSizeMul', 2 * (1) ),
+                        ( 'parDebritSizeMul', 3 * (1) ),
                         ( 'parDispersion', 0 ),
-                        ( 'parFireParticleEndSize', 2 * (375) ),
-                        ( 'parFireParticleStartSize', 2 * (75) ),
+                        ( 'parFireParticleEndSize', 3 * (375) ),
+                        ( 'parFireParticleStartSize', 3 * (75) ),
                         ( 'parLifetime', 0.8 ),
                         ( 'parMeshType', 1 ),
                         ( 'parMinSpeedRatio', 0.75 ),
@@ -71,9 +71,9 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.8000001,0.6980392,0.5019608] ),
                         ( 'parSmokeColorMultiplier', 0.1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (500) ),
-                        ( 'parSmokeParticleStartSize', 2 * (150) ),
-                        ( 'parSpeed', 2 * (float3[8000,8000,8000]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (500) ),
+                        ( 'parSmokeParticleStartSize', 3 * (150) ),
+                        ( 'parSpeed', 3.3 * (float3[8000,8000,8000]) ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
                 ),
@@ -94,8 +94,8 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.3 ),
-                        ( 'parFinalSize', 2 * (11000) ),
-                        ( 'parInitialSize', 2 * (20) ),
+                        ( 'parFinalSize', 3 * (11000) ),
+                        ( 'parInitialSize', 3 * (20) ),
                         ( 'parZBias', 500 ),
                     ]
                 ),
@@ -109,11 +109,11 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 1.2 ),
                         ( 'parFlatness', 0.8 ),
                         ( 'parGravity', 1 ),
-                        ( 'parInitSpeed', 2 * (0.75) ),
+                        ( 'parInitSpeed', 3.3 * (0.75) ),
                         ( 'parNarrowness', 0.3 ),
                         ( 'parOpacity', 0.9 ),
                         ( 'parRadius', 0 ),
-                        ( 'parSize', 2 * (3200) ),
+                        ( 'parSize', 3 * (3200) ),
                     ]
                 ),
                 TActionCall
@@ -123,19 +123,19 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 12 ),
                         ( 'parEndColor', float3[0.7764707,0.7764707,0.7764707] ),
-                        ( 'parEndSize', 2 * (12000) ),
+                        ( 'parEndSize', 3 * (12000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 2 ),
                         ( 'parOpacity', 0.45 ),
-                        ( 'parRandomInitPosRadius', 2 * (400) ),
+                        ( 'parRandomInitPosRadius', 3.3 * (400) ),
                         ( 'parRotationFactor', 1.5 ),
                         ( 'parScaleSizeFactor', 1 ),
                         ( 'parStartColor', float3[0.7764707,0.7764707,0.7764707] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1200) ),
-                        ( 'parStartSpeed3D', 2 * (float3[4000,4000,0]) ),
+                        ( 'parStartSize', 3 * (1200) ),
+                        ( 'parStartSpeed3D', 3.3 * (float3[4000,4000,0]) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),
@@ -153,8 +153,8 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -175,14 +175,14 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parColor', float3[1,0.9019608,0.5019608] ),
                         ( 'parCount', 10 ),
-                        ( 'parDeltaPositionMobileDirection', 2 * (700) ),
-                        ( 'parDispersion', 2 * (1600) ),
+                        ( 'parDeltaPositionMobileDirection', 3.3 * (700) ),
+                        ( 'parDispersion', 3.3 * (1600) ),
                         ( 'parDuration', 0.7 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 2.65 ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parSize', 2 * (3100) ),
-                        ( 'parDeltaPositionAdditif', float3[0,0,1800] + parPosition ),
+                        ( 'parSize', 3 * (3100) ),
+                        ( 'parDeltaPositionAdditif', float3[0,0,2970] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -194,9 +194,9 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 0.4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.1 ),
-                        ( 'parSize', 2 * (3000) ),
+                        ( 'parSize', 3 * (3000) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,200] + parPosition ),
+                        ( 'Position', float3[0,0,330] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -208,9 +208,9 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (3000) ),
+                        ( 'parSize', 3 * (3000) ),
                         ( 'parSpeed', float3[0,0,1100] ),
-                        ( 'Position', float3[0,0,800] + parPosition ),
+                        ( 'Position', float3[0,0,1320] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -225,11 +225,11 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                         ( 'parGravity', -1500 ),
                         ( 'parLifetime', 0.5 ),
                         ( 'parNarrowness', 0.2 ),
-                        ( 'parPositionRadius', 2 * (300) ),
+                        ( 'parPositionRadius', 3.3 * (300) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (12) ),
-                        ( 'parSpeedMax', 2 * (9000) ),
-                        ( 'parSpeedMin', 2 * (9000) ),
+                        ( 'parSize', 3 * (12) ),
+                        ( 'parSpeedMax', 3.3 * (9000) ),
+                        ( 'parSpeedMin', 3.3 * (9000) ),
                         ( 'parStretch', 0.4 ),
                         ( 'parWindFactor', 1 ),
                     ]
@@ -249,18 +249,18 @@ export fx_impact_bombe_vehicule_petit is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.0509804,0.1019608,0.2117647] ),
                         ( 'parCount', 7 ),
                         ( 'parDecayLength', 0.1 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 2 * (3600) ),
+                        ( 'parParticleSize', 3 * (3600) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 1.2 ),
                         ( 'parSpawnerDuration', 0.45 ),
-                        ( 'parSpawnerSpeed', 2 * (800) ),
+                        ( 'parSpawnerSpeed', 3.3 * (800) ),
                     ]
                 ),
             ]

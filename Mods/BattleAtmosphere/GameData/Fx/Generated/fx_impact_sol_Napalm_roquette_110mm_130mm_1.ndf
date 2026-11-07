@@ -54,7 +54,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -86,7 +86,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -118,7 +118,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -150,7 +150,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -182,7 +182,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -214,7 +214,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parOpacity', 0.1 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (279.0698) ),
+                                ( 'parSizeLBU', 3 * (279.0698) ),
                             ]
                         ),
                     ]
@@ -240,7 +240,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -248,10 +248,10 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 0.25 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 6 ),
                             ]
                         ),
@@ -278,7 +278,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -286,10 +286,10 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
-                                ( 'parStartSpeed', 2 * (25) ),
+                                ( 'parStartSize', 3 * (400) ),
+                                ( 'parStartSpeed', 3.3 * (25) ),
                                 ( 'parWindWeight', 5 ),
                             ]
                         ),
@@ -316,7 +316,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -324,9 +324,9 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (250) ),
+                                ( 'parStartRandomRadius', 3.3 * (250) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -354,7 +354,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -362,10 +362,10 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
-                                ( 'parStartRandomRadius', 2 * (2000) ),
+                                ( 'parStartRandomRadius', 3.3 * (2000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (50) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (50) ),
                                 ( 'parWindWeight', 2 ),
                             ]
                         ),
@@ -392,7 +392,7 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 30 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -400,10 +400,10 @@ export fx_impact_sol_Napalm_roquette_110mm_130mm_1 is SimultaneousActionDeclarat
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parStartRandomRadius', 2 * (3000) ),
+                                ( 'parStartRandomRadius', 3.3 * (3000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (100) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (100) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),

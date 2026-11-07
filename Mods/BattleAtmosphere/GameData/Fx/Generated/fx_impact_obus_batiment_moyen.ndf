@@ -25,8 +25,8 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (6000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (6000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -39,7 +39,7 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 100 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 30 ),
-                        ( 'parSize', 2 * (parRadiusPhysical) ),
+                        ( 'parSize', 3 * (parRadiusPhysical) ),
                     ]
                 ),
                 TActionCall
@@ -49,11 +49,11 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 3 ),
                         ( 'parCountDebritsWithSmoke', 3 ),
-                        ( 'parDebritSizeMul', 2 * (0.7) ),
+                        ( 'parDebritSizeMul', 3 * (0.7) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (10) ),
-                        ( 'parFireParticleEndSize', 2 * (200) ),
-                        ( 'parFireParticleStartSize', 2 * (50) ),
+                        ( 'parDispersion', 3.3 * (10) ),
+                        ( 'parFireParticleEndSize', 3 * (200) ),
+                        ( 'parFireParticleStartSize', 3 * (50) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 1 ),
                         ( 'parMeshType', 1 ),
@@ -62,9 +62,9 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.8000001,0.6980392,0.5019608] ),
                         ( 'parSmokeColorMultiplier', 0.1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (250) ),
-                        ( 'parSmokeParticleStartSize', 2 * (125) ),
-                        ( 'parSpeed', 2 * (float3[1500,1500,3000]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (250) ),
+                        ( 'parSmokeParticleStartSize', 3 * (125) ),
+                        ( 'parSpeed', 3.3 * (float3[1500,1500,3000]) ),
                     ]
                 ),
                 TActionCall
@@ -73,8 +73,8 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (6000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (6000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -88,11 +88,11 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parFlatness', 0.8 ),
                         ( 'parGravity', 1 ),
-                        ( 'parInitSpeed', 2 * (0.75) ),
+                        ( 'parInitSpeed', 3.3 * (0.75) ),
                         ( 'parNarrowness', 0.5 ),
                         ( 'parOpacity', 0.4 ),
                         ( 'parRadius', 0 ),
-                        ( 'parSize', 2 * (2000) ),
+                        ( 'parSize', 3 * (2000) ),
                     ]
                 ),
                 TActionCall
@@ -102,7 +102,7 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 25 ),
                         ( 'parEndColor', float3[0.7843138,0.7764707,0.764706] ),
-                        ( 'parEndSize', 2 * (700) ),
+                        ( 'parEndSize', 3 * (700) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -113,8 +113,8 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.7843138,0.7764707,0.764706] ),
                         ( 'parStartHeight', 200 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (500) ),
-                        ( 'parStartSpeed3D', 2 * (float3[1250,1250,0]) ),
+                        ( 'parStartSize', 3 * (500) ),
+                        ( 'parStartSpeed3D', 3.3 * (float3[1250,1250,0]) ),
                         ( 'parWindWeight', 0.5 ),
                     ]
                 ),
@@ -132,10 +132,10 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (2500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[0,0,400] + parPosition ),
+                        ( 'parPositionRelative', float3[0,0,660] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -157,7 +157,7 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parSize', 2 * (1500) ),
+                        ( 'parSize', 3 * (1500) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', parPosition ),
                     ]
@@ -174,10 +174,10 @@ export fx_impact_obus_batiment_moyen is SimultaneousActionDeclaration
                         ( 'parGravity', -500 ),
                         ( 'parLifetime', 0.7 ),
                         ( 'parNarrowness', 0.3 ),
-                        ( 'parPositionRadius', 2 * (100) ),
-                        ( 'parSize', 2 * (4) ),
-                        ( 'parSpeedMax', 2 * (3000) ),
-                        ( 'parSpeedMin', 2 * (2000) ),
+                        ( 'parPositionRadius', 3.3 * (100) ),
+                        ( 'parSize', 3 * (4) ),
+                        ( 'parSpeedMax', 3.3 * (3000) ),
+                        ( 'parSpeedMin', 3.3 * (2000) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parPositionRelative', parPosition ),

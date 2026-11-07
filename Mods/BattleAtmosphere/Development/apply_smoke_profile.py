@@ -15,9 +15,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.16'
+VERSION = 'smoke-preview.17'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview16-before.zip'
+BACKUP = 'archive/smoke-preview17-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -122,6 +122,9 @@ def expected_files():
                 excluded.append(name)
         from explosion_scale import extend_sources, VISUAL_SCALE
         explosions = extend_sources(z, before, after)
+        from map_wreck_fire import extend_sources as map_sources
+        map_report = map_sources(z,before,after)
+        (DEV/'map-wreck-source.json').write_text(json.dumps(map_report,indent=2)+'\n')
         for name in excluded:
             # Explosion-selected files can still carry the previously installed
             # scale during migration. main() validates those against the exact
@@ -187,8 +190,8 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_match(protected_files(), protected)
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.15', appearance='explosion billboards 2x base, reviewed scatter/offsets/expansion speed 2x base; stronger source and birth-time wind variation with two smooth turns; vertical rise, charcoal, emission, 4x smoke growth, life and 640000 budget retained',
-                  vehicle_burn_duration_multiplier=10,
+                  relative_to='smoke-preview.16', appearance='native Urban Frontlines fuel-fire family Big for vehicle wrecks, single source; burn 10-1200s; explosion billboards 3x base and reviewed spread/speed/offsets 3.3x base',
+                  vehicle_burn_seconds=[10,1200], map_wreck_fire=True,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,
                   backup=archive.relative_to(MOD).as_posix())

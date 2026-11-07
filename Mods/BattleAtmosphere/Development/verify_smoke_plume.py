@@ -43,9 +43,7 @@ def verify_plume(bank, fx, exports, source):
         data = z.read('installed/Gen/NDF/VFX_Bank.ndfbin')
         assert hashlib.sha256(data).hexdigest() == receipt['outputs']['Gen/NDF/VFX_Bank.ndfbin']
         prior = Cndf(data)
-        # Source fire timers and unit burning state are preserved byte for byte.
-        for name in ('Gen/NDF/GFX/Unit.ndfbin',):
-            assert hashlib.sha256((MOD/name).read_bytes()).hexdigest() == receipt['outputs'][name], name
+        # Unit appearance routing is checked by verify_map_wreck; burn bounds remain.
     def dark_smoke(c, root):
         found = {}
         for o in reachable(c, root):
@@ -149,5 +147,4 @@ def verify_plume(bank, fx, exports, source):
                 size_growth='smooth elapsed-time growth, capped at 4x unchanged birth size; varied growth time',
                 compiled_curve_samples=samples,optical_density_floor=0.65,
                 vehicle_burn_seconds=[10,1200],compiled_vehicle_cadaver_objects=len(vehicles),
-                compiled_unique_vehicle_fuel_calls=receipt['plume']['compiled_unique_vehicle_fuel_calls'],
-                vehicle_fuel_source_duration_multiplier=10,rendered_appearance='unverified')
+                vehicle_wreck_fire='native Urban Frontlines fuel-fire family Big',rendered_appearance='unverified')

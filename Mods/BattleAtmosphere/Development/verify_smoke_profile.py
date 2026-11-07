@@ -12,6 +12,8 @@ from apply_smoke_profile import DEV, MOD, ROOT, OLD, NEW, VERSION, MULTIPLIER, B
 
 def paths(c, section):
     data = c.tables[section]
+    if not data:
+        return {}
     found, seen = {}, set()
     def walk(at, path):
         assert at not in seen
@@ -149,7 +151,7 @@ def main():
         previous = smoke_spawner(prior, prior_exports[name], name != NEW)
         assert bank.objects[current['MaxSpawnedParticleLifetime']['ref']]['properties']['Value'] == limits[1]
         verify_multiplier(bank, current['Frequency'], prior, previous['Frequency'], factor=0.36)
-        scaling[name] = dict(relative_to='smoke-preview.15', emission_multiplier=1,
+        scaling[name] = dict(relative_to='smoke-preview.16', emission_multiplier=1,
                              lifetime_seconds=limits, max_spawned_particle_lifetime=limits[1])
     from verify_smoke_plume import verify_plume
     plume = verify_plume(bank, fx, exports, source)
@@ -157,13 +159,15 @@ def main():
     plume['motion'] = verify_motion(bank)
     from verify_explosion_scale import verify_explosions
     explosions = verify_explosions(fx)
+    from verify_map_wreck import verify_map_wreck
+    map_wreck = verify_map_wreck(bank,fx)
+    plume['map_wreck'] = map_wreck
     result = dict(version=VERSION, status='source-and-compiled-references-passed; visual-unverified',
                   compiled_calls=calls, compiled_scaling=scaling, plume=plume, explosions=explosions, protected=build['protected'], sources=build['sources'],
                   outputs=build['outputs'], bank_objects=len(bank.objects), fx_objects=len(fx.objects))
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: unchanged smoke emission, bounded 4x growth and deep charcoal; 64 burning/193 unchanged shared placements')
-    print('PASS: five layered smoke banks; %s vehicle cadaver descriptors at 10-1200s; %s vehicle fuel calls retain 10x source duration' %
-          (plume['compiled_vehicle_cadaver_objects'], plume['compiled_unique_vehicle_fuel_calls']))
+    print('PASS: background smoke retained; vehicle wrecks use native map Big fire/smoke')
+    print('PASS: vehicle fire 10-1200s; native map appearance and single wreck source verified')
 
 if __name__ == '__main__':
     main()

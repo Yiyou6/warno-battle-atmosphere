@@ -29,10 +29,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (500) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (500) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[5548,768,76] + parPosition ),
+                                ( 'parPositionRelative', float3[9154.2,1267.2,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -47,10 +47,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.06 ),
-                                ( 'parFinalSize', 2 * (650) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (650) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[2590,-618,76] + parPosition ),
+                                ( 'parPositionRelative', float3[4273.5,-1019.7,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -65,10 +65,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.05 ),
-                                ( 'parFinalSize', 2 * (550) ),
-                                ( 'parInitialSize', 2 * (250) ),
+                                ( 'parFinalSize', 3 * (550) ),
+                                ( 'parInitialSize', 3 * (250) ),
                                 ( 'parZBias', 255 ),
-                                ( 'parPositionRelative', float3[-3100,-448,76] + parPosition ),
+                                ( 'parPositionRelative', float3[-5115,-739.2,125.4] + parPosition ),
                             ]
                         ),
                     ]
@@ -106,7 +106,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -134,7 +134,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -162,7 +162,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parDeltaPosition', 500 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 10 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -193,7 +193,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', parShotCount ),
                                 ( 'parRepeatTime', parWaitBetweenShot ),
-                                ( 'parSizeLBU', 2 * (23.25581) ),
+                                ( 'parSizeLBU', 3 * (23.25581) ),
                             ]
                         ),
                     ]
@@ -224,7 +224,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', parShotCount ),
                                 ( 'parRepeatTime', parWaitBetweenShot ),
-                                ( 'parSizeLBU', 2 * (32.55814) ),
+                                ( 'parSizeLBU', 3 * (32.55814) ),
                             ]
                         ),
                     ]
@@ -251,7 +251,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', parShotCount ),
                         ( 'parRepeatTime', parWaitBetweenShot ),
-                        ( 'parSizeLBU', 2 * (37.2093) ),
+                        ( 'parSizeLBU', 3 * (37.2093) ),
                     ]
                 ),
             ]
@@ -272,11 +272,11 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 10 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 0 ),
-                        ( 'parDebritSizeMul', 2 * (0.5) ),
+                        ( 'parDebritSizeMul', 3 * (0.5) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (250) ),
-                        ( 'parFireParticleEndSize', 2 * (600) ),
-                        ( 'parFireParticleStartSize', 2 * (250) ),
+                        ( 'parDispersion', 3.3 * (250) ),
+                        ( 'parFireParticleEndSize', 3 * (600) ),
+                        ( 'parFireParticleStartSize', 3 * (250) ),
                         ( 'parGravity', 1500 ),
                         ( 'parLifetime', 4 ),
                         ( 'parMeshType', 1 ),
@@ -285,9 +285,9 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[1,1,1] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (500) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
-                        ( 'parSpeed', 2 * (float3[6000,2000,2000]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (500) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
+                        ( 'parSpeed', 3.3 * (float3[6000,2000,2000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 4),
@@ -328,10 +328,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
                         ( 'parDustColor', float3[0.8000001,0.8039216,0.8000001] ),
-                        ( 'parDustSize', 2 * (400) ),
-                        ( 'parMudSize', 2 * (350) ),
+                        ( 'parDustSize', 3 * (400) ),
+                        ( 'parMudSize', 3 * (350) ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parRandomPosition', 2 * (200) ),
+                        ( 'parRandomPosition', 3.3 * (200) ),
                     ]
                 ),
             ]
@@ -354,10 +354,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.7 ),
                                 ( 'parDustColor', float3[0.6666667,0.6745098,0.6666667] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (350) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (350) ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -382,10 +382,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.7019608,0.7098039,0.7019608] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (250) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (250) ),
                                 ( 'parOpacity', 0.4 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -410,10 +410,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.6078432,0.6156863,0.6078432] ),
-                                ( 'parDustSize', 2 * (350) ),
-                                ( 'parMudSize', 2 * (300) ),
+                                ( 'parDustSize', 3 * (350) ),
+                                ( 'parMudSize', 3 * (300) ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -438,10 +438,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.9 ),
                                 ( 'parDustColor', float3[0.6666667,0.6745098,0.6666667] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (200) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (200) ),
                                 ( 'parOpacity', 0.35 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -466,10 +466,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.6 ),
                                 ( 'parDustColor', float3[0.7019608,0.7098039,0.7019608] ),
-                                ( 'parDustSize', 2 * (450) ),
-                                ( 'parMudSize', 2 * (350) ),
+                                ( 'parDustSize', 3 * (450) ),
+                                ( 'parMudSize', 3 * (350) ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -494,10 +494,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parDuration', 0.4 ),
                                 ( 'parDustColor', float3[0.764706,0.7725491,0.764706] ),
-                                ( 'parDustSize', 2 * (550) ),
-                                ( 'parMudSize', 2 * (300) ),
+                                ( 'parDustSize', 3 * (550) ),
+                                ( 'parMudSize', 3 * (300) ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parRandomPosition', 2 * (200) ),
+                                ( 'parRandomPosition', 3.3 * (200) ),
                             ]
                         ),
                     ]
@@ -523,7 +523,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.7019608,0.5529412,0.4313726] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -531,10 +531,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.5843138,0.454902,0.3490196] ),
-                                ( 'parStartRandomRadius', 2 * (1250) ),
+                                ( 'parStartRandomRadius', 3.3 * (1250) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (50) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 8 ),
                             ]
                         ),
@@ -561,7 +561,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 15 ),
                                 ( 'parEndColor', float3[0.7254902,0.5647059,0.4352942] ),
-                                ( 'parEndSize', 2 * (1250) ),
+                                ( 'parEndSize', 3 * (1250) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -569,10 +569,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6470588,0.509804,0.3960785] ),
-                                ( 'parStartRandomRadius', 2 * (800) ),
+                                ( 'parStartRandomRadius', 3.3 * (800) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (50) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 8 ),
                             ]
                         ),
@@ -599,7 +599,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 25 ),
                                 ( 'parEndColor', float3[0.764706,0.6039216,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -607,10 +607,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6156863,0.482353,0.3764706] ),
-                                ( 'parStartRandomRadius', 2 * (1250) ),
+                                ( 'parStartRandomRadius', 3.3 * (1250) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (50) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (50) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 8 ),
                             ]
                         ),
@@ -633,7 +633,7 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 15 ),
                         ( 'parEndColor', float3[0.5960785,0.5921569,0.5921569] ),
-                        ( 'parEndSize', 2 * (1000) ),
+                        ( 'parEndSize', 3 * (1000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -641,10 +641,10 @@ export Fx_impact_FK20_Autocanon_2 is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.5372549,0.5254902,0.5254902] ),
-                        ( 'parStartRandomRadius', 2 * (1000) ),
+                        ( 'parStartRandomRadius', 3.3 * (1000) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (50) ),
-                        ( 'parStartSpeed', 2 * (100) ),
+                        ( 'parStartSize', 3 * (50) ),
+                        ( 'parStartSpeed', 3.3 * (100) ),
                         ( 'parWindWeight', 4 ),
                     ]
                 ),

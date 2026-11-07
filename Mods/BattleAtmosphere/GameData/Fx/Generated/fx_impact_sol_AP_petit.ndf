@@ -28,7 +28,7 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 10 ),
-                        ( 'parSize', 2 * (200 + parRadiusPhysical) ),
+                        ( 'parSize', 3 * (200 + parRadiusPhysical) ),
                     ]
                 ),
                 TActionCall
@@ -37,8 +37,8 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 1.25 ),
                         ( 'parDustColor', float3[0.9960785,0.9882354,0.9803922] ),
-                        ( 'parDustSize', 2 * (300) ),
-                        ( 'parMudSize', 2 * (500) ),
+                        ( 'parDustSize', 3 * (300) ),
+                        ( 'parMudSize', 3 * (500) ),
                         ( 'parOpacity', 0.5 ),
                     ]
                 ),
@@ -47,8 +47,8 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (1700) ),
-                        ( 'parInitialSize', 2 * (80) ),
+                        ( 'parFinalSize', 3 * (1700) ),
+                        ( 'parInitialSize', 3 * (80) ),
                         ( 'parIntensity', 250 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -60,7 +60,7 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                         ( 'parCount', 8 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 2 * (1100) ),
+                        ( 'parSize', 3 * (1100) ),
                     ]
                 ),
                 TSequentialAction
@@ -86,8 +86,8 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.25 ),
-                        ( 'parFinalSize', 2 * (1100) ),
-                        ( 'parInitialSize', 2 * (80) ),
+                        ( 'parFinalSize', 3 * (1100) ),
+                        ( 'parInitialSize', 3 * (80) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -101,11 +101,11 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                         ( 'parDuration', 1.5 ),
                         ( 'parFlatness', 0.95 ),
                         ( 'parGravity', 1 ),
-                        ( 'parInitSpeed', 2 * (0.75) ),
+                        ( 'parInitSpeed', 3.3 * (0.75) ),
                         ( 'parNarrowness', 0.7 ),
                         ( 'parOpacity', 0.5 ),
                         ( 'parRadius', 0 ),
-                        ( 'parSize', 2 * (750) ),
+                        ( 'parSize', 3 * (750) ),
                     ]
                 ),
                 TActionCall
@@ -115,19 +115,19 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 12 ),
                         ( 'parEndColor', float3[0,0,0] ),
-                        ( 'parEndSize', 2 * (1500) ),
+                        ( 'parEndSize', 3 * (1500) ),
                         ( 'parFluidFriction', 2.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 1 ),
                         ( 'parOpacity', 0.67 ),
-                        ( 'parRandomInitPosRadius', 2 * (150) ),
+                        ( 'parRandomInitPosRadius', 3.3 * (150) ),
                         ( 'parRotationFactor', 1.5 ),
                         ( 'parScaleSizeFactor', 1 ),
                         ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (150) ),
-                        ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
+                        ( 'parStartSize', 3 * (150) ),
+                        ( 'parStartSpeed3D', 3.3 * (float3[2000,2000,0]) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),
@@ -160,10 +160,10 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                         ( 'parGravity', -3500 ),
                         ( 'parLifetime', 0.32 ),
                         ( 'parNarrowness', 0.85 ),
-                        ( 'parPositionRadius', 2 * (60) ),
-                        ( 'parSize', 2 * (3) ),
-                        ( 'parSpeedMax', 2 * (2100) ),
-                        ( 'parSpeedMin', 2 * (2100) ),
+                        ( 'parPositionRadius', 3.3 * (60) ),
+                        ( 'parSize', 3 * (3) ),
+                        ( 'parSpeedMax', 3.3 * (2100) ),
+                        ( 'parSpeedMin', 3.3 * (2100) ),
                         ( 'parStretch', 1.5 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parPositionRelative', parPosition ),
@@ -186,7 +186,7 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 20 ),
                         ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parEndSize', 2 * (400) ),
+                        ( 'parEndSize', 3 * (400) ),
                         ( 'parFluidFriction', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 4 ),
@@ -194,10 +194,10 @@ export fx_impact_sol_AP_petit is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parStartRandomRadius', 2 * (100) ),
+                        ( 'parStartRandomRadius', 3.3 * (100) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (25) ),
-                        ( 'parStartSpeed', 2 * (8) ),
+                        ( 'parStartSize', 3 * (25) ),
+                        ( 'parStartSpeed', 3.3 * (8) ),
                         ( 'parWindWeight', 4 ),
                     ]
                 ),

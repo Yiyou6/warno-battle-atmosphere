@@ -27,7 +27,7 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parDuration', 0.4999998 ),
                         ( 'parDustColor', float3[0.8705883,0.8705883,0.8705883] ),
-                        ( 'parDustSize', 2 * (600) ),
+                        ( 'parDustSize', 3 * (600) ),
                         ( 'parMudSize', 0 ),
                         ( 'parOpacity', 1 ),
                     ]
@@ -37,8 +37,8 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7000002 ),
-                        ( 'parFinalSize', 2 * (6300) ),
-                        ( 'parInitialSize', 2 * (1300) ),
+                        ( 'parFinalSize', 3 * (6300) ),
+                        ( 'parInitialSize', 3 * (1300) ),
                         ( 'parIntensity', 3200 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -50,7 +50,7 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parColor', float3[0.4588236,0.4039216,0.3568628] ),
                         ( 'parCount', 10 ),
                         ( 'parDuration', 1.5 ),
-                        ( 'parSize', 2 * (900) ),
+                        ( 'parSize', 3 * (900) ),
                     ]
                 ),
                 TActionCall
@@ -60,9 +60,9 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 2 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 26 ),
-                        ( 'parDebritSizeMul', 2 * (0.001) ),
+                        ( 'parDebritSizeMul', 3 * (0.001) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (540) ),
+                        ( 'parDispersion', 3.3 * (540) ),
                         ( 'parFireParticleEndSize', 0 ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 2000 ),
@@ -73,9 +73,9 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5058824,0.4705883,0.4470589] ),
                         ( 'parSmokeColorMultiplier', 0.4 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (1250) ),
+                        ( 'parSmokeParticleEndSize', 3 * (1250) ),
                         ( 'parSmokeParticleStartSize', 0 ),
-                        ( 'parSpeed', 2 * (float3[4253,4270,6078]) ),
+                        ( 'parSpeed', 3.3 * (float3[4253,4270,6078]) ),
                     ]
                 ),
                 TActionCall
@@ -84,8 +84,8 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 1.7 ),
-                        ( 'parFinalSize', 2 * (5200) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (5200) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -96,19 +96,19 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 18 ),
                         ( 'parEndColor', float3[0,0,0] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 3.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 1.2 ),
                         ( 'parOpacity', 0.67 ),
-                        ( 'parRandomInitPosRadius', 2 * (150) ),
+                        ( 'parRandomInitPosRadius', 3.3 * (150) ),
                         ( 'parRotationFactor', 1.2 ),
                         ( 'parScaleSizeFactor', 1 ),
                         ( 'parStartColor', float3[0.8941177,0.764706,0.5960785] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (300) ),
-                        ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
+                        ( 'parStartSize', 3 * (300) ),
+                        ( 'parStartSpeed3D', 3.3 * (float3[2000,2000,0]) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),
@@ -129,10 +129,10 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (3500) ),
-                        ( 'parInitialSize', 2 * (1000) ),
+                        ( 'parFinalSize', 3 * (3500) ),
+                        ( 'parInitialSize', 3 * (1000) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[0,0,400] + parPosition ),
+                        ( 'parPositionRelative', float3[0,0,660] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -143,7 +143,7 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parImpactPos', parDirection ),
                         ( 'parLuminosite', 6 ),
-                        ( 'parSize', 2 * (2350) ),
+                        ( 'parSize', 3 * (2350) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', float3[0,0,100] + parPosition ),
                     ]
@@ -166,8 +166,8 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 0.2800001 ),
                         ( 'parOpacity', 0.98 ),
-                        ( 'parSizeLBU', 2 * (44.65116) ),
-                        ( 'Position', float3[0,0,1000] + parPosition ),
+                        ( 'parSizeLBU', 3 * (44.65116) ),
+                        ( 'Position', float3[0,0,1650] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -179,9 +179,9 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 1.4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSize', 2 * (1300) ),
+                        ( 'parSize', 3 * (1300) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,500] + parPosition ),
+                        ( 'Position', float3[0,0,825] + parPosition ),
                     ]
                 ),
                 TWaitInSec( Duration = 1.4),
@@ -203,7 +203,7 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 1 ),
                         ( 'parImpactPos', parDirection ),
                         ( 'parLuminosite', 6 ),
-                        ( 'parSize', 2 * (1100) ),
+                        ( 'parSize', 3 * (1100) ),
                         ( 'parSpawnRadius', 0 ),
                         ( 'parPositionInit', float3[103,0,273] + parPosition ),
                     ]
@@ -226,9 +226,9 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 4 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 9 ),
-                        ( 'parDebritSizeMul', 2 * (0.001) ),
+                        ( 'parDebritSizeMul', 3 * (0.001) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (560) ),
+                        ( 'parDispersion', 3.3 * (560) ),
                         ( 'parFireParticleEndSize', 0 ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 2000 ),
@@ -239,9 +239,9 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (600) ),
+                        ( 'parSmokeParticleEndSize', 3 * (600) ),
                         ( 'parSmokeParticleStartSize', 0 ),
-                        ( 'parSpeed', 2 * (float3[4590,4660,6679]) ),
+                        ( 'parSpeed', 3.3 * (float3[4590,4660,6679]) ),
                     ]
                 ),
                 TActionCall
@@ -254,11 +254,11 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 0.9999996 ),
                         ( 'parFlatness', 0.4800006 ),
                         ( 'parGravity', -0.2 ),
-                        ( 'parInitSpeed', 2 * (0.75) ),
+                        ( 'parInitSpeed', 3.3 * (0.75) ),
                         ( 'parNarrowness', 0.6200004 ),
                         ( 'parOpacity', 0.7600002 ),
                         ( 'parRadius', 0 ),
-                        ( 'parSize', 2 * (3200) ),
+                        ( 'parSize', 3 * (3200) ),
                     ]
                 ),
                 TWaitInSec( Duration = 0.5),
@@ -283,7 +283,7 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parGravity', 4600 ),
                         ( 'parGrowFactor', 9 ),
                         ( 'parLifetime', 4.9 ),
-                        ( 'parSize', 2 * (100) ),
+                        ( 'parSize', 3 * (100) ),
                         ( 'parSpeed', 860 ),
                     ]
                 ),
@@ -308,11 +308,11 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parDuration', 0.75 ),
                         ( 'parFlatness', 0.95 ),
                         ( 'parGravity', -3.4 ),
-                        ( 'parInitSpeed', 2 * (1.85) ),
+                        ( 'parInitSpeed', 3.3 * (1.85) ),
                         ( 'parNarrowness', 1.32 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parRadius', 2 * (150) ),
-                        ( 'parSize', 2 * (1100) ),
+                        ( 'parRadius', 3.3 * (150) ),
+                        ( 'parSize', 3 * (1100) ),
                     ]
                 ),
             ]
@@ -334,10 +334,10 @@ export fx_impact_water_he_moyen is SimultaneousActionDeclaration
                         ( 'parGravity', -1000 ),
                         ( 'parLifetime', 0.8499999 ),
                         ( 'parNarrowness', 2.449999 ),
-                        ( 'parPositionRadius', 2 * (310) ),
-                        ( 'parSize', 2 * (11) ),
-                        ( 'parSpeedMax', 2 * (2900) ),
-                        ( 'parSpeedMin', 2 * (500) ),
+                        ( 'parPositionRadius', 3.3 * (310) ),
+                        ( 'parSize', 3 * (11) ),
+                        ( 'parSpeedMax', 3.3 * (2900) ),
+                        ( 'parSpeedMin', 3.3 * (500) ),
                         ( 'parStretch', 0.5 ),
                         ( 'parWindFactor', 0 ),
                         ( 'parPositionRelative', parPosition ),

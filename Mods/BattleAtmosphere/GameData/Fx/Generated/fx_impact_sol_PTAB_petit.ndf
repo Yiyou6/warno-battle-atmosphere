@@ -46,7 +46,7 @@ export fx_impact_sol_PTAB_petit is SimultaneousActionDeclaration
                         ( 'parDeltaPosition', 0 ),
                         ( 'parFadeInTime', 0.25 ),
                         ( 'parLifetime', 5 ),
-                        ( 'parSize', 2 * (500) ),
+                        ( 'parSize', 3 * (500) ),
                     ]
                 ),
             ]
@@ -66,7 +66,7 @@ export fx_impact_sol_PTAB_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 3 ),
                         ( 'parEndColor', float3[0.9921569,0.7764707,0.6] ),
-                        ( 'parEndSize', 2 * (2300) ),
+                        ( 'parEndSize', 3 * (2300) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -77,8 +77,8 @@ export fx_impact_sol_PTAB_petit is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.9921569,0.7764707,0.6] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (750) ),
-                        ( 'parStartSpeed3D', 2 * (float3[2000,2000,0]) ),
+                        ( 'parStartSize', 3 * (750) ),
+                        ( 'parStartSpeed3D', 3.3 * (float3[2000,2000,0]) ),
                         ( 'parWindWeight', 0.5 ),
                     ]
                 ),

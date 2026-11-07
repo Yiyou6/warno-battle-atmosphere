@@ -103,6 +103,9 @@ class Cndf:
             return r.take(r.u32()).decode('utf-16le')
         if t == 0xBBBBBBBB:
             instance, cls = r.unpack('II')
+            # Native Depiction maps contain explicit null object references.
+            if instance == cls == 0xFFFFFFFF:
+                return None
             return {'ref': instance, 'class': self.classes[cls]}
         if t == 0xAAAAAAAA:
             index = r.u32()

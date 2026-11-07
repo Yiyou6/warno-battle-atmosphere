@@ -25,8 +25,8 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.4 ),
-                        ( 'parFinalSize', 2 * (12000) ),
-                        ( 'parInitialSize', 2 * (150) ),
+                        ( 'parFinalSize', 3 * (12000) ),
+                        ( 'parInitialSize', 3 * (150) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -38,7 +38,7 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parColor', float3[1,1,1] ),
                         ( 'parCount', 15 ),
                         ( 'parDuration', 1 ),
-                        ( 'parSize', 2 * (2200) ),
+                        ( 'parSize', 3 * (2200) ),
                     ]
                 ),
                 TActionCall
@@ -56,7 +56,7 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parCount', 15 ),
                         ( 'parLifetime', 0.5 ),
                         ( 'parNarrowness', 5 ),
-                        ( 'parSize', 2 * (750) ),
+                        ( 'parSize', 3 * (750) ),
                         ( 'parStretch', 8 ),
                     ]
                 ),
@@ -66,8 +66,8 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (1500) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (1500) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -81,11 +81,11 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parDuration', 0.75 ),
                         ( 'parFlatness', 0.8 ),
                         ( 'parGravity', 1 ),
-                        ( 'parInitSpeed', 2 * (0.75) ),
+                        ( 'parInitSpeed', 3.3 * (0.75) ),
                         ( 'parNarrowness', 0.3 ),
                         ( 'parOpacity', 1 ),
                         ( 'parRadius', 0 ),
-                        ( 'parSize', 2 * (3000) ),
+                        ( 'parSize', 3 * (3000) ),
                     ]
                 ),
                 TActionCall
@@ -95,7 +95,7 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 53 ),
                         ( 'parEndColor', float3[0.682353,0.6862745,0.7176471] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 1.5 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 5 ),
@@ -106,8 +106,8 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parStartColor', float3[0.3529412,0.3529412,0.3529412] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (750) ),
-                        ( 'parStartSpeed3D', 2 * (float3[3000,3000,0]) ),
+                        ( 'parStartSize', 3 * (750) ),
+                        ( 'parStartSpeed3D', 3.3 * (float3[3000,3000,0]) ),
                         ( 'parWindWeight', 0.3 ),
                     ]
                 ),
@@ -124,10 +124,10 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (2500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parZBias', 255 ),
-                        ( 'parPositionRelative', float3[0,0,400] + parPosition ),
+                        ( 'parPositionRelative', float3[0,0,660] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -149,7 +149,7 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parDuration', 0.6 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.8 ),
-                        ( 'parSize', 2 * (3000) ),
+                        ( 'parSize', 3 * (3000) ),
                         ( 'parSpeed', float3[0,0,0] ),
                         ( 'Position', parPosition ),
                     ]
@@ -166,10 +166,10 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parGravity', -500 ),
                         ( 'parLifetime', 0.3 ),
                         ( 'parNarrowness', 0.8 ),
-                        ( 'parPositionRadius', 2 * (75) ),
-                        ( 'parSize', 2 * (8) ),
-                        ( 'parSpeedMax', 2 * (3750) ),
-                        ( 'parSpeedMin', 2 * (3750) ),
+                        ( 'parPositionRadius', 3.3 * (75) ),
+                        ( 'parSize', 3 * (8) ),
+                        ( 'parSpeedMax', 3.3 * (3750) ),
+                        ( 'parSpeedMin', 3.3 * (3750) ),
                         ( 'parStretch', 1.5 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parPositionRelative', parPosition ),
@@ -193,11 +193,11 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 5 ),
                         ( 'parCountDebritsWithSmoke', 5 ),
-                        ( 'parDebritSizeMul', 2 * (0.8) ),
+                        ( 'parDebritSizeMul', 3 * (0.8) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (150) ),
-                        ( 'parFireParticleEndSize', 2 * (225) ),
-                        ( 'parFireParticleStartSize', 2 * (75) ),
+                        ( 'parDispersion', 3.3 * (150) ),
+                        ( 'parFireParticleEndSize', 3 * (225) ),
+                        ( 'parFireParticleStartSize', 3 * (75) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 1 ),
                         ( 'parMeshType', 1 ),
@@ -206,9 +206,9 @@ export fx_impact_railgun_batiment is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.8000001,0.6980392,0.2509804] ),
                         ( 'parSmokeColorMultiplier', 0.1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (300) ),
-                        ( 'parSmokeParticleStartSize', 2 * (150) ),
-                        ( 'parSpeed', 2 * (float3[3000,3000,7500]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (300) ),
+                        ( 'parSmokeParticleStartSize', 3 * (150) ),
+                        ( 'parSpeed', 3.3 * (float3[3000,3000,7500]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 1),

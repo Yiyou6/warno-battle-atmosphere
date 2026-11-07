@@ -3,8 +3,8 @@ from pathlib import Path
 import re
 from apply_profile import matching
 
-VISUAL_SCALE = 2
-SPATIAL_SCALE = 2
+VISUAL_SCALE = 3
+SPATIAL_SCALE = 3.3
 
 # Absolute visual dimensions only. Do not multiply both a base size and its
 # existing scale factor. Counts, lifetimes and physical/suppress radii retain

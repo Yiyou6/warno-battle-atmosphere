@@ -30,8 +30,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1500) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1500) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -70,8 +70,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1600) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1600) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -110,8 +110,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1600) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1600) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -150,8 +150,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1.366667 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1600) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1600) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -190,8 +190,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1600) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1600) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -230,8 +230,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1.366667 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1500) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1500) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -270,8 +270,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1600) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1600) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -310,8 +310,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1500) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1500) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -350,8 +350,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1500) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1500) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -390,8 +390,8 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parDuration', 1.5 ),
                                 ( 'parDustColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parDustSize', 2 * (1500) ),
-                                ( 'parMudSize', 2 * (1000) ),
+                                ( 'parDustSize', 3 * (1500) ),
+                                ( 'parMudSize', 3 * (1000) ),
                                 ( 'parOpacity', 0.15 ),
                             ]
                         ),
@@ -423,10 +423,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (4000) ),
+                        ( 'parFinalSize', 3 * (4000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 0 ),
-                        ( 'parPositionRelative', float3[-192,-638,0] + parPosition ),
+                        ( 'parPositionRelative', float3[-316.8,-1052.7,0] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -439,10 +439,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-176,-312,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-290.4,-514.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -457,10 +457,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-5906,-2770,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-9744.9,-4570.5,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -475,10 +475,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-4732,752,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-7807.8,1240.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -493,10 +493,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-3198,-7040,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-5276.7,-11616,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -511,10 +511,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-588,5398,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-970.2,8906.7,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -529,10 +529,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[3318,3284,0] + parPosition ),
+                                ( 'parPositionRelative', float3[5474.7,5418.6,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -547,10 +547,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[3958,390,0] + parPosition ),
+                                ( 'parPositionRelative', float3[6530.7,643.5,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -565,10 +565,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[4366,-6440,0] + parPosition ),
+                                ( 'parPositionRelative', float3[7203.9,-10626,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -583,10 +583,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[4434,-2266,0] + parPosition ),
+                                ( 'parPositionRelative', float3[7316.1,-3738.9,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -601,10 +601,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (4000) ),
+                                ( 'parFinalSize', 3 * (4000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[6944,-632,0] + parPosition ),
+                                ( 'parPositionRelative', float3[11457.6,-1042.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -632,7 +632,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -650,7 +650,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -668,7 +668,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -686,7 +686,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -700,7 +700,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                         ( 'parDuration', 0.1 ),
                         ( 'parOpacity', 0.3 ),
-                        ( 'parSizeLBU', 2 * (100) ),
+                        ( 'parSizeLBU', 3 * (100) ),
                     ]
                 ),
                 TSequentialAction
@@ -716,7 +716,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -734,7 +734,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -752,7 +752,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -770,7 +770,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColorStart', float3[1,0.5921569,0.3490196] ),
                                 ( 'parDuration', 0.1 ),
                                 ( 'parOpacity', 0.3 ),
-                                ( 'parSizeLBU', 2 * (100) ),
+                                ( 'parSizeLBU', 3 * (100) ),
                             ]
                         ),
                     ]
@@ -790,14 +790,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-176,-312,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-290.4,-514.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -817,14 +817,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-5906,-2770,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-9744.9,-4570.5,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -844,14 +844,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-4732,752,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-7807.8,1240.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -871,14 +871,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-3198,-7040,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-5276.7,-11616,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -898,14 +898,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-588,5398,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-970.2,8906.7,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -925,14 +925,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[3318,3284,0] + parPosition ),
+                                ( 'parPositionRelative', float3[5474.7,5418.6,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -952,14 +952,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[3958,390,0] + parPosition ),
+                                ( 'parPositionRelative', float3[6530.7,643.5,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -979,14 +979,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[4366,-6440,0] + parPosition ),
+                                ( 'parPositionRelative', float3[7203.9,-10626,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1006,14 +1006,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[4434,-2266,0] + parPosition ),
+                                ( 'parPositionRelative', float3[7316.1,-3738.9,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1033,14 +1033,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2.5 ),
                                 ( 'parNarrowness', 0.1 ),
-                                ( 'parPositionRadius', 2 * (200) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (5000) ),
+                                ( 'parPositionRadius', 3.3 * (200) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (5000) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 1 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[6944,-632,0] + parPosition ),
+                                ( 'parPositionRelative', float3[11457.6,-1042.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1056,14 +1056,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 2.5 ),
                         ( 'parNarrowness', 0.1 ),
-                        ( 'parPositionRadius', 2 * (200) ),
-                        ( 'parSize', 2 * (10) ),
-                        ( 'parSpeedMax', 2 * (8000) ),
-                        ( 'parSpeedMin', 2 * (5000) ),
+                        ( 'parPositionRadius', 3.3 * (200) ),
+                        ( 'parSize', 3 * (10) ),
+                        ( 'parSpeedMax', 3.3 * (8000) ),
+                        ( 'parSpeedMin', 3.3 * (5000) ),
                         ( 'parStretch', 1 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parPositionRelative', float3[-192,-638,0] + parPosition ),
+                        ( 'parPositionRelative', float3[-316.8,-1052.7,0] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -1081,14 +1081,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.5 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-176,-312,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-290.4,-514.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1108,14 +1108,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.5 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-5906,-2770,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-9744.9,-4570.5,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1135,14 +1135,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 2 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-4732,752,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-7807.8,1240.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1162,14 +1162,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 2 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-3198,-7040,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-5276.7,-11616,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1189,14 +1189,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.5 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[-588,5398,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-970.2,8906.7,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1216,14 +1216,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 2 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[3318,3284,0] + parPosition ),
+                                ( 'parPositionRelative', float3[5474.7,5418.6,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1243,14 +1243,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 2 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[3958,390,0] + parPosition ),
+                                ( 'parPositionRelative', float3[6530.7,643.5,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1270,14 +1270,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 2 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[4366,-6440,0] + parPosition ),
+                                ( 'parPositionRelative', float3[7203.9,-10626,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1297,14 +1297,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.5 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[4434,-2266,0] + parPosition ),
+                                ( 'parPositionRelative', float3[7316.1,-3738.9,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1324,14 +1324,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 0.5 ),
-                                ( 'parPositionRadius', 2 * (680) ),
-                                ( 'parSize', 2 * (10) ),
-                                ( 'parSpeedMax', 2 * (2800) ),
-                                ( 'parSpeedMin', 2 * (300) ),
+                                ( 'parPositionRadius', 3.3 * (680) ),
+                                ( 'parSize', 3 * (10) ),
+                                ( 'parSpeedMax', 3.3 * (2800) ),
+                                ( 'parSpeedMin', 3.3 * (300) ),
                                 ( 'parStretch', 1 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parPositionRelative', float3[6944,-632,0] + parPosition ),
+                                ( 'parPositionRelative', float3[11457.6,-1042.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -1347,14 +1347,14 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 0.5 ),
-                        ( 'parPositionRadius', 2 * (680) ),
-                        ( 'parSize', 2 * (10) ),
-                        ( 'parSpeedMax', 2 * (2800) ),
-                        ( 'parSpeedMin', 2 * (300) ),
+                        ( 'parPositionRadius', 3.3 * (680) ),
+                        ( 'parSize', 3 * (10) ),
+                        ( 'parSpeedMax', 3.3 * (2800) ),
+                        ( 'parSpeedMin', 3.3 * (300) ),
                         ( 'parStretch', 1 ),
                         ( 'parWindFactor', 0 ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parPositionRelative', float3[-192,-638,0] + parPosition ),
+                        ( 'parPositionRelative', float3[-316.8,-1052.7,0] + parPosition ),
                     ]
                 ),
                 TWaitInSec( Duration = 0.1),
@@ -1379,7 +1379,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1395,7 +1395,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1421,7 +1421,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1437,7 +1437,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1463,7 +1463,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1479,7 +1479,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1505,7 +1505,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1521,7 +1521,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1547,7 +1547,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1563,7 +1563,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1589,7 +1589,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1605,7 +1605,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1631,7 +1631,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1647,7 +1647,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                             ]
                         ),
                     ]
@@ -1673,7 +1673,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1689,7 +1689,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1715,7 +1715,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1731,7 +1731,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1757,7 +1757,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 5 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1773,7 +1773,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parColor', float3[0.3607843,0.3529412,0.3529412] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                             ]
                         ),
                     ]
@@ -1793,54 +1793,54 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                        ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                         ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.25 ),
-                        ( 'parParticleSize', 2 * (3000) ),
-                        ( 'parRandomPosition', 2 * (2000) ),
+                        ( 'parParticleSize', 3 * (3000) ),
+                        ( 'parRandomPosition', 3.3 * (2000) ),
                         ( 'parSmokeDuration', 8 ),
                         ( 'parSpawnerDuration', 0.25 ),
-                        ( 'parSpawnerSpeed', 2 * (10000) ),
+                        ( 'parSpawnerSpeed', 3.3 * (10000) ),
                     ]
                 ),
                 TActionCall
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                         ( 'parCount', 7 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.25 ),
-                        ( 'parParticleSize', 2 * (1500) ),
-                        ( 'parRandomPosition', 2 * (2000) ),
+                        ( 'parParticleSize', 3 * (1500) ),
+                        ( 'parRandomPosition', 3.3 * (2000) ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 1 ),
-                        ( 'parSpawnerSpeed', 2 * (2400) ),
+                        ( 'parSpawnerSpeed', 3.3 * (2400) ),
                     ]
                 ),
                 TActionCall
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1200]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1200]) ),
                         ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 10 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.5 ),
                         ( 'parOpacity', 0.25 ),
-                        ( 'parParticleSize', 2 * (2500) ),
-                        ( 'parRandomPosition', 2 * (2000) ),
+                        ( 'parParticleSize', 3 * (2500) ),
+                        ( 'parRandomPosition', 3.3 * (2000) ),
                         ( 'parSmokeDuration', 10 ),
                         ( 'parSpawnerDuration', 0.45 ),
-                        ( 'parSpawnerSpeed', 2 * (3000) ),
+                        ( 'parSpawnerSpeed', 3.3 * (3000) ),
                     ]
                 ),
             ]
@@ -1862,18 +1862,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -1886,15 +1886,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -1910,18 +1910,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -1942,7 +1942,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -1958,11 +1958,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -1971,9 +1971,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -1997,15 +1997,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2021,18 +2021,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2045,18 +2045,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -2077,7 +2077,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2093,11 +2093,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -2106,9 +2106,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -2132,18 +2132,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2156,18 +2156,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -2180,15 +2180,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2212,7 +2212,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2228,11 +2228,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2241,9 +2241,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -2267,18 +2267,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -2291,15 +2291,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2315,18 +2315,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2347,7 +2347,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2363,11 +2363,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2376,9 +2376,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -2402,15 +2402,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2426,18 +2426,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2450,18 +2450,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -2482,7 +2482,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2498,11 +2498,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2511,9 +2511,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -2537,18 +2537,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -2561,18 +2561,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2585,15 +2585,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2617,7 +2617,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2633,11 +2633,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2646,9 +2646,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -2672,18 +2672,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -2696,18 +2696,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2720,15 +2720,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2752,7 +2752,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2768,11 +2768,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2781,9 +2781,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -2807,18 +2807,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2831,18 +2831,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -2855,15 +2855,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2887,7 +2887,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -2903,11 +2903,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -2916,9 +2916,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -2942,15 +2942,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 6 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -2966,18 +2966,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -2990,18 +2990,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -3022,7 +3022,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -3038,11 +3038,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 2 ),
                                 ( 'parMeshType', 1 ),
@@ -3051,9 +3051,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -3077,15 +3077,15 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,500]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,500]) ),
                                 ( 'parColor', float3[0.1803922,0.1803922,0.1882353] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
                                 ( 'parSpawnerSpeed', 0 ),
@@ -3101,18 +3101,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,600]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,600]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (1000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -3125,18 +3125,18 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[600,600,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[600,600,1000]) ),
                                 ( 'parColor', float3[0.5882353,0.5882353,0.5960785] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 10 ),
                                 ( 'parDecayStart', 0 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 0.25 ),
-                                ( 'parParticleSize', 2 * (2000) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2000) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -3157,7 +3157,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parOpacity', 0.5 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0 ),
-                                ( 'parSizeLBU', 2 * (69.76744) ),
+                                ( 'parSizeLBU', 3 * (69.76744) ),
                             ]
                         ),
                     ]
@@ -3173,11 +3173,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 10 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -3186,9 +3186,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -3573,7 +3573,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -3601,7 +3601,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (450) ),
+                                ( 'parSize', 3 * (450) ),
                             ]
                         ),
                     ]
@@ -3629,7 +3629,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -3657,7 +3657,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (450) ),
+                                ( 'parSize', 3 * (450) ),
                             ]
                         ),
                     ]
@@ -3685,7 +3685,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -3713,7 +3713,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (550) ),
+                                ( 'parSize', 3 * (550) ),
                             ]
                         ),
                     ]
@@ -3741,7 +3741,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -3769,7 +3769,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (600) ),
+                                ( 'parSize', 3 * (600) ),
                             ]
                         ),
                     ]
@@ -3797,7 +3797,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -3825,7 +3825,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -3852,7 +3852,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (650) ),
+                                ( 'parSize', 3 * (650) ),
                             ]
                         ),
                     ]
@@ -3879,7 +3879,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (750) ),
+                                ( 'parSize', 3 * (750) ),
                             ]
                         ),
                     ]
@@ -3906,7 +3906,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (750) ),
+                                ( 'parSize', 3 * (750) ),
                             ]
                         ),
                     ]
@@ -3933,7 +3933,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (550) ),
+                                ( 'parSize', 3 * (550) ),
                             ]
                         ),
                     ]
@@ -3960,7 +3960,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (600) ),
+                                ( 'parSize', 3 * (600) ),
                             ]
                         ),
                     ]
@@ -3988,7 +3988,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (550) ),
+                                ( 'parSize', 3 * (550) ),
                             ]
                         ),
                     ]
@@ -4015,7 +4015,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (450) ),
+                                ( 'parSize', 3 * (450) ),
                             ]
                         ),
                     ]
@@ -4042,7 +4042,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (700) ),
+                                ( 'parSize', 3 * (700) ),
                             ]
                         ),
                     ]
@@ -4069,7 +4069,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (600) ),
+                                ( 'parSize', 3 * (600) ),
                             ]
                         ),
                     ]
@@ -4096,7 +4096,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -4123,7 +4123,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -4150,7 +4150,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (700) ),
+                                ( 'parSize', 3 * (700) ),
                             ]
                         ),
                     ]
@@ -4177,7 +4177,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (400) ),
+                                ( 'parSize', 3 * (400) ),
                             ]
                         ),
                     ]
@@ -4205,7 +4205,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (600) ),
+                                ( 'parSize', 3 * (600) ),
                             ]
                         ),
                     ]
@@ -4232,7 +4232,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -4259,7 +4259,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -4286,7 +4286,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (700) ),
+                                ( 'parSize', 3 * (700) ),
                             ]
                         ),
                     ]
@@ -4313,7 +4313,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (550) ),
+                                ( 'parSize', 3 * (550) ),
                             ]
                         ),
                     ]
@@ -4340,7 +4340,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (600) ),
+                                ( 'parSize', 3 * (600) ),
                             ]
                         ),
                     ]
@@ -4367,7 +4367,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (650) ),
+                                ( 'parSize', 3 * (650) ),
                             ]
                         ),
                     ]
@@ -4394,7 +4394,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (500) ),
+                                ( 'parSize', 3 * (500) ),
                             ]
                         ),
                     ]
@@ -4421,7 +4421,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parDeltaPosition', 2000 ),
                                 ( 'parFadeInTime', 0.25 ),
                                 ( 'parLifetime', 30 ),
-                                ( 'parSize', 2 * (450) ),
+                                ( 'parSize', 3 * (450) ),
                             ]
                         ),
                     ]
@@ -4448,11 +4448,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
@@ -4461,9 +4461,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,10000]) ),
                             ]
                         ),
                     ]
@@ -4490,11 +4490,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
@@ -4503,9 +4503,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,10000]) ),
                             ]
                         ),
                     ]
@@ -4532,11 +4532,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 1 ),
@@ -4545,9 +4545,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,10000]) ),
                             ]
                         ),
                     ]
@@ -4574,11 +4574,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
@@ -4587,9 +4587,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,10000]) ),
                             ]
                         ),
                     ]
@@ -4616,11 +4616,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1.5) ),
+                                ( 'parDebritSizeMul', 3 * (1.5) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 7 ),
                                 ( 'parMeshType', 1 ),
@@ -4629,9 +4629,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,15000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,15000]) ),
                             ]
                         ),
                     ]
@@ -4658,11 +4658,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1.5) ),
+                                ( 'parDebritSizeMul', 3 * (1.5) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 7 ),
                                 ( 'parMeshType', 1 ),
@@ -4671,9 +4671,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,15000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,15000]) ),
                             ]
                         ),
                     ]
@@ -4700,11 +4700,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
@@ -4713,9 +4713,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,10000]) ),
                             ]
                         ),
                     ]
@@ -4742,11 +4742,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1.25) ),
+                                ( 'parDebritSizeMul', 3 * (1.25) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -4755,9 +4755,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,13000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,13000]) ),
                             ]
                         ),
                     ]
@@ -4784,11 +4784,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 1 ),
@@ -4797,9 +4797,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,12000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,12000]) ),
                             ]
                         ),
                     ]
@@ -4826,11 +4826,11 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parCountDebrits', 5 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (1) ),
+                                ( 'parDebritSizeMul', 3 * (1) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 2200 ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parMeshType', 1 ),
@@ -4839,9 +4839,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,10000]) ),
                             ]
                         ),
                     ]
@@ -5047,7 +5047,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5055,10 +5055,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (50) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (50) ),
                                 ( 'parWindWeight', 1 ),
                             ]
                         ),
@@ -5085,7 +5085,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5093,9 +5093,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 4 ),
                             ]
@@ -5123,7 +5123,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -5131,10 +5131,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
-                                ( 'parStartSpeed', 2 * (25) ),
+                                ( 'parStartSize', 3 * (400) ),
+                                ( 'parStartSpeed', 3.3 * (25) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -5161,7 +5161,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5169,9 +5169,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 8 ),
                             ]
@@ -5199,7 +5199,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5207,9 +5207,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 2 ),
                             ]
@@ -5237,7 +5237,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -5245,10 +5245,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 0.25 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -5275,7 +5275,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (3500) ),
+                                ( 'parEndSize', 3 * (3500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 15 ),
@@ -5283,9 +5283,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (3500) ),
+                                ( 'parStartRandomRadius', 3.3 * (3500) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
+                                ( 'parStartSize', 3 * (1000) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -5313,7 +5313,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.4784314,0.4745098,0.4705883] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -5321,10 +5321,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 0.25 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.7529413,0.6901961,0.627451] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 2 ),
                             ]
                         ),
@@ -5351,7 +5351,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6509804,0.6431373,0.6431373] ),
-                                ( 'parEndSize', 2 * (1400) ),
+                                ( 'parEndSize', 3 * (1400) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 7 ),
@@ -5359,10 +5359,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.5019608,0.4980392,0.4980392] ),
-                                ( 'parStartRandomRadius', 2 * (3500) ),
+                                ( 'parStartRandomRadius', 3.3 * (3500) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
-                                ( 'parStartSpeed', 2 * (25) ),
+                                ( 'parStartSize', 3 * (400) ),
+                                ( 'parStartSpeed', 3.3 * (25) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -5389,7 +5389,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5397,9 +5397,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -5427,7 +5427,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6392157,0.6352941,0.6352941] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5435,10 +5435,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.427451,0.4235294,0.4196079] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (25) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (25) ),
                                 ( 'parWindWeight', 3 ),
                             ]
                         ),
@@ -5465,7 +5465,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5473,9 +5473,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -5503,7 +5503,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5511,9 +5511,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 6 ),
                             ]
@@ -5541,7 +5541,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5549,9 +5549,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -5579,7 +5579,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5587,9 +5587,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 1 ),
                             ]
@@ -5617,7 +5617,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.7098039,0.5568628,0.4352942] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -5625,10 +5625,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.4941177,0.3843138] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (100) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (100) ),
                                 ( 'parWindWeight', 6 ),
                             ]
                         ),
@@ -5651,7 +5651,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 5 ),
                         ( 'parEndColor', float3[0.5607843,0.5568628,0.5529412] ),
-                        ( 'parEndSize', 2 * (2500) ),
+                        ( 'parEndSize', 3 * (2500) ),
                         ( 'parFluidFriction', 4 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 6 ),
@@ -5659,10 +5659,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.2313726,0.2313726,0.2313726] ),
-                        ( 'parStartRandomRadius', 2 * (4500) ),
+                        ( 'parStartRandomRadius', 3.3 * (4500) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (800) ),
-                        ( 'parStartSpeed', 2 * (50) ),
+                        ( 'parStartSize', 3 * (800) ),
+                        ( 'parStartSpeed', 3.3 * (50) ),
                         ( 'parWindWeight', 4 ),
                     ]
                 ),
@@ -5687,7 +5687,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6392157,0.6352941,0.6352941] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5695,10 +5695,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.427451,0.4235294,0.4196079] ),
-                                ( 'parStartRandomRadius', 2 * (3000) ),
+                                ( 'parStartRandomRadius', 3.3 * (3000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (25) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (25) ),
                                 ( 'parWindWeight', 5 ),
                             ]
                         ),
@@ -5725,7 +5725,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6156863,0.6039216,0.6] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -5733,10 +5733,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 0.25 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.5019608,0.4901961,0.4901961] ),
-                                ( 'parStartRandomRadius', 2 * (4000) ),
+                                ( 'parStartRandomRadius', 3.3 * (4000) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 1 ),
                             ]
                         ),
@@ -5763,7 +5763,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.7411765,0.7372549,0.7372549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4.05 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -5771,10 +5771,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parStartRandomRadius', 2 * (3000) ),
+                                ( 'parStartRandomRadius', 3.3 * (3000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (100) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (100) ),
                                 ( 'parWindWeight', 7 ),
                             ]
                         ),
@@ -5801,7 +5801,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.5294118,0.5176471,0.5137255] ),
-                                ( 'parEndSize', 2 * (1800) ),
+                                ( 'parEndSize', 3 * (1800) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5809,10 +5809,10 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6627451,0.6588235,0.6588235] ),
-                                ( 'parStartRandomRadius', 2 * (2000) ),
+                                ( 'parStartRandomRadius', 3.3 * (2000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (50) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (50) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -5839,7 +5839,7 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.6470588,0.5411765,0.4352942] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -5847,9 +5847,9 @@ export fx_impact_sol_HE_M270_110mm_130mm_Cluster_HE_1 is SimultaneousActionDecla
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.627451,0.482353,0.3372549] ),
-                                ( 'parStartRandomRadius', 2 * (1000) ),
+                                ( 'parStartRandomRadius', 3.3 * (1000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (500) ),
+                                ( 'parStartSize', 3 * (500) ),
                                 ( 'parStartSpeed', 0 ),
                                 ( 'parWindWeight', 1 ),
                             ]

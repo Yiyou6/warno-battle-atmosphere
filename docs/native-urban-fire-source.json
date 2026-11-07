@@ -1,0 +1,134 @@
+{
+  "placement_pack": "Data/PC/169425/Maps/_3x3_UrbanFrontlines_Details.dat",
+  "placement_entry": "Items.sav",
+  "placement_sha256": "f23abda479dabd68ffe2d93299a196e4ea521559190d8d22d26e579cf30c6ff1",
+  "placements": [
+    {
+      "fire": {
+        "id": 10062,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1062238.0,
+            643959.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_Fire_Fuel_Explosion_Small_RandomDuration"
+        }
+      },
+      "nearest_destroyed_bridge": {
+        "id": 10104,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            -0.9963706135749817,
+            -0.08513887226581573,
+            0.0
+          ],
+          "AxeY": [
+            0.08513887226581573,
+            -0.9963706135749817,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1067845.0,
+            638946.0,
+            0.0
+          ],
+          "SceneryDescriptor": "Bridge_Road_01_Entrance_Dest"
+        }
+      }
+    },
+    {
+      "fire": {
+        "id": 10141,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "AxeY": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "AxeZ": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "AxeT": [
+            1072780.0,
+            635907.0,
+            0.0
+          ],
+          "SceneryDescriptor": "FX_Fire_Fuel_Explosion_Small_RandomDuration"
+        }
+      },
+      "nearest_destroyed_bridge": {
+        "id": 10158,
+        "class": "TSaveDescriptorItemPoint",
+        "properties": {
+          "AxeX": [
+            0.992473304271698,
+            0.11574248224496841,
+            -0.039998505264520645
+          ],
+          "AxeY": [
+            -0.11564856022596359,
+            0.993279218673706,
+            0.004660852253437042
+          ],
+          "AxeZ": [
+            0.04026911035180092,
+            0.0,
+            0.9991884827613831
+          ],
+          "AxeT": [
+            1075100.0,
+            636666.0,
+            -59.0
+          ],
+          "SceneryDescriptor": "Bridge_Road_01_Piece_01_Dest"
+        }
+      }
+    }
+  ],
+  "scenery_pack": "Data/PC/201602/DecorsSets/Fulda_Definition.dat",
+  "scenery_entry_sha256": "295216724d203e156e229bcc698c7db5529b6bbfa8b906dac1a786acfbe22c23",
+  "family": {
+    "Small": {
+      "descriptor": "$/Scenery/FX_Fire_Fuel_Explosion_Small_RandomDuration",
+      "fx": "$/GFX/GameFx/fx_incendie_fuel_explosion_Small_diorama"
+    },
+    "Big": {
+      "descriptor": "$/Scenery/FX_Fire_Fuel_Explosion_Big_RandomDuration",
+      "fx": "$/GFX/GameFx/fx_incendie_Fuel_Explosion_Big_diorama"
+    }
+  },
+  "selected": "Big",
+  "qualification": "Map places Small twice at unit scale; chosen Big is the larger native variant of the same fuel-fire family, not a literal Big bridge placement.",
+  "runtime_map_coordinates_used": false
+}

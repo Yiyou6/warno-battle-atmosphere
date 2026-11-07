@@ -22,7 +22,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (60000) ),
+                        ( 'parFinalSize', 3 * (60000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1000 ),
                     ]
@@ -37,10 +37,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (8000) ),
-                                ( 'parInitialSize', 2 * (2000) ),
+                                ( 'parFinalSize', 3 * (8000) ),
+                                ( 'parInitialSize', 3 * (2000) ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-1640,-338,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-2706,-557.7,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -55,10 +55,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (6000) ),
-                                ( 'parInitialSize', 2 * (1000) ),
+                                ( 'parFinalSize', 3 * (6000) ),
+                                ( 'parInitialSize', 3 * (1000) ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[1972,552,0] + parPosition ),
+                                ( 'parPositionRelative', float3[3253.8,910.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -73,10 +73,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (6000) ),
-                                ( 'parInitialSize', 2 * (1000) ),
+                                ( 'parFinalSize', 3 * (6000) ),
+                                ( 'parInitialSize', 3 * (1000) ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-202,130,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-333.3,214.5,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -91,10 +91,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.4 ),
-                                ( 'parFinalSize', 2 * (6000) ),
+                                ( 'parFinalSize', 3 * (6000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-124,-408,400] + parPosition ),
+                                ( 'parPositionRelative', float3[-204.6,-673.2,660] + parPosition ),
                             ]
                         ),
                     ]
@@ -109,10 +109,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.1 ),
-                                ( 'parFinalSize', 2 * (10000) ),
-                                ( 'parInitialSize', 2 * (5000) ),
+                                ( 'parFinalSize', 3 * (10000) ),
+                                ( 'parInitialSize', 3 * (5000) ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[-124,-408,0] + parPosition ),
+                                ( 'parPositionRelative', float3[-204.6,-673.2,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -127,10 +127,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 0.2 ),
-                                ( 'parFinalSize', 2 * (8000) ),
-                                ( 'parInitialSize', 2 * (3000) ),
+                                ( 'parFinalSize', 3 * (8000) ),
+                                ( 'parInitialSize', 3 * (3000) ),
                                 ( 'parZBias', 0 ),
-                                ( 'parPositionRelative', float3[2176,-1332,0] + parPosition ),
+                                ( 'parPositionRelative', float3[3590.4,-2197.8,0] + parPosition ),
                             ]
                         ),
                     ]
@@ -146,11 +146,11 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parGravity', 500 ),
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 0.1 ),
-                        ( 'parPositionRadius', 2 * (200) ),
+                        ( 'parPositionRadius', 3.3 * (200) ),
                         ( 'parRepeatCount', 1 ),
-                        ( 'parSize', 2 * (14) ),
-                        ( 'parSpeedMax', 2 * (8000) ),
-                        ( 'parSpeedMin', 2 * (5000) ),
+                        ( 'parSize', 3 * (14) ),
+                        ( 'parSpeedMax', 3.3 * (8000) ),
+                        ( 'parSpeedMin', 3.3 * (5000) ),
                         ( 'parStretch', 1.5 ),
                         ( 'parWindFactor', 0.05 ),
                         ( 'parDir', float3[0,0,1] ),
@@ -168,14 +168,14 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parGravity', 1500 ),
                         ( 'parLifetime', 3 ),
                         ( 'parNarrowness', 1 ),
-                        ( 'parPositionRadius', 2 * (200) ),
-                        ( 'parSize', 2 * (10) ),
-                        ( 'parSpeedMax', 2 * (6000) ),
-                        ( 'parSpeedMin', 2 * (4000) ),
+                        ( 'parPositionRadius', 3.3 * (200) ),
+                        ( 'parSize', 3 * (10) ),
+                        ( 'parSpeedMax', 3.3 * (6000) ),
+                        ( 'parSpeedMin', 3.3 * (4000) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                         ( 'parDir', float3[0,0,1] ),
-                        ( 'parPositionRelative', float3[-124,-408,0] + parPosition ),
+                        ( 'parPositionRelative', float3[-204.6,-673.2,0] + parPosition ),
                     ]
                 ),
                 TSequentialAction
@@ -193,11 +193,11 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parGravity', 500 ),
                                 ( 'parLifetime', 3 ),
                                 ( 'parNarrowness', 5 ),
-                                ( 'parPositionRadius', 2 * (1000) ),
+                                ( 'parPositionRadius', 3.3 * (1000) ),
                                 ( 'parRepeatCount', 1 ),
-                                ( 'parSize', 2 * (14) ),
-                                ( 'parSpeedMax', 2 * (8000) ),
-                                ( 'parSpeedMin', 2 * (2000) ),
+                                ( 'parSize', 3 * (14) ),
+                                ( 'parSpeedMax', 3.3 * (8000) ),
+                                ( 'parSpeedMin', 3.3 * (2000) ),
                                 ( 'parStretch', 1.5 ),
                                 ( 'parWindFactor', 0 ),
                                 ( 'parDir', float3[0,0,1] ),
@@ -217,7 +217,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -225,10 +225,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 4 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (5000) ),
+                                ( 'parStartRandomRadius', 3.3 * (5000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
-                                ( 'parStartSpeed', 2 * (5) ),
+                                ( 'parStartSize', 3 * (800) ),
+                                ( 'parStartSpeed', 3.3 * (5) ),
                                 ( 'parWindWeight', 2 ),
                             ]
                         ),
@@ -249,7 +249,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Plane_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.5 ),
-                        ( 'parFinalSize', 2 * (60000) ),
+                        ( 'parFinalSize', 3 * (60000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parIntensity', 1000 ),
                     ]
@@ -267,7 +267,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parDuration', 30 ),
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parParticleLifetime', 8 ),
-                                ( 'parSize', 2 * (1500) ),
+                                ( 'parSize', 3 * (1500) ),
                                 ( 'parSpeedMul', 1 ),
                             ]
                         ),
@@ -286,7 +286,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parDuration', 35 ),
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parParticleLifetime', 6 ),
-                                ( 'parSize', 2 * (1000) ),
+                                ( 'parSize', 3 * (1000) ),
                                 ( 'parSpeedMul', 1 ),
                             ]
                         ),
@@ -305,7 +305,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parDuration', 40 ),
                                 ( 'parOpacity', 0.8 ),
                                 ( 'parParticleLifetime', 4 ),
-                                ( 'parSize', 2 * (800) ),
+                                ( 'parSize', 3 * (800) ),
                                 ( 'parSpeedMul', 0.5 ),
                             ]
                         ),
@@ -326,8 +326,8 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.7000002 ),
-                        ( 'parFinalSize', 2 * (6300) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (6300) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 5000 ),
                         ( 'parPositionRelative', float3[-62,-204,0] ),
                     ]
@@ -347,8 +347,8 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.15 ),
-                        ( 'parFinalSize', 2 * (40000) ),
-                        ( 'parInitialSize', 2 * (10000) ),
+                        ( 'parFinalSize', 3 * (40000) ),
+                        ( 'parInitialSize', 3 * (10000) ),
                         ( 'parIntensity', 20000 ),
                         ( 'parPositionRelative', float3[-4,-9,0] ),
                     ]
@@ -372,18 +372,18 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,4000]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,4000]) ),
                                 ( 'parColor', float3[0.1215686,0.1215686,0.1215686] ),
                                 ( 'parCount', 40 ),
                                 ( 'parDecayLength', 20 ),
                                 ( 'parDecayStart', 5 ),
                                 ( 'parEmissive', 0.5 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (3000) ),
-                                ( 'parRandomPosition', 2 * (500) ),
+                                ( 'parParticleSize', 3 * (3000) ),
+                                ( 'parRandomPosition', 3.3 * (500) ),
                                 ( 'parSmokeDuration', 8 ),
                                 ( 'parSpawnerDuration', 0.25 ),
-                                ( 'parSpawnerSpeed', 2 * (10000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (10000) ),
                             ]
                         ),
                     ]
@@ -396,18 +396,18 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,1000]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,1000]) ),
                                 ( 'parColor', float3[0.2352941,0.2313726,0.2235294] ),
                                 ( 'parCount', 20 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 0.9 ),
-                                ( 'parParticleSize', 2 * (2500) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (2500) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 0.45 ),
-                                ( 'parSpawnerSpeed', 2 * (3000) ),
+                                ( 'parSpawnerSpeed', 3.3 * (3000) ),
                             ]
                         ),
                     ]
@@ -416,18 +416,18 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[600,600,1800]) ),
+                        ( 'parCloudsize', 3 * (float3[600,600,1800]) ),
                         ( 'parColor', float3[0.4392157,0.4431373,0.4509804] ),
                         ( 'parCount', 5 ),
                         ( 'parDecayLength', 5.299999 ),
                         ( 'parDecayStart', 0.1 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.9 ),
-                        ( 'parParticleSize', 2 * (6600) ),
+                        ( 'parParticleSize', 3 * (6600) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 5.299997 ),
                         ( 'parSpawnerDuration', 0.45 ),
-                        ( 'parSpawnerSpeed', 2 * (2400) ),
+                        ( 'parSpawnerSpeed', 3.3 * (2400) ),
                     ]
                 ),
                 TSequentialAction
@@ -438,18 +438,18 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         (
                             Action = $/VFX_Bank/DarkSmoke_Simple
                             NamedParams = MAP[
-                                ( 'parCloudsize', 2 * (float3[2000,2000,2000]) ),
+                                ( 'parCloudsize', 3 * (float3[2000,2000,2000]) ),
                                 ( 'parColor', float3[0.1372549,0.1372549,0.1372549] ),
                                 ( 'parCount', 7 ),
                                 ( 'parDecayLength', 5.299999 ),
                                 ( 'parDecayStart', 0.1 ),
                                 ( 'parEmissive', 0.7 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parParticleSize', 2 * (1500) ),
-                                ( 'parRandomPosition', 2 * (2000) ),
+                                ( 'parParticleSize', 3 * (1500) ),
+                                ( 'parRandomPosition', 3.3 * (2000) ),
                                 ( 'parSmokeDuration', 10 ),
                                 ( 'parSpawnerDuration', 1 ),
-                                ( 'parSpawnerSpeed', 2 * (2400) ),
+                                ( 'parSpawnerSpeed', 3.3 * (2400) ),
                             ]
                         ),
                     ]
@@ -496,10 +496,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCount', 10 ),
                                 ( 'parDeltaMax', 0 ),
                                 ( 'parDeltaMin', 0 ),
-                                ( 'parDispersion', 2 * (500) ),
+                                ( 'parDispersion', 3.3 * (500) ),
                                 ( 'parDuration', 1 ),
                                 ( 'parLuminosite', 1 ),
-                                ( 'parSize', 2 * (5000) ),
+                                ( 'parSize', 3 * (5000) ),
                             ]
                         ),
                     ]
@@ -544,7 +544,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 3 ),
-                        ( 'parFinalSize', 2 * (50000) ),
+                        ( 'parFinalSize', 3 * (50000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 0 ),
                     ]
@@ -559,7 +559,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 2 ),
-                                ( 'parFinalSize', 2 * (30000) ),
+                                ( 'parFinalSize', 3 * (30000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -576,7 +576,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 1.5 ),
-                                ( 'parFinalSize', 2 * (20000) ),
+                                ( 'parFinalSize', 3 * (20000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -593,7 +593,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 6 ),
-                                ( 'parFinalSize', 2 * (60000) ),
+                                ( 'parFinalSize', 3 * (60000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -610,7 +610,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 8 ),
-                                ( 'parFinalSize', 2 * (80000) ),
+                                ( 'parFinalSize', 3 * (80000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -627,7 +627,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 10 ),
-                                ( 'parFinalSize', 2 * (100000) ),
+                                ( 'parFinalSize', 3 * (100000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -640,7 +640,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.25 ),
-                        ( 'parFinalSize', 2 * (60000) ),
+                        ( 'parFinalSize', 3 * (60000) ),
                         ( 'parInitialSize', 0 ),
                         ( 'parZBias', 256 ),
                     ]
@@ -655,7 +655,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 2 ),
-                                ( 'parFinalSize', 2 * (40000) ),
+                                ( 'parFinalSize', 3 * (40000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -672,7 +672,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 1.5 ),
-                                ( 'parFinalSize', 2 * (30000) ),
+                                ( 'parFinalSize', 3 * (30000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -689,7 +689,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 1 ),
-                                ( 'parFinalSize', 2 * (20000) ),
+                                ( 'parFinalSize', 3 * (20000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -706,7 +706,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 3 ),
-                                ( 'parFinalSize', 2 * (50000) ),
+                                ( 'parFinalSize', 3 * (50000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -723,7 +723,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 2.5 ),
-                                ( 'parFinalSize', 2 * (30000) ),
+                                ( 'parFinalSize', 3 * (30000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -740,7 +740,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 1.5 ),
-                                ( 'parFinalSize', 2 * (20000) ),
+                                ( 'parFinalSize', 3 * (20000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -757,7 +757,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                             NamedParams = MAP[
                                 ( 'parCount', 1 ),
                                 ( 'parDuration', 2 ),
-                                ( 'parFinalSize', 2 * (20000) ),
+                                ( 'parFinalSize', 3 * (20000) ),
                                 ( 'parInitialSize', 0 ),
                                 ( 'parZBias', 0 ),
                             ]
@@ -917,8 +917,8 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 2 ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSizeLBU', 2 * (46.51163) ),
-                        ( 'Position', float3[-8,-46,0] + parPosition ),
+                        ( 'parSizeLBU', 3 * (46.51163) ),
+                        ( 'Position', float3[-13.2,-75.9,0] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -930,9 +930,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parDuration', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[-8,-46,0] + parPosition ),
+                        ( 'Position', float3[-13.2,-75.9,0] + parPosition ),
                     ]
                 ),
                 TWaitInSec( Duration = 2),
@@ -963,7 +963,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -995,7 +995,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1027,7 +1027,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1059,7 +1059,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1087,7 +1087,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1117,7 +1117,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.3 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1145,7 +1145,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (186.0465) ),
+                        ( 'parSizeLBU', 3 * (186.0465) ),
                     ]
                 ),
             ]
@@ -1175,7 +1175,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1207,7 +1207,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1239,7 +1239,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parOpacity', 0.2 ),
                                 ( 'parRepeatCount', 1 ),
                                 ( 'parRepeatTime', 0.75 ),
-                                ( 'parSizeLBU', 2 * (186.0465) ),
+                                ( 'parSizeLBU', 3 * (186.0465) ),
                             ]
                         ),
                     ]
@@ -1262,10 +1262,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 5 ),
-                        ( 'parDebritSizeMul', 2 * (0.01) ),
-                        ( 'parDispersion', 2 * (1200) ),
+                        ( 'parDebritSizeMul', 3 * (0.01) ),
+                        ( 'parDispersion', 3.3 * (1200) ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (200) ),
+                        ( 'parFireParticleStartSize', 3 * (200) ),
                         ( 'parLifetime', 5 ),
                         ( 'parMeshType', 1 ),
                         ( 'parMinSpeedRatio', 1 ),
@@ -1273,9 +1273,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.1647059,0.1647059,0.1647059] ),
                         ( 'parSmokeColorMultiplier', 0.3 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (600) ),
-                        ( 'parSmokeParticleStartSize', 2 * (100) ),
-                        ( 'parSpeed', 2 * (float3[4250,4360,9983]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (600) ),
+                        ( 'parSmokeParticleStartSize', 3 * (100) ),
+                        ( 'parSpeed', 3.3 * (float3[4250,4360,9983]) ),
                         ( 'parSpeedDispersion', 0 ),
                     ]
                 ),
@@ -1290,11 +1290,11 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 0 ),
                                 ( 'parCountDebritsWithFire', 0 ),
                                 ( 'parCountDebritsWithSmoke', 5 ),
-                                ( 'parDebritSizeMul', 2 * (0.01) ),
+                                ( 'parDebritSizeMul', 3 * (0.01) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (340) ),
+                                ( 'parDispersion', 3.3 * (340) ),
                                 ( 'parFireParticleEndSize', 0 ),
-                                ( 'parFireParticleStartSize', 2 * (300) ),
+                                ( 'parFireParticleStartSize', 3 * (300) ),
                                 ( 'parGravity', 800 ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parMeshType', 4 ),
@@ -1303,9 +1303,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.6784314,0.7450981,0.7803922] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[4280,4350,8000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[4280,4350,8000]) ),
                             ]
                         ),
                     ]
@@ -1321,18 +1321,18 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.04705883,0.04705883,0.04705883] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 1.5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
                                 ( 'parOpacity', 5 ),
-                                ( 'parRandomInitPosRadius', 2 * (2500) ),
+                                ( 'parRandomInitPosRadius', 3.3 * (2500) ),
                                 ( 'parRotationFactor', 0.25 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
                                 ( 'parStartHeight', 500 ),
                                 ( 'parStartRotation', 0 ),
-                                ( 'parStartSize', 2 * (1500) ),
+                                ( 'parStartSize', 3 * (1500) ),
                                 ( 'parStartSpeed3D', float3[0,0,0] ),
                                 ( 'parWindWeight', 5 ),
                             ]
@@ -1346,19 +1346,19 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 5 ),
                         ( 'parEndColor', float3[0.09019608,0.09019608,0.09019608] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 8 ),
                         ( 'parOpacity', 5 ),
-                        ( 'parRandomInitPosRadius', 2 * (1500) ),
+                        ( 'parRandomInitPosRadius', 3.3 * (1500) ),
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
                         ( 'parStartHeight', 0 ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
-                        ( 'parStartSpeed3D', 2 * (float3[3000,3000,2000]) ),
+                        ( 'parStartSize', 3 * (1000) ),
+                        ( 'parStartSpeed3D', 3.3 * (float3[3000,3000,2000]) ),
                         ( 'parWindWeight', 8 ),
                     ]
                 ),
@@ -1373,19 +1373,19 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.04705883,0.04705883,0.04705883] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 5 ),
                                 ( 'parOpacity', 5 ),
-                                ( 'parRandomInitPosRadius', 2 * (2000) ),
+                                ( 'parRandomInitPosRadius', 3.3 * (2000) ),
                                 ( 'parRotationFactor', 0.5 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
                                 ( 'parStartHeight', 250 ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
-                                ( 'parStartSpeed3D', 2 * (float3[500,500,500]) ),
+                                ( 'parStartSize', 3 * (800) ),
+                                ( 'parStartSpeed3D', 3.3 * (float3[500,500,500]) ),
                                 ( 'parWindWeight', 2 ),
                             ]
                         ),
@@ -1414,11 +1414,11 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 0 ),
                                 ( 'parCountDebritsWithFire', 10 ),
                                 ( 'parCountDebritsWithSmoke', 0 ),
-                                ( 'parDebritSizeMul', 2 * (0.01) ),
+                                ( 'parDebritSizeMul', 3 * (0.01) ),
                                 ( 'parDir', float3[0,0,1] ),
-                                ( 'parDispersion', 2 * (540) ),
-                                ( 'parFireParticleEndSize', 2 * (25) ),
-                                ( 'parFireParticleStartSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (540) ),
+                                ( 'parFireParticleEndSize', 3 * (25) ),
+                                ( 'parFireParticleStartSize', 3 * (200) ),
                                 ( 'parGravity', 1000 ),
                                 ( 'parLifetime', 6 ),
                                 ( 'parMeshType', 4 ),
@@ -1427,9 +1427,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.6784314,0.7450981,0.7803922] ),
                                 ( 'parSmokeColorMultiplier', 0.6999999 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (900) ),
-                                ( 'parSpeed', 2 * (float3[2030,2070,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (900) ),
+                                ( 'parSpeed', 3.3 * (float3[2030,2070,10000]) ),
                             ]
                         ),
                     ]
@@ -1452,11 +1452,11 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 50 ),
                         ( 'parCountDebritsWithFire', 6 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (1) ),
+                        ( 'parDebritSizeMul', 3 * (1) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (2000) ),
-                        ( 'parFireParticleEndSize', 2 * (400) ),
-                        ( 'parFireParticleStartSize', 2 * (100) ),
+                        ( 'parDispersion', 3.3 * (2000) ),
+                        ( 'parFireParticleEndSize', 3 * (400) ),
+                        ( 'parFireParticleStartSize', 3 * (100) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 20 ),
                         ( 'parMeshType', 4 ),
@@ -1465,9 +1465,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5333334,0.5176471,0.509804] ),
                         ( 'parSmokeColorMultiplier', 0.6999999 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (900) ),
-                        ( 'parSpeed', 2 * (float3[5000,5000,10000]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (900) ),
+                        ( 'parSpeed', 3.3 * (float3[5000,5000,10000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 20),
@@ -1489,10 +1489,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 10 ),
                         ( 'parCountDebritsWithFire', 0 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (1.25) ),
+                        ( 'parDebritSizeMul', 3 * (1.25) ),
                         ( 'parDir', parDirection ),
-                        ( 'parDispersion', 2 * (1200) ),
-                        ( 'parFireParticleEndSize', 2 * (200) ),
+                        ( 'parDispersion', 3.3 * (1200) ),
+                        ( 'parFireParticleEndSize', 3 * (200) ),
                         ( 'parFireParticleStartSize', 0 ),
                         ( 'parGravity', 3000 ),
                         ( 'parLifetime', 60 ),
@@ -1502,9 +1502,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.5411765,0.5411765,0.5372549] ),
                         ( 'parSmokeColorMultiplier', 0.2000001 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2100) ),
-                        ( 'parSmokeParticleStartSize', 2 * (600) ),
-                        ( 'parSpeed', 2 * (float3[200,200,4000]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2100) ),
+                        ( 'parSmokeParticleStartSize', 3 * (600) ),
+                        ( 'parSpeed', 3.3 * (float3[200,200,4000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 60),
@@ -1530,10 +1530,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 0 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 15 ),
-                                ( 'parDebritSizeMul', 2 * (0.01) ),
+                                ( 'parDebritSizeMul', 3 * (0.01) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 2 * (250) ),
-                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (250) ),
+                                ( 'parFireParticleEndSize', 3 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 5 ),
@@ -1543,9 +1543,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.3098039,0.3411765,0.3568628] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
-                                ( 'parSpeed', 2 * (float3[4000,4000,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
+                                ( 'parSpeed', 3.3 * (float3[4000,4000,10000]) ),
                             ]
                         ),
                     ]
@@ -1572,10 +1572,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 0 ),
                                 ( 'parCountDebritsWithFire', 4 ),
                                 ( 'parCountDebritsWithSmoke', 20 ),
-                                ( 'parDebritSizeMul', 2 * (0.01) ),
+                                ( 'parDebritSizeMul', 3 * (0.01) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 2 * (340) ),
-                                ( 'parFireParticleEndSize', 2 * (200) ),
+                                ( 'parDispersion', 3.3 * (340) ),
+                                ( 'parFireParticleEndSize', 3 * (200) ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 2000 ),
                                 ( 'parLifetime', 5 ),
@@ -1585,9 +1585,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.3568628,0.3960785,0.4156863] ),
                                 ( 'parSmokeColorMultiplier', 0.2000001 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (3500) ),
-                                ( 'parSmokeParticleStartSize', 2 * (800) ),
-                                ( 'parSpeed', 2 * (float3[6000,6000,10000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (3500) ),
+                                ( 'parSmokeParticleStartSize', 3 * (800) ),
+                                ( 'parSpeed', 3.3 * (float3[6000,6000,10000]) ),
                             ]
                         ),
                     ]
@@ -1614,9 +1614,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCountDebrits', 0 ),
                                 ( 'parCountDebritsWithFire', 5 ),
                                 ( 'parCountDebritsWithSmoke', 10 ),
-                                ( 'parDebritSizeMul', 2 * (0.01) ),
+                                ( 'parDebritSizeMul', 3 * (0.01) ),
                                 ( 'parDir', parDirection ),
-                                ( 'parDispersion', 2 * (540) ),
+                                ( 'parDispersion', 3.3 * (540) ),
                                 ( 'parFireParticleEndSize', 0 ),
                                 ( 'parFireParticleStartSize', 0 ),
                                 ( 'parGravity', 1500 ),
@@ -1627,9 +1627,9 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parSmokeColor', float3[0.509804,0.5607843,0.5882353] ),
                                 ( 'parSmokeColorMultiplier', 0.4 ),
                                 ( 'parSmokeDensity', 100 ),
-                                ( 'parSmokeParticleEndSize', 2 * (4000) ),
-                                ( 'parSmokeParticleStartSize', 2 * (600) ),
-                                ( 'parSpeed', 2 * (float3[8000,8000,13000]) ),
+                                ( 'parSmokeParticleEndSize', 3 * (4000) ),
+                                ( 'parSmokeParticleStartSize', 3 * (600) ),
+                                ( 'parSpeed', 3.3 * (float3[8000,8000,13000]) ),
                             ]
                         ),
                     ]
@@ -1654,7 +1654,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parGravity', 1000 ),
                         ( 'parGrowFactor', 25 ),
                         ( 'parLifetime', 5 ),
-                        ( 'parSize', 2 * (50) ),
+                        ( 'parSize', 3 * (50) ),
                         ( 'parSpeed', 2000 ),
                     ]
                 ),
@@ -1678,7 +1678,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parGravity', 500 ),
                         ( 'parGrowFactor', 25 ),
                         ( 'parLifetime', 5 ),
-                        ( 'parSize', 2 * (50) ),
+                        ( 'parSize', 3 * (50) ),
                         ( 'parSpeed', 2000 ),
                     ]
                 ),
@@ -1702,7 +1702,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parGravity', 750 ),
                         ( 'parGrowFactor', 20 ),
                         ( 'parLifetime', 5 ),
-                        ( 'parSize', 2 * (100) ),
+                        ( 'parSize', 3 * (100) ),
                         ( 'parSpeed', 400 ),
                     ]
                 ),
@@ -1716,7 +1716,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parGravity', 250 ),
                         ( 'parGrowFactor', 35 ),
                         ( 'parLifetime', 5 ),
-                        ( 'parSize', 2 * (50) ),
+                        ( 'parSize', 3 * (50) ),
                         ( 'parSpeed', 2000 ),
                     ]
                 ),
@@ -1740,7 +1740,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parGravity', 750 ),
                         ( 'parGrowFactor', 20 ),
                         ( 'parLifetime', 5 ),
-                        ( 'parSize', 2 * (100) ),
+                        ( 'parSize', 3 * (100) ),
                         ( 'parSpeed', 800 ),
                     ]
                 ),
@@ -1765,11 +1765,11 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parDuration', 0.25 ),
                         ( 'parFlatness', 0.95 ),
                         ( 'parGravity', -3.4 ),
-                        ( 'parInitSpeed', 2 * (1.85) ),
+                        ( 'parInitSpeed', 3.3 * (1.85) ),
                         ( 'parNarrowness', 1.32 ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parRadius', 2 * (200) ),
-                        ( 'parSize', 2 * (8000) ),
+                        ( 'parRadius', 3.3 * (200) ),
+                        ( 'parSize', 3 * (8000) ),
                     ]
                 ),
             ]
@@ -1793,7 +1793,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -1801,10 +1801,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 4 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (5000) ),
+                                ( 'parStartRandomRadius', 3.3 * (5000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (400) ),
-                                ( 'parStartSpeed', 2 * (25) ),
+                                ( 'parStartSize', 3 * (400) ),
+                                ( 'parStartSpeed', 3.3 * (25) ),
                                 ( 'parWindWeight', 5 ),
                             ]
                         ),
@@ -1831,7 +1831,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.1019608,0.1019608,0.1019608] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 4 ),
@@ -1839,10 +1839,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 0.25 ),
                                 ( 'parScaleSizeFactor', 4 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (10000) ),
+                                ( 'parStartRandomRadius', 3.3 * (10000) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (500) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (500) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 6 ),
                             ]
                         ),
@@ -1869,7 +1869,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 3.85 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 8 ),
@@ -1877,10 +1877,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 4 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (10000) ),
+                                ( 'parStartRandomRadius', 3.3 * (10000) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (250) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 8 ),
                             ]
                         ),
@@ -1907,7 +1907,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.1098039,0.1098039,0.1098039] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -1915,10 +1915,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 6 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (5000) ),
+                                ( 'parStartRandomRadius', 3.3 * (5000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
-                                ( 'parStartSpeed', 2 * (25) ),
+                                ( 'parStartSize', 3 * (750) ),
+                                ( 'parStartSpeed', 3.3 * (25) ),
                                 ( 'parWindWeight', 3 ),
                             ]
                         ),
@@ -1945,7 +1945,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 5 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -1953,10 +1953,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 0.25 ),
                                 ( 'parScaleSizeFactor', 6 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (10000) ),
+                                ( 'parStartRandomRadius', 3.3 * (10000) ),
                                 ( 'parStartRotation', 0.1 ),
-                                ( 'parStartSize', 2 * (250) ),
-                                ( 'parStartSpeed', 2 * (10) ),
+                                ( 'parStartSize', 3 * (250) ),
+                                ( 'parStartSpeed', 3.3 * (10) ),
                                 ( 'parWindWeight', 3 ),
                             ]
                         ),
@@ -1983,7 +1983,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                                ( 'parEndSize', 2 * (1500) ),
+                                ( 'parEndSize', 3 * (1500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -1991,10 +1991,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 6 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (5000) ),
+                                ( 'parStartRandomRadius', 3.3 * (5000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (150) ),
-                                ( 'parStartSpeed', 2 * (50) ),
+                                ( 'parStartSize', 3 * (150) ),
+                                ( 'parStartSpeed', 3.3 * (50) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -2021,7 +2021,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.2196079,0.2196079,0.2156863] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2029,10 +2029,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 6 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (5000) ),
+                                ( 'parStartRandomRadius', 3.3 * (5000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (750) ),
-                                ( 'parStartSpeed', 2 * (100) ),
+                                ( 'parStartSize', 3 * (750) ),
+                                ( 'parStartSpeed', 3.3 * (100) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -2059,7 +2059,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.3607843,0.3607843,0.3607843] ),
-                                ( 'parEndSize', 2 * (3000) ),
+                                ( 'parEndSize', 3 * (3000) ),
                                 ( 'parFluidFriction', 3 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2067,10 +2067,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 2 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (2500) ),
+                                ( 'parStartRandomRadius', 3.3 * (2500) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (1000) ),
-                                ( 'parStartSpeed', 2 * (100) ),
+                                ( 'parStartSize', 3 * (1000) ),
+                                ( 'parStartSpeed', 3.3 * (100) ),
                                 ( 'parWindWeight', 4 ),
                             ]
                         ),
@@ -2093,7 +2093,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 5 ),
                         ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                        ( 'parEndSize', 2 * (2000) ),
+                        ( 'parEndSize', 3 * (2000) ),
                         ( 'parFluidFriction', 2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -2101,10 +2101,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 4 ),
                         ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                        ( 'parStartRandomRadius', 2 * (2000) ),
+                        ( 'parStartRandomRadius', 3.3 * (2000) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (1000) ),
-                        ( 'parStartSpeed', 2 * (100) ),
+                        ( 'parStartSize', 3 * (1000) ),
+                        ( 'parStartSpeed', 3.3 * (100) ),
                         ( 'parWindWeight', 6 ),
                     ]
                 ),
@@ -2129,7 +2129,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                                ( 'parEndSize', 2 * (2000) ),
+                                ( 'parEndSize', 3 * (2000) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 10 ),
@@ -2137,10 +2137,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 4 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (5000) ),
+                                ( 'parStartRandomRadius', 3.3 * (5000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (200) ),
-                                ( 'parStartSpeed', 2 * (100) ),
+                                ( 'parStartSize', 3 * (200) ),
+                                ( 'parStartSpeed', 3.3 * (100) ),
                                 ( 'parWindWeight', 8 ),
                             ]
                         ),
@@ -2167,7 +2167,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parAlphaStartDecayValue', 0.01 ),
                                 ( 'parCount', 5 ),
                                 ( 'parEndColor', float3[0.572549,0.572549,0.572549] ),
-                                ( 'parEndSize', 2 * (2500) ),
+                                ( 'parEndSize', 3 * (2500) ),
                                 ( 'parFluidFriction', 4 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLifetime', 6 ),
@@ -2175,10 +2175,10 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parRotationFactor', 1 ),
                                 ( 'parScaleSizeFactor', 4 ),
                                 ( 'parStartColor', float3[0.6784314,0.7450981,0.7803922] ),
-                                ( 'parStartRandomRadius', 2 * (5000) ),
+                                ( 'parStartRandomRadius', 3.3 * (5000) ),
                                 ( 'parStartRotation', 0.25 ),
-                                ( 'parStartSize', 2 * (800) ),
-                                ( 'parStartSpeed', 2 * (50) ),
+                                ( 'parStartSize', 3 * (800) ),
+                                ( 'parStartSpeed', 3.3 * (50) ),
                                 ( 'parWindWeight', 2 ),
                             ]
                         ),
@@ -2205,7 +2205,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCount', 25 ),
                                 ( 'parFragDuration', 1 ),
                                 ( 'parRadius', 5000 ),
-                                ( 'parSize', 2 * (300) ),
+                                ( 'parSize', 3 * (300) ),
                                 ( 'parStartTime', 1 ),
                                 ( 'parStopTime', 5 ),
                             ]
@@ -2233,7 +2233,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCount', 25 ),
                                 ( 'parFragDuration', 1 ),
                                 ( 'parRadius', 5000 ),
-                                ( 'parSize', 2 * (300) ),
+                                ( 'parSize', 3 * (300) ),
                                 ( 'parStartTime', 0.5 ),
                                 ( 'parStopTime', 5 ),
                             ]
@@ -2261,7 +2261,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCount', 25 ),
                                 ( 'parFragDuration', 1 ),
                                 ( 'parRadius', 5000 ),
-                                ( 'parSize', 2 * (300) ),
+                                ( 'parSize', 3 * (300) ),
                                 ( 'parStartTime', 1 ),
                                 ( 'parStopTime', 5 ),
                             ]
@@ -2289,7 +2289,7 @@ export fx_impact_eau_helico_1 is SimultaneousActionDeclaration
                                 ( 'parCount', 25 ),
                                 ( 'parFragDuration', 1 ),
                                 ( 'parRadius', 5000 ),
-                                ( 'parSize', 2 * (300) ),
+                                ( 'parSize', 3 * (300) ),
                                 ( 'parStartTime', 0.5 ),
                                 ( 'parStopTime', 5 ),
                             ]

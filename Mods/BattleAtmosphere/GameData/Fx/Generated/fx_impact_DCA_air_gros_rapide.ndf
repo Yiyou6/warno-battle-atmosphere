@@ -25,8 +25,8 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.6 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (25) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (25) ),
                         ( 'parIntensity', 300 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -35,18 +35,18 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                 (
                     Action = $/VFX_Bank/DarkSmoke_Simple
                     NamedParams = MAP[
-                        ( 'parCloudsize', 2 * (float3[500,500,500]) ),
+                        ( 'parCloudsize', 3 * (float3[500,500,500]) ),
                         ( 'parColor', float3[1,1,1] ),
                         ( 'parCount', 20 ),
                         ( 'parDecayLength', 0.45 ),
                         ( 'parDecayStart', 0 ),
                         ( 'parEmissive', 0.7 ),
                         ( 'parOpacity', 0.55 ),
-                        ( 'parParticleSize', 2 * (1000) ),
+                        ( 'parParticleSize', 3 * (1000) ),
                         ( 'parRandomPosition', 0 ),
                         ( 'parSmokeDuration', 0.3 ),
                         ( 'parSpawnerDuration', 0.2 ),
-                        ( 'parSpawnerSpeed', 2 * (800) ),
+                        ( 'parSpawnerSpeed', 3.3 * (800) ),
                     ]
                 ),
                 TActionCall
@@ -73,8 +73,8 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 3 ),
                         ( 'parDuration', 0.1 ),
-                        ( 'parFinalSize', 2 * (2500) ),
-                        ( 'parInitialSize', 2 * (200) ),
+                        ( 'parFinalSize', 3 * (2500) ),
+                        ( 'parInitialSize', 3 * (200) ),
                         ( 'parPositionRelative', parPosition ),
                         ( 'parZBias', 255 ),
                     ]
@@ -95,14 +95,14 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parColor', float3[1,0.9019608,0.5019608] ),
                         ( 'parCount', 5 ),
-                        ( 'parDeltaPositionMobileDirection', 2 * (150) ),
-                        ( 'parDispersion', 2 * (150) ),
+                        ( 'parDeltaPositionMobileDirection', 3.3 * (150) ),
+                        ( 'parDispersion', 3.3 * (150) ),
                         ( 'parDuration', 0.45 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 0.6 ),
                         ( 'parOpacity', 0.5 ),
-                        ( 'parSize', 2 * (400) ),
-                        ( 'parDeltaPositionAdditif', float3[0,0,-50] + parPosition ),
+                        ( 'parSize', 3 * (400) ),
+                        ( 'parDeltaPositionAdditif', float3[0,0,-82.5] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -113,8 +113,8 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                         ( 'parColorStart', float3[0.6,0.2980392,0.09803922] ),
                         ( 'parDuration', 2 ),
                         ( 'parOpacity', 1 ),
-                        ( 'parSizeLBU', 2 * (32.55814) ),
-                        ( 'Position', float3[0,0,1100] + parPosition ),
+                        ( 'parSizeLBU', 3 * (32.55814) ),
+                        ( 'Position', float3[0,0,1815] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -126,9 +126,9 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                         ( 'parDuration', 0.2 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.1 ),
-                        ( 'parSize', 2 * (1500) ),
+                        ( 'parSize', 3 * (1500) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,400] + parPosition ),
+                        ( 'Position', float3[0,0,660] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -140,9 +140,9 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                         ( 'parDuration', 0.75 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (1500) ),
+                        ( 'parSize', 3 * (1500) ),
                         ( 'parSpeed', float3[0,0,1100] ),
-                        ( 'Position', float3[0,0,1000] + parPosition ),
+                        ( 'Position', float3[0,0,1650] + parPosition ),
                     ]
                 ),
                 TActionCall
@@ -157,11 +157,11 @@ export fx_impact_DCA_air_gros_rapide is SimultaneousActionDeclaration
                         ( 'parGravity', -1000 ),
                         ( 'parLifetime', 0.2 ),
                         ( 'parNarrowness', 0.25 ),
-                        ( 'parPositionRadius', 2 * (15) ),
+                        ( 'parPositionRadius', 3.3 * (15) ),
                         ( 'parPositionRelative', parPosition ),
-                        ( 'parSize', 2 * (5) ),
-                        ( 'parSpeedMax', 2 * (2500) ),
-                        ( 'parSpeedMin', 2 * (1800) ),
+                        ( 'parSize', 3 * (5) ),
+                        ( 'parSpeedMax', 3.3 * (2500) ),
+                        ( 'parSpeedMin', 3.3 * (1800) ),
                         ( 'parStretch', 2 ),
                         ( 'parWindFactor', 1 ),
                     ]

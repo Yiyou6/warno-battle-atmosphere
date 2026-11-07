@@ -23,8 +23,8 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 5 ),
-                        ( 'parFinalSize', 2 * (5000) ),
-                        ( 'parInitialSize', 2 * (1700) ),
+                        ( 'parFinalSize', 3 * (5000) ),
+                        ( 'parInitialSize', 3 * (1700) ),
                         ( 'parIntensity', 1000 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -34,8 +34,8 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (26500) ),
-                        ( 'parInitialSize', 2 * (1700) ),
+                        ( 'parFinalSize', 3 * (26500) ),
+                        ( 'parInitialSize', 3 * (1700) ),
                         ( 'parIntensity', 1250 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -51,7 +51,7 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.2 ),
                         ( 'parRepeatCount', 0 ),
                         ( 'parRepeatTime', parWaitBetweenShot ),
-                        ( 'parSizeLBU', 2 * (93.02325) ),
+                        ( 'parSizeLBU', 3 * (93.02325) ),
                     ]
                 ),
                 TSequentialAction
@@ -77,8 +77,8 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                     NamedParams = MAP[
                         ( 'parCount', 1 ),
                         ( 'parDuration', 0.2 ),
-                        ( 'parFinalSize', 2 * (26500) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (26500) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parZBias', 1000 ),
                     ]
                 ),
@@ -101,12 +101,12 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                                 ( 'parCount', 1 ),
                                 ( 'parDeltaPositionAdditif', parPosition ),
                                 ( 'parDeltaPositionMobileDirection', 0 ),
-                                ( 'parDispersion', 2 * (400) ),
+                                ( 'parDispersion', 3.3 * (400) ),
                                 ( 'parDuration', 2 ),
                                 ( 'parInitialDelay', parInitialShotDelay ),
                                 ( 'parLuminosite', 5 ),
                                 ( 'parOpacity', 1 ),
-                                ( 'parSize', 2 * (2000) ),
+                                ( 'parSize', 3 * (2000) ),
                             ]
                         ),
                     ]
@@ -120,9 +120,9 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                         ( 'parDuration', 3 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parOpacity', 0.2 ),
-                        ( 'parSize', 2 * (15000) ),
+                        ( 'parSize', 3 * (15000) ),
                         ( 'parSpeed', float3[0,0,0] ),
-                        ( 'Position', float3[0,0,400] + parPosition ),
+                        ( 'Position', float3[0,0,660] + parPosition ),
                     ]
                 ),
                 TWaitInSec( Duration = 3),
@@ -238,11 +238,11 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                         ( 'parCountDebrits', 0 ),
                         ( 'parCountDebritsWithFire', 20 ),
                         ( 'parCountDebritsWithSmoke', 10 ),
-                        ( 'parDebritSizeMul', 2 * (1) ),
+                        ( 'parDebritSizeMul', 3 * (1) ),
                         ( 'parDir', float3[0,0,1] ),
                         ( 'parDispersion', 0 ),
                         ( 'parFireParticleEndSize', 0 ),
-                        ( 'parFireParticleStartSize', 2 * (200) ),
+                        ( 'parFireParticleStartSize', 3 * (200) ),
                         ( 'parGravity', 2000 ),
                         ( 'parLifetime', 10 ),
                         ( 'parMeshType', 0 ),
@@ -251,9 +251,9 @@ export fx_critique_fuel_explosion is SimultaneousActionDeclaration
                         ( 'parSmokeColor', float3[0.2117647,0.2117647,0.2117647] ),
                         ( 'parSmokeColorMultiplier', 1 ),
                         ( 'parSmokeDensity', 100 ),
-                        ( 'parSmokeParticleEndSize', 2 * (2000) ),
-                        ( 'parSmokeParticleStartSize', 2 * (250) ),
-                        ( 'parSpeed', 2 * (float3[3000,3000,6000]) ),
+                        ( 'parSmokeParticleEndSize', 3 * (2000) ),
+                        ( 'parSmokeParticleStartSize', 3 * (250) ),
+                        ( 'parSpeed', 3.3 * (float3[3000,3000,6000]) ),
                     ]
                 ),
                 TWaitInSec( Duration = 10),

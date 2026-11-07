@@ -25,8 +25,8 @@ export fx_impact_Lance_Flammes_petit is SimultaneousActionDeclaration
                     Action = $/VFX_Bank/BANK_Bomb_Distort_Simple
                     NamedParams = MAP[
                         ( 'parDuration', 0.3 ),
-                        ( 'parFinalSize', 2 * (4000) ),
-                        ( 'parInitialSize', 2 * (100) ),
+                        ( 'parFinalSize', 3 * (4000) ),
+                        ( 'parInitialSize', 3 * (100) ),
                         ( 'parIntensity', 500 ),
                         ( 'parPositionRelative', float3[0,0,0] ),
                     ]
@@ -63,12 +63,12 @@ export fx_impact_Lance_Flammes_petit is SimultaneousActionDeclaration
                         ( 'parCount', 4 ),
                         ( 'parDeltaPositionAdditif', parPosition ),
                         ( 'parDeltaPositionMobileDirection', 0 ),
-                        ( 'parDispersion', 2 * (500) ),
+                        ( 'parDispersion', 3.3 * (500) ),
                         ( 'parDuration', 0.75 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLuminosite', 1 ),
                         ( 'parOpacity', 0 ),
-                        ( 'parSize', 2 * (1000) ),
+                        ( 'parSize', 3 * (1000) ),
                     ]
                 ),
             ]
@@ -232,7 +232,7 @@ export fx_impact_Lance_Flammes_petit is SimultaneousActionDeclaration
                         ( 'parOpacity', 0.1 ),
                         ( 'parRepeatCount', 1 ),
                         ( 'parRepeatTime', 0.75 ),
-                        ( 'parSizeLBU', 2 * (65.11628) ),
+                        ( 'parSizeLBU', 3 * (65.11628) ),
                     ]
                 ),
             ]
@@ -252,7 +252,7 @@ export fx_impact_Lance_Flammes_petit is SimultaneousActionDeclaration
                         ( 'parAlphaStartDecayValue', 0.01 ),
                         ( 'parCount', 10 ),
                         ( 'parEndColor', float3[0.03921569,0.02352941,0.01176471] ),
-                        ( 'parEndSize', 2 * (3000) ),
+                        ( 'parEndSize', 3 * (3000) ),
                         ( 'parFluidFriction', 1 ),
                         ( 'parInitialDelay', parInitialShotDelay ),
                         ( 'parLifetime', 10 ),
@@ -260,10 +260,10 @@ export fx_impact_Lance_Flammes_petit is SimultaneousActionDeclaration
                         ( 'parRotationFactor', 1 ),
                         ( 'parScaleSizeFactor', 2 ),
                         ( 'parStartColor', float3[0.02745098,0.01568628,0.003921569] ),
-                        ( 'parStartRandomRadius', 2 * (500) ),
+                        ( 'parStartRandomRadius', 3.3 * (500) ),
                         ( 'parStartRotation', 0.25 ),
-                        ( 'parStartSize', 2 * (200) ),
-                        ( 'parStartSpeed', 2 * (40) ),
+                        ( 'parStartSize', 3 * (200) ),
+                        ( 'parStartSpeed', 3.3 * (40) ),
                         ( 'parWindWeight', 1 ),
                     ]
                 ),

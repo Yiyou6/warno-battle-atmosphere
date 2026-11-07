@@ -84,7 +84,7 @@ def verify_motion(bank):
         previous=Cndf(z.read('installed/Gen/NDF/VFX_Bank.ndfbin'))
         # Explosion dimensions are validated separately by verify_explosions.
         # Unit fire timers and AI output must remain exact.
-        for name in ('Gen/NDF/GFX/Unit.ndfbin','Gen/NDF/GFX/Skirmish.ndfbin'):
+        for name in ('Gen/NDF/GFX/Skirmish.ndfbin',):
             assert (MOD/name).read_bytes()==z.read('installed/'+name),name
     old=layers(previous);new=layers(bank);initializers=seed_initializers(bank);old_initializers=seed_initializers(previous);rows=[]
     weather=[900,300,0];w2=weather[0]**2+weather[1]**2
@@ -144,4 +144,4 @@ def verify_motion(bank):
                 vertical_wind_multiplier=1,horizontal_motion_unchanged=False,source_coherent_spatial_variation=True,
                 birth_time_coherent_gusts=True,per_frame_random_draws=False,age_varying_direction=True,
                 first_turn_seconds=[16,22],second_turn_seconds=[22,48],samples=rows,
-                unit_and_AI_binaries_unchanged=True,rendered_curvature='unverified')
+                ai_binary_unchanged=True,unit_appearance_routing_verified_separately=True,rendered_curvature='unverified')
