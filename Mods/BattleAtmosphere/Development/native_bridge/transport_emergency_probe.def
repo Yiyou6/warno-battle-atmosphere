@@ -1,0 +1,13 @@
+LIBRARY transport_emergency_probe.dll
+
+EXPORTS
+GetFileVersionInfoA
+GetFileVersionInfoExA
+GetFileVersionInfoExW
+GetFileVersionInfoSizeA
+GetFileVersionInfoSizeExA
+GetFileVersionInfoSizeExW
+GetFileVersionInfoSizeW
+GetFileVersionInfoW
+VerQueryValueA
+VerQueryValueW

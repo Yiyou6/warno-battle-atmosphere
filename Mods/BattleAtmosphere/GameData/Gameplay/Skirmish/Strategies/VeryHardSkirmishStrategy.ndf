@@ -1,0 +1,256 @@
+//-------------------------------------------------------------------------
+//----------------------------- STRATEGY ----------------------------------
+//-------------------------------------------------------------------------
+export VeryHardStrategy is TIAGeneralStrategy
+(
+    StrategyName = "VHardAI"
+    FirstGenerator = VHard_Choose_Strategy
+    TransitionList =
+    [
+        VHard_Transition_StartToPhaseCommand,
+        VHard_Transition_StartToGeneric,
+        VHard_Transition_DeployToCommandPhase,
+        VHard_Transition_CommandPhaseToLastHope,
+    ]
+)
+
+//-------------------------------------------------------------------------
+//---------------------------- CONDITIONS ---------------------------------
+//-------------------------------------------------------------------------
+export VHard_Condition_GotoGeneric is TSequenceCondition_True
+(
+)
+//-------------------------------------------------------------------------
+export VHard_Condition_CommandPhase is TSequenceCondition_Phase
+(
+    PhaseType = ~/TGamePhase/Command
+)
+//-------------------------------------------------------------------------
+export VHard_Condition_OpponentWinning is Template_SequenceConditionOpponentHasScoreHigher
+(
+    ScorePointType = ~/TScorePointType/ZonePoint
+    RatioValue = 0.7
+)
+//-------------------------------------------------------------------------
+//--------------------------- TRANSITIONS ---------------------------------
+//-------------------------------------------------------------------------
+export VHard_Transition_StartToPhaseCommand is TIAGeneralStrategyTransition
+(
+    Origine = VHard_Choose_Strategy
+    Condition = VHard_Condition_CommandPhase
+    Destination = VHard_Phase_Command
+)
+export VHard_Transition_StartToGeneric is TIAGeneralStrategyTransition
+(
+    Origine = VHard_Choose_Strategy
+    Condition = VHard_Condition_GotoGeneric
+    Destination = VHard_Phase_Deploiement
+)
+//-------------------------------------------------------------------------
+export VHard_Transition_DeployToCommandPhase is TIAGeneralStrategyTransition
+(
+    Origine = VHard_Phase_Deploiement
+    Condition = VHard_Condition_CommandPhase
+    Destination = VHard_Phase_Command
+)
+//-------------------------------------------------------------------------
+export VHard_Transition_CommandPhaseToLastHope is TIAGeneralStrategyTransition
+(
+    Origine = VHard_Phase_Command
+    Condition = VHard_Condition_OpponentWinning
+    Destination = VHard_Phase_LastHope
+)
+
+//-------------------------------------------------------------------------
+//------------------------------ PHASES -----------------------------------
+//-------------------------------------------------------------------------
+export VHard_Choose_Strategy is TSequenceGeneratorDescriptor
+(
+    // Fake phase qui permet juste d'orienter la strategie dans la direction voulue
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+    ]
+)
+//-------------------------------------------------------------------------
+export VHard_Phase_Deploiement is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/CaptureOneObjectif,
+        ~/Reco,
+        ~/Defense_Corridor_AA,
+        ~/Supply_Skirmish,
+        ~/Defense_Frontage_BA,
+        ~/Artillery_Support,
+        ~/Attack_Armor_BA,
+        ~/Attack_Frontage_BA,
+        ~/Attack_Main_BA,
+        ~/Airstrike_Offense,
+        ~/Attack_Objectives_BA,
+        ~/CaptureHalfZoneObjectif_Ceil,
+        ~/Airstrike_AA,
+        ~/FOB_Skirmish,
+        ~/Artillery_TriggerHappy,
+        ~/CaptureAllZoneObjectif,
+        ~/Airstrike_AirReco,
+    ]
+
+    //------------------------------
+    // Scaling
+    //------------------------------
+    ScalingGeneratorList = [
+        ~/Supply_Skirmish_Autogen,
+        ~/Reco_Autogen,
+        ~/Defense_Corridor_AA_Autogen,
+        ~/Attack_Frontage_Reinforce_BA,
+        ~/Artillery_Support_Autogen,
+        ~/Airstrike_Offense_Autogen,
+        ~/Attack_Armor_BA_Autogen,
+        ~/Attack_Objectives_BA_Autogen,
+        ~/Artillery_TriggerHappy_Autogen,
+        ~/Airstrike_AA_Autogen,
+        ~/Attack_Frontage_Reinforce_BA,
+    ]
+)
+//-------------------------------------------------------------------------
+export VHard_Phase_Command is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/CaptureOneObjectif,
+        ~/Supply_Skirmish,
+        ~/Reco,
+        ~/Defense_Corridor_AA,
+        ~/Defense_Frontage_BA,
+        ~/Artillery_Support,
+        ~/Attack_Armor_BA,
+        ~/Attack_Frontage_BA,
+        ~/Attack_Main_BA,
+        ~/Airstrike_Offense,
+        ~/Attack_Objectives_BA,
+        ~/CaptureHalfZoneObjectif_Ceil,
+        ~/Artillery_TriggerHappy,
+        ~/Airstrike_AA,
+        ~/Airstrike_SEAD,
+        ~/Attack_Helo,
+        ~/CaptureOneObjectifForAlliance,
+        ~/Supply_Skirmish_Allied,
+        ~/Airstrike_Assault,
+        ~/CaptureAllZoneObjectif,
+        ~/Airstrike_AirReco,
+        ~/Artillery_Sniper,
+        ~/Artillery_Expensive,
+    ] // On sort les défenses d'ici pour les mettre plus haut dans la prio
+
+    //------------------------------
+    // Scaling
+    //------------------------------
+    ScalingGeneratorList = [
+        ~/Supply_Skirmish_Autogen,
+        ~/Reco_Autogen,
+        ~/Defense_Corridor_AA_Autogen,
+        ~/Attack_Frontage_Reinforce_BA,
+        ~/Artillery_Support_Autogen,
+        ~/Airstrike_Offense_Autogen,
+        ~/Attack_Armor_BA_Autogen,
+        ~/Attack_Objectives_BA_Autogen,
+        ~/Artillery_TriggerHappy_Autogen,
+        ~/Airstrike_AA_Autogen,
+        ~/Attack_Frontage_Reinforce_BA,
+        ~/Airstrike_Assault_Autogen,
+        ~/Attack_Helo_Autogen,
+    ]
+)
+
+//-------------------------------------------------------------------------
+export VHard_Phase_LastHope is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/CaptureOneObjectif,
+        ~/Supply_Skirmish,
+        ~/Reco,
+        ~/Defense_Corridor_AA,
+        ~/Defense_Frontage_BA,
+        ~/Artillery_Support,
+        ~/Attack_Armor_BA,
+        ~/Attack_Frontage_BA,
+        ~/Attack_Main_BA,
+        ~/Airstrike_Offense,
+        ~/Attack_Objectives_BA,
+        ~/Artillery_TriggerHappy,
+        ~/CaptureAllZoneObjectif,
+        ~/Airstrike_AA,
+        ~/Airstrike_SEAD,
+        ~/Attack_Helo,
+        ~/Supply_Skirmish_Allied,
+        ~/Airstrike_Assault,
+    ] // On sort les défenses d'ici pour les mettre plus haut dans la prio
+
+    //------------------------------
+    // Scaling
+    //------------------------------
+    ScalingGeneratorList = [
+        ~/Supply_Skirmish_Autogen,
+        ~/Reco_Autogen,
+        ~/Defense_Corridor_AA_Autogen,
+        ~/Attack_Frontage_Reinforce_BA,
+        ~/Artillery_Support_Autogen,
+        ~/Airstrike_Offense_Autogen,
+        ~/Attack_Armor_BA_Autogen,
+        ~/Attack_Objectives_BA_Autogen,
+        ~/Artillery_TriggerHappy_Autogen,
+        ~/Airstrike_AA_Autogen,
+        ~/Attack_Frontage_Reinforce_BA,
+        ~/Airstrike_Assault_Autogen,
+        ~/Attack_Helo_Autogen,
+    ]
+)
+
+VeryHardScaling is
+[
+    ~/Supply_Skirmish_Autogen,
+    ~/Reco_Autogen,
+    ~/Attack_Objectives_Autogen,
+
+    ~/Attack_Main_Autogen,
+    ~/Attack_Helo_Autogen,
+    ~/Attack_Adaptive_Autogen,
+    ~/Attack_Adaptive_Autogen,
+    ~/Attack_Adaptive_Autogen,
+
+    ~/Airstrike_AirReco_Autogen,
+
+    ~/Defense_Corridor_Adaptive_Autogen,
+    ~/Defense_Corridor_Adaptive_Autogen,
+    ~/Defense_Corridor_AA_Autogen,
+
+    ~/Airstrike_Assault_Autogen,
+    ~/Airstrike_Offense_Autogen,
+    ~/Airstrike_AA_Autogen,
+
+    ~/Artillery_TriggerHappy_Autogen,
+
+    ~/Attack_Objectives_Allied_Autogen,
+]
+
+VeryHardScaling_Attack is
+[
+    ~/Reco_Autogen,
+    ~/Attack_Objectives_Autogen,
+
+    ~/Attack_Main_Autogen,
+    ~/Attack_Helo_Autogen,
+    ~/Attack_Adaptive_Autogen,
+    ~/Attack_Adaptive_Autogen,
+    ~/Attack_Adaptive_Autogen,
+
+    ~/Airstrike_Assault_Autogen,
+    ~/Airstrike_Offense_Autogen,
+
+    ~/Airstrike_AirReco_Autogen,
+    ~/Airstrike_AA_Autogen,
+
+    ~/Artillery_TriggerHappy_Autogen,
+]

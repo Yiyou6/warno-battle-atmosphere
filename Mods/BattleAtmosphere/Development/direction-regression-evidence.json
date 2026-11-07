@@ -1,0 +1,780 @@
+{
+  "source": "runtime-live-preview5-38916-20261107T011345Z.log",
+  "evidence": "First recorded origins reconstructed from SPACE_ROUTE and matched to SPACE_ORDER; nearest physical deployment is inferred, not a live-memory owner read.",
+  "first_routes": 48,
+  "side_mapping": {
+    "0->1": 27,
+    "1->0": 21
+  },
+  "backwards_first_legs": 48,
+  "rows": [
+    {
+      "uid": 998356558020608,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        498075.8750000001,
+        1693450.125
+      ],
+      "target": [
+        470160.75,
+        1698212.107142857
+      ],
+      "logged_start_depth": 7305.408711595909,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -41.881043299696316
+    },
+    {
+      "uid": 1001655092903936,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        503827.6250000001,
+        1691784.625
+      ],
+      "target": [
+        476758.21875,
+        1696664.46875
+      ],
+      "logged_start_depth": 7293.634450950311,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -41.81687946751999
+    },
+    {
+      "uid": 1013749720809472,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        698707.125,
+        1707190.125
+      ],
+      "target": [
+        672156.2738973487,
+        1713291.5316949433
+      ],
+      "logged_start_depth": 7224.834283813785,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -47.05932091119477
+    },
+    {
+      "uid": 1046735069642752,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        688078.2500000001,
+        1737938.5
+      ],
+      "target": [
+        660532.6,
+        1744995.6
+      ],
+      "logged_start_depth": 7373.757485145892,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -52.16397981469349
+    },
+    {
+      "uid": 1075322371964928,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        843488.4375,
+        1700095.875
+      ],
+      "target": [
+        824925.4173844875,
+        1722153.4537080154
+      ],
+      "logged_start_depth": 7088.519715608064,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -114.6666666666662
+    },
+    {
+      "uid": 1078620906848256,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1251121.75,
+        1700498.25
+      ],
+      "target": [
+        1221702.0072235228,
+        1707258.9302827495
+      ],
+      "logged_start_depth": 6798.367407571142,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -52.14420852613686
+    },
+    {
+      "uid": 1088516511498240,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        843112.6875,
+        1702967.375
+      ],
+      "target": [
+        827980.838711162,
+        1727155.4803604288
+      ],
+      "logged_start_depth": 7101.985343957311,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -122.00000000000021
+    },
+    {
+      "uid": 1091815046381568,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        841803.5,
+        1712296.375
+      ],
+      "target": [
+        841580.9557520326,
+        1737212.7103021168
+      ],
+      "logged_start_depth": 7145.796163074769,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -114.66666666666605
+    },
+    {
+      "uid": 1106108697542656,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        838714.8125,
+        1730457.5
+      ],
+      "target": [
+        823610.5312612611,
+        1754649.902354476
+      ],
+      "logged_start_depth": 7231.471228563833,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -121.99999999999956
+    },
+    {
+      "uid": 1131397464981504,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1627679.125,
+        1696426.625
+      ],
+      "target": [
+        1600289.8276567417,
+        1706407.567270581
+      ],
+      "logged_start_depth": 6509.914814844611,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -65.48899287813745
+    },
+    {
+      "uid": 1134695999864832,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1738923.125,
+        1705831.7499999998
+      ],
+      "target": [
+        1708367.4351963296,
+        1712853.4718128315
+      ],
+      "logged_start_depth": 6473.44983484871,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -54.15758638299518
+    },
+    {
+      "uid": 1146790627770368,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1628367.625,
+        1692154.625
+      ],
+      "target": [
+        1600379.3700042034,
+        1705960.068178254
+      ],
+      "logged_start_depth": 6489.788917508293,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -83.4941899279881
+    },
+    {
+      "uid": 1167681348698112,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1739168.75,
+        1725349.4999999998
+      ],
+      "target": [
+        1712731.5669889667,
+        1731424.785677108
+      ],
+      "logged_start_depth": 6562.971020431076,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -46.85785304938922
+    },
+    {
+      "uid": 1178676464975872,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1621290.5,
+        1731824.0
+      ],
+      "target": [
+        1591218.1229932369,
+        1738734.6561478025
+      ],
+      "logged_start_depth": 6677.16585117801,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -53.300951997820896
+    },
+    {
+      "uid": 1189671581253632,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1260190.125,
+        1699753.5
+      ],
+      "target": [
+        1232965.620932273,
+        1710223.2669252402
+      ],
+      "logged_start_depth": 6788.448799579384,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -67.61742261994776
+    },
+    {
+      "uid": 1192970116136960,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1407283.375,
+        1694323.0
+      ],
+      "target": [
+        1376304.882402569,
+        1701441.8822310236
+      ],
+      "logged_start_depth": 6658.124158263012,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -54.90697148845841
+    },
+    {
+      "uid": 1202865720786944,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1231666.0,
+        1702096.5
+      ],
+      "target": [
+        1200912.4198208214,
+        1709163.6971784732
+      ],
+      "logged_start_depth": 6819.649246838123,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -54.50833169998167
+    },
+    {
+      "uid": 1221557418459136,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1405916.875,
+        1725890.375
+      ],
+      "target": [
+        1378393.7259959558,
+        1732215.216525793
+      ],
+      "logged_start_depth": 6804.176261575081,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -48.78264340605675
+    },
+    {
+      "uid": 1240249116131328,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1399042.25,
+        289954.5
+      ],
+      "target": [
+        1409625.4823202158,
+        269844.5101808924
+      ],
+      "logged_start_depth": 7120.535443605313,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -99.99999999999997
+    },
+    {
+      "uid": 1243547651014656,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1663290.375,
+        261380.6875
+      ],
+      "target": [
+        1685140.2214129388,
+        243026.84117266303
+      ],
+      "logged_start_depth": 7441.141096662215,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -100.00000000000077
+    },
+    {
+      "uid": 1253443255664640,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1393922.5,
+        283197.15625
+      ],
+      "target": [
+        1379902.5058866497,
+        259252.2258158786
+      ],
+      "logged_start_depth": 7147.9225148801925,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -100.00000000000024
+    },
+    {
+      "uid": 1272134953336832,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1653096.5,
+        242028.625
+      ],
+      "target": [
+        1625969.0674699955,
+        225946.56616354908
+      ],
+      "logged_start_depth": 7522.774570181031,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -54.475537893928056
+    },
+    {
+      "uid": 1283130069614592,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1644507.0,
+        225789.00000000023
+      ],
+      "target": [
+        1619268.456625124,
+        210826.73849397144
+      ],
+      "logged_start_depth": 7591.253576472658,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -50.68239408520982
+    },
+    {
+      "uid": 1430464627736576,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1273137.75,
+        1698690.625
+      ],
+      "target": [
+        1245061.0764906525,
+        1705142.6668972394
+      ],
+      "logged_start_depth": 6774.2893565021095,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -49.76372258979253
+    },
+    {
+      "uid": 1437061697503232,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        833495.5625,
+        1752272.75
+      ],
+      "target": [
+        807411.051750683,
+        1759086.7262496976
+      ],
+      "logged_start_depth": 7335.465639893382,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -50.000000000000675
+    },
+    {
+      "uid": 1338105651003392,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        989046.4375,
+        287811.40625
+      ],
+      "target": [
+        1020294.416603428,
+        280630.5958056196
+      ],
+      "logged_start_depth": 6836.690565796716,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461551
+    },
+    {
+      "uid": 1349100767281152,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        934659.0,
+        482183.4375
+      ],
+      "target": [
+        963920.6396493459,
+        472282.71778126305
+      ],
+      "logged_start_depth": 5904.461327795438,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -66.46153846153828
+    },
+    {
+      "uid": 1371090999836672,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        755531.5,
+        249535.10937499977
+      ],
+      "target": [
+        784888.0665840248,
+        240682.1699098717
+      ],
+      "logged_start_depth": 6845.321163111482,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -61.71428571428468
+    },
+    {
+      "uid": 1374389534720000,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        596346.2499999999,
+        268932.21875
+      ],
+      "target": [
+        627594.229103428,
+        261751.40830561964
+      ],
+      "logged_start_depth": 6642.1486888508825,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461546
+    },
+    {
+      "uid": 1384285139369984,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        457059.62500000006,
+        286443.00000000023
+      ],
+      "target": [
+        488307.6041034279,
+        279262.1895556196
+      ],
+      "logged_start_depth": 6461.899212108508,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461649
+    },
+    {
+      "uid": 1391981720764416,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        748435.375,
+        250530.984375
+      ],
+      "target": [
+        777330.2297392086,
+        242983.38902048234
+      ],
+      "logged_start_depth": 6835.661256727152,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461534
+    },
+    {
+      "uid": 1410673418436608,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        583714.6875,
+        270664.8125
+      ],
+      "target": [
+        613071.2540840248,
+        261811.87303487174
+      ],
+      "logged_start_depth": 6625.137845740886,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -61.71428571428562
+    },
+    {
+      "uid": 1468947534708736,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1749016.375,
+        1721488.2499999998
+      ],
+      "target": [
+        1720186.2834696986,
+        1733029.241241347
+      ],
+      "logged_start_depth": 6538.1718043193005,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -73.69055235710282
+    },
+    {
+      "uid": 1481042162614272,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1405757.25,
+        1729580.25
+      ],
+      "target": [
+        1374509.2708965722,
+        1736761.0604443804
+      ],
+      "logged_start_depth": 6821.248053603979,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461542
+    },
+    {
+      "uid": 1488738744008704,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1383606.625,
+        269529.625
+      ],
+      "target": [
+        1413198.8877406323,
+        262559.20410811575
+      ],
+      "logged_start_depth": 7203.344366853802,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -53.23168898733506
+    },
+    {
+      "uid": 1526122139353088,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        736345.5625,
+        252065.60937500023
+      ],
+      "target": [
+        767546.5871485296,
+        245738.2999503457
+      ],
+      "logged_start_depth": 6819.948286428676,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -51.428571428572546
+    },
+    {
+      "uid": 1536017744003072,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        433555.15625000006,
+        288765.81250000023
+      ],
+      "target": [
+        462911.72283402487,
+        279912.8730348717
+      ],
+      "logged_start_depth": 6434.387289013105,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -61.714285714286824
+    },
+    {
+      "uid": 1544813837025280,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1619594.625,
+        1740263.625
+      ],
+      "target": [
+        1588346.6458965722,
+        1747444.4354443804
+      ],
+      "logged_start_depth": 6717.166393728653,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461542
+    },
+    {
+      "uid": 1545913348653056,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1281995.75,
+        1697963.5
+      ],
+      "target": [
+        1250747.7708965722,
+        1705144.3104443804
+      ],
+      "logged_start_depth": 6764.60244589949,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461542
+    },
+    {
+      "uid": 1547012860280832,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1638287.75,
+        214073.671875
+      ],
+      "target": [
+        1662641.8333333333,
+        207470.44791666666
+      ],
+      "logged_start_depth": 7640.638298081046,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -47.791888527337456
+    },
+    {
+      "uid": 1421668534714368,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        386138.43750000006,
+        468062.25000000023
+      ],
+      "target": [
+        417386.41660342796,
+        460881.4395556196
+      ],
+      "logged_start_depth": 5576.433863509666,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -55.38461538461653
+    },
+    {
+      "uid": 1559107488186368,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        827187.0625000001,
+        1773039.7499999998
+      ],
+      "target": [
+        850856.2641605565,
+        1787071.6526983432
+      ],
+      "logged_start_depth": 7435.422906825276,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -47.530944572530515
+    },
+    {
+      "uid": 1573401139347456,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        1000345.875,
+        277681.18750000023
+      ],
+      "target": [
+        980331.9442899494,
+        255848.3193728322
+      ],
+      "logged_start_depth": 6891.339874793465,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -86.00000000000057
+    },
+    {
+      "uid": 1582197232369664,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        624020.6875,
+        265019.68750000023
+      ],
+      "target": [
+        653510.8004160343,
+        258242.8361032265
+      ],
+      "logged_start_depth": 6679.9535237258715,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -52.26893413162499
+    },
+    {
+      "uid": 1589893813764096,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        678430.9375,
+        1763898.125
+      ],
+      "target": [
+        703826.7557199971,
+        1777486.4559267948
+      ],
+      "logged_start_depth": 7499.97004619757,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -44.255601481281424
+    },
+    {
+      "uid": 1600888930041856,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        789265.125,
+        548214.8125
+      ],
+      "target": [
+        818775.9478528781,
+        541064.5159469859
+      ],
+      "logged_start_depth": 5496.852392486069,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -53.99999999999974
+    },
+    {
+      "uid": 1608585511436288,
+      "alliance": 1,
+      "physical_side": 0,
+      "position": [
+        825493.5,
+        467818.25
+      ],
+      "target": [
+        854850.0665840248,
+        458965.3105348717
+      ],
+      "logged_start_depth": 5892.280057099275,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -61.714285714285744
+    },
+    {
+      "uid": 1612983557947392,
+      "alliance": 0,
+      "physical_side": 1,
+      "position": [
+        1619720.3749999998,
+        1744231.25
+      ],
+      "target": [
+        1590363.8084159752,
+        1753084.1894651284
+      ],
+      "logged_start_depth": 6735.310209318276,
+      "map_span": 7330.549035466889,
+      "actual_first_leg_forward_m": -61.71428571428585
+    }
+  ]
+}

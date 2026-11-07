@@ -1,0 +1,243 @@
+{
+  "version": "combined-arms-preview.6",
+  "status": "installed; native direction regressions passed; ordinary battle pending",
+  "installed_at": "2026-11-07T02:30:47.233561+00:00",
+  "root_dll_sha256": "45fe77306abaae3f521ea2f5e9ae045bebad17796828dbd5e918de30760fba3d",
+  "income_changed": false,
+  "runtime": {
+    "status": "headless-integration-passed; full-battle-unverified",
+    "continuous_tests": [
+      {
+        "receipt": "widefront-release-battle.json",
+        "receipt_sha256": "6136164ad1bfea09b35f34416ed2c0da59b6f9d3bf360f05c4ee31a909fdd163",
+        "mode": "battle",
+        "simulation_seconds": 240.0,
+        "unique_units": 128,
+        "disappeared_units": 50,
+        "width_80_percent_initial_final": [
+          34.9,
+          2813.4
+        ],
+        "width_80_percent_min_last_minute": 2308.3,
+        "pairs_120m_initial_final": [
+          630,
+          28
+        ],
+        "active_claims_final": 74,
+        "late_minute_forward_over_25m": 65,
+        "units_completed_3_legs": 26,
+        "combat_state_observations": 1213,
+        "final_metrics": {
+          "0": {
+            "width80_m": 1124.8,
+            "objective_core_peak": 0,
+            "rear_idle_30s": 0,
+            "in_combat": 7,
+            "front_band_lanes": 3,
+            "largest_200m_cluster": 3,
+            "empty_internal_lanes": 0
+          },
+          "1": {
+            "width80_m": 2813.4,
+            "objective_core_peak": 4,
+            "rear_idle_30s": 1,
+            "in_combat": 12,
+            "front_band_lanes": 13,
+            "largest_200m_cluster": 8,
+            "empty_internal_lanes": 1
+          }
+        },
+        "max_sampled_planning_ms": 26.557
+      },
+      {
+        "receipt": "widefront-release-mass.json",
+        "receipt_sha256": "bac39ff99aeb665bb2c62359b45621843ed46d097f20a751f60c2719318bcf18",
+        "mode": "mass",
+        "simulation_seconds": 240.0,
+        "unique_units": 282,
+        "disappeared_units": 0,
+        "width_80_percent_initial_final": [
+          50.2,
+          4147.4
+        ],
+        "width_80_percent_min_last_minute": 3193.6,
+        "pairs_120m_initial_final": [
+          11093,
+          262
+        ],
+        "active_claims_final": 276,
+        "late_minute_forward_over_25m": 277,
+        "units_completed_3_legs": 78,
+        "combat_state_observations": 0,
+        "final_metrics": {
+          "1": {
+            "width80_m": 4147.4,
+            "objective_core_peak": 1,
+            "rear_idle_30s": 0,
+            "in_combat": 0,
+            "front_band_lanes": 21,
+            "largest_200m_cluster": 14,
+            "empty_internal_lanes": 0
+          }
+        },
+        "max_sampled_planning_ms": 41.028
+      }
+    ],
+    "combined": {
+      "receipt": "combined-release-transport.json",
+      "sha256": "9a29c87c3028b94cba9b744320462271f5b7d16c1b9ae66e1a1a0079b8c5f139",
+      "paired_deliveries": 8,
+      "startup_warning": null,
+      "forward_after_unload_over_25m": 16,
+      "emergency_orders_in_safe_delivery_test": 0,
+      "immediate_unload_commands": 8,
+      "emergency_receipt_sha256": "b4fbb82d89bf970db2b5b1852b1259483445753d5ecacaa3c0d797fa2f38cf24"
+    },
+    "orientation_tests": [
+      {
+        "receipt": "direction-urban-swapped.json",
+        "sha256": "c800e00ed2f9d30b3e7074c6c2378ea14c4a14793d337ef37bf1a77f9025bca0",
+        "units": 12,
+        "physical_forward_over_25m": 12,
+        "physical_backward_over_70m": 0,
+        "min_forward_m": 142.7,
+        "axis_faces_independent_opponent": true,
+        "normal_deliveries": null,
+        "detours_preserved": null
+      },
+      {
+        "receipt": "direction-hesse-swapped.json",
+        "sha256": "88bf1024825b3d2c3aa634d5ae5e25d1483fe7174f2a1db80b7592c4a6a3b246",
+        "units": 12,
+        "physical_forward_over_25m": 12,
+        "physical_backward_over_70m": 0,
+        "min_forward_m": 254.7,
+        "axis_faces_independent_opponent": true,
+        "normal_deliveries": null,
+        "detours_preserved": null
+      },
+      {
+        "receipt": "direction-transport-swapped.json",
+        "sha256": "f85ac6fe902e3a34fe738121ffddc401e453895ab7474009e83cda34c626cd2c",
+        "units": 16,
+        "physical_forward_over_25m": 16,
+        "physical_backward_over_70m": 0,
+        "min_forward_m": 1843.0,
+        "axis_faces_independent_opponent": true,
+        "normal_deliveries": 8,
+        "detours_preserved": 2
+      }
+    ],
+    "offline_receipt_sha256": "a5e0459ce8cc4993fb3c4a4326eb39f4b330a4f4b2f420281b893f2307a8c7c9",
+    "dll_sha256": "45fe77306abaae3f521ea2f5e9ae045bebad17796828dbd5e918de30760fba3d",
+    "exe_sha256": "70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8",
+    "cold_start_receipt_sha256": "19c97ed7674a4b238c8022075b84cc3a47846ec73ca69f392fd3870259ca31c2",
+    "tests": [
+      {
+        "receipt": "runtime-auto-release-blackforest.json",
+        "receipt_sha256": "63cd7e9960d7ec654e5b1a1ae5b94d754fe7e7200221aba613469341e9f9a6d9",
+        "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
+        "wall_seconds": 55.547,
+        "first_plan_tick": 1,
+        "orders": 19,
+        "moved_over_25m": 12,
+        "arrived": 7,
+        "identity_guards": [
+          [
+            0,
+            -3
+          ],
+          [
+            7,
+            -3
+          ]
+        ],
+        "directional": {
+          "waypoint_orders": 36,
+          "forward_over_25m": 12,
+          "fixture_width_metres_before_after": [
+            19.373,
+            713.926
+          ],
+          "fixture_pairs_within_120m_before_after": [
+            66,
+            12
+          ],
+          "outward_routes": 10,
+          "advance_routes": 9
+        },
+        "exit_code": 0
+      },
+      {
+        "receipt": "runtime-auto-release-hesse.json",
+        "receipt_sha256": "72cae09f06730a349172dd793acc6d7c5761a320758e030da610bacd2d98e214",
+        "scenario": "_2x2_Hesse_2vs2_DEST",
+        "wall_seconds": 57.453,
+        "first_plan_tick": 1,
+        "orders": 18,
+        "moved_over_25m": 12,
+        "arrived": 6,
+        "identity_guards": [
+          [
+            0,
+            -3
+          ],
+          [
+            7,
+            -3
+          ]
+        ],
+        "directional": {
+          "waypoint_orders": 38,
+          "forward_over_25m": 12,
+          "fixture_width_metres_before_after": [
+            14.071,
+            668.169
+          ],
+          "fixture_pairs_within_120m_before_after": [
+            66,
+            11
+          ],
+          "outward_routes": 10,
+          "advance_routes": 8
+        },
+        "exit_code": 0
+      },
+      {
+        "receipt": "runtime-installed-root.json",
+        "receipt_sha256": "651bd5ce4e9b573d4f32c80ae5d9f20676f0d302d2efeb4e20c01cd913dde73b",
+        "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
+        "wall_seconds": 55.375,
+        "first_plan_tick": 1,
+        "orders": 19,
+        "moved_over_25m": 12,
+        "arrived": 7,
+        "identity_guards": [
+          [
+            0,
+            -3
+          ],
+          [
+            7,
+            -3
+          ]
+        ],
+        "directional": {
+          "waypoint_orders": 36,
+          "forward_over_25m": 12,
+          "fixture_width_metres_before_after": [
+            19.373,
+            713.926
+          ],
+          "fixture_pairs_within_120m_before_after": [
+            66,
+            12
+          ],
+          "outward_routes": 10,
+          "advance_routes": 9
+        },
+        "exit_code": 0
+      }
+    ]
+  }
+}

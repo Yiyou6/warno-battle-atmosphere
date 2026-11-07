@@ -1,0 +1,425 @@
+{
+  "version": "combined-arms-preview.6",
+  "files": [
+    {
+      "path": "Mods/BAScriptProbe/AutoRuntimeRoot/CommonData/Python/Eugen/ba_fixture.py",
+      "original_sha256": "722c212f25fb7e1f878778c8b893121b927a384e23f2f3a816e45c64a0ed569e",
+      "sha256": "435126e468f7029505959a0cdf69cd72a7123469d5e9724d99b0ecb74c476603"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/analyze_continuous.py",
+      "original_sha256": "aefd4c00cc18236d73850e89fee08b480b0d130101b47dd39578f38112db7017",
+      "sha256": "0b21e6a9a5f88af219d2587bf7cced8a1633097c86566d679f3e09bbc283db84"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/apply_combined_profile.py",
+      "original_sha256": "b09df58140ec9fafd099c62dc85e9e238aec9818f020ebb1f6a49e12fbcbad9b",
+      "sha256": "b09df58140ec9fafd099c62dc85e9e238aec9818f020ebb1f6a49e12fbcbad9b"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/apply_profile.py",
+      "original_sha256": "497a4b6c770762e21b266146031c34424f95c4b9d91ab6fdf425fbc3f9d0ec17",
+      "sha256": "4e7fff08c62db669944f48b67edd3bd46c3c7640b22d5e1d61b883d76e8b3c13"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/audit_native_fields.py",
+      "original_sha256": "61d129c64f779614bd5f5f690f44bde8db99c335a52194e8b2c12a2cd97163b7",
+      "sha256": "61d129c64f779614bd5f5f690f44bde8db99c335a52194e8b2c12a2cd97163b7"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/audit_runtime_hooks.py",
+      "original_sha256": "863b1abbc79a27992b4fd44a9b01a36c462cd045c8e8ecb3ddee2ed62cb5cab1",
+      "sha256": "863b1abbc79a27992b4fd44a9b01a36c462cd045c8e8ecb3ddee2ed62cb5cab1"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/audit_screen.py",
+      "original_sha256": "e7fdd72c4a803402e1a105c6ef2b9fcb2e83f8e1dca4baf50bcb4611c7114a9a",
+      "sha256": "e7fdd72c4a803402e1a105c6ef2b9fcb2e83f8e1dca4baf50bcb4611c7114a9a"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/build_combined_ndf.py",
+      "original_sha256": "271651751fb695bdd91f8cca05be8b29e212b79081f159dbb5d29b319f127b6d",
+      "sha256": "271651751fb695bdd91f8cca05be8b29e212b79081f159dbb5d29b319f127b6d"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/check_cold_start.py",
+      "original_sha256": "a7783c7aab6befe598686eafdc3a4e1d2e81e0f7895f3157f9f465cfebc1d6cf",
+      "sha256": "a7783c7aab6befe598686eafdc3a4e1d2e81e0f7895f3157f9f465cfebc1d6cf"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/check_direction_runtime.py",
+      "original_sha256": "bba27882f328dbe030f2cd34161527b821d0f8244f662aaeca48e3a7fc2de2b4",
+      "sha256": "bba27882f328dbe030f2cd34161527b821d0f8244f662aaeca48e3a7fc2de2b4"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/check_mod_compatibility.py",
+      "original_sha256": "25f92fca61aadbcce6276897576e0bb3edbee8c3b4a4a1f32de03bfa1f22f5f0",
+      "sha256": "25f92fca61aadbcce6276897576e0bb3edbee8c3b4a4a1f32de03bfa1f22f5f0"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/check_transport_emergency.py",
+      "original_sha256": "eb4cd05235ab6081617de31cad497cf85133e2901d98262f4318aaac241e0298",
+      "sha256": "eb4cd05235ab6081617de31cad497cf85133e2901d98262f4318aaac241e0298"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/check_transport_endpoints.py",
+      "original_sha256": "d022755da544c942876e298affa480491675e6f74aa6c5edc3d092a46fa2f82a",
+      "sha256": "d022755da544c942876e298affa480491675e6f74aa6c5edc3d092a46fa2f82a"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/diagnose_front_direction.py",
+      "original_sha256": "b1f7f0ebaf2103332174efa0e8698b1b6a43446814a74679f731376a8eac4abc",
+      "sha256": "b1f7f0ebaf2103332174efa0e8698b1b6a43446814a74679f731376a8eac4abc"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/direction-regression-evidence.json",
+      "original_sha256": "e410bcb0bd7626b07737859667cab7f9c42e3e91b7b4efd3d112cabb997baaa0",
+      "sha256": "722d4550978f214295099f97fe2ae5c9b866e227c4918fdc9202d5300481607a"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/allocator.py",
+      "original_sha256": "c1a8368bfa4e8b185ca733df49fc063653b479d8f4153438c02677f5a2193aa7",
+      "sha256": "c1a8368bfa4e8b185ca733df49fc063653b479d8f4153438c02677f5a2193aa7"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/allocator25.py",
+      "original_sha256": "cbc968a6814995dd774fd5b3abc02e9216e909916eeed9af207cfafdc041efd9",
+      "sha256": "d49380c6d4937ece4bfa1c84aea678e0c7b8cca57809e5417c5cffdbf5ff8659"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/build_allocator25.py",
+      "original_sha256": "88a478d59fe248c854be51d96438acd1391e780dd132708377d7d6840bf9aad5",
+      "sha256": "88a478d59fe248c854be51d96438acd1391e780dd132708377d7d6840bf9aad5"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/test_allocator.py",
+      "original_sha256": "d8e0483557e30a2ffb481d40b86449856cf1597bf87a5322dfacfb24d89e1504",
+      "sha256": "d8e0483557e30a2ffb481d40b86449856cf1597bf87a5322dfacfb24d89e1504"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/test_combined_arms.py",
+      "original_sha256": "4939e9200ad1c9bfd4957803fca2274c16c32d54c296f3ecc3959653c005023b",
+      "sha256": "4939e9200ad1c9bfd4957803fca2274c16c32d54c296f3ecc3959653c005023b"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/test_continuous_front.py",
+      "original_sha256": "2366a539a4e49d2639e2b7a9011badc94b8985cc7f938cce3fd3ac03c2cf4251",
+      "sha256": "66938cdfaa37898aa3c38543899ee8131948b89b65be531d134c2d8be5421806"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/test_runtime_controller.py",
+      "original_sha256": "1a5682087d3639f42e269778cc6e620ebf3183848f1cc9f3723acc19f347db57",
+      "sha256": "db2cd14d80eecc060e0fbc35d1cadd9c5bacac7cd228993795986ddad17ef654"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/dispersion/test_spawn_orientation.py",
+      "original_sha256": "13ab3f05b11a82a82cb54e11318f0b9270c4dc2b418f14b4160e67266b4c3ca1",
+      "sha256": "13ab3f05b11a82a82cb54e11318f0b9270c4dc2b418f14b4160e67266b4c3ca1"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/inspect_compiled.py",
+      "original_sha256": "2d489d3f862c10ab9de9e5e604c293169490a1e063fe84fbb7fe3c91335c5317",
+      "sha256": "2d489d3f862c10ab9de9e5e604c293169490a1e063fe84fbb7fe3c91335c5317"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/inspect_native.py",
+      "original_sha256": "b81b228c60af431154337a023009f2cacf9f52d0f9a42146f8240af2916431b9",
+      "sha256": "b81b228c60af431154337a023009f2cacf9f52d0f9a42146f8240af2916431b9"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/install_combined_release.py",
+      "original_sha256": "9b60c30dfad81ea2de59e4d0ff9582b8888ec4ec18ae3f0ffadd677ed8b4dc7e",
+      "sha256": "9b60c30dfad81ea2de59e4d0ff9582b8888ec4ec18ae3f0ffadd677ed8b4dc7e"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/install_direction_release.py",
+      "original_sha256": "3100af68ed25ff20ebe4c6c7159f39f06fa0afbccf48ee9f30b9c3ac9f796e4b",
+      "sha256": "3100af68ed25ff20ebe4c6c7159f39f06fa0afbccf48ee9f30b9c3ac9f796e4b"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/build_runtime.py",
+      "original_sha256": "8db0de3aa4835588d7cf1c4fd06c6e9a29002f96906884b95e65ba87237310cc",
+      "sha256": "254d6b3c999da3dbe793bd0e8c47dcc0896dd3ee7a7944ce58e3e3844600c1f5"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/cold_start_probe.c",
+      "original_sha256": "7e8c418b27d03d8567291b7df91bc939616deef5c3f9fb2a2639c2dd4992aa73",
+      "sha256": "c5fe580990288f0cab71cbffebfeaa0712e3b2bf43bbaae5ab54fbfc1d253cfe"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/cold_start_probe.def",
+      "original_sha256": "05736849740f38a9ea137c91ff436627e2ddf7f9819fdd432f695d077cba0320",
+      "sha256": "05736849740f38a9ea137c91ff436627e2ddf7f9819fdd432f695d077cba0320"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/embed_python.py",
+      "original_sha256": "d32c22a9ac2a6337e2484f9935b12002a3f41974c122d4e588fe441af1760cdc",
+      "sha256": "bb1370dafd657c48eff940ced3745822b6b7d8cb01651ad066c09ec9a6341fdd"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/install_runtime.py",
+      "original_sha256": "09001370cb56aae9e5a97ecc3f9004a0261d80927353d8adcae9524de55f1355",
+      "sha256": "09001370cb56aae9e5a97ecc3f9004a0261d80927353d8adcae9524de55f1355"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/live_allocator_probe.py",
+      "original_sha256": "9902ef97e43ac2cc166d2200eca08e42fa0dbfa908ac7d40fa547c3f7c0d4e8c",
+      "sha256": "9902ef97e43ac2cc166d2200eca08e42fa0dbfa908ac7d40fa547c3f7c0d4e8c"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/load_owned_probe.py",
+      "original_sha256": "11737d3af2f528a2c3b7d6f7fa41855ded8e0c2df1a1fdfb83cccee25d0285c5",
+      "sha256": "11737d3af2f528a2c3b7d6f7fa41855ded8e0c2df1a1fdfb83cccee25d0285c5"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/mod_compat_probe.c",
+      "original_sha256": "b1ee9c033c9f03cc8267e5d45a7ab679469f48ec67a775355421e8ffcc09aeb2",
+      "sha256": "b1ee9c033c9f03cc8267e5d45a7ab679469f48ec67a775355421e8ffcc09aeb2"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/probe_bridge.c",
+      "original_sha256": "cdf903aaafe1b75540fee29cde2f9c13806ab964c2b83e20bec091b13ab3032e",
+      "sha256": "28c71c0e734a478369c2b9922d42785ac34c866efa128b90aa4e2bf7e6fc5be9"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/transport_emergency_probe.c",
+      "original_sha256": "9e0e0847f64ce2e32c4e24163ab530ab3f1d6ea1204e6f7aa014bc8d0bd73d39",
+      "sha256": "9e0e0847f64ce2e32c4e24163ab530ab3f1d6ea1204e6f7aa014bc8d0bd73d39"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/transport_emergency_probe.def",
+      "original_sha256": "f97eae68678a6b1e1b16816f9d538857d90aa98cada398f239bbe096fa585b0b",
+      "sha256": "f97eae68678a6b1e1b16816f9d538857d90aa98cada398f239bbe096fa585b0b"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/transport_endpoint_probe.c",
+      "original_sha256": "9ba8a1490bea49e145abf6a67458459f448846db1fe28f797cc8dd522ef8b118",
+      "sha256": "8d342a4d6cf1ce9af4c04e0b0c907e701ae7f02125e42b6d9cd867978630333d"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/transport_endpoint_probe.def",
+      "original_sha256": "584bac74439494045c9683cde97cad835bf4541353093e8ffb3772dc2788b365",
+      "sha256": "584bac74439494045c9683cde97cad835bf4541353093e8ffb3772dc2788b365"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/verify_runtime.py",
+      "original_sha256": "df3c8b9927379e03e42d30c09c162ae4e598ae9f7ab6d31683843cfe7a7d4b8d",
+      "sha256": "4567eb5cf20117000d448fde069f66665e1e07163fa9edb1267f271583ea0919"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/version.def",
+      "original_sha256": "9abf0024783d25641c21628f0878b20231c9d10b1d77af5d03cf655563752854",
+      "sha256": "9abf0024783d25641c21628f0878b20231c9d10b1d77af5d03cf655563752854"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/version_proxy.c",
+      "original_sha256": "d23514ce9b5de59edfb1c223490b93cc48c00c13bfb4646ebea74c4ef01a01d6",
+      "sha256": "d23514ce9b5de59edfb1c223490b93cc48c00c13bfb4646ebea74c4ef01a01d6"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/package_release.py",
+      "original_sha256": "1e72eb4e402b9c0efd2b94fd4d6e5a64a34f1ab0ba5c270e34b4ec437ddb611a",
+      "sha256": "1e72eb4e402b9c0efd2b94fd4d6e5a64a34f1ab0ba5c270e34b4ec437ddb611a"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/profile_v1.py",
+      "original_sha256": "39fb2b8861eb3bdeefa012170e29b59c762253c628a7410de5c89a9e9d50bc23",
+      "sha256": "782cfc9ee5deda22b6aa33eb1c8f7ec7d624dbce13370df82866276e4af4c346"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/profile_v2.py",
+      "original_sha256": "50934b049d5e7e7a4eaf9e5df67f20213b03e1fa1c9be818d13f50693aa2398b",
+      "sha256": "50934b049d5e7e7a4eaf9e5df67f20213b03e1fa1c9be818d13f50693aa2398b"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/profile_v3.py",
+      "original_sha256": "1f173b1092117b75e1e58287310974db3acbce48a3c6b75271521f5c150b5bd8",
+      "sha256": "1f173b1092117b75e1e58287310974db3acbce48a3c6b75271521f5c150b5bd8"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/read_cndf.py",
+      "original_sha256": "0debba16c81d2cc024c361cfc6915b88c7821cf189af7f8d9514e1c16bb71f0f",
+      "sha256": "0debba16c81d2cc024c361cfc6915b88c7821cf189af7f8d9514e1c16bb71f0f"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/read_edat.py",
+      "original_sha256": "f44cc34a7339665e98d40df6bef93d5e0c6fe893796a45ba42b33a5b1da11736",
+      "sha256": "f44cc34a7339665e98d40df6bef93d5e0c6fe893796a45ba42b33a5b1da11736"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/read_live_front.py",
+      "original_sha256": "4a47f51b1286e59a53ee05717c272bd7a98f4ceb59e31679a5c391774e25be06",
+      "sha256": "4a47f51b1286e59a53ee05717c272bd7a98f4ceb59e31679a5c391774e25be06"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/read_mod_state.py",
+      "original_sha256": "0e547955de4ca3bc3c7044a39c780c02c57c53ed636461191426be1553a875ba",
+      "sha256": "0e547955de4ca3bc3c7044a39c780c02c57c53ed636461191426be1553a875ba"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/release_info.py",
+      "original_sha256": "4fd69655724e9710401fca33469b9b8e9951ead504edbf15e6c3b7c9787b67a4",
+      "sha256": "4fd69655724e9710401fca33469b9b8e9951ead504edbf15e6c3b7c9787b67a4"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/run_combined_validation.py",
+      "original_sha256": "a73bd2f53fbfbe4a46ff52ed10e593cc34ec86ede973574b21132e98946ef3bd",
+      "sha256": "a73bd2f53fbfbe4a46ff52ed10e593cc34ec86ede973574b21132e98946ef3bd"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/run_python_probe.py",
+      "original_sha256": "814adb775fd00679aaada330a23b92d4cf6a42a1aad65a668c3dace4c3bcdba9",
+      "sha256": "0a4008aeedc5522f408d31ca8dc4d1d77a43d7a099ec33f708ff0bb7b7eaca04"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/snapshot_runtime_log.py",
+      "original_sha256": "d44535d30cb2d7d517e55e4797efdeb987e5d79204615edc2f92731f03502e45",
+      "sha256": "d44535d30cb2d7d517e55e4797efdeb987e5d79204615edc2f92731f03502e45"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/validate_combined_profile.py",
+      "original_sha256": "7bab875127610e50def76081e78e330bb00e0cfa98750de153a6d5f677c0c537",
+      "sha256": "7bab875127610e50def76081e78e330bb00e0cfa98750de153a6d5f677c0c537"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/validate_frontage.py",
+      "original_sha256": "afeae9cc8c7c37322102fc74f428795cc3d55eba68b64115b2d4b8ee2eb8aea2",
+      "sha256": "afeae9cc8c7c37322102fc74f428795cc3d55eba68b64115b2d4b8ee2eb8aea2"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/validate_profile.py",
+      "original_sha256": "da5222e4f2e3b0f432e11b051c31e2882ab72a945a55a7a5fa4a92bf6fa95457",
+      "sha256": "da5222e4f2e3b0f432e11b051c31e2882ab72a945a55a7a5fa4a92bf6fa95457"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/validate_tactics.py",
+      "original_sha256": "e803cc96be789c3111cae1341e9e73f6e2879623ebe31c59c3efe0a915503171",
+      "sha256": "e803cc96be789c3111cae1341e9e73f6e2879623ebe31c59c3efe0a915503171"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/verify_native_script_probe.py",
+      "original_sha256": "75436ad07fc5a80e1be322b594df2efdc5102b02019bf3c80076c5f7b4af15ab",
+      "sha256": "75436ad07fc5a80e1be322b594df2efdc5102b02019bf3c80076c5f7b4af15ab"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/verify_profile.py",
+      "original_sha256": "03b4ea61e11ce951be717bea4d1903be58623854c40884d11f9b062cd93ae916",
+      "sha256": "42cf6ba711db1c0aa1aa54ab3789eb11abaa1cd5256312fb6d9de42231c0388c"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Constantes/IAStratConstantes.ndf",
+      "original_sha256": "e15d496a9ce39a08d2a6ea7a0edafb5b552d99ab85fb12e9a978ef526cbb682d",
+      "sha256": "e15d496a9ce39a08d2a6ea7a0edafb5b552d99ab85fb12e9a978ef526cbb682d"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Skirmish/IASkirmishDescriptors.ndf",
+      "original_sha256": "4703594a26bdece7972f01f2a7bd14e3b2e6a62cfb4457dfbdf3f92166a9bdb2",
+      "sha256": "4703594a26bdece7972f01f2a7bd14e3b2e6a62cfb4457dfbdf3f92166a9bdb2"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Skirmish/SkirmishMacros/SkirmishAirstrike.ndf",
+      "original_sha256": "b9c96361e4c3be11d045faea7cf67f00e65c349b19006e2961e00e069127ab38",
+      "sha256": "b9c96361e4c3be11d045faea7cf67f00e65c349b19006e2961e00e069127ab38"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Skirmish/SkirmishMacros/SkirmishArtillery.ndf",
+      "original_sha256": "b4bb1b2fbfde341126ef80be78371a5aad42d95145e99796355b2f805c051078",
+      "sha256": "b4bb1b2fbfde341126ef80be78371a5aad42d95145e99796355b2f805c051078"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Skirmish/SkirmishMacros/SkirmishAttacks.ndf",
+      "original_sha256": "64d7fc535f3fd7f69b2a49314a848d2c42feb7ee7271e3109287706edfd005ec",
+      "sha256": "64d7fc535f3fd7f69b2a49314a848d2c42feb7ee7271e3109287706edfd005ec"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Skirmish/SkirmishMacros/SkirmishDefenses.ndf",
+      "original_sha256": "883e125de374d897afaa9e703f6dd82d8274532c7bdbe09c844deb9ca8bc824f",
+      "sha256": "883e125de374d897afaa9e703f6dd82d8274532c7bdbe09c844deb9ca8bc824f"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Skirmish/SkirmishMacros/SkirmishMisc.ndf",
+      "original_sha256": "60754a69a812c69785faa4a1061bc1db21cf57972f2587c7cf1191141a46a001",
+      "sha256": "60754a69a812c69785faa4a1061bc1db21cf57972f2587c7cf1191141a46a001"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Gameplay/Skirmish/Strategies/VeryHardSkirmishStrategy.ndf",
+      "original_sha256": "f0e04e2d1fe6e95fea48b6466ed56b1a1447b5f396470837275a698d5a762be6",
+      "sha256": "f0e04e2d1fe6e95fea48b6466ed56b1a1447b5f396470837275a698d5a762be6"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Localisation/BattleAtmosphere/COMPANIES.csv",
+      "original_sha256": "7483d7106d8cc57a61abe960b1fc16f6436ba91b555afcffbea9f59d2a3d493a",
+      "sha256": "8b2c544fc2deed1a137d210024fa938c9521d6787db442638fe9ee6d4c5d9c38"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Localisation/BattleAtmosphere/INTERFACE_INGAME.csv",
+      "original_sha256": "7483d7106d8cc57a61abe960b1fc16f6436ba91b555afcffbea9f59d2a3d493a",
+      "sha256": "8b2c544fc2deed1a137d210024fa938c9521d6787db442638fe9ee6d4c5d9c38"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Localisation/BattleAtmosphere/INTERFACE_OUTGAME.csv",
+      "original_sha256": "7483d7106d8cc57a61abe960b1fc16f6436ba91b555afcffbea9f59d2a3d493a",
+      "sha256": "8b2c544fc2deed1a137d210024fa938c9521d6787db442638fe9ee6d4c5d9c38"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Localisation/BattleAtmosphere/LocalisationDicos.ndf",
+      "original_sha256": "9e355067295e4a84e336e6a40cef8383a8cd9e52a0245bf9bb84bda84cf68f85",
+      "sha256": "656383c0871daafa614bf3d6db3fb902a193fa17768ab48f82ba7dd5ca50273d"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Localisation/BattleAtmosphere/PLATOONS.csv",
+      "original_sha256": "7483d7106d8cc57a61abe960b1fc16f6436ba91b555afcffbea9f59d2a3d493a",
+      "sha256": "8b2c544fc2deed1a137d210024fa938c9521d6787db442638fe9ee6d4c5d9c38"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Localisation/BattleAtmosphere/UNITS.csv",
+      "original_sha256": "7483d7106d8cc57a61abe960b1fc16f6436ba91b555afcffbea9f59d2a3d493a",
+      "sha256": "8b2c544fc2deed1a137d210024fa938c9521d6787db442638fe9ee6d4c5d9c38"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Localisation/Database/Translations.csv",
+      "original_sha256": "f0790ea7f0e783dc8e71936b7ecd807681ad9545c578b84bd2789ae2bd4ae580",
+      "sha256": "639965c79fb4b5d897bc13433627cb873b2f7f0d63506735db39b5f9b82922ca"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/ResourcePacks/BattleAtmosphere/ResourcePacks.ndf",
+      "original_sha256": "6f673997258873bb2f84a2551777b6abe5f01357b21efb35336cc4b7f605318d",
+      "sha256": "847cb02998a9568f2b5c3cd9a0699f401b57a849edf2a89885750239931ecc12"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Runtime/Python/ba_allocator.py",
+      "original_sha256": "cbc968a6814995dd774fd5b3abc02e9216e909916eeed9af207cfafdc041efd9",
+      "sha256": "d49380c6d4937ece4bfa1c84aea678e0c7b8cca57809e5417c5cffdbf5ff8659"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Runtime/Python/ba_autorun.py",
+      "original_sha256": "cffdb4570765b8b6261e7e2cf809d5659f5b54bbf28aa716a2525a1dbf4fe499",
+      "sha256": "269dee46f389241f8562a042c2248f86c1d68857546b4fd44c407edf2db89fc8"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Runtime/Python/ba_front.py",
+      "original_sha256": "31c17afaac23db13ae977b5cb58305ee2a1878d78a746eb418efde4e42c96ed4",
+      "sha256": "171c93e76d83d7558e6685dd775539b7f97e9c7b9a0573f82ba3f37025db638f"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Runtime/Python/ba_space.py",
+      "original_sha256": "f1cff8e44c828ef486924454c6dea7b639071e807ddc35d6386016be37c9eeca",
+      "sha256": "92d1df61f88d8337212534c6c448cae16d84c19be98504e4e6ea8565a5004964"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Runtime/Python/ba_tactics.py",
+      "original_sha256": "32556ee4159185f1a7f964fe9c2969527694a4e6b29fd6a36f4c15d8c62c4dc9",
+      "sha256": "32556ee4159185f1a7f964fe9c2969527694a4e6b29fd6a36f4c15d8c62c4dc9"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Runtime/Python/ba_transport.py",
+      "original_sha256": "b8d5198944317b0acebb976c7fe99960b1073b3618f7edb36204731d772a9df5",
+      "sha256": "b8d5198944317b0acebb976c7fe99960b1073b3618f7edb36204731d772a9df5"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Runtime/runtime.ini",
+      "original_sha256": "27e76cddb2bcb02103df9cad80fa0683912ffeb68504aa06bae0d7db15f936bd",
+      "sha256": "c11fefa97322825ffc3853096a6414150ae6695e6449cca806cc6a6ddc1f8659"
+    }
+  ]
+}
