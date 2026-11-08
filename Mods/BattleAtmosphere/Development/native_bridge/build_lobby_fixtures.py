@@ -29,6 +29,18 @@ def build():
         rows.append('static const unsigned char lobby_fixture_%d[]={%s};' %
                     (index,','.join('0x%02x'%b for b in code)))
         rows.append('static const unsigned lobby_fixture_site_%d=%d;'%(index,4+site-start))
+    # UI excess-seat arithmetic is a separate path from room allocation.
+    native=n.pe.get_data(0x13a7d7c,12)
+    assert native==bytes.fromhex('8b8dbc0000000348144129cf')
+    # (controller, ai_count): recreate the registers/stack used by that path.
+    prologue=bytes.fromhex('555641574881ec000100004889e54889ce448b7e50488b46284805200100008995bc000000')
+    epilogue=bytes.fromhex('4489f84881c400010000415f5e5dc3')
+    code=prologue+native+epilogue
+    rows.append('static const unsigned char lobby_ui_fixture[]={%s};'%','.join('0x%02x'%b for b in code))
+    rows.append('static const unsigned lobby_ui_fixture_site=%d;'%len(prologue))
+    getter=n.pe.get_data(0x15ceeb0,13)
+    assert getter==bytes.fromhex('554889e5488d81200100005dc3')
+    rows.append('static const unsigned char lobby_getter_fixture[]={%s};'%','.join('0x%02x'%b for b in getter))
     target=BASE/'lobby_fixtures.h'
     target.write_text('/* Generated from the pinned EXE; owned-headless tests only. */\n'+'\n'.join(rows)+'\n')
     print('Native capacity fixture blocks extracted')

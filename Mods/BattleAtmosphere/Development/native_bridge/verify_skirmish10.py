@@ -15,7 +15,7 @@ BASE=Path(__file__).resolve().parent
 DEV=BASE.parent
 MOD=DEV.parent
 ROOT=MOD.parents[1]
-STATUS='spatial-runtime-preview.6+vfx-budget.3+skirmish10.1'
+STATUS='spatial-runtime-preview.6+vfx-budget.3+skirmish10.2'
 AUTORUN='Mods/BattleAtmosphere/Runtime/Python/ba_autorun.py'
 OBSERVER="        if native.fixture_mode()=='tenvten':\n            import ba_fixture\n            ba_fixture.tenvten_observe(controller.tick)\n"
 PREVIOUS_EXIT_WARNING='[Game did not terminate properly.] Game did not terminate properly. Do you want to load the last known good configuration?\n[Game did not terminate properly.] Checking the integrity of the data files is recommended. This might take several minutes.\nCheck data integrity now?'
@@ -82,15 +82,30 @@ def validate_receipt(name,scenario,manifest,enabled=True,twenty=True,installed=F
     for site,case,network,host,stock,actual,expected,passed in cases:
         assert stock==(8 if case<4 else 20)
         assert actual==expected==(20 if enabled and case<2 else stock) and passed==1
+    settings=[tuple(map(int,row)) for row in re.findall(
+        r'LOBBY_SETTINGS_TEST case=(\d+) network=(\d+) capacity=(\d+) expected=(\d+) counts_preserved=(\d+) pass=(\d+)',out)]
+    visibility=[tuple(map(int,row)) for row in re.findall(
+        r'LOBBY_VISIBLE_TEST case=(\d+) network=(\d+) stock_hidden=(\d+) actual_hidden=(\d+) expected=(\d+) pass=(\d+)',out)]
+    assert len(settings)==len(visibility)==6
+    assert {r[0] for r in settings}=={r[0] for r in visibility}==set(range(6))
+    for case,network,capacity,expected,counts,passed in settings:
+        assert network==int(case>=3)
+        assert capacity==expected==(20 if (enabled and not network) or case%3==2 else 8)
+        assert counts==passed==1
+    for case,network,stock,actual,expected,passed in visibility:
+        assert network==int(case>=3) and stock==(12,19,0)[case%3]
+        assert actual==expected==(0 if enabled and not network else stock) and passed==1
     result=dict(receipt_sha256=sha(path),scenario=scenario,normal_exit=True,
-                native_capacity_cases=len(cases),prior_exit_warning=bool(stderr))
+                native_capacity_cases=len(cases),native_settings_cases=len(settings),
+                native_visibility_cases=len(visibility),prior_exit_warning=bool(stderr))
     if not enabled:
         assert 'LOBBY_CAPACITY_TEST_ONLY_COMPLETE' in out
         assert 'AUTO_PYTHON_STARTED' not in out and 'SPACE_ORDER' not in out
         assert 'FX_BUDGET_APPLIED' not in out
-        result['scope']='capacity-calculation-only; exits before empty-world loading'
+        result['scope']='native-lobby-calculation-only; exits before empty-world loading'
         return result
     for marker in ('SKIRMISH_CAPACITY_HOOK_READY local_slots=20 original_slots=8 network_branch=stock',
+                   'SKIRMISH_UI_HOOK_READY restored_capacity=20 open_seats=20',
                    'FX_BUDGET_APPLIED original=80000 max_particles=200000 quality_scaled=1 telemetry=1',
                    'SPACE_REVISION combined-front-preview.6'):
         assert marker in out,marker
@@ -141,7 +156,7 @@ def verify_skirmish10(installed=False):
         assert sha(ROOT/'version.dll')==manifest['dll_sha256']
         tests['installed']=validate_receipt('skirmish10-installed.json','_2x3_BlackForestStorm_2vs2_CONQ',
                                            manifest,twenty=False,installed=True)
-    return dict(status='native-capacity-and-20-camp-fixtures-passed; ordinary-lobby-and-battle-unverified',
+    return dict(status='native-capacity-visibility-and-20-camp-fixtures-passed; ordinary-lobby-and-battle-unverified',
                 dll_sha256=manifest['dll_sha256'],exe_sha256=manifest['exe_sha256'],
                 tests=tests,max_particles=200000,ai_algorithm_unchanged=True,
                 test_only_observer_added=True,installed_mod_files_unchanged=files,

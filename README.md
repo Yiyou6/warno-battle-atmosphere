@@ -1,12 +1,12 @@
 # WARNO BattleAtmosphere
 
-**skirmish10.1 预览已安装：** 本地遭遇战的两条房间容量计算路径从 8 席位扩为 20 席位，目标为双方各 10 席。两种规则的原生受控测试均创建 20 个独立阵营、80 个单位，19 个 AI 阵营均有实际移动；12 项容量用例确认本地扩容、联机原分支保持，关闭运行组件时恢复原结果。普通房间界面、完整 10v10 卡组/经济和长局性能仍待用户验收。AI 算法 preview.6、资金、smoke-preview.20 和 20 万粒子预算保持。详见 [10v10 方案与验证边界](Mods/BattleAtmosphere/SKIRMISH_10V10.md)。
+**skirmish10.2 修复预览已安装：** 针对上一版普通房间仍只有 8 席位，补齐设置读取时的容量校正与空位显示；目标为双方各 10 席，保留真实玩家/AI 数。征服、歼灭各 20 阵营的原生受控测试通过，每次包含 12 项容量、6 项设置读取和 6 项空位计算检查；停用及正式目录启动也通过。普通房间是否能实际添加到每侧 10 人，完整卡组/经济和长局性能仍待实测。AI preview.6、资金、smoke-preview.20 和 20 万预算保持。详见 [10v10 方案与验证边界](Mods/BattleAtmosphere/SKIRMISH_10V10.md)。
 
-**运行预算已更新至 vfx-budget.3：最大粒子数 200000，保留原生画质缩放。** 新 DLL 原生预算读取、AI 启动/下令/退出和安装核验通过，燃烧沿用 smoke-preview.19，命中动画更新为 smoke-preview.20，该预算随后并入 skirmish10.1 运行 DLL。见 [预算验证](docs/validation-vfx-budget3.json)。
+**运行预算已更新至 vfx-budget.3：最大粒子数 200000，保留原生画质缩放。** 新 DLL 原生预算读取、AI 启动/下令/退出和安装核验通过，燃烧沿用 smoke-preview.19，命中动画更新为 smoke-preview.20，该预算随后并入 skirmish10.2 运行 DLL。见 [预算验证](docs/validation-vfx-budget3.json)。
 
 面向最高难度遭遇战的战场氛围与作战 AI 模组源码。目标是有氛围、有章法、双方付出巨大代价才决出胜者的战斗：大多数可用部队持续向前，在推进中展开宽战线，允许有用途的局部主攻集中，不允许大批部队长期闲置后方。
 
-当前快照：**combined-arms-preview.6 + smoke-preview.20 + vfx-budget.3 + skirmish10.1**。坦克榴弹及其他带碎片烟尾的弹头命中改用 122mm 榴弹炮五种随机爆炸，替换 109 组命中注册的 447 个表面分支；80 条单位毁伤分支逐项保持，坦克被击毁的烟尾爆炸保留。只改视觉引用，伤害、弹道、音效与 preview.19 原生顺风燃烧烟保持。官方构建、完整注册表核验和安装通过，实际画面待验。见 [命中方案](Mods/BattleAtmosphere/IMPACT_VISUALS.md)、[调用清单](docs/impact-visual-audit.json) 和 [验证摘要](docs/validation-smoke-preview20.json)。
+当前快照：**combined-arms-preview.6 + smoke-preview.20 + vfx-budget.3 + skirmish10.2**。坦克榴弹及其他带碎片烟尾的弹头命中改用 122mm 榴弹炮五种随机爆炸，替换 109 组命中注册的 447 个表面分支；80 条单位毁伤分支逐项保持，坦克被击毁的烟尾爆炸保留。只改视觉引用，伤害、弹道、音效与 preview.19 原生顺风燃烧烟保持。官方构建、完整注册表核验和安装通过，实际画面待验。见 [命中方案](Mods/BattleAtmosphere/IMPACT_VISUALS.md)、[调用清单](docs/impact-visual-audit.json) 和 [验证摘要](docs/validation-smoke-preview20.json)。
 
 支持范围是征服与歼灭遭遇战，算法从当前场景提取部署区和导航，不依赖黑森林专用坐标。运行组件目前严格绑定 WARNO **revision 201602**；其他游戏版本需要重新核验原生接口。
 

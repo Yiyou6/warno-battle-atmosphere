@@ -1,18 +1,20 @@
 {
-  "version": "skirmish10.1",
-  "status": "installed-preview; ordinary-lobby-and-10v10-battle-unverified",
-  "installed_at": "2026-11-08T01:59:54.000438+00:00",
+  "version": "skirmish10.2",
+  "status": "installed-preview; normal-lobby-visible-slots-and-full-battle-pending",
+  "installed_at": "2026-11-08T02:48:38.005813+00:00",
   "runtime": {
-    "status": "native-capacity-and-20-camp-fixtures-passed; ordinary-lobby-and-battle-unverified",
-    "dll_sha256": "2fa8d3090bae827afad37ef2591b2fab7af9abb2375a65f2a995fe70cb4c7b4d",
+    "status": "native-capacity-visibility-and-20-camp-fixtures-passed; ordinary-lobby-and-battle-unverified",
+    "dll_sha256": "3e9ef0e3b878306942f471c1f804d1e3f1e78dd10f475aa4ef3bacc527afb2c8",
     "exe_sha256": "70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8",
     "tests": {
       "blackforest": {
-        "receipt_sha256": "0d93f342b93fd68e49e68bbdc95ddc3aca33e9acc1b52260584008c8e0086abd",
+        "receipt_sha256": "ec3ab22db5292d577538f5fbd2dfadb5cfcb4c43035af58a40bc601113b19d7d",
         "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
         "normal_exit": true,
         "native_capacity_cases": 12,
-        "prior_exit_warning": false,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
+        "prior_exit_warning": true,
         "max_particles": 200000,
         "headless_particle_counts": [
           0
@@ -30,10 +32,12 @@
         "human_units_ordered": 0
       },
       "hesse": {
-        "receipt_sha256": "1c39964580028ebb34b8142c3efbe4f66cf9e8263021ce21371b71433e0b1b5a",
+        "receipt_sha256": "8d6703739fcc2e073104dd1a1f877520c1e8ff4c72b4da76a393d10e5760a8d9",
         "scenario": "_2x2_Hesse_2vs2_DEST",
         "normal_exit": true,
         "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
         "prior_exit_warning": false,
         "max_particles": 200000,
         "headless_particle_counts": [
@@ -52,18 +56,22 @@
         "human_units_ordered": 0
       },
       "disabled": {
-        "receipt_sha256": "622e9f076990d87be2ef2d997348e7a849d859f55dfa3d0a4b35a75e7be409fc",
+        "receipt_sha256": "7bc487effbc5146293615296404e988e92754d8165abe821b3f1d89541aafc2c",
         "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
         "normal_exit": true,
         "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
         "prior_exit_warning": false,
-        "scope": "capacity-calculation-only; exits before empty-world loading"
+        "scope": "native-lobby-calculation-only; exits before empty-world loading"
       },
       "installed": {
-        "receipt_sha256": "2eec3b64ccfe8eb4c68d1f616d76dbe17f7f54fe769b85fba99d29f7c506edf7",
+        "receipt_sha256": "ab35109867367ba5896479a9194be2861e5d916e22ccc568dfa0b3c90da621f0",
         "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
         "normal_exit": true,
         "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
         "prior_exit_warning": true,
         "max_particles": 200000,
         "headless_particle_counts": [
@@ -81,7 +89,7 @@
     "historical_full_AI_suite_rerun": false,
     "allowed_protected_transitions": {
       "version.dll": [
-        "2fa8d3090bae827afad37ef2591b2fab7af9abb2375a65f2a995fe70cb4c7b4d",
+        "3e9ef0e3b878306942f471c1f804d1e3f1e78dd10f475aa4ef3bacc527afb2c8",
         "735a2c011ee0f7a8f8a934dda710c34c87f81af7501e3830bd71427c530bd7e3"
       ],
       "Mods/BattleAtmosphere/Runtime/Python/ba_autorun.py": [
@@ -90,9 +98,15 @@
       ]
     }
   },
+  "previous_failure": "skirmish10.1 normal local lobby had 8 allocated/visible seats, confirmed by read-only snapshot",
+  "fix": [
+    "Restore local room capacity at the native settings accessor without changing actual human/AI counts",
+    "Expose native empty AI seats in the 20-row local lobby"
+  ],
   "ai_algorithm": "preview.6 unchanged",
   "visual_profile": "smoke-preview.20 unchanged",
   "income_changed": false,
-  "user_action": "Restart WARNO, enable only BattleAtmosphere, create a new local skirmish and fill the team lists.",
-  "backup": "archive/skirmish10-before.zip"
+  "backup": "archive/skirmish10.1-before-ui-fix.zip",
+  "normal_lobby_verified": false,
+  "user_action": "Restart WARNO, enable only BattleAtmosphere, create a local skirmish and check adding AI to ten seats on each side."
 }

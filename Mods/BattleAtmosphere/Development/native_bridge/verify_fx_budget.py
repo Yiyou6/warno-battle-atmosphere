@@ -13,7 +13,7 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def verify_fx_budget(installed=False):
     manifest=json.loads((MOD/'Runtime/build-manifest.json').read_text())
-    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3+skirmish10.1':
+    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3+skirmish10.2':
         if __package__:
             from .verify_skirmish10 import verify_skirmish10
         else:
