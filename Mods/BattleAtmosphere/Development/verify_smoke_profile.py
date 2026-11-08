@@ -162,7 +162,7 @@ def main():
     (DEV / 'smoke-verification.json').write_text(json.dumps(result, indent=2) + '\n')
     print('PASS: native independent bridge wind-smoke copied exactly; old five custom smoke layers removed')
     print('PASS: wreck/building/ground burning routes verified; retained flames, explosions, AI and budget checked')
-    print('PASS: %d warhead impact routes use 122 mm HE; %d destruction routes preserved' %
+    print('PASS: %d approved impact routes checked; %d destruction routes preserved' %
           (plume['impact_routes']['changed_routes'],plume['impact_routes']['protected_destruction_routes']))
 
 if __name__ == '__main__':

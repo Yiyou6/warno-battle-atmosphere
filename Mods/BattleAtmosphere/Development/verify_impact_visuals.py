@@ -10,6 +10,9 @@ from verify_map_wreck import fingerprint
 
 def verify_impacts():
     report=json.loads((DEV/'impact-visual-source.json').read_text())
+    if 'caliber_policy' in report:
+        from verify_impact_caliber import verify
+        return verify(report)
     enums=(MOD/'CommonData/Gameplay/Constantes/Enumerations/ImpactSurface.ndf').read_text(encoding='utf-8-sig')
     surfaces={n:int(v) for n,v in re.findall(r'(?m)^\s*(\w+)\s+is\s+(\d+)\s*$',enums)}
     assert surfaces==dict(Ground=0,Water=1,Air=2,Wall=3,Vehicle=4,FlyingVehicle=5,Missile=6,Ricochet=7)

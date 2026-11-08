@@ -13,8 +13,12 @@ DEV=Path(__file__).resolve().parent
 BRIDGE=DEV/'native_bridge'
 BOOT=ROOT/'Mods/BAScriptProbe/AutoloadBoot'
 parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--label',default='audit',choices=['audit','collision-before','collision-after','repeat','fixture-after'])
+parser.add_argument('--label',default='audit',choices=['audit','collision-before','collision-after','repeat','fixture-after','smoke21'])
 args=parser.parse_args()
+running=subprocess.run(['powershell','-NoProfile','-Command',
+    'Get-Process WARNO -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id'],
+    capture_output=True,text=True)
+if running.stdout.strip():raise RuntimeError('WARNO is running; no diagnostic started')
 assert hashlib.sha256((BOOT/'WARNO.exe').read_bytes()).hexdigest()=='70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8'
 tcc=Path(os.environ['TEMP'])/'codex-warno-compiler/tcc/tcc.exe'
 previous_dll=(BOOT/'version.dll').read_bytes()

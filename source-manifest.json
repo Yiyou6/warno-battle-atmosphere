@@ -1,6 +1,10 @@
 {
-  "version": "combined-arms-preview.6 + smoke-preview.20 + vfx-budget.3 + skirmish10.3",
+  "version": "combined-arms-preview.6 + smoke-preview.21 + vfx-budget.3 + skirmish10.3",
   "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "c10b2a03d909c8e03522a1e6cbf8e7edc237607fe32054f3958ebebb37736fa7"
+    },
     {
       "path": "Mods/BAScriptProbe/AutoRuntimeRoot/CommonData/Python/Eugen/ba_fixture.py",
       "original_sha256": "722c212f25fb7e1f878778c8b893121b927a384e23f2f3a816e45c64a0ed569e",
@@ -23,8 +27,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/apply_smoke_profile.py",
-      "original_sha256": "522c8b809f0ae93928e8bacad13fc711c00de682ad0bd26fd801cc03dd686cc9",
-      "sha256": "60e0938b996811822e4f9c85ecc188e24c1602e01b9fea487598bc484d03cd05"
+      "original_sha256": "277da1d74652c18f19eccc1977171ba1889939dd41eceda2b91205cba3aa7a8d",
+      "sha256": "ac3ccfb06d021c2ef95f81b2aa92a81edd9a22f0084dea7d2ed6a15db50b82cf"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/audit_native_fields.py",
@@ -68,8 +72,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/check_mod_compatibility.py",
-      "original_sha256": "25f92fca61aadbcce6276897576e0bb3edbee8c3b4a4a1f32de03bfa1f22f5f0",
-      "sha256": "25f92fca61aadbcce6276897576e0bb3edbee8c3b4a4a1f32de03bfa1f22f5f0"
+      "original_sha256": "9c199172912e732f9fd9c9430da395322780a7d944916f44108f0d9f01d694fa",
+      "sha256": "9c199172912e732f9fd9c9430da395322780a7d944916f44108f0d9f01d694fa"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/check_transport_emergency.py",
@@ -147,9 +151,14 @@
       "sha256": "1370b88a0e65f01c3c2f43c8897afde33302c1b656910efe10c28e6888bb73c0"
     },
     {
+      "path": "Mods/BattleAtmosphere/Development/impact_caliber.py",
+      "original_sha256": "fbf1cd2e0221a8965c3ad7a00b7976b52fca87644fada12cc9b608465e084491",
+      "sha256": "fbf1cd2e0221a8965c3ad7a00b7976b52fca87644fada12cc9b608465e084491"
+    },
+    {
       "path": "Mods/BattleAtmosphere/Development/impact_visuals.py",
-      "original_sha256": "b8f2b741061194018a91bcd7ba7db8b14e076a3960d013e4dbb0392b5ae4eb89",
-      "sha256": "b8f2b741061194018a91bcd7ba7db8b14e076a3960d013e4dbb0392b5ae4eb89"
+      "original_sha256": "2f6b5abe44cfb10c45b1d5269b0dd3a92125b8e080ce1f8c71390fd4556216bd",
+      "sha256": "2f6b5abe44cfb10c45b1d5269b0dd3a92125b8e080ce1f8c71390fd4556216bd"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/inspect_compiled.py",
@@ -173,8 +182,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/install_smoke_profile.py",
-      "original_sha256": "880bf86c282dd7cbdeaaa20704380cbf0df0f8ff222a407bb18469fe945a6d6a",
-      "sha256": "706b9fee234189e506376baff515a101c11fd615e505db31829ba879781323c4"
+      "original_sha256": "250da6cfa64545fba0299d47d25988c5c3b0586bedc84cdd8a54dd56c219a77d",
+      "sha256": "dd3671df6b843dc8245c934affc6f0c73151c9ceefeea43da64f92f20c485b51"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/map_wreck_fire.py",
@@ -293,8 +302,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/verify_skirmish10.py",
-      "original_sha256": "3a4d20d0f0009b80fad7b9dedbcc1dde36a627a026d66a7aed75678ad675a78e",
-      "sha256": "4476ee53f3c2bc23e34cfa95510ffbf4de309adf4ddf2f2925255fa5816d5941"
+      "original_sha256": "f9ccf412ec525641db6759212a81117a6148471b76656d4f55335ac189925c08",
+      "sha256": "6913fee82b186f001a8a024d7d8559cc419cfe4ea21e51ef273839450953d20f"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/version.def",
@@ -418,13 +427,18 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/verify_explosion_scale.py",
-      "original_sha256": "74fc1543d911bbe8205fdbe67c1766aaf3e00db97b85addc07f1d87163682115",
-      "sha256": "b8b2bda005addeb39e7772fbd02b8599b8fcdf8b652e84dc89598aa174d3f8e5"
+      "original_sha256": "452f20f1c3dad54a7d17bd8c99899a4ea63f5647e3cd3c06e3f44997d3a5b1d0",
+      "sha256": "7f8156fda115b2f14c09edf1240e9cfe50b74f869db7fb52a3afe79cc83a3b04"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/verify_impact_caliber.py",
+      "original_sha256": "5934be78d9e8741c943d9e327c58ba617535af564a141050a889627c373b7656",
+      "sha256": "5934be78d9e8741c943d9e327c58ba617535af564a141050a889627c373b7656"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/verify_impact_visuals.py",
-      "original_sha256": "927e33eb334cc2843bbeed266fd38994dd4b1f21aabdad8df6b3f7f30791ffc5",
-      "sha256": "927e33eb334cc2843bbeed266fd38994dd4b1f21aabdad8df6b3f7f30791ffc5"
+      "original_sha256": "71fb60efbcfd84a0084ef545a20a0046c24b02a84137eba3385bf9dc8d158562",
+      "sha256": "71fb60efbcfd84a0084ef545a20a0046c24b02a84137eba3385bf9dc8d158562"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/verify_map_wreck.py",
@@ -453,8 +467,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/Development/verify_smoke_profile.py",
-      "original_sha256": "38714400d68be67b0338fd4b4b64ec800d392eb75c48d533630c52b5835262d4",
-      "sha256": "1300cb12c2bf8f77677e942b0960d1cf3c1eb1520f6ffd4e376fc4694288672e"
+      "original_sha256": "4743f1a535847318b6bdcfd9773d28f0170f1e490794e00226b145bebae2df9a",
+      "sha256": "e9fdf4f1f20546867db9145be816b36268ed45acf11ce09348ebdb992638f782"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf",
@@ -3937,9 +3951,19 @@
       "sha256": "f0e04e2d1fe6e95fea48b6466ed56b1a1447b5f396470837275a698d5a762be6"
     },
     {
+      "path": "Mods/BattleAtmosphere/GameData/Generated/Gameplay/Gfx/Ammunition.ndf",
+      "original_sha256": "324a4901ff822d33c1006ab99fa4d4fed95d1d4ea7661a3c37d7ebaad89ea9ae",
+      "sha256": "324a4901ff822d33c1006ab99fa4d4fed95d1d4ea7661a3c37d7ebaad89ea9ae"
+    },
+    {
       "path": "Mods/BattleAtmosphere/GameData/Generated/Gameplay/Gfx/MimeticImpactMapping.ndf",
-      "original_sha256": "f66c8035f26dc37c14f0891d1a43d4c27ab017fc2dd7e80d6805b53d5237e304",
-      "sha256": "f66c8035f26dc37c14f0891d1a43d4c27ab017fc2dd7e80d6805b53d5237e304"
+      "original_sha256": "e2c9491b48e1d41494c003dd39f1348f2fe5f8d04798283d4dba1217bf4699f4",
+      "sha256": "e2c9491b48e1d41494c003dd39f1348f2fe5f8d04798283d4dba1217bf4699f4"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf",
+      "original_sha256": "18a43238afdb058cd5b5f8ac6672dfa7e8cfba53073685f5a6348924d1f43935",
+      "sha256": "18a43238afdb058cd5b5f8ac6672dfa7e8cfba53073685f5a6348924d1f43935"
     },
     {
       "path": "Mods/BattleAtmosphere/GameData/Localisation/BattleAtmosphere/COMPANIES.csv",
@@ -3983,8 +4007,8 @@
     },
     {
       "path": "Mods/BattleAtmosphere/IMPACT_VISUALS.md",
-      "original_sha256": "c00d72d091f1d51cbdddd5efb2ccfe2a4ce83d137578b37e96214317c3d94a38",
-      "sha256": "c00d72d091f1d51cbdddd5efb2ccfe2a4ce83d137578b37e96214317c3d94a38"
+      "original_sha256": "1d481e7092936b1e02075df140db01a7505992510c0a35970954a90555821098",
+      "sha256": "1d481e7092936b1e02075df140db01a7505992510c0a35970954a90555821098"
     },
     {
       "path": "Mods/BattleAtmosphere/README.md",
@@ -4053,11 +4077,19 @@
     },
     {
       "path": "README.md",
-      "sha256": "4bf34f06557bb09ce22c20f6bcff05f236d9474dd59c36212b9d5444a626f6c1"
+      "sha256": "d428768149666b00e4c614647db65d33fb4b12814762b05141548dea7ca5bcf2"
+    },
+    {
+      "path": "docs/impact-visual-audit.json",
+      "sha256": "3bb5d9060041e984111bcdc5643d218ebd092f1cac1436f0d47d1a2e3c5282b3"
     },
     {
       "path": "docs/validation-skirmish10.3.json",
       "sha256": "0de922d3fda1b3bdb31321fe37b7ad54c096f2292baad4895ff7a7e19ecafe5b"
+    },
+    {
+      "path": "docs/validation-smoke-preview21.json",
+      "sha256": "1c93c4538a71a4ef74cdc4fdcaed13bfee69c92366e74fd1f9892a5f1e0224d3"
     }
   ]
 }

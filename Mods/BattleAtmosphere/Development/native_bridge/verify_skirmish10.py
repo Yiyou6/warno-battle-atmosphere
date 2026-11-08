@@ -73,7 +73,7 @@ def preserved_sources():
             TRANSPORT:{hashlib.sha256(z.read(TRANSPORT)).hexdigest(),sha(ROOT/TRANSPORT)},
         }
     release=json.loads((DEV/'smoke-release.json').read_text(encoding='utf-8'))
-    assert release['version']=='smoke-preview.20'
+    assert release['version'] in ('smoke-preview.20', 'smoke-preview.21')
     installed=Path.home()/'Saved Games/EugenSystems/WARNO/mod/BattleAtmosphere'
     for name,digest in release['outputs'].items():
         assert sha(installed/name)==digest,('Installed mod data changed',name)

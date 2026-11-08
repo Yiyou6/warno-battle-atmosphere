@@ -19,7 +19,7 @@ from bridge_smoke import SMOKE_BANK
 def verify_explosions(current):
     with zipfile.ZipFile(DEV/BACKUP) as z:
         installed=json.loads(z.read('development/smoke-release.json'))
-        assert installed['version']=='smoke-preview.19'
+        assert installed['version'] in ('smoke-preview.19', 'smoke-preview.20')
         assert installed['explosions']['visual_scale']==3
         assert hashlib.sha256(z.read('installed/Gen/NDF/GFX/GameFx.ndfbin')).hexdigest()==installed['outputs']['Gen/NDF/GFX/GameFx.ndfbin']
     assert VISUAL_SCALE==3 and SPATIAL_SCALE==3.3

@@ -123,7 +123,8 @@ def extend_sources(z,before,after,reference_fx):
     ammo={n:z.read('GameData/Generated/Gameplay/Gfx/'+n+'.ndf').decode('utf-8-sig') for n in ('Ammunition','AmmunitionMissiles')}
     report=analyze(original,reference_fx,ammo)
     before[MAPPING]=original;after[MAPPING]=apply(original,report)
-    return report
+    from impact_caliber import extend
+    return extend(z,before,after,report)
 
 
 if __name__=='__main__':
