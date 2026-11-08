@@ -250,7 +250,7 @@ static PyObject *lease_ai_unit(PyObject *self, PyObject *arg) {
     memcpy(&id, packed->data, 8); memcpy(&enabled, packed->data + 8, 4);
     for (i = 0; i < leased_count && leased_ids[i] != id; i++);
     if (enabled) {
-        if (!native_ai_owner(id) || leased_count >= 4096) goto done;
+        if (!native_ai_owner(id) || (i == leased_count && leased_count >= 4096)) goto done;
         if (i == leased_count) {
             ((void (*)(void *, uint64_t))(game + 0xd814d0))(manager, id);
             leased_ids[leased_count++] = id;
@@ -519,22 +519,36 @@ static PyObject *world_unit_snapshot(PyObject *self, PyObject *unused) {
     unsigned char *list = *(unsigned char **)(game + 0x3389840);
     unsigned char *player, *unit_list, *owner, *spatial, *output;
     uint64_t *players, *units;
-    uint32_t pn, un, i, j, count = 0;
+    unsigned char *player_views[32];
+    uint64_t *unit_views[32];
+    uint32_t sizes[32];
+    uint32_t pn, un, i, j, count = 0, capacity = 0;
     PyObject *result;
     if (!in_callback || GetCurrentThreadId() != python_thread || !readable(list, 0x30)) return none();
     players = *(uint64_t **)(list + 0x20);
     pn = *(uint32_t *)(list + 0x28);
     if (pn > 32 || !readable(players, pn * 8)) return none();
-    output = HeapAlloc(GetProcessHeap(), 0, 4096 * 40);
-    if (!output) return none();
-    for (i = 0; i < pn && count < 4096; i++) {
+    /* Reserve the complete snapshot before iterating. A global 4096-row cut
+       silently omitted later owners in large matches. Per-owner bounds stay
+       unchanged; at most 32 * 4096 records (5 MiB), on the simulation thread. */
+    for (i = 0; i < pn; i++) {
+        sizes[i] = 0;
         player = find_component(players[i], 0x81, 2);
         unit_list = find_component(players[i], 0x86, 2);
         if (!readable(player, 0x48) || !readable(unit_list, 0x30)) continue;
         units = *(uint64_t **)(unit_list + 0x18);
         un = *(uint32_t *)(unit_list + 0x20);
         if (un > 4096 || !readable(units, un * 8)) continue;
-        for (j = 0; j < un && count < 4096; j++) {
+        player_views[i] = player; unit_views[i] = units; sizes[i] = un;
+        capacity += un;
+    }
+    output = HeapAlloc(GetProcessHeap(), 0, capacity ? capacity * 40 : 1);
+    if (!output) return none();
+    for (i = 0; i < pn; i++) {
+        un = sizes[i];
+        if (!un) continue;
+        player = player_views[i]; units = unit_views[i];
+        for (j = 0; j < un; j++) {
             owner = find_component(units[j], 0x61, 0);
             spatial = find_component(units[j], 0x6b, 0);
             if (!readable(owner, 0x20) || !readable(spatial, 0x3c) ||

@@ -13,8 +13,16 @@ def distance(a,b):return math.hypot(a[0]-b[0],a[1]-b[1])
 
 class Mechanized(object):
     def __init__(self):
-        self.journeys={};self.cooldown={};self.escorts={}
+        self.journeys={};self.cooldown={};self.escorts={};self.attempts={}
         self.delivered=0;self.emergency=0;self.started=0
+    def acquire(self,units):
+        # A paired order needs every lease. Roll back partial acquisitions so
+        # native strategy and the transport controller cannot fight each other.
+        for uid in units:
+            if status(native.lease_ai_unit(struct.pack('<Qi',uid,1)))!=1:
+                for other in units:native.lease_ai_unit(struct.pack('<Qi',other,0))
+                return False
+        return True
     def release(self,carrier,reason,tick):
         journey=self.journeys.pop(carrier,None)
         if journey:
@@ -82,7 +90,8 @@ class Mechanized(object):
                 self.release(carrier,'unloaded' if survivors else 'passengers_lost',c.tick)
                 if survivors:self.escorts[carrier]={'passengers':survivors,'owner':row[1],'expires':c.tick+240}
                 continue
-            for uid in [carrier]+j['passengers']:native.lease_ai_unit(struct.pack('<Qi',uid,1))
+            if not self.acquire([carrier]+j['passengers']):
+                self.release(carrier,'lease_rejected',c.tick);continue
             pos=(row[5],row[6]);remaining=distance(pos,j['target'])
             if remaining<j['best']-8*SCALE:j['best']=remaining;j['progress']=c.tick
             # A native route can initially head away from the destination to
@@ -114,18 +123,23 @@ class Mechanized(object):
                         j['best']=distance(pos,target);j['progress']=c.tick
                         j['retargets']=j.get('retargets',0)+1
                         native.log('TRANSPORT_RETARGET '+repr((carrier,front,depth,target)))
-        begun=0
-        for carrier,passengers in sorted(pairs.items()):
+        begun=0;attempted=0
+        # Bound failed searches too. Cached, inaccessible dropoffs otherwise
+        # make every waiting carrier retry in the same callback. Oldest-first
+        # rotation prevents early owners monopolising this shared budget.
+        for carrier,passengers in sorted(pairs.items(),key=lambda p:(self.attempts.get(p[0],-10000),p[0])):
             if carrier in self.journeys or self.cooldown.get(carrier,0)>c.tick:continue
             flags=c.activity.get(carrier,-1)
             if flags<0 or flags&45 or not flags&2:continue
-            if begun>=4 or c.nav.checks>=80:break
+            if begun>=4 or attempted>=16 or c.nav.checks>=80:break
+            attempted+=1;self.attempts[carrier]=c.tick
             row=live[carrier];choice=self.delivery_point(c,carrier,row,passengers,all_units)
             if choice is None:continue
             unused,target,front,depth=choice
             for uid in [carrier]+passengers:
                 if uid in c.claims:c.release(uid,'mechanized_transfer')
-                native.lease_ai_unit(struct.pack('<Qi',uid,1))
+            if not self.acquire([carrier]+passengers):
+                self.cooldown[carrier]=c.tick+20;continue
             result=status(native.unload_at_ai_unit(struct.pack('<Qfff',carrier,target[0],target[1],row[7])))
             if result!=1:
                 for uid in [carrier]+passengers:native.lease_ai_unit(struct.pack('<Qi',uid,0))
@@ -142,6 +156,8 @@ class Mechanized(object):
             if carrier not in live or live[carrier][1]!=e['owner'] or c.tick>=e['expires'] or not any(uid in live for uid in e['passengers']):del self.escorts[carrier]
         for carrier in list(self.cooldown):
             if carrier not in live or c.tick>=self.cooldown[carrier]:del self.cooldown[carrier]
+        for carrier in list(self.attempts):
+            if carrier not in live:del self.attempts[carrier]
     def escort_goal(self,c,row,goal,live):
         escort=self.escorts.get(row[0])
         if escort is None or goal is None:return goal

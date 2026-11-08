@@ -1,0 +1,150 @@
+{
+  "version": "skirmish10.3",
+  "status": "installed; final-native-regressions-passed; ordinary-final-build-battle-pending",
+  "installed_at": "2026-11-08T03:35:12.254796+00:00",
+  "runtime": {
+    "status": "native-capacity-visibility-and-20-camp-fixtures-passed; ordinary-lobby-and-battle-unverified",
+    "dll_sha256": "ade99b89483b79d2d8aebb45ac879573fa122430c73631251a4751238ec84c6f",
+    "exe_sha256": "70f34d844ebf23eea92d535fad0fffb6e0bc60dd1f64cc80c2b903d06abab3a8",
+    "tests": {
+      "blackforest": {
+        "receipt_sha256": "fbe2ca68103fb7e37755713e3c7dbf17ae2827d73a018019ccbd4af6ce420cad",
+        "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
+        "normal_exit": true,
+        "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
+        "prior_exit_warning": false,
+        "max_particles": 200000,
+        "headless_particle_counts": [
+          0
+        ],
+        "effective_limits": [
+          160000
+        ],
+        "camps": 20,
+        "camps_per_side": 10,
+        "ai_camps": 19,
+        "units": 80,
+        "moving_ai_camps": 19,
+        "movement_basis": "actual-distance; direction separately tested offline",
+        "snapshots": 18,
+        "last_tick": 170,
+        "script_placeholder_units_ordered": 0
+      },
+      "hesse": {
+        "receipt_sha256": "aa74481be59734feb20f9f54d48f033b20536cd960ab71c8d2040edb01e85641",
+        "scenario": "_2x2_Hesse_2vs2_DEST",
+        "normal_exit": true,
+        "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
+        "prior_exit_warning": false,
+        "max_particles": 200000,
+        "headless_particle_counts": [
+          0
+        ],
+        "effective_limits": [
+          160000
+        ],
+        "camps": 20,
+        "camps_per_side": 10,
+        "ai_camps": 19,
+        "units": 80,
+        "moving_ai_camps": 19,
+        "movement_basis": "actual-distance; direction separately tested offline",
+        "snapshots": 18,
+        "last_tick": 170,
+        "script_placeholder_units_ordered": 0
+      },
+      "disabled": {
+        "receipt_sha256": "9e147d0f97343ef24cb09b84d466af7f1a197f8eb9e21e80f9c0c6e8323a6816",
+        "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
+        "normal_exit": true,
+        "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
+        "prior_exit_warning": false,
+        "scope": "native-lobby-calculation-only; exits before empty-world loading"
+      },
+      "transport": {
+        "receipt_sha256": "621067a65234fe23db41a093ec3f20c4530c25d6200bdad414a4802ccd1e31a5",
+        "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
+        "normal_exit": true,
+        "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
+        "prior_exit_warning": true,
+        "max_particles": 200000,
+        "headless_particle_counts": [
+          0
+        ],
+        "effective_limits": [
+          160000
+        ],
+        "paired_deliveries": 8,
+        "forward_after_unload_over_25m": 16
+      },
+      "installed": {
+        "receipt_sha256": "03cba5fb2ec303c84f49884a50ca0068d967b8f2dfd777e7970faeb5b1142be1",
+        "scenario": "_2x3_BlackForestStorm_2vs2_CONQ",
+        "normal_exit": true,
+        "native_capacity_cases": 12,
+        "native_settings_cases": 6,
+        "native_visibility_cases": 6,
+        "prior_exit_warning": false,
+        "max_particles": 200000,
+        "headless_particle_counts": [
+          0
+        ],
+        "effective_limits": [
+          160000
+        ],
+        "human_and_script_identity_guards": "native-rejected"
+      }
+    },
+    "max_particles": 200000,
+    "frontage_and_tactical_goals_unchanged": true,
+    "transport_failed_search_budget": 16,
+    "transport_queue_oldest_first": true,
+    "transport_pair_leases_atomic": true,
+    "bridge_capacity_repairs": [
+      "complete-multi-owner-snapshot",
+      "renew-existing-lease-at-capacity"
+    ],
+    "offline_tests": 67,
+    "standalone_capacity_checks": 7,
+    "test_only_observer_added": true,
+    "installed_mod_files_unchanged": 38,
+    "historical_full_AI_suite_rerun": false,
+    "allowed_protected_transitions": {
+      "version.dll": [
+        "735a2c011ee0f7a8f8a934dda710c34c87f81af7501e3830bd71427c530bd7e3",
+        "ade99b89483b79d2d8aebb45ac879573fa122430c73631251a4751238ec84c6f"
+      ],
+      "Mods/BattleAtmosphere/Runtime/Python/ba_autorun.py": [
+        "cffdb4570765b8b6261e7e2cf809d5659f5b54bbf28aa716a2525a1dbf4fe499",
+        "e0dfd444dbe8f879d99574d05ab6e8223b597b0da2ae2a21dc9992ec4e8a3608"
+      ],
+      "Mods/BattleAtmosphere/Runtime/Python/ba_transport.py": [
+        "59f0419ec5b1326f061d606ab67830621cac3cc23d048329ede6b194765c368c",
+        "b8d5198944317b0acebb976c7fe99960b1073b3618f7edb36204731d772a9df5"
+      ]
+    }
+  },
+  "fixes": [
+    "complete multi-owner unit snapshot",
+    "renew existing leases at capacity",
+    "bounded fair transport search retries",
+    "atomic transport pair lease acquisition and renewal"
+  ],
+  "income_changed": false,
+  "frontage_and_tactical_goals_changed": false,
+  "visual_data_changed": false,
+  "ordinary_prior_build_evidence": "skirmish20-live-audit.json",
+  "remaining_limits": [
+    "dense reinforcement saturation",
+    "final-build large-battle timing and rendered performance not measured",
+    "per-owner snapshot cap 4096; control lease cap 4096"
+  ]
+}

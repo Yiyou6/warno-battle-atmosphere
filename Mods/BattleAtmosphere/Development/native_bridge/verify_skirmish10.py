@@ -15,8 +15,9 @@ BASE=Path(__file__).resolve().parent
 DEV=BASE.parent
 MOD=DEV.parent
 ROOT=MOD.parents[1]
-STATUS='spatial-runtime-preview.6+vfx-budget.3+skirmish10.2'
+STATUS='spatial-runtime-preview.6+vfx-budget.3+skirmish10.3'
 AUTORUN='Mods/BattleAtmosphere/Runtime/Python/ba_autorun.py'
+TRANSPORT='Mods/BattleAtmosphere/Runtime/Python/ba_transport.py'
 OBSERVER="        if native.fixture_mode()=='tenvten':\n            import ba_fixture\n            ba_fixture.tenvten_observe(controller.tick)\n"
 PREVIOUS_EXIT_WARNING='[Game did not terminate properly.] Game did not terminate properly. Do you want to load the last known good configuration?\n[Game did not terminate properly.] Checking the integrity of the data files is recommended. This might take several minutes.\nCheck data integrity now?'
 
@@ -31,7 +32,7 @@ def preserved_sources():
     with zipfile.ZipFile(DEV/'archive/skirmish10-before.zip') as z:
         previous=json.loads(z.read('Mods/BattleAtmosphere/Runtime/build-manifest.json'))
         for name,digest in previous['source_sha256'].items():
-            if Path(name).name in ('probe_bridge.c','embedded_python.h','ba_autorun.py','ba_fixture.py'):continue
+            if Path(name).name in ('probe_bridge.c','embedded_python.h','ba_autorun.py','ba_fixture.py','ba_transport.py'):continue
             assert sha(ROOT/name)==digest,('Frozen input changed',name)
         old=z.read(AUTORUN).decode().replace('\r\n','\n')
         current=(ROOT/AUTORUN).read_text(encoding='utf-8')
@@ -40,6 +41,19 @@ def preserved_sources():
         path='Mods/BattleAtmosphere/Development/native_bridge/probe_bridge.c'
         old=z.read(path).decode().replace('\r\n','\n')
         current=(ROOT/path).read_text(encoding='utf-8')
+        # .3 permits two bounded bridge repairs, not strategic AI changes.
+        boundary=json.loads((DEV/'skirmish20-capacity-after.json').read_text(encoding='utf-8'))
+        assert boundary['source_sha256']==sha(ROOT/path)
+        assert boundary['returncode']==0 and not boundary['stderr'].strip()
+        assert boundary['stdout'].count('pass=1')==7 and 'pass=0' not in boundary['stdout']
+        def body(text,name):
+            start=text.rfind('static ',0,text.index(name+'('))
+            return text[start:text.index('\n}\n',start)+3]
+        with zipfile.ZipFile(DEV/'archive/skirmish10.2-before-capacity-audit.zip') as prior:
+            prior_bridge=prior.read(path).decode().replace('\r\n','\n')
+        for name in ('lease_ai_unit','world_unit_snapshot'):
+            current=current.replace(body(current,name),body(prior_bridge,name),1)
+        assert current==prior_bridge,'Changes outside two audited capacity functions'
         additions=[
             '#ifdef BA_PROXY\nstatic void lobby_capacity_selftest(void);\n#endif\n',
             '    lobby_capacity_selftest();\n',
@@ -50,9 +64,13 @@ def preserved_sources():
             assert current.count(addition)==1,addition
             current=current.replace(addition,'')
         assert current==old,'Changes outside bounded lobby hook'
+        # Audited transport-only queue budget; delivery geometry and tactical
+        # goals remain unchanged. Its behavior is covered by the offline suite.
+        assert sha(ROOT/TRANSPORT)=='59f0419ec5b1326f061d606ab67830621cac3cc23d048329ede6b194765c368c'
         transitions={
             'version.dll':{hashlib.sha256(z.read('version.dll')).hexdigest(),sha(BASE/'version.dll')},
             AUTORUN:{hashlib.sha256(z.read(AUTORUN)).hexdigest(),sha(ROOT/AUTORUN)},
+            TRANSPORT:{hashlib.sha256(z.read(TRANSPORT)).hexdigest(),sha(ROOT/TRANSPORT)},
         }
     release=json.loads((DEV/'smoke-release.json').read_text(encoding='utf-8'))
     assert release['version']=='smoke-preview.20'
@@ -125,13 +143,39 @@ def validate_receipt(name,scenario,manifest,enabled=True,twenty=True,installed=F
         assert len(owners)==20
         assert all(len({row[1] for row in first.values() if row[2]==side})==10 for side in (0,1))
         ai={row[1] for row in first.values() if row[3]==6};assert len(ai)==19
-        human={row[0] for row in first.values() if row[3]==7};assert len(human)==4
+        protected={row[0] for row in first.values() if row[3]==7};assert len(protected)==4
         moved={row[1] for uid,row in last.items() if uid in first and row[3]==6 and
                math.hypot(row[4]-first[uid][4],row[5]-first[uid][5])>25*215}
         assert moved==ai,'Some AI camps have no observed movement'
-        assert not human.intersection(row[0] for row in events(out,'SPACE_ORDER'))
+        assert not protected.intersection(row[0] for row in events(out,'SPACE_ORDER'))
         result.update(camps=20,camps_per_side=10,ai_camps=19,units=80,moving_ai_camps=len(moved),
-                      snapshots=len(snapshots),last_tick=snapshots[-1][0],human_units_ordered=0)
+                      movement_basis='actual-distance; direction separately tested offline',
+                      snapshots=len(snapshots),last_tick=snapshots[-1][0],script_placeholder_units_ordered=0)
+    if installed:
+        assert {(0,-3),(7,-3)}.issubset(set(events(out,'IDENTITY_GUARD')))
+        result['human_and_script_identity_guards']='native-rejected'
+    return result
+
+def validate_transport(manifest):
+    name='skirmish20-transport.json'
+    result=validate_receipt(name,'_2x3_BlackForestStorm_2vs2_CONQ',manifest,twenty=False)
+    receipt=json.loads((DEV/name).read_text(encoding='utf-8'));out=receipt['stdout']
+    assert receipt['front_fixture']=='transport'
+    routes=events(out,'TRANSPORT_ROUTE');delivered=events(out,'TRANSPORT_DELIVERED')
+    assert len(routes)==len(delivered)==8,'Not all eight pairs delivered'
+    assert all(d[1] and d[2]<75 and d[3]=='delivery' for d in delivered)
+    assert all(200<=r[2]-r[3]<=551 for r in routes),'Delivery band changed'
+    last={r[0]:r for r in events(out,'SPACE_POSITIONS')[-1]}
+    # Independent direction from the fixture's physical spawn placement.
+    forward={a:f for a,h,f in events(out,'FIXTURE_EXPECTED_FRAME')}[1]
+    continued=[]
+    for carrier,passengers,front,depth,target in routes:
+        for uid in [carrier]+passengers:
+            r=last[uid]
+            if sum((r[3+k]-target[k])*forward[k] for k in range(2))/215>25:continued.append(uid)
+    assert len(continued)>=14,'Post-unload forward motion regressed'
+    assert not events(out,'TRANSPORT_EMERGENCY'),'Unexpected emergency in safe fixture'
+    result.update(paired_deliveries=8,forward_after_unload_over_25m=len(continued))
     return result
 
 def verify_skirmish10(installed=False):
@@ -141,12 +185,16 @@ def verify_skirmish10(installed=False):
     assert sha(BASE/'version.dll')==manifest['dll_sha256']
     for name,digest in manifest['source_sha256'].items():assert sha(ROOT/name)==digest,name
     transitions,files=preserved_sources()
+    offline=json.loads((DEV/'skirmish20-offline.json').read_text(encoding='utf-8'))
+    assert offline['returncode']==0 and 'Ran 67 tests' in offline['stderr'] and 'OK' in offline['stderr']
+    for name,digest in offline['source_sha256'].items():assert sha(ROOT/name)==digest,name
     tests={}
     for name,scenario,enabled in (
         ('blackforest','_2x3_BlackForestStorm_2vs2_CONQ',True),
         ('hesse','_2x2_Hesse_2vs2_DEST',True),
         ('disabled','_2x3_BlackForestStorm_2vs2_CONQ',False)):
         tests[name]=validate_receipt('skirmish10-'+name+'.json',scenario,manifest,enabled)
+    tests['transport']=validate_transport(manifest)
     if installed:
         if __package__:
             from .verify_runtime import check_local_mod_identity
@@ -158,7 +206,10 @@ def verify_skirmish10(installed=False):
                                            manifest,twenty=False,installed=True)
     return dict(status='native-capacity-visibility-and-20-camp-fixtures-passed; ordinary-lobby-and-battle-unverified',
                 dll_sha256=manifest['dll_sha256'],exe_sha256=manifest['exe_sha256'],
-                tests=tests,max_particles=200000,ai_algorithm_unchanged=True,
+                tests=tests,max_particles=200000,frontage_and_tactical_goals_unchanged=True,
+                transport_failed_search_budget=16,transport_queue_oldest_first=True,transport_pair_leases_atomic=True,
+                bridge_capacity_repairs=['complete-multi-owner-snapshot','renew-existing-lease-at-capacity'],
+                offline_tests=67,standalone_capacity_checks=7,
                 test_only_observer_added=True,installed_mod_files_unchanged=files,
                 historical_full_AI_suite_rerun=False,
                 allowed_protected_transitions={k:sorted(v) for k,v in transitions.items()})

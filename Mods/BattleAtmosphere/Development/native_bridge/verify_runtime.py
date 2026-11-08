@@ -63,7 +63,7 @@ def check_local_mod_identity(mod_root=None):
 
 def verify(include_installed=False):
     manifest = json.loads((RUNTIME / 'build-manifest.json').read_text())
-    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3+skirmish10.2':
+    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3+skirmish10.3':
         from verify_skirmish10 import verify_skirmish10
         return verify_skirmish10(include_installed)
     if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3':
