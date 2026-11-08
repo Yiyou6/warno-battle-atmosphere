@@ -1,5 +1,7 @@
 # Project instructions
 
+- 2026-11-07 skirmish10.1 预览已安装：本地容量的两个原生计算点 8→20；20 阵营/80 单位的征服和歼灭夹具通过，19 个 AI 阵营有实际移动。容量原生代码用例覆盖本地/联机和 Enabled=0；联机分支保持。AI 算法 preview.6、资金、smoke-preview.20 和 20 万粒子预算保持。普通房间添加满 20 席、完整卡组/经济及长局性能尚未验收，不把受控夹具当作普通 10v10 对局通过。见 Mods/BattleAtmosphere/SKIRMISH_10V10.md。
+
 - 当前粒子预算为 vfx-budget.3：MaxParticles = 200000，替代 640000，保留画质缩放；视觉层已更新为 smoke-preview.20，爆炸维持 3/3.3 倍。新 DLL 必须核验对应哈希和原生预算读取，不能把旧版本回执当新证据。
 
 - 当前 AI 冻结 preview.6；视觉层 smoke-preview.20。用户要求带碎片烟尾的弹头命中换为 122mm 榴弹炮五种动画，明确保护坦克被击毁时的烟尾。仅改 MimeticImpactMapping 的弹药命中视觉引用，不能编辑共享 Rubble bank 或 DestructionUnite。447 个分支已替换，80 个毁伤分支保持；步枪/机枪子弹、跳弹和战术烟幕不扩展为榴弹爆炸。伤害、弹道、音效、preview.19 原生顺风燃烧烟、爆炸 3/3.3 倍、残骸 10–1200 秒、预算 200000 和 AI 保持。构建与安装通过，画面仍待实测。

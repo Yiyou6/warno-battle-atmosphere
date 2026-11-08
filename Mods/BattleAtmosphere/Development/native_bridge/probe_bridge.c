@@ -936,11 +936,15 @@ static PyObject *import_shim(const char *name) {
         && !ensure_native_module()) return NULL;
     return ((ImportFn)(game + 0x1ca5f80))(name);
 }
+#ifdef BA_PROXY
+static void lobby_capacity_selftest(void);
+#endif
 static void automatic_load(void *launcher) {
     PyObject *module, *dict, *entry, *result;
 #ifdef BA_PROXY
     automatic_enabled = ba_allowed();
     if (automatic_enabled) open_runtime_log();
+    lobby_capacity_selftest();
 #endif
     ((void (*)(void *))(game + 0xc24020))(launcher);
 #ifdef BA_PROXY
@@ -1059,6 +1063,8 @@ static void automatic_stop(void *launcher) {
 }
 
 #include "fx_budget.h"
+#include "skirmish_lobby.h"
+#include "lobby_selftest.h"
 
 static int install(void) {
     unsigned char *site, *relay = NULL;
@@ -1088,6 +1094,7 @@ static int install(void) {
     }
 #ifdef BA_PROXY
     if (!fx_budget_install()) log_line("FX_BUDGET_HOOK_REFUSED");
+    if (!lobby_capacity_install()) log_line("SKIRMISH_CAPACITY_HOOK_REFUSED");
 #endif
     if (
 #ifdef BA_PROXY

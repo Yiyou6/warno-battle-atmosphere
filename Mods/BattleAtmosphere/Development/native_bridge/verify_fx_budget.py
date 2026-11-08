@@ -13,6 +13,12 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def verify_fx_budget(installed=False):
     manifest=json.loads((MOD/'Runtime/build-manifest.json').read_text())
+    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3+skirmish10.1':
+        if __package__:
+            from .verify_skirmish10 import verify_skirmish10
+        else:
+            from verify_skirmish10 import verify_skirmish10
+        return verify_skirmish10(installed)
     assert sha(BASE/'version.dll')==manifest['dll_sha256']
     assert sha(ROOT/'WARNO.exe')==manifest['exe_sha256']
     for name,digest in manifest['source_sha256'].items():assert sha(ROOT/name)==digest,name

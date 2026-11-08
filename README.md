@@ -1,10 +1,12 @@
 # WARNO BattleAtmosphere
 
-**运行预算已更新至 vfx-budget.3：最大粒子数 200000，保留原生画质缩放。** 新 DLL 原生预算读取、AI 启动/下令/退出和安装核验通过，燃烧沿用 smoke-preview.19，命中动画更新为 smoke-preview.20，预算 DLL 保持。见 [预算验证](docs/validation-vfx-budget3.json)。
+**skirmish10.1 预览已安装：** 本地遭遇战的两条房间容量计算路径从 8 席位扩为 20 席位，目标为双方各 10 席。两种规则的原生受控测试均创建 20 个独立阵营、80 个单位，19 个 AI 阵营均有实际移动；12 项容量用例确认本地扩容、联机原分支保持，关闭运行组件时恢复原结果。普通房间界面、完整 10v10 卡组/经济和长局性能仍待用户验收。AI 算法 preview.6、资金、smoke-preview.20 和 20 万粒子预算保持。详见 [10v10 方案与验证边界](Mods/BattleAtmosphere/SKIRMISH_10V10.md)。
+
+**运行预算已更新至 vfx-budget.3：最大粒子数 200000，保留原生画质缩放。** 新 DLL 原生预算读取、AI 启动/下令/退出和安装核验通过，燃烧沿用 smoke-preview.19，命中动画更新为 smoke-preview.20，该预算随后并入 skirmish10.1 运行 DLL。见 [预算验证](docs/validation-vfx-budget3.json)。
 
 面向最高难度遭遇战的战场氛围与作战 AI 模组源码。目标是有氛围、有章法、双方付出巨大代价才决出胜者的战斗：大多数可用部队持续向前，在推进中展开宽战线，允许有用途的局部主攻集中，不允许大批部队长期闲置后方。
 
-当前快照：**combined-arms-preview.6 + smoke-preview.20 + vfx-budget.3**。坦克榴弹及其他带碎片烟尾的弹头命中改用 122mm 榴弹炮五种随机爆炸，替换 109 组命中注册的 447 个表面分支；80 条单位毁伤分支逐项保持，坦克被击毁的烟尾爆炸保留。只改视觉引用，伤害、弹道、音效与 preview.19 原生顺风燃烧烟保持。官方构建、完整注册表核验和安装通过，实际画面待验。见 [命中方案](Mods/BattleAtmosphere/IMPACT_VISUALS.md)、[调用清单](docs/impact-visual-audit.json) 和 [验证摘要](docs/validation-smoke-preview20.json)。
+当前快照：**combined-arms-preview.6 + smoke-preview.20 + vfx-budget.3 + skirmish10.1**。坦克榴弹及其他带碎片烟尾的弹头命中改用 122mm 榴弹炮五种随机爆炸，替换 109 组命中注册的 447 个表面分支；80 条单位毁伤分支逐项保持，坦克被击毁的烟尾爆炸保留。只改视觉引用，伤害、弹道、音效与 preview.19 原生顺风燃烧烟保持。官方构建、完整注册表核验和安装通过，实际画面待验。见 [命中方案](Mods/BattleAtmosphere/IMPACT_VISUALS.md)、[调用清单](docs/impact-visual-audit.json) 和 [验证摘要](docs/validation-smoke-preview20.json)。
 
 支持范围是征服与歼灭遭遇战，算法从当前场景提取部署区和导航，不依赖黑森林专用坐标。运行组件目前严格绑定 WARNO **revision 201602**；其他游戏版本需要重新核验原生接口。
 
@@ -46,7 +48,7 @@ python -m unittest discover -s Mods/BattleAtmosphere/Development/dispersion -p '
 
 1. 准备自己的合法 WARNO 安装及相同 revision。保留官方模组工具生成的 `BattleAtmosphere` 完整基础目录，再将本仓库的 `Mods/` 叠加到游戏根目录；仓库内 8 个配置不能单独替代官方基础目录。
 2. 开发脚本使用 Python 3。原生构建使用 Windows x64 Tiny C Compiler，现有脚本约定其位于 `%TEMP%\codex-warno-compiler\tcc\tcc.exe`。这项本地工具路径尚未改为通用安装器。
-3. 在游戏根目录运行 `python Mods/BattleAtmosphere/Development/native_bridge/build_runtime.py`。它嵌入运行模块及测试夹具，输出候选 `version.dll` 和源码哈希清单；不会安装或启动游戏。单独复制 `.py` 不会改变游戏执行版本。
+3. 在游戏根目录运行 `python Mods/BattleAtmosphere/Development/native_bridge/build_runtime.py`。它嵌入运行模块及测试夹具，从自己的已匹配 EXE 提取容量测试片段（依赖 pefile/capstone），输出候选 `version.dll` 和源码哈希清单；不会安装或启动游戏。单独复制 `.py` 不会改变游戏执行版本。
 4. NDF 使用游戏自带模组生成工具编译。`Development` 中的 profile 重建、原生回归和安装工具保留开发时逻辑，部分依赖未发布的 `base.zip`、历史源码归档、测试环境和核验回执；不能把它们当成从空目录一键安装的发布器。完整原生回归入口为 `run_combined_validation.py`，运行前必须准备隔离的 `BAScriptProbe/AutoloadBoot`（自己的游戏副本和资源路径）并正常退出游戏。
 5. 通过本机构建与原生验证后再安装候选。不要用别人的旧验证回执绕过检查；不要覆盖来源不明的 `version.dll`。启用模组 `BattleAtmosphere` 与 `Runtime/runtime.ini` 后，运行组件随新的遭遇战自动进入，无需启用研究用 BAScriptProbe。
 

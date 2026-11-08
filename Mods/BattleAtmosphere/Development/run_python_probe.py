@@ -25,7 +25,7 @@ def main():
     parser.add_argument("--installed-runtime", action="store_true", help="Verify the installed loader in an owned headless fixture child; never inject or touch a user session")
     parser.add_argument("--activation-gate", action="store_true", help="Exercise the real mod-activation and runtime.ini checks in the isolated copy")
     parser.add_argument("--replay-fixture", action="store_true", help="Read the copied skirmish replay instead of creating an empty map")
-    parser.add_argument("--front-fixture",choices=["long","battle","mass","transport_api","transport","swapped","mass_swapped","transport_swapped"])
+    parser.add_argument("--front-fixture",choices=["long","battle","mass","transport_api","transport","swapped","mass_swapped","transport_swapped","tenvten"])
     args = parser.parse_args()
     development = Path(__file__).resolve().parent
     root = development.parents[2]
@@ -36,6 +36,9 @@ def main():
     source_bytes = source.read_bytes()
     auxiliary_paths = [development / 'native_bridge/probe_bridge.c',
                        development / 'native_bridge/fx_budget.h',
+                       development / 'native_bridge/skirmish_lobby.h',
+                       development / 'native_bridge/lobby_selftest.h',
+                       development / 'native_bridge/lobby_fixtures.h',
                        development / 'native_bridge/cold_start_probe.c',
                        runtime / 'CommonData/Python/Eugen/ba_allocator.py',
                        runtime / 'CommonData/Python/Eugen/ba_fixture.py',

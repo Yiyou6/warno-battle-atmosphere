@@ -86,10 +86,13 @@ def protected_files():
 
 def protected_match(a,b):
     if a==b:return True
-    # The only allowed protected-file transition is the separately validated
-    # VFX-budget loader. All AI Python/NDF, gameplay and original EXE stay exact.
+    # Each protected-file transition needs its own exact native verification.
     from native_bridge.verify_fx_budget import verify_fx_budget
     validated=verify_fx_budget()
+    if 'allowed_protected_transitions' in validated:
+        allowed=validated['allowed_protected_transitions']
+        return (all(a.get(k) in values and b.get(k) in values for k,values in allowed.items()) and
+                {k:v for k,v in a.items() if k not in allowed}=={k:v for k,v in b.items() if k not in allowed})
     with zipfile.ZipFile(DEV/BACKUP) as z:old=json.loads(z.read('protected.json'))['version.dll']
     allowed={old,validated['dll_sha256']}
     return (a.get('version.dll') in allowed and b.get('version.dll') in allowed and

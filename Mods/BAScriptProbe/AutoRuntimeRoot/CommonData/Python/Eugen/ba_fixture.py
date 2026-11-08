@@ -20,8 +20,8 @@ def prepare():
         raise RuntimeError('fixture root wrapper address changed')
     raw_mode=native.fixture_mode()
     mode=raw_mode.replace('_swapped','') if isinstance(raw_mode,str) else raw_mode
-    camps = [var.TGDVariableCamp() for i in range(6 if mode=='mass' else 5 if mode=='battle' else 4)]
-    for i,c in enumerate(camps): c.SetAlliance(1 if i in ((1,2,4,5) if mode=='mass' else (1,2)) else 0)
+    camps = [var.TGDVariableCamp() for i in range(20 if mode=='tenvten' else 6 if mode=='mass' else 5 if mode=='battle' else 4)]
+    for i,c in enumerate(camps): c.SetAlliance((1 if i>=10 else 0) if mode=='tenvten' else (1 if i in ((1,2,4,5) if mode=='mass' else (1,2)) else 0))
     settings = rules.TGDSpecificTacticalGameRules()
     settings.SetCheckEndGame(False)
     root.SetCampList(camps)
@@ -37,7 +37,7 @@ def prepare():
         length=((away[0]-home[0])**2+(away[1]-home[1])**2)**.5
         native.log('FIXTURE_EXPECTED_FRAME '+repr((alliance,home,((away[0]-home[0])/length,(away[1]-home[1])/length))))
     actions=[]
-    for camp in ([camps[1],camps[2],camps[4],camps[5]] if mode=='mass' else [camps[1],camps[2],camps[4]] if mode=='battle' else camps[1:3]):
+    for camp in (camps[1:] if mode=='tenvten' else [camps[1],camps[2],camps[4],camps[5]] if mode=='mass' else [camps[1],camps[2],camps[4]] if mode=='battle' else camps[1:3]):
         ai=gd.TGDDescriptorIASkirmish()
         ai.SetCamp(camp); ai.SetDifficulty(6)
         actions.append(ai);keep.append(ai)
@@ -55,7 +55,19 @@ def prepare():
         spawn.SetNbUnit(1);spawn.SetPosition(pos)
         spawn.SetGroup(group)
         actions.append(spawn);keep.extend([unit_type,pos,group,spawn])
-    if mode in ('transport_api','transport'):
+    if mode=='tenvten':
+        for ci,camp in enumerate(camps):
+            alliance=1 if ci>=10 else 0
+            ax,ay=by_alliance[alliance];bx,by=by_alliance[1-alliance]
+            length=((bx-ax)**2+(by-ay)**2)**.5
+            fx=(bx-ax)/length;fy=(by-ay)/length
+            for k in range(4):
+                lateral=((ci%10)-4.5)*140*215+(k%2)*35*215
+                x=ax+(bx-ax)*.18-fy*lateral+fx*(k//2)*45*215
+                y=ay+(by-ay)*.18+fx*lateral+fy*(k//2)*45*215
+                spawn_at(k,camp,x,y,'M113A3_US')
+        pause=gd.TGDDescriptorWaitDuration();pause.SetDuration(90.)
+    elif mode in ('transport_api','transport'):
         ax,ay=by_alliance[1];bx,by=by_alliance[0]
         for i in range(8):
             spawn_at(i,camps[1+i%2],ax+(bx-ax)*.18+i*15000,ay+(by-ay)*.18,'Rifles_US','M113A3_US')
@@ -138,3 +150,10 @@ def transport_tick(controller,api=True):
                 native.log('TRANSPORT_NATIVE_ORDER '+repr((carrier,target,struct.unpack('<i',result)[0])))
     if controller.tick%10==0:
         native.log('TRANSPORT_NATIVE_STATE '+repr((controller.tick,pairs,[(r[0],r[5],r[6],struct.unpack('<i',native.unit_activity(struct.pack('<Q',r[0])))[0]) for r in rows])))
+
+# Read-only ownership evidence for the explicit twenty-seat headless fixture.
+def tenvten_observe(tick):
+    if tick % 10:return
+    raw=native.world_unit_snapshot()
+    rows=[struct.unpack('<QQiii3f',raw[i:i+40]) for i in range(0,len(raw),40)]
+    native.log('TENVTEN_ROSTER '+repr((tick,[(r[0],r[1],r[2],r[3],r[5],r[6]) for r in rows])))

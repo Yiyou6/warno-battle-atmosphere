@@ -14,6 +14,9 @@ def launch():
     native.log('AUTO_PYTHON_STARTED '+repr(native.world_context()))
     controller=Controller()
     def tick():
+        if native.fixture_mode()=='tenvten':
+            import ba_fixture
+            ba_fixture.tenvten_observe(controller.tick)
         if native.fixture_mode() in ('transport','transport_swapped') and controller.tick<10:
             import ba_fixture
             ba_fixture.transport_tick(controller,False)

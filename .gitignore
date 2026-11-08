@@ -24,3 +24,4 @@ __pycache__/
 .env
 .env.*
 .venv/
+**/lobby_fixtures.h

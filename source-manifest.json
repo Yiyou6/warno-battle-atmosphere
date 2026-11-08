@@ -1,10 +1,10 @@
 {
-  "version": "combined-arms-preview.6 + smoke-preview.20 + vfx-budget.3",
+  "version": "combined-arms-preview.6 + smoke-preview.20 + vfx-budget.3 + skirmish10.1",
   "files": [
     {
       "path": "Mods/BAScriptProbe/AutoRuntimeRoot/CommonData/Python/Eugen/ba_fixture.py",
       "original_sha256": "722c212f25fb7e1f878778c8b893121b927a384e23f2f3a816e45c64a0ed569e",
-      "sha256": "435126e468f7029505959a0cdf69cd72a7123469d5e9724d99b0ecb74c476603"
+      "sha256": "3e072002107f8f22bbb7a7e5c540133b38da01812691e065d391efd4aa36bc90"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/analyze_continuous.py",
@@ -24,7 +24,7 @@
     {
       "path": "Mods/BattleAtmosphere/Development/apply_smoke_profile.py",
       "original_sha256": "522c8b809f0ae93928e8bacad13fc711c00de682ad0bd26fd801cc03dd686cc9",
-      "sha256": "aad62ae59ba8934db1ad61d36c8db89448af5ee96d5a17feaae37eee62ec9894"
+      "sha256": "60e0938b996811822e4f9c85ecc188e24c1602e01b9fea487598bc484d03cd05"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/audit_native_fields.py",
@@ -172,9 +172,14 @@
       "sha256": "1221b798adb58e649aff352d55162472b2f2a96f5ed516e97d1d50671023ed1f"
     },
     {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/build_lobby_fixtures.py",
+      "original_sha256": "8dea7179c4df00858d3b914d5c9d642128297e9cafe8322ece46dc8f5dce2140",
+      "sha256": "8dea7179c4df00858d3b914d5c9d642128297e9cafe8322ece46dc8f5dce2140"
+    },
+    {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/build_runtime.py",
       "original_sha256": "8db0de3aa4835588d7cf1c4fd06c6e9a29002f96906884b95e65ba87237310cc",
-      "sha256": "1aa594555d9e85020af268c5e5893437064488c07998136f8d6e5f921cb539a4"
+      "sha256": "fe26855ade867a872b3fec0d8de122535505116947fd995892b67cb0a5ad5083"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/cold_start_probe.c",
@@ -212,6 +217,11 @@
       "sha256": "11737d3af2f528a2c3b7d6f7fa41855ded8e0c2df1a1fdfb83cccee25d0285c5"
     },
     {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/lobby_selftest.h",
+      "original_sha256": "256bf477ce92c0c2549cfc28b66e08e93821cb6a37d6125ed5a6dded0443f104",
+      "sha256": "0589eb48e28e53e85fd82e70311ad7ac21ffdc31a2f3a55fc8c9e0f22ecda5fe"
+    },
+    {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/mod_compat_probe.c",
       "original_sha256": "b1ee9c033c9f03cc8267e5d45a7ab679469f48ec67a775355421e8ffcc09aeb2",
       "sha256": "b1ee9c033c9f03cc8267e5d45a7ab679469f48ec67a775355421e8ffcc09aeb2"
@@ -219,7 +229,12 @@
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/probe_bridge.c",
       "original_sha256": "cdf903aaafe1b75540fee29cde2f9c13806ab964c2b83e20bec091b13ab3032e",
-      "sha256": "1a897bdb9eae4354c5e0e65543e99813cfa20d3a877e72f7950220838353b807"
+      "sha256": "cf2ca7027f09432da1448487c73bdd69a9a968f392434788a55d5969f45a4e19"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/skirmish_lobby.h",
+      "original_sha256": "0403728bf3b4f89eb3b7c7b5fc4dab0137c3e98fdf541e997058e1da951cc897",
+      "sha256": "0403728bf3b4f89eb3b7c7b5fc4dab0137c3e98fdf541e997058e1da951cc897"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/transport_emergency_probe.c",
@@ -244,12 +259,17 @@
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/verify_fx_budget.py",
       "original_sha256": "404bb2f36240d07d4ca94412bc2f236d11f9cd818504a26d069cddd084348564",
-      "sha256": "6f023d8368229639b00138a9bbbabb0282fa80cdbbe8cbb118559214fd0a4888"
+      "sha256": "7a2c28ee41d0b902765d70f74fd334d05ae3d0060507fede1400f4f7155a7118"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/verify_runtime.py",
       "original_sha256": "df3c8b9927379e03e42d30c09c162ae4e598ae9f7ab6d31683843cfe7a7d4b8d",
-      "sha256": "0f45a26b3f50949ef61a9da82b0b102d9775a39c7d170a225bac5b8fc87509ce"
+      "sha256": "c945c8b58bb13e339303c584b8eed37fca10d4ab2ac3b7856138097fc12a15e9"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/native_bridge/verify_skirmish10.py",
+      "original_sha256": "7fcaebfeb4523be0e2ff3008d7538e26c2f7b3eaad0943e72d9fe7d834956bbc",
+      "sha256": "7fcaebfeb4523be0e2ff3008d7538e26c2f7b3eaad0943e72d9fe7d834956bbc"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/native_bridge/version.def",
@@ -324,7 +344,12 @@
     {
       "path": "Mods/BattleAtmosphere/Development/run_python_probe.py",
       "original_sha256": "814adb775fd00679aaada330a23b92d4cf6a42a1aad65a668c3dace4c3bcdba9",
-      "sha256": "e2384e805a976056be7f4445b2b518f3c70f42dec5d71b7ae6ed551346079e4c"
+      "sha256": "62c5cf3c43e441d88efa73eb87b2dfca1a42aa1883bf72d445d1f7caedbc0623"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/Development/run_skirmish10_validation.py",
+      "original_sha256": "568ca20b81cac4b4fa25ea68ee6fb9e1c1e9257e55f251827f9161535b7be6cf",
+      "sha256": "568ca20b81cac4b4fa25ea68ee6fb9e1c1e9257e55f251827f9161535b7be6cf"
     },
     {
       "path": "Mods/BattleAtmosphere/Development/smoke_plume.py",
@@ -3944,7 +3969,7 @@
     {
       "path": "Mods/BattleAtmosphere/Runtime/Python/ba_autorun.py",
       "original_sha256": "cffdb4570765b8b6261e7e2cf809d5659f5b54bbf28aa716a2525a1dbf4fe499",
-      "sha256": "269dee46f389241f8562a042c2248f86c1d68857546b4fd44c407edf2db89fc8"
+      "sha256": "a3eb0a4d40ff3cddd5773aaf8c4ca7f58819ecb6827ed68d183a9cc9528499c3"
     },
     {
       "path": "Mods/BattleAtmosphere/Runtime/Python/ba_front.py",
@@ -3969,12 +3994,17 @@
     {
       "path": "Mods/BattleAtmosphere/Runtime/README.md",
       "original_sha256": "e9ff719fc22151546c423757a2d64a6363d88fa5aa0b8a246698c34887991cda",
-      "sha256": "a975330bf962108cea9bee25510637dc4f2c47e8543b010f1d5e27aefab12d01"
+      "sha256": "4c6d5c97e02d6231b8c3ef9d3589e611d0c3cf1555eaab7da70e03f528b9ec30"
     },
     {
       "path": "Mods/BattleAtmosphere/Runtime/runtime.ini",
       "original_sha256": "27e76cddb2bcb02103df9cad80fa0683912ffeb68504aa06bae0d7db15f936bd",
       "sha256": "c11fefa97322825ffc3853096a6414150ae6695e6449cca806cc6a6ddc1f8659"
+    },
+    {
+      "path": "Mods/BattleAtmosphere/SKIRMISH_10V10.md",
+      "original_sha256": "7f1e6078060c548b5d8b97b12e02787198a3d76ca74184e528ed3570a9e97c06",
+      "sha256": "305601a62caf9ed765d2a58f70fbb0b25c0df872ad2df5497399a0a5665bd8f7"
     },
     {
       "path": "Mods/BattleAtmosphere/SMOKE_ATMOSPHERE.md",

@@ -63,6 +63,9 @@ def check_local_mod_identity(mod_root=None):
 
 def verify(include_installed=False):
     manifest = json.loads((RUNTIME / 'build-manifest.json').read_text())
+    if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3+skirmish10.1':
+        from verify_skirmish10 import verify_skirmish10
+        return verify_skirmish10(include_installed)
     if manifest['status']=='spatial-runtime-preview.6+vfx-budget.3':
         from verify_fx_budget import verify_fx_budget
         return verify_fx_budget(include_installed)
@@ -337,6 +340,8 @@ if __name__ == '__main__':
     if '--installed' in sys.argv:
         installation_path = RUNTIME / 'installation.json'
         installation = json.loads(installation_path.read_text())
-        installation['post_install_validation'] = result['tests'][-1]
+        tests = result.get('tests')
+        installation['post_install_validation'] = (tests['installed'] if isinstance(tests, dict)
+                                                   else tests[-1] if tests else result)
         installation_path.write_text(json.dumps(installation, indent=2) + '\n')
     print(json.dumps(result, indent=2))
