@@ -1,6 +1,7 @@
 """Check source scope and compiled CNDF references, not rendered smoke quality."""
 from pathlib import Path
 import json
+import re
 import hashlib
 import math
 import struct
@@ -129,11 +130,14 @@ def main():
         total = 0
         other = OLD if name == NEW else NEW
         for path in files:
-            root = fx_exports['$/GFX/GameFx/' + Path(path).stem]
-            expected = (MOD / path).read_text(encoding='utf-8-sig').count(name)
-            actual = count_calls(root, imports[name], {}, set())
+            text = (MOD / path).read_text(encoding='utf-8-sig')
+            names = re.findall(r'(?m)^export\s+(\w+)\s+is', text)
+            assert names
+            roots = [fx_exports['$/GFX/GameFx/' + n] for n in names]
+            expected = text.count(name)
+            actual = sum(count_calls(root, imports[name], {}, set()) for root in roots)
             assert actual == expected, (path, actual, expected)
-            assert count_calls(root, imports[other], {}, set()) == 0, path
+            assert all(count_calls(root, imports[other], {}, set()) == 0 for root in roots), path
             total += actual
         calls[name] = total
     # Keep the historical preview.1 baseline to verify unchanged shared smoke.

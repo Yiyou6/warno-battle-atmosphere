@@ -113,12 +113,17 @@ def verify(report):
     with zipfile.ZipFile(DEV/'archive/smoke-preview20-before.zip') as z:
         old = Cndf(z.read('installed/Gen/NDF/GFX/Depiction.ndfbin'))
     with zipfile.ZipFile(DEV/BACKUP) as z:
-        frozen = ('Gen/NDF/GFX/GameFx.ndfbin', 'Gen/NDF/VFX_Bank.ndfbin',
+        frozen = ('Gen/NDF/VFX_Bank.ndfbin',
                   'Gen/NDF/GFX/Unit.ndfbin', 'Gen/NDF/GFX/Skirmish.ndfbin')
         for name in frozen:
             assert (MOD/name).read_bytes() == z.read('installed/' + name), name
     new = Cndf((MOD/'Gen/NDF/GFX/Depiction.ndfbin').read_bytes())
     ov, nv = fingerprint(old), fingerprint(new)
+    def normalized_helo(value):
+        if isinstance(value,tuple):return tuple(normalized_helo(v) for v in value)
+        if isinstance(value,str):
+            return value.replace('$/GFX/GameFx/BA_HeloSmall_', '$/GFX/GameFx/')
+        return value
     def tables(c):
         return [o for o in c.objects if o['class'] == 'TMimeticWorldHappeningRegistration']
     ot, nt = tables(old), tables(new)
@@ -165,13 +170,17 @@ def verify(report):
                 assert ov(a[surface]) == nv(b[surface]), (name, surface, 'unexpected native-route change')
                 checked['native_routes'] += 1
             else:
-                assert ov(desired) == nv(visual(new, b[surface])), (name, surface, 'wrong donor visual')
+                actual=nv(visual(new,b[surface]))
+                if mode=='helicopter-rocket' and surface<6:
+                    assert 'BA_HeloSmall_' in repr(actual)
+                    actual=normalized_helo(actual)
+                assert ov(desired) == actual, (name, surface, 'wrong donor visual')
                 x, y = old.objects[a[surface]['ref']], new.objects[b[surface]['ref']]
                 if x['class'] == 'TCompositeHappening':
                     assert y['class'] == 'TCompositeHappening'
                     assert ov(x['properties']['SubHappenings'][1:]) == nv(y['properties']['SubHappenings'][1:]), (name, surface, 'audio changed')
                 else:
-                    assert nv(b[surface]) == ov(desired)
+                    assert actual == ov(desired)
             if name.startswith('DestructionUnite'):
                 checked['protected_destruction_routes'] += 1
     assert checked['retained_122_routes'] == len(changes)
@@ -211,7 +220,8 @@ def verify(report):
             active_small += 1
     assert active_small > 100
     result = dict(status='compiled-caliber-routing-and-weapon-isolation-passed; visual-unverified',
-        replacement='Native small-caliber impacts; helicopter rockets use native 300 mm L10D3 HE donor',
+        replacement='Native small-caliber impacts; helicopter rockets retain L10D3 HE at native 1.5x size',
+        helicopter_visual_scale=1.5,
         changed_routes=len(changes)+checked['rocket_routes']+checked['native_76_corrections'], retained_122_routes=len(changes),
         native_small_ammo_checked=count, active_small_ammo_without_122mm=active_small,
         protected_destruction_routes=checked['protected_destruction_routes'],

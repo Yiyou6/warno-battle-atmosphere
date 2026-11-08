@@ -18184,6 +18184,20 @@
       "Ammo_RocketArt_MD24F_240mm_x12": 240.0,
       "Ammo_RocketArt_Teruel_140mm_x40": 140.0
     },
+    "helicopter_visual_scale": 1.5,
+    "helicopter_spatial_scale": 1.5,
+    "helicopter_scaled_exports": {
+      "BA_HeloSmall_fx_impact_eau_he_tresgros2": "fx_impact_eau_he_tresgros2",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_1": "fx_impact_sol_HE_M270_227mm_1",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_2": "fx_impact_sol_HE_M270_227mm_2",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_3": "fx_impact_sol_HE_M270_227mm_3",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_4": "fx_impact_sol_HE_M270_227mm_4",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_5": "fx_impact_sol_HE_M270_227mm_5",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_6": "fx_impact_sol_HE_M270_227mm_6",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_7": "fx_impact_sol_HE_M270_227mm_7",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_8": "fx_impact_sol_HE_M270_227mm_8",
+      "BA_HeloSmall_fx_impact_sol_HE_M270_227mm_9": "fx_impact_sol_HE_M270_227mm_9"
+    },
     "native_small_corrections": {
       "BA_Small_Artillerie2A18122Mm": "CanonMoyenHEPT76"
     },

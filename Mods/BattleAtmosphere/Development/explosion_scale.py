@@ -56,14 +56,14 @@ OFFSETS = {
     'BANK_FireBalls_HQTex_Orientable_Simple': {'parDeltaPosition'},
 }
 
-def offset_scale(expression):
+def offset_scale(expression, spatial_scale=SPATIAL_SCALE):
     form=re.sub(r'float3\[[^]]+\]','VECTOR',expression)
     assert form in ('VECTOR','VECTOR + parPosition','parPosition','0'),expression
     def vector(m):
         values=[float(v) for v in m[1].split(',')]
         assert len(values)==3
         if not any(values):return m[0]
-        return 'float3['+','.join('%g'%(SPATIAL_SCALE*v) for v in values)+']'
+        return 'float3['+','.join('%g'%(spatial_scale*v) for v in values)+']'
     return re.sub(r'float3\[([^]]+)\]',vector,expression)
 
 def selected(name):
@@ -99,18 +99,18 @@ def action_params(text):
             cursor=close+1
         yield action[1].rsplit('/',1)[-1], values
 
-def scale(text):
+def scale(text, visual_scale=VISUAL_SCALE, spatial_scale=SPATIAL_SCALE):
     edits=[]; report=[]
     for action, params in action_params(text):
         if action in PERSISTENT or action.startswith(('SFX','Shake','Destroy','Dummy','Propulsion','FX_BANK_')):continue
         for key,a,b in params:
             expression=text[a:b]
             if key in OFFSETS.get(action,set()):
-                result=offset_scale(expression);kind='local_offset'
+                result=offset_scale(expression,spatial_scale);kind='local_offset'
             elif key in SIZES or key in SPATIAL.get(action,set()):
                 if re.fullmatch(r'0(?:\.0*)?|float3\[0(?:\.0*)?,\s*0(?:\.0*)?,\s*0(?:\.0*)?\]',expression):continue
                 kind='size' if key in SIZES else 'spatial'
-                factor=VISUAL_SCALE if kind=='size' else SPATIAL_SCALE
+                factor=visual_scale if kind=='size' else spatial_scale
                 result='%g * ('%factor+expression+')'
             else:continue
             if result==expression:continue

@@ -19,7 +19,7 @@ from bridge_smoke import SMOKE_BANK
 def verify_explosions(current):
     with zipfile.ZipFile(DEV/BACKUP) as z:
         installed=json.loads(z.read('development/smoke-release.json'))
-        assert installed['version'] in ('smoke-preview.19', 'smoke-preview.20')
+        assert installed['version'] in ('smoke-preview.19', 'smoke-preview.20', 'smoke-preview.21')
         assert installed['explosions']['visual_scale']==3
         assert hashlib.sha256(z.read('installed/Gen/NDF/GFX/GameFx.ndfbin')).hexdigest()==installed['outputs']['Gen/NDF/GFX/GameFx.ndfbin']
     assert VISUAL_SCALE==3 and SPATIAL_SCALE==3.3
@@ -42,7 +42,10 @@ def verify_explosions(current):
         return value
     oldvalue=fingerprint(previous,old_import);newvalue=fingerprint(current,new_import)
     changed=set();affected={};spatial=set();offsets=set();removed=set()
-    def scaled(a,b,factor=VISUAL_SCALE):
+    size_factor=VISUAL_SCALE
+    spatial_factor=SPATIAL_SCALE
+    def scaled(a,b,factor=None):
+        if factor is None:factor=size_factor
         n=current.objects[b['ref']];p=n['properties']
         if n['class']=='TIntrinsicCall_2Param':
             return (newvalue(p['Intrinsic'])==('import','$/System/EvaluableIntrinsics/IntrinsicOperatorMul')
@@ -59,7 +62,7 @@ def verify_explosions(current):
         if oldvalue(a)==newvalue(b):return True
         if not (isinstance(a,dict) and isinstance(b,dict) and 'ref' in a and 'ref' in b):return False
         o,n=previous.objects[a['ref']],current.objects[b['ref']]
-        if o['class']==n['class']=='TConstantFloat3':return scaled(a,b,SPATIAL_SCALE)
+        if o['class']==n['class']=='TConstantFloat3':return scaled(a,b,spatial_factor)
         if o['class']==n['class']=='TIntrinsicCall_2Param':
             p,q=o['properties'],n['properties']
             return (oldvalue(p['Intrinsic'])==newvalue(q['Intrinsic'])==('import','$/System/EvaluableIntrinsics/IntrinsicOperatorAdd')
@@ -76,6 +79,9 @@ def verify_explosions(current):
         p,q=a['properties'],b['properties'];assert p.keys()==q.keys()
         count=0
         for k in p:
+            if k=='_ShortDatabaseName' and size_factor==1.5 and q[k]=='BA_HeloSmall_'+p[k]:
+                assert helo[q[k]]==p[k]
+                continue
             if a['class']=='TActionCall' and k=='NamedParams':
                 left,right=dict(p[k]['map']),dict(q[k]['map']);assert left.keys()==right.keys()
                 for name in left:
@@ -91,7 +97,7 @@ def verify_explosions(current):
                     if name in SIZES:
                         assert scaled(left[name],right[name]),('Size not exactly 3x',name,bank)
                     elif name in SPATIAL.get(bank,set()):
-                        assert scaled(left[name],right[name],SPATIAL_SCALE),('Spread not exactly 3.3x',name,bank)
+                        assert scaled(left[name],right[name],spatial_factor),('Wrong spread multiplier',name,bank)
                         spatial.add((j,name))
                     elif name in OFFSETS.get(bank,set()):
                         assert offset_scaled(left[name],right[name]),('Offset/anchor mismatch',name,bank)
@@ -127,7 +133,8 @@ def verify_explosions(current):
         assert a==b,(a,b);return 0
     old_exports=paths(previous,'EXPR');new_exports=paths(current,'EXPR')
     wreck_roots={old_exports[p]:new_exports[p] for p in WRECK_EXPORTS}
-    assert set(new_exports)-set(old_exports)=={'$/GFX/GameFx/'+NEW_FX}
+    helo=json.loads((DEV/'impact-visual-source.json').read_text())['caliber_policy']['helicopter_scaled_exports']
+    assert set(new_exports)-set(old_exports)=={'$/GFX/GameFx/'+NEW_FX}|{'$/GFX/GameFx/'+n for n in helo}
     assert not set(old_exports)-set(new_exports)
     for path in old_exports:
         if path in WRECK_EXPORTS:continue # verified against native map FX separately
@@ -137,10 +144,15 @@ def verify_explosions(current):
     import re
     for item in source['files']:
         names=re.findall(r'(?m)^export\s+(\w+)\s+is', (MOD/item['path']).read_text(encoding='utf-8'))
-        assert names and all('$/GFX/GameFx/'+n in affected for n in names),item['path']
+        assert names and all('$/GFX/GameFx/'+n in affected or n in helo for n in names),item['path']
+    size_factor=1.5
+    spatial_factor=1.5
+    compare_node.cache_clear()
+    for clone,parent in helo.items():
+        assert compare_node(old_exports['$/GFX/GameFx/'+parent],new_exports['$/GFX/GameFx/'+clone])>0
     assert len(spatial)>1000 and len(offsets)>100
     assert removed
-    result=dict(visual_scale=VISUAL_SCALE,relative_to='smoke-preview.19',relative_multiplier=1,
+    result=dict(visual_scale=VISUAL_SCALE,helicopter_visual_scale=1.5,helicopter_spatial_scale=1.5,helicopter_clones_checked=len(helo),relative_to='smoke-preview.19',relative_multiplier=1,
                 previous_visual_scale=3,spatial_scale=SPATIAL_SCALE,source_files=len(source['files']),
                 source_dimensions=sum(len(f['changes']) for f in source['files']),
                 unique_compiled_dimensions=len(changed),affected_exports=len(affected),

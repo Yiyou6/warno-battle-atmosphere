@@ -1,6 +1,7 @@
 """Read native mod compatibility in a new headless child, never a user session."""
 from pathlib import Path
 import argparse
+import configparser
 import hashlib
 import json
 import os
@@ -13,7 +14,7 @@ DEV=Path(__file__).resolve().parent
 BRIDGE=DEV/'native_bridge'
 BOOT=ROOT/'Mods/BAScriptProbe/AutoloadBoot'
 parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--label',default='audit',choices=['audit','collision-before','collision-after','repeat','fixture-after','smoke21'])
+parser.add_argument('--label',default='audit',choices=['audit','collision-before','collision-after','repeat','fixture-after','smoke21','smoke22','workshop'])
 args=parser.parse_args()
 running=subprocess.run(['powershell','-NoProfile','-Command',
     'Get-Process WARNO -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id'],
@@ -24,6 +25,8 @@ tcc=Path(os.environ['TEMP'])/'codex-warno-compiler/tcc/tcc.exe'
 previous_dll=(BOOT/'version.dll').read_bytes()
 fixture_config=BOOT/'BattleAtmosphereProbeAutoFixture.ini'
 previous_config=fixture_config.read_bytes() if fixture_config.exists() else None
+activation=Path.home()/'Saved Games/EugenSystems/WARNO/mod/Config.ini'
+previous_activation=activation.read_bytes()
 try:
     subprocess.run([str(tcc),'-shared','-Wall','-DBA_EMBEDDED','-DBA_PROXY','-o',str(BOOT/'version.dll'),
                     str(BRIDGE/'mod_compat_probe.c'),str(BRIDGE/'version_proxy.c')],check=True)
@@ -48,6 +51,7 @@ try:
                 diagnostic_dll_sha256=hashlib.sha256((BOOT/'version.dll').read_bytes()).hexdigest(),
                 diagnostic_source_sha256=hashlib.sha256((BRIDGE/'mod_compat_probe.c').read_bytes()).hexdigest())
 finally:
+    activation.write_bytes(previous_activation)
     (BOOT/'version.dll').write_bytes(previous_dll)
     if previous_config is None:
         fixture_config.unlink(missing_ok=True)
@@ -55,7 +59,10 @@ finally:
         fixture_config.write_bytes(previous_config)
 (DEV/('mod-compatibility-'+args.label+'.json')).write_text(json.dumps(result,indent=2)+'\n')
 statuses=re.findall(r'MOD_AUDIT_ROOM selected=([^\s]*) native_status=(\d+)',result['stdout'])
-valid=(result['returncode']==0 and not result['timeout'] and statuses==[('0/3','0')]
+installed_config=configparser.ConfigParser(inline_comment_prefixes=(';',))
+installed_config.read(Path.home()/'Saved Games/EugenSystems/WARNO/mod/BattleAtmosphere/Config.ini',encoding='utf-8-sig')
+expected_selected='%d/%d'%(installed_config.getint('Properties','ID'),installed_config.getint('Properties','Version'))
+valid=(result['returncode']==0 and not result['timeout'] and statuses==[(expected_selected,'0')]
        and 'AUTO_PYTHON_STARTED' in result['stdout']
        and 'AUTOMATIC_SKIRMISH_STOP' in result['stdout'])
 print(json.dumps(dict(returncode=result['returncode'],timeout=result['timeout'],

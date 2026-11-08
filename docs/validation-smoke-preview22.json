@@ -1,0 +1,70 @@
+{
+  "version": "smoke-preview.22",
+  "installed": true,
+  "visual_unverified": true,
+  "explosions": {
+    "visual_scale": 3,
+    "helicopter_visual_scale": 1.5,
+    "helicopter_spatial_scale": 1.5,
+    "helicopter_clones_checked": 10,
+    "relative_to": "smoke-preview.19",
+    "relative_multiplier": 1,
+    "previous_visual_scale": 3,
+    "spatial_scale": 3.3,
+    "source_files": 677,
+    "source_dimensions": 64535,
+    "unique_compiled_dimensions": 30586,
+    "affected_exports": 902,
+    "compiled_spatial_parameters": 12004,
+    "compiled_local_offsets": 1601,
+    "event_anchors_unchanged": true,
+    "checked_exports": 1656,
+    "other_properties_unchanged": true,
+    "removed_unique_old_vehicle_fuel_calls": 12,
+    "wreck_effect_verified_separately": true,
+    "rendered_appearance": "unverified"
+  },
+  "impacts": {
+    "status": "compiled-caliber-routing-and-weapon-isolation-passed; visual-unverified",
+    "replacement": "Native small-caliber impacts; helicopter rockets retain L10D3 HE at native 1.5x size",
+    "helicopter_visual_scale": 1.5,
+    "changed_routes": 400,
+    "retained_122_routes": 353,
+    "native_small_ammo_checked": 367,
+    "active_small_ammo_without_122mm": 367,
+    "protected_destruction_routes": 80,
+    "route_counts": {
+      "native_routes": 1000,
+      "retained_122_routes": 353,
+      "protected_destruction_routes": 80,
+      "native_76_corrections": 5,
+      "rocket_routes": 42
+    },
+    "weapons": {
+      "compared_original_exports": 2741,
+      "isolated_heli_ammo": 19,
+      "helicopter_weapon_managers": 88,
+      "all_other_weapon_properties_equal": true,
+      "all_nonhelicopter_weapon_references_equal": true,
+      "unique_ammunition_ids": true
+    },
+    "sound_happenings_unchanged": true,
+    "frozen_outputs": {
+      "Gen/NDF/VFX_Bank.ndfbin": "b5a62e90089da72827a1958bf8c480f7d770e7ebfdfd895c48fae44f4f67c483",
+      "Gen/NDF/GFX/Unit.ndfbin": "cf4fb8900c959b975460a0d036b6443d87ff3d1574262dd46d7486f2692717f7",
+      "Gen/NDF/GFX/Skirmish.ndfbin": "ebcd62d82642744f1459de2e27f5e36a17cd4b5c264bccd3982cebbe3a2243d3"
+    },
+    "gameplay_and_projectile_flight_unchanged": true,
+    "rendered_appearance": "unverified"
+  },
+  "native_load": {
+    "receipt": "mod-compatibility-workshop.json",
+    "returncode": 0,
+    "timeout": false,
+    "seconds": 69.641,
+    "selected": "0/3",
+    "native_status": 0,
+    "downloaded_package_verified": true
+  },
+  "runtime_unchanged": true
+}

@@ -1,0 +1,27 @@
+{
+  "title": "打电脑优化",
+  "id": "3835832126",
+  "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835832126",
+  "version": "smoke-preview.22",
+  "download": {
+    "publishedfileid": "3835832126",
+    "downloaded_files": 45,
+    "all_hashes_match": true,
+    "installer_sha256": "1edc6a9553a3a7f31e17623b68be9ba5cf0e88e954d944314b3977647b5a891c",
+    "local_companion_id": 0
+  },
+  "native": {
+    "receipt": "mod-compatibility-workshop.json",
+    "returncode": 0,
+    "timeout": false,
+    "seconds": 69.641,
+    "selected": "0/3",
+    "native_status": 0,
+    "downloaded_package_verified": true
+  },
+  "runtime_sha256": "ade99b89483b79d2d8aebb45ac879573fa122430c73631251a4751238ec84c6f",
+  "ai_runtime_unchanged": true,
+  "official_eugen_upload": "timeout; not claimed successful",
+  "publication": "Steam workshop",
+  "rendered_appearance": "unverified"
+}

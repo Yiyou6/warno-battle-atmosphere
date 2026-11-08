@@ -155,6 +155,9 @@ def extend(z, before, after, legacy):
         if surface not in ('Missile', 'Ricochet'):
             assert len(names) == 1, (surface, names)
             donor_visuals[surface] = names[0]
+    from heli_rocket_scale import extend as scale_helo_visuals
+    scaled_visuals, declarations, scaled_exports = scale_helo_visuals(z, before, after, defs, donor_visuals)
+    revised = declarations + '\n\n' + revised
     for impact in sorted({field(blocks[n], 'ImpactHappening') for n in helo_ammo}):
         _, _, stock = registration(original, impact)
         edits = []
@@ -163,7 +166,7 @@ def extend(z, before, after, legacy):
                 continue
             aliases = [t for t in re.findall(r'\b\w+\b', line) if t in defs]
             assert len(aliases) == 1, (impact, surface, aliases)
-            edits.append((a, b, re.sub(r'\b' + aliases[0] + r'\b', donor_visuals[surface], line)))
+            edits.append((a, b, re.sub(r'\b' + aliases[0] + r'\b', scaled_visuals[surface], line)))
         key = 'BA_HeloRocket_' + impact
         extra.append(patch_spans(stock, edits).replace("('" + impact + "'", "('" + key + "'", 1))
         clones[key] = dict(parent=impact, mode='helicopter-rocket', donor=donor_impact)
@@ -198,6 +201,7 @@ def extend(z, before, after, legacy):
         helicopter_weapon_replacements=weapon_replacements,
         donor_ammo=ROCKET_DONOR, donor_impact=donor_impact, donor_caliber_mm=300,
         donor_native_visuals=donor_visuals, ordinary_he_mlrs_candidates=candidates,
+        helicopter_visual_scale=1.5, helicopter_spatial_scale=1.5, helicopter_scaled_exports=scaled_exports,
         native_small_corrections=native_small_corrections,
         missiles_unchanged=True, non_helicopter_weapon_references_unchanged=True)
     return legacy

@@ -16,9 +16,9 @@ BINDER = 'GameData/Fx/Bank/Basics/BANK_Binder_Fire.ndf'
 FUEL = 'GameData/Fx/Bank/Basics/BANK_FuelFire.ndf'
 OLD = '$/VFX_Bank/BANK_FuelSmoke'
 NEW = '$/VFX_Bank/BA_BurningFuelSmoke'
-VERSION = 'smoke-preview.21'
+VERSION = 'smoke-preview.22'
 MULTIPLIER = 10
-BACKUP = 'archive/smoke-preview21-before.zip'
+BACKUP = 'archive/smoke-preview22-before.zip'
 
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -132,7 +132,7 @@ def main():
             (MOD / name).write_text(target, encoding='utf-8', newline='\n')
     assert protected_match(protected_files(), protected)
     report = dict(version=VERSION, status='source-verified; visual-unverified',
-                  relative_to='smoke-preview.20', appearance='Small-caliber impacts restored; helicopter unguided rockets use native L10D3 300 mm HE visuals; all FX graphs unchanged',
+                  relative_to='smoke-preview.21', appearance='Helicopter unguided rockets retain L10D3 HE visuals at native 1.5x size; other explosions unchanged',
                   vehicle_burn_seconds=[10,1200], map_wreck_fire=True,
                   sources={n: sha(MOD / n) for n in after}, protected=protected,
                   burning_callers=callers, unchanged_shared_smoke_callers=excluded,
